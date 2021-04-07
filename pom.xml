@@ -33,4 +33,11 @@
 			</plugin>
 		</plugins>
 	</build>
+	<dependencies>
+		<dependency>
+		    <groupId>javassist</groupId>
+		    <artifactId>javassist</artifactId>
+		    <version>3.3</version>
+		</dependency>
+	</dependencies>
 </project>

@@ -1,2 +1,2 @@
-instrumentation\CallTrackerAgent.class
-instrumentation\CallTrackerTransformer.class
+instrumentation/CallTrackerAgent.class
+instrumentation/CallTrackerTransformer.class
