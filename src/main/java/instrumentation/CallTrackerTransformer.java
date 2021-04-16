@@ -3,11 +3,13 @@ package instrumentation;
 import java.io.ByteArrayInputStream;
 import java.lang.instrument.ClassFileTransformer;
 import java.lang.instrument.IllegalClassFormatException;
+//import java.lang.reflect.Modifier;
 import java.security.ProtectionDomain;
 
 import javassist.ClassPool;
 import javassist.CtClass;
 import javassist.CtMethod;
+import javassist.Modifier;
 
 public class CallTrackerTransformer implements ClassFileTransformer {
 	@Override
@@ -20,10 +22,10 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 					classfileBuffer));
 			CtMethod[] methods = ctClass.getDeclaredMethods();
 			for (CtMethod method : methods) {
-				method.addLocalVariable("startTime", CtClass.longType);
-				method.insertBefore("startTime = System.nanoTime();");
-				method.insertAfter("System.out.println(\"Execution Duration "
-						+ "(nano sec): \"+ (System.nanoTime() - startTime) );");
+				if (!isNative(method)) {
+					System.out.println(method.getName());
+					//method.insertBefore("abc();");
+				}
 			}
 			byteCode = ctClass.toBytecode();
 			ctClass.detach();
@@ -34,4 +36,13 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 		}
 		return byteCode;
 	}
+	
+	public void abc() {
+		System.out.println("hi there");
+	}
+	
+	public static boolean isNative(CtMethod method) {
+	    return Modifier.isNative(method.getModifiers());
+	}
+
 }
