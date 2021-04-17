@@ -1,2 +1,3 @@
 instrumentation/CallTrackerAgent.class
+instrumentation/CallTrackerTransformer$1.class
 instrumentation/CallTrackerTransformer.class

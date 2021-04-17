@@ -6,10 +6,13 @@ import java.lang.instrument.IllegalClassFormatException;
 //import java.lang.reflect.Modifier;
 import java.security.ProtectionDomain;
 
+import javassist.CannotCompileException;
 import javassist.ClassPool;
 import javassist.CtClass;
 import javassist.CtMethod;
 import javassist.Modifier;
+import javassist.expr.ExprEditor;
+import javassist.expr.MethodCall;
 
 public class CallTrackerTransformer implements ClassFileTransformer {
 	@Override
@@ -22,9 +25,16 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 					classfileBuffer));
 			CtMethod[] methods = ctClass.getDeclaredMethods();
 			for (CtMethod method : methods) {
-				if (!isNative(method)) {
-					System.out.println(method.getName());
-					//method.insertBefore("abc();");
+				if (!isNative(method) && !isAbstract(method)) {
+					System.out.println("Checking method - "+method.getName());
+					method.instrument(
+					        new ExprEditor() {
+					            public void edit(MethodCall m)
+					                          throws CannotCompileException
+					            {
+					                System.out.println(m.getClassName() + "." + m.getMethodName() + " " + m.getSignature());
+					            }
+					        });
 				}
 			}
 			byteCode = ctClass.toBytecode();
@@ -43,6 +53,10 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 	
 	public static boolean isNative(CtMethod method) {
 	    return Modifier.isNative(method.getModifiers());
+	}
+	
+	public static boolean isAbstract(CtMethod method) {
+		return Modifier.isAbstract(method.getModifiers());
 	}
 
 }

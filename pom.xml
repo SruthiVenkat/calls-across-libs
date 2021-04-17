@@ -35,9 +35,9 @@
 	</build>
 	<dependencies>
 		<dependency>
-		    <groupId>javassist</groupId>
+		    <groupId>org.javassist</groupId>
 		    <artifactId>javassist</artifactId>
-		    <version>3.3</version>
+		    <version>3.27.0-GA</version>
 		</dependency>
 	</dependencies>
 </project>
