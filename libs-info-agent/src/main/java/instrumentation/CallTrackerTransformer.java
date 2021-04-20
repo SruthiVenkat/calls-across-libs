@@ -6,6 +6,7 @@ import java.lang.instrument.IllegalClassFormatException;
 //import java.lang.reflect.Modifier;
 import java.security.ProtectionDomain;
 
+import db.DatabaseConnector;
 import javassist.CannotCompileException;
 import javassist.ClassPool;
 import javassist.CtClass;
@@ -18,6 +19,10 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 	@Override
 	public byte[] transform(ClassLoader loader, String className, Class<?> classBeingRedefined,
 			ProtectionDomain protectionDomain, byte[] classfileBuffer) throws IllegalClassFormatException {
+		DatabaseConnector connector = DatabaseConnector.buildDatabaseConnector();
+		connector.connect();
+		//libsToPkgs = connector.getLibsToPkgs();
+
 		byte[] byteCode = classfileBuffer;
 		try {
 			ClassPool classPool = ClassPool.getDefault();
@@ -45,10 +50,6 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 			ex.printStackTrace();
 		}
 		return byteCode;
-	}
-	
-	public void abc() {
-		System.out.println("hi there");
 	}
 	
 	public static boolean isNative(CtMethod method) {
