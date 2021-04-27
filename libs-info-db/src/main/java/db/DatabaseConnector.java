@@ -29,7 +29,7 @@ import java.util.Map;
  * varchar(255),library_name varchar(255), UNIQUE(method_name, library_name), FOREIGN KEY
  * (library_name) REFERENCES libs_info(library_name) ON DELETE CASCADE);
  *
- * create table if not exists libs_info (library_name varchar(255) PRIMARY KEY, total_count int, pkgs text);
+ * create table if not exists libs_info (library_name varchar(255) PRIMARY KEY, total_count int, classes text);
  */
 public class DatabaseConnector {
 	private static DatabaseConnector dc;
@@ -78,7 +78,7 @@ public class DatabaseConnector {
 				System.out.println(ex);
 		}
 		connect();	
-		String SQL2 = "create table if not exists libs_info (library_name varchar(255) PRIMARY KEY, total_count int, pkgs text);";
+		String SQL2 = "create table if not exists libs_info (library_name varchar(255) PRIMARY KEY, total_count int, classes text);";
 		try (PreparedStatement pstmt = conn.prepareStatement(SQL2)) {
 			pstmt.executeUpdate();
 		} catch (SQLException ex) {
@@ -98,15 +98,15 @@ public class DatabaseConnector {
 		}
 	}
 	
-	public void addToLibsInfoTable(Map<String, ArrayList<Object>> libsAndTotalCountsAndPkgs) {
-		String SQL1 = "INSERT INTO libs_info(library_name,total_count,pkgs) " + "VALUES(?,?,?);";
-		for (String libName: libsAndTotalCountsAndPkgs.keySet()) {
-			int totalCount = (int) libsAndTotalCountsAndPkgs.get(libName).get(0);
-			String pkgs = (String) libsAndTotalCountsAndPkgs.get(libName).get(1);
+	public void addToLibsInfoTable(Map<String, ArrayList<Object>> libsAndTotalCountsAndClasses) {
+		String SQL1 = "INSERT INTO libs_info(library_name,total_count,classes) " + "VALUES(?,?,?);";
+		for (String libName: libsAndTotalCountsAndClasses.keySet()) {
+			int totalCount = (int) libsAndTotalCountsAndClasses.get(libName).get(0);
+			String classes = (String) libsAndTotalCountsAndClasses.get(libName).get(1);
 			try (PreparedStatement pstmt = conn.prepareStatement(SQL1, Statement.RETURN_GENERATED_KEYS)) {
 				pstmt.setString(1, libName);
 				pstmt.setInt(2, totalCount);
-				pstmt.setString(3, pkgs);
+				pstmt.setString(3, classes);
 
 				pstmt.executeUpdate();
 			} catch (SQLIntegrityConstraintViolationException e) {
@@ -117,18 +117,18 @@ public class DatabaseConnector {
 		}
 	}
 	
-	public Map<String, List<String>> getLibsToPkgs() {
-		Map<String, List<String>> libsToPkgs = new HashMap<String, List<String>>();
-		String SQL1 = "select library_name,pkgs from libs_info;";
+	public Map<String, List<String>> getLibsToClasses() {
+		Map<String, List<String>> libsToClasses = new HashMap<String, List<String>>();
+		String SQL1 = "select library_name,classes from libs_info;";
 		try (PreparedStatement pstmt = conn.prepareStatement(SQL1)) {
 			ResultSet rs = pstmt.executeQuery();
 			while (rs.next()) {
-				libsToPkgs.put(rs.getString(1), Arrays.asList(rs.getString(2).split(":")));
+				libsToClasses.put(rs.getString(1), Arrays.asList(rs.getString(2).split(":")));
 			}
 		} catch (SQLException ex) {
 			System.out.println(ex);
 		}
-		return libsToPkgs;
+		return libsToClasses;
 	}
 	
 	public void createSQLProcForFetchingCallsToALibrary() {

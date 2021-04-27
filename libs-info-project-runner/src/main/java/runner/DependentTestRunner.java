@@ -28,6 +28,10 @@ import org.json.simple.parser.JSONParser;
 import db.DatabaseConnector;
 
 public class DependentTestRunner {
+	public static final String agentPath = "/home/vishal/Documents/Waterloo/PL/calls-across-libs/libs-info-agent/target/libs-info-agent-1.0-SNAPSHOT.jar";
+	public static final String javassistJarPath = "/home/vishal/.m2/repository/org/javassist/javassist/3.27.0-GA/javassist-3.27.0-GA.jar";
+	public static final String dbPath = "/home/vishal/Documents/Waterloo/PL/calls-across-libs/libs-info-db/target/libs-info-db-1.0-SNAPSHOT.jar";
+
 	public static void main(String[] args) {
 		// connect to database and create the required procedures
 		DatabaseConnector connector = DatabaseConnector.buildDatabaseConnector();
@@ -35,7 +39,7 @@ public class DependentTestRunner {
 		connector.createSQLProcForAPIProportionCalled();
 		connector.createSQLProcForJaccardSimilarity();
 		connector.createSQLProcForFetchingCallsToALibrary();
-
+		
 		// get poms for projects
 		List<String> pomList = new ArrayList<>();
 		JSONParser jsonParser = new JSONParser();
@@ -56,21 +60,21 @@ public class DependentTestRunner {
 
 		for (String pomFilePath: pomList) {
 			File pomFile = new File(pomFilePath);
-			writeAspectXMLToProjectPOM(pomFile, false);
+			writeXMLToProjectPOM(pomFile, false);
 			mvnInstallProjects(pomFile, true); // generate jars
-			writeAspectXMLToProjectPOM(pomFile, true);
+			writeXMLToProjectPOM(pomFile, true);
 			mvnInstallProjects(pomFile, false); // generate wars
 		}
 		
 		// get total API counts for projects and packages in each project
-		JarUtility.initLibsToCountsAndPackages(connector);
+		JarUtility.initLibsToCountsAndClasses(connector);
 		
 		// run unit tests to get data
 		for (String pomFilePath: pomList)
 			runProjectUnitTests(new File(pomFilePath));
 	}
 	
-	public static void writeAspectXMLToProjectPOM(File xmlFile, Boolean packageAsWar) {
+	public static void writeXMLToProjectPOM(File xmlFile, Boolean packageAsWar) {
 		SAXBuilder builder = new SAXBuilder();
 		Document doc;
 		try {
@@ -111,81 +115,34 @@ public class DependentTestRunner {
 
 				pluginsElement.addContent(pluginToAdd);
 			}
-			if (!checkIfPluginExistsInProjectPOM(pluginsElement, rootNode, "org.codehaus.mojo",
-					"aspectj-maven-plugin")) {
+			if (!checkIfPluginExistsInProjectPOM(pluginsElement, rootNode, "org.apache.maven.plugins",
+					"maven-surefire-plugin")) {
 				Element pluginToAdd = new Element("plugin", rootNode.getNamespace());
-				pluginToAdd.addContent(new Element("groupId", rootNode.getNamespace()).setText("org.codehaus.mojo"));
-				pluginToAdd
-						.addContent(new Element("artifactId", rootNode.getNamespace()).setText("aspectj-maven-plugin"));
-				pluginToAdd.addContent(new Element("version", rootNode.getNamespace()).setText("1.8"));
+				pluginToAdd.addContent(
+						new Element("groupId", rootNode.getNamespace()).setText("org.apache.maven.plugins"));
+				pluginToAdd.addContent(new Element("artifactId", rootNode.getNamespace()).setText("maven-surefire-plugin"));
+				pluginToAdd.addContent(new Element("version", rootNode.getNamespace()).setText("2.22.0"));
 
 				Element configurationToAdd = new Element("configuration", rootNode.getNamespace());
-				configurationToAdd.addContent(new Element("complianceLevel", rootNode.getNamespace()).setText("1.8"));
-				Element excludes = new Element("excludes", rootNode.getNamespace());
-				excludes.addContent(new Element("exclude", rootNode.getNamespace()).setText("**/*.java"));
-				configurationToAdd.addContent(excludes);
-				configurationToAdd.addContent(new Element("forceAjcCompile", rootNode.getNamespace()).setText("true"));
-				configurationToAdd.addContent(new Element("sources", rootNode.getNamespace()).setText(""));
-				Element aspectLibraries = new Element("aspectLibraries", rootNode.getNamespace());
-				Element aspectLibraryToAdd = new Element("aspectLibrary", rootNode.getNamespace());
-				aspectLibraryToAdd
-						.addContent(new Element("groupId", rootNode.getNamespace()).setText("ca.waterloo.pl"));
-				aspectLibraryToAdd
-						.addContent(new Element("artifactId", rootNode.getNamespace()).setText("inter-library-calls"));
-				aspectLibraries.addContent(aspectLibraryToAdd);
-				configurationToAdd.addContent(aspectLibraries);
+				configurationToAdd
+						.addContent(new Element("argLine", rootNode.getNamespace()).setText("-Xbootclasspath/p:\""+javassistJarPath+"\":\""+dbPath
+								+"\" -javaagent:\""+agentPath+"\""));
 				pluginToAdd.addContent(configurationToAdd);
-
-				Element executionsToAdd = new Element("executions", rootNode.getNamespace());
-				Element executionToAdd = new Element("execution", rootNode.getNamespace());
-				executionToAdd.addContent(new Element("phase", rootNode.getNamespace()).setText("process-classes"));
-				Element goals = new Element("goals", rootNode.getNamespace());
-				goals.addContent(new Element("goal", rootNode.getNamespace()).setText("compile"));
-				executionToAdd.addContent(goals);
-				Element execConfigurationToAdd = new Element("configuration", rootNode.getNamespace());
-				Element weaveDirs = new Element("weaveDirectories", rootNode.getNamespace());
-				weaveDirs.addContent(new Element("weaveDirectory", rootNode.getNamespace())
-						.setText("${project.build.directory}/classes"));
-				execConfigurationToAdd.addContent(weaveDirs);
-				executionToAdd.addContent(execConfigurationToAdd);
-				executionsToAdd.addContent(executionToAdd);
-				pluginToAdd.addContent(executionsToAdd);
 
 				pluginsElement.addContent(pluginToAdd);
 			}
+
 			Element dependencies = rootNode.getChild("dependencies", rootNode.getNamespace());
 			if (dependencies == null) {
 				dependencies = new Element("dependencies");
 				rootNode.addContent(dependencies);
 			}
-			if (!checkIfDependencyExistsInProjectPOM(dependencies, rootNode, "ca.waterloo.pl", "inter-library-calls")) {
-				Element dependency1 = new Element("dependency", rootNode.getNamespace());
-				dependency1.addContent(new Element("groupId", rootNode.getNamespace()).setText("ca.waterloo.pl"));
-				dependency1
-						.addContent(new Element("artifactId", rootNode.getNamespace()).setText("inter-library-calls"));
-				dependency1.addContent(new Element("version", rootNode.getNamespace()).setText("1.0-SNAPSHOT"));
-				dependencies.addContent(dependency1);
-			}
-			if (!checkIfDependencyExistsInProjectPOM(dependencies, rootNode, "org.aspectj", "aspectjweaver")) {
-				Element dependency2 = new Element("dependency", rootNode.getNamespace());
-				dependency2.addContent(new Element("groupId", rootNode.getNamespace()).setText("org.aspectj"));
-				dependency2.addContent(new Element("artifactId", rootNode.getNamespace()).setText("aspectjweaver"));
-				dependency2.addContent(new Element("version", rootNode.getNamespace()).setText("1.9.2"));
-				dependencies.addContent(dependency2);
-			}
-			if (!checkIfDependencyExistsInProjectPOM(dependencies, rootNode, "org.aspectj", "aspectjrt")) {
-				Element dependency3 = new Element("dependency", rootNode.getNamespace());
-				dependency3.addContent(new Element("groupId", rootNode.getNamespace()).setText("org.aspectj"));
-				dependency3.addContent(new Element("artifactId", rootNode.getNamespace()).setText("aspectjrt"));
-				dependency3.addContent(new Element("version", rootNode.getNamespace()).setText("1.8.7"));
-				dependencies.addContent(dependency3);
-			}
 			if (!checkIfDependencyExistsInProjectPOM(dependencies, rootNode, "org.postgresql", "postgresql")) {
-				Element dependency4 = new Element("dependency", rootNode.getNamespace());
-				dependency4.addContent(new Element("groupId", rootNode.getNamespace()).setText("org.postgresql"));
-				dependency4.addContent(new Element("artifactId", rootNode.getNamespace()).setText("postgresql"));
-				dependency4.addContent(new Element("version", rootNode.getNamespace()).setText("42.2.14"));
-				dependencies.addContent(dependency4);
+				Element dependency1 = new Element("dependency", rootNode.getNamespace());
+				dependency1.addContent(new Element("groupId", rootNode.getNamespace()).setText("org.postgresql"));
+				dependency1.addContent(new Element("artifactId", rootNode.getNamespace()).setText("postgresql"));
+				dependency1.addContent(new Element("version", rootNode.getNamespace()).setText("42.2.14"));
+				dependencies.addContent(dependency1);
 			}
 
 			XMLOutputter xmlOutput = new XMLOutputter();

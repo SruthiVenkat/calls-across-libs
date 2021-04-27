@@ -31,9 +31,9 @@ import db.DatabaseConnector;
 
 public class JarUtility {
 	
-	public static void initLibsToCountsAndPackages(DatabaseConnector connector) {
-		Map<String, ArrayList<Object>> libsToCountsAndPackages = new HashMap<String, ArrayList<Object>>();
-		libsToCountsAndPackages.put("unknownLib", new ArrayList<Object>(Arrays.asList(0, "")));
+	public static void initLibsToCountsAndClasses(DatabaseConnector connector) {
+		Map<String, ArrayList<Object>> libsToCountsAndClasses = new HashMap<String, ArrayList<Object>>();
+		libsToCountsAndClasses.put("unknownLib", new ArrayList<Object>(Arrays.asList(0, "")));
 		// get wars and jars for projects, initialize counts and packages
 		JSONParser jsonParser = new JSONParser();
         try (FileReader reader = new FileReader(new File(".").getAbsolutePath()+File.separator
@@ -50,8 +50,8 @@ public class JarUtility {
             	String tmpFolder = new File(".").getAbsolutePath()+File.separator
         				+"projects"+File.separator+projectObject.get("folderName")
         				+File.separator+"tmp";
-            	libsToCountsAndPackages.put((String)projectObject.get("libName"), 
-            			getPublicProtectedMethodsCountAndPackages(generatedWarJarName+".war", 
+            	libsToCountsAndClasses.put((String)projectObject.get("libName"), 
+            			getPublicProtectedMethodsCountAndClasses(generatedWarJarName+".war", 
             					generatedWarJarName+".jar", tmpFolder));
 
             }
@@ -59,18 +59,18 @@ public class JarUtility {
 			System.out.println("Error while reading file with project list" + e.toString());		
 		}
 
-		connector.addToLibsInfoTable(libsToCountsAndPackages);
+		connector.addToLibsInfoTable(libsToCountsAndClasses);
 	}
 	
-	public static ArrayList<Object> getPublicProtectedMethodsCountAndPackages(String warFile, String crunchifyJarName, String tmpFolder) {
+	public static ArrayList<Object> getPublicProtectedMethodsCountAndClasses(String warFile, String crunchifyJarName, String tmpFolder) {
 		int count = 0;
-		List<String> pkgNames = new ArrayList<>();
+		List<String> classNames = new ArrayList<>();
 		File destDir = new File("");
 
 		try {
 			JarInputStream crunchifyJarFile = new JarInputStream(new FileInputStream(crunchifyJarName));
 			JarEntry crunchifyJar;
-
+			
 			try {
 				unzip(warFile, tmpFolder);
 			} catch (FileNotFoundException e) {
@@ -102,17 +102,9 @@ public class JarUtility {
 				}
 				if ((crunchifyJar.getName().endsWith(".class"))) {
 					String completeClassName = crunchifyJar.getName().replaceAll("/", "\\.");
-					// get packages
-					Matcher match = Pattern.compile("\\.[^\\.]*\\.class").matcher(completeClassName);
-					if (match.find()) {
-						int index = match.start();  
-						String pkgName = completeClassName.substring(0, index);
-						
-						if (!pkgNames.contains(pkgName))
-							pkgNames.add(pkgName);
-					}
+					String className = completeClassName.substring(0, completeClassName.lastIndexOf('.'));
+					classNames.add(className);
 
-					String className = completeClassName.substring(0, completeClassName.length() - 6);
 					// get counts
 					try {
 						Class<?> c = Class.forName(className, false, child);
@@ -133,8 +125,8 @@ public class JarUtility {
 		} catch (Exception e) {
 			System.out.println("Error while parsing jar" + e.toString());
 		}
-		//deleteDirectory(destDir);
-		return new ArrayList<Object>(Arrays.asList(count, String.join(":", pkgNames)));
+		deleteDirectory(destDir);
+		return new ArrayList<Object>(Arrays.asList(count, String.join(":", classNames)));
 	}
 
 	public static void unzip(String zipFilePath, String destDirectory) throws IOException, FileNotFoundException {

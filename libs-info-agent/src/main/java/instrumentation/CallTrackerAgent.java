@@ -1,6 +1,8 @@
 package instrumentation;
 
 import java.lang.instrument.Instrumentation;
+import java.util.List;
+import java.util.Map;
 
 import db.DatabaseConnector;
 
@@ -11,8 +13,6 @@ import db.DatabaseConnector;
  */
 public class CallTrackerAgent {
 	public static void premain(String agentArgs, Instrumentation inst) {
-        System.out.println("Start!");
-        System.out.println(inst.getAllLoadedClasses().toString());
         inst.addTransformer(new CallTrackerTransformer());
     }
 }
