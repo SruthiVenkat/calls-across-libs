@@ -36,7 +36,7 @@ public class DependentTestRunner {
 		// connect to database and create the required procedures
 		DatabaseConnector connector = DatabaseConnector.buildDatabaseConnector();
 		connector.connect();
-		connector.createSQLProcForAPIProportionCalled();
+		connector.createSQLProcForAPIProportionCalled(); 
 		connector.createSQLProcForJaccardSimilarity();
 		connector.createSQLProcForFetchingCallsToALibrary();
 		

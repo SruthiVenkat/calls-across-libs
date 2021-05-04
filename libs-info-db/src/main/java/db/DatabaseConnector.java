@@ -21,7 +21,7 @@ import java.util.Map;
  * create database testdb;
  * 
  * create table caller_callee_count (id SERIAL PRIMARY
- * KEY, caller_method_id int, callee_method_id int,count int, FOREIGN KEY
+ * KEY, caller_method_id int, callee_method_id int, static_count int, dynamic_count int, FOREIGN KEY
  * (caller_method_id) REFERENCES all_methods(id) ON DELETE CASCADE, FOREIGN KEY
  * (callee_method_id) REFERENCES all_methods(id) ON DELETE CASCADE);
  * 
@@ -55,6 +55,7 @@ public class DatabaseConnector {
 	 * @return a Connection object
 	 */
 	public void connect() {
+		System.out.println("connecting------------------------");		
 		try {
 			conn = DriverManager.getConnection(url, user, password);
 		} catch(SQLException e) {
@@ -90,7 +91,7 @@ public class DatabaseConnector {
 		} catch (SQLException ex) {
 			System.out.println(ex);
 		}
-		String SQL4 = "create table if not exists caller_callee_count (id SERIAL PRIMARY KEY, caller_method_id int, callee_method_id int,count int, FOREIGN KEY (caller_method_id) REFERENCES all_methods(id) ON DELETE CASCADE, FOREIGN KEY (callee_method_id) REFERENCES all_methods(id) ON DELETE CASCADE);";
+		String SQL4 = "create table if not exists caller_callee_count (id SERIAL PRIMARY KEY, caller_method_id int, callee_method_id int, static_count int, dynamic_count int, FOREIGN KEY (caller_method_id) REFERENCES all_methods(id) ON DELETE CASCADE, FOREIGN KEY (callee_method_id) REFERENCES all_methods(id) ON DELETE CASCADE);";
 		try (PreparedStatement pstmt = conn.prepareStatement(SQL4)) {
 			pstmt.executeUpdate();
 		} catch (SQLException ex) {
@@ -353,9 +354,27 @@ public class DatabaseConnector {
 		return id;
 	}
 
-	public int getCountFromCallerCalleeCountTable(long callerMethodId, long calleeMethodId) {
-		String SQL = "SELECT count from caller_callee_count where caller_method_id = ? and callee_method_id = ?;";
-		int id = 0;
+	public int getStaticCountFromCallerCalleeCountTable(long callerMethodId, long calleeMethodId) {
+		String SQL = "SELECT static_count from caller_callee_count where caller_method_id = ? and callee_method_id = ?;";
+		int id = -1;
+
+		try (PreparedStatement pstmt = conn.prepareStatement(SQL)) {
+
+			pstmt.setLong(1, callerMethodId);
+			pstmt.setLong(2, calleeMethodId);
+			ResultSet rs = pstmt.executeQuery();
+			if (rs.next()) {
+				id = rs.getInt(1);
+			}
+		} catch (SQLException ex) {
+			System.out.println(ex);
+		}
+		return id;
+	}
+	
+	public int getDynamicCountFromCallerCalleeCountTable(long callerMethodId, long calleeMethodId) {
+		String SQL = "SELECT dynamic_count from caller_callee_count where caller_method_id = ? and callee_method_id = ?;";
+		int id = -1;
 
 		try (PreparedStatement pstmt = conn.prepareStatement(SQL)) {
 
@@ -372,7 +391,8 @@ public class DatabaseConnector {
 	}
 
 	public long updateCountInCallerCalleeCountTable(String callerMethod, String callerLibrary, String calleeMethod, String calleeLibrary,
-			int count) {
+			int static_count, int dynamic_count) {
+		//System.out.println("starting to insert---------"+callerMethod+","+callerLibrary+"-----"+calleeMethod+","+calleeLibrary);		
 		long callerId = getMethodFromAllMethodsTable(callerMethod, callerLibrary);
 		if (callerId == 0) {
 			callerId = insertMethodIntoAllMethodsTable(callerMethod, callerLibrary);
@@ -382,16 +402,20 @@ public class DatabaseConnector {
 			calleeId = insertMethodIntoAllMethodsTable(calleeMethod, calleeLibrary);
 		}
 
-		int countFromDb = getCountFromCallerCalleeCountTable(callerId, calleeId);
-		if (countFromDb == 0) {
-			String SQL = "INSERT INTO caller_callee_count(caller_method_id,callee_method_id,count) "
-					+ "VALUES(?,?,?);";
+		int staticCountFromDb = getStaticCountFromCallerCalleeCountTable(callerId, calleeId);
+		int dynamicCountFromDb = getDynamicCountFromCallerCalleeCountTable(callerId, calleeId);
+
+		if (staticCountFromDb == -1 && dynamicCountFromDb == -1) {
+			String SQL = "INSERT INTO caller_callee_count(caller_method_id,callee_method_id,static_count,dynamic_count) "
+					+ "VALUES(?,?,?,?);";
 
 			long id = 0;
 			try (PreparedStatement pstmt = conn.prepareStatement(SQL, Statement.RETURN_GENERATED_KEYS)) {
 				pstmt.setLong(1, callerId);
 				pstmt.setLong(2, calleeId);
-				pstmt.setInt(3, count);
+				pstmt.setInt(3, static_count);
+				pstmt.setInt(4, dynamic_count);
+
 				int affectedRows = pstmt.executeUpdate();
 				if (affectedRows > 0) {
 					try (ResultSet rs = pstmt.getGeneratedKeys()) {
@@ -407,14 +431,16 @@ public class DatabaseConnector {
 			} catch (SQLException ex) {
 				System.out.println(ex);
 			}
+			//System.out.println("end of insert------------------------");		
 			return id;
 		} else {
-			String SQL = "UPDATE caller_callee_count SET count = ? where caller_method_id = ? and callee_method_id = ?;";
+			String SQL = "UPDATE caller_callee_count SET static_count = ?, dynamic_count = ? where caller_method_id = ? and callee_method_id = ?;";
 			long id = 0;
 			try (PreparedStatement pstmt = conn.prepareStatement(SQL, Statement.RETURN_GENERATED_KEYS)) {
-				pstmt.setInt(1, count + countFromDb);
-				pstmt.setLong(2, callerId);
-				pstmt.setLong(3, calleeId);
+				pstmt.setInt(1, static_count + staticCountFromDb);
+				pstmt.setInt(2, dynamic_count + dynamicCountFromDb);
+				pstmt.setLong(3, callerId);
+				pstmt.setLong(4, calleeId);
 				int affectedRows = pstmt.executeUpdate();
 				if (affectedRows > 0) {
 					try (ResultSet rs = pstmt.getGeneratedKeys()) {
@@ -430,6 +456,7 @@ public class DatabaseConnector {
 			} catch (SQLException ex) {
 				System.out.println(ex);
 			}
+			//System.out.println("end of insert------------------------");		
 			return id;
 		}
 	}

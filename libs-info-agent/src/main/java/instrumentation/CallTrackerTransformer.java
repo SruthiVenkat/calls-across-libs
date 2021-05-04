@@ -25,8 +25,11 @@ import javassist.expr.MethodCall;
 
 public class CallTrackerTransformer implements ClassFileTransformer {
 	public static Map<String, List<String>> libsToClasses = new HashMap<String, List<String>>();
+	public static List<String> visitedCallerMethods = new ArrayList<String>();
+	public static List<String> visitedClasses = new ArrayList<String>();
+
+	public static String codeToAdd = "";
 	public static DatabaseConnector connector;
-	public static boolean addedConnectorFieldToClass;
 
 	public CallTrackerTransformer() {
 		connector = DatabaseConnector.buildDatabaseConnector();
@@ -42,15 +45,23 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 			ClassPool classPool = ClassPool.getDefault();
 			CtClass ctClass = classPool.makeClass(new ByteArrayInputStream(
 					classfileBuffer));
-			addedConnectorFieldToClass = false;
-			System.out.println("------>"+ctClass.getName());
+			String methodCallerClassName = ctClass.getName();
+			if (methodCallerClassName.startsWith("java.") || methodCallerClassName.startsWith("javax.")
+					|| methodCallerClassName.startsWith("sun.") || methodCallerClassName.startsWith("jdk.")) {
+				// ignore Java internal classes
+				return null;
+			}
+
+			//System.out.println("------>"+methodCallerClassName+"--"+visitedCallerMethods.toString()+visitedClasses.toString());
+			visitedClasses.add(methodCallerClassName);
 			CtMethod[] methods = ctClass.getDeclaredMethods();
 			for (CtMethod method : methods) {
-				if (!isNative(method) && !isAbstract(method)) {
-					System.out.println("Checking method - "+method.getName());
+				if (!isNative(method) && !isAbstract(method) && !visitedCallerMethods.contains(method.getLongName())) {
+					visitedCallerMethods.add(method.getLongName());
+					//System.out.println("Checking method - "+method.getLongName());
+					codeToAdd = "";
 					Entry<String, List<String>> unknownEntry = new AbstractMap.SimpleEntry<String, List<String>>("unknownLib", new ArrayList<String>());
 					String callingMethodName = method.getName();
-					String methodCallerClassName = method.getDeclaringClass().getName();
 					String callingMethodLibNameTmp = "";
 					try {
 						callingMethodLibNameTmp = libsToClasses.entrySet().stream()
@@ -59,6 +70,7 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 					} catch (NullPointerException e) {
 						e.printStackTrace();
 					}
+
 					final String callingMethodLibName = callingMethodLibNameTmp;
 					method.instrument(
 					        new ExprEditor() {
@@ -68,35 +80,39 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 					            	String methodCalledClassName = m.getClassName();
 									String calledMethodLibName = "";
 									
-					                System.out.println(callingMethodName+" -- "+calledMethodName);
-
-					                //m.replace("System.out.println(\"oooolalalalalala"+calledMethodName+"\"); $_ = $proceed($$);");
-									
-									try {
-										calledMethodLibName = libsToClasses.entrySet().stream()
-										.filter(map -> map.getValue().contains(methodCalledClassName))
-										.findAny().orElse(unknownEntry).getKey();
-									} catch (NullPointerException e) {
-										e.printStackTrace();
-									}
-
-									if (!callingMethodLibName.equals(calledMethodLibName)) {
-										/*if (!addedConnectorFieldToClass) {
-											ctClass.addField(CtField.make("public static db.DatabaseConnector connector;", ctClass));
-											for (CtConstructor constructor : ctClass.getConstructors()) {
-												System.out.println("constructor "+constructor.getName());
-												//constructor.insertAfter("connector = db.DatabaseConnector.buildDatabaseConnector();\n" + 
-													//	"		connector.connect();");
+									if (!methodCalledClassName.startsWith("java.") && !methodCalledClassName.startsWith("javax.")
+											&& !methodCalledClassName.startsWith("sun.")) // ignore Java internal classes
+									{
+						                //System.out.println(callingMethodName+" -- "+calledMethodName);
+										
+										try {
+											calledMethodLibName = libsToClasses.entrySet().stream()
+											.filter(map -> map.getValue().contains(methodCalledClassName))
+											.findAny().orElse(unknownEntry).getKey();
+										} catch (NullPointerException e) {
+											e.printStackTrace();
+										}
+										
+										try {	
+											String instrMethod = m.getMethod().getLongName();
+											if (!callingMethodLibName.equals(unknownEntry.getKey()) && !callingMethodLibName.equals(calledMethodLibName)) {
+												// static
+												connector.updateCountInCallerCalleeCountTable(methodCallerClassName+"::"+callingMethodName, callingMethodLibName,
+														methodCalledClassName+"::"+calledMethodName, calledMethodLibName, 1, 0);
+												
+												// dynamic
+												codeToAdd += "instrumentation.CallTrackerTransformer.connector.updateCountInCallerCalleeCountTable(\""+methodCallerClassName+"::"+callingMethodName+"\",\""+
+													callingMethodLibName+"\", \""+methodCalledClassName+"::"+calledMethodName+"\", \""+
+													calledMethodLibName+"\", 0, 1);";
 											}
-											addedConnectorFieldToClass = true;
-										}*/
-
-										m.replace("instrumentation.CallTrackerTransformer.connector.updateCountInCallerCalleeCountTable(\""+methodCallerClassName+"::"+callingMethodName+"\",\""+
-												callingMethodLibName+"\", \""+methodCalledClassName+"::"+calledMethodName+"\", \""+
-												calledMethodLibName+"\", 1); $_ = $proceed($$);");
+										} catch (Exception e) {
+											System.out.println(e);
+										}
 									}
 					            }
 					        });
+					System.out.println(codeToAdd);
+					method.insertBefore(codeToAdd);	
 				}
 			}
 			byteCode = ctClass.toBytecode();
