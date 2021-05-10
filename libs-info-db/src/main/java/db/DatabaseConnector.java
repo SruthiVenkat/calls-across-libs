@@ -15,7 +15,7 @@ import java.util.Map;
 
 /**
  * 
- * DB - librarycallsdb_new
+ * DB - testdb
  * Tables - caller_callee_count, all_methods
  * 
  * create database testdb;
@@ -34,7 +34,7 @@ import java.util.Map;
 public class DatabaseConnector {
 	private static DatabaseConnector dc;
 	private static Connection conn;
-	private final String url = "jdbc:postgresql://localhost/librarycallsdb_new";
+	private final String url = "jdbc:postgresql://localhost/testdb";
 	private final String user = "postgres";
 	private final String password = "password";
 
@@ -45,7 +45,7 @@ public class DatabaseConnector {
 	public static DatabaseConnector buildDatabaseConnector() {
 		if (dc == null) {
 			dc = new DatabaseConnector();
-			System.out.println("called");		
+			System.out.println("Database builder called");		
 		}
 		return dc;
 	}
@@ -55,7 +55,7 @@ public class DatabaseConnector {
 	 * @return a Connection object
 	 */
 	public void connect() {
-		System.out.println("connecting------------------------");		
+		System.out.println("connecting to database------------------------");		
 		try {
 			conn = DriverManager.getConnection(url, user, password);
 		} catch(SQLException e) {
@@ -69,12 +69,12 @@ public class DatabaseConnector {
 		} catch(SQLException e) {
 			System.out.println(e);		
 		}
-		String SQL1 = "CREATE DATABASE librarycallsdb_new;";
+		String SQL1 = "CREATE DATABASE testdb;";
 		try (PreparedStatement pstmt = conn.prepareStatement(SQL1)) {
 			pstmt.executeUpdate();
 		} catch (SQLException ex) {
 			if (ex.getSQLState().equals("42P04"))
-				System.out.println("Using the librarycallsdb_new database");
+				System.out.println("Using the testdb database");
 			else
 				System.out.println(ex);
 		}
@@ -98,7 +98,23 @@ public class DatabaseConnector {
 			System.out.println(ex);
 		}
 	}
-	
+
+	public boolean isLibPresentInLibsInfoTable(String library) {
+		String SQL = "SELECT library_name from libs_info where library_name like ?;";
+		String libName = "";
+
+		try (PreparedStatement pstmt = conn.prepareStatement(SQL)) {
+			pstmt.setString(1, library);
+			ResultSet rs = pstmt.executeQuery();
+			if (rs.next()) {
+				libName = rs.getString(1);
+			}
+		} catch (SQLException ex) {
+			System.out.println(ex);
+		}
+		return libName.isEmpty() ? false : true;	
+	}
+
 	public void addToLibsInfoTable(Map<String, ArrayList<Object>> libsAndTotalCountsAndClasses) {
 		String SQL1 = "INSERT INTO libs_info(library_name,total_count,classes) " + "VALUES(?,?,?);";
 		for (String libName: libsAndTotalCountsAndClasses.keySet()) {
@@ -434,6 +450,8 @@ public class DatabaseConnector {
 			//System.out.println("end of insert------------------------");		
 			return id;
 		} else {
+			if (staticCountFromDb == -1) staticCountFromDb = 0;
+			if (dynamicCountFromDb == -1) dynamicCountFromDb = 0;
 			String SQL = "UPDATE caller_callee_count SET static_count = ?, dynamic_count = ? where caller_method_id = ? and callee_method_id = ?;";
 			long id = 0;
 			try (PreparedStatement pstmt = conn.prepareStatement(SQL, Statement.RETURN_GENERATED_KEYS)) {
@@ -460,27 +478,4 @@ public class DatabaseConnector {
 			return id;
 		}
 	}
-	
-	/*public List<String> getListOfExcludedMethods() {
-		List<String> excludeMethods = new ArrayList<String>();
-		// get list of methods to be excluded
-		JSONParser jsonParser = new JSONParser();
-		int index = new File(".").getAbsolutePath().indexOf("inter-library-calls");
-		if (index == -1)
-			return excludeMethods;
-		String filePath = new File(".").getAbsolutePath().substring(0, index)+File.separator
-				+"inter-library-calls"+File.separator+"projects"+File.separator+"exclude-methods.json";
-        try (FileReader reader = new FileReader(filePath))
-        {
-            Object obj = jsonParser.parse(reader);
-            JSONArray excludeMethodsArr = (JSONArray) obj;
-            Iterator<String> iterator = excludeMethodsArr.iterator();
-            while (iterator.hasNext()) {
-            	excludeMethods.add((String)iterator.next());
-            }
-        } catch (Exception e) {
-			System.out.println("Error while reading file with methods to be excluded" + e.toString());		
-		}				
-		return excludeMethods;
-	}*/
 }

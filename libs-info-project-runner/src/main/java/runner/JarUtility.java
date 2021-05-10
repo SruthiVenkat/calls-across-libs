@@ -33,7 +33,8 @@ public class JarUtility {
 	
 	public static void initLibsToCountsAndClasses(DatabaseConnector connector) {
 		Map<String, ArrayList<Object>> libsToCountsAndClasses = new HashMap<String, ArrayList<Object>>();
-		libsToCountsAndClasses.put("unknownLib", new ArrayList<Object>(Arrays.asList(0, "")));
+		if (!connector.isLibPresentInLibsInfoTable("unknownLib"))
+			libsToCountsAndClasses.put("unknownLib", new ArrayList<Object>(Arrays.asList(0, "")));
 		// get wars and jars for projects, initialize counts and packages
 		JSONParser jsonParser = new JSONParser();
         try (FileReader reader = new FileReader(new File(".").getAbsolutePath()+File.separator
@@ -44,15 +45,17 @@ public class JarUtility {
             Iterator<JSONObject> iterator = projects.iterator();
             while (iterator.hasNext()) {
             	JSONObject projectObject = (JSONObject)iterator.next();
-            	String generatedWarJarName = new File(".").getAbsolutePath()+File.separator
-        				+"projects"+File.separator+projectObject.get("folderName")+File.separator
-        				+"target"+File.separator+projectObject.get("generatedWarJarName");
-            	String tmpFolder = new File(".").getAbsolutePath()+File.separator
-        				+"projects"+File.separator+projectObject.get("folderName")
-        				+File.separator+"tmp";
-            	libsToCountsAndClasses.put((String)projectObject.get("libName"), 
-            			getPublicProtectedMethodsCountAndClasses(generatedWarJarName+".war", 
-            					generatedWarJarName+".jar", tmpFolder));
+            	if (!connector.isLibPresentInLibsInfoTable(""+projectObject.get("libName"))) {
+	            	String generatedWarJarName = new File(".").getAbsolutePath()+File.separator
+	        				+"projects"+File.separator+projectObject.get("folderName")+File.separator
+	        				+"target"+File.separator+projectObject.get("generatedWarJarName");
+	            	String tmpFolder = new File(".").getAbsolutePath()+File.separator
+	        				+"projects"+File.separator+projectObject.get("folderName")
+	        				+File.separator+"tmp";
+	            	libsToCountsAndClasses.put((String)projectObject.get("libName"), 
+	            			getPublicProtectedMethodsCountAndClasses(generatedWarJarName+".war", 
+	            					generatedWarJarName+".jar", tmpFolder));
+            	}
 
             }
         } catch (Exception e) {

@@ -31,6 +31,7 @@ public class DependentTestRunner {
 	public static final String agentPath = "/home/vishal/Documents/Waterloo/PL/calls-across-libs/libs-info-agent/target/libs-info-agent-1.0-SNAPSHOT.jar";
 	public static final String javassistJarPath = "/home/vishal/.m2/repository/org/javassist/javassist/3.27.0-GA/javassist-3.27.0-GA.jar";
 	public static final String dbPath = "/home/vishal/Documents/Waterloo/PL/calls-across-libs/libs-info-db/target/libs-info-db-1.0-SNAPSHOT.jar";
+	public static final String postgresJarPath = "/home/vishal/.m2/repository/org/postgresql/postgresql/42.2.14/postgresql-42.2.14.jar";
 
 	public static void main(String[] args) {
 		// connect to database and create the required procedures
@@ -51,8 +52,8 @@ public class DependentTestRunner {
             Iterator<JSONObject> iterator = projects.iterator();
             while (iterator.hasNext()) {
             	JSONObject projectObject = (JSONObject)iterator.next();
-            	pomList.add(new File(".").getAbsolutePath()+File.separator
-        				+"projects"+File.separator+projectObject.get("folderName")+File.separator+"pom.xml");
+            	if (!connector.isLibPresentInLibsInfoTable(""+projectObject.get("libName")))
+            		pomList.add(new File(".").getAbsolutePath()+File.separator+"projects"+File.separator+projectObject.get("folderName")+File.separator+"pom.xml");
             }
         } catch (Exception e) {
 			System.out.println("Error while reading file with project list" + e.toString());		
@@ -70,8 +71,13 @@ public class DependentTestRunner {
 		JarUtility.initLibsToCountsAndClasses(connector);
 		
 		// run unit tests to get data
-		for (String pomFilePath: pomList)
+		for (String pomFilePath: pomList) {
+			for (String othersPomFilePath: pomList) {
+				if (!pomFilePath.equals(othersPomFilePath))
+					mvnInstallProjects(new File(othersPomFilePath), true);
+			}
 			runProjectUnitTests(new File(pomFilePath));
+		}
 	}
 	
 	public static void writeXMLToProjectPOM(File xmlFile, Boolean packageAsWar) {
@@ -134,7 +140,7 @@ public class DependentTestRunner {
 
 			Element dependencies = rootNode.getChild("dependencies", rootNode.getNamespace());
 			if (dependencies == null) {
-				dependencies = new Element("dependencies");
+				dependencies = new Element("dependencies", rootNode.getNamespace());
 				rootNode.addContent(dependencies);
 			}
 			if (!checkIfDependencyExistsInProjectPOM(dependencies, rootNode, "org.postgresql", "postgresql")) {

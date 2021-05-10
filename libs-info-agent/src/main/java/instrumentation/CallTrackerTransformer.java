@@ -52,13 +52,13 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 				return null;
 			}
 
-			//System.out.println("------>"+methodCallerClassName+"--"+visitedCallerMethods.toString()+visitedClasses.toString());
+			System.out.println("------>"+methodCallerClassName);
 			visitedClasses.add(methodCallerClassName);
 			CtMethod[] methods = ctClass.getDeclaredMethods();
 			for (CtMethod method : methods) {
 				if (!isNative(method) && !isAbstract(method) && !visitedCallerMethods.contains(method.getLongName())) {
 					visitedCallerMethods.add(method.getLongName());
-					//System.out.println("Checking method - "+method.getLongName());
+					System.out.println("Checking method - "+method.getLongName());
 					codeToAdd = "";
 					Entry<String, List<String>> unknownEntry = new AbstractMap.SimpleEntry<String, List<String>>("unknownLib", new ArrayList<String>());
 					String callingMethodName = method.getName();
@@ -111,13 +111,12 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 									}
 					            }
 					        });
-					System.out.println(codeToAdd);
+					//System.out.println(codeToAdd);
 					method.insertBefore(codeToAdd);	
 				}
 			}
 			byteCode = ctClass.toBytecode();
 			ctClass.detach();
-			System.out.println("Instrumentation complete.");
 		} catch (Throwable ex) {
 			System.out.println("Exception: " + ex);
 			ex.printStackTrace();

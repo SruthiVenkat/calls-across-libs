@@ -246,6 +246,6 @@
       <timezone>+11</timezone>
     </developer>
   </developers>
-  <packaging>war</packaging>
+  <packaging>jar</packaging>
 </project>
 
