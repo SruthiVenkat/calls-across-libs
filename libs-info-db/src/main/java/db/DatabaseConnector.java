@@ -15,10 +15,10 @@ import java.util.Map;
 
 /**
  * 
- * DB - testdb
+ * DB - testdb3
  * Tables - caller_callee_count, all_methods
  * 
- * create database testdb;
+ * create database testdb3;
  * 
  * create table caller_callee_count (id SERIAL PRIMARY
  * KEY, caller_method_id int, callee_method_id int, static_count int, dynamic_count int, FOREIGN KEY
@@ -34,7 +34,7 @@ import java.util.Map;
 public class DatabaseConnector {
 	private static DatabaseConnector dc;
 	private static Connection conn;
-	private final String url = "jdbc:postgresql://localhost/testdb";
+	private final String url = "jdbc:postgresql://localhost/testdb3";
 	private final String user = "postgres";
 	private final String password = "password";
 
@@ -69,12 +69,12 @@ public class DatabaseConnector {
 		} catch(SQLException e) {
 			System.out.println(e);		
 		}
-		String SQL1 = "CREATE DATABASE testdb;";
+		String SQL1 = "CREATE DATABASE testdb3;";
 		try (PreparedStatement pstmt = conn.prepareStatement(SQL1)) {
 			pstmt.executeUpdate();
 		} catch (SQLException ex) {
 			if (ex.getSQLState().equals("42P04"))
-				System.out.println("Using the testdb database");
+				System.out.println("Using the testdb3 database");
 			else
 				System.out.println(ex);
 		}

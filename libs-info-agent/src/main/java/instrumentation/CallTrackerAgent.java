@@ -15,4 +15,7 @@ public class CallTrackerAgent {
 	public static void premain(String agentArgs, Instrumentation inst) {
         inst.addTransformer(new CallTrackerTransformer());
     }
+	public static void agentmain(String agentArgs, Instrumentation inst) {
+        inst.addTransformer(new CallTrackerTransformer());
+    }
 }

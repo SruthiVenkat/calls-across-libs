@@ -72,10 +72,6 @@ public class DependentTestRunner {
 		
 		// run unit tests to get data
 		for (String pomFilePath: pomList) {
-			for (String othersPomFilePath: pomList) {
-				if (!pomFilePath.equals(othersPomFilePath))
-					mvnInstallProjects(new File(othersPomFilePath), true);
-			}
 			runProjectUnitTests(new File(pomFilePath));
 		}
 	}
