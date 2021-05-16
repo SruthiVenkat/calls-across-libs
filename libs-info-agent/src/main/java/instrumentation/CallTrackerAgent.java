@@ -14,6 +14,14 @@ import db.DatabaseConnector;
 public class CallTrackerAgent {
 	public static void premain(String agentArgs, Instrumentation inst) {
         inst.addTransformer(new CallTrackerTransformer());
+        
+        Runtime.getRuntime().addShutdownHook(new Thread()
+        {
+          public void run()
+          {
+            System.out.println("Shutdown Hook is running !");
+          }
+        });
     }
 	public static void agentmain(String agentArgs, Instrumentation inst) {
         inst.addTransformer(new CallTrackerTransformer());

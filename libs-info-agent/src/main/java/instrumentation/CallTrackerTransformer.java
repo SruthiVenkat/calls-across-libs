@@ -7,6 +7,7 @@ import java.lang.reflect.Method;
 import java.security.ProtectionDomain;
 import java.util.AbstractMap;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -47,14 +48,17 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 			if (methodCallerClassName.startsWith("java.") || methodCallerClassName.startsWith("javax.")
 					|| methodCallerClassName.startsWith("sun.") || methodCallerClassName.startsWith("jdk.")) {
 				// ignore Java internal classes
-				return null;
+				byteCode = ctClass.toBytecode();
+				ctClass.detach();
+				return byteCode;
 			}
 
 			System.out.println("------>"+methodCallerClassName);
 			visitedClasses.add(methodCallerClassName);
 			CtMethod[] methods = ctClass.getDeclaredMethods();
 			for (CtMethod method : methods) {
-				if (!isNative(method) && !isAbstract(method) && !visitedCallerMethods.contains(method.getLongName())) {
+				if (!isNative(method) && !isAbstract(method) && !visitedCallerMethods.contains(method.getLongName())
+						&& !isUnitTestMethod(method)) {
 					visitedCallerMethods.add(method.getLongName());
 					//System.out.println("Checking method - "+method.getLongName());
 					Entry<String, List<String>> unknownEntry = new AbstractMap.SimpleEntry<String, List<String>>("unknownLib", new ArrayList<String>());
@@ -73,7 +77,12 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 					        new ExprEditor() {
 					            public void edit(MethodCall m) throws CannotCompileException
 					            {
-									String calledMethodName = m.getMethodName();
+					            	try {
+					            		if (isUnitTestMethod(m.getMethod()))
+					            			return;
+					            	} catch (Exception e) {}
+
+					            	String calledMethodName = m.getMethodName();
 					            	String methodCalledClassName = m.getClassName();
 									String calledMethodLibName = "";
 
@@ -130,6 +139,11 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 	
 	public static boolean isAbstract(CtMethod method) {
 		return Modifier.isAbstract(method.getModifiers());
+	}
+	
+	public static boolean isUnitTestMethod(CtMethod method) {
+		Object[] methodAnnotations = method.getAvailableAnnotations();
+		return Arrays.stream(methodAnnotations).map(Object::toString).anyMatch("@org.junit.Test"::equals);
 	}
 	
 	public static boolean isStatic(String methodCalledClassName, String calledMethodName) {
