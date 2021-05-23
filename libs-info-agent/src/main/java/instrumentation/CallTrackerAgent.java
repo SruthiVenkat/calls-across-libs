@@ -19,7 +19,11 @@ public class CallTrackerAgent {
         {
           public void run()
           {
-            System.out.println("Shutdown Hook is running !");
+            System.out.println("Adding results to DB");
+            for (InterLibraryCounts ilc: CallTrackerTransformer.interLibraryCounts) {
+            	CallTrackerTransformer.connector.updateCountInCallerCalleeCountTable(ilc.callerMethodString, ilc.callerMethodLibString, ilc.calleeMethodString,
+            			ilc.calleeMethodLibString, ilc.staticCount, ilc.dynamicCount);
+            }
           }
         });
     }

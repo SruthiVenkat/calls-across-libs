@@ -19,38 +19,6 @@
           <argLine>-Xbootclasspath/p:"/home/vishal/.m2/repository/org/javassist/javassist/3.27.0-GA/javassist-3.27.0-GA.jar":"/home/vishal/Documents/Waterloo/PL/calls-across-libs/libs-info-db/target/libs-info-db-1.0-SNAPSHOT.jar" -javaagent:"/home/vishal/Documents/Waterloo/PL/calls-across-libs/libs-info-agent/target/libs-info-agent-1.0-SNAPSHOT.jar"</argLine>
         </configuration>
       </plugin>
-      <!--<plugin>
-		<groupId>org.codehaus.mojo</groupId>
-		<artifactId>aspectj-maven-plugin</artifactId>
-		<version>1.9</version>
-		<configuration>
-		  <complianceLevel>1.8</complianceLevel>
-		  <excludes>
-		    <exclude>**/*.java</exclude>
-		  </excludes>
-		  <forceAjcCompile>true</forceAjcCompile>
-		  <sources />
-		  <aspectLibraries>
-		    <aspectLibrary>
-		      <groupId>ca.waterloo.pl</groupId>
-		      <artifactId>inter-library-calls</artifactId>
-		    </aspectLibrary>
-		  </aspectLibraries>
-		</configuration>
-		<executions>
-		  <execution>
-		    <phase>process-classes</phase>
-		    <goals>
-		      <goal>compile</goal>
-		    </goals>
-		    <configuration>
-		      <weaveDirectories>
-		        <weaveDirectory>${project.build.directory}/classes</weaveDirectory>
-		      </weaveDirectories>
-		    </configuration>
-		  </execution>
-		</executions>
-	      </plugin>-->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-war-plugin</artifactId>
@@ -71,21 +39,6 @@
       <artifactId>postgresql</artifactId>
       <version>42.2.14</version>
     </dependency>
-    <!--<dependency>
-      <groupId>ca.waterloo.pl</groupId>
-      <artifactId>inter-library-calls</artifactId>
-      <version>1.0-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-      <groupId>org.aspectj</groupId>
-      <artifactId>aspectjweaver</artifactId>
-      <version>1.9.2</version>
-    </dependency>
-    <dependency>
-      <groupId>org.aspectj</groupId>
-      <artifactId>aspectjrt</artifactId>
-      <version>1.8.9</version>
-    </dependency>-->
   </dependencies>
   <packaging>war</packaging>
 </project>

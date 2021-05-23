@@ -41,13 +41,13 @@ public class W3CDom {
         try {
         	//set the factory to be namespace-aware
         	factory.setNamespaceAware(true);
-            builder = factory.newDocumentBuilder();
-            Document out = builder.newDocument();
-            convert(in, out);
+           	builder = factory.newDocumentBuilder();
+            	Document out = builder.newDocument();
+            	convert(in, out);
             return out;
-        } catch (ParserConfigurationException e) {
-            throw new IllegalStateException(e);
-        }
+      } catch (ParserConfigurationException e) {
+           throw new IllegalStateException(e);
+       }
     }
 
     /**

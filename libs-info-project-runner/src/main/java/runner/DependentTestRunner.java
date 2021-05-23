@@ -42,7 +42,7 @@ public class DependentTestRunner {
 		connector.createSQLProcForFetchingCallsToALibrary();
 		
 		// get poms for projects
-		List<String> pomList = new ArrayList<>();
+		List<File> pomList = new ArrayList<>();
 		JSONParser jsonParser = new JSONParser();
         try (FileReader reader = new FileReader(new File(".").getAbsolutePath()+File.separator
 				+"projects"+File.separator+"projects-list.json"))
@@ -52,31 +52,29 @@ public class DependentTestRunner {
             Iterator<JSONObject> iterator = projects.iterator();
             while (iterator.hasNext()) {
             	JSONObject projectObject = (JSONObject)iterator.next();
-            	if (!connector.isLibPresentInLibsInfoTable(""+projectObject.get("libName")))
-            		pomList.add(new File(".").getAbsolutePath()+File.separator+"projects"+File.separator+projectObject.get("folderName")+File.separator+"pom.xml");
+            	File pomFile = new File(new File(".").getAbsolutePath()+File.separator+"projects"+File.separator+projectObject.get("folderName")+File.separator+"pom.xml");
+            	if (!connector.isLibPresentInLibsInfoTable(""+projectObject.get("libName"))) {
+            		writeXMLToProjectPOM(pomFile, false, true);
+        			mvnInstallProjects(pomFile, true); // generate jars
+        			writeXMLToProjectPOM(pomFile, true, false);
+        			mvnInstallProjects(pomFile, false); // generate wars
+            	}
+            	pomList.add(pomFile);
             }
         } catch (Exception e) {
 			System.out.println("Error while reading file with project list" + e.toString());		
-		}
-
-		for (String pomFilePath: pomList) {
-			File pomFile = new File(pomFilePath);
-			writeXMLToProjectPOM(pomFile, false);
-			mvnInstallProjects(pomFile, true); // generate jars
-			writeXMLToProjectPOM(pomFile, true);
-			mvnInstallProjects(pomFile, false); // generate wars
 		}
 		
 		// get total API counts for projects and packages in each project
 		JarUtility.initLibsToCountsAndClasses(connector);
 		
 		// run unit tests to get data
-		for (String pomFilePath: pomList) {
-			runProjectUnitTests(new File(pomFilePath));
+		for (File pomFilePath: pomList) {
+			runProjectUnitTests(pomFilePath);
 		}
 	}
 	
-	public static void writeXMLToProjectPOM(File xmlFile, Boolean packageAsWar) {
+	public static void writeXMLToProjectPOM(File xmlFile, Boolean packageAsWar, Boolean addPluginsDeps) {
 		SAXBuilder builder = new SAXBuilder();
 		Document doc;
 		try {
@@ -91,66 +89,89 @@ public class DependentTestRunner {
 			String packagingString = packageAsWar == true ? "war" : "jar";
 			Element packaging = new Element("packaging", rootNode.getNamespace()).setText(packagingString);
 			rootNode.addContent(packaging);
-			Element buildFromXML = rootNode.getChild("build", rootNode.getNamespace());
-			if (buildFromXML == null) {
-				Element newBuild = new Element("build", rootNode.getNamespace());
-				rootNode.addContent(newBuild);
-				buildFromXML = newBuild;
+			if (addPluginsDeps) {
+				Element buildFromXML = rootNode.getChild("build", rootNode.getNamespace());
+				if (buildFromXML == null) {
+					Element newBuild = new Element("build", rootNode.getNamespace());
+					rootNode.addContent(newBuild);
+					buildFromXML = newBuild;
+				}
+				Element pluginsElement = buildFromXML.getChild("plugins", rootNode.getNamespace());
+				if (pluginsElement == null) {
+					Element pluginsToAdd = new Element("plugins", rootNode.getNamespace());
+					buildFromXML.addContent(pluginsToAdd);
+					pluginsElement = pluginsToAdd;
+				}
+				if (!checkIfPluginExistsInProjectPOM(pluginsElement, rootNode, "org.apache.maven.plugins",
+						"maven-war-plugin")) {
+					Element pluginToAdd = new Element("plugin", rootNode.getNamespace());
+					pluginToAdd.addContent(
+							new Element("groupId", rootNode.getNamespace()).setText("org.apache.maven.plugins"));
+					pluginToAdd.addContent(new Element("artifactId", rootNode.getNamespace()).setText("maven-war-plugin"));
+	
+					Element configurationToAdd = new Element("configuration", rootNode.getNamespace());
+					configurationToAdd
+							.addContent(new Element("failOnMissingWebXml", rootNode.getNamespace()).setText("false"));
+					pluginToAdd.addContent(configurationToAdd);
+	
+					pluginsElement.addContent(pluginToAdd);
+				} else {
+					
+				}
+				if (!checkIfPluginExistsInProjectPOM(pluginsElement, rootNode, "org.apache.maven.plugins",
+						"maven-surefire-plugin")) {
+					Element pluginToAdd = new Element("plugin", rootNode.getNamespace());
+					pluginToAdd.addContent(
+							new Element("groupId", rootNode.getNamespace()).setText("org.apache.maven.plugins"));
+					pluginToAdd.addContent(new Element("artifactId", rootNode.getNamespace()).setText("maven-surefire-plugin"));
+					pluginToAdd.addContent(new Element("version", rootNode.getNamespace()).setText("2.22.0"));
+	
+					Element configurationToAdd = new Element("configuration", rootNode.getNamespace());
+					configurationToAdd
+							.addContent(new Element("argLine", rootNode.getNamespace()).setText("-Xbootclasspath/p:\""+javassistJarPath+"\":\""+dbPath
+									+"\" -javaagent:\""+agentPath+"\""));
+					configurationToAdd.addContent(new Element("trimStackTrace", rootNode.getNamespace()).setText("false"));
+					pluginToAdd.addContent(configurationToAdd);
+					
+					Element executionsToAdd = new Element("executions", rootNode.getNamespace());
+					executionsToAdd.addContent(new Element("execution", rootNode.getNamespace()).addContent(new Element("goals", rootNode.getNamespace())
+									.addContent(new Element("goal", rootNode.getNamespace()).setText("test"))));
+					pluginToAdd.addContent(executionsToAdd);
+	
+					pluginsElement.addContent(pluginToAdd);
+				} //else {
+//					List<Element> pluginElements =  pluginsElement.getChildren("plugin", rootNode.getNamespace());
+//					Element sureFirePluginElement = pluginElements.stream().filter(pluginChild -> pluginChild.getChildText("artifactId", rootNode.getNamespace()).equals("maven-surefire-plugin"))
+//							.findAny().orElse(null);
+//					Element configurationToAdd = sureFirePluginElement.getChild("configuration", rootNode.getNamespace());
+//					if (configurationToAdd==null) {configurationToAdd = new Element("configuration", rootNode.getNamespace());sureFirePluginElement.addContent(configurationToAdd);}
+//					configurationToAdd
+//							.addContent(new Element("argLine", rootNode.getNamespace()).setText("-Xbootclasspath/p:\""+javassistJarPath+"\":\""+dbPath
+//									+"\" -javaagent:\""+agentPath+"\""));
+//					configurationToAdd.addContent(new Element("trimStackTrace", rootNode.getNamespace()).setText("false"));
+//					
+//					Element executionsToAdd = sureFirePluginElement.getChild("executions", rootNode.getNamespace());
+//					if (executionsToAdd==null) {executionsToAdd = new Element("executions", rootNode.getNamespace());sureFirePluginElement.addContent(executionsToAdd);}
+//					executionsToAdd.addContent(new Element("execution", rootNode.getNamespace()).addContent(new Element("goals", rootNode.getNamespace())
+//									.addContent(new Element("goal", rootNode.getNamespace()).setText("test"))));
+//				}
+	
+				Element dependencies = rootNode.getChild("dependencies", rootNode.getNamespace());
+				if (dependencies == null) {
+					dependencies = new Element("dependencies", rootNode.getNamespace());
+					rootNode.addContent(dependencies);
+				}
+				if (!checkIfDependencyExistsInProjectPOM(dependencies, rootNode, "org.postgresql", "postgresql")) {
+					Element dependency1 = new Element("dependency", rootNode.getNamespace());
+					dependency1.addContent(new Element("groupId", rootNode.getNamespace()).setText("org.postgresql"));
+					dependency1.addContent(new Element("artifactId", rootNode.getNamespace()).setText("postgresql"));
+					dependency1.addContent(new Element("version", rootNode.getNamespace()).setText("42.2.14"));
+					dependencies.addContent(dependency1);
+				}
 			}
-			Element pluginsElement = buildFromXML.getChild("plugins", rootNode.getNamespace());
-			if (pluginsElement == null) {
-				Element pluginsToAdd = new Element("plugins", rootNode.getNamespace());
-				buildFromXML.addContent(pluginsToAdd);
-				pluginsElement = pluginsToAdd;
-			}
-			if (!checkIfPluginExistsInProjectPOM(pluginsElement, rootNode, "org.apache.maven.plugins",
-					"maven-war-plugin")) {
-				Element pluginToAdd = new Element("plugin", rootNode.getNamespace());
-				pluginToAdd.addContent(
-						new Element("groupId", rootNode.getNamespace()).setText("org.apache.maven.plugins"));
-				pluginToAdd.addContent(new Element("artifactId", rootNode.getNamespace()).setText("maven-war-plugin"));
-
-				Element configurationToAdd = new Element("configuration", rootNode.getNamespace());
-				configurationToAdd
-						.addContent(new Element("failOnMissingWebXml", rootNode.getNamespace()).setText("false"));
-				pluginToAdd.addContent(configurationToAdd);
-
-				pluginsElement.addContent(pluginToAdd);
-			}
-			if (!checkIfPluginExistsInProjectPOM(pluginsElement, rootNode, "org.apache.maven.plugins",
-					"maven-surefire-plugin")) {
-				Element pluginToAdd = new Element("plugin", rootNode.getNamespace());
-				pluginToAdd.addContent(
-						new Element("groupId", rootNode.getNamespace()).setText("org.apache.maven.plugins"));
-				pluginToAdd.addContent(new Element("artifactId", rootNode.getNamespace()).setText("maven-surefire-plugin"));
-				pluginToAdd.addContent(new Element("version", rootNode.getNamespace()).setText("2.22.0"));
-
-				Element configurationToAdd = new Element("configuration", rootNode.getNamespace());
-				configurationToAdd
-						.addContent(new Element("argLine", rootNode.getNamespace()).setText("-Xbootclasspath/p:\""+javassistJarPath+"\":\""+dbPath
-								+"\" -javaagent:\""+agentPath+"\""));
-				pluginToAdd.addContent(configurationToAdd);
-
-				pluginsElement.addContent(pluginToAdd);
-			}
-
-			Element dependencies = rootNode.getChild("dependencies", rootNode.getNamespace());
-			if (dependencies == null) {
-				dependencies = new Element("dependencies", rootNode.getNamespace());
-				rootNode.addContent(dependencies);
-			}
-			if (!checkIfDependencyExistsInProjectPOM(dependencies, rootNode, "org.postgresql", "postgresql")) {
-				Element dependency1 = new Element("dependency", rootNode.getNamespace());
-				dependency1.addContent(new Element("groupId", rootNode.getNamespace()).setText("org.postgresql"));
-				dependency1.addContent(new Element("artifactId", rootNode.getNamespace()).setText("postgresql"));
-				dependency1.addContent(new Element("version", rootNode.getNamespace()).setText("42.2.14"));
-				dependencies.addContent(dependency1);
-			}
-
 			XMLOutputter xmlOutput = new XMLOutputter();
 			xmlOutput.setFormat(Format.getPrettyFormat());
 			xmlOutput.output(doc, new FileWriter(xmlFile));
-
 		} catch (JDOMException | IOException e) {
 			e.printStackTrace();
 		}

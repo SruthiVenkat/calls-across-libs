@@ -15,10 +15,10 @@ import java.util.Map;
 
 /**
  * 
- * DB - testdb3
+ * DB - benchs_javainstr
  * Tables - caller_callee_count, all_methods
  * 
- * create database testdb3;
+ * create database benchs_javainstr;
  * 
  * create table caller_callee_count (id SERIAL PRIMARY
  * KEY, caller_method_id int, callee_method_id int, static_count int, dynamic_count int, FOREIGN KEY
@@ -34,7 +34,7 @@ import java.util.Map;
 public class DatabaseConnector {
 	private static DatabaseConnector dc;
 	private static Connection conn;
-	private final String url = "jdbc:postgresql://localhost/testdb3";
+	private final String url = "jdbc:postgresql://localhost/benchs_javainstr";
 	private final String user = "postgres";
 	private final String password = "password";
 
@@ -69,12 +69,12 @@ public class DatabaseConnector {
 		} catch(SQLException e) {
 			System.out.println(e);		
 		}
-		String SQL1 = "CREATE DATABASE testdb3;";
+		String SQL1 = "CREATE DATABASE benchs_javainstr;";
 		try (PreparedStatement pstmt = conn.prepareStatement(SQL1)) {
 			pstmt.executeUpdate();
 		} catch (SQLException ex) {
 			if (ex.getSQLState().equals("42P04"))
-				System.out.println("Using the testdb3 database");
+				System.out.println("Using the benchs_javainstr database");
 			else
 				System.out.println(ex);
 		}
@@ -155,11 +155,12 @@ public class DatabaseConnector {
 				+ "returns TABLE\r\n"
 				+ "(id int,\r\n"
 				+ "caller_method_name varchar,\r\n"
-				+ "callee_method_name varchar ) AS $$ BEGIN\r\n"
+				+ "callee_method_name varchar, static_count int, dynamic_count int ) AS $$ BEGIN\r\n"
 				+ "RETURN query\r\n"
 				+ "select A.id,\r\n"
 				+ "  (select method_name from all_methods D where D.id=caller_method_id) as caller_method_name,\r\n"
-				+ "  (select method_name from all_methods E where E.id=callee_method_id) as callee_method_name\r\n"
+				+ "  (select method_name from all_methods E where E.id=callee_method_id) as callee_method_name,\r\n"
+				+ "  A.static_count, A.dynamic_count\r\n"
 				+ "  from caller_callee_count A\r\n"
 				+ "  where\r\n"
 				+ "  callee_method_id in (select B.id from all_methods B where library_name LIKE Concat('%',callee_library,'%'))\r\n"
@@ -200,9 +201,9 @@ public class DatabaseConnector {
 				+ "RETURN query\r\n"
 				+ "SELECT (\r\n"
 				+ "         (\r\n"
-				+ "                SELECT 1.0*count(*)\r\n"
+				+ "                SELECT 1.0*count(distinct callee_method_id)\r\n"
 				+ "                FROM   (\r\n"
-				+ "                  SELECT * FROM caller_callee_count WHERE callee_method_id IN (\r\n"
+				+ "                  SELECT callee_method_id FROM caller_callee_count WHERE callee_method_id IN (\r\n"
 				+ "                SELECT callee_method_id FROM caller_callee_count\r\n"
 				+ "                WHERE  callee_method_id IN\r\n"
 				+ "                       (\r\n"
@@ -231,7 +232,7 @@ public class DatabaseConnector {
 				+ "                       )) AS A)\r\n"
 				+ "          /\r\n"
 				+ "         (\r\n"
-				+ "                SELECT 1.0*count(*)\r\n"
+				+ "                SELECT 1.0*count(distinct callee_method_id)\r\n"
 				+ "                FROM   caller_callee_count A\r\n"
 				+ "                WHERE  callee_method_id IN\r\n"
 				+ "                       (\r\n"

@@ -143,7 +143,7 @@ public class JarUtility {
 		while (entry != null) {
 			String filePath = destDirectory + File.separator + entry.getName();
 			if (!entry.isDirectory()) {
-				// if the entry is a file, extracts it
+				// if the entry is a file, extract it
 				extractFile(zipIn, filePath);
 			} else {
 				// if the entry is a directory, make the directory

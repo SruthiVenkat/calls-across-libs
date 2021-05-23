@@ -22,12 +22,31 @@ import javassist.Modifier;
 import javassist.expr.ExprEditor;
 import javassist.expr.MethodCall;
 
+class InterLibraryCounts {
+	String callerMethodString;
+	String callerMethodLibString;
+	String calleeMethodString;
+	String calleeMethodLibString;
+	int staticCount;
+	int dynamicCount;
+	InterLibraryCounts(String callerMethodString, String callerMethodLibString, String calleeMethodString, 
+			String calleeMethodLibString, int staticCount, int dynamicCount) {
+		this.callerMethodString = callerMethodString;
+		this.callerMethodLibString = callerMethodLibString;
+		this.calleeMethodString = calleeMethodString;
+		this.calleeMethodLibString = calleeMethodLibString;
+		this.staticCount = staticCount;
+		this.dynamicCount = dynamicCount;
+	}
+}
+
 public class CallTrackerTransformer implements ClassFileTransformer {
 	public static Map<String, List<String>> libsToClasses = new HashMap<String, List<String>>();
 	public static List<String> visitedCallerMethods = new ArrayList<String>();
 	public static List<String> visitedClasses = new ArrayList<String>();
 
 	public static DatabaseConnector connector;
+	public static List<InterLibraryCounts> interLibraryCounts = new ArrayList<InterLibraryCounts>();
 
 	public CallTrackerTransformer() {
 		connector = DatabaseConnector.buildDatabaseConnector();
@@ -45,12 +64,9 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 					classfileBuffer));
 			
 			String methodCallerClassName = ctClass.getName();
-			if (methodCallerClassName.startsWith("java.") || methodCallerClassName.startsWith("javax.")
-					|| methodCallerClassName.startsWith("sun.") || methodCallerClassName.startsWith("jdk.")) {
+			if(!libsToClasses.entrySet().stream().anyMatch(map -> map.getValue().contains(methodCallerClassName))) {
 				// ignore Java internal classes
-				byteCode = ctClass.toBytecode();
-				ctClass.detach();
-				return byteCode;
+				return null;
 			}
 
 			System.out.println("------>"+methodCallerClassName);
@@ -60,9 +76,8 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 				if (!isNative(method) && !isAbstract(method) && !visitedCallerMethods.contains(method.getLongName())
 						&& !isUnitTestMethod(method)) {
 					visitedCallerMethods.add(method.getLongName());
-					//System.out.println("Checking method - "+method.getLongName());
 					Entry<String, List<String>> unknownEntry = new AbstractMap.SimpleEntry<String, List<String>>("unknownLib", new ArrayList<String>());
-					String callingMethodName = method.getName();
+					String callingMethodName = method.getLongName();
 					String callingMethodLibNameTmp = "";
 					try {
 						callingMethodLibNameTmp = libsToClasses.entrySet().stream()
@@ -78,17 +93,21 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 					            public void edit(MethodCall m) throws CannotCompileException
 					            {
 					            	try {
-					            		if (isUnitTestMethod(m.getMethod()))
+					            		if (isUnitTestMethod(m.getMethod()) || method == m.getMethod())
 					            			return;
 					            	} catch (Exception e) {}
 
-					            	String calledMethodName = m.getMethodName();
+					            	String calledMethodName; 
+					            	try {
+					            		calledMethodName = m.getMethod().getLongName();
+					            	} catch (Exception e) {
+										calledMethodName = m.getMethodName();
+									}
 					            	String methodCalledClassName = m.getClassName();
 									String calledMethodLibName = "";
 
-									if (!methodCalledClassName.startsWith("java.") && !methodCalledClassName.startsWith("javax.")
-											&& !methodCalledClassName.startsWith("sun.")) // ignore Java internal classes
-									{										
+									if(libsToClasses.entrySet().stream().anyMatch(map -> map.getValue().contains(methodCallerClassName))) { 
+										// ignore Java internal classes										
 										try {
 											calledMethodLibName = libsToClasses.entrySet().stream()
 											.filter(map -> map.getValue().contains(methodCalledClassName))
@@ -98,23 +117,25 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 										}
 
 										try {	
-											if (!callingMethodLibName.equals(unknownEntry.getKey()) && !calledMethodLibName.equals(unknownEntry.getKey())
-													&& !callingMethodLibName.equals(calledMethodLibName)) {
+											if (!callingMethodLibName.equals(unknownEntry.getKey())) {
+												if (!calledMethodLibName.equals(unknownEntry.getKey()) && !callingMethodLibName.equals(calledMethodLibName)) {
 												// static
-												connector.updateCountInCallerCalleeCountTable(methodCallerClassName+"::"+callingMethodName, callingMethodLibName,
+												updateInterLibraryCounts(methodCallerClassName+"::"+callingMethodName, callingMethodLibName,
 														methodCalledClassName+"::"+calledMethodName, calledMethodLibName, 1, 0);
-											}
+												}
 												// dynamic
-												m.replace("{if (instrumentation.CallTrackerTransformer.isStatic(\""+methodCalledClassName+"\", \""+calledMethodName+"\")) {"
-													+ "if (instrumentation.CallTrackerTransformer.checkAddToDBCondition(\""+callingMethodLibName+"\", \""+calledMethodLibName+"\"))"
-													+ "instrumentation.CallTrackerTransformer.connector.updateCountInCallerCalleeCountTable(\""
-													+methodCallerClassName+"::"+callingMethodName+"\",\""+
-														callingMethodLibName+"\", \""+methodCalledClassName+"::"+calledMethodName+"\", \""+
-														calledMethodLibName+"\", 0, 1);}"
-													+ "else {"
-													+ "instrumentation.CallTrackerTransformer.addRuntimeTypeToDB(\""+methodCallerClassName+"\", \""+callingMethodName+
-													"\", \""+callingMethodLibName+"\", $0.getClass().getName(), \""+calledMethodName+"\");"
-													+ "} $_ = $proceed($$);}");
+												m.replace("{if (instrumentation.CallTrackerTransformer.isStatic(\""+methodCalledClassName+"\", \""+m.getMethodName()+"\")) {"
+												+ "if (instrumentation.CallTrackerTransformer.checkAddToDBCondition(\""+callingMethodLibName+"\", \""+calledMethodLibName+"\")) {"
+												+ "instrumentation.CallTrackerTransformer.updateInterLibraryCounts(\"" + 
+												 methodCallerClassName+"::"+callingMethodName+"\",\"" + 
+												 callingMethodLibName+"\", \""+methodCalledClassName+"::"+calledMethodName+"\", \"" + 
+												 calledMethodLibName+"\", 0, 1);}}"
+												+ " else { "
+												+ "if ($0 != null)"
+												+ "instrumentation.CallTrackerTransformer.addRuntimeTypeToDB(\""+methodCallerClassName+"\", \""+callingMethodName+
+												"\", \""+callingMethodLibName+"\", $0.getClass().getName(), \""+calledMethodName+"\");"
+												+ "} $_ = $proceed($$);}");
+											}
 											
 										} catch (Exception e) {
 											System.out.println(e);
@@ -177,9 +198,23 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 		}
 		if (!callingMethodLibName.equals(unknownEntry.getKey()) && !calledMethodLibName.equals(unknownEntry.getKey())
 				&& !callingMethodLibName.equals(calledMethodLibName)) {
-			connector.updateCountInCallerCalleeCountTable(methodCallerClassName+"::"+callingMethodName, callingMethodLibName,
+			updateInterLibraryCounts(methodCallerClassName+"::"+callingMethodName, callingMethodLibName,
 					methodCalledClassName+"::"+calledMethodName, calledMethodLibName, 0, 1);
 		}
 	}
-
+	
+	public static void updateInterLibraryCounts(String callerMethod, String callerLibrary, String calleeMethod, String calleeLibrary,
+			int static_count, int dynamic_count) {
+		boolean isPresent = false;
+		for (InterLibraryCounts iLibraryCounts : interLibraryCounts) {
+			if (iLibraryCounts.callerMethodString.equals(callerMethod) && iLibraryCounts.calleeMethodString.equals(calleeMethod)
+					&& iLibraryCounts.callerMethodLibString.equals(callerLibrary) && iLibraryCounts.calleeMethodLibString.equals(calleeLibrary)) {
+				iLibraryCounts.staticCount += static_count;
+				iLibraryCounts.dynamicCount += dynamic_count;
+				isPresent = true;
+			}
+		}
+		if (!isPresent)
+			interLibraryCounts.add(new InterLibraryCounts(callerMethod, callerLibrary, calleeMethod, calleeLibrary, static_count, dynamic_count));
+	}
 }
