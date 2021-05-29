@@ -26,7 +26,7 @@ import java.util.Map;
  * (callee_method_id) REFERENCES all_methods(id) ON DELETE CASCADE);
  * 
  * create table all_methods (id SERIAL PRIMARY KEY, method_name
- * varchar(255),library_name varchar(255), UNIQUE(method_name, library_name), FOREIGN KEY
+ * text,library_name varchar(255), UNIQUE(method_name, library_name), FOREIGN KEY
  * (library_name) REFERENCES libs_info(library_name) ON DELETE CASCADE);
  *
  * create table if not exists libs_info (library_name varchar(255) PRIMARY KEY, total_count int, classes text);
@@ -85,7 +85,7 @@ public class DatabaseConnector {
 		} catch (SQLException ex) {
 			System.out.println(ex);
 		}
-		String SQL3 = "create table if not exists all_methods (id SERIAL PRIMARY KEY, method_name varchar(255),library_name varchar(255), UNIQUE(method_name, library_name), FOREIGN KEY(library_name) REFERENCES libs_info(library_name) ON DELETE CASCADE);";
+		String SQL3 = "create table if not exists all_methods (id SERIAL PRIMARY KEY, method_name text,library_name varchar(255), UNIQUE(method_name, library_name), FOREIGN KEY(library_name) REFERENCES libs_info(library_name) ON DELETE CASCADE);";
 		try (PreparedStatement pstmt = conn.prepareStatement(SQL3)) {
 			pstmt.executeUpdate();
 		} catch (SQLException ex) {
@@ -117,19 +117,34 @@ public class DatabaseConnector {
 
 	public void addToLibsInfoTable(Map<String, ArrayList<Object>> libsAndTotalCountsAndClasses) {
 		String SQL1 = "INSERT INTO libs_info(library_name,total_count,classes) " + "VALUES(?,?,?);";
+		String SQL2 = "UPDATE libs_info SET total_count = total_count+?,classes="
+				+ "Concat(classes, ':', ?)" + " where library_name like ?;";
 		for (String libName: libsAndTotalCountsAndClasses.keySet()) {
 			int totalCount = (int) libsAndTotalCountsAndClasses.get(libName).get(0);
 			String classes = (String) libsAndTotalCountsAndClasses.get(libName).get(1);
-			try (PreparedStatement pstmt = conn.prepareStatement(SQL1, Statement.RETURN_GENERATED_KEYS)) {
-				pstmt.setString(1, libName);
-				pstmt.setInt(2, totalCount);
-				pstmt.setString(3, classes);
+			if (isLibPresentInLibsInfoTable(libName)) {
+				try (PreparedStatement pstmt = conn.prepareStatement(SQL2, Statement.RETURN_GENERATED_KEYS)) {
+					pstmt.setInt(1, totalCount);
+					pstmt.setString(2, classes);
+					pstmt.setString(3, libName);
+					pstmt.executeUpdate();
+				} catch (SQLIntegrityConstraintViolationException e) {
+					System.out.println(e);
+				} catch (SQLException ex) {
+					System.out.println(ex);
+				}
+			} else {
+				try (PreparedStatement pstmt = conn.prepareStatement(SQL1, Statement.RETURN_GENERATED_KEYS)) {
+					pstmt.setString(1, libName);
+					pstmt.setInt(2, totalCount);
+					pstmt.setString(3, classes);
 
-				pstmt.executeUpdate();
-			} catch (SQLIntegrityConstraintViolationException e) {
-				System.out.println(e);
-			} catch (SQLException ex) {
-				System.out.println(ex);
+					pstmt.executeUpdate();
+				} catch (SQLIntegrityConstraintViolationException e) {
+					System.out.println(e);
+				} catch (SQLException ex) {
+					System.out.println(ex);
+				}
 			}
 		}
 	}
@@ -154,8 +169,8 @@ public class DatabaseConnector {
 				+ "replace FUNCTION fetchCallsToALibrary (callee_library varchar, client_lib varchar)\r\n"
 				+ "returns TABLE\r\n"
 				+ "(id int,\r\n"
-				+ "caller_method_name varchar,\r\n"
-				+ "callee_method_name varchar, static_count int, dynamic_count int ) AS $$ BEGIN\r\n"
+				+ "caller_method_name text,\r\n"
+				+ "callee_method_name text, static_count int, dynamic_count int ) AS $$ BEGIN\r\n"
 				+ "RETURN query\r\n"
 				+ "select A.id,\r\n"
 				+ "  (select method_name from all_methods D where D.id=caller_method_id) as caller_method_name,\r\n"

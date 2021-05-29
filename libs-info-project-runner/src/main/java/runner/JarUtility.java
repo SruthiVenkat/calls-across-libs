@@ -45,17 +45,18 @@ public class JarUtility {
             Iterator<JSONObject> iterator = projects.iterator();
             while (iterator.hasNext()) {
             	JSONObject projectObject = (JSONObject)iterator.next();
-            	if (!connector.isLibPresentInLibsInfoTable(""+projectObject.get("libName"))) {
+            	//if (!connector.isLibPresentInLibsInfoTable(""+projectObject.get("libName"))) {
 	            	String generatedWarJarName = new File(".").getAbsolutePath()+File.separator
-	        				+"projects"+File.separator+projectObject.get("folderName")+File.separator
-	        				+"target"+File.separator+projectObject.get("generatedWarJarName");
+	        				+"projects"+File.separator+projectObject.get("folderName")
+	        				//+File.separator+projectObject.get("generatedWarJarName");
+	        				+File.separator+"target"+File.separator+projectObject.get("generatedWarJarName");
 	            	String tmpFolder = new File(".").getAbsolutePath()+File.separator
 	        				+"projects"+File.separator+projectObject.get("folderName")
 	        				+File.separator+"tmp";
 	            	libsToCountsAndClasses.put((String)projectObject.get("libName"), 
 	            			getPublicProtectedMethodsCountAndClasses(generatedWarJarName+".war", 
 	            					generatedWarJarName+".jar", tmpFolder));
-            	}
+            	//}
 
             }
         } catch (Exception e) {
@@ -88,6 +89,7 @@ public class JarUtility {
 			File[] directoryListing = dir.listFiles();
 			if (directoryListing != null) {
 				for (File child : directoryListing) {
+					System.out.println(child.getAbsolutePath()+"--->>>>");
 					classLoaderURLs.add(new File(child.getAbsolutePath()).toURI().toURL());
 				}
 			}
@@ -118,6 +120,8 @@ public class JarUtility {
 								count++;
 						}
 					} catch (NoClassDefFoundError e) {
+						System.out.println("No class def found "+ e);
+					} catch (UnsupportedClassVersionError e) {
 						System.out.println("No class def found "+ e);
 					} catch (Exception e) {
 						System.out.println("Error while parsing jar " + e);

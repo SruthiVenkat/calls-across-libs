@@ -1,5 +1,7 @@
 package misc;
 
+import java.lang.reflect.InvocationTargetException;
+
 import packageA.RandomTypes;
 import packageA.SubClass;
 import packageA.SuperClass;
@@ -26,6 +28,14 @@ public class Client {
 		Middle m = new Middle();
 		System.out.println("packageB Middle - "+m.getValue1());
 		System.out.println("packageB Middle - "+m.getValue2());
+		
+		java.lang.reflect.Method method;
+		try {
+			System.out.println("packageB External - reflection - ");
+		  method = External.class.getMethod("getText");
+		  String reString = (String) method.invoke(e);
+		  System.out.println(reString);
+		} catch (SecurityException e1) { } catch (NoSuchMethodException e2) { } catch (IllegalArgumentException e1) { } catch (IllegalAccessException e2) { } catch (InvocationTargetException e3) { }
 	}
 
 	public static void clientMethod1(RandomTypes rtypes) {

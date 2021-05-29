@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="misc.MiscTest" time="0.001" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="misc.MiscTest" time="0.018" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="gnome"/>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
@@ -17,7 +17,7 @@
     <property name="user.country" value="IN"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
-    <property name="sun.java.command" value="/home/vishal/Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/projects/microbenchmark1-calls-across-libs/microbenchmark1-client/target/surefire/surefirebooter1367907573041128983.jar /home/vishal/Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/projects/microbenchmark1-calls-across-libs/microbenchmark1-client/target/surefire 2021-05-24T01-19-40_225-jvmRun1 surefire6822293792961142093tmp surefire_08808556433076519232tmp"/>
+    <property name="sun.java.command" value="/home/vishal/Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/projects/microbenchmark1-calls-across-libs/microbenchmark1-client/target/surefire/surefirebooter7238020632444604827.jar /home/vishal/Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/projects/microbenchmark1-calls-across-libs/microbenchmark1-client/target/surefire 2021-05-27T16-26-46_102-jvmRun1 surefire5028035513716538535tmp surefire_08559979282300161874tmp"/>
     <property name="surefire.test.class.path" value="/home/vishal/Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/projects/microbenchmark1-calls-across-libs/microbenchmark1-client/target/test-classes:/home/vishal/Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/projects/microbenchmark1-calls-across-libs/microbenchmark1-client/target/classes:/home/vishal/.m2/repository/ca/waterloo/pl/microbenchmark1-library/1.0-SNAPSHOT/microbenchmark1-library-1.0-SNAPSHOT.jar:/home/vishal/.m2/repository/org/postgresql/postgresql/42.2.14/postgresql-42.2.14.jar:/home/vishal/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/vishal/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/home/vishal"/>
@@ -30,7 +30,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/home/vishal/Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/projects/microbenchmark1-calls-across-libs/microbenchmark1-client/target/surefire/surefirebooter1367907573041128983.jar:/home/vishal/Documents/Waterloo/PL/calls-across-libs/libs-info-agent/target/libs-info-agent-1.0-SNAPSHOT.jar"/>
+    <property name="surefire.real.class.path" value="/home/vishal/Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/projects/microbenchmark1-calls-across-libs/microbenchmark1-client/target/surefire/surefirebooter7238020632444604827.jar:/home/vishal/Documents/Waterloo/PL/calls-across-libs/libs-info-agent/target/libs-info-agent-1.0-SNAPSHOT.jar"/>
     <property name="sun.boot.class.path" value="/home/vishal/.m2/repository/org/javassist/javassist/3.27.0-GA/javassist-3.27.0-GA.jar:/home/vishal/Documents/Waterloo/PL/calls-across-libs/libs-info-db/target/libs-info-db-1.0-SNAPSHOT.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="1.8.0_292-8u292-b10-0ubuntu1~20.04-b10"/>
@@ -58,5 +58,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="testMisc" classname="misc.MiscTest" time="0.001"/>
+  <testcase name="testMisc" classname="misc.MiscTest" time="0.015"/>
 </testsuite>

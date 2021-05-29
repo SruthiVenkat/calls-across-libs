@@ -1,47 +1,7 @@
 [
 	{
-		"libName": "jsoup-1.10.1",
-		"folderName": "jsoup-jsoup-1.10.1",
-		"generatedWarJarName": "jsoup-1.10.1"
-	},
-	{
-		"libName": "JsoupXpath-2.4.3",
-		"folderName": "JsoupXpath",
-		"generatedWarJarName": "JsoupXpath-2.4.3"
-	},
-	{
-		"libName": "errai-4.12.0",
-		"folderName": "errai/errai-ui",
-		"generatedWarJarName": "errai-ui-4.12.0-SNAPSHOT"
-	},
-	{
-		"libName": "tablesaw-html-0.38.3",
-		"folderName": "tablesaw/html",
-		"generatedWarJarName": "tablesaw-html-0.38.3-SNAPSHOT"
-	},
-	{
-		"libName": "webmagic-0.7.4",
-		"folderName": "webmagic/webmagic-core",
-		"generatedWarJarName": "webmagic-core-0.7.4"
-	},
-	{
-		"libName": "xsoup-0.3.2",
-		"folderName": "xsoup",
-		"generatedWarJarName": "xsoup-0.3.2"
-	},
-	{
-		"libName": "ez-vcard-0.11.3",
-		"folderName": "ez-vcard",
-		"generatedWarJarName": "ez-vcard-0.11.3-SNAPSHOT"
-	},
-	{
-		"libName": "liqp-0.7.10",
-		"folderName": "Liqp",
-		"generatedWarJarName": "liqp-0.7.10-SNAPSHOT"
-	},
-	{
-		"libName": "jcabi-http-2.0",
-		"folderName": "jcabi-http",
-		"generatedWarJarName": "jcabi-http-2.0-SNAPSHOT"
-	},
+		"libName": "nextflow-21.05.0",
+		"folderName": "nextflow/modules/nextflow/build/libs",
+		"generatedWarJarName": "nextflow-21.05.0-edge"
+	}
 ]

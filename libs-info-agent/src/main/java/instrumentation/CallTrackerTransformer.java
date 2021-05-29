@@ -65,7 +65,7 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 			
 			String methodCallerClassName = ctClass.getName();
 			if(!libsToClasses.entrySet().stream().anyMatch(map -> map.getValue().contains(methodCallerClassName))) {
-				// ignore Java internal classes
+				// ignore Java internal classes, unknown libraries
 				return null;
 			}
 
@@ -107,7 +107,7 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 									String calledMethodLibName = "";
 
 									if(libsToClasses.entrySet().stream().anyMatch(map -> map.getValue().contains(methodCallerClassName))) { 
-										// ignore Java internal classes										
+										// ignore Java internal classes, unknown libraries									
 										try {
 											calledMethodLibName = libsToClasses.entrySet().stream()
 											.filter(map -> map.getValue().contains(methodCalledClassName))

@@ -1,13 +1,18 @@
 package runner;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStreamReader;
+import java.lang.ProcessBuilder.Redirect;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.maven.shared.invoker.DefaultInvocationRequest;
 import org.apache.maven.shared.invoker.DefaultInvoker;
@@ -32,7 +37,9 @@ public class DependentTestRunner {
 	public static final String javassistJarPath = "/home/vishal/.m2/repository/org/javassist/javassist/3.27.0-GA/javassist-3.27.0-GA.jar";
 	public static final String dbPath = "/home/vishal/Documents/Waterloo/PL/calls-across-libs/libs-info-db/target/libs-info-db-1.0-SNAPSHOT.jar";
 	public static final String postgresJarPath = "/home/vishal/.m2/repository/org/postgresql/postgresql/42.2.14/postgresql-42.2.14.jar";
-
+	public static final String JAVA_OPTS = "-javaagent:/home/vishal/Documents/Waterloo/PL/calls-across-libs/libs-info-agent/target/libs-info-agent-1.0-SNAPSHOT.jar "
+			+ "-Xbootclasspath/p:/home/vishal/.m2/repository/org/javassist/javassist/3.27.0-GA/javassist-3.27.0-GA.jar:/home/vishal/Documents/Waterloo/PL/calls-across-libs/libs-info-db/target/libs-info-db-1.0-SNAPSHOT.jar"
+			+ ":/home/vishal/.m2/repository/org/postgresql/postgresql/42.2.14/postgresql-42.2.14.jar:/home/vishal/Documents/Waterloo/PL/calls-across-libs/libs-info-agent/target/libs-info-agent-1.0-SNAPSHOT.jar";
 	public static void main(String[] args) {
 		// connect to database and create the required procedures
 		DatabaseConnector connector = DatabaseConnector.buildDatabaseConnector();
@@ -41,6 +48,11 @@ public class DependentTestRunner {
 		connector.createSQLProcForJaccardSimilarity();
 		connector.createSQLProcForFetchingCallsToALibrary();
 		
+		runMavenProjects(connector);
+		// runGradleProjects("/home/vishal/Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/projects/nextflow", connector);
+	}
+	
+	public static void runMavenProjects(DatabaseConnector connector) {
 		// get poms for projects
 		List<File> pomList = new ArrayList<>();
 		JSONParser jsonParser = new JSONParser();
@@ -53,12 +65,12 @@ public class DependentTestRunner {
             while (iterator.hasNext()) {
             	JSONObject projectObject = (JSONObject)iterator.next();
             	File pomFile = new File(new File(".").getAbsolutePath()+File.separator+"projects"+File.separator+projectObject.get("folderName")+File.separator+"pom.xml");
-            	if (!connector.isLibPresentInLibsInfoTable(""+projectObject.get("libName"))) {
-            		writeXMLToProjectPOM(pomFile, false, true);
+            	//if (!connector.isLibPresentInLibsInfoTable(""+projectObject.get("libName"))) {
+         			writeXMLToProjectPOM(pomFile, false, true);
         			mvnInstallProjects(pomFile, true); // generate jars
         			writeXMLToProjectPOM(pomFile, true, false);
         			mvnInstallProjects(pomFile, false); // generate wars
-            	}
+            	//}
             	pomList.add(pomFile);
             }
         } catch (Exception e) {
@@ -116,7 +128,7 @@ public class DependentTestRunner {
 	
 					pluginsElement.addContent(pluginToAdd);
 				} else {
-					
+					// TODO - handle cases when pom contains war plugin
 				}
 				if (!checkIfPluginExistsInProjectPOM(pluginsElement, rootNode, "org.apache.maven.plugins",
 						"maven-surefire-plugin")) {
@@ -139,22 +151,41 @@ public class DependentTestRunner {
 					pluginToAdd.addContent(executionsToAdd);
 	
 					pluginsElement.addContent(pluginToAdd);
-				} //else {
-//					List<Element> pluginElements =  pluginsElement.getChildren("plugin", rootNode.getNamespace());
-//					Element sureFirePluginElement = pluginElements.stream().filter(pluginChild -> pluginChild.getChildText("artifactId", rootNode.getNamespace()).equals("maven-surefire-plugin"))
-//							.findAny().orElse(null);
-//					Element configurationToAdd = sureFirePluginElement.getChild("configuration", rootNode.getNamespace());
-//					if (configurationToAdd==null) {configurationToAdd = new Element("configuration", rootNode.getNamespace());sureFirePluginElement.addContent(configurationToAdd);}
-//					configurationToAdd
-//							.addContent(new Element("argLine", rootNode.getNamespace()).setText("-Xbootclasspath/p:\""+javassistJarPath+"\":\""+dbPath
-//									+"\" -javaagent:\""+agentPath+"\""));
-//					configurationToAdd.addContent(new Element("trimStackTrace", rootNode.getNamespace()).setText("false"));
-//					
-//					Element executionsToAdd = sureFirePluginElement.getChild("executions", rootNode.getNamespace());
-//					if (executionsToAdd==null) {executionsToAdd = new Element("executions", rootNode.getNamespace());sureFirePluginElement.addContent(executionsToAdd);}
-//					executionsToAdd.addContent(new Element("execution", rootNode.getNamespace()).addContent(new Element("goals", rootNode.getNamespace())
-//									.addContent(new Element("goal", rootNode.getNamespace()).setText("test"))));
-//				}
+				} else {
+					List<Element> pluginElements =  pluginsElement.getChildren("plugin", rootNode.getNamespace());
+					Element sureFirePluginElement = pluginElements.stream().filter(pluginChild -> pluginChild.getChildText("artifactId", rootNode.getNamespace()).equals("maven-surefire-plugin"))
+							.findAny().orElse(null);
+					Element configurationToAdd = sureFirePluginElement.getChild("configuration", rootNode.getNamespace());
+					if (configurationToAdd==null) {
+						configurationToAdd = new Element("configuration", rootNode.getNamespace());
+						sureFirePluginElement.addContent(configurationToAdd);
+					}
+					configurationToAdd
+							.addContent(new Element("argLine", rootNode.getNamespace()).setText("-Xbootclasspath/p:\""+javassistJarPath+"\":\""+dbPath
+									+"\" -javaagent:\""+agentPath+"\""));
+					configurationToAdd.addContent(new Element("trimStackTrace", rootNode.getNamespace()).setText("false"));
+					
+					Element executionsToAdd = sureFirePluginElement.getChild("executions", rootNode.getNamespace());
+					if (executionsToAdd==null) {
+						executionsToAdd = new Element("executions", rootNode.getNamespace());
+						sureFirePluginElement.addContent(executionsToAdd);
+					}
+					
+					Element executionToAdd = executionsToAdd.getChild("execution", rootNode.getNamespace());
+					if (executionToAdd==null) {
+						executionToAdd = new Element("execution", rootNode.getNamespace());
+						executionsToAdd.addContent(executionToAdd);
+					}
+					
+					
+					Element goalsToAdd = executionToAdd.getChild("goals", rootNode.getNamespace());
+					if (goalsToAdd==null) {
+						executionToAdd = new Element("goals", rootNode.getNamespace());
+						executionToAdd.addContent(goalsToAdd);
+					}
+					goalsToAdd.addContent(new Element("goal", rootNode.getNamespace()).setText("test"));
+					// TODO - fix cases when argLine is already present in pom
+				}
 	
 				Element dependencies = rootNode.getChild("dependencies", rootNode.getNamespace());
 				if (dependencies == null) {
@@ -246,5 +277,86 @@ public class DependentTestRunner {
 		} catch (MavenInvocationException e) {
 			e.printStackTrace();
 		}
+	}
+	
+	public static void runGradleProjects(String PATH_TO_GRADLE_PROJECT, DatabaseConnector connector) {
+		String warInitScriptPathString = new File(".").getAbsolutePath()+File.separator+"gradle-init-scripts"+File.separator+"war.gradle";
+		String javaAgentInitScriptPathString = new File(".").getAbsolutePath()+File.separator+"gradle-init-scripts"+File.separator+"war.gradle";
+
+		// jar
+		executeCommand(" ./gradlew clean build -x test --stacktrace", PATH_TO_GRADLE_PROJECT, false);
+		// war
+		executeCommand(" ./gradlew build -I "+warInitScriptPathString+" -x test --stacktrace", PATH_TO_GRADLE_PROJECT, false);
+		
+		// get total API counts for projects and packages in each project
+		JarUtility.initLibsToCountsAndClasses(connector);
+		// test
+		executeCommand(" ./gradlew test -I "+javaAgentInitScriptPathString+"--stacktrace", PATH_TO_GRADLE_PROJECT, true);
+	}
+	
+	public static String executeCommand(String command, String dir, boolean instrument) {
+		StringBuilder output = new StringBuilder();
+		StringBuilder error = new StringBuilder();
+		boolean isWindows = System.getProperty("os.name").toLowerCase().startsWith("windows");
+		try {
+			ProcessBuilder builder = new ProcessBuilder();
+			if (isWindows) {
+				builder.command("cmd.exe", "/c", command);
+			} else {
+				builder.command("sh", "-c", command);
+			}
+			if (dir != null) {
+				builder.directory(new File(dir));
+			}
+			builder.redirectOutput(Redirect.INHERIT);
+			builder.redirectError(Redirect.INHERIT);
+			Map<String, String> envMap = builder.environment();
+			if (instrument)
+				envMap.put("JAVA_OPTS", JAVA_OPTS);
+
+			Process process;
+			boolean status;
+			process = builder.start();
+
+			status = process.waitFor(2, TimeUnit.HOURS);
+			if (status) {
+				BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
+				String line = "";
+				while ((line = reader.readLine()) != null) {
+					output.append(line + "\n");
+				}
+				reader.close();
+				if (process.exitValue() != 0) {
+					BufferedReader readerErr = new BufferedReader(new InputStreamReader(process.getErrorStream()));
+					String lineErr = "";
+					while ((lineErr = readerErr.readLine()) != null) {
+						error.append(lineErr + "\n");
+						System.out.println(lineErr);
+					}
+
+					readerErr.close();
+					System.out.println(error.toString());
+					//throw new IllegalArgumentException(error.toString());
+				}
+			} else {
+				process.destroy();
+				try {
+					if (!process.waitFor(5, TimeUnit.SECONDS)) {
+						process.destroyForcibly();
+					}
+				} catch (InterruptedException e) {
+					Thread.currentThread().interrupt();
+					process.destroyForcibly();
+				}
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+			Thread.currentThread().interrupt();
+		}
+		String result = output.toString();
+		System.out.println(result);
+		return result;
 	}
 }
