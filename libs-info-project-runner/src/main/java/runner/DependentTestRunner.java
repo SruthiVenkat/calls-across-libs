@@ -7,11 +7,14 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.lang.ProcessBuilder.Redirect;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.maven.shared.invoker.DefaultInvocationRequest;
@@ -30,180 +33,149 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
-import db.DatabaseConnector;
-
 public class DependentTestRunner {
-	public static final String agentPath = "/home/vishal/Documents/Waterloo/PL/calls-across-libs/libs-info-agent/target/libs-info-agent-1.0-SNAPSHOT.jar";
-	public static final String javassistJarPath = "/home/vishal/.m2/repository/org/javassist/javassist/3.27.0-GA/javassist-3.27.0-GA.jar";
-	public static final String dbPath = "/home/vishal/Documents/Waterloo/PL/calls-across-libs/libs-info-db/target/libs-info-db-1.0-SNAPSHOT.jar";
-	public static final String postgresJarPath = "/home/vishal/.m2/repository/org/postgresql/postgresql/42.2.14/postgresql-42.2.14.jar";
-	public static final String JAVA_OPTS = "-javaagent:/home/vishal/Documents/Waterloo/PL/calls-across-libs/libs-info-agent/target/libs-info-agent-1.0-SNAPSHOT.jar "
-			+ "-Xbootclasspath/p:/home/vishal/.m2/repository/org/javassist/javassist/3.27.0-GA/javassist-3.27.0-GA.jar:/home/vishal/Documents/Waterloo/PL/calls-across-libs/libs-info-db/target/libs-info-db-1.0-SNAPSHOT.jar"
-			+ ":/home/vishal/.m2/repository/org/postgresql/postgresql/42.2.14/postgresql-42.2.14.jar:/home/vishal/Documents/Waterloo/PL/calls-across-libs/libs-info-agent/target/libs-info-agent-1.0-SNAPSHOT.jar";
+	public static String agentPath;
+	public static String javassistJarPath;
+	public static String postgresJarPath;
+	public static String JAVA_OPTS;
+	public static String outputPath;
+	public static List<String> addedLibs = new ArrayList<String>();
+	public static String configPath = Paths.get(new File(".").getAbsolutePath()).getParent().getParent().toString()+"/src/main/resources/config.properties";
+
 	public static void main(String[] args) {
-		// connect to database and create the required procedures
-		DatabaseConnector connector = DatabaseConnector.buildDatabaseConnector();
-		connector.connect();
-		connector.createSQLProcForAPIProportionCalled(); 
-		connector.createSQLProcForJaccardSimilarity();
-		connector.createSQLProcForFetchingCallsToALibrary();
-		
-		runMavenProjects(connector);
-		// runGradleProjects("/home/vishal/Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/projects/nextflow", connector);
+		loadProperties();	// load properties - paths
+		runMavenProjects();
+		runGradleProjects();
 	}
 	
-	public static void runMavenProjects(DatabaseConnector connector) {
+	public static void loadProperties() {
+		try (FileReader input = new FileReader(configPath)) {
+            Properties prop = new Properties();
+            prop.load(input);
+            agentPath = prop.getProperty("agentPath");
+            javassistJarPath = prop.getProperty("javassistJarPath");
+            outputPath = prop.getProperty("outputPath");
+            File outputDir = new File(outputPath);
+            if (!outputDir.exists())
+            	outputDir.mkdir();
+            JAVA_OPTS =  "-javaagent:"+agentPath+" -Xbootclasspath/p:"+javassistJarPath+":"+agentPath;
+            
+            String libsInfoPath = prop.getProperty("libsInfoPath");
+            if (new File(libsInfoPath).exists()) {
+				String row;
+				BufferedReader reader = new BufferedReader(new FileReader(libsInfoPath));
+				while ((row = reader.readLine()) != null) {
+				    String[] data = row.split("\t");
+				    addedLibs.add(data[0]);
+				}
+            }
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+	}
+	
+	public static void runMavenProjects() {
 		// get poms for projects
-		List<File> pomList = new ArrayList<>();
+		Map<String, File> pomList = new HashMap<String, File>();
 		JSONParser jsonParser = new JSONParser();
-        try (FileReader reader = new FileReader(new File(".").getAbsolutePath()+File.separator
-				+"projects"+File.separator+"projects-list.json"))
+        try (FileReader reader = new FileReader(new File(".").getAbsolutePath()+File.separator+"projects"+File.separator+"projects-list.json"))
         {
             Object obj = jsonParser.parse(reader);
             JSONArray projects = (JSONArray) obj;
             Iterator<JSONObject> iterator = projects.iterator();
             while (iterator.hasNext()) {
             	JSONObject projectObject = (JSONObject)iterator.next();
-            	File pomFile = new File(new File(".").getAbsolutePath()+File.separator+"projects"+File.separator+projectObject.get("folderName")+File.separator+"pom.xml");
-            	//if (!connector.isLibPresentInLibsInfoTable(""+projectObject.get("libName"))) {
-         			writeXMLToProjectPOM(pomFile, false, true);
-        			mvnInstallProjects(pomFile, true); // generate jars
-        			writeXMLToProjectPOM(pomFile, true, false);
-        			mvnInstallProjects(pomFile, false); // generate wars
-            	//}
-            	pomList.add(pomFile);
+            	if (!addedLibs.contains(projectObject.get("libName"))) {
+	            	File pomFile = new File(new File(".").getAbsolutePath()+File.separator+"projects"+File.separator+projectObject.get("folderName")+File.separator+"pom.xml");
+	     			writeXMLToProjectPOM(pomFile);
+	    			mvnInstallProjects(pomFile); // generate wars and jars
+	            	pomList.put((String)projectObject.get("libName"), pomFile);
+            	}
             }
         } catch (Exception e) {
 			System.out.println("Error while reading file with project list" + e.toString());		
 		}
 		
 		// get total API counts for projects and packages in each project
-		JarUtility.initLibsToCountsAndClasses(connector);
+		JarUtility.initLibsToCountsAndClasses("maven");
 		
 		// run unit tests to get data
-		for (File pomFilePath: pomList) {
-			runProjectUnitTests(pomFilePath);
+		for (String lib: pomList.keySet()) {
+			try (FileReader input = new FileReader(configPath)) {
+	            Properties prop = new Properties();
+	            prop.load(input);
+	            prop.setProperty("outputPath", outputPath+lib+".tsv");
+	            prop.store(new FileWriter(configPath, false), null);
+	            runMvnProjectUnitTests(pomList.get(lib));
+	            prop.setProperty("outputPath", outputPath);
+	            prop.store(new FileWriter(configPath, false), null);
+            } catch (IOException ex) {
+		            ex.printStackTrace();
+		     }
 		}
 	}
 	
-	public static void writeXMLToProjectPOM(File xmlFile, Boolean packageAsWar, Boolean addPluginsDeps) {
+	public static void writeXMLToProjectPOM(File xmlFile) {
 		SAXBuilder builder = new SAXBuilder();
 		Document doc;
 		try {
 			doc = (Document) builder.build(xmlFile);
-
 			Element rootNode = doc.getRootElement();
 
 			Element packagingElement = rootNode.getChild("packaging", rootNode.getNamespace());
 			if (packagingElement != null) {
 				rootNode.removeChild("packaging", rootNode.getNamespace());
 			}
-			String packagingString = packageAsWar == true ? "war" : "jar";
-			Element packaging = new Element("packaging", rootNode.getNamespace()).setText(packagingString);
+			Element packaging = new Element("packaging", rootNode.getNamespace()).setText("war");
 			rootNode.addContent(packaging);
-			if (addPluginsDeps) {
-				Element buildFromXML = rootNode.getChild("build", rootNode.getNamespace());
-				if (buildFromXML == null) {
-					Element newBuild = new Element("build", rootNode.getNamespace());
-					rootNode.addContent(newBuild);
-					buildFromXML = newBuild;
+			Element buildFromXML = rootNode.getChild("build", rootNode.getNamespace());
+			if (buildFromXML == null) {
+				Element newBuild = new Element("build", rootNode.getNamespace());
+				rootNode.addContent(newBuild);
+				buildFromXML = newBuild;
+			}
+			Element pluginsElement = buildFromXML.getChild("plugins", rootNode.getNamespace());
+			if (pluginsElement == null) {
+				Element pluginsToAdd = new Element("plugins", rootNode.getNamespace());
+				buildFromXML.addContent(pluginsToAdd);
+				pluginsElement = pluginsToAdd;
+			}
+			if (!checkIfPluginExistsInProjectPOM(pluginsElement, rootNode, "org.apache.maven.plugins",
+					"maven-war-plugin")) {
+				Element pluginToAdd = new Element("plugin", rootNode.getNamespace());
+				pluginToAdd.addContent(new Element("groupId", rootNode.getNamespace()).setText("org.apache.maven.plugins"));
+				pluginToAdd.addContent(new Element("artifactId", rootNode.getNamespace()).setText("maven-war-plugin"));
+
+				Element configurationToAdd = new Element("configuration", rootNode.getNamespace());
+				configurationToAdd.addContent(new Element("failOnMissingWebXml", rootNode.getNamespace()).setText("false"));
+				configurationToAdd.addContent(new Element("attachClasses", rootNode.getNamespace()).setText("true"));
+				pluginToAdd.addContent(configurationToAdd);
+
+				pluginsElement.addContent(pluginToAdd);
+			} else {
+				List<Element> pluginElements =  pluginsElement.getChildren("plugin", rootNode.getNamespace());
+				Element mvnWarPluginElement = pluginElements.stream().filter(pluginChild -> pluginChild.getChildText("artifactId", rootNode.getNamespace()).equals("maven-war-plugin")).findAny().orElse(null);
+				Element configurationToAdd = mvnWarPluginElement.getChild("configuration", rootNode.getNamespace());
+				if (configurationToAdd==null) {
+					configurationToAdd = new Element("configuration", rootNode.getNamespace());
+					mvnWarPluginElement.addContent(configurationToAdd);
 				}
-				Element pluginsElement = buildFromXML.getChild("plugins", rootNode.getNamespace());
-				if (pluginsElement == null) {
-					Element pluginsToAdd = new Element("plugins", rootNode.getNamespace());
-					buildFromXML.addContent(pluginsToAdd);
-					pluginsElement = pluginsToAdd;
+				Element failOnMissingWebXml = configurationToAdd.getChild("failOnMissingWebXml", rootNode.getNamespace());
+				if (failOnMissingWebXml==null) {
+					failOnMissingWebXml = new Element("failOnMissingWebXml", rootNode.getNamespace()).setText("false");
+					configurationToAdd.addContent(failOnMissingWebXml);
 				}
-				if (!checkIfPluginExistsInProjectPOM(pluginsElement, rootNode, "org.apache.maven.plugins",
-						"maven-war-plugin")) {
-					Element pluginToAdd = new Element("plugin", rootNode.getNamespace());
-					pluginToAdd.addContent(
-							new Element("groupId", rootNode.getNamespace()).setText("org.apache.maven.plugins"));
-					pluginToAdd.addContent(new Element("artifactId", rootNode.getNamespace()).setText("maven-war-plugin"));
-	
-					Element configurationToAdd = new Element("configuration", rootNode.getNamespace());
-					configurationToAdd
-							.addContent(new Element("failOnMissingWebXml", rootNode.getNamespace()).setText("false"));
-					pluginToAdd.addContent(configurationToAdd);
-	
-					pluginsElement.addContent(pluginToAdd);
-				} else {
-					// TODO - handle cases when pom contains war plugin
-				}
-				if (!checkIfPluginExistsInProjectPOM(pluginsElement, rootNode, "org.apache.maven.plugins",
-						"maven-surefire-plugin")) {
-					Element pluginToAdd = new Element("plugin", rootNode.getNamespace());
-					pluginToAdd.addContent(
-							new Element("groupId", rootNode.getNamespace()).setText("org.apache.maven.plugins"));
-					pluginToAdd.addContent(new Element("artifactId", rootNode.getNamespace()).setText("maven-surefire-plugin"));
-					pluginToAdd.addContent(new Element("version", rootNode.getNamespace()).setText("2.22.0"));
-	
-					Element configurationToAdd = new Element("configuration", rootNode.getNamespace());
-					configurationToAdd
-							.addContent(new Element("argLine", rootNode.getNamespace()).setText("-Xbootclasspath/p:\""+javassistJarPath+"\":\""+dbPath
-									+"\" -javaagent:\""+agentPath+"\""));
-					configurationToAdd.addContent(new Element("trimStackTrace", rootNode.getNamespace()).setText("false"));
-					pluginToAdd.addContent(configurationToAdd);
-					
-					Element executionsToAdd = new Element("executions", rootNode.getNamespace());
-					executionsToAdd.addContent(new Element("execution", rootNode.getNamespace()).addContent(new Element("goals", rootNode.getNamespace())
-									.addContent(new Element("goal", rootNode.getNamespace()).setText("test"))));
-					pluginToAdd.addContent(executionsToAdd);
-	
-					pluginsElement.addContent(pluginToAdd);
-				} else {
-					List<Element> pluginElements =  pluginsElement.getChildren("plugin", rootNode.getNamespace());
-					Element sureFirePluginElement = pluginElements.stream().filter(pluginChild -> pluginChild.getChildText("artifactId", rootNode.getNamespace()).equals("maven-surefire-plugin"))
-							.findAny().orElse(null);
-					Element configurationToAdd = sureFirePluginElement.getChild("configuration", rootNode.getNamespace());
-					if (configurationToAdd==null) {
-						configurationToAdd = new Element("configuration", rootNode.getNamespace());
-						sureFirePluginElement.addContent(configurationToAdd);
-					}
-					configurationToAdd
-							.addContent(new Element("argLine", rootNode.getNamespace()).setText("-Xbootclasspath/p:\""+javassistJarPath+"\":\""+dbPath
-									+"\" -javaagent:\""+agentPath+"\""));
-					configurationToAdd.addContent(new Element("trimStackTrace", rootNode.getNamespace()).setText("false"));
-					
-					Element executionsToAdd = sureFirePluginElement.getChild("executions", rootNode.getNamespace());
-					if (executionsToAdd==null) {
-						executionsToAdd = new Element("executions", rootNode.getNamespace());
-						sureFirePluginElement.addContent(executionsToAdd);
-					}
-					
-					Element executionToAdd = executionsToAdd.getChild("execution", rootNode.getNamespace());
-					if (executionToAdd==null) {
-						executionToAdd = new Element("execution", rootNode.getNamespace());
-						executionsToAdd.addContent(executionToAdd);
-					}
-					
-					
-					Element goalsToAdd = executionToAdd.getChild("goals", rootNode.getNamespace());
-					if (goalsToAdd==null) {
-						executionToAdd = new Element("goals", rootNode.getNamespace());
-						executionToAdd.addContent(goalsToAdd);
-					}
-					goalsToAdd.addContent(new Element("goal", rootNode.getNamespace()).setText("test"));
-					// TODO - fix cases when argLine is already present in pom
-				}
-	
-				Element dependencies = rootNode.getChild("dependencies", rootNode.getNamespace());
-				if (dependencies == null) {
-					dependencies = new Element("dependencies", rootNode.getNamespace());
-					rootNode.addContent(dependencies);
-				}
-				if (!checkIfDependencyExistsInProjectPOM(dependencies, rootNode, "org.postgresql", "postgresql")) {
-					Element dependency1 = new Element("dependency", rootNode.getNamespace());
-					dependency1.addContent(new Element("groupId", rootNode.getNamespace()).setText("org.postgresql"));
-					dependency1.addContent(new Element("artifactId", rootNode.getNamespace()).setText("postgresql"));
-					dependency1.addContent(new Element("version", rootNode.getNamespace()).setText("42.2.14"));
-					dependencies.addContent(dependency1);
+				Element attachClasses = configurationToAdd.getChild("attachClasses", rootNode.getNamespace());
+				if (attachClasses==null) {
+					attachClasses = new Element("attachClasses", rootNode.getNamespace()).setText("true");
+					configurationToAdd.addContent(attachClasses);
 				}
 			}
+				
 			XMLOutputter xmlOutput = new XMLOutputter();
 			xmlOutput.setFormat(Format.getPrettyFormat());
 			xmlOutput.output(doc, new FileWriter(xmlFile));
-		} catch (JDOMException | IOException e) {
+		}catch (JDOMException | IOException e) {
 			e.printStackTrace();
 		}
 	}
@@ -212,64 +184,40 @@ public class DependentTestRunner {
 		Boolean pluginPresent = false;
 		List<Element> pluginElementChidren = pluginsElement.getChildren("plugin", rootNode.getNamespace());
 		for (Element pluginChild : pluginElementChidren) {
-			if (pluginChild.getChild("groupId", rootNode.getNamespace()) != null
-					&& pluginChild.getChild("artifactId", rootNode.getNamespace()) != null
-					&& pluginChild.getChildText("groupId", rootNode.getNamespace()).equals(groupID)
-					&& pluginChild.getChildText("artifactId", rootNode.getNamespace())
-							.equals(artifactID)) {
+			if (pluginChild.getChild("groupId", rootNode.getNamespace()) != null && pluginChild.getChild("artifactId", rootNode.getNamespace()) != null
+				&& pluginChild.getChildText("groupId", rootNode.getNamespace()).equals(groupID) && pluginChild.getChildText("artifactId", rootNode.getNamespace()).equals(artifactID)) {
 				pluginPresent = true;
 			}
 		}
 		return pluginPresent;
 	}
-	
-	public static Boolean checkIfDependencyExistsInProjectPOM(Element dependencies, Element rootNode, String groupID, String artifactID) {
-		Boolean dependencyPresent = false;
-		List<Element> dependencyElementChildren = dependencies.getChildren("dependency", rootNode.getNamespace());
-		for (Element dependencyChild : dependencyElementChildren) {
-			if (dependencyChild.getChild("groupId", rootNode.getNamespace()) != null
-					&& dependencyChild.getChild("artifactId", rootNode.getNamespace()) != null
-					&& dependencyChild.getChildText("groupId", rootNode.getNamespace())
-							.equals(groupID)
-					&& dependencyChild.getChildText("artifactId", rootNode.getNamespace()).equals(artifactID)) {
-				dependencyPresent = true;
-			}
-		}
-		return dependencyPresent;
-	}
 
-	public static void mvnInstallProjects(File pomFile, boolean cleanInstall) {
+	public static void mvnInstallProjects(File pomFile) {
 		InvocationRequest request = new DefaultInvocationRequest();
 		request.setPomFile(pomFile);
-		if (cleanInstall)
-			request.setGoals(Arrays.asList("clean", "install"));
-		else
-			request.setGoals(Arrays.asList("install"));
+		request.setGoals(Arrays.asList("clean", "install"));
 		
 		request.setMavenOpts("-Dlicense.skip=true -DskipTests=true -Dcheckstyle.skip=true");
 
 		request.setJavaHome(new File("/usr/lib/jvm/java-8-openjdk-amd64/jre/"));
 		System.setProperty("maven.home", "/usr/share/maven"); //System.getenv("MAVEN_HOME")) - windows; //TODO - pick it up based on system
-		//System.setProperty("maven.home", System.getenv("MAVEN_HOME")); //TODO - pick it up based on system
 		Invoker invoker = new DefaultInvoker();
 		try {
 			invoker.execute( request );
 		} catch (MavenInvocationException e) {
 			e.printStackTrace();
 		}
-		
-
 	}
 	
-	public static void runProjectUnitTests(File pomFile) {
+	public static void runMvnProjectUnitTests(File pomFile) {
 		InvocationRequest request = new DefaultInvocationRequest();
 		request.setPomFile(pomFile);
-		request.setGoals(Arrays.asList("test"));
-		request.setMavenOpts("-Dlicense.skip=true");
-
+		request.setGoals(Arrays.asList("test")); 
+		Properties properties = new Properties();
+		properties.setProperty("argLine", "-javaagent:/home/vishal/Documents/Waterloo/PL/calls-across-libs/libs-info-agent/target/libs-info-agent-1.0-SNAPSHOT.jar -Xbootclasspath/p:/home/vishal/.m2/repository/org/javassist/javassist/3.27.0-GA/javassist-3.27.0-GA.jar:/home/vishal/Documents/Waterloo/PL/calls-across-libs/libs-info-agent/target/libs-info-agent-1.0-SNAPSHOT.jar");
+		request.setProperties(properties);
 		request.setJavaHome(new File("/usr/lib/jvm/java-8-openjdk-amd64/jre/"));
 		System.setProperty("maven.home", "/usr/share/maven"); //System.getenv("MAVEN_HOME")) - windows; //TODO - pick it up based on system
-		//System.setProperty("maven.home", System.getenv("MAVEN_HOME")); //TODO - pick it up based on system
 
 		Invoker invoker = new DefaultInvoker();
 		try {
@@ -279,18 +227,22 @@ public class DependentTestRunner {
 		}
 	}
 	
-	public static void runGradleProjects(String PATH_TO_GRADLE_PROJECT, DatabaseConnector connector) {
-		String warInitScriptPathString = new File(".").getAbsolutePath()+File.separator+"gradle-init-scripts"+File.separator+"war.gradle";
-		String javaAgentInitScriptPathString = new File(".").getAbsolutePath()+File.separator+"gradle-init-scripts"+File.separator+"war.gradle";
-
-		// jar
-		executeCommand(" ./gradlew clean build -x test --stacktrace", PATH_TO_GRADLE_PROJECT, false);
-		// war
-		executeCommand(" ./gradlew build -I "+warInitScriptPathString+" -x test --stacktrace", PATH_TO_GRADLE_PROJECT, false);
-		
+	public static void runGradleProjects() {
+		//"/home/vishal/Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/projects/nextflow"
+		installGradleProjects("tmp");
 		// get total API counts for projects and packages in each project
-		JarUtility.initLibsToCountsAndClasses(connector);
-		// test
+		JarUtility.initLibsToCountsAndClasses("gradle");
+		runGradleProjectUnitTests("tmp");
+	}
+	
+	public static void installGradleProjects(String PATH_TO_GRADLE_PROJECT) {
+		String warInitScriptPathString = new File(".").getAbsolutePath()+File.separator+"gradle-init-scripts"+File.separator+"war.gradle";
+		executeCommand(" ./gradlew clean build -x test --stacktrace", PATH_TO_GRADLE_PROJECT, false); // jar
+		executeCommand(" ./gradlew build -I "+warInitScriptPathString+" -x test --stacktrace", PATH_TO_GRADLE_PROJECT, false); // war
+	}
+	
+	public static void runGradleProjectUnitTests(String PATH_TO_GRADLE_PROJECT) {
+		String javaAgentInitScriptPathString = new File(".").getAbsolutePath()+File.separator+"gradle-init-scripts"+File.separator+"war.gradle";
 		executeCommand(" ./gradlew test -I "+javaAgentInitScriptPathString+"--stacktrace", PATH_TO_GRADLE_PROJECT, true);
 	}
 	
@@ -336,7 +288,6 @@ public class DependentTestRunner {
 
 					readerErr.close();
 					System.out.println(error.toString());
-					//throw new IllegalArgumentException(error.toString());
 				}
 			} else {
 				process.destroy();

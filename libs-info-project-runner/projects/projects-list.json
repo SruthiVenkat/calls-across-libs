@@ -1,7 +1,12 @@
 [
 	{
-		"libName": "nextflow-21.05.0",
-		"folderName": "nextflow/modules/nextflow/build/libs",
-		"generatedWarJarName": "nextflow-21.05.0-edge"
+		"libName": "jsoup-1.10.1",
+		"folderName": "jsoup-jsoup-1.10.1",
+		"generatedWarJarName": "jsoup-1.10.1"
+	},
+	{
+		"libName": "JsoupXpath-2.4.3",
+		"folderName": "JsoupXpath",
+		"generatedWarJarName": "JsoupXpath-2.4.3"
 	}
 ]
