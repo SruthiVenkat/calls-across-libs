@@ -35,6 +35,7 @@ public class JarUtility {
 	public static String configPath = Paths.get(new File(".").getAbsolutePath()).getParent().getParent().toString()+"/src/main/resources/config.properties";
 	
 	public static void initLibsToCountsAndClasses(String build) {
+		libsToCountsAndClasses.clear();
 		// get wars and jars for projects, initialize counts and packages
 		populateAddedLibs();
 		JSONParser jsonParser = new JSONParser();
@@ -45,17 +46,18 @@ public class JarUtility {
             Iterator<JSONObject> iterator = projects.iterator();
             while (iterator.hasNext()) {
             	JSONObject projectObject = (JSONObject)iterator.next();
-            	if (!addedLibs.contains(projectObject.get("libName"))) {
-            		String pathToWarJar=""; 
-            		if (build.equals("maven")) 
-            			pathToWarJar = File.separator+"target"+File.separator+projectObject.get("generatedWarJarName");
-            		else if (build.equals("gradle"))
-            			pathToWarJar = File.separator+projectObject.get("generatedWarJarName");
-
+            	if (!addedLibs.contains(projectObject.get("libName")) && projectObject.get("build").equals(build)) {
+            		String pathToWarJar="", jarName="";
+            		if (build.equals("maven")) {
+            			pathToWarJar = File.separator+"target"+File.separator+projectObject.get("generatedWarJarName"); jarName = "-classes.jar";
+            		}
+            		else if (build.equals("gradle")) {
+            			pathToWarJar = File.separator+"build/libs"+File.separator+projectObject.get("generatedWarJarName"); jarName = ".jar";
+            		}
 	            	String generatedWarJarName = new File(".").getAbsolutePath()+File.separator+"projects"+File.separator+projectObject.get("folderName")+pathToWarJar;
 	            	String tmpFolder = new File(".").getAbsolutePath()+File.separator+"projects"+File.separator+projectObject.get("folderName")+File.separator+"tmp";
 	            	String libName = (String)projectObject.get("libName");
-	            	ArrayList<Object> countsAndClasses = getPublicProtectedMethodsCountAndClasses(generatedWarJarName+".war", generatedWarJarName+"-classes.jar", tmpFolder);
+	            	ArrayList<Object> countsAndClasses = getPublicProtectedMethodsCountAndClasses(generatedWarJarName+".war", generatedWarJarName+jarName, tmpFolder);
 	            	libsToCountsAndClasses.putIfAbsent(libName, new ArrayList<Object>(Arrays.asList(0, 0, "")));
 	            	ArrayList<Object> libVals = libsToCountsAndClasses.get(libName);
 	            	libVals.set(0, (Integer)libVals.get(0) + (Integer)countsAndClasses.get(0));
@@ -181,6 +183,7 @@ public class JarUtility {
 			System.out.println("Error while parsing jar" + e.toString());
 		}
 		deleteDirectory(destDir);
+		if (classNames.isEmpty()) classNames.add("");
 		return new ArrayList<Object>(Arrays.asList(count, 0, String.join(":", classNames)));
 	}
 	

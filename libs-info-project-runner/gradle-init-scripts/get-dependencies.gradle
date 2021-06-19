@@ -1,0 +1,9 @@
+allprojects {
+	tasks.register('getDeps') {
+		doLast {
+			println "Dependencies:"
+			configurations.runtimeClasspath.each { println it }
+		}
+	}
+}
+

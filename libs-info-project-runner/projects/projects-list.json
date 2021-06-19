@@ -2,11 +2,13 @@
 	{
 		"libName": "jsoup-1.10.1",
 		"folderName": "jsoup-jsoup-1.10.1",
-		"generatedWarJarName": "jsoup-1.10.1"
+		"generatedWarJarName": "jsoup-1.10.1",
+		"build": "maven"
 	},
-	{
+		{
 		"libName": "JsoupXpath-2.4.3",
 		"folderName": "JsoupXpath",
-		"generatedWarJarName": "JsoupXpath-2.4.3"
+		"generatedWarJarName": "JsoupXpath-2.4.3",
+		"build": "maven"
 	}
 ]

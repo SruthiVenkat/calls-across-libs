@@ -9,7 +9,6 @@ import java.io.IOException;
 import java.lang.instrument.Instrumentation;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.Arrays;
 import java.util.Properties;
 
 /**

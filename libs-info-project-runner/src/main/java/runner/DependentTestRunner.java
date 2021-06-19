@@ -44,8 +44,41 @@ public class DependentTestRunner {
 
 	public static void main(String[] args) {
 		loadProperties();	// load properties - paths
-		runMavenProjects();
-		runGradleProjects();
+		
+		JSONParser jsonParser = new JSONParser();
+        try (FileReader reader = new FileReader(new File(".").getAbsolutePath()+File.separator+"projects"+File.separator+"projects-list.json"))
+        {
+            Object obj = jsonParser.parse(reader);
+            JSONArray projects = (JSONArray) obj;
+            JSONArray gradleProjects = new JSONArray();
+            JSONArray mvnProjects = new JSONArray();
+            Iterator<JSONObject> iterator = projects.iterator();
+            while (iterator.hasNext()) {
+            	JSONObject projectObject = (JSONObject)iterator.next();
+            	//if (!addedLibs.contains(projectObject.get("libName"))) {
+            		if (projectObject.get("build").equals("maven")) {
+            			mvnProjects.add(projectObject);
+            		} else if (projectObject.get("build").equals("gradle")) {
+            			gradleProjects.add(projectObject);
+            		}	
+            	//}
+            }
+            
+            // install projects
+           // runMavenProjectsInstall(mvnProjects);
+    		//runGradleProjectsInstall(gradleProjects);
+
+    		// get total API counts for projects and packages in each project
+//    		JarUtility.initLibsToCountsAndClasses("maven");
+//            JarUtility.initLibsToCountsAndClasses("gradle");
+            
+            // run unit tests
+            Map<String, File> pomList = getPOMList(mvnProjects);
+            runMavenProjectsTest(mvnProjects, pomList);
+            runGradleProjectsTest(gradleProjects);
+        } catch (Exception e) {
+			System.out.println("Error while reading file with project list " + e.toString());		
+		}
 	}
 	
 	public static void loadProperties() {
@@ -74,40 +107,39 @@ public class DependentTestRunner {
         }
 	}
 	
-	public static void runMavenProjects() {
+	public static Map<String, File> getPOMList(JSONArray mavenProjects) {
 		// get poms for projects
 		Map<String, File> pomList = new HashMap<String, File>();
-		JSONParser jsonParser = new JSONParser();
-        try (FileReader reader = new FileReader(new File(".").getAbsolutePath()+File.separator+"projects"+File.separator+"projects-list.json"))
-        {
-            Object obj = jsonParser.parse(reader);
-            JSONArray projects = (JSONArray) obj;
-            Iterator<JSONObject> iterator = projects.iterator();
-            while (iterator.hasNext()) {
-            	JSONObject projectObject = (JSONObject)iterator.next();
-            	if (!addedLibs.contains(projectObject.get("libName"))) {
-	            	File pomFile = new File(new File(".").getAbsolutePath()+File.separator+"projects"+File.separator+projectObject.get("folderName")+File.separator+"pom.xml");
-	     			writeXMLToProjectPOM(pomFile);
-	    			mvnInstallProjects(pomFile); // generate wars and jars
-	            	pomList.put((String)projectObject.get("libName"), pomFile);
-            	}
-            }
-        } catch (Exception e) {
-			System.out.println("Error while reading file with project list" + e.toString());		
-		}
+        Iterator<JSONObject> iterator = mavenProjects.iterator();
+        while (iterator.hasNext()) {
+        	JSONObject projectObject = (JSONObject)iterator.next();
+        	File pomFile = new File(new File(".").getAbsolutePath()+File.separator+"projects"+File.separator+projectObject.get("folderName")+File.separator+"pom.xml");
+         	pomList.put((String)projectObject.get("libName"), pomFile);
+        }
+        return pomList;
+	}
+	
+	public static void runMavenProjectsInstall(JSONArray mavenProjects) {
+        Iterator<JSONObject> iterator = mavenProjects.iterator();
+        while (iterator.hasNext()) {
+        	JSONObject projectObject = (JSONObject)iterator.next();
+        	File pomFile = new File(new File(".").getAbsolutePath()+File.separator+"projects"+File.separator+projectObject.get("folderName")+File.separator+"pom.xml");
+ 			writeXMLToProjectPOM(pomFile);
+			mvnInstallProjects(pomFile); // generate wars and jars
+        }
+	}
 		
-		// get total API counts for projects and packages in each project
-		JarUtility.initLibsToCountsAndClasses("maven");
-		
-		// run unit tests to get data
+	public static void runMavenProjectsTest(JSONArray mavenProjects, Map<String, File> pomList) {	
 		for (String lib: pomList.keySet()) {
 			try (FileReader input = new FileReader(configPath)) {
 	            Properties prop = new Properties();
 	            prop.load(input);
 	            prop.setProperty("outputPath", outputPath+lib+".tsv");
+	            prop.setProperty("runningLibrary", lib);
 	            prop.store(new FileWriter(configPath, false), null);
 	            runMvnProjectUnitTests(pomList.get(lib));
 	            prop.setProperty("outputPath", outputPath);
+	            prop.setProperty("runningLibrary", "");
 	            prop.store(new FileWriter(configPath, false), null);
             } catch (IOException ex) {
 		            ex.printStackTrace();
@@ -196,11 +228,10 @@ public class DependentTestRunner {
 		InvocationRequest request = new DefaultInvocationRequest();
 		request.setPomFile(pomFile);
 		request.setGoals(Arrays.asList("clean", "install"));
-		
 		request.setMavenOpts("-Dlicense.skip=true -DskipTests=true -Dcheckstyle.skip=true");
-
 		request.setJavaHome(new File("/usr/lib/jvm/java-8-openjdk-amd64/jre/"));
 		System.setProperty("maven.home", "/usr/share/maven"); //System.getenv("MAVEN_HOME")) - windows; //TODO - pick it up based on system
+		
 		Invoker invoker = new DefaultInvoker();
 		try {
 			invoker.execute( request );
@@ -227,12 +258,38 @@ public class DependentTestRunner {
 		}
 	}
 	
-	public static void runGradleProjects() {
-		//"/home/vishal/Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/projects/nextflow"
-		installGradleProjects("tmp");
-		// get total API counts for projects and packages in each project
-		JarUtility.initLibsToCountsAndClasses("gradle");
-		runGradleProjectUnitTests("tmp");
+	public static void runGradleProjectsInstall(JSONArray gradleProjects) {
+		JSONParser jsonParser = new JSONParser();
+        Iterator<JSONObject> iterator = gradleProjects.iterator();
+        String pathToGradleProject;
+        while (iterator.hasNext()) {
+        	JSONObject projectObject = (JSONObject)iterator.next();
+        	pathToGradleProject = new File(".").getAbsolutePath()+File.separator+"projects"+File.separator+projectObject.get("folderName");
+    		installGradleProjects(pathToGradleProject); // generate wars and jars
+        }
+	}	
+
+    public static void runGradleProjectsTest(JSONArray gradleProjects) {	
+    	Iterator<JSONObject> iterator = gradleProjects.iterator();
+    	String pathToGradleProject;
+        while (iterator.hasNext()) {
+        	JSONObject projectObject = (JSONObject)iterator.next();
+        	pathToGradleProject = new File(".").getAbsolutePath()+File.separator+"projects"+File.separator+projectObject.get("folderName");
+        	String lib = (String) projectObject.get("libName");
+			try (FileReader input = new FileReader(configPath)) {
+	            Properties prop = new Properties();
+	            prop.load(input);
+	            prop.setProperty("outputPath", outputPath+lib+".tsv");
+	            prop.setProperty("runningLibrary", lib);
+	            prop.store(new FileWriter(configPath, false), null);
+	            runGradleProjectUnitTests(pathToGradleProject);
+	            prop.setProperty("outputPath", outputPath);
+	            prop.setProperty("runningLibrary", "");
+	            prop.store(new FileWriter(configPath, false), null);
+            } catch (IOException ex) {
+		            ex.printStackTrace();
+		     }
+		}		
 	}
 	
 	public static void installGradleProjects(String PATH_TO_GRADLE_PROJECT) {

@@ -69,6 +69,7 @@ class InterLibraryCountsValue {
 public class CallTrackerTransformer implements ClassFileTransformer {
 	public static Map<String, List<String>> libsToClasses = new HashMap<String, List<String>>();
 	public static List<String> visitedCallerMethods = new ArrayList<String>();
+	public static String runningLibrary; 
 	public static Map<String, List<String>> libsToMethods = new HashMap<String, List<String>>();
 	public static ConcurrentHashMap<InterLibraryCountsKey, InterLibraryCountsValue> interLibraryCounts = new ConcurrentHashMap<InterLibraryCountsKey, InterLibraryCountsValue>();
 
@@ -81,10 +82,12 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 			Properties prop = new Properties();
 			prop.load(input); 
 			String libsInfoPath = prop.getProperty("libsInfoPath");
+			runningLibrary = prop.getProperty("runningLibrary");
 			String row;
 			BufferedReader reader = new BufferedReader(new FileReader(libsInfoPath));
 			while ((row = reader.readLine()) != null) {
 			    String[] data = row.split("\t");
+			    if (data.length == 4)
 			    libsToClasses.put(data[0], Arrays.asList(data[3].split(":")));
 			}
 			reader.close();
@@ -104,7 +107,7 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 			
 			String methodCallerClassName = ctClass.getName();
 			//if(!libsToClasses.entrySet().stream().anyMatch(map -> map.getValue().contains(methodCallerClassName))) {
-			if (methodCallerClassName.startsWith("java") || methodCallerClassName.startsWith("javax") || methodCallerClassName.startsWith("jdk") || methodCallerClassName.startsWith("sun")) {
+			if(methodCallerClassName.startsWith("java.")) {
 				return null;
 			}
 
@@ -154,8 +157,8 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 					            	String methodCalledClassName = m.getClassName();
 									String calledMethodLibName = "";
 
-									//if(libsToClasses.entrySet().stream().anyMatch(map -> map.getValue().contains(methodCalledClassName))) { 
-									if (!(methodCalledClassName.startsWith("java") || methodCalledClassName.startsWith("javax") || methodCalledClassName.startsWith("jdk") || methodCalledClassName.startsWith("sun"))) {
+									//if(libsToClasses.entrySet().stream().anyMatch(map -> map.getValue().contains(methodCalledClassName))) {
+									if (!methodCalledClassName.startsWith("java.")) {
 										try {
 											calledMethodLibName = libsToClasses.entrySet().stream()
 											.filter(map -> map.getValue().contains(methodCalledClassName))
@@ -174,12 +177,13 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 											if (!callingMethodLibName.equals(unknownEntry.getKey()) && !calledMethodLibName.equals(unknownEntry.getKey())) {
 												int modifiers = m.getMethod().getModifiers();
 												String codeToAdd = "";
-												if (callingMethodLibName.equals(calledMethodLibName) && (javassist.Modifier.isPublic(modifiers) || javassist.Modifier.isProtected(modifiers))) {
+												if (libsToClasses.get(runningLibrary).contains(methodCallerClassName) && libsToClasses.get(runningLibrary).contains(methodCalledClassName)
+														&& (javassist.Modifier.isPublic(modifiers) || javassist.Modifier.isProtected(modifiers))) {
 													// static
-													updateLibsToMethods(calledMethodLibName, methodCalledClassName, calledMethodName);
+													updateLibsToMethods(runningLibrary, methodCalledClassName, calledMethodName);
 													// dynamic
 													if (!Modifier.isStatic(modifiers))
-														codeToAdd = "instrumentation.CallTrackerTransformer.updateLibsToMethods(\""+calledMethodLibName+"\", $0.getClass().getName(), $0.getClass().getName()+\"."+ dynCalledMethodName + "\");";
+														codeToAdd = "instrumentation.CallTrackerTransformer.updateLibsToMethods(\""+runningLibrary+"\", $0.getClass().getName(), $0.getClass().getName()+\"."+ dynCalledMethodName + "\");";
 												}
 												
 												if (!callingMethodLibName.equals(calledMethodLibName)) {
