@@ -23,5 +23,7 @@ public class TypesClient {
 		Client.clientMethod1(rtypes);
 		
 		System.out.println("RandomTypes string - "+rtypes.getString(5));
+		
+		long[] arr = rtypes.getLongArray();
 	}
 }

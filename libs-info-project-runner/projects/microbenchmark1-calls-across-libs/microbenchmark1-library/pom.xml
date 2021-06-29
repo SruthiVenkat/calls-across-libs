@@ -9,25 +9,5 @@
   <artifactId>microbenchmark1-library</artifactId>
   <name>microbenchmark1-library</name>
   <description>Microbenchmark for recording method calls across libraries - Library</description>
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-war-plugin</artifactId>
-        <configuration>
-          <failOnMissingWebXml>false</failOnMissingWebXml>
-          <attachClasses>true</attachClasses>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
-  <dependencies>
-    <dependency>
-      <groupId>org.postgresql</groupId>
-      <artifactId>postgresql</artifactId>
-      <version>42.2.14</version>
-    </dependency>
-  </dependencies>
-  <packaging>war</packaging>
 </project>
 

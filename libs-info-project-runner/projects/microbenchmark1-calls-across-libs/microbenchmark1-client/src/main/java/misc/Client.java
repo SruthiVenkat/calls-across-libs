@@ -5,9 +5,11 @@ import java.lang.reflect.InvocationTargetException;
 import packageA.RandomTypes;
 import packageA.SubClass;
 import packageA.SuperClass;
+import packageA.CustomAnnotation;
 import packageB.bar.Middle;
 import packageB.baz.External;
 
+@CustomAnnotation
 public class Client {
 
 	public static void main(String[] args) {
@@ -20,6 +22,12 @@ public class Client {
 		System.out.print("Dispatch - "); sc.method1();
 		System.out.print("Static - "); SubClass.method2();
 		System.out.print("Dispatch + Static - "); sc.method2();
+		System.out.println(sc.field1);
+		
+		SubClass sub = new SubClass();
+		System.out.println(sub.field1);
+		sub.i = 10;
+		System.out.println(sub.i);
 
 		// packageB
 		External e = new External();

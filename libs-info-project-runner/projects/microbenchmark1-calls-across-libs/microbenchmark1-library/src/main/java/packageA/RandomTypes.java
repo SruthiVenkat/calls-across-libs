@@ -28,4 +28,9 @@ public class RandomTypes {
 			str+=getChar();
 		return str;
 	}
+	
+	public long[] getLongArray() {
+		long[] arr = new long[]{1, 2, 3};
+		return arr;
+	}
 } 

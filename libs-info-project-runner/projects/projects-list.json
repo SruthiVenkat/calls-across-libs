@@ -1,14 +1,20 @@
 [
 	{
-		"libName": "jsoup-1.10.1",
-		"folderName": "jsoup-jsoup-1.10.1",
-		"generatedWarJarName": "jsoup-1.10.1",
+		"libName": "microbenchmark1-client",
+		"execDir": "microbenchmark1-calls-across-libs/microbenchmark1-client",
+		"generatedJarName": "microbenchmark1-client-1.0-SNAPSHOT",
 		"build": "maven"
 	},
-		{
+	{
+		"libName": "jsoup-1.13.1",
+		"execDir": "jsoup-jsoup-1.13.1",
+		"generatedJarName": "jsoup-1.13.1",
+		"build": "maven"
+	},
+	{
 		"libName": "JsoupXpath-2.4.3",
-		"folderName": "JsoupXpath",
-		"generatedWarJarName": "JsoupXpath-2.4.3",
+		"execDir": "JsoupXpath",
+		"generatedJarName": "JsoupXpath-2.4.3",
 		"build": "maven"
 	}
 ]

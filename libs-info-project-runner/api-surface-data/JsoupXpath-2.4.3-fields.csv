@@ -1,0 +1,9 @@
+Callee Library,Field Name,Field Signature,Field Library,Count
+logback-classic-1.2.3,ch.qos.logback.core.spi.FilterReply::ACCEPT,Lch/qos/logback/core/spi/FilterReply;,logback-core-1.2.3,7
+slf4j-api-1.7.25,org.slf4j.impl.StaticMDCBinder::SINGLETON,Lorg/slf4j/impl/StaticMDCBinder;,logback-classic-1.2.3,1
+logback-classic-1.2.3,ch.qos.logback.core.spi.FilterReply::DENY,Lch/qos/logback/core/spi/FilterReply;,logback-core-1.2.3,10
+JsoupXpath-2.4.3,org.antlr.v4.runtime.ParserRuleContext::exception,Lorg/antlr/v4/runtime/RecognitionException;,antlr4-runtime-4.7.2,2
+logback-classic-1.2.3,ch.qos.logback.core.CoreConstants::LINE_SEPARATOR,Ljava/lang/String;,logback-core-1.2.3,5
+JsoupXpath-2.4.3,org.apache.commons.lang3.time.DateFormatUtils::ISO_DATETIME_TIME_ZONE_FORMAT,Lorg/apache/commons/lang3/time/FastDateFormat;,commons-lang3-3.3.2,1
+slf4j-api-1.7.25,org.slf4j.impl.StaticLoggerBinder::REQUESTED_API_VERSION,Ljava/lang/String;,logback-classic-1.2.3,1
+logback-classic-1.2.3,ch.qos.logback.core.spi.FilterReply::NEUTRAL,Lch/qos/logback/core/spi/FilterReply;,logback-core-1.2.3,14

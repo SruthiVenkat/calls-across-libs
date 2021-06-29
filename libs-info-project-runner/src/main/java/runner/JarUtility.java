@@ -1,11 +1,9 @@
 package runner;
 
-import java.io.BufferedOutputStream;
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -17,14 +15,20 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
+import java.util.Set;
 import java.util.jar.JarEntry;
 import java.util.jar.JarInputStream;
-import java.util.zip.ZipEntry;
 
+import org.apache.maven.shared.invoker.DefaultInvocationRequest;
+import org.apache.maven.shared.invoker.DefaultInvoker;
+import org.apache.maven.shared.invoker.InvocationRequest;
+import org.apache.maven.shared.invoker.Invoker;
+import org.apache.maven.shared.invoker.MavenInvocationException;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -33,10 +37,10 @@ public class JarUtility {
 	public static List<String> addedLibs = new ArrayList<String>();
 	public static Map<String, ArrayList<Object>> libsToCountsAndClasses = new HashMap<String, ArrayList<Object>>();
 	public static String configPath = Paths.get(new File(".").getAbsolutePath()).getParent().getParent().toString()+"/src/main/resources/config.properties";
+	public static String libsInfoPath;
 	
 	public static void initLibsToCountsAndClasses(String build) {
 		libsToCountsAndClasses.clear();
-		// get wars and jars for projects, initialize counts and packages
 		populateAddedLibs();
 		JSONParser jsonParser = new JSONParser();
         try (FileReader reader = new FileReader(new File(".").getAbsolutePath()+File.separator+"projects"+File.separator+"projects-list.json"))
@@ -47,17 +51,19 @@ public class JarUtility {
             while (iterator.hasNext()) {
             	JSONObject projectObject = (JSONObject)iterator.next();
             	if (!addedLibs.contains(projectObject.get("libName")) && projectObject.get("build").equals(build)) {
-            		String pathToWarJar="", jarName="";
+            		String pathToJar="", pathToRootPrj = "";
             		if (build.equals("maven")) {
-            			pathToWarJar = File.separator+"target"+File.separator+projectObject.get("generatedWarJarName"); jarName = "-classes.jar";
+            			pathToJar = File.separator+"target"+File.separator+projectObject.get("generatedJarName")+".jar";
             		}
             		else if (build.equals("gradle")) {
-            			pathToWarJar = File.separator+"build/libs"+File.separator+projectObject.get("generatedWarJarName"); jarName = ".jar";
+            			pathToJar = File.separator+"build/libs"+File.separator+projectObject.get("generatedJarName")+".jar";
+            			pathToRootPrj = new File(".").getAbsolutePath()+File.separator+"projects"+File.separator+projectObject.get("rootDir");
             		}
-	            	String generatedWarJarName = new File(".").getAbsolutePath()+File.separator+"projects"+File.separator+projectObject.get("folderName")+pathToWarJar;
-	            	String tmpFolder = new File(".").getAbsolutePath()+File.separator+"projects"+File.separator+projectObject.get("folderName")+File.separator+"tmp";
+            		String pathToProject = new File(".").getAbsolutePath()+File.separator+"projects"+File.separator+projectObject.get("execDir");
+	            	String generatedJarName = pathToProject+File.separator+pathToJar;
+	            	String tmpFolder = new File(".").getAbsolutePath()+File.separator+"projects"+File.separator+projectObject.get("execDir")+File.separator+"tmp";
 	            	String libName = (String)projectObject.get("libName");
-	            	ArrayList<Object> countsAndClasses = getPublicProtectedMethodsCountAndClasses(generatedWarJarName+".war", generatedWarJarName+jarName, tmpFolder);
+	            	ArrayList<Object> countsAndClasses = getPublicProtectedMethodsCountAndClasses(generatedJarName, tmpFolder, pathToProject, pathToRootPrj, build);
 	            	libsToCountsAndClasses.putIfAbsent(libName, new ArrayList<Object>(Arrays.asList(0, 0, "")));
 	            	ArrayList<Object> libVals = libsToCountsAndClasses.get(libName);
 	            	libVals.set(0, (Integer)libVals.get(0) + (Integer)countsAndClasses.get(0));
@@ -75,14 +81,15 @@ public class JarUtility {
 		try (FileReader input = new FileReader(configPath)) {
             Properties prop = new Properties();
             prop.load(input);
-            String libsInfoPath = prop.getProperty("libsInfoPath");
+            libsInfoPath = prop.getProperty("libsInfoPath");
             if (new File(libsInfoPath).exists()) {
 				String row;
 				BufferedReader reader = new BufferedReader(new FileReader(libsInfoPath));
 				while ((row = reader.readLine()) != null) {
-				    String[] data = row.split("\t");
+				    String[] data = row.split(",");
 				    addedLibs.add(data[0]);
 				}
+				reader.close();
             }
         } catch (IOException ex) {
             ex.printStackTrace();
@@ -94,15 +101,13 @@ public class JarUtility {
 		{
 		    Properties prop = new Properties();
 			prop.load(input); 
-			String libsInfoPath = prop.getProperty("libsInfoPath");
 			FileWriter writer = new FileWriter(libsInfoPath, true);	
 			if (new File(libsInfoPath).length() == 0) {
-				writer.write("Library Name\tNo. of Public/Protected Methods\tNo. of Methods Called By Tests\tClasses\n");
-				writer.write("unknownLib\t0\t0\t \n");
+				writer.write("Library Name,No. of Public/Protected Methods,No. of Methods Called By Tests,Classes\n");
+				writer.write("unknownLib,0,0, \n");
 			}
-			
 			for (String lib: libsToCountsAndClasses.keySet()) {
-				writer.write(lib+"\t"+libsToCountsAndClasses.get(lib).get(0)+"\t"+libsToCountsAndClasses.get(lib).get(1)+"\t"+libsToCountsAndClasses.get(lib).get(2)+"\n");
+				writer.write(lib+","+libsToCountsAndClasses.get(lib).get(0)+","+libsToCountsAndClasses.get(lib).get(1)+","+libsToCountsAndClasses.get(lib).get(2)+"\n");
 		    }
 			writer.flush();
 			writer.close();
@@ -111,44 +116,48 @@ public class JarUtility {
 		}
 	}
 	
-	public static ArrayList<Object> getPublicProtectedMethodsCountAndClasses(String warFile, String crunchifyJarName, String tmpFolder) {
+	public static ArrayList<Object> getPublicProtectedMethodsCountAndClasses(String crunchifyJarName, String tmpFolder, String pathToProject, String pathToRootPrj, String build) {
 		int count = 0;
-		List<String> classNames = new ArrayList<>();
-		File destDir = new File("");
+		Set<String> classNames = new HashSet<String>();
 
 		try {
 			JarInputStream crunchifyJarFile = new JarInputStream(new FileInputStream(crunchifyJarName));
 			JarEntry crunchifyJar;
 			
-			try {
-				unzip(warFile, tmpFolder);
-			} catch (FileNotFoundException e) {
-				e.printStackTrace();
-			} catch (IOException e) {
-				e.printStackTrace();
+			File destDir = new File(tmpFolder);
+			if (!destDir.exists()) {
+				destDir.mkdir();
 			}
+			if (build.equals("maven"))
+				mvnGetDependencies(destDir);
+			else if (build.equals("gradle"))
+				gradleGetDependencies(destDir, pathToProject, pathToRootPrj);
 
 			List<URL> classLoaderURLs = new ArrayList<>();
 			classLoaderURLs.add(new File(crunchifyJarName).toURI().toURL());
-			File dir = new File(tmpFolder+File.separator+"WEB-INF"+File.separator+"lib");
-			File[] directoryListing = dir.listFiles();
-			if (directoryListing != null) {
-				for (File child : directoryListing) {
-					classLoaderURLs.add(new File(child.getAbsolutePath()).toURI().toURL());
-				}
+			File depsFile = new File(tmpFolder+File.separator+"deps-output.txt");
+			List<String> depsPaths = new ArrayList<String>();
+ 			String row;
+			BufferedReader reader = new BufferedReader(new FileReader(depsFile));
+			while ((row = reader.readLine()) != null) {
+			    String[] data = row.split(":");
+			    for (String dependency : data) {
+			    	depsPaths.add(dependency);
+			    }
+			}
+			reader.close();
+
+			for (String dependency : depsPaths) {
+				classLoaderURLs.add(new File(dependency).toURI().toURL());
 			}
 
 			URL[] classLoaderURLsAsArray = new URL[classLoaderURLs.size()];
 			URLClassLoader child = new URLClassLoader(classLoaderURLs.toArray(classLoaderURLsAsArray),
 					JarUtility.class.getClass().getClassLoader());
 
-			if (directoryListing != null) {
-				for (File dependency : directoryListing) {
-					addDependencyInWarToLibsInfo(dependency, child);
-				}
+			for (String dependency : depsPaths) {
+				addDependencyToLibsInfo(new File(dependency), child);
 			}
-
-			destDir = new File(tmpFolder);
 
 			while (true) {
 				crunchifyJar = crunchifyJarFile.getNextJarEntry();
@@ -159,7 +168,7 @@ public class JarUtility {
 					String completeClassName = crunchifyJar.getName().replaceAll("/", "\\.");
 					String className = completeClassName.substring(0, completeClassName.lastIndexOf('.'));
 					classNames.add(className);
-
+					
 					// get counts
 					try {
 						Class<?> c = Class.forName(className, false, child);
@@ -179,23 +188,64 @@ public class JarUtility {
 				}
 			}
 			crunchifyJarFile.close();
+			deleteDirectory(destDir);
 		} catch (Exception e) {
 			System.out.println("Error while parsing jar" + e.toString());
 		}
-		deleteDirectory(destDir);
 		if (classNames.isEmpty()) classNames.add("");
 		return new ArrayList<Object>(Arrays.asList(count, 0, String.join(":", classNames)));
 	}
 	
-	public static void addDependencyInWarToLibsInfo(File dependency, URLClassLoader child) {
-		System.out.println(dependency.getName()); // TODO add war jars to libs-info
+	public static void mvnGetDependencies(File tmpDir) {
+		InvocationRequest request = new DefaultInvocationRequest();
+		File pomFile = new File(tmpDir.getParent()+File.separator+"pom.xml");
+		request.setPomFile(pomFile);
+		request.setGoals(Arrays.asList("dependency:build-classpath"));
+		request.setMavenOpts("-Dmdep.outputFile=./tmp/deps-output.txt");
+		request.setJavaHome(new File("/usr/lib/jvm/java-8-openjdk-amd64/jre/"));
+		System.setProperty("maven.home", "/usr/share/maven"); //System.getenv("MAVEN_HOME")) - windows; //TODO - pick it up based on system
+		
+		Invoker invoker = new DefaultInvoker();
+		try {
+			invoker.execute( request );
+		} catch (MavenInvocationException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public static void gradleGetDependencies(File tmpDir, String pathToProject, String pathToRootPrj) {
+		String getDepsInitScriptPathString = new File(".").getAbsolutePath()+File.separator+"gradle-init-scripts"+File.separator+"get-dependencies.gradle";
+		DependentTestRunner.executeCommand(" ./gradlew -I "+getDepsInitScriptPathString+" -p "+pathToProject+" getDeps --stacktrace > "
+				+tmpDir.getPath()+File.separator+"deps-output.txt", pathToRootPrj, false);
+		
+		try {
+			String[] rows = new String[(int) new File(tmpDir.getPath()+File.separator+"deps-output.txt").length()]; String row; int count = 0;
+			BufferedReader reader = new BufferedReader(new FileReader(tmpDir.getPath()+File.separator+"deps-output.txt"));
+			while ((row = reader.readLine()) != null) {
+				rows[count++] = row;
+			}
+			reader.close();
+			BufferedWriter writer2 = new BufferedWriter(new FileWriter(tmpDir.getPath()+File.separator+"deps-output.txt", false));
+			for (String rowString : rows) {
+				if (rowString!=null && new File(rowString).exists()) {
+					writer2.write(rowString+"\n");
+				}
+			}
+			writer2.flush();
+			writer2.close();
+		} catch (IOException ex) {
+		    ex.printStackTrace();
+		}
+	}
+	
+	public static void addDependencyToLibsInfo(File dependency, URLClassLoader child) {
 		if (!dependency.getName().endsWith(".jar"))
 			return;
 		String dependencyName = dependency.getName().substring(0, dependency.getName().indexOf(".jar"));
 		if (libsToCountsAndClasses.containsKey(dependencyName))
 			return;
 		int count = 0;
-		List<String> classNames = new ArrayList<>();
+		Set<String> classNames = new HashSet<String>();
 		try {
 			JarInputStream crunchifyJarFile = new JarInputStream(new FileInputStream(dependency));
 			JarEntry crunchifyJar;
@@ -208,7 +258,7 @@ public class JarUtility {
 					String completeClassName = crunchifyJar.getName().replaceAll("/", "\\.");
 					String className = completeClassName.substring(0, completeClassName.lastIndexOf('.'));
 					classNames.add(className);
-
+					
 					// get counts
 					try {
 						Class<?> c = Class.forName(className, false, child);
@@ -221,7 +271,9 @@ public class JarUtility {
 					} catch (NoClassDefFoundError e) {
 						System.out.println("No class def found "+ e);
 					} catch (UnsupportedClassVersionError e) {
-						System.out.println("No class def found "+ e);
+						System.out.println("Unsupported class version "+ e);
+					} catch (IllegalAccessError e) {
+						System.out.println("Illegal Access "+ e);
 					} catch (Exception e) {
 						System.out.println("Error while parsing jar " + e);
 					}
@@ -232,40 +284,6 @@ public class JarUtility {
 		} catch (Exception e) {
 			System.out.println(e);
 		}
-	}
-
-	public static void unzip(String zipFilePath, String destDirectory) throws IOException, FileNotFoundException {
-		File destDir = new File(destDirectory);
-		if (!destDir.exists()) {
-			destDir.mkdir();
-		}
-		JarInputStream zipIn = new JarInputStream(new FileInputStream(zipFilePath));
-		ZipEntry entry = zipIn.getNextEntry();
-		// iterates over entries in the zip file
-		while (entry != null) {
-			String filePath = destDirectory + File.separator + entry.getName();
-			if (!entry.isDirectory()) {
-				// if the entry is a file, extract it
-				extractFile(zipIn, filePath);
-			} else {
-				// if the entry is a directory, make the directory
-				File dir = new File(filePath);
-				dir.mkdirs();
-			}
-			zipIn.closeEntry();
-			entry = zipIn.getNextEntry();
-		}
-		zipIn.close();
-	}
-
-	private static void extractFile(JarInputStream zipIn, String filePath) throws IOException, FileNotFoundException {
-		BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream(filePath));
-		byte[] bytesIn = new byte[4096];
-		int read = 0;
-		while ((read = zipIn.read(bytesIn)) != -1) {
-			bos.write(bytesIn, 0, read);
-		}
-		bos.close();
 	}
 
 	private static void deleteDirectory(File fileOrDirectory) {

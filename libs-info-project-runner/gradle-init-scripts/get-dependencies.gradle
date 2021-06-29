@@ -2,7 +2,9 @@ allprojects {
 	tasks.register('getDeps') {
 		doLast {
 			println "Dependencies:"
-			configurations.runtimeClasspath.each { println it }
+			configurations.runtimeClasspath.resolvedConfiguration.resolvedArtifacts.each { 
+				println it.file 
+			}
 		}
 	}
 }

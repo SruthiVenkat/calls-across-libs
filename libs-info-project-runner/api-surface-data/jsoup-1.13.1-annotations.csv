@@ -1,0 +1,4 @@
+Class,Method,Field Name:Field Signature,User Library,Annotation,Annotation Library
+org.eclipse.jetty.server.AbstractConnectionFactory,-,-,jetty-server-9.4.26.v20200117,org.eclipse.jetty.util.annotation.ManagedObject,jetty-util-9.4.26.v20200117
+org.eclipse.jetty.io.ArrayByteBufferPool,-,-,jetty-io-9.4.26.v20200117,org.eclipse.jetty.util.annotation.ManagedObject,jetty-util-9.4.26.v20200117
+org.eclipse.jetty.io.AbstractByteBufferPool,-,-,jetty-io-9.4.26.v20200117,org.eclipse.jetty.util.annotation.ManagedObject,jetty-util-9.4.26.v20200117
