@@ -1,3 +1,0 @@
-SubClass,Sub Library,Super Class/Interface,Super Library
-callback.CallbackClient$1,microbenchmark1-client,packageA.foo.CallbackInterface,microbenchmark1-library-1.0-SNAPSHOT
-org.junit.internal.AssumptionViolatedException,junit-4.12,org.hamcrest.SelfDescribing,mockito-all-1.10.19

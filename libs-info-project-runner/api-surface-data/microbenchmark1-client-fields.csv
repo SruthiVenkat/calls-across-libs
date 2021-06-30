@@ -1,4 +1,0 @@
-Callee Library,Field Name,Field Signature,Field Library,Count
-microbenchmark1-client,packageA.SubClass::i,Ljava/lang/Integer;,microbenchmark1-library-1.0-SNAPSHOT,2
-microbenchmark1-client,packageA.SubClass::field1,Ljava/lang/String;,microbenchmark1-library-1.0-SNAPSHOT,1
-microbenchmark1-client,packageA.SuperClass::field1,Ljava/lang/String;,microbenchmark1-library-1.0-SNAPSHOT,1

@@ -235,6 +235,9 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 							}
 						}
 					}
+					
+					// reflective calls
+					method.insertBefore("{instrumentation.apisurfaceanalysis.CallTrackerTransformer.getStackTrace(\""+methodCallerClassName+"::"+callingMethodName+callingDescriptorName+"\", \""+callingMethodLibName+"\");}");
 		
 					method.instrument(
 					        new ExprEditor() {
@@ -435,5 +438,19 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 		InterLibraryCallsKey key = new InterLibraryCallsKey(callerMethod, callerLibrary, virtualCalleeMethod, actualCalleeMethod, calleeLibrary);
 		interLibraryCalls.putIfAbsent(key, 0);
 		interLibraryCalls.put(key, interLibraryCalls.get(key) + count);
+	}
+	
+	public static void getStackTrace(String calleeMethodName, String calleeLib) {
+		StackTraceElement[] ste = Thread.currentThread().getStackTrace();
+		if (ste.length<3 || !(ste[3].getMethodName().contains("invoke0") && ste[3].getClassName().contains("sun.reflect.NativeMethodAccessorImpl")))
+			return;
+		assert ste.length >= 8;
+		String callerClassName = ste[7].getClassName();
+		Entry<String, TrieUtil> unknownEntry = new AbstractMap.SimpleEntry<String, TrieUtil>("unknownLib", new TrieUtil());
+		String callerLib = libsToClasses.entrySet().stream()
+				.filter(map -> map.getValue().containsNode(callerClassName))
+				.findAny().orElse(unknownEntry).getKey();
+		if (checkAddCondition(callerLib, calleeLib))
+			updateInterLibraryCounts(callerClassName+"::"+ste[7].getMethodName(), callerLib, calleeMethodName, calleeMethodName, calleeLib, 1);
 	}
 }

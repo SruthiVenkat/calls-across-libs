@@ -28,4 +28,5 @@ hs_err_pid*
 
 target/
 calls-data
+api-surface-data
 .settings
