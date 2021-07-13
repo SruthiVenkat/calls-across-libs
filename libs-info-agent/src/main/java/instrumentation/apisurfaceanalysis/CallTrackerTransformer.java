@@ -321,6 +321,10 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 			return;
 
 		StackTraceElement[] ste = new Throwable().getStackTrace();
+		System.out.println("--stack--");
+		for (StackTraceElement s: ste) 
+			System.out.println(s);
+		System.out.println("--stack--");
 		if (ste.length<8 || !(ste[2].getMethodName().contains("invoke0") && ste[2].getClassName().contains("sun.reflect.NativeMethodAccessorImpl")))
 			return;
 

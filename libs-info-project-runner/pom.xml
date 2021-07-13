@@ -9,30 +9,10 @@
   <name>libs-info-project-runner</name>
   <description>Runs projects after adding the libs-info-agent to them</description>
   <dependencies>
-  		<dependency>
-	      <groupId>ca.waterloo.pl</groupId>
-	      <artifactId>libs-info-db</artifactId>
-	      <version>1.0-SNAPSHOT</version>
-	    </dependency>
 		<dependency>
 		    <groupId>com.googlecode.json-simple</groupId>
 		    <artifactId>json-simple</artifactId>
 		    <version>1.1.1</version>
-		</dependency>
-		<dependency>
-			<groupId>org.reflections</groupId>
-			<artifactId>reflections</artifactId>
-			<version>0.9.10</version>
-		</dependency>
-		<dependency>
-		    <groupId>jdom</groupId>
-		    <artifactId>jdom</artifactId>
-		    <version>1.1</version>
-		</dependency>
-		<dependency>
-			<groupId>org.postgresql</groupId>
-			<artifactId>postgresql</artifactId>
-			<version>42.2.14</version>
 		</dependency>
 		<dependency>
 		  <groupId>org.apache.maven.shared</groupId>

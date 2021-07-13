@@ -207,6 +207,7 @@ public class JarUtility {
 				if (rowString!=null)
 					depsData = rowString.split(":");
 				if (depsData.length>0 && new File(depsData[depsData.length-1]).exists()) {
+					depsData[0].trim();
 					dependencies.put(String.join(":", depsData[0], depsData[1], depsData[3]), depsData[depsData.length-1]);
 				}
 			}
