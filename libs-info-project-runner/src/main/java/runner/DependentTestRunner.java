@@ -27,8 +27,6 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
-import javassist.expr.NewArray;
-
 public class DependentTestRunner {
 	public static String agentPath;
 	public static String javassistJarPath;
