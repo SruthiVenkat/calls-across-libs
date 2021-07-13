@@ -1,10 +1,12 @@
 package misc;
 
 import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Field;  
 
 import packageA.RandomTypes;
 import packageA.SubClass;
 import packageA.SuperClass;
+import packageA.GenericClass;
 import packageA.CustomAnnotation;
 import packageB.bar.Middle;
 import packageB.baz.External;
@@ -24,10 +26,23 @@ public class Client {
 		System.out.print("Dispatch + Static - "); sc.method2();
 		System.out.println(sc.field1);
 		
+		// field access
 		SubClass sub = new SubClass();
-		System.out.println(sub.field1);
+		//System.out.println(sub.field1);
 		sub.i = 10;
 		System.out.println(sub.i);
+		sub.strs.add("test");
+		
+		// generic field access
+		GenericClass <Integer> genObj = new GenericClass<Integer>(5);
+		System.out.println(genObj.genericField);
+		
+		// reflective field access
+		try {
+			Field field = SubClass.class.getField("field1");
+			field.set(field, "bnm");
+			System.out.println(field.get(sub));
+		} catch (Exception e) { }
 
 		// packageB
 		External e = new External();

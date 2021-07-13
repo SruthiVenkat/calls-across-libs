@@ -39,41 +39,34 @@ public class JarUtility {
 	public static String configPath = Paths.get(new File(".").getAbsolutePath()).getParent().getParent().toString()+"/src/main/resources/config.properties";
 	public static String libsInfoPath;
 	
-	public static void initLibsToCountsAndClasses(String build) {
+	public static void initLibsToCountsAndClasses(String build, JSONArray projects) {
 		libsToCountsAndClasses.clear();
 		populateAddedLibs();
-		JSONParser jsonParser = new JSONParser();
-        try (FileReader reader = new FileReader(new File(".").getAbsolutePath()+File.separator+"projects"+File.separator+"projects-list.json"))
-        {
-            Object obj = jsonParser.parse(reader);
-            JSONArray projects = (JSONArray) obj;
-            Iterator<JSONObject> iterator = projects.iterator();
-            while (iterator.hasNext()) {
-            	JSONObject projectObject = (JSONObject)iterator.next();
-            	if (!addedLibs.contains(projectObject.get("libName")) && projectObject.get("build").equals(build)) {
-            		String pathToJar="", pathToRootPrj = "";
-            		if (build.equals("maven")) {
-            			pathToJar = File.separator+"target"+File.separator+projectObject.get("generatedJarName")+".jar";
-            		}
-            		else if (build.equals("gradle")) {
-            			pathToJar = File.separator+"build/libs"+File.separator+projectObject.get("generatedJarName")+".jar";
-            			pathToRootPrj = new File(".").getAbsolutePath()+File.separator+"projects"+File.separator+projectObject.get("rootDir");
-            		}
-            		String pathToProject = new File(".").getAbsolutePath()+File.separator+"projects"+File.separator+projectObject.get("execDir");
-	            	String generatedJarName = pathToProject+File.separator+pathToJar;
-	            	String tmpFolder = new File(".").getAbsolutePath()+File.separator+"projects"+File.separator+projectObject.get("execDir")+File.separator+"tmp";
-	            	String libName = (String)projectObject.get("libName");
-	            	ArrayList<Object> countsAndClasses = getPublicProtectedMethodsCountAndClasses(generatedJarName, tmpFolder, pathToProject, pathToRootPrj, build);
-	            	libsToCountsAndClasses.putIfAbsent(libName, new ArrayList<Object>(Arrays.asList(0, 0, "")));
-	            	ArrayList<Object> libVals = libsToCountsAndClasses.get(libName);
-	            	libVals.set(0, (Integer)libVals.get(0) + (Integer)countsAndClasses.get(0));
-	            	libVals.set(1, (Integer)libVals.get(1) + (Integer)countsAndClasses.get(1));
-	            	libVals.set(2, ((String)libVals.get(2)).concat((String)countsAndClasses.get(2)));
-            	}
-            }
-        } catch (Exception e) {
-			System.out.println("Error while reading file with project list" + e.toString());		
-		}
+
+		Iterator<JSONObject> iterator = projects.iterator();
+        while (iterator.hasNext()) {
+        	JSONObject projectObject = (JSONObject)iterator.next();
+        	if (!addedLibs.contains(projectObject.get("libName")) && projectObject.get("build").equals(build)) {
+        		String pathToJar="", pathToRootPrj = "";
+        		if (build.equals("maven")) {
+        			pathToJar = File.separator+"target"+File.separator+projectObject.get("generatedJarName")+".jar";
+        		}
+        		else if (build.equals("gradle")) {
+        			pathToJar = File.separator+"build/libs"+File.separator+projectObject.get("generatedJarName")+".jar";
+        			pathToRootPrj = new File(".").getAbsolutePath()+File.separator+"projects"+File.separator+projectObject.get("rootDir");
+        		}
+        		String pathToProject = new File(".").getAbsolutePath()+File.separator+"projects"+File.separator+projectObject.get("execDir");
+            	String generatedJarName = pathToProject+File.separator+pathToJar;
+            	String tmpFolder = new File(".").getAbsolutePath()+File.separator+"projects"+File.separator+projectObject.get("execDir")+File.separator+"tmp";
+            	String libName = (String)projectObject.get("libName");
+            	ArrayList<Object> countsAndClasses = getPublicProtectedMethodsCountAndClasses(generatedJarName, tmpFolder, pathToProject, pathToRootPrj, build);
+            	libsToCountsAndClasses.putIfAbsent(libName, new ArrayList<Object>(Arrays.asList(0, 0, "")));
+            	ArrayList<Object> libVals = libsToCountsAndClasses.get(libName);
+            	libVals.set(0, (Integer)libVals.get(0) + (Integer)countsAndClasses.get(0));
+            	libVals.set(1, (Integer)libVals.get(1) + (Integer)countsAndClasses.get(1));
+            	libVals.set(2, ((String)libVals.get(2)).concat((String)countsAndClasses.get(2)));
+        	}
+        }
         addToLibsInfo(libsToCountsAndClasses);
 	}
 	
@@ -128,35 +121,25 @@ public class JarUtility {
 			if (!destDir.exists()) {
 				destDir.mkdir();
 			}
+			HashMap<String, String> deps = new HashMap<String, String>();
 			if (build.equals("maven"))
-				mvnGetDependencies(destDir);
+				deps = mvnGetDependencies(destDir);
 			else if (build.equals("gradle"))
-				gradleGetDependencies(destDir, pathToProject, pathToRootPrj);
+				deps = gradleGetDependencies(destDir, pathToProject, pathToRootPrj);
 
 			List<URL> classLoaderURLs = new ArrayList<>();
 			classLoaderURLs.add(new File(crunchifyJarName).toURI().toURL());
-			File depsFile = new File(tmpFolder+File.separator+"deps-output.txt");
-			List<String> depsPaths = new ArrayList<String>();
- 			String row;
-			BufferedReader reader = new BufferedReader(new FileReader(depsFile));
-			while ((row = reader.readLine()) != null) {
-			    String[] data = row.split(":");
-			    for (String dependency : data) {
-			    	depsPaths.add(dependency);
-			    }
-			}
-			reader.close();
 
-			for (String dependency : depsPaths) {
-				classLoaderURLs.add(new File(dependency).toURI().toURL());
+			for (String dependency : deps.keySet()) {
+				classLoaderURLs.add(new File(deps.get(dependency)).toURI().toURL());
 			}
 
 			URL[] classLoaderURLsAsArray = new URL[classLoaderURLs.size()];
 			URLClassLoader child = new URLClassLoader(classLoaderURLs.toArray(classLoaderURLsAsArray),
 					JarUtility.class.getClass().getClassLoader());
 
-			for (String dependency : depsPaths) {
-				addDependencyToLibsInfo(new File(dependency), child);
+			for (String dependency : deps.keySet()) {
+				addDependencyToLibsInfo(dependency, new File(deps.get(dependency)), child);
 			}
 
 			while (true) {
@@ -196,12 +179,13 @@ public class JarUtility {
 		return new ArrayList<Object>(Arrays.asList(count, 0, String.join(":", classNames)));
 	}
 	
-	public static void mvnGetDependencies(File tmpDir) {
+	public static HashMap<String, String> mvnGetDependencies(File tmpDir) {
+		HashMap<String, String> dependencies = new HashMap<String, String>();
 		InvocationRequest request = new DefaultInvocationRequest();
-		File pomFile = new File(tmpDir.getParent()+File.separator+"pom.xml");
+		File pomFile = new File(tmpDir.getParent()+File.separator+"pom.xml"); 
 		request.setPomFile(pomFile);
-		request.setGoals(Arrays.asList("dependency:build-classpath"));
-		request.setMavenOpts("-Dmdep.outputFile=./tmp/deps-output.txt");
+		request.setGoals(Arrays.asList("dependency:list"));
+		request.setMavenOpts("-DincludeScope=runtime -DoutputFile="+tmpDir.getPath()+File.separator+"deps-output.txt -DoutputAbsoluteArtifactFilename=true");
 		request.setJavaHome(new File("/usr/lib/jvm/java-8-openjdk-amd64/jre/"));
 		System.setProperty("maven.home", "/usr/share/maven"); //System.getenv("MAVEN_HOME")) - windows; //TODO - pick it up based on system
 		
@@ -211,12 +195,31 @@ public class JarUtility {
 		} catch (MavenInvocationException e) {
 			e.printStackTrace();
 		}
+		try {
+			String[] rows = new String[(int) new File(tmpDir.getPath()+File.separator+"deps-output.txt").length()]; String row; int count = 0;
+			BufferedReader reader = new BufferedReader(new FileReader(tmpDir.getPath()+File.separator+"deps-output.txt"));
+			while ((row = reader.readLine()) != null) {
+				rows[count++] = row;
+			}
+			reader.close();
+			String[] depsData = new String[10];
+			for (String rowString : rows) {
+				if (rowString!=null)
+					depsData = rowString.split(":");
+				if (depsData.length>0 && new File(depsData[depsData.length-1]).exists()) {
+					dependencies.put(String.join(":", depsData[0], depsData[1], depsData[3]), depsData[depsData.length-1]);
+				}
+			}
+		} catch (IOException ex) {
+		    ex.printStackTrace();
+		}
+		return dependencies;
 	}
 	
-	public static void gradleGetDependencies(File tmpDir, String pathToProject, String pathToRootPrj) {
+	public static HashMap<String, String> gradleGetDependencies(File tmpDir, String pathToProject, String pathToRootPrj) {
+		HashMap<String, String> dependencies = new HashMap<String, String>();
 		String getDepsInitScriptPathString = new File(".").getAbsolutePath()+File.separator+"gradle-init-scripts"+File.separator+"get-dependencies.gradle";
-		DependentTestRunner.executeCommand(" ./gradlew -I "+getDepsInitScriptPathString+" -p "+pathToProject+" getDeps --stacktrace > "
-				+tmpDir.getPath()+File.separator+"deps-output.txt", pathToRootPrj, false);
+		DependentTestRunner.executeCommand(" ./gradlew -I "+getDepsInitScriptPathString+" -p "+pathToProject+" getDeps --stacktrace > "+tmpDir.getPath()+File.separator+"deps-output.txt", pathToRootPrj);
 		
 		try {
 			String[] rows = new String[(int) new File(tmpDir.getPath()+File.separator+"deps-output.txt").length()]; String row; int count = 0;
@@ -225,23 +228,31 @@ public class JarUtility {
 				rows[count++] = row;
 			}
 			reader.close();
-			BufferedWriter writer2 = new BufferedWriter(new FileWriter(tmpDir.getPath()+File.separator+"deps-output.txt", false));
+			String libName="", dep=""; count = -1;
 			for (String rowString : rows) {
-				if (rowString!=null && new File(rowString).exists()) {
-					writer2.write(rowString+"\n");
+				if (rowString!=null && !rowString.isEmpty() && new File(rowString).exists()) {
+					dep = rowString;
+					count = 0;
 				}
+				if (count==1 || count==2) {libName+=rowString+":";}
+				if (count==3) {
+					libName+=rowString;
+					if (new File(dep).exists())
+						dependencies.put(libName, dep);
+					libName = "";
+					dep = "";
+				}
+				count++;
 			}
-			writer2.flush();
-			writer2.close();
 		} catch (IOException ex) {
 		    ex.printStackTrace();
 		}
+		return dependencies;
 	}
 	
-	public static void addDependencyToLibsInfo(File dependency, URLClassLoader child) {
+	public static void addDependencyToLibsInfo(String dependencyName, File dependency, URLClassLoader child) {
 		if (!dependency.getName().endsWith(".jar"))
 			return;
-		String dependencyName = dependency.getName().substring(0, dependency.getName().indexOf(".jar"));
 		if (libsToCountsAndClasses.containsKey(dependencyName))
 			return;
 		int count = 0;

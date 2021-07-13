@@ -1,6 +1,7 @@
 package runner;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -27,6 +28,8 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
+import javassist.expr.NewArray;
+
 public class DependentTestRunner {
 	public static String agentPath;
 	public static String javassistJarPath;
@@ -49,22 +52,24 @@ public class DependentTestRunner {
             Iterator<JSONObject> iterator = projects.iterator();
             while (iterator.hasNext()) {
             	JSONObject projectObject = (JSONObject)iterator.next();
-            	if (!addedLibs.contains(projectObject.get("libName"))) {
             		if (projectObject.get("build").equals("maven")) {
+            			projectObject.put("libName", mavenGetGAV(new File(".").getAbsolutePath()+File.separator+"projects"
+                				+File.separator+projectObject.get("execDir")+File.separator+"pom.xml"));
             			mvnProjects.add(projectObject);
             		} else if (projectObject.get("build").equals("gradle")) {
+                		projectObject.put("libName", gradleGetGAV(new File(".").getAbsolutePath()+File.separator+"projects"
+                				+File.separator+projectObject.get("rootDir"), (String)projectObject.get("gavOf")));
             			gradleProjects.add(projectObject);
             		}	
-            	}
             }
-            
+
             // install projects
             runMavenProjectsInstall(mvnProjects);
     		runGradleProjectsInstall(gradleProjects);
 
     		// get total API counts for projects and packages in each project
-    		JarUtility.initLibsToCountsAndClasses("maven");
-            JarUtility.initLibsToCountsAndClasses("gradle");
+    		JarUtility.initLibsToCountsAndClasses("maven", mvnProjects);
+            JarUtility.initLibsToCountsAndClasses("gradle", gradleProjects);
             
             // run unit tests
             Map<String, File> pomList = getPOMList(mvnProjects);
@@ -99,6 +104,63 @@ public class DependentTestRunner {
         } catch (IOException ex) {
             ex.printStackTrace();
         }
+	}
+	
+	public static String mavenGetGAV(String pomFile) {
+		String gav = "";
+		InvocationRequest request = new DefaultInvocationRequest();
+		request.setPomFile(new File(pomFile));
+		request.setGoals(Arrays.asList("help:evaluate"));
+		request.setJavaHome(new File("/usr/lib/jvm/java-8-openjdk-amd64/jre/"));
+		System.setProperty("maven.home", "/usr/share/maven"); //System.getenv("MAVEN_HOME")) - windows; //TODO - pick it up based on system
+		
+		Invoker invoker = new DefaultInvoker();
+		try {
+			request.setMavenOpts("-Dexpression=project.groupId -Doutput=group.txt");
+			invoker.execute( request );
+			BufferedReader reader1 = new BufferedReader(new FileReader(pomFile.replace("pom.xml", "group.txt")));
+			gav = reader1.readLine()+":";
+
+			request.setMavenOpts("-Dexpression=project.artifactId -Doutput=artifact.txt");
+			invoker.execute( request );
+			BufferedReader reader2 = new BufferedReader(new FileReader(pomFile.replace("pom.xml", "artifact.txt")));
+			gav += reader2.readLine()+":";
+
+			request.setMavenOpts("-Dexpression=project.version -Doutput=version.txt");
+			invoker.execute( request );
+			BufferedReader reader3 = new BufferedReader(new FileReader(pomFile.replace("pom.xml", "version.txt")));
+			gav += reader3.readLine();
+			new File(pomFile.replace("pom.xml", "group.txt")).delete();
+			new File(pomFile.replace("pom.xml", "artifact.txt")).delete();
+			new File(pomFile.replace("pom.xml", "version.txt")).delete();
+		} catch (MavenInvocationException e) {
+			e.printStackTrace();
+		} catch (IOException ex) {
+		    ex.printStackTrace();
+		}
+		return gav;
+	}
+	
+	public static String gradleGetGAV(String pathToRootPrj, String gavOf) {
+		String getDepsInitScriptPathString = new File(".").getAbsolutePath()+File.separator+"gradle-init-scripts"+File.separator+"get-GAV.gradle";
+		executeCommand(" ./gradlew -I "+getDepsInitScriptPathString+" :"+gavOf+":getGAV --stacktrace > gav-output.txt", pathToRootPrj);
+		String gav = gavOf;
+		try {
+			int count = -1;
+			BufferedReader reader = new BufferedReader(new FileReader(pathToRootPrj+File.separator+"gav-output.txt"));
+			String row, chk = gavOf.isEmpty() ? ":getGAV" : ":"+gavOf+":getGAV";
+			while ((row = reader.readLine()) != null) {
+				if (count>=0 && count<2) {gav += row+":";count++;}
+				if (count==2) {gav += row;count++;}
+				
+				if (row.contains("Task "+chk)) count = 0;
+			}
+			reader.close();
+			new File(pathToRootPrj+File.separator+"gav-output.txt").delete();
+		} catch (IOException ex) {
+		    ex.printStackTrace();
+		}
+		return gav;
 	}
 	
 	public static Map<String, File> getPOMList(JSONArray mavenProjects) {
@@ -223,15 +285,15 @@ public class DependentTestRunner {
 	}
 	
 	public static void installGradleProjects(String pathToExecGradleProject, String pathToRootGradleProject) {
-		executeCommand(" ./gradlew clean build -x test -p "+pathToExecGradleProject+" --stacktrace", pathToRootGradleProject, false); // jar
+		executeCommand(" ./gradlew clean build -x test -p "+pathToExecGradleProject+" --stacktrace", pathToRootGradleProject); // jar
 	}
 	
 	public static void runGradleProjectUnitTests(String pathToExecGradleProject, String pathToRootGradleProject) {
 		String javaAgentInitScriptPathString = new File(".").getAbsolutePath()+File.separator+"gradle-init-scripts"+File.separator+"javaagent.gradle";
-		executeCommand(" ./gradlew test -I "+javaAgentInitScriptPathString+" -p "+pathToExecGradleProject+" --stacktrace", pathToRootGradleProject, true);
+		executeCommand(" ./gradlew test -I "+javaAgentInitScriptPathString+" -p "+pathToExecGradleProject+" --stacktrace", pathToRootGradleProject);
 	}
 	
-	public static String executeCommand(String command, String dir, boolean instrument) {
+	public static String executeCommand(String command, String dir) {
 		StringBuilder output = new StringBuilder();
 		StringBuilder error = new StringBuilder();
 		boolean isWindows = System.getProperty("os.name").toLowerCase().startsWith("windows");
@@ -248,8 +310,6 @@ public class DependentTestRunner {
 			builder.redirectOutput(Redirect.INHERIT);
 			builder.redirectError(Redirect.INHERIT);
 			Map<String, String> envMap = builder.environment();
-			if (instrument)
-				envMap.put("JAVA_OPTS", JAVA_OPTS);
 
 			Process process;
 			boolean status;

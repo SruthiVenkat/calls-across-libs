@@ -1,0 +1,10 @@
+allprojects {
+	tasks.register('getGAV') {
+		doLast {
+			println project.group
+			println project.name
+			println project.version
+		}
+	}
+}
+

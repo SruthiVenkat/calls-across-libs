@@ -19,9 +19,10 @@ import java.util.Properties;
 public class CallTrackerAgent {
 	public static void premain(String agentArgs, Instrumentation inst) {
 		/* track calls across libraries */
-        inst.addTransformer(new CallTrackerTransformer());
-        
-		Runtime.getRuntime().addShutdownHook(new Thread()
+		CallTrackerTransformer transformer = new CallTrackerTransformer();
+        inst.addTransformer(transformer);
+
+        Runtime.getRuntime().addShutdownHook(new Thread()
 		{
 			public void run()
 			{
@@ -50,9 +51,9 @@ public class CallTrackerAgent {
 		      		writer.close();
 		      		writer = new FileWriter(fieldsOutputPath, true);
 		      		if (new File(fieldsOutputPath).length() == 0)
-		      			writer.write("Callee Library,Field Name,Field Signature,Field Library,Count\n");//TODO add callee lib
+		      			writer.write("Callee Library,Field Name,Field Signature,Static,Visibility,Field Library,Count\n");
 		      		for (InterLibraryFieldsKey ilfKey: CallTrackerTransformer.interLibraryFields.keySet()) {
-		            	writer.write(ilfKey.calleeLib+","+ilfKey.fieldName+","+ ilfKey.fieldSignature+","+ ilfKey.libName+","+CallTrackerTransformer.interLibraryFields.get(ilfKey)+"\n");
+		            	writer.write(ilfKey.calleeLib+","+ilfKey.fieldName+","+ ilfKey.fieldSignature+","+ ilfKey.isStatic+","+ ilfKey.visibility+","+ ilfKey.libName+","+CallTrackerTransformer.interLibraryFields.get(ilfKey)+"\n");
 		            }
 		      		writer.flush();
 		      		writer.close();

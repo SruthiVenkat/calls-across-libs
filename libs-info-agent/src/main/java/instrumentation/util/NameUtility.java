@@ -24,7 +24,6 @@ public class NameUtility {
 	        sb.append(getJVMInternalName(method.getReturnType()));
 	        return sb.toString();
         } catch (NotFoundException e) {
-			e.printStackTrace();
 		}
         return "";
     }

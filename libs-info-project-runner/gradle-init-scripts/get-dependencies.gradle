@@ -4,6 +4,9 @@ allprojects {
 			println "Dependencies:"
 			configurations.runtimeClasspath.resolvedConfiguration.resolvedArtifacts.each { 
 				println it.file 
+				println it.moduleVersion.id.group
+				println it.moduleVersion.id.name
+				println it.moduleVersion.id.version
 			}
 		}
 	}

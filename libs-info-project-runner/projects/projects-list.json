@@ -1,11 +1,5 @@
 [
 	{
-		"libName": "microbenchmark1-client",
-		"execDir": "microbenchmark1-calls-across-libs/microbenchmark1-client",
-		"generatedJarName": "microbenchmark1-client-1.0-SNAPSHOT",
-		"build": "maven"
-	},
-	{
 		"libName": "jsoup-1.13.1",
 		"execDir": "jsoup-jsoup-1.13.1",
 		"generatedJarName": "jsoup-1.13.1",

@@ -29,129 +29,11 @@ import javassist.CtClass;
 import javassist.CtMethod;
 import javassist.Modifier;
 import javassist.NotFoundException;
+import javassist.bytecode.BadBytecode;
+import javassist.bytecode.SignatureAttribute;
 import javassist.expr.ExprEditor;
 import javassist.expr.FieldAccess;
 import javassist.expr.MethodCall;
-
-class InterLibraryCallsKey {
-	String callerMethodString;
-	String callerMethodLibString;
-	String virtualCalleeMethodString;
-	String actualCalleeMethodString;
-	String calleeMethodLibString;
-
-	InterLibraryCallsKey(String callerMethodString, String callerMethodLibString, String virtualCalleeMethodString, 
-			String actualCalleeMethodString, String calleeMethodLibString) {
-		this.callerMethodString = callerMethodString;
-		this.callerMethodLibString = callerMethodLibString;
-		this.virtualCalleeMethodString = virtualCalleeMethodString;
-		this.actualCalleeMethodString = actualCalleeMethodString;
-		this.calleeMethodLibString = calleeMethodLibString;
-	}
-
-	@Override
-	public boolean equals(Object obj) {
-		if (obj == null) return false;
-		if (obj.getClass() != this.getClass()) return false;
-		InterLibraryCallsKey keyObj = (InterLibraryCallsKey) obj;
-		return (keyObj.callerMethodString.equals(this.callerMethodString) && keyObj.callerMethodLibString.equals(this.callerMethodLibString)
-				&& keyObj.virtualCalleeMethodString.equals(this.virtualCalleeMethodString) && keyObj.actualCalleeMethodString.equals(this.actualCalleeMethodString)
-				&& keyObj.calleeMethodLibString.equals(this.calleeMethodLibString));
-	}
-
-	@Override
-	public int hashCode() {
-		return callerMethodString.hashCode() + callerMethodLibString.hashCode() + virtualCalleeMethodString.hashCode()
-				+ actualCalleeMethodString.hashCode() + calleeMethodLibString.hashCode();
-	}
-}
-
-class InterLibraryFieldsKey {
-	String calleeLib;
-	String fieldName;
-	String fieldSignature;
-	String libName;
-
-	InterLibraryFieldsKey(String calleeLib, String fieldName, String fieldSignature, String libName) {
-		this.calleeLib = calleeLib;
-		this.fieldName = fieldName;
-		this.fieldSignature = fieldSignature;
-		this.libName = libName;
-	}
-
-	@Override
-	public boolean equals(Object obj) {
-		if (obj == null) return false;
-		if (obj.getClass() != this.getClass()) return false;
-		InterLibraryFieldsKey keyObj = (InterLibraryFieldsKey) obj;
-		return (keyObj.calleeLib.equals(this.calleeLib) && keyObj.fieldName.equals(this.fieldName) && keyObj.fieldSignature.equals(this.fieldSignature) && keyObj.libName.equals(this.libName));
-	}
-
-	@Override
-	public int hashCode() {
-		return calleeLib.hashCode() + fieldName.hashCode() + fieldSignature.hashCode() + libName.hashCode();
-	}
-}
-
-class InterLibrarySubtyping {
-	String subClass;
-	String subClassLib;
-	String superClass;
-	String superClassLib;
-
-	InterLibrarySubtyping(String subClass, String subClassLib, String superClass, String superClassLib) {
-		this.subClass = subClass;
-		this.subClassLib = subClassLib;
-		this.superClass = superClass;
-		this.superClassLib = superClassLib;
-	}
-
-	@Override
-	public boolean equals(Object obj) {
-		if (obj == null) return false;
-		if (obj.getClass() != this.getClass()) return false;
-		InterLibrarySubtyping keyObj = (InterLibrarySubtyping) obj;
-		return (keyObj.subClass.equals(this.subClass) && keyObj.subClassLib.equals(this.subClassLib) 
-				&& keyObj.superClass.equals(this.superClass) && keyObj.superClassLib.equals(this.superClassLib));
-	}
-
-	@Override
-	public int hashCode() {
-		return subClass.hashCode() + subClassLib.hashCode() + superClass.hashCode() + superClassLib.hashCode();
-	}
-}
-
-class InterLibraryAnnotations {
-	String className;
-	String methodName;
-	String field;
-	String classLib;
-	String annotationName;
-	String annotationLib;
-
-	InterLibraryAnnotations(String className, String methodName, String field, String classLib, String annotationName, String annotationLib) {
-		this.className = className;
-		this.methodName = methodName;
-		this.field = field;
-		this.classLib = classLib;
-		this.annotationName = annotationName;
-		this.annotationLib = annotationLib;
-	}
-
-	@Override
-	public boolean equals(Object obj) {
-		if (obj == null) return false;
-		if (obj.getClass() != this.getClass()) return false;
-		InterLibraryAnnotations keyObj = (InterLibraryAnnotations) obj;
-		return (keyObj.className.equals(this.className) && keyObj.methodName.equals(methodName) && keyObj.field.equals(field) && keyObj.classLib.equals(this.classLib) 
-				&& keyObj.annotationName.equals(this.annotationName) && keyObj.annotationLib.equals(this.annotationLib));
-	}
-
-	@Override
-	public int hashCode() {
-		return className.hashCode() + methodName.hashCode() + field.hashCode() + classLib.hashCode() + annotationName.hashCode() + annotationLib.hashCode();
-	}
-}
 
 public class CallTrackerTransformer implements ClassFileTransformer {
 	public static Map<String, TrieUtil> libsToClasses = new HashMap<String, TrieUtil>();
@@ -161,7 +43,9 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 	public static ConcurrentHashMap<InterLibraryFieldsKey, Integer> interLibraryFields = new ConcurrentHashMap<InterLibraryFieldsKey, Integer>();
 	public static HashSet<InterLibrarySubtyping> interLibrarySubtyping = new HashSet<InterLibrarySubtyping>();
 	public static HashSet<InterLibraryAnnotations> interLibraryAnnotations = new HashSet<InterLibraryAnnotations>();
-
+	public static Entry<String, TrieUtil> unknownEntry = new AbstractMap.SimpleEntry<String, TrieUtil>("unknownLib", new TrieUtil());
+	public static long reflectiveCallThreadID = -1;
+	
 	public CallTrackerTransformer() {
 		Path configPath = Paths.get(new File(".").getAbsolutePath());
 		while (!configPath.endsWith("calls-across-libs"))
@@ -195,31 +79,30 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 		byte[] byteCode = classfileBuffer;
 		try {
 			ClassPool classPool = ClassPool.getDefault();
-			CtClass ctClass = classPool.makeClass(new ByteArrayInputStream(
-					classfileBuffer));
+			CtClass ctClass = classPool.makeClass(new ByteArrayInputStream(classfileBuffer));
 			
 			String methodCallerClassName = ctClass.getName();
 			String callingMethodLibNameTmp = "";
-			Entry<String, TrieUtil> unknownEntry = new AbstractMap.SimpleEntry<String, TrieUtil>("unknownLib", new TrieUtil());
 			callingMethodLibNameTmp = libsToClasses.entrySet().stream()
 			.filter(map -> map.getValue().containsNode(methodCallerClassName))
 			.findAny().orElse(unknownEntry).getKey();
-//			if (callingMethodLibNameTmp.equals(unknownEntry.getKey()) && methodCallerClassName.indexOf(".")>0) {
-//				callingMethodLibNameTmp = methodCallerClassName.substring(0, methodCallerClassName.lastIndexOf("."));
-//			}
-			
+
 			final String callingMethodLibName = callingMethodLibNameTmp;
+
 			if(callingMethodLibName.equals(unknownEntry.getKey())) {
-			//if(methodCallerClassName.startsWith("instrumentation")) {
 				return null;
 			}
 			
 			System.out.println("------>"+methodCallerClassName); // TODO remove print
 			CtMethod[] methods = ctClass.getDeclaredMethods();
+			
 			for (CtMethod method : methods) {
 				if (!isNative(method) && !isAbstract(method)) {
 					String callingMethodName = method.getName();
 					String callingDescriptorName = NameUtility.getDescriptor(method);
+					
+					// reflective
+					method.insertBefore("{if (instrumentation.apisurfaceanalysis.CallTrackerTransformer.reflectiveCallThreadID!=-1) instrumentation.apisurfaceanalysis.CallTrackerTransformer.getStackTrace(\""+methodCallerClassName+"::"+callingMethodName+callingDescriptorName+"\", \""+callingMethodLibName+"\");}");
 
 					// Annotations - methods
         			Object[] methodAnnotations = method.getAnnotations();
@@ -235,10 +118,7 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 							}
 						}
 					}
-					
-					// reflective calls
-					method.insertBefore("{instrumentation.apisurfaceanalysis.CallTrackerTransformer.getStackTrace(\""+methodCallerClassName+"::"+callingMethodName+callingDescriptorName+"\", \""+callingMethodLibName+"\");}");
-		
+
 					method.instrument(
 					        new ExprEditor() {
 					        	// 1. Method Invocations
@@ -254,29 +134,19 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 										String calledMethodLibName = libsToClasses.entrySet().stream()
 												.filter(map -> map.getValue().containsNode(methodCalledClassName))
 												.findAny().orElse(unknownEntry).getKey();
-//										if (calledMethodLibName.equals(unknownEntry.getKey()) && methodCalledClassName.indexOf(".")>0) {
-//											calledMethodLibName = methodCalledClassName.substring(0, methodCalledClassName.lastIndexOf("."));
-//										}
 										
-										// Annotations - methods
-					        			Object[] mAnnotations = m.getMethod().getAnnotations();
-										if (mAnnotations!=null) {
-											for (Object annotationObj : mAnnotations) {
-												String annotationName = annotationObj.getClass().getName();
-												String annotationLib = libsToClasses.entrySet().stream()
-														.filter(map -> map.getValue().containsNode(annotationName))
-														.findAny().orElse(unknownEntry).getKey();
-												if (!annotationLib.equals(unknownEntry.getKey()) && !calledMethodLibName.equals(annotationLib)) {
-													InterLibraryAnnotations mKey = new InterLibraryAnnotations("-", methodCalledClassName+"::"+calledMethodName+calledDescriptorName, "-", calledMethodLibName, annotationName, annotationLib);
-							            			interLibraryAnnotations.add(mKey);
-												}
-											}
+										// reflective calls
+										if (methodCalledClassName.equals("java.lang.reflect.Method") && calledMethodName.equals("invoke")) {
+											m.replace("{instrumentation.apisurfaceanalysis.CallTrackerTransformer.reflectiveCallThreadID=Thread.currentThread().getId(); $_ = $proceed($$);}");
+										}
+										if (methodCalledClassName.equals("java.lang.reflect.Field")) {
+											if (calledMethodName.equals("set"))
+												m.getMethod().insertBefore("{System.out.println($1); }");
+											else if (calledMethodName.equals("get"))
+												m.getMethod().insertBefore("{System.out.println($1); }");
 										}
 										
 										if(!calledMethodLibName.equals(unknownEntry.getKey())) {
-										//if (!methodCalledPkgName.startsWith("java.")) {
-										//if (!methodCalledClassName.startsWith("instrumentation")) {
-																				
 											int modifiers = m.getMethod().getModifiers();
 											String codeToAdd = "";
 											if (libsToClasses.get(runningLibrary).containsNode(methodCallerClassName) && libsToClasses.get(runningLibrary).containsNode(methodCalledClassName)
@@ -303,7 +173,6 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 											System.out.println(e);
 										}
 									}
-					            
 
 					            // 2. Field Accesses
 					            public void edit(FieldAccess f) throws CannotCompileException {
@@ -312,9 +181,19 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 					            		String fieldLib = libsToClasses.entrySet().stream()
 												.filter(map -> map.getValue().containsNode(fieldClass))
 												.findAny().orElse(unknownEntry).getKey();
+					            		SignatureAttribute sa = (SignatureAttribute) f.getField().getFieldInfo().getAttribute(SignatureAttribute.tag);
+					            		String sig;
+										try {
+											sig = (sa == null) ? f.getSignature() : SignatureAttribute.toFieldSignature(sa.getSignature()).toString();
+										} catch (BadBytecode e) {
+											sig = (sa == null) ? f.getSignature() : sa.getSignature();
+											e.printStackTrace();
+										}
+										
+					            		int mods = f.getField().getModifiers();
+					            		String fieldVisibility = javassist.Modifier.isPublic(mods) ? "public" : (javassist.Modifier.isPrivate(mods) ? "private" : (javassist.Modifier.isProtected(mods) ? "protected" : "unknown"));
 					            		if (!fieldLib.equals(unknownEntry.getKey()) && !callingMethodLibName.equals(fieldLib)) {
-					            			//System.out.println(f.getField().getName()+"<----"+fieldClass+"<----"+f.getSignature()+"<----"+fieldLib);
-					            			InterLibraryFieldsKey key = new InterLibraryFieldsKey(callingMethodLibName, fieldClass+"::"+f.getField().getName(), f.getSignature(), fieldLib);
+					            			InterLibraryFieldsKey key = new InterLibraryFieldsKey(callingMethodLibName, fieldClass+"::"+f.getField().getName(), sig, f.isStatic(), fieldVisibility, fieldLib);
 					            			interLibraryFields.putIfAbsent(key, 0);
 					            			interLibraryFields.put(key, interLibraryFields.get(key) + 1);
 		
@@ -342,6 +221,7 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 					        });
 				}
 			}
+
 			// 3. Subtyping ( extends / implements )
 			CtClass superClass = ctClass.getSuperclass();
 			if (superClass!=null) {
@@ -368,7 +248,7 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 				}
 			}
 
-			// 4. Annotation Usage - class (, method, field)
+			// 4. Annotation Usage - class (& method, field)
 			Object[] annotations = ctClass.getAnnotations();
 			if (annotations!=null) {
 				for (Object annotationObj : annotations) {
@@ -407,14 +287,10 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 			String callingMethodLibName, Class<?> actualMethodCalledClass, String actualCalledMethodName) {
 		String calledMethodLibName = "";
 		String actualMethodCalledClassName = actualMethodCalledClass.getName();
-		Entry<String, TrieUtil> unknownEntry = new AbstractMap.SimpleEntry<String, TrieUtil>("unknownLib", new TrieUtil());
 		try {
 			calledMethodLibName = libsToClasses.entrySet().stream()
 			.filter(map -> map.getValue().containsNode(actualMethodCalledClassName))
 			.findAny().orElse(unknownEntry).getKey();
-			if (calledMethodLibName.equals(unknownEntry.getKey()) && actualMethodCalledClassName.indexOf(".") > 0) {
-				calledMethodLibName = actualMethodCalledClassName.substring(0, actualMethodCalledClassName.lastIndexOf("."));
-			}
 		} catch (NullPointerException e) {
 			System.out.println(e);e.printStackTrace();
 		}
@@ -441,16 +317,19 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 	}
 	
 	public static void getStackTrace(String calleeMethodName, String calleeLib) {
-		StackTraceElement[] ste = Thread.currentThread().getStackTrace();
-		if (ste.length<3 || !(ste[3].getMethodName().contains("invoke0") && ste[3].getClassName().contains("sun.reflect.NativeMethodAccessorImpl")))
+		if (Thread.currentThread().getId()!=instrumentation.apisurfaceanalysis.CallTrackerTransformer.reflectiveCallThreadID)
 			return;
-		assert ste.length >= 8;
-		String callerClassName = ste[7].getClassName();
-		Entry<String, TrieUtil> unknownEntry = new AbstractMap.SimpleEntry<String, TrieUtil>("unknownLib", new TrieUtil());
+
+		StackTraceElement[] ste = new Throwable().getStackTrace();
+		if (ste.length<8 || !(ste[2].getMethodName().contains("invoke0") && ste[2].getClassName().contains("sun.reflect.NativeMethodAccessorImpl")))
+			return;
+
+		String callerClassName = ste[6].getClassName();
 		String callerLib = libsToClasses.entrySet().stream()
 				.filter(map -> map.getValue().containsNode(callerClassName))
 				.findAny().orElse(unknownEntry).getKey();
 		if (checkAddCondition(callerLib, calleeLib))
-			updateInterLibraryCounts(callerClassName+"::"+ste[7].getMethodName(), callerLib, calleeMethodName, calleeMethodName, calleeLib, 1);
+			updateInterLibraryCounts(callerClassName+"::"+ste[6].getMethodName(), callerLib, calleeMethodName, calleeMethodName, calleeLib, 1);
+		instrumentation.apisurfaceanalysis.CallTrackerTransformer.reflectiveCallThreadID = -1;
 	}
 }
