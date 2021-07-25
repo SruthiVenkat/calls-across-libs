@@ -3,6 +3,8 @@ package misc;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Field;  
 
+import java.util.ArrayList;
+
 import packageA.RandomTypes;
 import packageA.SubClass;
 import packageA.SuperClass;
@@ -39,9 +41,16 @@ public class Client {
 		
 		// reflective field access
 		try {
-			Field field = SubClass.class.getField("field1");
-			field.set(field, "bnm");
-			System.out.println(field.get(sub));
+			//Field field = SubClass.class.getField("field1");
+			//System.out.println(field.get(sub));
+		//	System.out.println(field.get(sc));
+		//	field.set(sc, "bnm");
+		//	System.out.println(field.get(sub));
+		//	System.out.println(field.get(sc));
+			Field field2 = GenericClass.class.getField("genericField");
+			System.out.println(field2.get(genObj));
+			Field field3 = GenericClass.class.getField("genericList");
+			field3.set(genObj, new ArrayList<Integer>());
 		} catch (Exception e) { }
 
 		// packageB
@@ -54,7 +63,13 @@ public class Client {
 		
 		java.lang.reflect.Method method;
 		try {
-			System.out.println("packageB External - reflection - ");
+			// setAccessible
+			SuperClass sc2 = new SuperClass();
+			java.lang.reflect.Method privateMethod = SuperClass.class.getDeclaredMethod("checkSetAccessibility",SuperClass.class);
+			privateMethod.setAccessible(true);
+			privateMethod.invoke(sc2);
+		
+		  System.out.println("packageB External - reflection - ");
 		  method = External.class.getMethod("getText");
 		  String reString = (String) method.invoke(e);
 		  System.out.println(reString);

@@ -1,10 +1,32 @@
 [
 	{
-		"libName": "nextflow-21.05.0",
-		"execDir": "nextflow/modules/nextflow",
-		"rootDir": "nextflow",
-		"gavOf": "nextflow",
-		"generatedJarName": "nextflow-21.05.0-edge",
-		"build": "gradle"
+		"libName": "jsoup-1.13.1",
+		"execDir": "jsoup-jsoup-1.13.1",
+		"generatedJarName": "jsoup-1.13.1",
+		"build": "maven"
+	},
+	{
+		"libName": "JsoupXpath-2.4.3",
+		"execDir": "JsoupXpath",
+		"generatedJarName": "JsoupXpath-2.4.3",
+		"build": "maven"
+	},
+	{
+		"libName": "ez-vcard-0.11.3-SNAPSHOT",
+		"execDir": "ez-vcard",
+		"generatedJarName": "ez-vcard-0.11.3-SNAPSHOT",
+		"build": "maven"
+	},
+	{
+		"libName": "jcabi-http-2.0-SNAPSHOT",
+		"execDir": "jcabi-http",
+		"generatedJarName": "jcabi-http-2.0-SNAPSHOT",
+		"build": "maven"
+	},
+	{
+		"libName": "liqp-0.7.10-SNAPSHOT",
+		"execDir": "Liqp",
+		"generatedJarName": "liqp-0.7.10-SNAPSHOT",
+		"build": "maven"
 	}
 ]

@@ -25,11 +25,13 @@ import instrumentation.util.NameUtility;
 import instrumentation.util.TrieUtil;
 import javassist.CannotCompileException;
 import javassist.ClassPool;
+import javassist.CtBehavior;
 import javassist.CtClass;
 import javassist.CtMethod;
 import javassist.Modifier;
 import javassist.NotFoundException;
 import javassist.bytecode.BadBytecode;
+import javassist.bytecode.Descriptor;
 import javassist.bytecode.SignatureAttribute;
 import javassist.expr.ExprEditor;
 import javassist.expr.FieldAccess;
@@ -44,7 +46,7 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 	public static HashSet<InterLibrarySubtyping> interLibrarySubtyping = new HashSet<InterLibrarySubtyping>();
 	public static HashSet<InterLibraryAnnotations> interLibraryAnnotations = new HashSet<InterLibraryAnnotations>();
 	public static Entry<String, TrieUtil> unknownEntry = new AbstractMap.SimpleEntry<String, TrieUtil>("unknownLib", new TrieUtil());
-	public static long reflectiveCallThreadID = -1;
+	public static Map<String, String> reflectiveCaller = new HashMap<String, String>();
 	
 	public CallTrackerTransformer() {
 		Path configPath = Paths.get(new File(".").getAbsolutePath());
@@ -100,9 +102,11 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 				if (!isNative(method) && !isAbstract(method)) {
 					String callingMethodName = method.getName();
 					String callingDescriptorName = NameUtility.getDescriptor(method);
-					
+					int mods = method.getModifiers();
+            		String methodVisibility = javassist.Modifier.isPublic(mods) ? "public" : (javassist.Modifier.isPrivate(mods) ? "private" : (javassist.Modifier.isProtected(mods) ? "protected" : "unknown"));
+							
 					// reflective
-					method.insertBefore("{if (instrumentation.apisurfaceanalysis.CallTrackerTransformer.reflectiveCallThreadID!=-1) instrumentation.apisurfaceanalysis.CallTrackerTransformer.getStackTrace(\""+methodCallerClassName+"::"+callingMethodName+callingDescriptorName+"\", \""+callingMethodLibName+"\");}");
+					method.insertBefore("{if (!instrumentation.apisurfaceanalysis.CallTrackerTransformer.reflectiveCaller.isEmpty()) instrumentation.apisurfaceanalysis.CallTrackerTransformer.getStackTrace(\""+methodCallerClassName+"::"+callingMethodName+callingDescriptorName+"\", \""+callingMethodLibName+"\", \""+methodVisibility+"\");}");
 
 					// Annotations - methods
         			Object[] methodAnnotations = method.getAnnotations();
@@ -137,17 +141,20 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 										
 										// reflective calls
 										if (methodCalledClassName.equals("java.lang.reflect.Method") && calledMethodName.equals("invoke")) {
-											m.replace("{instrumentation.apisurfaceanalysis.CallTrackerTransformer.reflectiveCallThreadID=Thread.currentThread().getId(); $_ = $proceed($$);}");
+											m.replace("{instrumentation.apisurfaceanalysis.CallTrackerTransformer.reflectiveCaller.put(\""+callingMethodName+"\", \""+methodCallerClassName+"\"); $_ = $proceed($$);}");
 										}
 										if (methodCalledClassName.equals("java.lang.reflect.Field")) {
-											if (calledMethodName.equals("set"))
-												m.getMethod().insertBefore("{System.out.println($1); }");
+											if (calledMethodName.equals("set")) {
+												m.replace("{instrumentation.apisurfaceanalysis.CallTrackerTransformer.handleFieldSetGet($0, $1, \""+callingMethodLibName+"\"); $_ = $proceed($$);}");
+											}
 											else if (calledMethodName.equals("get"))
-												m.getMethod().insertBefore("{System.out.println($1); }");
+												m.replace("{instrumentation.apisurfaceanalysis.CallTrackerTransformer.handleFieldSetGet($0, $1, \""+callingMethodLibName+"\"); $_ = $proceed($$);}");
 										}
 										
 										if(!calledMethodLibName.equals(unknownEntry.getKey())) {
 											int modifiers = m.getMethod().getModifiers();
+						            		String mVisibility = javassist.Modifier.isPublic(modifiers) ? "public" : (javassist.Modifier.isPrivate(modifiers) ? "private" : (javassist.Modifier.isProtected(modifiers) ? "protected" : "unknown"));
+
 											String codeToAdd = "";
 											if (libsToClasses.get(runningLibrary).containsNode(methodCallerClassName) && libsToClasses.get(runningLibrary).containsNode(methodCalledClassName)
 													&& (javassist.Modifier.isPublic(modifiers) || javassist.Modifier.isProtected(modifiers))) {
@@ -161,13 +168,13 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 											if (Modifier.isStatic(m.getMethod().getModifiers()))
 												m.replace("{if (instrumentation.apisurfaceanalysis.CallTrackerTransformer.checkAddCondition(\""+callingMethodLibName+"\", \""+calledMethodLibName+"\")) {"
 													+ "instrumentation.apisurfaceanalysis.CallTrackerTransformer.updateInterLibraryCounts(\"" + methodCallerClassName+"::"+callingMethodName+callingDescriptorName+"\",\"" + 
-													callingMethodLibName+"\", \""+methodCalledClassName+"::"+calledMethodName+calledDescriptorName+"\", \"" + methodCalledClassName+"::"+calledMethodName+calledDescriptorName
-													+"\", \"" + calledMethodLibName+"\", 1);} $_ = $proceed($$);}");
+													callingMethodLibName+"\", \""+mVisibility+"\", \""+methodCalledClassName+"::"+calledMethodName+calledDescriptorName+"\", \"" + methodCalledClassName+"::"+calledMethodName+calledDescriptorName
+													+"\", \"" + calledMethodLibName+"\", 1, false);} $_ = $proceed($$);}");
 											else
 												m.replace("{if ($0 != null) { " + codeToAdd 
 													+ "instrumentation.apisurfaceanalysis.CallTrackerTransformer.addRuntimeType(\""+methodCallerClassName+"\", \""+callingMethodName+callingDescriptorName+
 													"\", \""+methodCalledClassName+"::"+calledMethodName+calledDescriptorName+"\", \""+callingMethodLibName+"\", $0.getClass(), \""
-													+ calledMethodName+calledDescriptorName+"\");}" + " $_ = $proceed($$);}");
+													+ calledMethodName+calledDescriptorName+"\", \""+mVisibility+"\");}" + " $_ = $proceed($$);}");
 											} 
 										} catch (Exception e) {
 											System.out.println(e);
@@ -189,14 +196,13 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 											sig = (sa == null) ? f.getSignature() : sa.getSignature();
 											e.printStackTrace();
 										}
+										try {
+											sig = Descriptor.toClassName(sig);
+										} catch (Exception e) {}
 										
 					            		int mods = f.getField().getModifiers();
 					            		String fieldVisibility = javassist.Modifier.isPublic(mods) ? "public" : (javassist.Modifier.isPrivate(mods) ? "private" : (javassist.Modifier.isProtected(mods) ? "protected" : "unknown"));
 					            		if (!fieldLib.equals(unknownEntry.getKey()) && !callingMethodLibName.equals(fieldLib)) {
-					            			InterLibraryFieldsKey key = new InterLibraryFieldsKey(callingMethodLibName, fieldClass+"::"+f.getField().getName(), sig, f.isStatic(), fieldVisibility, fieldLib);
-					            			interLibraryFields.putIfAbsent(key, 0);
-					            			interLibraryFields.put(key, interLibraryFields.get(key) + 1);
-		
 					            			// Annotations - fields
 					            			Object[] annotations = f.getField().getAnnotations();
 					    					if (annotations!=null) {
@@ -211,6 +217,13 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 					    							}
 					    						}
 					    					}
+					    					
+					    					if (f.isStatic()) {
+						            			InterLibraryFieldsKey key = new InterLibraryFieldsKey(callingMethodLibName, fieldClass, fieldClass, fieldClass+"::"+f.getField().getName(), sig, f.isStatic(), fieldVisibility, fieldLib);
+						            			interLibraryFields.putIfAbsent(key, 0);
+						            			interLibraryFields.put(key, interLibraryFields.get(key) + 1);
+					            			} else f.replace("{ instrumentation.apisurfaceanalysis.CallTrackerTransformer.handleFields(\""+callingMethodLibName+"\", \""
+						            			+fieldClass+"\", $0.getClass().getName(), \""+f.getField().getName()+"\", \""+sig+"\", "+f.isStatic()+", \""+fieldVisibility+"\", \""+fieldLib+"\"); $_ = $proceed($$);}");
 					            		}
 									} catch (NotFoundException e) {
 										e.printStackTrace();
@@ -284,7 +297,7 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 	}
 	
 	public static void addRuntimeType(String methodCallerClassName, String callingMethodName, String virtualCalleeMethod, 
-			String callingMethodLibName, Class<?> actualMethodCalledClass, String actualCalledMethodName) {
+			String callingMethodLibName, Class<?> actualMethodCalledClass, String actualCalledMethodName, String calleeVisibility) {
 		String calledMethodLibName = "";
 		String actualMethodCalledClassName = actualMethodCalledClass.getName();
 		try {
@@ -296,8 +309,8 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 		}
 
 		if (checkAddCondition(callingMethodLibName, calledMethodLibName)) {
-			updateInterLibraryCounts(methodCallerClassName+"::"+callingMethodName, callingMethodLibName, virtualCalleeMethod,
-					actualMethodCalledClassName+"::"+actualCalledMethodName, calledMethodLibName, 1);
+			updateInterLibraryCounts(methodCallerClassName+"::"+callingMethodName, callingMethodLibName, calleeVisibility, virtualCalleeMethod,
+					actualMethodCalledClassName+"::"+actualCalledMethodName, calledMethodLibName, 1, false);
 		}
 	}
 	
@@ -309,27 +322,49 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 			libsToMethods.get(calledMethodLibName).add(calledMethodFullName);
 	}
 	
-	public static void updateInterLibraryCounts(String callerMethod, String callerLibrary, String virtualCalleeMethod, 
-			String actualCalleeMethod, String calleeLibrary, int count) {
-		InterLibraryCallsKey key = new InterLibraryCallsKey(callerMethod, callerLibrary, virtualCalleeMethod, actualCalleeMethod, calleeLibrary);
+	public static void updateInterLibraryCounts(String callerMethod, String callerLibrary, String calleeVisibility, String virtualCalleeMethod, 
+			String actualCalleeMethod, String calleeLibrary, int count, boolean reflective) {
+		InterLibraryCallsKey key = new InterLibraryCallsKey(callerMethod, callerLibrary, calleeVisibility, virtualCalleeMethod, 
+				actualCalleeMethod, calleeLibrary, reflective);
 		interLibraryCalls.putIfAbsent(key, 0);
 		interLibraryCalls.put(key, interLibraryCalls.get(key) + count);
 	}
 	
-	public static void getStackTrace(String calleeMethodName, String calleeLib) {
-		if (Thread.currentThread().getId()!=instrumentation.apisurfaceanalysis.CallTrackerTransformer.reflectiveCallThreadID)
+	public static void getStackTrace(String calleeMethodName, String calleeLib, String calleeVisibility) {
+		if (instrumentation.apisurfaceanalysis.CallTrackerTransformer.reflectiveCaller.isEmpty())
 			return;
-
-		StackTraceElement[] ste = new Throwable().getStackTrace();
-		if (ste.length<8 || !(ste[2].getMethodName().contains("invoke0") && ste[2].getClassName().contains("sun.reflect.NativeMethodAccessorImpl")))
-			return;
-
-		String callerClassName = ste[6].getClassName();
+		String callerMethodName = (String)reflectiveCaller.keySet().toArray()[0];
+		String callerClassName = reflectiveCaller.get(callerMethodName);
+	
 		String callerLib = libsToClasses.entrySet().stream()
 				.filter(map -> map.getValue().containsNode(callerClassName))
 				.findAny().orElse(unknownEntry).getKey();
 		if (checkAddCondition(callerLib, calleeLib))
-			updateInterLibraryCounts(callerClassName+"::"+ste[6].getMethodName(), callerLib, calleeMethodName, calleeMethodName, calleeLib, 1);
-		instrumentation.apisurfaceanalysis.CallTrackerTransformer.reflectiveCallThreadID = -1;
+			updateInterLibraryCounts(callerClassName+"::"+callerMethodName, callerLib, calleeVisibility, calleeMethodName, calleeMethodName, calleeLib, 1, true);
+		instrumentation.apisurfaceanalysis.CallTrackerTransformer.reflectiveCaller.clear();
+	}
+	
+	public static void handleFieldSetGet(Object field, Object actualObj, String callingMethodLibName) {
+		System.out.println("actual obj - "+actualObj.getClass().getName());
+		java.lang.reflect.Field f = (java.lang.reflect.Field) field;
+		String[] fieldData = field.toString().split(" ");
+		String fieldClass = fieldData[fieldData.length-1].substring(0, fieldData[fieldData.length-1].lastIndexOf("."));
+		String fieldLib = libsToClasses.entrySet().stream()
+				.filter(map -> map.getValue().containsNode(fieldClass))
+				.findAny().orElse(unknownEntry).getKey();
+
+		int mods = f.getModifiers();
+		String fieldVisibility = javassist.Modifier.isPublic(mods) ? "public" : (javassist.Modifier.isPrivate(mods) ? "private" : (javassist.Modifier.isProtected(mods) ? "protected" : "unknown"));
+		InterLibraryFieldsKey key = new InterLibraryFieldsKey(callingMethodLibName, fieldClass, actualObj.getClass().getName(), actualObj.getClass().getName()+"::"+f.getName(), 
+				f.getGenericType().getTypeName(), javassist.Modifier.isStatic(mods), fieldVisibility, fieldLib);
+		interLibraryFields.putIfAbsent(key, 0);
+		interLibraryFields.put(key, interLibraryFields.get(key) + 1);
+	}
+	
+	public static void handleFields(String callingMethodLibName, String fieldClass, String actualClass, String fieldName, String sig, boolean isStatic, String fieldVisibility, String fieldLib) {
+		System.out.println(actualClass+"---"+fieldName);
+		InterLibraryFieldsKey key = new InterLibraryFieldsKey(callingMethodLibName, fieldClass, actualClass, actualClass+"::"+fieldName, sig, isStatic, fieldVisibility, fieldLib);
+		interLibraryFields.putIfAbsent(key, 0);
+		interLibraryFields.put(key, interLibraryFields.get(key) + 1);
 	}
 }

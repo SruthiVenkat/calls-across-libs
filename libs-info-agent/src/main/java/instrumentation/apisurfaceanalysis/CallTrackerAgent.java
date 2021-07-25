@@ -42,18 +42,18 @@ public class CallTrackerAgent {
 					System.out.println("Adding results to CSV");
 		      		FileWriter writer = new FileWriter(invocationsOutputPath, true);	
 		      		if (new File(invocationsOutputPath).length() == 0)
-		      			writer.write("Caller Method,Caller Library,Virtual Callee Method,Actual Callee Method,Callee Library,Count\n");
+		      			writer.write("Caller Method,Caller Library,Callee Visibility,Virtual Callee Method,Actual Callee Method,Callee Library,Count,Reflective\n");
 		      		for (InterLibraryCallsKey ilcKey: CallTrackerTransformer.interLibraryCalls.keySet()) {
-		            	writer.write(ilcKey.callerMethodString+","+ ilcKey.callerMethodLibString+","+ ilcKey.virtualCalleeMethodString+","+
-		            			ilcKey.actualCalleeMethodString+","+ilcKey.calleeMethodLibString+","+CallTrackerTransformer.interLibraryCalls.get(ilcKey)+"\n");
+		            	writer.write(ilcKey.callerMethodString+","+ ilcKey.callerMethodLibString+","+ ilcKey.calleeVisibilityString+","+ilcKey.virtualCalleeMethodString+","+
+		            			ilcKey.actualCalleeMethodString+","+ilcKey.calleeMethodLibString+","+CallTrackerTransformer.interLibraryCalls.get(ilcKey)+","+ilcKey.reflective+"\n");
 		            }
 		      		writer.flush();
 		      		writer.close();
 		      		writer = new FileWriter(fieldsOutputPath, true);
 		      		if (new File(fieldsOutputPath).length() == 0)
-		      			writer.write("Callee Library,Field Name,Field Signature,Static,Visibility,Field Library,Count\n");
+		      			writer.write("Callee Library,Field Name,Virtual Class,Actual Class,Field Signature,Static,Visibility,Field Library,Count\n");
 		      		for (InterLibraryFieldsKey ilfKey: CallTrackerTransformer.interLibraryFields.keySet()) {
-		            	writer.write(ilfKey.calleeLib+","+ilfKey.fieldName+","+ ilfKey.fieldSignature+","+ ilfKey.isStatic+","+ ilfKey.visibility+","+ ilfKey.libName+","+CallTrackerTransformer.interLibraryFields.get(ilfKey)+"\n");
+		            	writer.write(ilfKey.calleeLib+","+ilfKey.fieldName+","+ilfKey.virtualClass+","+ilfKey.actualClass+","+ ilfKey.fieldSignature+","+ ilfKey.isStatic+","+ ilfKey.visibility+","+ ilfKey.libName+","+CallTrackerTransformer.interLibraryFields.get(ilfKey)+"\n");
 		            }
 		      		writer.flush();
 		      		writer.close();

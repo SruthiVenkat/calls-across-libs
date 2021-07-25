@@ -1,7 +1,10 @@
 package packageA;
 
 public class SuperClass {
-	public static String field1 = "def";
+	private void checkSetAccessibility() {
+	}
+	
+	public String field1 = "def";
 	public void method1() {
 		System.out.println("SuperClass");
 	}

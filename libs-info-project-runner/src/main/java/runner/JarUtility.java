@@ -100,7 +100,7 @@ public class JarUtility {
 				writer.write("unknownLib,0,0, \n");
 			}
 			for (String lib: libsToCountsAndClasses.keySet()) {
-				writer.write(lib+","+libsToCountsAndClasses.get(lib).get(0)+","+libsToCountsAndClasses.get(lib).get(1)+","+libsToCountsAndClasses.get(lib).get(2)+"\n");
+				writer.write(lib.trim()+","+libsToCountsAndClasses.get(lib).get(0)+","+libsToCountsAndClasses.get(lib).get(1)+","+libsToCountsAndClasses.get(lib).get(2)+"\n");
 		    }
 			writer.flush();
 			writer.close();
