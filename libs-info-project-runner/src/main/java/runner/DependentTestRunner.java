@@ -30,7 +30,6 @@ import org.json.simple.parser.JSONParser;
 public class DependentTestRunner {
 	public static String agentPath;
 	public static String javassistJarPath;
-	public static String postgresJarPath;
 	public static String JAVA_OPTS;
 	public static String outputPath;
 	public static List<String> addedLibs = new ArrayList<String>();
@@ -97,6 +96,7 @@ public class DependentTestRunner {
 				    String[] data = row.split(",");
 				    addedLibs.add(data[0]);
 				}
+				reader.close();
             }
         } catch (IOException ex) {
             ex.printStackTrace();
@@ -130,6 +130,9 @@ public class DependentTestRunner {
 			new File(pomFile.replace("pom.xml", "group.txt")).delete();
 			new File(pomFile.replace("pom.xml", "artifact.txt")).delete();
 			new File(pomFile.replace("pom.xml", "version.txt")).delete();
+			reader1.close();
+			reader2.close();
+			reader3.close();
 		} catch (MavenInvocationException e) {
 			e.printStackTrace();
 		} catch (IOException ex) {
@@ -201,7 +204,7 @@ public class DependentTestRunner {
 	            prop.store(new FileWriter(configPath, false), null);
             } catch (IOException ex) {
 		            ex.printStackTrace();
-		     }
+		    }
 		}
 	}
 
@@ -306,7 +309,6 @@ public class DependentTestRunner {
 			}
 			builder.redirectOutput(Redirect.INHERIT);
 			builder.redirectError(Redirect.INHERIT);
-			Map<String, String> envMap = builder.environment();
 
 			Process process;
 			boolean status;

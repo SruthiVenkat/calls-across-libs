@@ -3,14 +3,14 @@ package instrumentation.util;
 import java.util.HashMap;
 
 class TrieNode {
-	String str;
-    HashMap<String, TrieNode> children = new HashMap<String, TrieNode>();
+	char c;
+    HashMap<Character, TrieNode> children = new HashMap<Character, TrieNode>();
     boolean isClass;
     
     public TrieNode() {}
     
-    public TrieNode(String str){
-        this.str = str;
+    public TrieNode(char c){
+        this.c = c;
     }
 }
 
@@ -22,19 +22,20 @@ public class TrieUtil {
     }
 	
 	public void insert(String className) {
-		HashMap<String, TrieNode> children = root.children;
-		String[] strs = className.split("\\.");
-	    for (int i=0; i<strs.length; i++) {
-	    	String str = strs[i];
+		HashMap<Character, TrieNode> children = root.children;
+		//String[] strs = className.split("\\.");
+	    for (int i=0; i<className.length(); i++) {
+	    	//String str = strs[i];
+	    	char c = className.charAt(i);
 	    	TrieNode tn;
-	    	if (children.containsKey(str))
-	    		tn = children.get(str);
+	    	if (children.containsKey(c))
+	    		tn = children.get(c);
 	    	else {
-	    		tn = new TrieNode(str);
-	    		children.put(str, tn);
+	    		tn = new TrieNode(c);
+	    		children.put(c, tn);
 	    	}
 	    	children = tn.children;
-	    	if (i == strs.length-1)
+	    	if (i == className.length()-1)
 	    		tn.isClass = true;
 	    }
 	}
@@ -45,19 +46,21 @@ public class TrieUtil {
     }
 
     public TrieNode searchNode(String className) {
-    	HashMap<String, TrieNode> children = root.children;
-    	String[] strs = className.split("\\.");
+    	if (className==null)
+    		return null;
+    	HashMap<Character, TrieNode> children = root.children;
+    	//String[] strs = className.split("\\.");
     	TrieNode tn = null;
-    	for (int i=0; i<strs.length; i++) {
-	    	String str = strs[i];
-	    	if (children.containsKey(str)) {
-	    		tn = children.get(str);
+    	for (int i=0; i<className.length(); i++) {
+	    	//String str = strs[i];
+    		char c = className.charAt(i);
+	    	if (children.containsKey(c)) {
+	    		tn = children.get(c);
 	    		children = tn.children;
 	    	}
 	    	else
 	    		return null;
 	    }
-    	
     	return tn;
     }
 }

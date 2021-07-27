@@ -1,0 +1,39 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1mReactor Build Order:[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] calls-across-libs                                                  [pom]
+[[1;34mINFO[m] libs-info-agent                                                    [jar]
+[[1;34mINFO[m] libs-info-project-runner                                           [jar]
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------------< [0;36mca.waterloo.pl:calls-across-libs[0;1m >------------------[m
+[[1;34mINFO[m] [1mBuilding calls-across-libs 1.0-SNAPSHOT                            [1/3][m
+[[1;34mINFO[m] [1m--------------------------------[ pom ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mexec-maven-plugin:3.0.0:java[m [1m(default-cli)[m @ [36mcalls-across-libs[0;1m ---[m
+[[1;33mWARNING[m] 
+[1;31mjava.lang.ClassNotFoundException[m: [1;31mrunner.DependentTestRunner[m
+    [1mat[m java.net.URLClassLoader.findClass ([1mURLClassLoader.java:382[m)
+    [1mat[m java.lang.ClassLoader.loadClass ([1mClassLoader.java:418[m)
+    [1mat[m java.lang.ClassLoader.loadClass ([1mClassLoader.java:351[m)
+    [1mat[m org.codehaus.mojo.exec.ExecJavaMojo$1.run ([1mExecJavaMojo.java:246[m)
+    [1mat[m java.lang.Thread.run ([1mThread.java:748[m)
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1mReactor Summary for calls-across-libs 1.0-SNAPSHOT:[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] calls-across-libs .................................. [1;31mFAILURE[m [  0.374 s]
+[[1;34mINFO[m] libs-info-agent .................................... [1;33mSKIPPED[m
+[[1;34mINFO[m] libs-info-project-runner ........................... [1;33mSKIPPED[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  0.882 s
+[[1;34mINFO[m] Finished at: 2021-07-27T17:43:30+05:30
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] Failed to execute goal [32morg.codehaus.mojo:exec-maven-plugin:3.0.0:java[m [1m(default-cli)[m on project [36mcalls-across-libs[m: [1;31mAn exception occured while executing the Java class. runner.DependentTestRunner[m -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
