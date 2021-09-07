@@ -6,6 +6,10 @@
   <name>microbenchmark1-calls-across-libs</name>
   <description>Microbenchmark for recording method calls across libraries</description>
   <packaging>pom</packaging>
+  <properties>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <maven.compiler.source>1.8</maven.compiler.source>
+</properties>
   <modules>
   	<module>microbenchmark1-library</module>
   	<module>microbenchmark1-client</module>

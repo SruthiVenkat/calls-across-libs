@@ -1,7 +1,7 @@
 [
 	{
-		"execDir": "fastjson",
-		"generatedJarName": "fastjson-1.2.77_preview_01",
+		"execDir": "microbenchmark1-calls-across-libs/microbenchmark1-client",
+		"generatedJarName": "microbenchmark1-client-1.0-SNAPSHOT",
 		"build": "maven"
 	}
 ]

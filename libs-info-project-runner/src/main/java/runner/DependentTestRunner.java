@@ -72,7 +72,8 @@ public class DependentTestRunner {
             runMavenProjectsTest(mvnProjects, pomList);
             runGradleProjectsTest(gradleProjects);
         } catch (Exception e) {
-			System.out.println("Error while reading file with project list " + e.toString());		
+			System.out.println("Error while reading file with project list " + e.toString() + e);
+			e.printStackTrace();
 		}
 	}
 	
@@ -86,7 +87,7 @@ public class DependentTestRunner {
             File outputDir = new File(outputPath);
             if (!outputDir.exists())
             	outputDir.mkdir();
-            JAVA_OPTS =  "-javaagent:"+agentPath+" -Xbootclasspath/p:"+javassistJarPath+":"+agentPath;
+            JAVA_OPTS =  "-javaagent:"+agentPath+" -Xbootclasspath/a:"+javassistJarPath+":"+agentPath;
             
             String libsInfoPath = prop.getProperty("libsInfoPath");
             if (new File(libsInfoPath).exists()) {
@@ -108,8 +109,7 @@ public class DependentTestRunner {
 		InvocationRequest request = new DefaultInvocationRequest();
 		request.setPomFile(new File(pomFile));
 		request.setGoals(Arrays.asList("help:evaluate"));
-		request.setJavaHome(new File("/usr/lib/jvm/java-8-openjdk-amd64/jre/"));
-		System.setProperty("maven.home", "/usr/share/maven"); //System.getenv("MAVEN_HOME")) - windows; //TODO - pick it up based on system
+		System.setProperty("maven.home", "/usr/share/maven");
 		
 		Invoker invoker = new DefaultInvoker();
 		try {
@@ -193,14 +193,18 @@ public class DependentTestRunner {
 	            prop.setProperty("fieldsOutputPath", outputPath+lib+"-fields.csv");
 	            prop.setProperty("subtypingOutputPath", outputPath+lib+"-subtyping.csv");
 	            prop.setProperty("annotationsOutputPath", outputPath+lib+"-annotations.csv");
+	            prop.setProperty("setAccessibleCallsPath", outputPath+lib+"-setAccessibleCalls.csv");
+	            prop.setProperty("serviceLoaderInfoPath", outputPath+lib+"-serviceLoaderInfoPath.csv");
 	            prop.setProperty("runningLibrary", lib);
 	            prop.store(new FileWriter(configPath, false), null);
 	            runMvnProjectUnitTests(pomList.get(lib));
 	            prop.setProperty("invocationsOutputPath", "");
 	            prop.setProperty("fieldsOutputPath", "");
-	            prop.setProperty("runningLibrary", "");
 	            prop.setProperty("subtypingOutputPath", "");
 	            prop.setProperty("annotationsOutputPath", "");
+	            prop.setProperty("setAccessibleCallsPath", "");
+	            prop.setProperty("serviceLoaderInfoPath", "");
+	            prop.setProperty("runningLibrary", "");
 	            prop.store(new FileWriter(configPath, false), null);
             } catch (IOException ex) {
 		            ex.printStackTrace();
@@ -213,8 +217,7 @@ public class DependentTestRunner {
 		request.setPomFile(pomFile);
 		request.setGoals(Arrays.asList("clean", "install"));
 		request.setMavenOpts("-Dlicense.skip=true -DskipTests=true -Dcheckstyle.skip=true");
-		//request.setJavaHome(new File("/usr/lib/jvm/java-8-openjdk-amd64/jre/"));
-		System.setProperty("maven.home", "/usr/share/maven"); //System.getenv("MAVEN_HOME")) - windows; //TODO - pick it up based on system
+		System.setProperty("maven.home", "/usr/share/maven");
 		
 		Invoker invoker = new DefaultInvoker();
 		try {
@@ -231,9 +234,7 @@ public class DependentTestRunner {
 		Properties properties = new Properties();
 		properties.setProperty("argLine", JAVA_OPTS);
 		request.setProperties(properties);
-		//request.setJavaHome(new File("/usr/lib/jvm/java-8-openjdk-amd64/jre/"));
-		//-javaagent:/home/vishal/Documents/Waterloo/PL/calls-across-libs/libs-info-agent/target/libs-info-agent-1.0-SNAPSHOT.jar -Xbootclasspath/p:/home/vishal/.m2/repository/org/javassist/javassist/3.27.0-GA/javassist-3.27.0-GA.jar:/home/vishal/Documents/Waterloo/PL/calls-across-libs/libs-info-agent/target/libs-info-agent-1.0-SNAPSHOT.jar"
-		System.setProperty("maven.home", "/usr/share/maven"); //System.getenv("MAVEN_HOME")) - windows; //TODO - pick it up based on system
+		System.setProperty("maven.home", "/usr/share/maven");
 
 		Invoker invoker = new DefaultInvoker();
 		try {
@@ -269,6 +270,8 @@ public class DependentTestRunner {
 	            prop.setProperty("fieldsOutputPath", outputPath+lib+"-fields.csv");
 	            prop.setProperty("subtypingOutputPath", outputPath+lib+"-subtyping.csv");
 	            prop.setProperty("annotationsOutputPath", outputPath+lib+"-annotations.csv");
+	            prop.setProperty("setAccessibleCallsPath", outputPath+lib+"-setAccessibleCalls.csv");
+	            prop.setProperty("serviceLoaderInfoPath", outputPath+lib+"-serviceLoaderInfoPath.csv");
 	            prop.setProperty("runningLibrary", lib);
 	            prop.store(new FileWriter(configPath, false), null);
 	            runGradleProjectUnitTests(pathToGradleProject, pathToRootGradleProject);
@@ -276,11 +279,13 @@ public class DependentTestRunner {
 	            prop.setProperty("fieldsOutputPath", "");
 	            prop.setProperty("subtypingOutputPath", "");
 	            prop.setProperty("annotationsOutputPath", "");
+	            prop.setProperty("setAccessibleCallsPath", "");
+	            prop.setProperty("serviceLoaderInfoPath", "");
 	            prop.setProperty("runningLibrary", "");
 	            prop.store(new FileWriter(configPath, false), null);
             } catch (IOException ex) {
 		            ex.printStackTrace();
-		     }
+		    }
 		}		
 	}
 	

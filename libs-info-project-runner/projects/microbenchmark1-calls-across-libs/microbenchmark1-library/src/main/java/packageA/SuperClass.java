@@ -1,7 +1,8 @@
 package packageA;
 
 public class SuperClass {
-	private void checkSetAccessibility() {
+	private static void checkSetAccessibility() {
+		System.out.println("accessing private method - checkSetAccessibility");
 	}
 	
 	public String field1 = "def";

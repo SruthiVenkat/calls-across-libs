@@ -2,6 +2,10 @@ package packageB.baz;
 
 public class External implements CommonInterface{
 	// these methods are for public use
+	
+	public String getHi() {
+		return "hi";
+	}
 
 	public String getText() {
 		return "hello";

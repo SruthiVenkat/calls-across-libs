@@ -1,6 +1,6 @@
 package instrumentation.apisurfaceanalysis;
 
-class InterLibraryAnnotations {
+class InterLibraryAnnotationsKey {
 	String className;
 	String methodName;
 	String field;
@@ -8,7 +8,7 @@ class InterLibraryAnnotations {
 	String annotationName;
 	String annotationLib;
 
-	InterLibraryAnnotations(String className, String methodName, String field, String classLib, String annotationName, String annotationLib) {
+	InterLibraryAnnotationsKey(String className, String methodName, String field, String classLib, String annotationName, String annotationLib) {
 		this.className = className;
 		this.methodName = methodName;
 		this.field = field;
@@ -21,7 +21,7 @@ class InterLibraryAnnotations {
 	public boolean equals(Object obj) {
 		if (obj == null) return false;
 		if (obj.getClass() != this.getClass()) return false;
-		InterLibraryAnnotations keyObj = (InterLibraryAnnotations) obj;
+		InterLibraryAnnotationsKey keyObj = (InterLibraryAnnotationsKey) obj;
 		return (keyObj.className.equals(this.className) && keyObj.methodName.equals(methodName) && keyObj.field.equals(field) && keyObj.classLib.equals(this.classLib) 
 				&& keyObj.annotationName.equals(this.annotationName) && keyObj.annotationLib.equals(this.annotationLib));
 	}

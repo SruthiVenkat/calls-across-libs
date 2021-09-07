@@ -37,39 +37,49 @@ public class CallTrackerAgent {
 					String fieldsOutputPath = prop.getProperty("fieldsOutputPath");
 					String subtypingOutputPath = prop.getProperty("subtypingOutputPath");
 					String annotationsOutputPath = prop.getProperty("annotationsOutputPath");
+					String setAccessibleCallsPath = prop.getProperty("setAccessibleCallsPath");
+					String serviceLoaderInfoPath = prop.getProperty("serviceLoaderInfoPath");
 					String libsInfoPath = prop.getProperty("libsInfoPath");
 					
 					System.out.println("Adding results to CSV");
 		      		FileWriter writer = new FileWriter(invocationsOutputPath, true);	
 		      		if (new File(invocationsOutputPath).length() == 0)
-		      			writer.write("Caller Method,Caller Library,Callee Visibility,Virtual Callee Method,Actual Callee Method,Callee Library,Count,Reflective\n");
+		      			writer.write("Caller Method,Caller Library,Callee Visibility,Virtual Callee Method,Virtual Callee Library,Actual Callee Method,Actual Callee Library,Count,Reflective,DynamicProxy,Service Bypass\n");
 		      		for (InterLibraryCallsKey ilcKey: CallTrackerTransformer.interLibraryCalls.keySet()) {
-		            	writer.write(ilcKey.callerMethodString+","+ ilcKey.callerMethodLibString+","+ ilcKey.calleeVisibilityString+","+ilcKey.virtualCalleeMethodString+","+
-		            			ilcKey.actualCalleeMethodString+","+ilcKey.calleeMethodLibString+","+CallTrackerTransformer.interLibraryCalls.get(ilcKey)+","+ilcKey.reflective+"\n");
+		            	writer.write(ilcKey.callerMethodString+","+ ilcKey.callerMethodLibString+","+ ilcKey.calleeVisibilityString+","+ilcKey.virtualCalleeMethodString+","+ilcKey.virtualCalleeMethodLibString
+		            			+","+ilcKey.actualCalleeMethodString+","+ilcKey.actualCalleeMethodLibString+","+CallTrackerTransformer.interLibraryCalls.get(ilcKey)+","+ilcKey.reflective+","+ilcKey.dynamicProxy+","+ilcKey.serviceBypass+"\n");
 		            }
 		      		writer.flush();
 		      		writer.close();
 		      		writer = new FileWriter(fieldsOutputPath, true);
 		      		if (new File(fieldsOutputPath).length() == 0)
-		      			writer.write("Callee Library,Field Name,Virtual Class,Actual Class,Field Signature,Static,Visibility,Field Library,Count\n");
+		      			writer.write("Callee Library,Field Name,Virtual Class,Actual Class,Field Signature,Static,Visibility,Field Library,Reflective,Count\n");
 		      		for (InterLibraryFieldsKey ilfKey: CallTrackerTransformer.interLibraryFields.keySet()) {
-		            	writer.write(ilfKey.calleeLib+","+ilfKey.fieldName+","+ilfKey.virtualClass+","+ilfKey.actualClass+","+ ilfKey.fieldSignature+","+ ilfKey.isStatic+","+ ilfKey.visibility+","+ ilfKey.libName+","+CallTrackerTransformer.interLibraryFields.get(ilfKey)+"\n");
+		            	writer.write(ilfKey.calleeLib+","+ilfKey.fieldName+","+ilfKey.virtualClass+","+ilfKey.actualClass+","+ ilfKey.fieldSignature+","+ ilfKey.isStatic+","+ ilfKey.visibility+","+ ilfKey.libName+","+ ilfKey.reflective+","+CallTrackerTransformer.interLibraryFields.get(ilfKey)+"\n");
 		            }
 		      		writer.flush();
 		      		writer.close();
 		      		writer = new FileWriter(subtypingOutputPath, true);
 		      		if (new File(subtypingOutputPath).length() == 0)
 		      			writer.write("SubClass,Sub Library,Super Class/Interface,Super Library\n");
-		      		for (InterLibrarySubtyping ils: CallTrackerTransformer.interLibrarySubtyping) {
+		      		for (InterLibrarySubtypingKey ils: CallTrackerTransformer.interLibrarySubtyping) {
 		            	writer.write(ils.subClass+","+ ils.subClassLib+","+ ils.superClass+","+ils.superClassLib+"\n");
 		            }
 		      		writer.flush();
 		      		writer.close();
 		      		writer = new FileWriter(annotationsOutputPath, true);
 		      		if (new File(annotationsOutputPath).length() == 0)
-		      			writer.write("Class,Method,Field Name:Field Signature,User Library,Annotation,Annotation Library\n");
-		      		for (InterLibraryAnnotations ila: CallTrackerTransformer.interLibraryAnnotations) {
+		      			writer.write("Class,Method,Field Name:Field Signature,Annotated In Library,Annotation,Annotation Library\n");
+		      		for (InterLibraryAnnotationsKey ila: CallTrackerTransformer.interLibraryAnnotations) {
 		            	writer.write(ila.className+","+ ila.methodName+","+ ila.field+","+ ila.classLib+","+ ila.annotationName+","+ila.annotationLib+"\n");
+		            }
+		      		writer.flush();
+		      		writer.close();
+		      		writer = new FileWriter(setAccessibleCallsPath, true);
+		      		if (new File(setAccessibleCallsPath).length() == 0)
+		      			writer.write("Caller Method,Caller Library,setAccessible Called On,Visibility,Callee Name,Field Signature,Callee Library\n");
+		      		for (SetAccessibleCallsKey sac: CallTrackerTransformer.setAccessibleCallsInfo) {
+		            	writer.write(sac.callerMethod+","+ sac.callerLib+","+ sac.calledOnType+","+ sac.visibility+","+ sac.calledOnObjName+","+sac.fieldSignature+","+sac.libName+"\n");
 		            }
 		      		writer.flush();
 		      		writer.close();
@@ -95,10 +105,9 @@ public class CallTrackerAgent {
 				    ex.printStackTrace();
 				}
 			}
-        });
-        
-       
+        }); 
     }
+
 	public static void agentmain(String agentArgs, Instrumentation inst) {
         inst.addTransformer(new CallTrackerTransformer());
     }

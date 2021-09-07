@@ -1,3 +1,5 @@
 Manifest-Version: 1.0 
 Premain-Class: instrumentation.apisurfaceanalysis.CallTrackerAgent
 Agent-Class: instrumentation.apisurfaceanalysis.CallTrackerAgent
+Can-Redefine-Classes: true
+Can-Retransform-Classes: true
