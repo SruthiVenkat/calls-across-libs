@@ -29,4 +29,6 @@ CMD git --version
 # clone and checkout calls-across-libs
 RUN git clone https://github.com/SruthiVenkat/calls-across-libs.git && cd calls-across-libs && mvn clean install
 
-CMD cd calls-across-libs/libs-info-project-runner && mvn compile && mvn exec:java -Dexec.mainClass=runner.DependentTestRunner > output.txt
+CMD cd calls-across-libs/libs-info-project-runner && sh getrepos.sh
+
+CMD mvn compile && mvn exec:java -Dexec.mainClass=runner.DependentTestRunner > output.txt
