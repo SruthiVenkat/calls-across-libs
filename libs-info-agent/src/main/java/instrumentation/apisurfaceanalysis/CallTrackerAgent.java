@@ -38,7 +38,7 @@ public class CallTrackerAgent {
 					String subtypingOutputPath = prop.getProperty("subtypingOutputPath");
 					String annotationsOutputPath = prop.getProperty("annotationsOutputPath");
 					String setAccessibleCallsPath = prop.getProperty("setAccessibleCallsPath");
-					String serviceLoaderInfoPath = prop.getProperty("serviceLoaderInfoPath");
+					String classesUsageInfoPath = prop.getProperty("classesUsageInfoPath");
 					String libsInfoPath = prop.getProperty("libsInfoPath");
 					
 					System.out.println("Adding results to CSV");
@@ -61,17 +61,17 @@ public class CallTrackerAgent {
 		      		writer.close();
 		      		writer = new FileWriter(subtypingOutputPath, true);
 		      		if (new File(subtypingOutputPath).length() == 0)
-		      			writer.write("SubClass,Sub Library,Super Class/Interface,Super Library\n");
+		      			writer.write("SubClass,Sub Library,Super Class/Interface,Super Class/Interface Visibility,Super Library\n");
 		      		for (InterLibrarySubtypingKey ils: CallTrackerTransformer.interLibrarySubtyping) {
-		            	writer.write(ils.subClass+","+ ils.subClassLib+","+ ils.superClass+","+ils.superClassLib+"\n");
+		            	writer.write(ils.subClass+","+ ils.subClassLib+","+ ils.superClass+","+ ils.superClassVis+","+ils.superClassLib+"\n");
 		            }
 		      		writer.flush();
 		      		writer.close();
 		      		writer = new FileWriter(annotationsOutputPath, true);
 		      		if (new File(annotationsOutputPath).length() == 0)
-		      			writer.write("Class,Method,Field Name:Field Signature,Annotated In Library,Annotation,Annotation Library\n");
+		      			writer.write("Class,Method,Field Name:Field Signature,Annotated In Library,Annotation,Annotation Visibility,Annotation Library\n");
 		      		for (InterLibraryAnnotationsKey ila: CallTrackerTransformer.interLibraryAnnotations) {
-		            	writer.write(ila.className+","+ ila.methodName+","+ ila.field+","+ ila.classLib+","+ ila.annotationName+","+ila.annotationLib+"\n");
+		            	writer.write(ila.className+","+ ila.methodName+","+ ila.field+","+ ila.classLib+","+ ila.annotationName+","+ ila.annotationVis+","+ila.annotationLib+"\n");
 		            }
 		      		writer.flush();
 		      		writer.close();
@@ -80,6 +80,14 @@ public class CallTrackerAgent {
 		      			writer.write("Caller Method,Caller Library,setAccessible Called On,Visibility,Callee Name,Field Signature,Callee Library\n");
 		      		for (SetAccessibleCallsKey sac: CallTrackerTransformer.setAccessibleCallsInfo) {
 		            	writer.write(sac.callerMethod+","+ sac.callerLib+","+ sac.calledOnType+","+ sac.visibility+","+ sac.calledOnObjName+","+sac.fieldSignature+","+sac.libName+"\n");
+		            }
+		      		writer.flush();
+		      		writer.close();
+		      		writer = new FileWriter(classesUsageInfoPath, true);
+		      		if (new File(classesUsageInfoPath).length() == 0)
+		      			writer.write("Class Name,Class Visibility,Class Library,Usage,Used In Library\n");
+		      		for (InterLibraryClassUsageKey ilcu: CallTrackerTransformer.interLibraryClassUsage) {
+		            	writer.write(ilcu.className+","+ ilcu.classVisibility+","+ ilcu.classLib+","+ ilcu.usageType+","+ ilcu.usedInLib+"\n");
 		            }
 		      		writer.flush();
 		      		writer.close();
@@ -107,7 +115,7 @@ public class CallTrackerAgent {
 			}
         }); 
     }
-
+	
 	public static void agentmain(String agentArgs, Instrumentation inst) {
         inst.addTransformer(new CallTrackerTransformer());
     }

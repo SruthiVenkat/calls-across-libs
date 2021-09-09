@@ -6,7 +6,8 @@ apt-get --yes --force-yes install software-properties-common && \
 add-apt-repository ppa:linuxuprising/java && \
 apt-get --yes --force-yes update && \
 apt install unzip && \
-apt install zip
+apt install zip && \
+apt-get --yes --force-yes install jq
 
 # install Java
 RUN echo oracle-java16-installer shared/accepted-oracle-license-v1-2 select true | /usr/bin/debconf-set-selections && \

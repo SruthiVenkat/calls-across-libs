@@ -194,7 +194,7 @@ public class DependentTestRunner {
 	            prop.setProperty("subtypingOutputPath", outputPath+lib+"-subtyping.csv");
 	            prop.setProperty("annotationsOutputPath", outputPath+lib+"-annotations.csv");
 	            prop.setProperty("setAccessibleCallsPath", outputPath+lib+"-setAccessibleCalls.csv");
-	            prop.setProperty("serviceLoaderInfoPath", outputPath+lib+"-serviceLoaderInfoPath.csv");
+	            prop.setProperty("classesUsageInfoPath", outputPath+lib+"-classesUsageInfoPath.csv");
 	            prop.setProperty("runningLibrary", lib);
 	            prop.store(new FileWriter(configPath, false), null);
 	            runMvnProjectUnitTests(pomList.get(lib));
@@ -203,7 +203,7 @@ public class DependentTestRunner {
 	            prop.setProperty("subtypingOutputPath", "");
 	            prop.setProperty("annotationsOutputPath", "");
 	            prop.setProperty("setAccessibleCallsPath", "");
-	            prop.setProperty("serviceLoaderInfoPath", "");
+	            prop.setProperty("classesUsageInfoPath", "");
 	            prop.setProperty("runningLibrary", "");
 	            prop.store(new FileWriter(configPath, false), null);
             } catch (IOException ex) {
@@ -218,7 +218,6 @@ public class DependentTestRunner {
 		request.setGoals(Arrays.asList("clean", "install"));
 		request.setMavenOpts("-Dlicense.skip=true -DskipTests=true -Dcheckstyle.skip=true");
 		System.setProperty("maven.home", "/usr/share/maven");
-		
 		Invoker invoker = new DefaultInvoker();
 		try {
 			invoker.execute( request );
@@ -271,7 +270,7 @@ public class DependentTestRunner {
 	            prop.setProperty("subtypingOutputPath", outputPath+lib+"-subtyping.csv");
 	            prop.setProperty("annotationsOutputPath", outputPath+lib+"-annotations.csv");
 	            prop.setProperty("setAccessibleCallsPath", outputPath+lib+"-setAccessibleCalls.csv");
-	            prop.setProperty("serviceLoaderInfoPath", outputPath+lib+"-serviceLoaderInfoPath.csv");
+	            prop.setProperty("classesUsageInfoPath", outputPath+lib+"-classesUsageInfoPath.csv");
 	            prop.setProperty("runningLibrary", lib);
 	            prop.store(new FileWriter(configPath, false), null);
 	            runGradleProjectUnitTests(pathToGradleProject, pathToRootGradleProject);
@@ -280,7 +279,7 @@ public class DependentTestRunner {
 	            prop.setProperty("subtypingOutputPath", "");
 	            prop.setProperty("annotationsOutputPath", "");
 	            prop.setProperty("setAccessibleCallsPath", "");
-	            prop.setProperty("serviceLoaderInfoPath", "");
+	            prop.setProperty("classesUsageInfoPath", "");
 	            prop.setProperty("runningLibrary", "");
 	            prop.store(new FileWriter(configPath, false), null);
             } catch (IOException ex) {
