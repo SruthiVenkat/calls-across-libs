@@ -24,10 +24,10 @@ CMD gradle --version
 RUN apt-get --yes --force-yes  install git
 CMD echo 'Git version'
 CMD git --version
-CMD cd calls-across-libs/libs-info-project-runner && ls && sh getrepos.sh
+#CMD cd calls-across-libs/libs-info-project-runner && ls && sh getrepos.sh
 
 
 # clone and checkout calls-across-libs
 RUN git clone https://github.com/SruthiVenkat/calls-across-libs.git && cd calls-across-libs && mvn clean install
 
-#CMD mvn compile && mvn exec:java -Dexec.mainClass=runner.DependentTestRunner > output.txt
+CMD cd calls-across-libs/libs-info-project-runner/projects/microbenchmark1-calls-across-libs && mvn compile && mvn exec:java -Dexec.mainClass=runner.DependentTestRunner > output.txt

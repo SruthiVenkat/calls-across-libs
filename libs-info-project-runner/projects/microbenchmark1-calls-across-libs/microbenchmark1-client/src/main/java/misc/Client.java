@@ -43,8 +43,6 @@ public class Client {
 		miscClientMethod();
 	}
 	
-	
-	
 	public static void miscClientMethod() {
 		// packageA - dispatch
 		SuperClass sc = new SubClass();
