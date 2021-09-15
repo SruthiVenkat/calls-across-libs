@@ -45,18 +45,18 @@ public class Client {
 	
 	public static void miscClientMethod() {
 		// packageA - dispatch
-		SuperClass sc = new SubClass();
-		System.out.print("Dispatch - "); sc.method1();
+		SuperClass supCls = new SubClass();
+		System.out.print("Dispatch - "); supCls.method1();
 		System.out.print("Static - "); SubClass.method2();
-		System.out.print("Dispatch + Static - "); sc.method2();
-		System.out.println(sc.field1);
+		System.out.print("Dispatch + Static - "); supCls.method2();
+		System.out.println(supCls.field1);
 		
 		// field access
-		SubClass sub = new SubClass();
-		System.out.println(sub.field1);
-		sub.i = 10;
-		System.out.println(sub.i);
-		sub.strs.add("test");
+		SubClass subCls = new SubClass();
+		System.out.println(subCls.field1);
+		subCls.i = 10;
+		System.out.println(subCls.i);
+		subCls.strs.add("test");
 		
 		// generic field access
 		GenericClass <Integer> genObj = new GenericClass<Integer>(5);
@@ -65,11 +65,11 @@ public class Client {
 		// reflective field access
 		try {
 			Field field = SubClass.class.getField("field1");
-			System.out.println(field.get(sub));
-			System.out.println(field.get(sc));
-			field.set(sc, "bnm");
-			System.out.println(field.get(sub));
-			System.out.println(field.get(sc));
+			System.out.println(field.get(subCls));
+			System.out.println(field.get(supCls));
+			field.set(supCls, "bnm");
+			System.out.println(field.get(subCls));
+			System.out.println(field.get(supCls));
 			Field field2 = GenericClass.class.getField("genericField");
 			System.out.println(field2.get(genObj));
 			Field field3 = GenericClass.class.getField("genericList");
@@ -87,10 +87,10 @@ public class Client {
 		java.lang.reflect.Method method;
 		try {
 			// setAccessible
-			SuperClass sc2 = new SuperClass();
+			SuperClass supCls2 = new SuperClass();
 			java.lang.reflect.Method privateMethod = SuperClass.class.getDeclaredMethod("checkSetAccessibility");
 			privateMethod.setAccessible(true);
-			privateMethod.invoke(sc2);
+			privateMethod.invoke(supCls2);
 		
 		  System.out.println("packageB External - reflection - ");
 		  method = External.class.getMethod("getText");
@@ -111,7 +111,7 @@ public class Client {
 		    .filter(n -> n>=5)
 		    .map(n -> n+rtypes.getInt())
 		    .sorted()
-		    .forEach(n -> {System.out.println(e.getHi()+n+sub.field1);});
+		    .forEach(n -> {System.out.println(e.getHi()+n+subCls.field1);});
 		    
 		CommonInterface proxyInstance = (CommonInterface) Proxy.newProxyInstance(Client.class.getClassLoader(), new Class[] { CommonInterface.class }, new DynamicInvocationHandler(new External()));
 		System.out.println(proxyInstance.getWhichClassString());
@@ -134,17 +134,17 @@ public class Client {
 		}
 		
 		try {
-            final ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
-            for (CommonInterface o : ServiceLoader.load(CommonInterface.class, classLoader)) {
-            	System.out.println("--->"+o.getClass().getName());
-
-                External ext = (External) o;
-                System.out.println("printing loaded service method text---"+ext.getWhichClassString());
-                System.out.println("printing loaded service method text---"+o.getWhichClassString());
-            }
-        } catch (ClassCastException ex) {
-            System.out.println(ex);
-        }
+			final ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
+			for (CommonInterface o : ServiceLoader.load(CommonInterface.class, classLoader)) {
+				System.out.println("--->"+o.getClass().getName());
+			
+			External ext = (External) o;
+			System.out.println("printing loaded service method text---"+ext.getWhichClassString());
+			System.out.println("printing loaded service method text---"+o.getWhichClassString());
+			    }
+		} catch (ClassCastException ex) {
+			System.out.println(ex);
+		}
 		
 		Connection con;
 		try {
