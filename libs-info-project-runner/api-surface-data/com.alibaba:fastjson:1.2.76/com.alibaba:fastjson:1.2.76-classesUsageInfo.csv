@@ -31,6 +31,7 @@ com.alibaba.json.bvt.issue_1300.Issue1330_decimal$Model,public,unknownLib,Class.
 com.alibaba.json.bvt.path.JSONPath_keySet$Entity,public,unknownLib,Class.forName,com.alibaba:fastjson:1.2.76
 com.alibaba.json.bvt.date.XMLGregorianCalendarTest$Model,public,unknownLib,Class.forName,com.alibaba:fastjson:1.2.76
 com.alibaba.json.bvt.date.DateTest_dotnet_2$Model,public,unknownLib,Class.forName,com.alibaba:fastjson:1.2.76
+com.alibaba.json.bvt.issue_3600.Issue3655$B,public,unknownLib,Class.forName,com.alibaba:fastjson:1.2.76
 com.alibaba.json.bvt.issue_1300.Issue1357$Test2Bean,public,unknownLib,Class.forName,com.alibaba:fastjson:1.2.76
 com.alibaba.json.bvt.bug.Bug_for_primitive_byte$VO,public,unknownLib,Class.forName,com.alibaba:fastjson:1.2.76
 com.alibaba.json.bvt.bug.Bug_for_issue_291$VO,public,unknownLib,Class.forName,com.alibaba:fastjson:1.2.76
@@ -70,6 +71,7 @@ com.alibaba.json.bvt.basicType.IntegerNullTest$Model,public,unknownLib,Class.for
 org.w3c.dom.Entity,public,xml-apis:xml-apis:1.0.b2,cast,xerces:xercesImpl:2.8.1
 javax.ws.rs.core.EntityTag,public,javax.ws.rs:javax.ws.rs-api:2.0.1,instantiation,org.apache.cxf:cxf-rt-frontend-jaxrs:3.1.2
 com.alibaba.json.bvt.serializer.TransientTest$Category,public,unknownLib,Class.forName,com.alibaba:fastjson:1.2.76
+org.apache.commons.logging.Log,public,commons-logging:commons-logging:1.1.1,subtyping,org.slf4j:jcl-over-slf4j:1.7.25
 com.alibaba.json.bvt.joda.JodaTest_7_DateTimeZone$Model,public,unknownLib,Class.forName,com.alibaba:fastjson:1.2.76
 com.google.common.collect.LinkedListMultimap,public,com.google.guava:guava:18.0,Class.forName,com.alibaba:fastjson:1.2.76
 org.glassfish.hk2.api.ClassAnalyzer,public,org.glassfish.hk2:hk2-api:2.5.0-b05,cast,org.glassfish.hk2:hk2-locator:2.5.0-b05
@@ -88,7 +90,6 @@ com.alibaba.json.bvt.serializer.features.WriteNonStringValueAsStringTestLongFiel
 com.alibaba.json.bvt.issue_2100.Issue2132$Computer,public,unknownLib,Class.forName,com.alibaba:fastjson:1.2.76
 com.alibaba.json.bvt.serializer.filters.ClassLevelFeatureConfigTest3$Model,public,unknownLib,Class.forName,com.alibaba:fastjson:1.2.76
 com.alibaba.json.bvt.serializer.TestInnerClass$VO,public,unknownLib,Class.forName,com.alibaba:fastjson:1.2.76
-com.alibaba.json.bvt.issue_1300.Issue1306$Goods,public,unknownLib,Class.forName,com.alibaba:fastjson:1.2.76
 com.alibaba.json.bvt.serializer.features.WriteNonStringValueAsStringTestShortField$VO,public,unknownLib,Class.forName,com.alibaba:fastjson:1.2.76
 com.alibaba.json.bvt.issue_2100.Issue2165$Model,public,unknownLib,Class.forName,com.alibaba:fastjson:1.2.76
 javax.ws.rs.Produces,public,javax.ws.rs:javax.ws.rs-api:2.0.1,cast,org.apache.cxf:cxf-rt-frontend-jaxrs:3.1.2
@@ -107,7 +108,6 @@ org.apache.commons.logging.LogFactory,public,org.slf4j:jcl-over-slf4j:1.7.25,met
 com.alibaba.json.bvt.compatible.jsonlib.CompatibleTest0$V3,public,unknownLib,Class.forName,com.alibaba:fastjson:1.2.76
 com.alibaba.json.bvt.issue_1400.Issue1423$LongVal,public,unknownLib,Class.forName,com.alibaba:fastjson:1.2.76
 com.alibaba.json.bvt.serializer.SerializeWriterTest_BrowserSecure$VO,public,unknownLib,Class.forName,com.alibaba:fastjson:1.2.76
-com.alibaba.json.bvt.bug.Bug_for_leupom$Person,public,unknownLib,Class.forName,com.alibaba:fastjson:1.2.76
 com.alibaba.json.bvt.issue_1300.Issue1320$SSOToken,public,unknownLib,Class.forName,com.alibaba:fastjson:1.2.76
 com.alibaba.json.bvt.writeClassName.WriteClassNameTest3$Model,public,unknownLib,Class.forName,com.alibaba:fastjson:1.2.76
 com.alibaba.json.bvt.bug.Bug_for_42283905$Command,public,unknownLib,Class.forName,com.alibaba:fastjson:1.2.76
@@ -158,6 +158,7 @@ java.net.InetSocketAddress,public,unknownLib,Class.forName,com.alibaba:fastjson:
 javax.ws.rs.ext.MessageBodyWriter,public,javax.ws.rs:javax.ws.rs-api:2.0.1,cast,org.apache.cxf:cxf-rt-frontend-jaxrs:3.1.2
 kotlin.ranges.LongRange,public,unknownLib,Class.forName,com.alibaba:fastjson:1.2.76
 javax.servlet.http.HttpServletResponse,public,javax.servlet:javax.servlet-api:3.1.0,cast,org.apache.cxf:cxf-rt-frontend-jaxrs:3.1.2
+org.apache.commons.logging.Log,public,commons-logging:commons-logging:1.1.1,cast,org.slf4j:jcl-over-slf4j:1.7.25
 javax.persistence.OneToMany,public,unknownLib,Class.forName,com.alibaba:fastjson:1.2.76
 org.apache.cxf.interceptor.Fault,public,org.apache.cxf:cxf-core:3.1.2,instantiation,org.apache.cxf:cxf-rt-frontend-jaxrs:3.1.2
 com.alibaba.json.bvt.ref.RefTest13$Entity,public,unknownLib,Class.forName,com.alibaba:fastjson:1.2.76
@@ -360,7 +361,6 @@ com.alibaba.json.bvt.asm.TestList$VO,public,unknownLib,Class.forName,com.alibaba
 org.glassfish.hk2.utilities.BuilderHelper,public,org.glassfish.hk2:hk2-api:2.5.0-b05,method call,org.glassfish.hk2:hk2-locator:2.5.0-b05
 org.springframework.core.ErrorCoded,public,org.springframework:spring-core:4.3.7.RELEASE,subtyping,org.springframework:spring-beans:4.3.7.RELEASE
 com.alibaba.json.bvt.issue_1400.Issue1458$HostPoint,public,unknownLib,Class.forName,com.alibaba:fastjson:1.2.76
-com.alibaba.json.bvt.issue_1300.Issue1306$Goods$Property,public,unknownLib,Class.forName,com.alibaba:fastjson:1.2.76
 org.springframework.util.ReflectionUtils,public,org.springframework:spring-core:4.3.7.RELEASE,method call,org.springframework:spring-beans:4.3.7.RELEASE
 javax.ws.rs.core.Response$ResponseBuilder,public,javax.ws.rs:javax.ws.rs-api:2.0.1,subtyping,org.apache.cxf:cxf-rt-frontend-jaxrs:3.1.2
 com.alibaba.json.bvt.path.JSONPath_0$Entity,public,unknownLib,Class.forName,com.alibaba:fastjson:1.2.76
@@ -503,7 +503,6 @@ com.alibaba.json.bvt.date.DateTest1$Model,public,unknownLib,Class.forName,com.al
 java.time.Duration,public,unknownLib,Class.forName,com.alibaba:fastjson:1.2.76
 com.alibaba.json.bvt.ArmoryTest$MessageBody,public,unknownLib,Class.forName,com.alibaba:fastjson:1.2.76
 com.alibaba.json.bvt.serializer.JSONFieldTest3$VO,public,unknownLib,Class.forName,com.alibaba:fastjson:1.2.76
-com.alibaba.json.bvt.issue_1300.Issue1306$LongEntity,public,unknownLib,Class.forName,com.alibaba:fastjson:1.2.76
 org.glassfish.hk2.api.Proxiable,public,org.glassfish.hk2:hk2-api:2.5.0-b05,cast,org.glassfish.hk2:hk2-locator:2.5.0-b05
 java.sql.Time,public,java.sql,method call,com.alibaba:fastjson:1.2.76
 com.alibaba.json.bvt.jdk8.OptionalDouble_Test$Model,public,unknownLib,Class.forName,com.alibaba:fastjson:1.2.76
@@ -946,7 +945,6 @@ com.alibaba.json.bvt.serializer.ConcurrentHashMapTest6$MessageQueue,public,unkno
 com.alibaba.json.bvt.bug.Issue998$Item,public,unknownLib,Class.forName,com.alibaba:fastjson:1.2.76
 com.google.common.collect.HashMultimap,public,com.google.guava:guava:18.0,method call,com.alibaba:fastjson:1.2.76
 com.alibaba.json.bvt.issue_1300.Issue1330_float$Model,public,unknownLib,Class.forName,com.alibaba:fastjson:1.2.76
-com.alibaba.json.bvt.issue_1300.Issue1306$TT,public,unknownLib,Class.forName,com.alibaba:fastjson:1.2.76
 org.springframework.util.Assert,public,org.springframework:spring-core:4.3.7.RELEASE,method call,org.springframework:spring-beans:4.3.7.RELEASE
 com.alibaba.json.bvt.jdk8.OffseTimeTest$VO,public,unknownLib,Class.forName,com.alibaba:fastjson:1.2.76
 com.alibaba.json.bvt.bug.Issue771$FooBar,public,unknownLib,Class.forName,com.alibaba:fastjson:1.2.76

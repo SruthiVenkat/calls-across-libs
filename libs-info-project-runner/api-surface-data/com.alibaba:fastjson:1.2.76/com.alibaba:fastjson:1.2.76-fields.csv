@@ -612,7 +612,7 @@ com.alibaba:fastjson:1.2.76,com.alibaba.json.bvtVO.BigClass::field1770,com.aliba
 com.alibaba:fastjson:1.2.76,com.alibaba.json.bvtVO.BigClass::field1773,com.alibaba.json.bvtVO.BigClass,com.alibaba.json.bvtVO.BigClass,java.lang.String,false,public,unknownLib,true,1
 com.alibaba:fastjson:1.2.76,com.alibaba.json.bvt.mixins.MixinAPITest$BaseClass::a,com.alibaba.json.bvt.mixins.MixinAPITest$BaseClass,com.alibaba.json.bvt.mixins.MixinAPITest$BaseClass,int,false,public,unknownLib,true,1
 com.alibaba:fastjson:1.2.76,com.alibaba.json.bvtVO.BigClass::field1772,com.alibaba.json.bvtVO.BigClass,com.alibaba.json.bvtVO.BigClass,java.lang.String,false,public,unknownLib,true,1
-com.alibaba:fastjson:1.2.76,com.alibaba.json.bvt.LongFieldTest_3_stream$Model::value,com.alibaba.json.bvt.LongFieldTest_3_stream$Model,com.alibaba.json.bvt.LongFieldTest_3_stream$Model,long,false,public,unknownLib,true,3620
+com.alibaba:fastjson:1.2.76,com.alibaba.json.bvt.LongFieldTest_3_stream$Model::value,com.alibaba.json.bvt.LongFieldTest_3_stream$Model,com.alibaba.json.bvt.LongFieldTest_3_stream$Model,long,false,public,unknownLib,true,3704
 com.alibaba:fastjson:1.2.76,com.alibaba.json.bvtVO.BigClass::field1775,com.alibaba.json.bvtVO.BigClass,com.alibaba.json.bvtVO.BigClass,java.lang.String,false,public,unknownLib,true,1
 com.alibaba:fastjson:1.2.76,com.alibaba.json.bvtVO.BigClass::field1774,com.alibaba.json.bvtVO.BigClass,com.alibaba.json.bvtVO.BigClass,java.lang.String,false,public,unknownLib,true,1
 com.alibaba:fastjson:1.2.76,com.alibaba.json.bvt.mixins.MixinAPITest$BaseClass::b,com.alibaba.json.bvt.mixins.MixinAPITest$BaseClass,com.alibaba.json.bvt.mixins.MixinAPITest$BaseClass,int,false,public,unknownLib,true,1
@@ -1375,6 +1375,7 @@ com.alibaba:fastjson:1.2.76,com.alibaba.json.bvtVO.BigClass::field5503,com.aliba
 com.alibaba:fastjson:1.2.76,com.alibaba.json.bvtVO.BigClass::field5504,com.alibaba.json.bvtVO.BigClass,com.alibaba.json.bvtVO.BigClass,java.lang.String,false,public,unknownLib,true,1
 com.alibaba:fastjson:1.2.76,com.alibaba.json.bvtVO.BigClass::field5501,com.alibaba.json.bvtVO.BigClass,com.alibaba.json.bvtVO.BigClass,java.lang.String,false,public,unknownLib,true,1
 com.alibaba:fastjson:1.2.76,com.alibaba.json.bvtVO.BigClass::field5502,com.alibaba.json.bvtVO.BigClass,com.alibaba.json.bvtVO.BigClass,java.lang.String,false,public,unknownLib,true,1
+com.alibaba:fastjson:1.2.76,com.alibaba.json.bvt.issue_2500.Issue2579$MyPoint1::x,java.awt.Point,com.alibaba.json.bvt.issue_2500.Issue2579$MyPoint1,int,false,public,unknownLib,true,1
 com.alibaba:fastjson:1.2.76,com.alibaba.json.bvtVO.BigClass::field3199,com.alibaba.json.bvtVO.BigClass,com.alibaba.json.bvtVO.BigClass,java.lang.String,false,public,unknownLib,true,1
 com.alibaba:fastjson:1.2.76,com.alibaba.json.bvtVO.BigClass::field3198,com.alibaba.json.bvtVO.BigClass,com.alibaba.json.bvtVO.BigClass,java.lang.String,false,public,unknownLib,true,1
 com.alibaba:fastjson:1.2.76,com.alibaba.json.bvtVO.BigClass::field3191,com.alibaba.json.bvtVO.BigClass,com.alibaba.json.bvtVO.BigClass,java.lang.String,false,public,unknownLib,true,1
@@ -2525,14 +2526,12 @@ com.alibaba:fastjson:1.2.76,com.alibaba.json.bvtVO.BigClass::field3497,com.aliba
 com.alibaba:fastjson:1.2.76,com.alibaba.json.bvtVO.BigClass::field2169,com.alibaba.json.bvtVO.BigClass,com.alibaba.json.bvtVO.BigClass,java.lang.String,false,public,unknownLib,true,1
 com.alibaba:fastjson:1.2.76,com.alibaba.json.bvtVO.BigClass::field2168,com.alibaba.json.bvtVO.BigClass,com.alibaba.json.bvtVO.BigClass,java.lang.String,false,public,unknownLib,true,1
 com.alibaba:fastjson:1.2.76,com.alibaba.json.bvtVO.BigClass::field3499,com.alibaba.json.bvtVO.BigClass,com.alibaba.json.bvtVO.BigClass,java.lang.String,false,public,unknownLib,true,1
-com.alibaba:fastjson:1.2.76,com.alibaba.json.bvt.issue_2500.Issue2579$MyPoint2::x,java.awt.Point,com.alibaba.json.bvt.issue_2500.Issue2579$MyPoint2,int,false,public,unknownLib,true,1
 com.alibaba:fastjson:1.2.76,com.alibaba.json.bvtVO.BigClass::field3490,com.alibaba.json.bvtVO.BigClass,com.alibaba.json.bvtVO.BigClass,java.lang.String,false,public,unknownLib,true,1
 com.alibaba:fastjson:1.2.76,com.alibaba.json.bvtVO.BigClass::field2161,com.alibaba.json.bvtVO.BigClass,com.alibaba.json.bvtVO.BigClass,java.lang.String,false,public,unknownLib,true,1
 com.alibaba:fastjson:1.2.76,com.alibaba.json.bvtVO.BigClass::field3492,com.alibaba.json.bvtVO.BigClass,com.alibaba.json.bvtVO.BigClass,java.lang.String,false,public,unknownLib,true,1
 com.alibaba:fastjson:1.2.76,com.alibaba.json.bvtVO.BigClass::field2160,com.alibaba.json.bvtVO.BigClass,com.alibaba.json.bvtVO.BigClass,java.lang.String,false,public,unknownLib,true,1
 com.alibaba:fastjson:1.2.76,com.alibaba.json.bvtVO.BigClass::field3491,com.alibaba.json.bvtVO.BigClass,com.alibaba.json.bvtVO.BigClass,java.lang.String,false,public,unknownLib,true,1
 com.alibaba:fastjson:1.2.76,com.alibaba.json.bvtVO.BigClass::field2163,com.alibaba.json.bvtVO.BigClass,com.alibaba.json.bvtVO.BigClass,java.lang.String,false,public,unknownLib,true,1
-com.alibaba:fastjson:1.2.76,com.alibaba.json.bvt.issue_2500.Issue2579$MyPoint2::y,java.awt.Point,com.alibaba.json.bvt.issue_2500.Issue2579$MyPoint2,int,false,public,unknownLib,true,1
 com.alibaba:fastjson:1.2.76,com.alibaba.json.bvtVO.BigClass::field3494,com.alibaba.json.bvtVO.BigClass,com.alibaba.json.bvtVO.BigClass,java.lang.String,false,public,unknownLib,true,1
 com.alibaba:fastjson:1.2.76,com.alibaba.json.bvtVO.BigClass::field2162,com.alibaba.json.bvtVO.BigClass,com.alibaba.json.bvtVO.BigClass,java.lang.String,false,public,unknownLib,true,1
 com.alibaba:fastjson:1.2.76,com.alibaba.json.bvtVO.BigClass::field3493,com.alibaba.json.bvtVO.BigClass,com.alibaba.json.bvtVO.BigClass,java.lang.String,false,public,unknownLib,true,1

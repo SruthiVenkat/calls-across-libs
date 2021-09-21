@@ -12,6 +12,7 @@ org.apache.xerces.parsers.AbstractSAXParser$2,xerces:xercesImpl:2.8.1,org.xml.sa
 org.apache.xerces.parsers.AbstractSAXParser$AttributesProxy,xerces:xercesImpl:2.8.1,org.xml.sax.AttributeList,public,xml-apis:xml-apis:1.0.b2,1
 org.glassfish.jersey.model.internal.CommonConfig,org.glassfish.jersey.core:jersey-common:2.23.2,javax.ws.rs.core.FeatureContext,public,javax.ws.rs:javax.ws.rs-api:2.0.1,1
 org.apache.xerces.jaxp.DocumentBuilderFactoryImpl,xerces:xercesImpl:2.8.1,javax.xml.parsers.DocumentBuilderFactory,public,xml-apis:xml-apis:1.0.b2,1
+org.apache.commons.logging.impl.SLF4JLocationAwareLog,org.slf4j:jcl-over-slf4j:1.7.25,org.apache.commons.logging.Log,public,commons-logging:commons-logging:1.1.1,1
 org.apache.xerces.dom.TextImpl,xerces:xercesImpl:2.8.1,org.w3c.dom.Text,public,xml-apis:xml-apis:1.0.b2,1
 org.jvnet.hk2.internal.PerLookupContext,org.glassfish.hk2:hk2-locator:2.5.0-b05,org.glassfish.hk2.api.Context,public,org.glassfish.hk2:hk2-api:2.5.0-b05,1
 org.springframework.context.ApplicationContext,org.springframework:spring-context:4.3.7.RELEASE,org.springframework.beans.factory.ListableBeanFactory,public,org.springframework:spring-beans:4.3.7.RELEASE,1
@@ -65,6 +66,7 @@ com.alibaba.fastjson.support.jaxrs.FastJsonProvider,com.alibaba:fastjson:1.2.76,
 org.apache.cxf.jaxrs.impl.PathSegmentImpl,org.apache.cxf:cxf-rt-frontend-jaxrs:3.1.2,javax.ws.rs.core.PathSegment,public,javax.ws.rs:javax.ws.rs-api:2.0.1,1
 com.alibaba.fastjson.support.jaxrs.FastJsonProvider,com.alibaba:fastjson:1.2.76,javax.ws.rs.ext.MessageBodyWriter,public,javax.ws.rs:javax.ws.rs-api:2.0.1,1
 org.springframework.context.ApplicationContext,org.springframework:spring-context:4.3.7.RELEASE,org.springframework.core.env.EnvironmentCapable,public,org.springframework:spring-core:4.3.7.RELEASE,1
+org.apache.commons.logging.impl.SLF4JLog,org.slf4j:jcl-over-slf4j:1.7.25,org.apache.commons.logging.Log,public,commons-logging:commons-logging:1.1.1,1
 org.apache.cxf.jaxrs.impl.LinkHeaderProvider,org.apache.cxf:cxf-rt-frontend-jaxrs:3.1.2,javax.ws.rs.ext.RuntimeDelegate$HeaderDelegate,public,javax.ws.rs:javax.ws.rs-api:2.0.1,1
 org.apache.cxf.jaxrs.impl.RuntimeDelegateImpl,org.apache.cxf:cxf-rt-frontend-jaxrs:3.1.2,javax.ws.rs.ext.RuntimeDelegate,public,javax.ws.rs:javax.ws.rs-api:2.0.1,1
 org.apache.cxf.jaxrs.impl.DateHeaderProvider,org.apache.cxf:cxf-rt-frontend-jaxrs:3.1.2,javax.ws.rs.ext.RuntimeDelegate$HeaderDelegate,public,javax.ws.rs:javax.ws.rs-api:2.0.1,1

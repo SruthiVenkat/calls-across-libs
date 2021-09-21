@@ -111,8 +111,8 @@ public class DependentTestRunner {
 		request.setPomFile(new File(pomFile));
 		request.setGoals(Arrays.asList("help:evaluate"));
 
-		System.setProperty("maven.home", "/usr/share/maven");
-		
+		//System.setProperty("maven.home", "/usr/share/maven");
+		System.setProperty("maven.home", "/opt/homebrew/Cellar/maven/3.8.2/libexec");
 		Invoker invoker = new DefaultInvoker();
 		try {
 			request.setMavenOpts("-Dexpression=project.groupId -Doutput=group.txt");
@@ -191,13 +191,14 @@ public class DependentTestRunner {
 			try (FileReader input = new FileReader(configPath)) {
 				Properties prop = new Properties();
 	            prop.load(input);
-	            prop.setProperty("invocationsOutputPath", outputPath+lib+"-invocations.csv");
-	            prop.setProperty("fieldsOutputPath", outputPath+lib+"-fields.csv");
-	            prop.setProperty("subtypingOutputPath", outputPath+lib+"-subtyping.csv");
-	            prop.setProperty("annotationsOutputPath", outputPath+lib+"-annotations.csv");
-	            prop.setProperty("setAccessibleCallsPath", outputPath+lib+"-setAccessibleCalls.csv");
-	            prop.setProperty("classesUsageInfoPath", outputPath+lib+"-classesUsageInfo.csv");
-	            prop.setProperty("serviceBypassCallsPath", outputPath+lib+"-serviceBypassCalls.csv");
+	            new File(outputPath+File.separator+lib).mkdir();
+	            prop.setProperty("invocationsOutputPath", outputPath+File.separator+lib+File.separator+lib+"-invocations.csv");
+	            prop.setProperty("fieldsOutputPath", outputPath+File.separator+lib+File.separator+lib+"-fields.csv");
+	            prop.setProperty("subtypingOutputPath", outputPath+File.separator+lib+File.separator+lib+"-subtyping.csv");
+	            prop.setProperty("annotationsOutputPath", outputPath+File.separator+lib+File.separator+lib+"-annotations.csv");
+	            prop.setProperty("setAccessibleCallsPath", outputPath+File.separator+lib+File.separator+lib+"-setAccessibleCalls.csv");
+	            prop.setProperty("classesUsageInfoPath", outputPath+File.separator+lib+File.separator+lib+"-classesUsageInfo.csv");
+	            prop.setProperty("serviceBypassCallsPath", outputPath+File.separator+lib+File.separator+lib+"-serviceBypassCalls.csv");
 	            prop.setProperty("runningLibrary", lib);
 	            prop.store(new FileWriter(configPath, false), null);
 	            runMvnProjectUnitTests(pomList.get(lib));
@@ -222,7 +223,8 @@ public class DependentTestRunner {
 		request.setGoals(Arrays.asList("clean", "install"));
 		request.setMavenOpts("-Dlicense.skip=true -DskipTests=true -Dcheckstyle.skip=true");
 
-		System.setProperty("maven.home", "/usr/share/maven");
+		//System.setProperty("maven.home", "/usr/share/maven");
+		System.setProperty("maven.home", "/opt/homebrew/Cellar/maven/3.8.2/libexec");
 		Invoker invoker = new DefaultInvoker();
 		try {
 			invoker.execute( request );
@@ -238,7 +240,8 @@ public class DependentTestRunner {
 		Properties properties = new Properties();
 		properties.setProperty("argLine", JAVA_OPTS);
 		request.setProperties(properties);
-		System.setProperty("maven.home", "/usr/share/maven");
+		//System.setProperty("maven.home", "/usr/share/maven");
+		System.setProperty("maven.home", "/opt/homebrew/Cellar/maven/3.8.2/libexec");
 
 		Invoker invoker = new DefaultInvoker();
 		try {
@@ -270,13 +273,14 @@ public class DependentTestRunner {
 			try (FileReader input = new FileReader(configPath)) {
 	            Properties prop = new Properties();
 	            prop.load(input);
-	            prop.setProperty("invocationsOutputPath", outputPath+lib+"-invocations.csv");
-	            prop.setProperty("fieldsOutputPath", outputPath+lib+"-fields.csv");
-	            prop.setProperty("subtypingOutputPath", outputPath+lib+"-subtyping.csv");
-	            prop.setProperty("annotationsOutputPath", outputPath+lib+"-annotations.csv");
-	            prop.setProperty("setAccessibleCallsPath", outputPath+lib+"-setAccessibleCalls.csv");
-	            prop.setProperty("classesUsageInfoPath", outputPath+lib+"-classesUsageInfo.csv");
-	            prop.setProperty("serviceBypassCallsPath", outputPath+lib+"-serviceBypassCalls.csv");
+	            new File(outputPath+File.separator+lib).mkdir();
+	            prop.setProperty("invocationsOutputPath", outputPath+File.separator+lib+File.separator+lib+"-invocations.csv");
+	            prop.setProperty("fieldsOutputPath", outputPath+File.separator+lib+File.separator+lib+"-fields.csv");
+	            prop.setProperty("subtypingOutputPath", outputPath+File.separator+lib+File.separator+lib+"-subtyping.csv");
+	            prop.setProperty("annotationsOutputPath", outputPath+File.separator+lib+File.separator+lib+"-annotations.csv");
+	            prop.setProperty("setAccessibleCallsPath", outputPath+File.separator+lib+File.separator+lib+"-setAccessibleCalls.csv");
+	            prop.setProperty("classesUsageInfoPath", outputPath+File.separator+lib+File.separator+lib+"-classesUsageInfo.csv");
+	            prop.setProperty("serviceBypassCallsPath", outputPath+File.separator+lib+File.separator+lib+"-serviceBypassCalls.csv");
 	            prop.setProperty("runningLibrary", lib);
 	            prop.store(new FileWriter(configPath, false), null);
 	            runGradleProjectUnitTests(pathToGradleProject, pathToRootGradleProject);

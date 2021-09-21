@@ -174,8 +174,9 @@ public class JarUtility {
 		request.setGoals(Arrays.asList("dependency:list"));
 		request.setMavenOpts("-DincludeScope=compile -DoutputFile="+tmpDir.getPath()+File.separator+"deps-output.txt -DoutputAbsoluteArtifactFilename=true");
 
-		System.setProperty("maven.home", "/usr/share/maven");
-
+		//System.setProperty("maven.home", "/usr/share/maven");
+		System.setProperty("maven.home", "/opt/homebrew/Cellar/maven/3.8.2/libexec");
+		
 		Invoker invoker = new DefaultInvoker();
 		try {
 			invoker.execute( request );
