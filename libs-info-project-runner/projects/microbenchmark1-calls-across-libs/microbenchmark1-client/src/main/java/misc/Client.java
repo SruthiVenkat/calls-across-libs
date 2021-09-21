@@ -112,7 +112,8 @@ public class Client {
 		    .map(n -> n+rtypes.getInt())
 		    .sorted()
 		    .forEach(n -> {System.out.println(e.getHi()+n+subCls.field1);});
-		    
+		  
+		// dynamic proxy
 		CommonInterface proxyInstance = (CommonInterface) Proxy.newProxyInstance(Client.class.getClassLoader(), new Class[] { CommonInterface.class }, new DynamicInvocationHandler(new External()));
 		System.out.println(proxyInstance.getWhichClassString());
 		

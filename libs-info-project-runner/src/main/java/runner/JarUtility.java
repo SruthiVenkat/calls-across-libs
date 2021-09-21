@@ -34,7 +34,6 @@ import org.apache.maven.shared.invoker.Invoker;
 import org.apache.maven.shared.invoker.MavenInvocationException;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
 
 public class JarUtility {
 	public static List<String> addedLibs = new ArrayList<String>();
@@ -96,8 +95,9 @@ public class JarUtility {
 	}
 	
 	public static void addToLibsInfo() {
-		try (FileReader input = new FileReader(configPath))
-		{
+		try (FileReader input = new FileReader(configPath)) {
+			File file = new File(libsInfoPath);
+			if (!file.exists()) file.createNewFile();
 			FileWriter writer = new FileWriter(libsInfoPath, true);	
 			if (new File(libsInfoPath).length() == 0) {
 				writer.write("Library Name,No. of Public/Protected Methods,No. of Methods Called By Tests,Classes\n");
@@ -114,11 +114,12 @@ public class JarUtility {
 	}
 	
 	public static void addToServicesInfo() {
-		try (FileReader input = new FileReader(configPath))
-		{
+		try (FileReader input = new FileReader(configPath)) {
 		    Properties prop = new Properties();
 			prop.load(input); 
 			servicesInfoPath = prop.getProperty("servicesInfoPath");
+			File file = new File(servicesInfoPath);
+			if (!file.exists()) file.createNewFile();
 			FileWriter writer = new FileWriter(servicesInfoPath, true);	
 			if (new File(servicesInfoPath).length() == 0) {
 				writer.write("SPI,SPI Implementations\n");
@@ -144,7 +145,7 @@ public class JarUtility {
 			else if (build.equals("gradle"))
 				deps = gradleGetDependencies(destDir, pathToProject, pathToRootPrj);
 
-			List<URL> classLoaderURLs = new ArrayList<>();
+			List<URL> classLoaderURLs = new ArrayList();//new ArrayList<>();
 			try {
 				classLoaderURLs.add(new File(crunchifyJarName).toURI().toURL());
 				for (String dependency : deps.keySet()) {
@@ -172,6 +173,7 @@ public class JarUtility {
 		request.setPomFile(pomFile);
 		request.setGoals(Arrays.asList("dependency:list"));
 		request.setMavenOpts("-DincludeScope=compile -DoutputFile="+tmpDir.getPath()+File.separator+"deps-output.txt -DoutputAbsoluteArtifactFilename=true");
+
 		System.setProperty("maven.home", "/usr/share/maven");
 
 		Invoker invoker = new DefaultInvoker();

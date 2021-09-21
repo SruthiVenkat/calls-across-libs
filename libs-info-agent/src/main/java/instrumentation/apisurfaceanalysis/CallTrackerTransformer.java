@@ -48,19 +48,21 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 	public static Map<String, HashSet<String>> libsToMethods = new HashMap<String, HashSet<String>>();
 	public static ConcurrentHashMap<InterLibraryCallsKey, Integer> interLibraryCalls = new ConcurrentHashMap<InterLibraryCallsKey, Integer>();
 	public static ConcurrentHashMap<InterLibraryFieldsKey, Integer> interLibraryFields = new ConcurrentHashMap<InterLibraryFieldsKey, Integer>();
-	public static Set<InterLibrarySubtypingKey> interLibrarySubtyping = new HashSet<InterLibrarySubtypingKey>();
-	public static Set<InterLibraryAnnotationsKey> interLibraryAnnotations = new HashSet<InterLibraryAnnotationsKey>();
+	public static ConcurrentHashMap<InterLibrarySubtypingKey, Integer> interLibrarySubtyping = new ConcurrentHashMap<InterLibrarySubtypingKey, Integer>();
+	public static ConcurrentHashMap<InterLibraryAnnotationsKey, Integer> interLibraryAnnotations = new ConcurrentHashMap<InterLibraryAnnotationsKey, Integer>();
 	public static Set<InterLibraryClassUsageKey> interLibraryClassUsage = new HashSet<InterLibraryClassUsageKey>();
 	public static Set<SetAccessibleCallsKey> setAccessibleCallsInfo = new HashSet<SetAccessibleCallsKey>();
 	public static Entry<String, TrieUtil> unknownEntry = new AbstractMap.SimpleEntry<String, TrieUtil>("unknownLib", new TrieUtil());
 	public static Map<String, String> classesToLibs = new HashMap<String, String>();
 	public static ConcurrentHashMap<Long, String> reflectiveCaller = new ConcurrentHashMap<Long, String>();
 	public static ConcurrentHashMap<Long, String> dynProxyCaller = new ConcurrentHashMap<Long, String>();
-	public static Set<ServicesInfoKey> servicesInfo = new HashSet<ServicesInfoKey>();
-	public static HashMap<Object, String> trackedObjs = new HashMap<Object, String>();
+	public static ConcurrentHashMap<ServicesInfoKey, ServicesInfoValue> servicesInfo = new ConcurrentHashMap<ServicesInfoKey, ServicesInfoValue>();
+	public static Set<SPIInfoKey> spiInfo = new HashSet<SPIInfoKey>();
+	public static ConcurrentHashMap<Object, String> trackedObjs = new ConcurrentHashMap<Object, String>();
 	public static ClassLoader classLoader;
 	public static ClassPool classPool;
-	
+	public static boolean servicesInfoInitiated = false;
+
 	public CallTrackerTransformer() {
 		Path configPath = Paths.get(new File(".").getAbsolutePath());
 		while (!configPath.endsWith("calls-across-libs"))
@@ -88,32 +90,52 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 			while ((row = reader.readLine()) != null) {
 				String[] data = row.split(",");
 				if (CallTrackerTransformer.findLibrary(data[0]).equals(unknownEntry.getKey())) {
+					String packageName = "";
 					try {
 						Class<?> klass = Class.forName(data[0]);
-						String packageName = klass.getPackage().getName();
-						libsToClasses.put(packageName, new TrieUtil());
+						packageName = klass.getPackage().getName();
+						
 					} catch (Exception e) {
+						packageName = data[0].lastIndexOf(".") > 0 ? data[0].substring(0, data[0].lastIndexOf(".")) : data[0];
 					}
+					libsToClasses.put(packageName, new TrieUtil());
 				}
 				HashMap<String, HashSet<CtMethod>> implsToMethods = new HashMap<String, HashSet<CtMethod>>();
 				HashMap<String, String> implsToLibs = new HashMap<String, String>();
 				for (String implinfo : data[1].split(";")) {
 					if (implinfo.contains(":")) {
-					String implName = implinfo.split("::")[0];
-					String impllib = implinfo.split("::")[1];
-					HashSet<CtMethod> implMethods = new HashSet<CtMethod>();
-					implsToLibs.put(implName, impllib);
-					implsToMethods.put(implName, implMethods);
+						String implName = implinfo.split("::")[0];
+						String impllib = implinfo.split("::")[1];
+						HashSet<CtMethod> implMethods = new HashSet<CtMethod>();
+						implsToLibs.put(implName, impllib);
+						implsToMethods.put(implName, implMethods);
 					}
 				}
 				
-				ServicesInfoKey servicesInfoKey = new ServicesInfoKey(data[0], findLibrary(data[0]), implsToLibs, implsToMethods);
-				servicesInfo.add(servicesInfoKey);
+				ServicesInfoKey servicesInfoKey = new ServicesInfoKey(data[0], findLibrary(data[0]));
+				ServicesInfoValue servicesInfoValue = new ServicesInfoValue(implsToLibs, implsToMethods);
+				servicesInfo.putIfAbsent(servicesInfoKey, servicesInfoValue);
 			}
 			reader.close();
 		} catch (IOException ex) {
 		    System.out.println(ex);
 		}
+	}
+	
+	public static void initiateServicesInfo(ClassPool classPool) {
+		if (servicesInfoInitiated) return;
+		for (ServicesInfoKey sik: servicesInfo.keySet()) {
+			ServicesInfoValue siv = servicesInfo.get(sik);
+			for (String impl: siv.implMethodsNotInInterface.keySet())
+				try {
+					siv.implMethodsNotInInterface.get(impl)
+							.addAll(Arrays.asList(classPool.get(impl).getMethods()));
+					siv.implMethodsNotInInterface.get(impl)
+							.removeAll(Arrays.asList(classPool.get(sik.interfaceName).getMethods()));
+				} catch (NotFoundException e) {
+				}
+		}
+		servicesInfoInitiated = true;
 	}
 
 	@Override
@@ -123,6 +145,7 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 		classLoader = loader;
 		try {
 			classPool = ClassPool.getDefault();
+			initiateServicesInfo(classPool);
 			CtClass ctClass = classPool.makeClass(new ByteArrayInputStream(classfileBuffer));
 
 			String methodCallerClassName = ctClass.getName();			
@@ -150,7 +173,8 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 		    		int mods = superClass.getModifiers();
 					String superClassVisibility = javassist.Modifier.isPublic(mods) ? "public" : (javassist.Modifier.isPrivate(mods) ? "private" : (javassist.Modifier.isProtected(mods) ? "protected" : "default"));
 					InterLibrarySubtypingKey key = new InterLibrarySubtypingKey(methodCallerClassName, callingMethodLibName, superClassName, superClassVisibility, superClassLib);
-        			interLibrarySubtyping.add(key);
+					interLibrarySubtyping.putIfAbsent(key, 0);
+					interLibrarySubtyping.put(key, interLibrarySubtyping.get(key) + 1);
         			InterLibraryClassUsageKey interLibraryClassUsageKey = new InterLibraryClassUsageKey(superClassName, superClassVisibility, superClassLib, "subtyping", callingMethodLibName);
             		interLibraryClassUsage.add(interLibraryClassUsageKey);
 				}
@@ -165,7 +189,8 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 			    		int mods = interfaceClass.getModifiers();
 						String interfaceVisibility = javassist.Modifier.isPublic(mods) ? "public" : (javassist.Modifier.isPrivate(mods) ? "private" : (javassist.Modifier.isProtected(mods) ? "protected" : "default"));
 						InterLibrarySubtypingKey key = new InterLibrarySubtypingKey(methodCallerClassName, callingMethodLibName, interfaceName, interfaceVisibility, interfaceLib);
-            			interLibrarySubtyping.add(key);
+						interLibrarySubtyping.putIfAbsent(key, 0);
+						interLibrarySubtyping.put(key, interLibrarySubtyping.get(key) + 1);
             			InterLibraryClassUsageKey interLibraryClassUsageKey = new InterLibraryClassUsageKey(interfaceName, interfaceVisibility, interfaceLib, "subtyping", callingMethodLibName);
                 		interLibraryClassUsage.add(interLibraryClassUsageKey);
 					}
@@ -182,7 +207,8 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 						int mods = annotationObj.getClass().getModifiers();
 						String annotationVisibility = Modifier.isPublic(mods) ? "public" : (Modifier.isPrivate(mods) ? "private" : (Modifier.isProtected(mods) ? "protected" : "default"));
 						InterLibraryAnnotationsKey key = new InterLibraryAnnotationsKey(methodCallerClassName, "-", "-", callingMethodLibName, annotationName, annotationVisibility, annotationLib);
-            			interLibraryAnnotations.add(key);
+						interLibraryAnnotations.putIfAbsent(key, 0);
+						interLibraryAnnotations.put(key, interLibraryAnnotations.get(key) + 1);
             			InterLibraryClassUsageKey interLibraryClassUsageKey = new InterLibraryClassUsageKey(annotationName, annotationVisibility, annotationLib, "annotation", callingMethodLibName);
                 		interLibraryClassUsage.add(interLibraryClassUsageKey);
 					}
@@ -190,6 +216,7 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 			}
 			byteCode = ctClass.toBytecode();
 			ctClass.detach();
+		} catch (ClassNotFoundException cnfe) {
 		} catch (Throwable ex) {
 			ex.printStackTrace();
 			System.out.println(ex);
@@ -229,7 +256,8 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 							int annMods = annotationObj.getClass().getModifiers();
 							String annotationVisibility = Modifier.isPublic(annMods) ? "public" : (Modifier.isPrivate(annMods) ? "private" : (Modifier.isProtected(annMods) ? "protected" : "default"));
 							InterLibraryAnnotationsKey methodKey = new InterLibraryAnnotationsKey("-", methodCallerClassName+"::"+callingMethodName+callingDescriptorName, "-", callingMethodLibName, annotationName, annotationVisibility, annotationLib);
-	            			interLibraryAnnotations.add(methodKey);
+							interLibraryAnnotations.putIfAbsent(methodKey, 0);
+							interLibraryAnnotations.put(methodKey, interLibraryAnnotations.get(methodKey) + 1);
 	            			InterLibraryClassUsageKey interLibraryClassUsageKey = new InterLibraryClassUsageKey(annotationName, annotationVisibility, annotationLib, "annotation", callingMethodLibName);
 	                		interLibraryClassUsage.add(interLibraryClassUsageKey);
 						}
@@ -281,11 +309,13 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 									return;
 								}
 								
-								if (servicesInfo.stream().anyMatch(key -> key.implLibs.containsKey(methodCalledClassName))) {
-									ServicesInfoKey servicesInfoKey = servicesInfo.stream().parallel().filter(key -> key.implLibs.containsKey(methodCalledClassName))
-											.findAny().orElseGet(null);
-									if (servicesInfoKey.implMethodsNotInInterface.get(methodCalledClassName).contains(m.getMethod())) {
-										SPIInfoKey spiInfoKey = new SPIInfoKey(methodCallerClassName+"::"+callingMethodName+callingDescriptorName, callingMethodLibName, servicesInfoKey.interfaceName, servicesInfoKey.interfaceLib, methodCalledClassName+"::"+calledMethodName+calledDescriptorName, methodCalledClassName, findLibrary(methodCalledClassName));
+								if (servicesInfo.values().stream().anyMatch(key -> key.implLibs.containsKey(methodCalledClassName))) {
+									ServicesInfoKey servicesInfoKey = servicesInfo.entrySet().stream().parallel()
+										      .filter(entry -> entry.getValue().implLibs.containsKey(methodCalledClassName))
+										      .map(Map.Entry::getKey).findAny().orElseGet(null);
+									if (!callingMethodLibName.equals(calledMethodLibName) && servicesInfo.get(servicesInfoKey).implMethodsNotInInterface.get(methodCalledClassName).contains(m.getMethod())) {
+										SPIInfoKey spiInfoKey = new SPIInfoKey(methodCallerClassName+"::"+callingMethodName+callingDescriptorName, callingMethodLibName, servicesInfoKey.interfaceName, servicesInfoKey.interfaceLib, methodCalledClassName+"::"+calledMethodName+calledDescriptorName, methodCalledClassName, calledMethodLibName);
+										spiInfo.add(spiInfoKey);
 									}
 								}
 								
@@ -302,7 +332,8 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 				            		String mVisibility = javassist.Modifier.isPublic(modifiers) ? "public" : (javassist.Modifier.isPrivate(modifiers) ? "private" : (javassist.Modifier.isProtected(modifiers) ? "protected" : "default"));
 									String codeToAdd = "";
 									
-									if (libsToClasses.get(runningLibrary).containsNode(methodCallerClassName) && libsToClasses.get(runningLibrary).containsNode(methodCalledClassName)
+									if (libsToClasses.get(runningLibrary).containsNode(methodCallerClassName) 
+											&& libsToClasses.get(runningLibrary).containsNode(methodCalledClassName)
 									&& (javassist.Modifier.isPublic(modifiers) || javassist.Modifier.isProtected(modifiers))) {
 										// static
 										updateLibsToMethods(runningLibrary, methodCalledClassName, calledMethodName+calledDescriptorName);
@@ -324,6 +355,7 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 											+ "} $_ = $proceed($$);}");
 									}
 									} 
+								} catch (NotFoundException nfe) {
 								} catch (Exception e) {
 									e.printStackTrace();
 									System.out.println(e);
@@ -360,7 +392,8 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 			    								int annMods = annotationObj.getClass().getModifiers();
 			    								String annotationVisibility = Modifier.isPublic(annMods) ? "public" : (Modifier.isPrivate(annMods) ? "private" : (Modifier.isProtected(annMods) ? "protected" : "default"));
 			    								InterLibraryAnnotationsKey fieldKey = new InterLibraryAnnotationsKey("-", "-", fieldClass+"::"+f.getField().getName()+":"+f.getSignature(), fieldLib, annotationName, annotationVisibility, annotationLib);
-			    		            			interLibraryAnnotations.add(fieldKey);
+			    								interLibraryAnnotations.putIfAbsent(fieldKey, 0);
+			    								interLibraryAnnotations.put(fieldKey, interLibraryCalls.get(fieldKey) + 1);
 			    		            			InterLibraryClassUsageKey interLibraryClassUsageKey = new InterLibraryClassUsageKey(annotationName, annotationVisibility, annotationLib, "annotation", fieldLib);
 			    		                		interLibraryClassUsage.add(interLibraryClassUsageKey);
 			    							}
@@ -391,7 +424,7 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 			            		InterLibraryClassUsageKey interLibraryClassUsageKey = new InterLibraryClassUsageKey(newExpr.getClassName(), newExprVisibility, newExprLib, "instantiation", callingMethodLibName);
 			            		interLibraryClassUsage.add(interLibraryClassUsageKey);
 			            	}
-			            	if (servicesInfo.stream().anyMatch(key -> key.implLibs.values().contains(newExprLib))) {
+			            	if (servicesInfo.values().stream().anyMatch(key -> key.implLibs.containsKey(newExpr.getClassName()))) {
 			            		newExpr.replace("{$_ = $proceed($$); if ($_ != null) instrumentation.apisurfaceanalysis.CallTrackerTransformer.trackInstantiationsAndCasts($_, \"instantiation\");}");
 			            	}
 			            }
@@ -407,8 +440,12 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 				            		InterLibraryClassUsageKey interLibraryClassUsageKey = new InterLibraryClassUsageKey(c.getType().getName(), castVisibility, castLib, "cast", callingMethodLibName);
 				            		interLibraryClassUsage.add(interLibraryClassUsageKey);
 				            	}
-				            	if (servicesInfo.stream().anyMatch(key -> {
-										return key.implLibs.values().contains(findLibrary(castLib));
+				            	if (servicesInfo.values().stream().anyMatch(key -> {
+										try {
+											return key.implLibs.containsKey(c.getType().getName());
+										} catch (NotFoundException e) {
+											return false;
+										}
 								})) {
 				            		c.replace("{$_ = $proceed($$); if ($_ != null) instrumentation.apisurfaceanalysis.CallTrackerTransformer.trackInstantiationsAndCasts($_, \"cast\");}");
 				            	}
@@ -440,8 +477,10 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 			instrumentation.apisurfaceanalysis.CallTrackerTransformer.dynProxyCaller.put(Thread.currentThread().getId(), virtualCalleeMethod);
 
 		String serviceBypass = "";
-		if (!callingMethodName.equals("hashCode()I")) {
-    		Object trackedObj = instrumentation.apisurfaceanalysis.CallTrackerTransformer.trackedObjs.keySet().stream().parallel().findAny().orElse(null);
+		if (!callingMethodName.equals("hashCode()I") 
+				&& !callingMethodName.equals("equals(Ljava/lang/Object;)Z")) {
+    		Object trackedObj = instrumentation.apisurfaceanalysis.CallTrackerTransformer.trackedObjs.keySet().stream().filter(o -> o.equals(obj))
+    				.findAny().orElse(null);
     		if (trackedObj!=null) {
     			if (virtualCalleeMethod.equals(actualMethodCalledClassName+"::"+actualCalledMethodName))
     			serviceBypass = trackedObjs.get(trackedObj);
@@ -456,7 +495,7 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 	
 	public static void updateReflectiveCaller(long threadID, String callerMethodName, String callerClassName, Object invokedOn) {
     	String serviceBypass = "";
-		if (servicesInfo.stream().anyMatch(key -> key.implLibs.values().contains(findLibrary(((Method)invokedOn).getDeclaringClass().getName()))))
+		if (servicesInfo.values().stream().anyMatch(key -> key.implLibs.containsKey(((Method)invokedOn).getDeclaringClass().getName())))
     		serviceBypass = "reflection";
 		instrumentation.apisurfaceanalysis.CallTrackerTransformer.reflectiveCaller.put(threadID, callerMethodName+":"+callerClassName+";"+serviceBypass);
 	}
@@ -481,7 +520,7 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 		int calleeClassMods = calledMethod.getDeclaringClass().getModifiers();
 		String calleeClassVisibility = Modifier.isPublic(calleeClassMods) ? "public" : (Modifier.isPrivate(calleeClassMods) ? "private" : (Modifier.isProtected(calleeClassMods) ? "protected" : "default"));
 		
-		instrumentation.apisurfaceanalysis.CallTrackerTransformer.reflectiveCaller.remove(currentThreadID);
+		instrumentation.apisurfaceanalysis.CallTrackerTransformer.dynProxyCaller.remove(currentThreadID);
 		updateInterLibraryCounts(className+"::"+methodName+descriptor, findLibrary(stes[4].getClassName()), calleeVisibility, virtualCalleeMethod, calleeMethodName, calledMethodLibName, calledMethodLibName, calleeClassVisibility, 1, false, true, "");
 	}
 	
@@ -532,9 +571,15 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 				implsToLibs.put(implName, findLibrary(implName));
 				implsToMethods.put(implName, implMethods);
 			}
-			
-			ServicesInfoKey servicesInfoKey = new ServicesInfoKey(interfaceName, findLibrary(interfaceName), implsToLibs, implsToMethods);
-			servicesInfo.add(servicesInfoKey);
+			ServicesInfoKey servicesInfoKey = new ServicesInfoKey(interfaceName, findLibrary(interfaceName));
+			if (!servicesInfo.containsKey(servicesInfoKey)) {
+				ServicesInfoValue servicesInfoValue = new ServicesInfoValue(implsToLibs, implsToMethods);
+				servicesInfo.put(servicesInfoKey, servicesInfoValue);
+			} else {
+				for (String impl: implsToMethods.keySet())
+					servicesInfo.get(servicesInfoKey).implMethodsNotInInterface.get(impl)
+							.addAll(implsToMethods.get(impl));
+			}
 		} catch (NotFoundException e) {
 			System.out.println(e);
 		}
@@ -569,7 +614,8 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 		String callerClassName = caller[1];
 		String callerLib = findLibrary(callerClassName);
 		if (checkAddCondition(callerLib, calleeLib))
-			updateInterLibraryCounts(callerClassName+"::"+callerMethodName, callerLib, calleeVisibility, calleeMethodName, calleeMethodName, calleeLib, calleeLib, callerClassVisibility, 1, true, false, reflData[1]);
+			updateInterLibraryCounts(callerClassName+"::"+callerMethodName, callerLib, calleeVisibility, calleeMethodName, 
+					calleeMethodName, calleeLib, calleeLib, callerClassVisibility, 1, true, false, reflData.length>1 ? reflData[1] : "");
 	}
 	
 	public static void handleFieldSetGet(Object field, Object actualObj, String callingMethodLibName) {
@@ -605,19 +651,21 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 	}
 	
 	public static String findLibrary(String className) {
-		if (className.startsWith("java.util.stream"))
-			return unknownEntry.getKey();
-		if (!classesToLibs.containsKey(className))
-			classesToLibs.put(className, libsToClasses.entrySet().stream().parallel()
-			.filter(map -> map.getValue().containsNode(className))
-			.findAny().orElse(unknownEntry).getKey());
-		if (className.lastIndexOf(".") > 0) {
-			String pkgName = className.substring(0, className.lastIndexOf("."));
-			if (classesToLibs.get(className).equals(unknownEntry.getKey()) && libsToClasses.containsKey(pkgName)) {
-				libsToClasses.get(pkgName).insert(className);
-				classesToLibs.put(className, pkgName);
-			}
+		if (!classesToLibs.containsKey(className)) {
+			String libName = libsToClasses.entrySet().stream().parallel()
+					.filter(map -> map.getValue().containsNode(className))
+					.findAny().orElse(unknownEntry).getKey();
+			classesToLibs.put(className, libName);
 		}
+		if (classesToLibs.get(className).equals(unknownEntry.getKey())) {
+			if (className.lastIndexOf(".") > 0) {
+				String pkgName = className.substring(0, className.lastIndexOf("."));
+				if (libsToClasses.containsKey(pkgName)) {
+					libsToClasses.get(pkgName).insert(className);
+					classesToLibs.put(className, pkgName);
+				}
+			}
+		}	
 		return classesToLibs.get(className);
 	}
 }

@@ -25,9 +25,23 @@ RUN apt-get --yes --force-yes  install git
 CMD echo 'Git version'
 CMD git --version
 #CMD cd calls-across-libs/libs-info-project-runner && ls && sh getrepos.sh
-
+RUN mkdir /root/.m2 && mkdir /root/.m2/repository && echo \
+    "<settings xmlns='http://maven.apache.org/SETTINGS/1.0.0\' \
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' \
+    xsi:schemaLocation='http://maven.apache.org/SETTINGS/1.0.0 https://maven.apache.org/xsd/settings-1.0.0.xsd'> \
+        <localRepository>/root/.m2/repository</localRepository> \
+        <interactiveMode>true</interactiveMode> \
+        <usePluginRegistry>false</usePluginRegistry> \
+        <offline>false</offline> \
+    </settings>" \
+    > /root/.m2/settings.xml
 
 # clone and checkout calls-across-libs
-RUN git clone https://github.com/SruthiVenkat/calls-across-libs.git && cd calls-across-libs && mvn clean install
+RUN git clone https://github.com/SruthiVenkat/calls-across-libs.git && cd calls-across-libs && mvn compile && cd libs-info-project-runner && mvn compile
+#COPY . calls-across-libs/
 
-CMD cd calls-across-libs/libs-info-project-runner/projects/microbenchmark1-calls-across-libs && mvn compile && mvn exec:java -Dexec.mainClass=runner.DependentTestRunner > output.txt
+
+# temporary - micbenchlib
+
+
+CMD  cd calls-across-libs/libs-info-project-runner/projects/microbenchmark1-calls-across-libs && mvn clean install && cd /calls-across-libs/libs-info-project-runner && mvn compile && mvn exec:java -Dexec.mainClass=runner.DependentTestRunner

@@ -1,0 +1,5 @@
+Class,Method,Field Name:Field Signature,Annotated In Library,Annotation,Annotation Visibility,Annotation Library,Count
+com.alibaba.fastjson.support.jaxrs.FastJsonProvider,-,-,com.alibaba:fastjson:1.2.76,javax.ws.rs.ext.Provider,public,javax.ws.rs:javax.ws.rs-api:2.0.1,1
+org.glassfish.hk2.api.PerLookup,-,-,org.glassfish.hk2:hk2-api:2.5.0-b05,javax.inject.Scope,public,org.glassfish.hk2.external:javax.inject:2.5.0-b05,1
+com.alibaba.fastjson.support.spring.annotation.ResponseJSONP,-,-,com.alibaba:fastjson:1.2.76,org.springframework.web.bind.annotation.ResponseBody,public,org.springframework:spring-web:4.3.7.RELEASE,1
+org.jvnet.hk2.internal.SingletonContext,-,-,org.glassfish.hk2:hk2-locator:2.5.0-b05,javax.inject.Singleton,public,org.glassfish.hk2.external:javax.inject:2.5.0-b05,1
