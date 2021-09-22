@@ -944,18 +944,18 @@
   },
   {
     "scmURL": "https://github.com/google/gson.git",
-    "selectedTag": "gson-parent-2.8.8",
+    "selectedTag": "gson-parent-2.8.8"
   },
   {
     "scmURL": "https://github.com/stleary/JSON-java.git",
-    "selectedTag": "20210307",
+    "selectedTag": "20210307"
   },
   {
     "scmURL": "https://github.com/google/guava.git",
-    "selectedTag": "v30.1.1",
+    "selectedTag": "v30.1.1"
   },
   {
     "scmURL": "https://github.com/qos-ch/slf4j.git",
-    "selectedTag": "v_2.0.0-alpha5",
+    "selectedTag": "v_2.0.0-alpha5"
   }
 ]
