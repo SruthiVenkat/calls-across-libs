@@ -111,8 +111,7 @@ public class DependentTestRunner {
 		request.setPomFile(new File(pomFile));
 		request.setGoals(Arrays.asList("help:evaluate"));
 
-		//System.setProperty("maven.home", "/usr/share/maven");
-		System.setProperty("maven.home", "/opt/homebrew/Cellar/maven/3.8.2/libexec");
+		System.setProperty("maven.home", "/usr/share/maven");
 		Invoker invoker = new DefaultInvoker();
 		try {
 			request.setMavenOpts("-Dexpression=project.groupId -Doutput=group.txt");
@@ -223,8 +222,7 @@ public class DependentTestRunner {
 		request.setGoals(Arrays.asList("clean", "install"));
 		request.setMavenOpts("-Dlicense.skip=true -DskipTests=true -Dcheckstyle.skip=true");
 
-		//System.setProperty("maven.home", "/usr/share/maven");
-		System.setProperty("maven.home", "/opt/homebrew/Cellar/maven/3.8.2/libexec");
+		System.setProperty("maven.home", "/usr/share/maven");
 		Invoker invoker = new DefaultInvoker();
 		try {
 			invoker.execute( request );
@@ -240,8 +238,7 @@ public class DependentTestRunner {
 		Properties properties = new Properties();
 		properties.setProperty("argLine", JAVA_OPTS);
 		request.setProperties(properties);
-		//System.setProperty("maven.home", "/usr/share/maven");
-		System.setProperty("maven.home", "/opt/homebrew/Cellar/maven/3.8.2/libexec");
+		System.setProperty("maven.home", "/usr/share/maven");
 
 		Invoker invoker = new DefaultInvoker();
 		try {

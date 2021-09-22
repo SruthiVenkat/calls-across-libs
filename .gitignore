@@ -1,5 +1,6 @@
 /target/
 projects
+!projects/parseAndCreateJson.py
 
 # libraries
 projects/**/

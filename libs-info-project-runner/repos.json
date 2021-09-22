@@ -20,7 +20,7 @@
     "latestVersionPOMURL": "https://repo1.maven.org/maven2/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.pom",
     "latestVersionPOMLocalFile": "results/poms/org.apache.commons/commons-collections4/pom.xml",
     "scmConnection": "scm:git:http://git-wip-us.apache.org/repos/asf/commons-collections.git",
-    "scmURL": "https://git-wip-us.apache.org/repos/asf?p\u003dcommons-collections.git",
+    "scmURL": "https://git-wip-us.apache.org/repos/asf/commons-collections.git",
     "localRepo": "results/git-repos/org.apache.commons/commons-collections4",
     "tags": [
       "collections-0-01",
@@ -396,7 +396,7 @@
     "latestVersionPOMURL": "https://repo1.maven.org/maven2/commons-io/commons-io/2.8.0/commons-io-2.8.0.pom",
     "latestVersionPOMLocalFile": "results/poms/commons-io/commons-io/pom.xml",
     "scmConnection": "scm:git:https://gitbox.apache.org/repos/asf/commons-io.git",
-    "scmURL": "https://gitbox.apache.org/repos/asf?p\u003dcommons-io.git",
+    "scmURL": "https://gitbox.apache.org/repos/asf/commons-io.git",
     "localRepo": "results/git-repos/commons-io/commons-io",
     "tags": [
       "2.2",
@@ -941,5 +941,21 @@
       "1.2.9"
     ],
     "selectedTag": "1.2.76"
+  },
+  {
+    "scmURL": "https://github.com/google/gson.git",
+    "selectedTag": "gson-parent-2.8.8",
+  },
+  {
+    "scmURL": "https://github.com/stleary/JSON-java.git",
+    "selectedTag": "20210307",
+  },
+  {
+    "scmURL": "https://github.com/google/guava.git",
+    "selectedTag": "v30.1.1",
+  },
+  {
+    "scmURL": "https://github.com/qos-ch/slf4j.git",
+    "selectedTag": "v_2.0.0-alpha5",
   }
 ]

@@ -1,42 +1,152 @@
 [
-	{
-		"execDir": "rocketmq/remoting",
-		"generatedJarName": "rocketmq-remoting-4.9.2-SNAPSHOT",
-		"build": "maven"
-	},
-	{
-		"execDir": "rocketmq/tools",
-		"generatedJarName": "rocketmq-tools-4.9.2-SNAPSHOT",
-		"build": "maven"
-	},
-	{
-		"execDir": "rocketmq/broker",
-		"generatedJarName": "rocketmq-broker-4.9.2-SNAPSHOT",
-		"build": "maven"
-	},
-	{
-		"execDir": "rocketmq/common",
-		"generatedJarName": "rocketmq-common-4.9.2-SNAPSHOT",
-		"build": "maven"
-	},
-	{
-		"execDir": "rocketmq/acl",
-		"generatedJarName": "rocketmq-acl-4.9.2-SNAPSHOT",
-		"build": "maven"
-	},
-	{
-		"execDir": "rocketmq/client",
-		"generatedJarName": "rocketmq-client-4.9.2-SNAPSHOT",
-		"build": "maven"
-	},
-	{
-		"execDir": "fastjson",
-		"generatedJarName": "fastjson-1.2.76",
-		"build": "maven"
-	},
-	{
-		"execDir": "microbenchmark1-calls-across-libs/microbenchmark1-client",
-		"generatedJarName": "microbenchmark1-client-1.0-SNAPSHOT",
-		"build": "maven"
-	}
+    {
+        "execDir": "./checkstyle",
+        "generatedJarName": "",
+        "build": "maven"
+    },
+    {
+        "execDir": "./Mybatis-PageHelper",
+        "generatedJarName": "",
+        "build": "maven"
+    },
+    {
+        "execDir": "./async-http-client",
+        "generatedJarName": "",
+        "build": "maven"
+    },
+    {
+        "execDir": "./couchbase-jvm-clients",
+        "generatedJarName": "",
+        "build": "maven"
+    },
+    {
+        "execDir": "./fastjson",
+        "generatedJarName": "",
+        "build": "maven"
+    },
+    {
+        "execDir": "./guava",
+        "generatedJarName": "",
+        "build": "maven"
+    },
+    {
+        "execDir": "./lettuce-core",
+        "generatedJarName": "",
+        "build": "maven"
+    },
+    {
+        "execDir": "./webmagic",
+        "generatedJarName": "",
+        "build": "maven"
+    },
+    {
+        "execDir": "./auto/value",
+        "generatedJarName": "",
+        "build": "maven"
+    },
+    {
+        "execDir": "./auto/common",
+        "generatedJarName": "",
+        "build": "maven"
+    },
+    {
+        "execDir": "./auto/service",
+        "generatedJarName": "",
+        "build": "maven"
+    },
+    {
+        "execDir": "./auto/factory",
+        "generatedJarName": "",
+        "build": "maven"
+    },
+    {
+        "execDir": "./RxRelay",
+        "generatedJarName": "",
+        "build": "maven"
+    },
+    {
+        "execDir": "./JsoupXpath",
+        "generatedJarName": "",
+        "build": "maven"
+    },
+    {
+        "execDir": "./guice",
+        "generatedJarName": "",
+        "build": "maven"
+    },
+    {
+        "execDir": "./jackson-datatypes-collections",
+        "generatedJarName": "",
+        "build": "maven"
+    },
+    {
+        "execDir": "./jcabi-http",
+        "generatedJarName": "",
+        "build": "maven"
+    },
+    {
+        "execDir": "./tablesaw",
+        "generatedJarName": "",
+        "build": "maven"
+    },
+    {
+        "execDir": "./ez-vcard",
+        "generatedJarName": "",
+        "build": "maven"
+    },
+    {
+        "execDir": "./amazon-kinesis-client",
+        "generatedJarName": "",
+        "build": "maven"
+    },
+    {
+        "execDir": "./microbenchmark2-calls-across-libs",
+        "generatedJarName": "",
+        "build": "maven"
+    },
+    {
+        "execDir": "./openimaj",
+        "generatedJarName": "",
+        "build": "maven"
+    },
+    {
+        "execDir": "./RxJava/build/tmp/expandedArchives/org.jacoco.agent-0.8.6.jar_a26f6511a7813217be4cd6439d66563b/META-INF/maven/org.jacoco/org.jacoco.agent",
+        "generatedJarName": "",
+        "build": "maven"
+    },
+    {
+        "execDir": "./xsoup",
+        "generatedJarName": "",
+        "build": "maven"
+    },
+    {
+        "execDir": "./Liqp",
+        "generatedJarName": "",
+        "build": "maven"
+    },
+    {
+        "execDir": "./hazelcast",
+        "generatedJarName": "",
+        "build": "maven"
+    },
+    {
+        "execDir": "./spark",
+        "generatedJarName": "",
+        "build": "maven"
+    },
+    {
+        "execDir": "./rocketmq",
+        "generatedJarName": "",
+        "build": "maven"
+    },
+    {
+        "execDir": "./jsoup-jsoup-1.13.1",
+        "generatedJarName": "",
+        "build": "maven"
+    },
+    {
+        "execDir": "./microbenchmark1-calls-across-libs",
+        "generatedJarName": "",
+        "build": "maven"
+    }
 ]
