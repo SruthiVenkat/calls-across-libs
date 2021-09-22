@@ -497,7 +497,7 @@ public class CallTrackerTransformer implements ClassFileTransformer {
     	String serviceBypass = "";
 		if (servicesInfo.values().stream().anyMatch(key -> key.implLibs.containsKey(((Method)invokedOn).getDeclaringClass().getName())))
     		serviceBypass = "reflection";
-		instrumentation.apisurfaceanalysis.CallTrackerTransformer.reflectiveCaller.put(threadID, callerMethodName+":"+callerClassName+";"+serviceBypass);
+		instrumentation.apisurfaceanalysis.CallTrackerTransformer.reflectiveCaller.put(threadID, callerMethodName+":"+callerClassName+"\t"+serviceBypass);
 	}
 	
 	public static void updateDynamicProxyCaller(Object calledMethodObj) {
@@ -607,7 +607,7 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 		long currentThreadID = Thread.currentThread().getId();
 		if (!instrumentation.apisurfaceanalysis.CallTrackerTransformer.reflectiveCaller.containsKey(currentThreadID))
 			return;
-		String [] reflData = instrumentation.apisurfaceanalysis.CallTrackerTransformer.reflectiveCaller.get(currentThreadID).split(";");
+		String [] reflData = instrumentation.apisurfaceanalysis.CallTrackerTransformer.reflectiveCaller.get(currentThreadID).split("\t");
 		String[] caller = reflData[0].split(":");
 		instrumentation.apisurfaceanalysis.CallTrackerTransformer.reflectiveCaller.remove(currentThreadID);
 		String callerMethodName = caller[0];

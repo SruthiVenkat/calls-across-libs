@@ -1,5 +1,35 @@
 [
 	{
+		"execDir": "rocketmq/remoting",
+		"generatedJarName": "rocketmq-remoting-4.9.2-SNAPSHOT",
+		"build": "maven"
+	},
+	{
+		"execDir": "rocketmq/tools",
+		"generatedJarName": "rocketmq-tools-4.9.2-SNAPSHOT",
+		"build": "maven"
+	},
+	{
+		"execDir": "rocketmq/broker",
+		"generatedJarName": "rocketmq-broker-4.9.2-SNAPSHOT",
+		"build": "maven"
+	},
+	{
+		"execDir": "rocketmq/common",
+		"generatedJarName": "rocketmq-common-4.9.2-SNAPSHOT",
+		"build": "maven"
+	},
+	{
+		"execDir": "rocketmq/acl",
+		"generatedJarName": "rocketmq-acl-4.9.2-SNAPSHOT",
+		"build": "maven"
+	},
+	{
+		"execDir": "rocketmq/client",
+		"generatedJarName": "rocketmq-client-4.9.2-SNAPSHOT",
+		"build": "maven"
+	},
+	{
 		"execDir": "fastjson",
 		"generatedJarName": "fastjson-1.2.76",
 		"build": "maven"
