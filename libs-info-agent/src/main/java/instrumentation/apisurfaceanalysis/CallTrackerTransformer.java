@@ -103,9 +103,14 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 				HashMap<String, HashSet<CtMethod>> implsToMethods = new HashMap<String, HashSet<CtMethod>>();
 				HashMap<String, String> implsToLibs = new HashMap<String, String>();
 				for (String implinfo : data[1].split(";")) {
-					if (implinfo.contains(":")) {
-						String implName = implinfo.split("::")[0];
-						String impllib = implinfo.split("::")[1];
+					if (implinfo.contains("\t")) {
+						String[] impls = implinfo.split("\t");
+						String implName = "", impllib = "";
+						if (impls.length>1) {
+							implName = impls[0];
+							impllib = impls[1];
+						}
+						
 						HashSet<CtMethod> implMethods = new HashSet<CtMethod>();
 						implsToLibs.put(implName, impllib);
 						implsToMethods.put(implName, implMethods);
@@ -126,14 +131,15 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 		if (servicesInfoInitiated) return;
 		for (ServicesInfoKey sik: servicesInfo.keySet()) {
 			ServicesInfoValue siv = servicesInfo.get(sik);
-			for (String impl: siv.implMethodsNotInInterface.keySet())
+			for (String impl: siv.implMethodsNotInInterface.keySet()) {
 				try {
 					siv.implMethodsNotInInterface.get(impl)
 							.addAll(Arrays.asList(classPool.get(impl).getMethods()));
 					siv.implMethodsNotInInterface.get(impl)
 							.removeAll(Arrays.asList(classPool.get(sik.interfaceName).getMethods()));
-				} catch (NotFoundException e) {
+				} catch (Exception e) {
 				}
+			}
 		}
 		servicesInfoInitiated = true;
 	}

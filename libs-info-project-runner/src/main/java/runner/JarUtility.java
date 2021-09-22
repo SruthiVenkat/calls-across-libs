@@ -46,6 +46,7 @@ public class JarUtility {
 	public static void initLibsToCountsAndClasses(String build, JSONArray projects) {
 		libsToCountsAndClasses.clear();
 		populateAddedLibs();
+		populateAddedServices();
 
 		Iterator<JSONObject> iterator = projects.iterator();
         while (iterator.hasNext()) {
@@ -86,6 +87,27 @@ public class JarUtility {
 				while ((row = reader.readLine()) != null) {
 				    String[] data = row.split(",");
 				    addedLibs.add(data[0]);
+				}
+				reader.close();
+            }
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+	}
+	
+	public static void populateAddedServices() {
+		try (FileReader input = new FileReader(configPath)) {
+            Properties prop = new Properties();
+            prop.load(input);
+            servicesInfoPath = prop.getProperty("servicesInfoPath");
+            if (new File(servicesInfoPath).exists()) {
+            	String row;
+    			BufferedReader reader = new BufferedReader(new FileReader(servicesInfoPath));
+				while ((row = reader.readLine()) != null) {
+				    String[] data = row.split(",");
+				    servicesInfo.putIfAbsent(data[0], new ArrayList<String>());
+				    servicesInfo.get(data[0]).addAll(Arrays.asList(data[1].split(";")));
+					servicesInfo.put(data[0], servicesInfo.get(data[0]));
 				}
 				reader.close();
             }
@@ -174,8 +196,8 @@ public class JarUtility {
 		request.setGoals(Arrays.asList("dependency:list"));
 		request.setMavenOpts("-DincludeScope=compile -DoutputFile="+tmpDir.getPath()+File.separator+"deps-output.txt -DoutputAbsoluteArtifactFilename=true");
 
-		System.setProperty("maven.home", "/usr/share/maven");
-		
+		//System.setProperty("maven.home", "/usr/share/maven");
+		System.setProperty("maven.home", "/opt/homebrew/Cellar/maven/3.8.2/libexec"); 
 		Invoker invoker = new DefaultInvoker();
 		try {
 			invoker.execute( request );
@@ -301,7 +323,7 @@ public class JarUtility {
 						
 					reader.close();
 					servicesInfo.putIfAbsent(key, new ArrayList<String>());
-					servicesInfo.get(key).add(row+"::"+dependencyName);
+					servicesInfo.get(key).add(row+"\t"+dependencyName);
 					servicesInfo.put(key, servicesInfo.get(key));
 				}
 			}

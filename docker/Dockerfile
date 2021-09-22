@@ -14,6 +14,7 @@ apt-get --yes --force-yes install jq
 #apt-get -y install oracle-java16-installer && \
 #apt install oracle-java16-set-default
 RUN apt-get update && apt-get install -y openjdk-8-jdk
+# export java home!
 
 # install git and build tools
 RUN apt-get --yes --force-yes install maven && \
