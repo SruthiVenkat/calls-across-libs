@@ -10,9 +10,10 @@ apt install zip && \
 apt-get --yes --force-yes install jq
 
 # install Java
-RUN echo oracle-java16-installer shared/accepted-oracle-license-v1-2 select true | /usr/bin/debconf-set-selections && \
-apt-get -y install oracle-java16-installer && \
-apt install oracle-java16-set-default
+#RUN echo oracle-java16-installer shared/accepted-oracle-license-v1-2 select true | /usr/bin/debconf-set-selections && \
+#apt-get -y install oracle-java16-installer && \
+#apt install oracle-java16-set-default
+RUN apt-get update && apt-get install -y openjdk-8-jdk
 
 # install git and build tools
 RUN apt-get --yes --force-yes install maven && \
