@@ -8,5 +8,8 @@ This project studies the usage and surfaces of Java components by instrumenting 
 ### Usage
 ##### These commands run the tool on the Java components listed in calls-across-libs/libs-info-project-runner/projects/projects-list.json
 cd /calls-across-libs/docker
+
 sudo docker build -t <image-name> .
+
 sudo docker run -it <image-name>
+	
