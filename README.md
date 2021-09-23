@@ -13,8 +13,8 @@ sudo docker build -t <image-name> .
 
 sudo docker run -it <image-name>
 
-This should generate the data in /calls-across-libs/libs-info-project-runner/api-surface-data. Use
+##### This should generate the data in /calls-across-libs/libs-info-project-runner/api-surface-data. Use
 
 sudo docker run -it <image-name> sh
 
-to view the data.
+##### to view the data.
