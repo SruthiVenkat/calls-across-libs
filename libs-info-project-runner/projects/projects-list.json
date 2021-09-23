@@ -1,7 +1,7 @@
 [
     {
-        "execDir": "jackson-databind",
-        "generatedJarName": "jackson-databind-2.12.3",
+        "execDir": "jackson-core",
+        "generatedJarName": "jackson-core-2.12.3",
         "build": "maven"
     },
     {
