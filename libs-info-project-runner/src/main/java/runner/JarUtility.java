@@ -107,8 +107,8 @@ public class JarUtility {
 				    String[] data = row.split(",");
 				    servicesInfo.putIfAbsent(data[0], new ArrayList<String>());
 				    servicesInfo.get(data[0]).addAll(Arrays.asList(data[1].split(";")));
-					servicesInfo.put(data[0], servicesInfo.get(data[0]));
 				}
+				servicesInfo.remove("SPI");
 				reader.close();
             }
         } catch (IOException ex) {
@@ -142,7 +142,7 @@ public class JarUtility {
 			servicesInfoPath = prop.getProperty("servicesInfoPath");
 			File file = new File(servicesInfoPath);
 			if (!file.exists()) file.createNewFile();
-			FileWriter writer = new FileWriter(servicesInfoPath, true);	
+			FileWriter writer = new FileWriter(servicesInfoPath, false);	
 			if (new File(servicesInfoPath).length() == 0) {
 				writer.write("SPI,SPI Implementations\n");
 			}
@@ -323,8 +323,8 @@ public class JarUtility {
 						
 					reader.close();
 					servicesInfo.putIfAbsent(key, new ArrayList<String>());
-					servicesInfo.get(key).add(row+"\t"+dependencyName);
-					servicesInfo.put(key, servicesInfo.get(key));
+					if (!servicesInfo.get(key).contains(row+"\t"+dependencyName))
+						servicesInfo.get(key).add(row+"\t"+dependencyName);
 				}
 			}
 			crunchifyJarFile.close();

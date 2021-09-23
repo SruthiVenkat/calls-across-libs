@@ -1,0 +1,2 @@
+Class Name,Class Visibility,Class Library,Usage,Used In Library
+com.fasterxml.jackson.core.json.PackageVersion,public,com.fasterxml.jackson.core:jackson-core:2.12.3,Class.forName,com.fasterxml.jackson.core:jackson-core:2.12.3

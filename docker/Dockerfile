@@ -42,6 +42,4 @@ RUN mkdir /root/.m2 && mkdir /root/.m2/repository && echo \
 RUN git clone https://github.com/SruthiVenkat/calls-across-libs.git && cd calls-across-libs && mvn compile && cd libs-info-project-runner && sh getrepos.sh
 #COPY . calls-across-libs/
 
-
-# temporary - micbenchlib
-#CMD  cd calls-across-libs/libs-info-project-runner/projects/microbenchmark1-calls-across-libs && mvn clean install && cd /calls-across-libs/libs-info-project-runner && mvn compile && mvn exec:java -Dexec.mainClass=runner.DependentTestRunner
+CMD cd /calls-across-libs/libs-info-project-runner && mvn compile && mvn exec:java -Dexec.mainClass=runner.DependentTestRunner

@@ -1,8 +1,12 @@
 # calls-across-libs
-Find/Instrument method calls that go across libraries using Java agents
+This project studies the usage and surfaces of Java components by instrumenting them with Java agents.
 
-Adding Java agent to a Gradle project 
-jvmArgs '-javaagent:/path/to/agent/jar'
+**calls-across-libs/libs-info-agent** : Java agent that performs the analysis
 
-Adding Java agent to a Maven project 
-maven-surefire-plugin with argLine configuration
+**calls-across-libs/libs-info-project-runner** : Runs unit tests of Java components and instruments them using the agent
+
+### Usage
+##### These commands run the tool on the Java components listed in calls-across-libs/libs-info-project-runner/projects/projects-list.json
+cd /calls-across-libs/docker
+sudo docker build -t <image-name> .
+sudo docker run -it <image-name>
