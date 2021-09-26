@@ -1,0 +1,13 @@
+packageA/GenericClass.class
+packageA/foo/CallbackInterface.class
+packageB/bar/Middle.class
+packageB/baz/External.class
+pkgDynamicProxy/DynamicInvocationHandler.class
+packageA/foo/CallbackImpl.class
+packageA/SuperClass.class
+packageA/foo/CallbackCaller.class
+packageA/CustomAnnotation.class
+packageA/RandomTypes.class
+packageA/SubClass.class
+packageB/baz/CommonInterface.class
+packageB/baz/Internal.class

@@ -1,0 +1,13 @@
+/Users/sruthivenkat/Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/projects/microbenchmark1-calls-across-libs/microbenchmark1-library/src/main/java/packageA/foo/CallbackImpl.java
+/Users/sruthivenkat/Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/projects/microbenchmark1-calls-across-libs/microbenchmark1-library/src/main/java/pkgDynamicProxy/DynamicInvocationHandler.java
+/Users/sruthivenkat/Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/projects/microbenchmark1-calls-across-libs/microbenchmark1-library/src/main/java/packageA/foo/CallbackInterface.java
+/Users/sruthivenkat/Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/projects/microbenchmark1-calls-across-libs/microbenchmark1-library/src/main/java/packageB/baz/External.java
+/Users/sruthivenkat/Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/projects/microbenchmark1-calls-across-libs/microbenchmark1-library/src/main/java/packageB/baz/Internal.java
+/Users/sruthivenkat/Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/projects/microbenchmark1-calls-across-libs/microbenchmark1-library/src/main/java/packageB/baz/CommonInterface.java
+/Users/sruthivenkat/Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/projects/microbenchmark1-calls-across-libs/microbenchmark1-library/src/main/java/packageA/SuperClass.java
+/Users/sruthivenkat/Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/projects/microbenchmark1-calls-across-libs/microbenchmark1-library/src/main/java/packageA/CustomAnnotation.java
+/Users/sruthivenkat/Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/projects/microbenchmark1-calls-across-libs/microbenchmark1-library/src/main/java/packageA/RandomTypes.java
+/Users/sruthivenkat/Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/projects/microbenchmark1-calls-across-libs/microbenchmark1-library/src/main/java/packageB/bar/Middle.java
+/Users/sruthivenkat/Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/projects/microbenchmark1-calls-across-libs/microbenchmark1-library/src/main/java/packageA/foo/CallbackCaller.java
+/Users/sruthivenkat/Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/projects/microbenchmark1-calls-across-libs/microbenchmark1-library/src/main/java/packageA/GenericClass.java
+/Users/sruthivenkat/Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/projects/microbenchmark1-calls-across-libs/microbenchmark1-library/src/main/java/packageA/SubClass.java
