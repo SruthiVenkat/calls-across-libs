@@ -376,9 +376,12 @@ public class DependentTestRunner {
 	}
 	
 	public static void setJavaVersion(long version) {
-        Map<Integer, String> javaVersionPaths = new HashMap<Integer, String>();
-        javaVersionPaths.put(8, "/usr/lib/jvm/java-8-openjdk-arm64/jre/bin/java");
-        javaVersionPaths.put(11, "/usr/lib/jvm/java-11-openjdk-arm64/bin/java");
+        Map<Long, String> javaVersionPaths = new HashMap<Long, String>();
+        javaVersionPaths.put((long)8, "/usr/lib/jvm/java-8-openjdk-arm64/jre/bin/java");
+        javaVersionPaths.put((long)11, "/usr/lib/jvm/java-11-openjdk-arm64/bin/java");
+        Map<Long, String> javaHomes = new HashMap<Long, String>();
+        javaHomes.put((long)8, "/usr/lib/jvm/java-8-openjdk-arm64");
+        javaHomes.put((long)11, "/usr/lib/jvm/java-11-openjdk-arm64");
 
         try {
                 Process process = Runtime.getRuntime()
@@ -390,6 +393,15 @@ public class DependentTestRunner {
                         String errorString = error.readLine();
                         System.out.println(errorString);
                 }
+                process = Runtime.getRuntime()
+                        .exec(String.format("export JAVA_HOME=%s", javaHomes.get(version)));
+				exitCode = process.waitFor();
+				if (exitCode != 0 ){
+					System.out.println("Error occured, non zero return value, "+String.valueOf(exitCode));
+					BufferedReader error = new BufferedReader(new InputStreamReader(process.getErrorStream()));
+					String errorString = error.readLine();
+					System.out.println(errorString);
+				}
         } catch (IOException | InterruptedException e) {
                 System.out.println(e);
         }
