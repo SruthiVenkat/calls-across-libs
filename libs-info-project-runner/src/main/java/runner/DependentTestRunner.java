@@ -48,15 +48,16 @@ public class DependentTestRunner {
             Iterator<JSONObject> iterator = projects.iterator();
             while (iterator.hasNext()) {
             	JSONObject projectObject = (JSONObject)iterator.next();
-            		if (projectObject.get("build").equals("maven")) {
-            			projectObject.put("libName", mavenGetGAV(new File(".").getAbsolutePath()+File.separator+"projects"
-                				+File.separator+projectObject.get("execDir")+File.separator+"pom.xml"));
-            			mvnProjects.add(projectObject);
-            		} else if (projectObject.get("build").equals("gradle")) {
-                		projectObject.put("libName", gradleGetGAV(new File(".").getAbsolutePath()+File.separator+"projects"
-                				+File.separator+projectObject.get("rootDir"), (String)projectObject.get("gavOf")));
-            			gradleProjects.add(projectObject);
-            		}	
+            	setJavaVersion((long)projectObject.get("javaVersion"));
+        		if (projectObject.get("build").equals("maven")) {
+        			projectObject.put("libName", mavenGetGAV(new File(".").getAbsolutePath()+File.separator+"projects"
+            				+File.separator+projectObject.get("execDir")+File.separator+"pom.xml"));
+        			mvnProjects.add(projectObject);
+        		} else if (projectObject.get("build").equals("gradle")) {
+            		projectObject.put("libName", gradleGetGAV(new File(".").getAbsolutePath()+File.separator+"projects"
+            				+File.separator+projectObject.get("rootDir"), (String)projectObject.get("gavOf")));
+        			gradleProjects.add(projectObject);
+        		}	
             }
 
             // install projects
@@ -181,12 +182,17 @@ public class DependentTestRunner {
         while (iterator.hasNext()) {
         	JSONObject projectObject = (JSONObject)iterator.next();
         	File pomFile = new File(new File(".").getAbsolutePath()+File.separator+"projects"+File.separator+projectObject.get("execDir")+File.separator+"pom.xml");
-			mvnInstallProjects(pomFile); // generate jars
+        	setJavaVersion((long) projectObject.get("javaVersion"));
+        	mvnInstallProject(pomFile); // generate jars
         }
 	}
 		
 	public static void runMavenProjectsTest(JSONArray mavenProjects, Map<String, File> pomList) {	
-		for (String lib: pomList.keySet()) {
+		Iterator<JSONObject> iterator = mavenProjects.iterator();
+        while (iterator.hasNext()) {
+        	JSONObject projectObject = (JSONObject)iterator.next();
+        	String lib = (String) projectObject.get("libName");
+        	
 			try (FileReader input = new FileReader(configPath)) {
 				Properties prop = new Properties();
 	            prop.load(input);
@@ -200,6 +206,7 @@ public class DependentTestRunner {
 	            prop.setProperty("serviceBypassCallsPath", outputPath+File.separator+lib+File.separator+lib+"-serviceBypassCalls.csv");
 	            prop.setProperty("runningLibrary", lib);
 	            prop.store(new FileWriter(configPath, false), null);
+	            setJavaVersion((long) projectObject.get("javaVersion"));
 	            runMvnProjectUnitTests(pomList.get(lib));
 	            prop.setProperty("invocationsOutputPath", "");
 	            prop.setProperty("fieldsOutputPath", "");
@@ -216,11 +223,11 @@ public class DependentTestRunner {
 		}
 	}
 
-	public static void mvnInstallProjects(File pomFile) {
+	public static void mvnInstallProject(File pomFile) {
 		InvocationRequest request = new DefaultInvocationRequest();
 		request.setPomFile(pomFile);
 		request.setGoals(Arrays.asList("clean", "install"));
-		request.setMavenOpts("-Dlicense.skip=true -DskipTests=true -Dcheckstyle.skip=true");
+		request.setMavenOpts("-Dlicense.skip=true -DskipTests=true -Dcheckstyle.skip=true -Dgpg.skip=true");
 
 		System.setProperty("maven.home", "/usr/share/maven");
 		Invoker invoker = new DefaultInvoker();
@@ -239,7 +246,6 @@ public class DependentTestRunner {
 		properties.setProperty("argLine", JAVA_OPTS);
 		request.setProperties(properties);
 		System.setProperty("maven.home", "/usr/share/maven");
-
 		Invoker invoker = new DefaultInvoker();
 		try {
 			invoker.execute( request );
@@ -255,7 +261,8 @@ public class DependentTestRunner {
         	JSONObject projectObject = (JSONObject)iterator.next();
         	pathToGradleProject = new File(".").getAbsolutePath()+File.separator+"projects"+File.separator+projectObject.get("execDir");
         	pathToRootGradleProject = new File(".").getAbsolutePath()+File.separator+"projects"+File.separator+projectObject.get("rootDir");
-    		installGradleProjects(pathToGradleProject, pathToRootGradleProject); // generate wars and jars
+        	setJavaVersion((long) projectObject.get("javaVersion"));
+        	installGradleProject(pathToGradleProject, pathToRootGradleProject); // generate wars and jars
         }
 	}	
 
@@ -280,6 +287,7 @@ public class DependentTestRunner {
 	            prop.setProperty("serviceBypassCallsPath", outputPath+File.separator+lib+File.separator+lib+"-serviceBypassCalls.csv");
 	            prop.setProperty("runningLibrary", lib);
 	            prop.store(new FileWriter(configPath, false), null);
+	            setJavaVersion((long) projectObject.get("javaVersion"));
 	            runGradleProjectUnitTests(pathToGradleProject, pathToRootGradleProject);
 	            prop.setProperty("invocationsOutputPath", "");
 	            prop.setProperty("fieldsOutputPath", "");
@@ -296,7 +304,7 @@ public class DependentTestRunner {
 		}		
 	}
 	
-	public static void installGradleProjects(String pathToExecGradleProject, String pathToRootGradleProject) {
+	public static void installGradleProject(String pathToExecGradleProject, String pathToRootGradleProject) {
 		executeCommand(" ./gradlew clean build -x test -p "+pathToExecGradleProject+" --stacktrace", pathToRootGradleProject); // jar
 	}
 	
@@ -365,5 +373,25 @@ public class DependentTestRunner {
 		String result = output.toString();
 		System.out.println(result);
 		return result;
+	}
+	
+	public static void setJavaVersion(long version) {
+        Map<Integer, String> javaVersionPaths = new HashMap<Integer, String>();
+        javaVersionPaths.put(8, "/usr/lib/jvm/java-8-openjdk-arm64/jre/bin/java");
+        javaVersionPaths.put(11, "/usr/lib/jvm/java-11-openjdk-arm64/bin/java");
+
+        try {
+                Process process = Runtime.getRuntime()
+                              .exec(String.format("update-alternatives --set java %s", javaVersionPaths.get(version)));
+                int exitCode = process.waitFor();
+                if (exitCode != 0 ){
+                        System.out.println("Error occured, non zero return value, "+String.valueOf(exitCode));
+                        BufferedReader error = new BufferedReader(new InputStreamReader(process.getErrorStream()));
+                        String errorString = error.readLine();
+                        System.out.println(errorString);
+                }
+        } catch (IOException | InterruptedException e) {
+                System.out.println(e);
+        }
 	}
 }

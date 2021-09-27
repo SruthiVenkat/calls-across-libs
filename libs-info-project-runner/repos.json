@@ -176,86 +176,6 @@
     "selectedTag": "v2.10.10"
   },
   {
-    "category": "cache-implementations",
-    "categoryURL": "https://mvnrepository.com/open-source/cache-implementations",
-    "artifactId": "guava",
-    "groupId": "com.github.ben-manes.caffeine",
-    "artifactURL": "https://mvnrepository.com/artifact/com.github.ben-manes.caffeine/guava",
-    "metadataURL": "https://repo1.maven.org/maven2/com/github/ben-manes/caffeine/guava/maven-metadata.xml",
-    "metadataLocalFile": "results/poms/com.github.ben-manes.caffeine/guava/maven-metadata.xml",
-    "comments": [
-      "category and artifact collected by nz.ac.wgtn.ecs.apisurfacestudy.dataacquisition.popularmvn.FetchPopularMvnCategoriesAndArtifacts on 25 May 2021, 1:25:48 pm",
-      "version metadata collected by nz.ac.wgtn.ecs.apisurfacestudy.dataacquisition.popularmvn.FetchPOMs on 25 May 2021, 1:54:01 pm",
-      "latest version extracted from metadata with nz.ac.wgtn.ecs.apisurfacestudy.dataacquisition.popularmvn.FetchPOMs on 25 May 2021, 1:54:01 pm",
-      "latest pom collected by nz.ac.wgtn.ecs.apisurfacestudy.dataacquisition.popularmvn.FetchPOMs on 25 May 2021, 1:54:02 pm",
-      "scm connection extracted from pom by nz.ac.wgtn.ecs.apisurfacestudy.dataacquisition.popularmvn.ExtractSCMInfoFromPOMs on 25 May 2021, 7:35:53 pm",
-      "scm URL extracted from pom by nz.ac.wgtn.ecs.apisurfacestudy.dataacquisition.popularmvn.ExtractSCMInfoFromPOMs on 25 May 2021, 7:35:53 pm"
-    ],
-    "rankInCategory": 5,
-    "latestVersion": "3.0.2",
-    "latestVersionPOMURL": "https://repo1.maven.org/maven2/com/github/ben-manes/caffeine/guava/3.0.2/guava-3.0.2.pom",
-    "latestVersionPOMLocalFile": "results/poms/com.github.ben-manes.caffeine/guava/pom.xml",
-    "scmConnection": "scm:git:https://github.com/ben-manes/caffeine.git",
-    "scmURL": "https://github.com/ben-manes/caffeine",
-    "localRepo": "results/git-repos/com.github.ben-manes.caffeine/guava",
-    "tags": [
-      "2.5.6",
-      "v1.0",
-      "v1.0.1",
-      "v1.1.0",
-      "v1.2.0",
-      "v1.3.0",
-      "v1.3.1",
-      "v1.3.2",
-      "v1.3.3",
-      "v2.0.0",
-      "v2.0.1",
-      "v2.0.2",
-      "v2.0.3",
-      "v2.1.0",
-      "v2.2.0",
-      "v2.2.1",
-      "v2.2.2",
-      "v2.2.3",
-      "v2.2.4",
-      "v2.2.5",
-      "v2.2.6",
-      "v2.2.7",
-      "v2.3.0",
-      "v2.3.1",
-      "v2.3.2",
-      "v2.3.3",
-      "v2.3.4",
-      "v2.3.5",
-      "v2.4.0",
-      "v2.5.0",
-      "v2.5.1",
-      "v2.5.2",
-      "v2.5.3",
-      "v2.5.4",
-      "v2.5.5",
-      "v2.6.0",
-      "v2.6.1",
-      "v2.6.2",
-      "v2.7.0",
-      "v2.8.0",
-      "v2.8.1",
-      "v2.8.2",
-      "v2.8.3",
-      "v2.8.4",
-      "v2.8.5",
-      "v2.8.6",
-      "v2.8.7",
-      "v2.8.8",
-      "v2.9.0",
-      "v2.9.1",
-      "v3.0.0",
-      "v3.0.1",
-      "v3.0.2"
-    ],
-    "selectedTag": "v3.0.2"
-  },
-  {
     "category": "embedded-sql-databases",
     "categoryURL": "https://mvnrepository.com/open-source/embedded-sql-databases",
     "artifactId": "h2",
@@ -956,6 +876,90 @@
   },
   {
     "scmURL": "https://github.com/qos-ch/slf4j.git",
-    "selectedTag": "v_2.0.0-alpha5"
+    "selectedTag": "v_1.7.9"
+  },
+  {
+    "scmURL": "https://github.com/apache/rocketmq.git",
+    "selectedTag": "rocketmq-all-4.9.1"
+  },
+  {
+    "scmURL": "https://github.com/alibaba/easyexcel.git",
+    "selectedTag": "v2.2.11"
+  },
+  {
+    "scmURL": "https://github.com/apache/flink.git",
+    "selectedTag": "release-1.14.0-rc3"
+  },
+  {
+    "scmURL": "https://github.com/ESAPI/esapi-java-legacy.git",
+    "selectedTag": "esapi-2.2.3.1"
+  },
+  {
+    "scmURL": "https://github.com/checkstyle/checkstyle.git",
+    "selectedTag": "checkstyle-9.0"
+  },
+  {
+    "scmURL": "https://github.com/querydsl/querydsl.git",
+    "selectedTag": "QUERYDSL_5_0_0"
+  },
+  {
+    "scmURL": "https://github.com/javaparser/javaparser.git",
+    "selectedTag": "javaparser-parent-3.23.0"
+  },
+  {
+    "scmURL": "https://github.com/spotify/docker-client.git",
+    "selectedTag": "v8.16.0"
+  },
+   {
+    "scmURL": "https://github.com/rest-assured/rest-assured.git",
+    "selectedTag": "rest-assured-4.4.0"
+  }, 
+  {
+    "scmURL": "https://github.com/searchbox-io/Jest.git",
+    "selectedTag": "v6.3.1"
+  },
+  {
+    "scmURL": "https://github.com/DSpace/DSpace.git",
+    "selectedTag": "dspace-7.0"
+  },
+  {
+    "scmURL": "https://github.com/vdurmont/emoji-java.git",
+    "selectedTag": "v5.1.1"
+  }, 
+  {
+    "scmURL": "https://github.com/zhegexiaohuozi/JsoupXpath.git",
+    "selectedTag": "v2.5.0"
+  },
+  {
+    "scmURL": "https://github.com/mangstadt/ez-vcard.git",
+    "selectedTag": "0.11.3"
+  },
+  {
+    "scmURL": "https://github.com/jtablesaw/tablesaw.git",
+    "selectedTag": "v0.38.5"
+  },
+  {
+    "scmURL": "https://github.com/qos-ch/logback.git",
+    "selectedTag": "v_1.2.5"
+  }, 
+  {
+    "scmURL": "https://github.com/alibaba/druid.git",
+    "selectedTag": "1.2.6"
+  },
+  {
+    "scmURL": "https://github.com/hazelcast/hazelcast.git",
+    "selectedTag": "v5.0"
+  },
+  {
+    "scmURL": "https://github.com/pac4j/pac4j.git",
+    "selectedTag": "pac4j-4.5.2"
+  },
+  {
+    "scmURL": "https://github.com/thymeleaf/thymeleaf.git",
+    "selectedTag": "thymeleaf-3.0.12.RELEASE"
+  }, 
+  {
+    "scmURL": "https://github.com/spring-projects/spring-data-elasticsearch.git",
+    "selectedTag": "4.2.5"
   }
 ]

@@ -1,17 +1,299 @@
 [
     {
+        "execDir": "fastjson",
+        "generatedJarName": "fastjson-1.2.76",
+        "build": "maven",
+        "javaVersion": 8
+    },
+    {
+        "execDir": "rocketmq/remoting",
+        "generatedJarName": "rocketmq-remoting-4.9.2-SNAPSHOT",
+        "build": "maven",
+        "javaVersion": 11
+    },
+    {
+        "execDir": "rocketmq/tools",
+        "generatedJarName": "rocketmq-tools-4.9.2-SNAPSHOT",
+        "build": "maven",
+        "javaVersion": 11
+    },
+    {
+        "execDir": "rocketmq/broker",
+        "generatedJarName": "rocketmq-broker-4.9.2-SNAPSHOT",
+        "build": "maven",
+        "javaVersion": 11
+    },
+    {
+        "execDir": "rocketmq/common",
+        "generatedJarName": "rocketmq-common-4.9.2-SNAPSHOT",
+        "build": "maven",
+        "javaVersion": 11
+    },
+    {
+        "execDir": "rocketmq/acl",
+        "generatedJarName": "rocketmq-acl-4.9.2-SNAPSHOT",
+        "build": "maven",
+        "javaVersion": 11
+    },
+    {
+        "execDir": "rocketmq/client",
+        "generatedJarName": "rocketmq-client-4.9.2-SNAPSHOT",
+        "build": "maven",
+        "javaVersion": 11
+    },
+    {
+        "execDir": "easyexcel",
+        "generatedJarName": "easyexcel-2.2.11",
+        "build": "maven",
+        "javaVersion": 8
+    },
+    {
+        "execDir": "commons-collections",
+        "generatedJarName": "commons-collections4-4.4",
+        "build": "maven",
+        "javaVersion": 11
+    },
+    {
+        "execDir": "flink/flink-core",
+        "generatedJarName": "flink-core-1.14.0",
+        "build": "maven",
+        "javaVersion": 11
+    },
+    {
+        "execDir": "esapi-java-legacy",
+        "generatedJarName": "esapi-2.2.3.1",
+        "build": "maven",
+        "javaVersion": 11
+    },
+    {
+        "execDir": "commons-io",
+        "generatedJarName": "commons-io-2.8.0",
+        "build": "maven"
+    },
+    {
+        "execDir": "checkstyle",
+        "generatedJarName": "checkstyle-9.0",
+        "build": "maven",
+        "javaVersion": 11
+    },
+    {
+        "execDir": "joda-time",
+        "generatedJarName": "joda-time-2.10.10",
+        "build": "maven",
+        "javaVersion": 11
+    },
+    {
+        "execDir": "querydsl/querydsl-sql",
+        "generatedJarName": "querydsl-sql-5.0.0",
+        "build": "maven",
+        "javaVersion": 11
+    },
+    {
+        "execDir": "joda-time",
+        "generatedJarName": "joda-time-2.10.10",
+        "build": "maven",
+        "javaVersion": 11
+    },
+    {
+        "execDir": "guava/guava-tests",
+        "generatedJarName": "guava-tests-30.1.1-jre",
+        "build": "maven",
+        "javaVersion": 11
+    },
+    {
+        "execDir": "guava/guava",
+        "generatedJarName": "guava-30.1.1-jre",
+        "build": "maven",
+        "javaVersion": 11
+    },
+    {
+        "execDir": "guava/guava-testlib",
+        "generatedJarName": "guava-testlib-30.1.1-jre",
+        "build": "maven",
+        "javaVersion": 11
+    },
+    {
+        "execDir": "guava/guava-gwt",
+        "generatedJarName": "guava-gwt-30.1.1-jre",
+        "build": "maven",
+        "javaVersion": 11
+    },
+    {
+        "execDir": "javaparser/javaparser-symbol-solver-core",
+        "generatedJarName": "javaparser-symbol-solver-core-3.23.0",
+        "build": "maven",
+        "javaVersion": 11
+    },
+    {
+        "execDir": "javaparser/javaparser-core-testing",
+        "generatedJarName": "javaparser-core-testing-3.23.0",
+        "build": "maven",
+        "javaVersion": 11
+    },
+    {
+        "execDir": "gson",
+        "generatedJarName": "gson-parent-2.8.8",
+        "build": "maven",
+        "javaVersion": 11
+    },
+    {
+        "execDir": "rest-assured/rest-assured",
+        "generatedJarName": "rest-assured-4.4.0",
+        "build": "maven",
+        "javaVersion": 11
+    },
+    {
+        "execDir": "rest-assured/rest-assured-all",
+        "generatedJarName": "rest-assured-all-4.4.0",
+        "build": "maven",
+        "javaVersion": 11
+    },
+    {
+        "execDir": "rest-assured/rest-assured-common",
+        "generatedJarName": "rest-assured-all-4.4.0",
+        "build": "maven",
+        "javaVersion": 11
+    },
+    {
+        "execDir": "rest-assured/json-path",
+        "generatedJarName": "json-path-4.4.0",
+        "build": "maven",
+        "javaVersion": 11
+    },
+    {
+        "execDir": "Jest/jest",
+        "generatedJarName": "jest-6.3.1",
+        "build": "maven",
+        "javaVersion": 8
+    },
+    {
+        "execDir": "Jest/jest-common",
+        "generatedJarName": "jest-common-6.3.1",
+        "build": "maven",
+        "javaVersion": 8
+    },
+    {
+        "execDir": "JSON-java",
+        "generatedJarName": "json-20210307",
+        "build": "maven",
+        "javaVersion": 11
+    },
+    {
+        "execDir": "DSpace/dspace-api",
+        "generatedJarName": "dspace-api-7.0",
+        "build": "maven",
+        "javaVersion": 11
+    },
+    {
+        "execDir": "DSpace/dspace-server-webapp",
+        "generatedJarName": "dspace-server-webapp-7.0",
+        "build": "maven",
+        "javaVersion": 11
+    },
+    {
+        "execDir": "emoji-java",
+        "generatedJarName": "emoji-java-5.1.1",
+        "build": "maven",
+        "javaVersion": 8
+    },
+    {
+        "execDir": "jsoup",
+        "generatedJarName": "jsoup-1.13.1",
+        "build": "maven",
+        "javaVersion": 11
+    },
+    {
+        "execDir": "JsoupXpath",
+        "generatedJarName": "JsoupXpath-2.5.0",
+        "build": "maven",
+        "javaVersion": 11
+    },
+    {
+        "execDir": "ez-vcard",
+        "generatedJarName": "ez-vcard-0.11.3",
+        "build": "maven",
+        "javaVersion": 8
+    },
+    {
+        "execDir": "tablesaw/html",
+        "generatedJarName": "tablesaw-html-0.38.5",
+        "build": "maven",
+        "javaVersion": 11
+    },
+    {
+        "execDir": "slf4j/slf4j-api",
+        "generatedJarName": "slf4j-api-1.7.9",
+        "build": "maven",
+        "javaVersion": 8
+    },
+    {
+        "execDir": "logback/logback-classic",
+        "generatedJarName": "logback-classic-1.2.5",
+        "build": "maven",
+        "javaVersion": 8
+    },
+    {
+        "execDir": "druid",
+        "generatedJarName": "druid-1.2.5",
+        "build": "maven",
+        "javaVersion": 8
+    },
+    {
+        "execDir": "pac4j/pac4j-sql",
+        "generatedJarName": "pac4j-sql-4.5.2",
+        "build": "maven",
+        "javaVersion": 8
+    },
+    {
+        "execDir": "thymeleaf",
+        "generatedJarName": "thymeleaf-3.0.12.RELEASE",
+        "build": "maven",
+        "javaVersion": 11
+    },
+    {
+        "execDir": "spring-data-elasticsearch",
+        "generatedJarName": "spring-data-elasticsearch-4.2.5",
+        "build": "maven",
+        "javaVersion": 11
+    },
+    {
+        "execDir": "jackson-databind",
+        "generatedJarName": "jackson-databind-2.12.3",
+        "build": "maven"
+    },
+    {
         "execDir": "jackson-core",
         "generatedJarName": "jackson-core-2.12.3",
         "build": "maven"
     },
     {
-        "execDir": "jsoup",
-        "generatedJarName": "jsoup-1.13.1",
-        "build": "maven"
+        "execDir": "docker-client",
+        "generatedJarName": "docker-client-8.16.0",
+        "build": "maven",
+        "javaVersion": 8
     },
     {
-        "execDir": "joda-time",
-        "generatedJarName": "joda-time-2.10.10",
-        "build": "maven"
+        "execDir": "hazelcast",
+        "generatedJarName": "hazelcast-5.0",
+        "build": "maven",
+        "javaVersion": 8
+    },
+    {
+        "execDir": "hazelcast/hazelcast-sql",
+        "generatedJarName": "hazelcast-sql-5.0",
+        "build": "maven",
+        "javaVersion": 8
+    },
+    {
+        "execDir": "h2database/h2",
+        "generatedJarName": "h2-1.4.201-SNAPSHOT",
+        "build": "maven",
+        "javaVersion": 8
+    },
+    {
+        "execDir": "pac4j/pac4j-config",
+        "generatedJarName": "pac4j-config-4.5.2",
+        "build": "maven",
+        "javaVersion": 8
     }
 ]

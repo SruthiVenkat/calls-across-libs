@@ -337,7 +337,6 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 									int modifiers = m.getMethod().getModifiers();
 				            		String mVisibility = javassist.Modifier.isPublic(modifiers) ? "public" : (javassist.Modifier.isPrivate(modifiers) ? "private" : (javassist.Modifier.isProtected(modifiers) ? "protected" : "default"));
 									String codeToAdd = "";
-									
 									if (libsToClasses.get(runningLibrary).containsNode(methodCallerClassName) 
 											&& libsToClasses.get(runningLibrary).containsNode(methodCalledClassName)
 									&& (javassist.Modifier.isPublic(modifiers) || javassist.Modifier.isProtected(modifiers))) {

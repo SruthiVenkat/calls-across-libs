@@ -38,7 +38,7 @@ import org.json.simple.JSONObject;
 public class JarUtility {
 	public static List<String> addedLibs = new ArrayList<String>();
 	public static Map<String, ArrayList<Object>> libsToCountsAndClasses = new HashMap<String, ArrayList<Object>>();
-	public static Map<String, ArrayList<String>> servicesInfo = new HashMap<String, ArrayList<String>>();
+	public static Map<String, HashSet<String>> servicesInfo = new HashMap<String, HashSet<String>>();
 	public static String configPath = Paths.get(new File(".").getAbsolutePath()).getParent().getParent().toString()+"/src/main/resources/config.properties";
 	public static String libsInfoPath;
 	public static String servicesInfoPath;
@@ -51,6 +51,7 @@ public class JarUtility {
 		Iterator<JSONObject> iterator = projects.iterator();
         while (iterator.hasNext()) {
         	JSONObject projectObject = (JSONObject)iterator.next();
+        	DependentTestRunner.setJavaVersion((long) projectObject.get("javaVersion"));
         	if (!addedLibs.contains(projectObject.get("libName")) && projectObject.get("build").equals(build)) {
         		String pathToJar="", pathToRootPrj = "";
         		if (build.equals("maven")) {
@@ -105,7 +106,7 @@ public class JarUtility {
     			BufferedReader reader = new BufferedReader(new FileReader(servicesInfoPath));
 				while ((row = reader.readLine()) != null) {
 				    String[] data = row.split(",");
-				    servicesInfo.putIfAbsent(data[0], new ArrayList<String>());
+				    servicesInfo.putIfAbsent(data[0], new HashSet<String>());
 				    servicesInfo.get(data[0]).addAll(Arrays.asList(data[1].split(";")));
 				}
 				servicesInfo.remove("SPI");
@@ -321,7 +322,7 @@ public class JarUtility {
 					}
 						
 					reader.close();
-					servicesInfo.putIfAbsent(key, new ArrayList<String>());
+					servicesInfo.putIfAbsent(key, new HashSet<String>());
 					if (!servicesInfo.get(key).contains(row+"\t"+dependencyName))
 						servicesInfo.get(key).add(row+"\t"+dependencyName);
 				}

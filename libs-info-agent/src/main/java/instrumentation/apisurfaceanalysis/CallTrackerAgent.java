@@ -21,7 +21,6 @@ public class CallTrackerAgent {
 		/* track calls across libraries */
 		CallTrackerTransformer transformer = new CallTrackerTransformer();
         inst.addTransformer(transformer);
-
         Runtime.getRuntime().addShutdownHook(new Thread()
 		{
 			public void run()
