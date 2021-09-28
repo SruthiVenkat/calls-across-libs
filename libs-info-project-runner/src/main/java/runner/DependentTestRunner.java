@@ -199,6 +199,8 @@ public class DependentTestRunner {
         	File pomFile = new File(new File(".").getAbsolutePath()+File.separator+"projects"+File.separator+projectObject.get("execDir")+File.separator+"pom.xml");
         	setJavaVersion((long) projectObject.get("javaVersion"));
         	mvnInstallProject(pomFile, (long)projectObject.get("javaVersion")); // generate jars
+        	if (!((String)projectObject.get("execDir")).isEmpty())
+        		mvnInstallProject(new File(new File(".").getAbsolutePath()+File.separator+"projects"+File.separator+projectObject.get("rootDir")+File.separator+"pom.xml"), (long)projectObject.get("javaVersion"));
         }
 	}
 		
