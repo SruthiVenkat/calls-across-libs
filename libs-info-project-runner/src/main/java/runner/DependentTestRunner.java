@@ -35,7 +35,16 @@ public class DependentTestRunner {
 	public static String outputPath;
 	public static List<String> addedLibs = new ArrayList<String>();
 	public static String configPath = Paths.get(new File(".").getAbsolutePath()).getParent().getParent().toString()+"/src/main/resources/config.properties";
-
+	public static Map<Long, String> javaVersionPaths = new HashMap<Long, String>();
+	public static Map<Long, String> javaHomes = new HashMap<Long, String>();
+	
+	static {
+		javaVersionPaths.put((long)8, "/usr/lib/jvm/java-8-openjdk-arm64/jre/bin/java");
+		javaVersionPaths.put((long)11, "/usr/lib/jvm/java-11-openjdk-arm64/bin/java");
+		javaHomes.put((long)8, "/usr/lib/jvm/java-8-openjdk-arm64");
+		javaHomes.put((long)11, "/usr/lib/jvm/java-11-openjdk-arm64");
+	}
+	
 	public static void main(String[] args) {
 		loadProperties();	// load properties - paths
 		
@@ -48,14 +57,13 @@ public class DependentTestRunner {
             Iterator<JSONObject> iterator = projects.iterator();
             while (iterator.hasNext()) {
             	JSONObject projectObject = (JSONObject)iterator.next();
-            	setJavaVersion((long)projectObject.get("javaVersion"));
         		if (projectObject.get("build").equals("maven")) {
         			projectObject.put("libName", mavenGetGAV(new File(".").getAbsolutePath()+File.separator+"projects"
-            				+File.separator+projectObject.get("execDir")+File.separator+"pom.xml"));
+            				+File.separator+projectObject.get("execDir")+File.separator+"pom.xml", (long) projectObject.get("javaVersion")));
         			mvnProjects.add(projectObject);
         		} else if (projectObject.get("build").equals("gradle")) {
             		projectObject.put("libName", gradleGetGAV(new File(".").getAbsolutePath()+File.separator+"projects"
-            				+File.separator+projectObject.get("rootDir"), (String)projectObject.get("gavOf")));
+            				+File.separator+projectObject.get("rootDir"), (String)projectObject.get("gavOf"), (long) projectObject.get("javaVersion")));
         			gradleProjects.add(projectObject);
         		}	
             }
@@ -106,12 +114,14 @@ public class DependentTestRunner {
         }
 	}
 	
-	public static String mavenGetGAV(String pomFile) {
+	public static String mavenGetGAV(String pomFile, long javaVersion) {
 		String gav = "";
+		setJavaVersion(javaVersion);
 		InvocationRequest request = new DefaultInvocationRequest();
 		request.setPomFile(new File(pomFile));
 		request.setGoals(Arrays.asList("help:evaluate"));
-
+		request.setJavaHome(new File(javaHomes.get(javaVersion)));
+		
 		System.setProperty("maven.home", "/usr/share/maven");
 		Invoker invoker = new DefaultInvoker();
 		try {
@@ -143,7 +153,8 @@ public class DependentTestRunner {
 		return gav;
 	}
 	
-	public static String gradleGetGAV(String pathToRootPrj, String gavOf) {
+	public static String gradleGetGAV(String pathToRootPrj, String gavOf, long javaVersion) {
+		setJavaVersion(javaVersion);
 		String getDepsInitScriptPathString = new File(".").getAbsolutePath()+File.separator+"gradle-init-scripts"+File.separator+"get-GAV.gradle";
 		executeCommand(" ./gradlew -I "+getDepsInitScriptPathString+" :"+gavOf+":getGAV --stacktrace > gav-output.txt", pathToRootPrj);
 		String gav = gavOf;
@@ -183,7 +194,7 @@ public class DependentTestRunner {
         	JSONObject projectObject = (JSONObject)iterator.next();
         	File pomFile = new File(new File(".").getAbsolutePath()+File.separator+"projects"+File.separator+projectObject.get("execDir")+File.separator+"pom.xml");
         	setJavaVersion((long) projectObject.get("javaVersion"));
-        	mvnInstallProject(pomFile); // generate jars
+        	mvnInstallProject(pomFile, (long)projectObject.get("javaVersion")); // generate jars
         }
 	}
 		
@@ -207,7 +218,7 @@ public class DependentTestRunner {
 	            prop.setProperty("runningLibrary", lib);
 	            prop.store(new FileWriter(configPath, false), null);
 	            setJavaVersion((long) projectObject.get("javaVersion"));
-	            runMvnProjectUnitTests(pomList.get(lib));
+	            runMvnProjectUnitTests(pomList.get(lib), (long) projectObject.get("javaVersion"));
 	            prop.setProperty("invocationsOutputPath", "");
 	            prop.setProperty("fieldsOutputPath", "");
 	            prop.setProperty("subtypingOutputPath", "");
@@ -223,12 +234,12 @@ public class DependentTestRunner {
 		}
 	}
 
-	public static void mvnInstallProject(File pomFile) {
+	public static void mvnInstallProject(File pomFile, long javaVersion) {
 		InvocationRequest request = new DefaultInvocationRequest();
 		request.setPomFile(pomFile);
 		request.setGoals(Arrays.asList("clean", "install"));
 		request.setMavenOpts("-Dlicense.skip=true -DskipTests=true -Dcheckstyle.skip=true -Dgpg.skip=true");
-
+		request.setJavaHome(new File(javaHomes.get(javaVersion)));
 		System.setProperty("maven.home", "/usr/share/maven");
 		Invoker invoker = new DefaultInvoker();
 		try {
@@ -238,10 +249,11 @@ public class DependentTestRunner {
 		}
 	}
 	
-	public static void runMvnProjectUnitTests(File pomFile) {
+	public static void runMvnProjectUnitTests(File pomFile, long javaVersion) {
 		InvocationRequest request = new DefaultInvocationRequest();
 		request.setPomFile(pomFile);
 		request.setGoals(Arrays.asList("test")); 
+		request.setJavaHome(new File(javaHomes.get(javaVersion)));
 		Properties properties = new Properties();
 		properties.setProperty("argLine", JAVA_OPTS);
 		request.setProperties(properties);
@@ -376,13 +388,6 @@ public class DependentTestRunner {
 	}
 	
 	public static void setJavaVersion(long version) {
-        Map<Long, String> javaVersionPaths = new HashMap<Long, String>();
-        javaVersionPaths.put((long)8, "/usr/lib/jvm/java-8-openjdk-arm64/jre/bin/java");
-        javaVersionPaths.put((long)11, "/usr/lib/jvm/java-11-openjdk-arm64/bin/java");
-        Map<Long, String> javaHomes = new HashMap<Long, String>();
-        javaHomes.put((long)8, "/usr/lib/jvm/java-8-openjdk-arm64");
-        javaHomes.put((long)11, "/usr/lib/jvm/java-11-openjdk-arm64");
-
         try {
                 Process process = Runtime.getRuntime()
                               .exec(String.format("update-alternatives --set java %s", javaVersionPaths.get(version)));
@@ -393,15 +398,6 @@ public class DependentTestRunner {
                         String errorString = error.readLine();
                         System.out.println(errorString);
                 }
-                process = Runtime.getRuntime()
-                        .exec(String.format("export JAVA_HOME=%s", javaHomes.get(version)));
-				exitCode = process.waitFor();
-				if (exitCode != 0 ){
-					System.out.println("Error occured, non zero return value, "+String.valueOf(exitCode));
-					BufferedReader error = new BufferedReader(new InputStreamReader(process.getErrorStream()));
-					String errorString = error.readLine();
-					System.out.println(errorString);
-				}
         } catch (IOException | InterruptedException e) {
                 System.out.println(e);
         }

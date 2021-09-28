@@ -65,7 +65,7 @@ public class JarUtility {
             	String generatedJarName = pathToProject+File.separator+pathToJar;
             	String tmpFolder = new File(".").getAbsolutePath()+File.separator+"projects"+File.separator+projectObject.get("execDir")+File.separator+"tmp";
             	String libName = (String)projectObject.get("libName");
-            	ArrayList<Object> countsAndClasses = getPublicProtectedMethodsCountAndClasses(generatedJarName, tmpFolder, pathToProject, pathToRootPrj, build, libName);
+            	ArrayList<Object> countsAndClasses = getPublicProtectedMethodsCountAndClasses(generatedJarName, tmpFolder, pathToProject, pathToRootPrj, build, libName, (long) projectObject.get("javaVersion"));
             	libsToCountsAndClasses.putIfAbsent(libName, new ArrayList<Object>(Arrays.asList(0, 0, "")));
             	ArrayList<Object> libVals = libsToCountsAndClasses.get(libName);
             	libVals.set(0, (Integer)libVals.get(0) + (Integer)countsAndClasses.get(0));
@@ -157,14 +157,14 @@ public class JarUtility {
 		}
 	}
 	
-	public static ArrayList<Object> getPublicProtectedMethodsCountAndClasses(String crunchifyJarName, String tmpFolder, String pathToProject, String pathToRootPrj, String build, String libName) {
+	public static ArrayList<Object> getPublicProtectedMethodsCountAndClasses(String crunchifyJarName, String tmpFolder, String pathToProject, String pathToRootPrj, String build, String libName, long javaVersion) {
 			File destDir = new File(tmpFolder);
 			if (!destDir.exists()) {
 				destDir.mkdir();
 			}
 			HashMap<String, String> deps = new HashMap<String, String>();
 			if (build.equals("maven"))
-				deps = mvnGetDependencies(destDir);
+				deps = mvnGetDependencies(destDir, javaVersion);
 			else if (build.equals("gradle"))
 				deps = gradleGetDependencies(destDir, pathToProject, pathToRootPrj);
 
@@ -189,14 +189,15 @@ public class JarUtility {
 			return getDatafromJar(new File(crunchifyJarName), child, libName.trim());
 	}
 	
-	public static HashMap<String, String> mvnGetDependencies(File tmpDir) {
+	public static HashMap<String, String> mvnGetDependencies(File tmpDir, long javaVersion) {
 		HashMap<String, String> dependencies = new HashMap<String, String>();
 		InvocationRequest request = new DefaultInvocationRequest();
 		File pomFile = new File(tmpDir.getParent()+File.separator+"pom.xml"); 
 		request.setPomFile(pomFile);
 		request.setGoals(Arrays.asList("dependency:list"));
 		request.setMavenOpts("-DincludeScope=compile -DoutputFile="+tmpDir.getPath()+File.separator+"deps-output.txt -DoutputAbsoluteArtifactFilename=true");
-
+		request.setJavaHome(new File(DependentTestRunner.javaHomes.get(javaVersion)));
+		
 		System.setProperty("maven.home", "/usr/share/maven");
 		Invoker invoker = new DefaultInvoker();
 		try {
