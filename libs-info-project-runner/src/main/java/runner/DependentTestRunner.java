@@ -7,7 +7,6 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.lang.ProcessBuilder.Redirect;
-import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -18,15 +17,20 @@ import java.util.Map;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import javax.xml.parsers.DocumentBuilderFactory;
+
 import org.apache.maven.shared.invoker.DefaultInvocationRequest;
 import org.apache.maven.shared.invoker.DefaultInvoker;
 import org.apache.maven.shared.invoker.InvocationRequest;
 import org.apache.maven.shared.invoker.Invoker;
 import org.apache.maven.shared.invoker.MavenInvocationException;
-
+import org.apache.maven.shared.invoker.SystemOutHandler;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
+import org.w3c.dom.Document;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
 
 public class DependentTestRunner {
 	public static String agentPath;
@@ -70,10 +74,10 @@ public class DependentTestRunner {
 
             // install projects
             runMavenProjectsInstall(mvnProjects);
-    		runGradleProjectsInstall(gradleProjects);
+            runGradleProjectsInstall(gradleProjects);
 
     		// get total API counts for projects and packages in each project
-    		JarUtility.initLibsToCountsAndClasses("maven", mvnProjects);
+            JarUtility.initLibsToCountsAndClasses("maven", mvnProjects);
             JarUtility.initLibsToCountsAndClasses("gradle", gradleProjects);
             
             // run unit tests
@@ -254,8 +258,33 @@ public class DependentTestRunner {
 		request.setPomFile(pomFile);
 		request.setGoals(Arrays.asList("test")); 
 		request.setJavaHome(new File(javaHomes.get(javaVersion)));
+		
+		// parse pom and get existing argLine param
+		String argLine = "";
+		try {
+			Document document = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(pomFile);
+			NodeList pluginList = document.getElementsByTagName("plugin");
+			for (int i=0; i<pluginList.getLength(); i++) {
+				Node plugin = pluginList.item(i);
+				NodeList pluginChildren = plugin.getChildNodes();
+				for (int j=0; j<pluginChildren.getLength(); j++) {
+					Node pluginChild = pluginChildren.item(j);
+					if (pluginChild.getNodeName().equals("configuration")) {
+						NodeList configChildren = pluginChild.getChildNodes();
+						for (int k=0; k<configChildren.getLength(); k++) {
+							Node configChild = configChildren.item(k);
+							if (configChild.getNodeName().equals("argLine"))
+								argLine = configChild.getTextContent()+" ";
+						}
+					}
+				}
+			}
+		} catch (Exception e) {
+		    e.printStackTrace();
+		}
+		
 		Properties properties = new Properties();
-		properties.setProperty("argLine", JAVA_OPTS);
+		properties.setProperty("argLine", argLine+JAVA_OPTS);
 		request.setProperties(properties);
 		System.setProperty("maven.home", "/usr/share/maven");
 		Invoker invoker = new DefaultInvoker();
