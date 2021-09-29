@@ -312,6 +312,8 @@ public class JarUtility {
 						System.out.println("Illegal Access "+ e);
 					} catch (Exception e) {
 						System.out.println("Error while parsing jar " + e);
+					} catch (Error e) {
+						System.out.println("Error while parsing jar " + e);
 					}
 				} else if (Pattern.matches("META-INF"+File.separator+"services"+File.separator+".+", crunchifyJar.getName())) {
 					String key = crunchifyJar.getName().replace("META-INF"+File.separator+"services"+File.separator, "");
