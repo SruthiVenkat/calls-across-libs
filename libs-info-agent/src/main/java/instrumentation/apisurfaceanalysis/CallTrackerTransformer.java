@@ -361,9 +361,11 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 									}
 									} 
 								} catch (NotFoundException nfe) {
+									System.out.println("Not Found "+nfe);
+								} catch (CannotCompileException cce) {
+									System.out.println("Cannot Compile "+cce);
 								} catch (Exception e) {
-									e.printStackTrace();
-									System.out.println(e);
+									System.out.println("Exception while instrumenting "+e);
 								}
 						}
 
