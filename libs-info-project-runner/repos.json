@@ -176,58 +176,6 @@
     "selectedTag": "v2.10.10"
   },
   {
-    "category": "embedded-sql-databases",
-    "categoryURL": "https://mvnrepository.com/open-source/embedded-sql-databases",
-    "artifactId": "h2",
-    "groupId": "com.h2database",
-    "artifactURL": "https://mvnrepository.com/artifact/com.h2database/h2",
-    "metadataURL": "https://repo1.maven.org/maven2/com/h2database/h2/maven-metadata.xml",
-    "metadataLocalFile": "results/poms/com.h2database/h2/maven-metadata.xml",
-    "comments": [
-      "category and artifact collected by nz.ac.wgtn.ecs.apisurfacestudy.dataacquisition.popularmvn.FetchPopularMvnCategoriesAndArtifacts on 25 May 2021, 1:27:28 pm",
-      "version metadata collected by nz.ac.wgtn.ecs.apisurfacestudy.dataacquisition.popularmvn.FetchPOMs on 25 May 2021, 1:54:29 pm",
-      "latest version extracted from metadata with nz.ac.wgtn.ecs.apisurfacestudy.dataacquisition.popularmvn.FetchPOMs on 25 May 2021, 1:54:30 pm",
-      "latest pom collected by nz.ac.wgtn.ecs.apisurfacestudy.dataacquisition.popularmvn.FetchPOMs on 25 May 2021, 1:54:30 pm",
-      "scm connection extracted from pom by nz.ac.wgtn.ecs.apisurfacestudy.dataacquisition.popularmvn.ExtractSCMInfoFromPOMs on 25 May 2021, 7:35:59 pm",
-      "scm URL extracted from pom by nz.ac.wgtn.ecs.apisurfacestudy.dataacquisition.popularmvn.ExtractSCMInfoFromPOMs on 25 May 2021, 7:35:59 pm"
-    ],
-    "rankInCategory": 1,
-    "latestVersion": "1.4.200",
-    "latestVersionPOMURL": "https://repo1.maven.org/maven2/com/h2database/h2/1.4.200/h2-1.4.200.pom",
-    "latestVersionPOMLocalFile": "results/poms/com.h2database/h2/pom.xml",
-    "scmConnection": "scm:git:https://github.com/h2database/h2database",
-    "scmURL": "https://github.com/h2database/h2database",
-    "localRepo": "results/git-repos/com.h2database/h2",
-    "tags": [
-      "version-1.0",
-      "version-1.1",
-      "version-1.2",
-      "version-1.3",
-      "version-1.4.177",
-      "version-1.4.178",
-      "version-1.4.181",
-      "version-1.4.182",
-      "version-1.4.183",
-      "version-1.4.184",
-      "version-1.4.185",
-      "version-1.4.186",
-      "version-1.4.187",
-      "version-1.4.188",
-      "version-1.4.190",
-      "version-1.4.191",
-      "version-1.4.192",
-      "version-1.4.193",
-      "version-1.4.194",
-      "version-1.4.195",
-      "version-1.4.196",
-      "version-1.4.197",
-      "version-1.4.198",
-      "version-1.4.199",
-      "version-1.4.200"
-    ],
-    "selectedTag": "version-1.4.200"
-  },
-  {
     "category": "html-parsers",
     "categoryURL": "https://mvnrepository.com/open-source/html-parsers",
     "artifactId": "jsoup",
@@ -871,10 +819,6 @@
     "selectedTag": "20210307"
   },
   {
-    "scmURL": "https://github.com/google/guava.git",
-    "selectedTag": "v30.1.1"
-  },
-  {
     "scmURL": "https://github.com/qos-ch/slf4j.git",
     "selectedTag": "v_1.7.9"
   },
@@ -903,14 +847,6 @@
     "selectedTag": "QUERYDSL_5_0_0"
   },
   {
-    "scmURL": "https://github.com/javaparser/javaparser.git",
-    "selectedTag": "javaparser-parent-3.23.0"
-  },
-  {
-    "scmURL": "https://github.com/spotify/docker-client.git",
-    "selectedTag": "v8.16.0"
-  },
-   {
     "scmURL": "https://github.com/rest-assured/rest-assured.git",
     "selectedTag": "rest-assured-4.4.0"
   }, 
@@ -947,19 +883,67 @@
     "selectedTag": "1.2.6"
   },
   {
-    "scmURL": "https://github.com/hazelcast/hazelcast.git",
-    "selectedTag": "v5.0"
-  },
-  {
-    "scmURL": "https://github.com/pac4j/pac4j.git",
-    "selectedTag": "pac4j-4.5.2"
+    "scmURL": "https://github.com/thymeleaf/thymeleaf.git",
+    "selectedTag": "thymeleaf-3.0.12.RELEASE"
   },
   {
     "scmURL": "https://github.com/thymeleaf/thymeleaf.git",
     "selectedTag": "thymeleaf-3.0.12.RELEASE"
-  }, 
+  },
   {
     "scmURL": "https://github.com/spring-projects/spring-data-elasticsearch.git",
     "selectedTag": "4.2.5"
+  },
+  {
+    "scmURL": "https://github.com/code4craft/webmagic.git",
+    "selectedTag": "WebMagic-0.7.5"
+  },
+  {
+    "scmURL": "https://github.com/jfinal/jfinal.git",
+    "selectedTag": "jfinal-4.9.15"
+  },
+  {
+    "scmURL": "https://github.com/alipay/alipay-sdk-java-all.git",
+    "selectedTag": "master"
+  },
+  {
+    "scmURL": "https://github.com/hygieia/hygieia-core.git",
+    "selectedTag": "v3.6.9"
+  },
+  {
+    "scmURL": "https://github.com/geekidea/spring-boot-plus.git",
+    "selectedTag": "V1.3.1-RELEASE"
+  },
+  {
+    "scmURL": "https://github.com/caelum/vraptor4.git",
+    "selectedTag": "vraptor-parent-4.2.2"
+  },
+  {
+    "scmURL": "https://github.com/eirslett/frontend-maven-plugin.git",
+    "selectedTag": "frontend-plugins-1.12.0"
+  },
+  {
+    "scmURL": "https://github.com/aaberg/sql2o.git",
+    "selectedTag": "sql2o-parent-1.6.0"
+  },
+  {
+    "scmURL": "https://github.com/Baidu-AIP/java-sdk.git",
+    "selectedTag": "master"
+  },
+  {
+    "scmURL": "https://github.com/qcloudsms/qcloudsms_java.git",
+    "selectedTag": "v1.0.6"
+  },
+  {
+    "scmURL": "https://github.com/code4craft/xsoup.git",
+    "selectedTag": "xsoup-0.3.2"
+  },
+  {
+    "scmURL": "https://github.com/socketio/socket.io-client-java.git",
+    "selectedTag": "socket.io-client-2.0.1"
+  },
+  {
+    "scmURL": "https://github.com/lukas-krecan/JsonUnit.git",
+    "selectedTag": "json-unit-parent-2.28.0"
   }
 ]

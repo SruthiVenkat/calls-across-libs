@@ -111,48 +111,6 @@
         "javaVersion": 8
     },
     {
-        "execDir": "guava/guava-tests",
-        "rootDir": "",
-        "generatedJarName": "guava-tests-30.1.1-jre",
-        "build": "maven",
-        "javaVersion": 11
-    },
-    {
-        "execDir": "guava/guava",
-        "rootDir": "",
-        "generatedJarName": "guava-30.1.1-jre",
-        "build": "maven",
-        "javaVersion": 11
-    },
-    {
-        "execDir": "guava/guava-testlib",
-        "rootDir": "",
-        "generatedJarName": "guava-testlib-30.1.1-jre",
-        "build": "maven",
-        "javaVersion": 11
-    },
-    {
-        "execDir": "guava/guava-gwt",
-        "rootDir": "",
-        "generatedJarName": "guava-gwt-30.1.1-jre",
-        "build": "maven",
-        "javaVersion": 11
-    },
-    {
-        "execDir": "javaparser/javaparser-symbol-solver-core",
-        "rootDir": "",
-        "generatedJarName": "javaparser-symbol-solver-core-3.23.0",
-        "build": "maven",
-        "javaVersion": 11
-    },
-    {
-        "execDir": "javaparser/javaparser-core-testing",
-        "rootDir": "",
-        "generatedJarName": "javaparser-core-testing-3.23.0",
-        "build": "maven",
-        "javaVersion": 11
-    },
-    {
         "execDir": "gson",
         "rootDir": "",
         "generatedJarName": "gson-parent-2.8.8",
@@ -251,9 +209,37 @@
         "javaVersion": 8
     },
     {
+        "execDir": "xsoup",
+        "rootDir": "",
+        "generatedJarName": "xsoup-0.3.2",
+        "build": "maven",
+        "javaVersion": 8
+    },
+    {
+        "execDir": "socket.io-client-java",
+        "rootDir": "",
+        "generatedJarName": "socket.io-client-2.0.1",
+        "build": "maven",
+        "javaVersion": 8
+    },
+    {
+        "execDir": "JsonUnit/json-unit-core",
+        "rootDir": "",
+        "generatedJarName": "json-unit-core-2.28.0",
+        "build": "maven",
+        "javaVersion": 8
+    },
+    {
         "execDir": "tablesaw/html",
         "rootDir": "tablesaw",
         "generatedJarName": "tablesaw-html-0.38.5",
+        "build": "maven",
+        "javaVersion": 11
+    },
+    {
+        "execDir": "tablesaw/core",
+        "rootDir": "tablesaw",
+        "generatedJarName": "tablesaw-core-0.38.5",
         "build": "maven",
         "javaVersion": 11
     },
@@ -274,14 +260,84 @@
     {
         "execDir": "druid",
         "rootDir": "",
-        "generatedJarName": "druid-1.2.5",
+        "generatedJarName": "druid-1.2.6",
         "build": "maven",
         "javaVersion": 8
     },
     {
-        "execDir": "pac4j/pac4j-sql",
-        "rootDir": "pac4j",
-        "generatedJarName": "pac4j-sql-4.5.2",
+        "execDir": "druid/druid-admin",
+        "rootDir": "",
+        "generatedJarName": "druid-admin-1.2.6",
+        "build": "maven",
+        "javaVersion": 8
+    },
+    {
+        "execDir": "webmagic/webmagic-core",
+        "rootDir": "webmagic",
+        "generatedJarName": "webmagic-core-0.7.5",
+        "build": "maven",
+        "javaVersion": 8
+    },
+    {
+        "execDir": "webmagic/webmagic-extension",
+        "rootDir": "",
+        "generatedJarName": "webmagic-extension-0.7.5",
+        "build": "maven",
+        "javaVersion": 8
+    },
+    {
+        "execDir": "jfinal",
+        "rootDir": "",
+        "generatedJarName": "jfinal-4.9.15",
+        "build": "maven",
+        "javaVersion": 8
+    },
+    {
+        "execDir": "alipay-sdk-java-all",
+        "rootDir": "",
+        "generatedJarName": "alipay-sdk-java-4.16.57.ALL",
+        "build": "maven",
+        "javaVersion": 8
+    },
+    {
+        "execDir": "hygieia-core",
+        "rootDir": "",
+        "generatedJarName": "core-3.6.9",
+        "build": "maven",
+        "javaVersion": 8
+    },
+    {
+        "execDir": "spring-boot-plus",
+        "rootDir": "",
+        "generatedJarName": "spring-boot-plus",
+        "build": "maven",
+        "javaVersion": 8
+    },
+    {
+        "execDir": "vraptor4/vraptor-core",
+        "rootDir": "",
+        "generatedJarName": "vraptor-4.2.2",
+        "build": "maven",
+        "javaVersion": 8
+    },
+    {
+        "execDir": "frontend-maven-plugin/frontend-maven-plugin",
+        "rootDir": "frontend-maven-plugin",
+        "generatedJarName": "frontend-maven-plugin-1.12.0",
+        "build": "maven",
+        "javaVersion": 8
+    },
+    {
+        "execDir": "frontend-maven-plugin/frontend-plugin-core",
+        "rootDir": "",
+        "generatedJarName": "frontend-plugin-core-1.12.0",
+        "build": "maven",
+        "javaVersion": 8
+    },
+    {
+        "execDir": "sql2o/core",
+        "rootDir": "",
+        "generatedJarName": "sql2o-1.6.0",
         "build": "maven",
         "javaVersion": 8
     },
@@ -312,40 +368,5 @@
         "generatedJarName": "jackson-core-2.12.3",
         "build": "maven",
         "javaVersion": 11
-    },
-    {
-        "execDir": "docker-client",
-        "rootDir": "",
-        "generatedJarName": "docker-client-8.16.0",
-        "build": "maven",
-        "javaVersion": 8
-    },
-    {
-        "execDir": "hazelcast",
-        "rootDir": "",
-        "generatedJarName": "hazelcast-5.0",
-        "build": "maven",
-        "javaVersion": 8
-    },
-    {
-        "execDir": "hazelcast/hazelcast-sql",
-        "rootDir": "",
-        "generatedJarName": "hazelcast-sql-5.0",
-        "build": "maven",
-        "javaVersion": 8
-    },
-    {
-        "execDir": "h2database/h2",
-        "rootDir": "",
-        "generatedJarName": "h2-1.4.201-SNAPSHOT",
-        "build": "maven",
-        "javaVersion": 8
-    },
-    {
-        "execDir": "pac4j/pac4j-config",
-        "rootDir": "",
-        "generatedJarName": "pac4j-config-4.5.2",
-        "build": "maven",
-        "javaVersion": 8
     }
 ]

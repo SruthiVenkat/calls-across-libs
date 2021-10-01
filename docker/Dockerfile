@@ -33,6 +33,6 @@ RUN mkdir /root/.m2 && mkdir /root/.m2/repository && echo \
 RUN git clone https://github.com/SruthiVenkat/calls-across-libs.git && cd calls-across-libs && mvn clean install && cd libs-info-project-runner && sh getrepos.sh
 
 # tweaks for some benchmarks
-RUN cd /calls-across-libs/libs-info-project-runner && sh tweak.sh
+RUN cd /calls-across-libs/libs-info-project-runner && sh tweak.sh && apt-get install -y npm
 
 CMD cd /calls-across-libs/libs-info-project-runner && mvn compile && mvn exec:java -Dexec.mainClass=runner.DependentTestRunner > output.txt
