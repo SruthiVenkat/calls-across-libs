@@ -1,7 +1,7 @@
 [
     {
         "execDir": "fastjson",
-        "rootDir": "",
+        "rootDir": null,
         "generatedJarName": "fastjson-1.2.76",
         "build": "maven",
         "javaVersion": 8
@@ -9,13 +9,13 @@
     {
         "execDir": "commons-collections",
         "generatedJarName": "commons-collections4-4.4",
-        "rootDir": "",
+        "rootDir": null,
         "build": "maven",
         "javaVersion": 11
     },
     {
         "execDir": "commons-io",
-        "rootDir": "",
+        "rootDir": null,
         "generatedJarName": "commons-io-2.8.0",
         "build": "maven",
         "javaVersion": 11
@@ -28,21 +28,21 @@
     },
     {
         "execDir": "gson",
-        "rootDir": "",
+        "rootDir": null,
         "generatedJarName": "gson-parent-2.8.8",
         "build": "maven",
         "javaVersion": 11
     },
     {
         "execDir": "JSON-java",
-        "rootDir": "",
+        "rootDir": null,
         "generatedJarName": "json-20210307",
         "build": "maven",
         "javaVersion": 11
     },
     {
         "execDir": "jsoup",
-        "rootDir": "",
+        "rootDir": null,
         "generatedJarName": "jsoup-1.13.1",
         "build": "maven",
         "javaVersion": 11
@@ -56,28 +56,28 @@
     },
     {
         "execDir": "jackson-databind",
-        "rootDir": "",
+        "rootDir": null,
         "generatedJarName": "jackson-databind-2.12.3",
         "build": "maven",
         "javaVersion": 11
     },
     {
         "execDir": "jackson-core",
-        "rootDir": "",
+        "rootDir": null,
         "generatedJarName": "jackson-core-2.12.3",
         "build": "maven",
         "javaVersion": 11
     },
     {
         "execDir": "rocketmq/remoting",
-        "rootDir": "",
+        "rootDir": null,
         "generatedJarName": "rocketmq-remoting-4.9.2-SNAPSHOT",
         "build": "maven",
         "javaVersion": 11
     },
     {
         "execDir": "rocketmq/tools",
-        "rootDir": "",
+        "rootDir": null,
         "generatedJarName": "rocketmq-tools-4.9.2-SNAPSHOT",
         "build": "maven",
         "javaVersion": 11
@@ -86,34 +86,34 @@
         "execDir": "rocketmq/broker",
         "generatedJarName": "rocketmq-broker-4.9.2-SNAPSHOT",
         "build": "maven",
-        "rootDir": "",
+        "rootDir": null,
         "javaVersion": 11
     },
     {
         "execDir": "rocketmq/common",
         "generatedJarName": "rocketmq-common-4.9.2-SNAPSHOT",
         "build": "maven",
-        "rootDir": "",
+        "rootDir": null,
         "javaVersion": 11
     },
     {
         "execDir": "rocketmq/acl",
         "generatedJarName": "rocketmq-acl-4.9.2-SNAPSHOT",
         "build": "maven",
-        "rootDir": "",
+        "rootDir": null,
         "javaVersion": 11
     },
     {
         "execDir": "rocketmq/client",
         "generatedJarName": "rocketmq-client-4.9.2-SNAPSHOT",
         "build": "maven",
-        "rootDir": "",
+        "rootDir": null,
         "javaVersion": 11
     },
     {
         "execDir": "easyexcel",
         "generatedJarName": "easyexcel-2.2.11",
-        "rootDir": "",
+        "rootDir": null,
         "build": "maven",
         "javaVersion": 8
     },
@@ -126,21 +126,21 @@
     },
     {
         "execDir": "esapi-java-legacy",
-        "rootDir": "",
+        "rootDir": null,
         "generatedJarName": "esapi-2.2.3.1",
         "build": "maven",
         "javaVersion": 11
     },
     {
         "execDir": "checkstyle",
-        "rootDir": "",
+        "rootDir": null,
         "generatedJarName": "checkstyle-9.0",
         "build": "maven",
         "javaVersion": 11
     },
     {
         "execDir": "querydsl/querydsl-sql",
-        "rootDir": "",
+        "rootDir": null,
         "generatedJarName": "querydsl-sql-5.0.0",
         "build": "maven",
         "javaVersion": 11
@@ -154,21 +154,21 @@
     },
     {
         "execDir": "rest-assured/rest-assured-all",
-        "rootDir": "",
+        "rootDir": null,
         "generatedJarName": "rest-assured-all-4.4.0",
         "build": "maven",
         "javaVersion": 11
     },
     {
         "execDir": "rest-assured/rest-assured-common",
-        "rootDir": "",
+        "rootDir": null,
         "generatedJarName": "rest-assured-all-4.4.0",
         "build": "maven",
         "javaVersion": 11
     },
     {
         "execDir": "rest-assured/json-path",
-        "rootDir": "",
+        "rootDir": null,
         "generatedJarName": "json-path-4.4.0",
         "build": "maven",
         "javaVersion": 11
@@ -182,7 +182,7 @@
     },
     {
         "execDir": "Jest/jest-common",
-        "rootDir": "",
+        "rootDir": null,
         "generatedJarName": "jest-common-6.3.1",
         "build": "maven",
         "javaVersion": 8
@@ -196,49 +196,49 @@
     },
     {
         "execDir": "DSpace/dspace-server-webapp",
-        "rootDir": "",
+        "rootDir": null,
         "generatedJarName": "dspace-server-webapp-7.0",
         "build": "maven",
         "javaVersion": 11
     },
     {
         "execDir": "emoji-java",
-        "rootDir": "",
+        "rootDir": null,
         "generatedJarName": "emoji-java-5.1.1",
         "build": "maven",
         "javaVersion": 8
     },
     {
         "execDir": "JsoupXpath",
-        "rootDir": "",
+        "rootDir": null,
         "generatedJarName": "JsoupXpath-2.5.0",
         "build": "maven",
         "javaVersion": 11
     },
     {
         "execDir": "ez-vcard",
-        "rootDir": "",
+        "rootDir": null,
         "generatedJarName": "ez-vcard-0.11.3",
         "build": "maven",
         "javaVersion": 8
     },
     {
         "execDir": "xsoup",
-        "rootDir": "",
+        "rootDir": null,
         "generatedJarName": "xsoup-0.3.2",
         "build": "maven",
         "javaVersion": 8
     },
     {
         "execDir": "socket.io-client-java",
-        "rootDir": "",
+        "rootDir": null,
         "generatedJarName": "socket.io-client-2.0.1",
         "build": "maven",
         "javaVersion": 8
     },
     {
         "execDir": "JsonUnit/json-unit-core",
-        "rootDir": "",
+        "rootDir": null,
         "generatedJarName": "json-unit-core-2.28.0",
         "build": "maven",
         "javaVersion": 8
@@ -266,14 +266,14 @@
     },
     {
         "execDir": "druid",
-        "rootDir": "",
+        "rootDir": null,
         "generatedJarName": "druid-1.2.6",
         "build": "maven",
         "javaVersion": 8
     },
     {
         "execDir": "druid/druid-admin",
-        "rootDir": "",
+        "rootDir": null,
         "generatedJarName": "druid-admin-1.2.6",
         "build": "maven",
         "javaVersion": 8
@@ -287,42 +287,42 @@
     },
     {
         "execDir": "webmagic/webmagic-extension",
-        "rootDir": "",
+        "rootDir": null,
         "generatedJarName": "webmagic-extension-0.7.5",
         "build": "maven",
         "javaVersion": 8
     },
     {
         "execDir": "jfinal",
-        "rootDir": "",
+        "rootDir": null,
         "generatedJarName": "jfinal-4.9.15",
         "build": "maven",
         "javaVersion": 8
     },
     {
         "execDir": "alipay-sdk-java-all",
-        "rootDir": "",
+        "rootDir": null,
         "generatedJarName": "alipay-sdk-java-4.16.57.ALL",
         "build": "maven",
         "javaVersion": 8
     },
     {
         "execDir": "hygieia-core",
-        "rootDir": "",
+        "rootDir": null,
         "generatedJarName": "core-3.6.9-SNAPSHOT",
         "build": "maven",
         "javaVersion": 8
     },
     {
         "execDir": "spring-boot-plus",
-        "rootDir": "",
+        "rootDir": null,
         "generatedJarName": "spring-boot-plus",
         "build": "maven",
         "javaVersion": 8
     },
     {
         "execDir": "vraptor4/vraptor-core",
-        "rootDir": "",
+        "rootDir": null,
         "generatedJarName": "vraptor-4.2.2",
         "build": "maven",
         "javaVersion": 8
@@ -336,28 +336,28 @@
     },
     {
         "execDir": "frontend-maven-plugin/frontend-plugin-core",
-        "rootDir": "",
+        "rootDir": null,
         "generatedJarName": "frontend-plugin-core-1.12.0",
         "build": "maven",
         "javaVersion": 8
     },
     {
         "execDir": "sql2o/core",
-        "rootDir": "",
+        "rootDir": null,
         "generatedJarName": "sql2o-1.6.0",
         "build": "maven",
         "javaVersion": 8
     },
     {
         "execDir": "thymeleaf",
-        "rootDir": "",
+        "rootDir": null,
         "generatedJarName": "thymeleaf-3.0.12.RELEASE",
         "build": "maven",
         "javaVersion": 11
     },
     {
         "execDir": "spring-data-elasticsearch",
-        "rootDir": "",
+        "rootDir": null,
         "generatedJarName": "spring-data-elasticsearch-4.2.5",
         "build": "maven",
         "javaVersion": 11
