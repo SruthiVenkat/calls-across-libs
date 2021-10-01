@@ -7,6 +7,68 @@
         "javaVersion": 8
     },
     {
+        "execDir": "commons-collections",
+        "generatedJarName": "commons-collections4-4.4",
+        "rootDir": "",
+        "build": "maven",
+        "javaVersion": 11
+    },
+    {
+        "execDir": "commons-io",
+        "rootDir": "",
+        "generatedJarName": "commons-io-2.8.0",
+        "build": "maven",
+        "javaVersion": 11
+    },
+    {
+        "execDir": "joda-time",
+        "generatedJarName": "joda-time-2.10.10",
+        "build": "maven",
+        "javaVersion": 8
+    },
+    {
+        "execDir": "gson",
+        "rootDir": "",
+        "generatedJarName": "gson-parent-2.8.8",
+        "build": "maven",
+        "javaVersion": 11
+    },
+    {
+        "execDir": "JSON-java",
+        "rootDir": "",
+        "generatedJarName": "json-20210307",
+        "build": "maven",
+        "javaVersion": 11
+    },
+    {
+        "execDir": "jsoup",
+        "rootDir": "",
+        "generatedJarName": "jsoup-1.13.1",
+        "build": "maven",
+        "javaVersion": 11
+    },
+    {
+        "execDir": "slf4j/slf4j-api",
+        "rootDir": "slf4j",
+        "generatedJarName": "slf4j-api-1.7.9",
+        "build": "maven",
+        "javaVersion": 8
+    },
+    {
+        "execDir": "jackson-databind",
+        "rootDir": "",
+        "generatedJarName": "jackson-databind-2.12.3",
+        "build": "maven",
+        "javaVersion": 11
+    },
+    {
+        "execDir": "jackson-core",
+        "rootDir": "",
+        "generatedJarName": "jackson-core-2.12.3",
+        "build": "maven",
+        "javaVersion": 11
+    },
+    {
         "execDir": "rocketmq/remoting",
         "rootDir": "",
         "generatedJarName": "rocketmq-remoting-4.9.2-SNAPSHOT",
@@ -56,13 +118,6 @@
         "javaVersion": 8
     },
     {
-        "execDir": "commons-collections",
-        "generatedJarName": "commons-collections4-4.4",
-        "rootDir": "",
-        "build": "maven",
-        "javaVersion": 11
-    },
-    {
         "execDir": "flink/flink-core",
         "generatedJarName": "flink-core-1.14.0",
         "rootDir": "flink",
@@ -77,13 +132,6 @@
         "javaVersion": 11
     },
     {
-        "execDir": "commons-io",
-        "rootDir": "",
-        "generatedJarName": "commons-io-2.8.0",
-        "build": "maven",
-        "javaVersion": 11
-    },
-    {
         "execDir": "checkstyle",
         "rootDir": "",
         "generatedJarName": "checkstyle-9.0",
@@ -94,19 +142,6 @@
         "execDir": "querydsl/querydsl-sql",
         "rootDir": "",
         "generatedJarName": "querydsl-sql-5.0.0",
-        "build": "maven",
-        "javaVersion": 11
-    },
-    {
-        "execDir": "joda-time",
-        "generatedJarName": "joda-time-2.10.10",
-        "build": "maven",
-        "javaVersion": 8
-    },
-    {
-        "execDir": "gson",
-        "rootDir": "",
-        "generatedJarName": "gson-parent-2.8.8",
         "build": "maven",
         "javaVersion": 11
     },
@@ -153,13 +188,6 @@
         "javaVersion": 8
     },
     {
-        "execDir": "JSON-java",
-        "rootDir": "",
-        "generatedJarName": "json-20210307",
-        "build": "maven",
-        "javaVersion": 11
-    },
-    {
         "execDir": "DSpace/dspace-api",
         "rootDir": "DSpace",
         "generatedJarName": "dspace-api-7.0",
@@ -179,13 +207,6 @@
         "generatedJarName": "emoji-java-5.1.1",
         "build": "maven",
         "javaVersion": 8
-    },
-    {
-        "execDir": "jsoup",
-        "rootDir": "",
-        "generatedJarName": "jsoup-1.13.1",
-        "build": "maven",
-        "javaVersion": 11
     },
     {
         "execDir": "JsoupXpath",
@@ -235,13 +256,6 @@
         "generatedJarName": "tablesaw-core-0.38.5",
         "build": "maven",
         "javaVersion": 11
-    },
-    {
-        "execDir": "slf4j/slf4j-api",
-        "rootDir": "slf4j",
-        "generatedJarName": "slf4j-api-1.7.9",
-        "build": "maven",
-        "javaVersion": 8
     },
     {
         "execDir": "logback/logback-classic",
@@ -345,20 +359,6 @@
         "execDir": "spring-data-elasticsearch",
         "rootDir": "",
         "generatedJarName": "spring-data-elasticsearch-4.2.5",
-        "build": "maven",
-        "javaVersion": 11
-    },
-    {
-        "execDir": "jackson-databind",
-        "rootDir": "",
-        "generatedJarName": "jackson-databind-2.12.3",
-        "build": "maven",
-        "javaVersion": 11
-    },
-    {
-        "execDir": "jackson-core",
-        "rootDir": "",
-        "generatedJarName": "jackson-core-2.12.3",
         "build": "maven",
         "javaVersion": 11
     }
