@@ -91,13 +91,6 @@
         "javaVersion": 11
     },
     {
-        "execDir": "joda-time",
-        "rootDir": "",
-        "generatedJarName": "joda-time-2.10.10",
-        "build": "maven",
-        "javaVersion": 11
-    },
-    {
         "execDir": "querydsl/querydsl-sql",
         "rootDir": "",
         "generatedJarName": "querydsl-sql-5.0.0",
@@ -302,7 +295,7 @@
     {
         "execDir": "hygieia-core",
         "rootDir": "",
-        "generatedJarName": "core-3.6.9",
+        "generatedJarName": "core-3.6.9-SNAPSHOT",
         "build": "maven",
         "javaVersion": 8
     },

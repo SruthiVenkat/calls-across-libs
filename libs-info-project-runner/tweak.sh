@@ -19,5 +19,12 @@ echo "rocketmq-common" > ./common/artifact.txt
 echo "rocketmq-remoting" > ./remoting/artifact.txt
 echo "rocketmq-tools" > ./tools/artifact.txt
 
+#hygieia-core
+cd /calls-across-libs/libs-info-project-runner/projects/hygieia-core 
+echo "com.capitalone.dashboard" > ./tools/group.txt
+echo "3.6.9-SNAPSHOT" > ./acl/version.txt
+echo "rocketmq-acl" > ./acl/artifact.txt
+
 cd /calls-across-libs/libs-info-project-runner
+rm -rf /calls-across-libs/libs-info-project-runner/api-surface-data
 python3 tweak.py
