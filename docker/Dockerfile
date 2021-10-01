@@ -35,4 +35,11 @@ RUN git clone https://github.com/SruthiVenkat/calls-across-libs.git && cd calls-
 # tweaks for some benchmarks
 RUN cd /calls-across-libs/libs-info-project-runner && sh tweak.sh && apt-get install -y npm
 
+# tweak for fastjson benchmark which needs UTF-8 because it has Chinese characters
+RUN apt-get -y install locales && sed -i '/en_US.UTF-8/s/^# //g' /etc/locale.gen && \
+    locale-gen
+ENV LANG en_US.UTF-8  
+ENV LANGUAGE en_US:en  
+ENV LC_ALL en_US.UTF-8
+
 CMD cd /calls-across-libs/libs-info-project-runner && mvn compile && mvn exec:java -Dexec.mainClass=runner.DependentTestRunner > output.txt
