@@ -21,9 +21,9 @@ echo "rocketmq-tools" > ./tools/artifact.txt
 
 #hygieia-core
 cd /calls-across-libs/libs-info-project-runner/projects/hygieia-core 
-echo "com.capitalone.dashboard" > ./tools/group.txt
-echo "3.6.9-SNAPSHOT" > ./acl/version.txt
-echo "rocketmq-acl" > ./acl/artifact.txt
+echo "com.capitalone.dashboard" > ./hygieia-core/group.txt
+echo "3.6.9-SNAPSHOT" > ./hygieia-core/version.txt
+echo "rocketmq-acl" > ./hygieia-core/artifact.txt
 
 cd /calls-across-libs/libs-info-project-runner
 rm -rf /calls-across-libs/libs-info-project-runner/api-surface-data
