@@ -102,17 +102,6 @@ public class DependentTestRunner {
             	outputDir.mkdir();
 
             JAVA_OPTS =  "-javaagent:"+agentPath+" -Xbootclasspath/a:"+javassistJarPath+":"+agentPath;
-            
-            String libsInfoPath = prop.getProperty("libsInfoPath");
-            if (new File(libsInfoPath).exists()) {
-				String row;
-				BufferedReader reader = new BufferedReader(new FileReader(libsInfoPath));
-				while ((row = reader.readLine()) != null) {
-				    String[] data = row.split(",");
-				    addedLibs.add(data[0]);
-				}
-				reader.close();
-            }
         } catch (IOException ex) {
             ex.printStackTrace();
         }
@@ -221,6 +210,7 @@ public class DependentTestRunner {
 	            prop.setProperty("setAccessibleCallsPath", outputPath+File.separator+lib+File.separator+lib+"-setAccessibleCalls.csv");
 	            prop.setProperty("classesUsageInfoPath", outputPath+File.separator+lib+File.separator+lib+"-classesUsageInfo.csv");
 	            prop.setProperty("serviceBypassCallsPath", outputPath+File.separator+lib+File.separator+lib+"-serviceBypassCalls.csv");
+	            prop.setProperty("libsInfoPath", outputPath+File.separator+lib+File.separator+lib+"-libsInfo.csv");
 	            prop.setProperty("runningLibrary", lib);
 	            prop.store(new FileWriter(configPath, false), null);
 	            setJavaVersion((long) projectObject.get("javaVersion"));
@@ -232,6 +222,7 @@ public class DependentTestRunner {
 	            prop.setProperty("setAccessibleCallsPath", "");
 	            prop.setProperty("classesUsageInfoPath", "");
 	            prop.setProperty("serviceBypassCallsPath", "");
+	            prop.setProperty("libsInfoPath", "");
 	            prop.setProperty("runningLibrary", "");
 	            prop.store(new FileWriter(configPath, false), null);
             } catch (IOException ex) {
@@ -328,6 +319,7 @@ public class DependentTestRunner {
 	            prop.setProperty("setAccessibleCallsPath", outputPath+File.separator+lib+File.separator+lib+"-setAccessibleCalls.csv");
 	            prop.setProperty("classesUsageInfoPath", outputPath+File.separator+lib+File.separator+lib+"-classesUsageInfo.csv");
 	            prop.setProperty("serviceBypassCallsPath", outputPath+File.separator+lib+File.separator+lib+"-serviceBypassCalls.csv");
+	            prop.setProperty("libsInfoPath", outputPath+File.separator+lib+File.separator+lib+"-libsInfo.csv");
 	            prop.setProperty("runningLibrary", lib);
 	            prop.store(new FileWriter(configPath, false), null);
 	            setJavaVersion((long) projectObject.get("javaVersion"));
@@ -339,6 +331,7 @@ public class DependentTestRunner {
 	            prop.setProperty("setAccessibleCallsPath", "");
 	            prop.setProperty("classesUsageInfoPath", "");
 	            prop.setProperty("serviceBypassCallsPath", "");
+	            prop.setProperty("libsInfoPath", "");
 	            prop.setProperty("runningLibrary", "");
 	            prop.store(new FileWriter(configPath, false), null);
             } catch (IOException ex) {

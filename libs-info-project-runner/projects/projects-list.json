@@ -27,9 +27,9 @@
         "javaVersion": 8
     },
     {
-        "execDir": "gson",
+        "execDir": "gson/gson",
         "rootDir": null,
-        "generatedJarName": "gson-parent-2.8.8",
+        "generatedJarName": "gson-2.8.8",
         "build": "maven",
         "javaVersion": 11
     },
@@ -71,41 +71,41 @@
     {
         "execDir": "rocketmq/remoting",
         "rootDir": null,
-        "generatedJarName": "rocketmq-remoting-4.9.2-SNAPSHOT",
+        "generatedJarName": "rocketmq-remoting-4.9.1",
         "build": "maven",
         "javaVersion": 11
     },
     {
         "execDir": "rocketmq/tools",
         "rootDir": null,
-        "generatedJarName": "rocketmq-tools-4.9.2-SNAPSHOT",
+        "generatedJarName": "rocketmq-tools-4.9.1",
         "build": "maven",
         "javaVersion": 11
     },
     {
         "execDir": "rocketmq/broker",
-        "generatedJarName": "rocketmq-broker-4.9.2-SNAPSHOT",
+        "generatedJarName": "rocketmq-broker-4.9.1",
         "build": "maven",
         "rootDir": null,
         "javaVersion": 11
     },
     {
         "execDir": "rocketmq/common",
-        "generatedJarName": "rocketmq-common-4.9.2-SNAPSHOT",
+        "generatedJarName": "rocketmq-common-4.9.1",
         "build": "maven",
         "rootDir": null,
         "javaVersion": 11
     },
     {
         "execDir": "rocketmq/acl",
-        "generatedJarName": "rocketmq-acl-4.9.2-SNAPSHOT",
+        "generatedJarName": "rocketmq-acl-4.9.1",
         "build": "maven",
         "rootDir": null,
         "javaVersion": 11
     },
     {
         "execDir": "rocketmq/client",
-        "generatedJarName": "rocketmq-client-4.9.2-SNAPSHOT",
+        "generatedJarName": "rocketmq-client-4.9.1",
         "build": "maven",
         "rootDir": null,
         "javaVersion": 11

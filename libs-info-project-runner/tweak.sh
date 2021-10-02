@@ -28,3 +28,6 @@ echo "core" > ./artifact.txt
 cd /calls-across-libs/libs-info-project-runner
 rm -rf /calls-across-libs/libs-info-project-runner/api-surface-data
 python3 tweak.py
+
+#checkstyle
+cd /calls-across-libs/libs-info-project-runner/projects/checkstyle && mvn tidy:pom

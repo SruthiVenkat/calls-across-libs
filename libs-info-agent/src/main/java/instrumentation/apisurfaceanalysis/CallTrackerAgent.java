@@ -120,6 +120,7 @@ public class CallTrackerAgent {
 				} catch (IOException ex) {
 				    ex.printStackTrace();
 				}
+	      		System.gc();
 			}
         }); 
     }

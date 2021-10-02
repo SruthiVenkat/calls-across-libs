@@ -45,12 +45,12 @@ public class JarUtility {
 	
 	public static void initLibsToCountsAndClasses(String build, JSONArray projects) {
 		libsToCountsAndClasses.clear();
-		populateAddedLibs();
 		populateAddedServices();
 
 		Iterator<JSONObject> iterator = projects.iterator();
         while (iterator.hasNext()) {
         	JSONObject projectObject = (JSONObject)iterator.next();
+        	populateAddedLibs((String) projectObject.get("libName"));
         	DependentTestRunner.setJavaVersion((long) projectObject.get("javaVersion"));
         	if (!addedLibs.contains(projectObject.get("libName")) && projectObject.get("build").equals(build)) {
         		String pathToJar="", pathToRootPrj = "";
@@ -77,11 +77,13 @@ public class JarUtility {
         addToServicesInfo();
 	}
 	
-	public static void populateAddedLibs() {
+	public static void populateAddedLibs(String lib) {
+		addedLibs.clear();
 		try (FileReader input = new FileReader(configPath)) {
             Properties prop = new Properties();
             prop.load(input);
-            libsInfoPath = prop.getProperty("libsInfoPath");
+            libsInfoPath = prop.getProperty("outputPath")+File.separator
+            		+lib+File.separator+lib+"-libsInfo.csv";
             if (new File(libsInfoPath).exists()) {
             	String row;
     			BufferedReader reader = new BufferedReader(new FileReader(libsInfoPath));
