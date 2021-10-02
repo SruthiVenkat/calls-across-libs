@@ -72,8 +72,8 @@ public class JarUtility {
             	libVals.set(1, 0);
             	libVals.set(2, ((String)libVals.get(2)).concat((String)countsAndClasses.get(1)));
         	}
+        	addToLibsInfo((String) projectObject.get("libName"));
         }
-        addToLibsInfo();
         addToServicesInfo();
 	}
 	
@@ -120,7 +120,7 @@ public class JarUtility {
         }
 	}
 	
-	public static void addToLibsInfo() {
+	public static void addToLibsInfo(String library) {
 		try (FileReader input = new FileReader(configPath)) {
 			File file = new File(libsInfoPath);
 			if (!file.exists()) file.createNewFile();
@@ -134,6 +134,7 @@ public class JarUtility {
 		    }
 			writer.flush();
 			writer.close();
+			libsToCountsAndClasses.clear();
 		} catch (IOException ex) {
 		    ex.printStackTrace();
 		}
