@@ -82,6 +82,7 @@ public class JarUtility {
 		try (FileReader input = new FileReader(configPath)) {
             Properties prop = new Properties();
             prop.load(input);
+            new File(prop.getProperty("outputPath")+File.separator+lib).mkdir();
             libsInfoPath = prop.getProperty("outputPath")+File.separator
             		+lib+File.separator+lib+"-libsInfo.csv";
             if (new File(libsInfoPath).exists()) {
