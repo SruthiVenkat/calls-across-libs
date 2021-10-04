@@ -115,7 +115,8 @@ public class DependentTestRunner {
 		request.setGoals(Arrays.asList("help:evaluate"));
 		request.setJavaHome(new File(javaHomes.get(javaVersion)));
 		
-		System.setProperty("maven.home", "/usr/share/maven");
+		//System.setProperty("maven.home", "/usr/share/maven");
+		System.setProperty("maven.home", "/opt/homebrew/Cellar/maven/3.8.2/libexec");
 		Invoker invoker = new DefaultInvoker();
 		try {
 			request.setMavenOpts("-Dexpression=project.groupId -Doutput=group.txt");
@@ -235,9 +236,10 @@ public class DependentTestRunner {
 		InvocationRequest request = new DefaultInvocationRequest();
 		request.setPomFile(pomFile);
 		request.setGoals(Arrays.asList("clean", "install"));
-		request.setMavenOpts("-Dlicense.skip=true -DskipTests=true -Dcheckstyle.skip=true -Dgpg.skip=true");
+		request.setMavenOpts("-Dlicense.skip=true -DskipTests=true -Dcheckstyle.skip=true -Dgpg.skip=true -Drat.skip=true");
 		request.setJavaHome(new File(javaHomes.get(javaVersion)));
-		System.setProperty("maven.home", "/usr/share/maven");
+		//System.setProperty("maven.home", "/usr/share/maven");
+		System.setProperty("maven.home", "/opt/homebrew/Cellar/maven/3.8.2/libexec");
 		Invoker invoker = new DefaultInvoker();
 		try {
 			invoker.execute( request );
@@ -250,6 +252,7 @@ public class DependentTestRunner {
 		InvocationRequest request = new DefaultInvocationRequest();
 		request.setPomFile(pomFile);
 		request.setGoals(Arrays.asList("test")); 
+		request.setMavenOpts("-Drat.skip=true -Dmaven.test.skip=false");
 		request.setJavaHome(new File(javaHomes.get(javaVersion)));
 		
 		// parse pom and get existing argLine param
@@ -272,6 +275,7 @@ public class DependentTestRunner {
 					}
 				}
 			}
+			if (argLine.contains("${argLine}")) argLine = argLine.replace("${argLine}", "");
 		} catch (Exception e) {
 		    e.printStackTrace();
 		}
@@ -279,7 +283,8 @@ public class DependentTestRunner {
 		Properties properties = new Properties();
 		properties.setProperty("argLine", argLine+JAVA_OPTS);
 		request.setProperties(properties);
-		System.setProperty("maven.home", "/usr/share/maven");
+		//System.setProperty("maven.home", "/usr/share/maven");
+		System.setProperty("maven.home", "/opt/homebrew/Cellar/maven/3.8.2/libexec");
 		Invoker invoker = new DefaultInvoker();
 		try {
 			invoker.execute( request );

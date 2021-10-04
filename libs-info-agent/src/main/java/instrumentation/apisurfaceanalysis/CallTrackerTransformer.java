@@ -68,14 +68,17 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 		while (!configPath.endsWith("calls-across-libs"))
 			configPath = configPath.getParent();
 		String configPathName = configPath.toString()+"/src/main/resources/config.properties";
+		System.out.println("config path--"+configPathName);
 		try (FileReader input = new FileReader(configPathName)) {
 			Properties prop = new Properties();
 			prop.load(input); 
-			String libsInfoPath = prop.getProperty("libsInfoPath");
+			String libsInfoPath = prop.getProperty("libsInfoPath");System.out.println("libs path--"+libsInfoPath);
 			runningLibrary = prop.getProperty("runningLibrary");
 			String row;
 			BufferedReader reader = new BufferedReader(new FileReader(libsInfoPath));
+			System.out.println("????????");
 			while ((row = reader.readLine()) != null) {
+				System.out.println("----row---"+row);
 			    String[] data = row.split(",");
 			    if (data.length == 4) {
 			    	TrieUtil t = new TrieUtil();

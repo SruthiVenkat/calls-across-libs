@@ -1,0 +1,5 @@
+SubClass,Sub Library,Super Class/Interface,Super Class/Interface Visibility,Super Library,Count
+org.owasp.esapi.filters.ClickjackFilter,org.owasp.esapi:esapi:2.2.3.1,javax.servlet.Filter,public,javax.servlet,1
+org.owasp.esapi.waf.internal.InterceptingHTTPServletRequest$RAFInputStream,org.owasp.esapi:esapi:2.2.3.1,javax.servlet.ServletInputStream,public,javax.servlet,1
+org.owasp.esapi.waf.ESAPIWebApplicationFirewallFilter,org.owasp.esapi:esapi:2.2.3.1,javax.servlet.Filter,public,javax.servlet,1
+org.owasp.esapi.waf.internal.InterceptingServletOutputStream,org.owasp.esapi:esapi:2.2.3.1,javax.servlet.ServletOutputStream,public,javax.servlet,1

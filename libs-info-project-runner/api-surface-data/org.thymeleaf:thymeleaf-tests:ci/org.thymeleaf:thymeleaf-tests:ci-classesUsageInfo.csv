@@ -1,0 +1,735 @@
+Class Name,Class Visibility,Class Library,Usage,Used In Library
+java.lang.annotation.Annotation,public,unknownLib,Class.forName,ognl:ognl:3.1.26
+org.unbescape.javascript.JavaScriptEscape,public,org.unbescape:unbescape:1.1.6.RELEASE,method call,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+org.springframework.core.io.ResourceLoader,public,org.springframework:spring-core:5.1.0.RELEASE,cast,org.springframework:spring-beans:5.1.0.RELEASE
+org.thymeleaf.messageresolver.AbstractMessageResolver,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,subtyping,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.thymeleaf.processor.IProcessor,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,cast,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.springframework.util.ClassUtils,public,org.springframework:spring-core:5.1.0.RELEASE,method call,org.springframework:spring-expression:5.1.0.RELEASE
+org.attoparser.trace.MarkupTraceEvent$AutoOpenElementStartTraceEvent,public,org.attoparser:attoparser:2.0.5.RELEASE,cast,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.thymeleaf.templateparser.markup.decoupled.DecoupledTemplateLogicBuilderMarkupHandler,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,org.attoparser:attoparser:2.0.5.RELEASE
+com.fasterxml.jackson.annotation.JsonIgnoreType,public,com.fasterxml.jackson.core:jackson-annotations:2.11.3,cast,com.fasterxml.jackson.core:jackson-databind:2.11.3
+org.springframework.expression.BeanResolver,public,org.springframework:spring-expression:5.1.0.RELEASE,subtyping,org.springframework:spring-context:5.1.0.RELEASE
+org.thymeleaf.standard.StandardDialect,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,instantiation,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.xml.sax.SAXParseException,public,xml-apis:xml-apis:1.4.01,cast,org.springframework:spring-beans:5.1.0.RELEASE
+org.unbescape.json.JsonEscape,private,org.unbescape:unbescape:1.1.6.RELEASE,method call,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+org.attoparser.trace.MarkupTraceEvent$StandaloneElementEndTraceEvent,public,org.attoparser:attoparser:2.0.5.RELEASE,method call,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.springframework.web.context.support.StaticWebApplicationContext,public,org.springframework:spring-web:5.1.0.RELEASE,method call,org.springframework:spring-webmvc:5.1.0.RELEASE
+org.springframework.web.util.UriTemplate,public,org.springframework:spring-web:5.1.0.RELEASE,instantiation,org.springframework:spring-webmvc:5.1.0.RELEASE
+org.springframework.web.context.support.XmlWebApplicationContext,public,org.springframework:spring-web:5.1.0.RELEASE,method call,org.springframework:spring-core:5.1.0.RELEASE
+org.thymeleaf.expression.ExpressionObjects,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,instantiation,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.thymeleaf.cache.StandardCacheManager,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.thymeleaf.expression.Strings,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,org.springframework:spring-expression:5.1.0.RELEASE
+org.attoparser.select.IMarkupSelectorReferenceResolver,public,org.attoparser:attoparser:2.0.5.RELEASE,subtyping,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+com.fasterxml.jackson.core.io.SegmentedStringWriter,public,com.fasterxml.jackson.core:jackson-core:2.11.3,instantiation,com.fasterxml.jackson.core:jackson-databind:2.11.3
+org.attoparser.trace.MarkupTraceEvent$CloseElementStartTraceEvent,public,org.attoparser:attoparser:2.0.5.RELEASE,cast,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+com.fasterxml.jackson.core.json.JsonWriteFeature,public,com.fasterxml.jackson.core:jackson-core:2.11.3,cast,com.fasterxml.jackson.core:jackson-databind:2.11.3
+org.thymeleaf.spring5.processor.SpringOptionFieldTagProcessor,public,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+org.springframework.context.ApplicationContextAware,public,org.springframework:spring-context:5.1.0.RELEASE,subtyping,org.springframework:spring-webflux:5.1.0.RELEASE
+org.unbescape.xml.XmlEscape,public,org.unbescape:unbescape:1.1.6.RELEASE,method call,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+org.thymeleaf.context.IContext,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,cast,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.springframework.core.ResolvableTypeProvider,public,org.springframework:spring-core:5.1.0.RELEASE,subtyping,org.springframework:spring-context:5.1.0.RELEASE
+org.attoparser.trace.MarkupTraceEvent$AttributeTraceEvent,public,org.attoparser:attoparser:2.0.5.RELEASE,cast,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.thymeleaf.testing.templateengine.context.web.WebProcessingContextBuilder$GetVariableNamesAnswer,private,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT,method call,org.mockito:mockito-core:1.9.5
+org.springframework.asm.Label,public,org.springframework:spring-core:5.1.0.RELEASE,instantiation,org.springframework:spring-expression:5.1.0.RELEASE
+org.thymeleaf.templateengine.conversion.conversion7.Conversion7Bean,public,unknownLib,Class.forName,ognl:ognl:3.1.26
+org.springframework.asm.Opcodes,public,org.springframework:spring-core:5.1.0.RELEASE,subtyping,org.springframework:spring-expression:5.1.0.RELEASE
+org.thymeleaf.templateengine.dataprefix.stsm.model.Feature,public,unknownLib,Class.forName,ognl:ognl:3.1.26
+org.springframework.validation.ObjectError,public,org.springframework:spring-context:5.1.0.RELEASE,instantiation,org.springframework:spring-web:5.1.0.RELEASE
+org.springframework.beans.factory.Aware,public,org.springframework:spring-beans:5.1.0.RELEASE,subtyping,org.springframework:spring-context:5.1.0.RELEASE
+org.attoparser.trace.MarkupTraceEvent$NonMinimizedStandaloneElementEndTraceEvent,public,org.attoparser:attoparser:2.0.5.RELEASE,method call,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+java.text.SimpleDateFormat,public,unknownLib,Class.forName,ognl:ognl:3.1.26
+org.springframework.beans.SimpleTypeConverter,public,org.springframework:spring-beans:5.1.0.RELEASE,instantiation,org.springframework:spring-context:5.1.0.RELEASE
+org.springframework.expression.spel.standard.SpelExpression,public,org.springframework:spring-expression:5.1.0.RELEASE,method call,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.springframework.util.xml.SimpleSaxErrorHandler,public,org.springframework:spring-core:5.1.0.RELEASE,instantiation,org.springframework:spring-beans:5.1.0.RELEASE
+org.springframework.web.context.request.ServletWebRequest,public,org.springframework:spring-web:5.1.0.RELEASE,instantiation,org.springframework:spring-webmvc:5.1.0.RELEASE
+org.unbescape.css.CssEscape,public,org.unbescape:unbescape:1.1.6.RELEASE,method call,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+org.thymeleaf.context.WebExpressionContext,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,instantiation,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+com.fasterxml.jackson.core.base.ParserMinimalBase,public,com.fasterxml.jackson.core:jackson-core:2.11.3,subtyping,com.fasterxml.jackson.core:jackson-databind:2.11.3
+com.fasterxml.jackson.core.SerializableString,public,com.fasterxml.jackson.core:jackson-core:2.11.3,cast,com.fasterxml.jackson.core:jackson-databind:2.11.3
+com.fasterxml.jackson.annotation.JsonAutoDetect$Visibility,public,com.fasterxml.jackson.core:jackson-annotations:2.11.3,method call,com.fasterxml.jackson.core:jackson-databind:2.11.3
+org.thymeleaf.templateengine.features.lazy.ListLazyContextVariable,public,unknownLib,Class.forName,ognl:ognl:3.1.26
+ognl.OgnlRuntime,public,ognl:ognl:3.1.26,method call,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+org.thymeleaf.standard.expression.RestrictedRequestAccessUtils$RestrictedRequestWrapper,private,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,org.springframework:spring-expression:5.1.0.RELEASE
+org.springframework.context.MessageSourceAware,public,org.springframework:spring-context:5.1.0.RELEASE,subtyping,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+com.fasterxml.jackson.core.JsonGenerationException,public,com.fasterxml.jackson.core:jackson-core:2.11.3,instantiation,com.fasterxml.jackson.core:jackson-databind:2.11.3
+org.thymeleaf.context.WebEngineContext$RequestParameterValues,private,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,ognl:ognl:3.1.26
+org.attoparser.MarkupParser,public,org.attoparser:attoparser:2.0.5.RELEASE,method call,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+javax.servlet.http.HttpServletRequestWrapper,public,javax.servlet:javax.servlet-api:3.1.0,method call,org.springframework:spring-expression:5.1.0.RELEASE
+org.springframework.web.context.support.StaticWebApplicationContext,public,org.springframework:spring-web:5.1.0.RELEASE,method call,org.springframework:spring-context:5.1.0.RELEASE
+com.fasterxml.jackson.annotation.JsonInclude,public,com.fasterxml.jackson.core:jackson-annotations:2.11.3,cast,com.fasterxml.jackson.core:jackson-databind:2.11.3
+org.springframework.core.convert.Property,public,org.springframework:spring-core:5.1.0.RELEASE,instantiation,org.springframework:spring-expression:5.1.0.RELEASE
+org.thymeleaf.cache.StandardCacheManager,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+com.fasterxml.jackson.databind.JsonSerializer,public,com.fasterxml.jackson.core:jackson-databind:2.11.3,subtyping,com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.11.3
+com.fasterxml.jackson.annotation.JsonAnyGetter,public,com.fasterxml.jackson.core:jackson-annotations:2.11.3,cast,com.fasterxml.jackson.core:jackson-databind:2.11.3
+org.thymeleaf.engine.StandaloneElementTag,default,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.thymeleaf.spring5.expression.SpringStandardExpressionObjectFactory,public,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+org.thymeleaf.standard.util.StandardProcessorUtils,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonPropertyDescription,public,com.fasterxml.jackson.core:jackson-annotations:2.11.3,cast,com.fasterxml.jackson.core:jackson-databind:2.11.3
+org.thymeleaf.templateengine.features.expression.ExpContainer1,public,unknownLib,Class.forName,ognl:ognl:3.1.26
+org.thymeleaf.templateengine.features.expression.ExpContainer2,public,unknownLib,Class.forName,ognl:ognl:3.1.26
+java.math.BigDecimal,public,unknownLib,Class.forName,ognl:ognl:3.1.26
+org.springframework.util.StringUtils,public,org.springframework:spring-core:5.1.0.RELEASE,method call,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.mockito.Mockito,public,org.mockito:mockito-core:1.9.5,method call,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.springframework.core.AttributeAccessorSupport,public,org.springframework:spring-core:5.1.0.RELEASE,subtyping,org.springframework:spring-beans:5.1.0.RELEASE
+com.fasterxml.jackson.core.type.WritableTypeId,public,com.fasterxml.jackson.core:jackson-core:2.11.3,instantiation,com.fasterxml.jackson.core:jackson-databind:2.11.3
+org.thymeleaf.templateengine.dataprefix.stsm.model.repository.VarietyRepository,public,unknownLib,Class.forName,ognl:ognl:3.1.26
+org.thymeleaf.templateengine.features.lazy.ValueLazyContextVariable,public,unknownLib,Class.forName,ognl:ognl:3.1.26
+org.reactivestreams.Publisher,public,org.reactivestreams:reactive-streams:1.0.2,subtyping,io.projectreactor:reactor-core:3.2.0.RELEASE
+org.unbescape.uri.UriEscape,public,org.unbescape:unbescape:1.1.6.RELEASE,method call,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+com.fasterxml.jackson.databind.ser.std.ToStringSerializerBase,public,com.fasterxml.jackson.core:jackson-databind:2.11.3,subtyping,com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.11.3
+org.springframework.context.ApplicationContextInitializer,public,org.springframework:spring-context:5.1.0.RELEASE,cast,org.springframework:spring-webmvc:5.1.0.RELEASE
+org.attoparser.trace.MarkupTraceEvent$UnmatchedCloseElementStartTraceEvent,public,org.attoparser:attoparser:2.0.5.RELEASE,cast,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.thymeleaf.engine.IAttributeDefinitionsAware,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,subtyping,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.thymeleaf.spring5.processor.SpringObjectTagProcessor,public,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+org.springframework.security.authentication.AuthenticationManager,public,org.springframework.security:spring-security-core:5.1.0.RELEASE,cast,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+javax.servlet.http.HttpServletRequestWrapper,public,javax.servlet:javax.servlet-api:3.1.0,subtyping,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+java.lang.RuntimeException,public,unknownLib,Class.forName,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.springframework.expression.EvaluationContext,public,org.springframework:spring-expression:5.1.0.RELEASE,subtyping,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.springframework.util.ClassUtils,default,org.springframework:spring-core:5.1.0.RELEASE,method call,org.springframework:spring-beans:5.1.0.RELEASE
+org.thymeleaf.standard.processor.AbstractStandardTargetSelectionTagProcessor,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,subtyping,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.thymeleaf.expression.ExpressionObjects,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.springframework.web.context.support.XmlWebApplicationContext,public,org.springframework:spring-web:5.1.0.RELEASE,method call,org.springframework:spring-context:5.1.0.RELEASE
+org.thymeleaf.cache.ExpressionCacheKey,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,cast,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonSubTypes,public,com.fasterxml.jackson.core:jackson-annotations:2.11.3,cast,com.fasterxml.jackson.core:jackson-databind:2.11.3
+ognl.enhance.UnsupportedCompilationException,public,ognl:ognl:3.1.26,instantiation,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+org.thymeleaf.standard.expression.VariableExpression,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,cast,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.springframework.web.context.request.ServletWebRequest,public,org.springframework:spring-web:5.1.0.RELEASE,instantiation,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.thymeleaf.cache.TemplateCacheKey,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,cast,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.springframework.ui.context.support.ResourceBundleThemeSource,public,org.springframework:spring-context:5.1.0.RELEASE,instantiation,org.springframework:spring-webmvc:5.1.0.RELEASE
+org.attoparser.trace.MarkupTraceEvent$CDATASectionTraceEvent,public,org.attoparser:attoparser:2.0.5.RELEASE,method call,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.springframework.context.ConfigurableApplicationContext,public,org.springframework:spring-context:5.1.0.RELEASE,cast,org.springframework:spring-webmvc:5.1.0.RELEASE
+org.thymeleaf.standard.expression.FragmentExpression,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,cast,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.springframework.expression.spel.support.StandardTypeConverter,public,org.springframework:spring-expression:5.1.0.RELEASE,instantiation,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+javassist.CtMethod,public,org.javassist:javassist:3.20.0-GA,instantiation,ognl:ognl:3.1.26
+org.thymeleaf.templateengine.stsm.model.repository.SeedStarterRepository,public,unknownLib,Class.forName,ognl:ognl:3.1.26
+org.thymeleaf.testing.templateengine.engine.TestExecutor,public,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT,instantiation,org.thymeleaf:thymeleaf-tests:ci
+org.springframework.expression.PropertyAccessor,public,org.springframework:spring-expression:5.1.0.RELEASE,subtyping,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.attoparser.trace.MarkupTraceEvent$OpenElementEndTraceEvent,public,org.attoparser:attoparser:2.0.5.RELEASE,method call,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.springframework.core.io.support.ResourcePatternResolver,public,org.springframework:spring-core:5.1.0.RELEASE,cast,org.springframework:spring-beans:5.1.0.RELEASE
+org.attoparser.trace.MarkupTraceEvent$CommentTraceEvent,public,org.attoparser:attoparser:2.0.5.RELEASE,cast,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.thymeleaf.standard.expression.RestrictedRequestAccessUtils$RestrictedRequestWrapper,private,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,ognl:ognl:3.1.26
+org.springframework.web.context.support.StaticWebApplicationContext,public,org.springframework:spring-web:5.1.0.RELEASE,method call,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonInclude$Include,public,com.fasterxml.jackson.core:jackson-annotations:2.11.3,method call,com.fasterxml.jackson.core:jackson-databind:2.11.3
+org.springframework.core.OrderComparator,public,org.springframework:spring-core:5.1.0.RELEASE,cast,org.springframework:spring-beans:5.1.0.RELEASE
+org.springframework.util.ObjectUtils,public,org.springframework:spring-core:5.1.0.RELEASE,method call,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.thymeleaf.cache.StandardCache,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.springframework.web.servlet.support.RequestContext,public,org.springframework:spring-webmvc:5.1.0.RELEASE,cast,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonProperty$Access,public,com.fasterxml.jackson.core:jackson-annotations:2.11.3,method call,com.fasterxml.jackson.core:jackson-databind:2.11.3
+org.thymeleaf.templateengine.dataprefix.stsm.model.Row,public,unknownLib,Class.forName,ognl:ognl:3.1.26
+java.util.Calendar,public,unknownLib,Class.forName,ognl:ognl:3.1.26
+org.springframework.core.env.StandardEnvironment,public,org.springframework:spring-core:5.1.0.RELEASE,instantiation,org.springframework:spring-context:5.1.0.RELEASE
+org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler,default,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,org.attoparser:attoparser:2.0.5.RELEASE
+org.thymeleaf.standard.expression.RestrictedRequestAccessUtils$RestrictedRequestWrapper,private,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,javax.servlet:javax.servlet-api:3.1.0
+java.time.LocalDateTime,public,unknownLib,Class.forName,ognl:ognl:3.1.26
+org.springframework.util.Assert,default,org.springframework:spring-core:5.1.0.RELEASE,method call,org.springframework:spring-web:5.1.0.RELEASE
+org.thymeleaf.spring5.processor.SpringInputRadioFieldTagProcessor,public,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+org.thymeleaf.context.EngineContext,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.springframework.context.support.ClassPathXmlApplicationContext,public,org.springframework:spring-context:5.1.0.RELEASE,method call,org.springframework:spring-beans:5.1.0.RELEASE
+org.thymeleaf.spring5.processor.SpringUErrorsTagProcessor,public,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+org.springframework.web.context.support.ServletContextResourceLoader,public,org.springframework:spring-web:5.1.0.RELEASE,instantiation,org.springframework:spring-webmvc:5.1.0.RELEASE
+org.springframework.context.ApplicationContextException,public,org.springframework:spring-context:5.1.0.RELEASE,instantiation,org.springframework:spring-webmvc:5.1.0.RELEASE
+reactor.core.publisher.Mono,public,io.projectreactor:reactor-core:3.2.0.RELEASE,cast,org.thymeleaf.extras:thymeleaf-extras-springsecurity5:3.0.5-SNAPSHOT
+java.util.LinkedHashMap,public,unknownLib,Class.forName,ognl:ognl:3.1.26
+org.thymeleaf.expression.Calendars,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,ognl:ognl:3.1.26
+ognl.Ognl,public,ognl:ognl:3.1.26,method call,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+org.attoparser.trace.MarkupTraceEvent$AutoOpenElementEndTraceEvent,public,org.attoparser:attoparser:2.0.5.RELEASE,cast,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.thymeleaf.templateengine.conversion.conversion6.Conversion6Bean01,public,unknownLib,Class.forName,ognl:ognl:3.1.26
+org.thymeleaf.standard.processor.StandardXmlNsTagProcessor,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,instantiation,org.thymeleaf.extras:thymeleaf-extras-springsecurity5:3.0.5-SNAPSHOT
+org.springframework.core.convert.support.DefaultConversionService,public,org.springframework:spring-core:5.1.0.RELEASE,method call,org.springframework:spring-expression:5.1.0.RELEASE
+org.thymeleaf.processor.element.AbstractElementTagProcessor,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,subtyping,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.springframework.beans.factory.xml.XmlBeanDefinitionReader,public,org.springframework:spring-beans:5.1.0.RELEASE,instantiation,org.springframework:spring-context:5.1.0.RELEASE
+org.thymeleaf.cache.StandardCacheManager,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,instantiation,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.thymeleaf.standard.expression.OGNLContextPropertyAccessor,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,ognl:ognl:3.1.26
+org.thymeleaf.cache.StandardCache,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonAlias,public,com.fasterxml.jackson.core:jackson-annotations:2.11.3,cast,com.fasterxml.jackson.core:jackson-databind:2.11.3
+com.fasterxml.jackson.annotation.JsonAnySetter,public,com.fasterxml.jackson.core:jackson-annotations:2.11.3,cast,com.fasterxml.jackson.core:jackson-databind:2.11.3
+org.springframework.core.NestedRuntimeException,public,org.springframework:spring-core:5.1.0.RELEASE,cast,org.springframework:spring-beans:5.1.0.RELEASE
+org.springframework.core.io.support.ResourcePatternResolver,public,org.springframework:spring-core:5.1.0.RELEASE,subtyping,org.springframework:spring-context:5.1.0.RELEASE
+org.springframework.validation.FieldError,public,org.springframework:spring-context:5.1.0.RELEASE,cast,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.springframework.core.MethodParameter,public,org.springframework:spring-core:5.1.0.RELEASE,instantiation,org.springframework:spring-expression:5.1.0.RELEASE
+org.attoparser.trace.MarkupTraceEvent$DocTypeTraceEvent,public,org.attoparser:attoparser:2.0.5.RELEASE,method call,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.thymeleaf.templateparser.markup.TemplateFragmentMarkupReferenceResolver,default,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,org.attoparser:attoparser:2.0.5.RELEASE
+org.springframework.core.NestedRuntimeException,public,org.springframework:spring-core:5.1.0.RELEASE,subtyping,org.springframework:spring-web:5.1.0.RELEASE
+com.fasterxml.jackson.annotation.JsonIgnoreProperties,public,com.fasterxml.jackson.core:jackson-annotations:2.11.3,cast,com.fasterxml.jackson.core:jackson-databind:2.11.3
+org.thymeleaf.templateengine.conversion.conversion2.Conversion2Date,public,unknownLib,Class.forName,ognl:ognl:3.1.26
+org.thymeleaf.standard.expression.AbstractStandardConversionService,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,subtyping,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.springframework.jndi.JndiPropertySource,public,org.springframework:spring-context:5.1.0.RELEASE,instantiation,org.springframework:spring-web:5.1.0.RELEASE
+org.hamcrest.Matcher,public,org.hamcrest:hamcrest-core:1.1,cast,org.mockito:mockito-core:1.9.5
+org.springframework.util.Assert,default,org.springframework:spring-core:5.1.0.RELEASE,method call,org.springframework:spring-expression:5.1.0.RELEASE
+org.springframework.beans.MutablePropertyValues,public,org.springframework:spring-beans:5.1.0.RELEASE,instantiation,org.springframework:spring-context:5.1.0.RELEASE
+org.springframework.core.io.support.ResourceArrayPropertyEditor,public,org.springframework:spring-core:5.1.0.RELEASE,instantiation,org.springframework:spring-beans:5.1.0.RELEASE
+org.springframework.core.env.StandardEnvironment,public,org.springframework:spring-core:5.1.0.RELEASE,subtyping,org.springframework:spring-web:5.1.0.RELEASE
+com.fasterxml.jackson.core.Versioned,public,com.fasterxml.jackson.core:jackson-core:2.11.3,subtyping,com.fasterxml.jackson.core:jackson-databind:2.11.3
+org.springframework.core.env.ConfigurableEnvironment,public,org.springframework:spring-core:5.1.0.RELEASE,cast,org.springframework:spring-webmvc:5.1.0.RELEASE
+org.springframework.context.support.StaticApplicationContext,public,org.springframework:spring-context:5.1.0.RELEASE,subtyping,org.springframework:spring-web:5.1.0.RELEASE
+org.thymeleaf.util.FastStringWriter,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,instantiation,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.thymeleaf.expression.Messages,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,org.springframework:spring-expression:5.1.0.RELEASE
+javax.servlet.ServletResponseWrapper,public,javax.servlet:javax.servlet-api:3.1.0,cast,org.springframework:spring-web:5.1.0.RELEASE
+org.springframework.beans.factory.InitializingBean,public,org.springframework:spring-beans:5.1.0.RELEASE,subtyping,org.springframework:spring-context:5.1.0.RELEASE
+org.springframework.util.Assert,public,org.springframework:spring-core:5.1.0.RELEASE,method call,org.springframework:spring-context:5.1.0.RELEASE
+java.lang.Byte,public,unknownLib,Class.forName,ognl:ognl:3.1.26
+org.attoparser.trace.MarkupTraceEvent$ProcessingInstructionTraceEvent,public,org.attoparser:attoparser:2.0.5.RELEASE,cast,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.springframework.context.event.SourceFilteringListener,public,org.springframework:spring-context:5.1.0.RELEASE,instantiation,org.springframework:spring-webmvc:5.1.0.RELEASE
+org.springframework.web.reactive.result.view.AbstractView,public,org.springframework:spring-webflux:5.1.0.RELEASE,subtyping,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.springframework.expression.spel.support.StandardEvaluationContext,public,org.springframework:spring-expression:5.1.0.RELEASE,cast,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+ognl.PropertyAccessor,public,ognl:ognl:3.1.26,subtyping,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+org.springframework.security.authentication.UsernamePasswordAuthenticationToken,public,org.springframework.security:spring-security-core:5.1.0.RELEASE,instantiation,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.springframework.core.NestedRuntimeException,public,org.springframework:spring-core:5.1.0.RELEASE,subtyping,org.springframework:spring-beans:5.1.0.RELEASE
+org.springframework.beans.TypeConverter,public,org.springframework:spring-beans:5.1.0.RELEASE,subtyping,org.springframework:spring-context:5.1.0.RELEASE
+org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,org.attoparser:attoparser:2.0.5.RELEASE
+org.springframework.core.io.support.PathMatchingResourcePatternResolver,public,org.springframework:spring-core:5.1.0.RELEASE,instantiation,org.springframework:spring-context:5.1.0.RELEASE
+org.springframework.core.env.StandardEnvironment,public,org.springframework:spring-core:5.1.0.RELEASE,method call,org.springframework:spring-context:5.1.0.RELEASE
+org.apache.commons.logging.LogAdapter$Slf4jLocationAwareLog,private,org.springframework:spring-jcl:5.1.0.RELEASE,method call,org.springframework:spring-beans:5.1.0.RELEASE
+org.springframework.core.AttributeAccessor,public,org.springframework:spring-core:5.1.0.RELEASE,subtyping,org.springframework:spring-beans:5.1.0.RELEASE
+org.thymeleaf.expression.Aggregates,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,ognl:ognl:3.1.26
+org.thymeleaf.engine.TemplateData,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,org.springframework:spring-expression:5.1.0.RELEASE
+org.springframework.expression.EvaluationContext,public,org.springframework:spring-expression:5.1.0.RELEASE,cast,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.springframework.util.StringUtils,default,org.springframework:spring-core:5.1.0.RELEASE,method call,org.springframework:spring-beans:5.1.0.RELEASE
+org.thymeleaf.expression.Numbers,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,org.springframework:spring-expression:5.1.0.RELEASE
+com.fasterxml.jackson.core.JsonParser,public,com.fasterxml.jackson.core:jackson-core:2.11.3,cast,com.fasterxml.jackson.core:jackson-databind:2.11.3
+org.springframework.core.convert.ConversionService,public,org.springframework:spring-core:5.1.0.RELEASE,cast,org.springframework:spring-context:5.1.0.RELEASE
+org.thymeleaf.templateengine.attrprocessors.model.Bean01,public,unknownLib,Class.forName,ognl:ognl:3.1.26
+org.thymeleaf.dialect.AbstractDialect,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,subtyping,org.thymeleaf.extras:thymeleaf-extras-springsecurity5:3.0.5-SNAPSHOT
+org.thymeleaf.templateengine.attrprocessors.model.Bean02,public,unknownLib,Class.forName,ognl:ognl:3.1.26
+org.thymeleaf.testing.templateengine.engine.TestExecutor,public,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT,method call,org.thymeleaf:thymeleaf-tests:ci
+org.thymeleaf.testing.templateengine.context.web.WebProcessingContextBuilder$GetAttributeAnswer,private,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT,method call,org.mockito:mockito-core:1.9.5
+com.fasterxml.jackson.datatype.jsr310.JavaTimeModule,public,com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.11.3,method call,com.fasterxml.jackson.core:jackson-databind:2.11.3
+org.thymeleaf.standard.expression.StandardExpressionExecutionContext,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.thymeleaf.util.StringUtils,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+com.fasterxml.jackson.databind.deser.std.StdScalarDeserializer,public,com.fasterxml.jackson.core:jackson-databind:2.11.3,subtyping,com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.11.3
+org.thymeleaf.TemplateEngine,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.thymeleaf.context.WebEngineContext$ServletContextAttributesMap,private,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,ognl:ognl:3.1.26
+org.thymeleaf.standard.expression.RestrictedRequestAccessUtils,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.springframework.web.context.request.ServletRequestAttributes,public,org.springframework:spring-web:5.1.0.RELEASE,instantiation,org.springframework:spring-webmvc:5.1.0.RELEASE
+org.springframework.jndi.JndiLocatorDelegate,public,org.springframework:spring-context:5.1.0.RELEASE,method call,org.springframework:spring-web:5.1.0.RELEASE
+org.springframework.context.ApplicationContext,public,org.springframework:spring-context:5.1.0.RELEASE,cast,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.apache.commons.logging.LogAdapter$Slf4jLocationAwareLog,private,org.springframework:spring-jcl:5.1.0.RELEASE,method call,org.springframework:spring-context:5.1.0.RELEASE
+org.attoparser.trace.MarkupTraceEvent$StandaloneElementStartTraceEvent,public,org.attoparser:attoparser:2.0.5.RELEASE,method call,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+javax.servlet.ServletException,public,javax.servlet:javax.servlet-api:3.1.0,subtyping,org.springframework:spring-webmvc:5.1.0.RELEASE
+com.fasterxml.jackson.annotation.JsonBackReference,public,com.fasterxml.jackson.core:jackson-annotations:2.11.3,cast,com.fasterxml.jackson.core:jackson-databind:2.11.3
+org.springframework.expression.AccessException,public,org.springframework:spring-expression:5.1.0.RELEASE,subtyping,org.springframework:spring-context:5.1.0.RELEASE
+java.lang.Object,public,unknownLib,Class.forName,org.objenesis:objenesis:1.0
+org.springframework.web.context.support.XmlWebApplicationContext,public,org.springframework:spring-web:5.1.0.RELEASE,instantiation,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.springframework.beans.PropertyEditorRegistry,public,org.springframework:spring-beans:5.1.0.RELEASE,subtyping,org.springframework:spring-context:5.1.0.RELEASE
+org.springframework.core.io.support.EncodedResource,public,org.springframework:spring-core:5.1.0.RELEASE,instantiation,org.springframework:spring-beans:5.1.0.RELEASE
+org.springframework.core.env.PropertySource,public,org.springframework:spring-core:5.1.0.RELEASE,subtyping,org.springframework:spring-context:5.1.0.RELEASE
+org.thymeleaf.dialect.IProcessorDialect,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,subtyping,org.thymeleaf.extras:thymeleaf-extras-springsecurity5:3.0.5-SNAPSHOT
+org.thymeleaf.spring5.processor.SpringSelectFieldTagProcessor,public,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+com.fasterxml.jackson.core.JsonGenerator,public,com.fasterxml.jackson.core:jackson-core:2.11.3,subtyping,com.fasterxml.jackson.core:jackson-databind:2.11.3
+org.thymeleaf.context.ITemplateContext,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,cast,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.springframework.util.NumberUtils,public,org.springframework:spring-core:5.1.0.RELEASE,method call,org.springframework:spring-expression:5.1.0.RELEASE
+org.springframework.beans.PropertyAccessorFactory,public,org.springframework:spring-beans:5.1.0.RELEASE,method call,org.springframework:spring-context:5.1.0.RELEASE
+org.thymeleaf.expression.IExpressionObjectFactory,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,subtyping,org.thymeleaf.extras:thymeleaf-extras-springsecurity5:3.0.5-SNAPSHOT
+javax.xml.parsers.ParserConfigurationException,public,xml-apis:xml-apis:1.4.01,instantiation,org.springframework:spring-beans:5.1.0.RELEASE
+org.springframework.util.MimeType,public,org.springframework:spring-core:5.1.0.RELEASE,subtyping,org.springframework:spring-web:5.1.0.RELEASE
+org.thymeleaf.spring5.expression.ThymeleafEvaluationContextWrapper,public,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT,method call,org.springframework:spring-expression:5.1.0.RELEASE
+com.fasterxml.jackson.databind.deser.ValueInstantiators$Base,public,com.fasterxml.jackson.core:jackson-databind:2.11.3,subtyping,com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.11.3
+org.thymeleaf.spring5.expression.SPELContextPropertyAccessor,public,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT,method call,org.springframework:spring-expression:5.1.0.RELEASE
+org.springframework.util.CollectionUtils,public,org.springframework:spring-core:5.1.0.RELEASE,method call,org.springframework:spring-expression:5.1.0.RELEASE
+org.springframework.core.env.EnvironmentCapable,public,org.springframework:spring-core:5.1.0.RELEASE,subtyping,org.springframework:spring-webmvc:5.1.0.RELEASE
+com.fasterxml.jackson.annotation.JsonAutoDetect,public,com.fasterxml.jackson.core:jackson-annotations:2.11.3,cast,com.fasterxml.jackson.core:jackson-databind:2.11.3
+org.thymeleaf.testing.templateengine.context.web.WebProcessingContextBuilder$GetParameterValuesAnswer,private,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT,method call,org.mockito:mockito-core:1.9.5
+org.springframework.core.convert.TypeDescriptor,public,org.springframework:spring-core:5.1.0.RELEASE,cast,org.springframework:spring-beans:5.1.0.RELEASE
+org.thymeleaf.standard.util.StandardExpressionUtils,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.mockito.internal.stubbing.StubberImpl,public,org.mockito:mockito-core:1.9.5,method call,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+com.fasterxml.jackson.annotation.ObjectIdGenerator$IdKey,public,com.fasterxml.jackson.core:jackson-annotations:2.11.3,instantiation,com.fasterxml.jackson.core:jackson-databind:2.11.3
+org.springframework.beans.factory.xml.ResourceEntityResolver,public,org.springframework:spring-beans:5.1.0.RELEASE,instantiation,org.springframework:spring-context:5.1.0.RELEASE
+com.fasterxml.jackson.core.util.InternCache,public,com.fasterxml.jackson.core:jackson-core:2.11.3,method call,com.fasterxml.jackson.core:jackson-databind:2.11.3
+org.springframework.core.MethodParameter,public,org.springframework:spring-core:5.1.0.RELEASE,method call,org.springframework:spring-expression:5.1.0.RELEASE
+org.attoparser.trace.TraceBuilderMarkupHandler,public,org.attoparser:attoparser:2.0.5.RELEASE,method call,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.thymeleaf.util.StringUtils,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.springframework.web.util.NestedServletException,public,org.springframework:spring-web:5.1.0.RELEASE,instantiation,org.springframework:spring-webmvc:5.1.0.RELEASE
+org.thymeleaf.exceptions.TemplateProcessingException,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,Class.forName,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.springframework.web.util.UrlPathHelper,public,org.springframework:spring-web:5.1.0.RELEASE,instantiation,org.springframework:spring-webmvc:5.1.0.RELEASE
+org.mockito.Matchers,public,org.mockito:mockito-core:1.9.5,method call,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.attoparser.trace.MarkupTraceEvent$NonMinimizedStandaloneElementStartTraceEvent,public,org.attoparser:attoparser:2.0.5.RELEASE,cast,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+com.fasterxml.jackson.databind.type.SimpleType,public,com.fasterxml.jackson.core:jackson-databind:2.11.3,method call,com.fasterxml.jackson.core:jackson-core:2.11.3
+com.fasterxml.jackson.databind.ser.std.ToStringSerializer,public,com.fasterxml.jackson.core:jackson-databind:2.11.3,instantiation,com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.11.3
+org.reactivestreams.Publisher,public,org.reactivestreams:reactive-streams:1.0.2,cast,io.projectreactor:reactor-core:3.2.0.RELEASE
+org.springframework.web.context.support.ServletContextResourcePatternResolver,public,org.springframework:spring-web:5.1.0.RELEASE,method call,org.springframework:spring-core:5.1.0.RELEASE
+org.springframework.validation.ObjectError,public,org.springframework:spring-context:5.1.0.RELEASE,cast,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+com.fasterxml.jackson.core.PrettyPrinter,public,com.fasterxml.jackson.core:jackson-core:2.11.3,cast,com.fasterxml.jackson.core:jackson-databind:2.11.3
+org.attoparser.AbstractMarkupHandler,public,org.attoparser:attoparser:2.0.5.RELEASE,subtyping,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+org.thymeleaf.exceptions.TemplateAssertionException,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,Class.forName,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.springframework.beans.factory.BeanNameAware,public,org.springframework:spring-beans:5.1.0.RELEASE,subtyping,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,subtyping,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.thymeleaf.expression.Calendars,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,instantiation,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.springframework.beans.factory.support.RootBeanDefinition,public,org.springframework:spring-beans:5.1.0.RELEASE,subtyping,org.springframework:spring-context:5.1.0.RELEASE
+org.attoparser.trace.MarkupTraceEvent$NonMinimizedStandaloneElementStartTraceEvent,public,org.attoparser:attoparser:2.0.5.RELEASE,method call,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.attoparser.ParseException,public,org.attoparser:attoparser:2.0.5.RELEASE,method call,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+org.thymeleaf.context.LazyContextVariable,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,org.springframework:spring-expression:5.1.0.RELEASE
+com.fasterxml.jackson.annotation.JsonTypeName,public,com.fasterxml.jackson.core:jackson-annotations:2.11.3,cast,com.fasterxml.jackson.core:jackson-databind:2.11.3
+org.thymeleaf.standard.StandardDialect,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.thymeleaf.testing.templateengine.engine.resolver.TestEngineMessageResolver,public,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT,method call,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+org.springframework.beans.factory.support.BeanDefinitionRegistry,public,org.springframework:spring-beans:5.1.0.RELEASE,subtyping,org.springframework:spring-context:5.1.0.RELEASE
+org.attoparser.trace.MarkupTraceEvent$StandaloneElementStartTraceEvent,public,org.attoparser:attoparser:2.0.5.RELEASE,cast,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.springframework.core.env.ConfigurableEnvironment,public,org.springframework:spring-core:5.1.0.RELEASE,cast,org.springframework:spring-context:5.1.0.RELEASE
+javax.servlet.ServletRequestWrapper,public,javax.servlet:javax.servlet-api:3.1.0,method call,org.springframework:spring-expression:5.1.0.RELEASE
+org.thymeleaf.templateengine.stsm.model.Type,public,unknownLib,Class.forName,ognl:ognl:3.1.26
+org.thymeleaf.spring5.processor.SpringTextareaFieldTagProcessor,public,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+org.thymeleaf.testing.templateengine.engine.resolver.TestEngineTemplateResource,public,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT,method call,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+org.springframework.core.io.ClassPathResource,public,org.springframework:spring-core:5.1.0.RELEASE,instantiation,org.springframework:spring-context:5.1.0.RELEASE
+org.thymeleaf.templateresolver.TemplateResolution,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,instantiation,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.springframework.core.env.ConfigurableEnvironment,public,org.springframework:spring-core:5.1.0.RELEASE,subtyping,org.springframework:spring-web:5.1.0.RELEASE
+org.thymeleaf.standard.expression.StandardExpressionExecutionContext,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,ognl:ognl:3.1.26
+org.thymeleaf.EngineConfiguration,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.mockito.internal.stubbing.OngoingStubbingImpl,public,org.mockito:mockito-core:1.9.5,method call,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.springframework.util.ClassUtils,default,org.springframework:spring-core:5.1.0.RELEASE,method call,org.springframework:spring-expression:5.1.0.RELEASE
+org.thymeleaf.standard.expression.StandardExpressionParser,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.springframework.util.ReflectionUtils,private,org.springframework:spring-core:5.1.0.RELEASE,method call,org.springframework:spring-beans:5.1.0.RELEASE
+org.attoparser.config.ParseConfiguration$ParsingMode,public,org.attoparser:attoparser:2.0.5.RELEASE,method call,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+org.thymeleaf.testing.templateengine.engine.resolver.TestEngineTemplateResolver,public,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT,method call,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+org.springframework.context.ApplicationEvent,public,org.springframework:spring-context:5.1.0.RELEASE,subtyping,org.springframework:spring-web:5.1.0.RELEASE
+org.springframework.util.LinkedCaseInsensitiveMap,public,org.springframework:spring-core:5.1.0.RELEASE,instantiation,org.springframework:spring-web:5.1.0.RELEASE
+javax.servlet.http.HttpServletRequestWrapper,public,javax.servlet:javax.servlet-api:3.1.0,method call,ognl:ognl:3.1.26
+org.thymeleaf.testing.templateengine.testable.TestResult,public,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT,method call,org.thymeleaf:thymeleaf-tests:ci
+com.fasterxml.jackson.annotation.JsonIgnore,public,com.fasterxml.jackson.core:jackson-annotations:2.11.3,cast,com.fasterxml.jackson.core:jackson-databind:2.11.3
+org.springframework.ui.context.ThemeSource,public,org.springframework:spring-context:5.1.0.RELEASE,cast,org.springframework:spring-webmvc:5.1.0.RELEASE
+org.apache.commons.logging.LogAdapter$Slf4jLocationAwareLog,private,org.springframework:spring-jcl:5.1.0.RELEASE,method call,org.springframework:spring-core:5.1.0.RELEASE
+org.springframework.util.StringUtils,public,org.springframework:spring-core:5.1.0.RELEASE,method call,org.springframework:spring-web:5.1.0.RELEASE
+com.fasterxml.jackson.annotation.JsonFormat$Shape,public,com.fasterxml.jackson.core:jackson-annotations:2.11.3,method call,com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.11.3
+org.thymeleaf.templateengine.escaping.model.EscapeBean,public,unknownLib,Class.forName,ognl:ognl:3.1.26
+org.springframework.util.StringUtils,default,org.springframework:spring-core:5.1.0.RELEASE,method call,org.springframework:spring-expression:5.1.0.RELEASE
+org.thymeleaf.testing.templateengine.context.web.WebProcessingContextBuilder$SetAttributeAnswer,private,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT,method call,org.mockito:mockito-core:1.9.5
+org.mockito.internal.creation.MethodInterceptorFilter,public,org.mockito:mockito-core:1.9.5,method call,org.springframework:spring-expression:5.1.0.RELEASE
+org.attoparser.trace.MarkupTraceEvent$TextTraceEvent,public,org.attoparser:attoparser:2.0.5.RELEASE,instantiation,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.springframework.core.io.ClassPathResource,public,org.springframework:spring-core:5.1.0.RELEASE,instantiation,org.springframework:spring-beans:5.1.0.RELEASE
+org.thymeleaf.context.WebEngineContext$RequestParameterValues,private,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,org.springframework:spring-expression:5.1.0.RELEASE
+javax.servlet.ServletRequestWrapper,public,javax.servlet:javax.servlet-api:3.1.0,method call,ognl:ognl:3.1.26
+org.thymeleaf.spring5.processor.SpringInputPasswordFieldTagProcessor,public,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+org.springframework.core.convert.TypeDescriptor,public,org.springframework:spring-core:5.1.0.RELEASE,method call,org.springframework:spring-expression:5.1.0.RELEASE
+org.springframework.util.StringValueResolver,public,org.springframework:spring-core:5.1.0.RELEASE,cast,org.springframework:spring-beans:5.1.0.RELEASE
+org.thymeleaf.util.Validate,default,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+java.lang.ClassLoader,public,unknownLib,Class.forName,org.mockito:mockito-core:1.9.5
+org.mockito.internal.creation.MethodInterceptorFilter,public,org.mockito:mockito-core:1.9.5,method call,ognl:ognl:3.1.26
+org.thymeleaf.messageresolver.StandardMessageResolver,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,instantiation,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.thymeleaf.util.VersionUtils$VersionSpec,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.thymeleaf.templateengine.features.lazy.ExceptionLazyContextVariable,public,unknownLib,Class.forName,ognl:ognl:3.1.26
+org.thymeleaf.expression.ExecutionInfo,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,ognl:ognl:3.1.26
+org.springframework.core.io.DefaultResourceLoader,public,org.springframework:spring-core:5.1.0.RELEASE,subtyping,org.springframework:spring-context:5.1.0.RELEASE
+org.springframework.context.i18n.SimpleLocaleContext,public,org.springframework:spring-context:5.1.0.RELEASE,instantiation,org.springframework:spring-webmvc:5.1.0.RELEASE
+org.springframework.core.convert.TypeDescriptor,public,org.springframework:spring-core:5.1.0.RELEASE,cast,org.springframework:spring-expression:5.1.0.RELEASE
+org.thymeleaf.processor.element.AbstractAttributeTagProcessor,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,subtyping,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.springframework.core.DecoratingClassLoader,public,org.springframework:spring-core:5.1.0.RELEASE,cast,org.springframework:spring-beans:5.1.0.RELEASE
+org.attoparser.select.ParseSelection,public,org.attoparser:attoparser:2.0.5.RELEASE,method call,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+com.fasterxml.jackson.databind.deser.std.StdValueInstantiator,public,com.fasterxml.jackson.core:jackson-databind:2.11.3,cast,com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.11.3
+org.thymeleaf.spring5.processor.SpringOptionInSelectFieldTagProcessor,public,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+java.lang.Integer,public,unknownLib,Class.forName,ognl:ognl:3.1.26
+org.thymeleaf.templateengine.features.expression.ExpBean1,public,unknownLib,Class.forName,ognl:ognl:3.1.26
+ognl.OgnlException,public,ognl:ognl:3.1.26,Class.forName,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.attoparser.select.BlockSelectorMarkupHandler,public,org.attoparser:attoparser:2.0.5.RELEASE,instantiation,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+org.springframework.expression.AccessException,public,org.springframework:spring-expression:5.1.0.RELEASE,instantiation,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.springframework.web.servlet.support.RequestContext,public,org.springframework:spring-webmvc:5.1.0.RELEASE,method call,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.thymeleaf.TemplateEngine,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.thymeleaf.standard.processor.StandardValueTagProcessor,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.xml.sax.InputSource,public,xml-apis:xml-apis:1.4.01,instantiation,org.springframework:spring-beans:5.1.0.RELEASE
+javax.servlet.ServletException,public,javax.servlet:javax.servlet-api:3.1.0,instantiation,org.springframework:spring-webmvc:5.1.0.RELEASE
+org.thymeleaf.testing.templateengine.context.web.WebProcessingContextBuilder$EncodeUrlAnswer,private,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT,method call,org.mockito:mockito-core:1.9.5
+org.thymeleaf.expression.ExecutionInfo,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,org.springframework:spring-expression:5.1.0.RELEASE
+org.springframework.util.ObjectUtils,private,org.springframework:spring-core:5.1.0.RELEASE,method call,org.springframework:spring-expression:5.1.0.RELEASE
+org.springframework.beans.factory.BeanNameAware,public,org.springframework:spring-beans:5.1.0.RELEASE,subtyping,org.springframework:spring-webflux:5.1.0.RELEASE
+org.springframework.web.context.support.ServletContextResourcePatternResolver,public,org.springframework:spring-web:5.1.0.RELEASE,method call,org.springframework:spring-context:5.1.0.RELEASE
+org.thymeleaf.testing.templateengine.engine.cache.TestCacheManager,public,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT,method call,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+javax.servlet.ServletException,public,javax.servlet:javax.servlet-api:3.1.0,subtyping,org.springframework:spring-web:5.1.0.RELEASE
+ognl.OgnlRuntime,default,ognl:ognl:3.1.26,method call,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+org.thymeleaf.testing.templateengine.engine.cache.TestCacheManager,public,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT,method call,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.xml.sax.EntityResolver,public,xml-apis:xml-apis:1.4.01,subtyping,org.springframework:spring-beans:5.1.0.RELEASE
+javax.servlet.ServletContext,public,javax.servlet:javax.servlet-api:3.1.0,cast,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.thymeleaf.expression.Numbers,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,instantiation,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+com.fasterxml.jackson.core.io.SerializedString,public,com.fasterxml.jackson.core:jackson-core:2.11.3,instantiation,com.fasterxml.jackson.core:jackson-databind:2.11.3
+com.fasterxml.jackson.datatype.jsr310.JavaTimeModule,public,com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.11.3,Class.forName,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+org.springframework.beans.factory.BeanNameAware,public,org.springframework:spring-beans:5.1.0.RELEASE,subtyping,org.springframework:spring-context:5.1.0.RELEASE
+org.thymeleaf.context.IContext,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,subtyping,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.springframework.core.io.ResourceEditor,public,org.springframework:spring-core:5.1.0.RELEASE,instantiation,org.springframework:spring-webmvc:5.1.0.RELEASE
+org.thymeleaf.templateresource.ITemplateResource,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,subtyping,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+javassist.LoaderClassPath,public,org.javassist:javassist:3.20.0-GA,instantiation,ognl:ognl:3.1.26
+org.thymeleaf.util.Validate,default,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonSetter,public,com.fasterxml.jackson.core:jackson-annotations:2.11.3,cast,com.fasterxml.jackson.core:jackson-databind:2.11.3
+org.attoparser.AbstractChainedMarkupHandler,public,org.attoparser:attoparser:2.0.5.RELEASE,subtyping,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+org.springframework.core.Ordered,public,org.springframework:spring-core:5.1.0.RELEASE,subtyping,org.springframework:spring-beans:5.1.0.RELEASE
+org.springframework.core.BridgeMethodResolver,default,org.springframework:spring-core:5.1.0.RELEASE,method call,org.springframework:spring-beans:5.1.0.RELEASE
+com.fasterxml.jackson.databind.ser.std.StdSerializer,public,com.fasterxml.jackson.core:jackson-databind:2.11.3,subtyping,com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.11.3
+org.springframework.web.context.ConfigurableWebEnvironment,public,org.springframework:spring-web:5.1.0.RELEASE,cast,org.springframework:spring-webmvc:5.1.0.RELEASE
+com.fasterxml.jackson.annotation.JsonGetter,public,com.fasterxml.jackson.core:jackson-annotations:2.11.3,cast,com.fasterxml.jackson.core:jackson-databind:2.11.3
+org.attoparser.trace.MarkupTraceEvent$StandaloneElementEndTraceEvent,public,org.attoparser:attoparser:2.0.5.RELEASE,cast,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.thymeleaf.cache.ExpressionCacheKey,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.thymeleaf.exceptions.ConfigurationException,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,instantiation,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.thymeleaf.templateengine.stsm.model.SeedStarter,public,unknownLib,Class.forName,ognl:ognl:3.1.26
+org.attoparser.MarkupParser,public,org.attoparser:attoparser:2.0.5.RELEASE,instantiation,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+org.thymeleaf.util.ClassLoaderUtils,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+com.fasterxml.jackson.databind.module.SimpleModule,public,com.fasterxml.jackson.core:jackson-databind:2.11.3,subtyping,com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.11.3
+org.springframework.core.env.EnvironmentCapable,public,org.springframework:spring-core:5.1.0.RELEASE,cast,org.springframework:spring-beans:5.1.0.RELEASE
+org.springframework.expression.spel.support.StandardEvaluationContext,public,org.springframework:spring-expression:5.1.0.RELEASE,instantiation,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.thymeleaf.engine.AttributeName,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,cast,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.springframework.web.servlet.support.RequestContext,public,org.springframework:spring-webmvc:5.1.0.RELEASE,instantiation,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.attoparser.trace.MarkupTraceEvent$UnmatchedCloseElementStartTraceEvent,public,org.attoparser:attoparser:2.0.5.RELEASE,method call,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.springframework.validation.BeanPropertyBindingResult,public,org.springframework:spring-context:5.1.0.RELEASE,method call,org.springframework:spring-webmvc:5.1.0.RELEASE
+org.springframework.context.ApplicationContextAware,public,org.springframework:spring-context:5.1.0.RELEASE,subtyping,org.springframework:spring-webmvc:5.1.0.RELEASE
+org.thymeleaf.context.LazyContextVariable,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,ognl:ognl:3.1.26
+org.springframework.context.support.ApplicationObjectSupport,public,org.springframework:spring-context:5.1.0.RELEASE,subtyping,org.springframework:spring-web:5.1.0.RELEASE
+org.springframework.beans.FatalBeanException,public,org.springframework:spring-beans:5.1.0.RELEASE,subtyping,org.springframework:spring-context:5.1.0.RELEASE
+org.attoparser.trace.MarkupTraceEvent$NonMinimizedStandaloneElementEndTraceEvent,public,org.attoparser:attoparser:2.0.5.RELEASE,cast,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.mockito.internal.invocation.InvocationImpl,public,org.mockito:mockito-core:1.9.5,method call,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.attoparser.config.ParseConfiguration,public,org.attoparser:attoparser:2.0.5.RELEASE,method call,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+org.attoparser.trace.MarkupTraceEvent,public,org.attoparser:attoparser:2.0.5.RELEASE,cast,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.springframework.beans.factory.xml.XmlBeanDefinitionReader,public,org.springframework:spring-beans:5.1.0.RELEASE,instantiation,org.springframework:spring-web:5.1.0.RELEASE
+org.springframework.beans.factory.support.GenericBeanDefinition,public,org.springframework:spring-beans:5.1.0.RELEASE,instantiation,org.springframework:spring-context:5.1.0.RELEASE
+org.springframework.expression.spel.standard.SpelExpression,public,org.springframework:spring-expression:5.1.0.RELEASE,cast,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.thymeleaf.context.AbstractContext,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,subtyping,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.apache.commons.logging.LogFactory,public,org.springframework:spring-jcl:5.1.0.RELEASE,method call,org.springframework:spring-core:5.1.0.RELEASE
+java.lang.Exception,public,unknownLib,Class.forName,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.thymeleaf.TemplateEngine,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,subtyping,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.springframework.core.DecoratingClassLoader,public,org.springframework:spring-core:5.1.0.RELEASE,subtyping,org.springframework:spring-context:5.1.0.RELEASE
+org.thymeleaf.util.Validate,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.thymeleaf.standard.processor.StandardSrcTagProcessor,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+java.util.EnumMap,public,unknownLib,Class.forName,ognl:ognl:3.1.26
+org.springframework.web.bind.WebDataBinder,public,org.springframework:spring-web:5.1.0.RELEASE,method call,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.springframework.web.servlet.support.BindStatus,public,org.springframework:spring-webmvc:5.1.0.RELEASE,method call,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+com.fasterxml.jackson.annotation.JacksonInject,public,com.fasterxml.jackson.core:jackson-annotations:2.11.3,cast,com.fasterxml.jackson.core:jackson-databind:2.11.3
+org.springframework.core.SimpleAliasRegistry,public,org.springframework:spring-core:5.1.0.RELEASE,subtyping,org.springframework:spring-beans:5.1.0.RELEASE
+org.thymeleaf.spring5.processor.SpringInputFileFieldTagProcessor,public,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+org.thymeleaf.spring5.processor.SpringErrorClassTagProcessor,public,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+org.springframework.core.ResolvableType,public,org.springframework:spring-core:5.1.0.RELEASE,method call,org.springframework:spring-beans:5.1.0.RELEASE
+com.fasterxml.jackson.core.json.WriterBasedJsonGenerator,public,com.fasterxml.jackson.core:jackson-core:2.11.3,method call,com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.11.3
+org.springframework.core.io.ClassPathResource,public,org.springframework:spring-core:5.1.0.RELEASE,method call,org.springframework:spring-beans:5.1.0.RELEASE
+org.thymeleaf.standard.processor.StandardHrefTagProcessor,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.thymeleaf.engine.DataDrivenTemplateIterator,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,instantiation,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.springframework.web.servlet.View,public,org.springframework:spring-webmvc:5.1.0.RELEASE,subtyping,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonView,public,com.fasterxml.jackson.core:jackson-annotations:2.11.3,cast,com.fasterxml.jackson.core:jackson-databind:2.11.3
+org.springframework.web.servlet.support.RequestContext,public,org.springframework:spring-webmvc:5.1.0.RELEASE,instantiation,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.mockito.stubbing.Answer,public,org.mockito:mockito-core:1.9.5,subtyping,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.thymeleaf.templateengine.springintegration.model.FormBean08,public,unknownLib,Class.forName,ognl:ognl:3.1.26
+org.thymeleaf.exceptions.TemplateInputException,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,instantiation,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.thymeleaf.templateengine.springintegration.model.FormBean06,public,unknownLib,Class.forName,ognl:ognl:3.1.26
+org.springframework.expression.AccessException,public,org.springframework:spring-expression:5.1.0.RELEASE,instantiation,org.springframework:spring-context:5.1.0.RELEASE
+org.thymeleaf.spring5.processor.SpringInputGeneralFieldTagProcessor,public,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+org.springframework.web.context.support.XmlWebApplicationContext,public,org.springframework:spring-web:5.1.0.RELEASE,method call,org.springframework:spring-beans:5.1.0.RELEASE
+com.fasterxml.jackson.core.JsonProcessingException,public,com.fasterxml.jackson.core:jackson-core:2.11.3,cast,com.fasterxml.jackson.core:jackson-databind:2.11.3
+com.fasterxml.jackson.databind.Module,public,com.fasterxml.jackson.core:jackson-databind:2.11.3,cast,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+org.attoparser.util.TextUtil,public,org.attoparser:attoparser:2.0.5.RELEASE,method call,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+org.thymeleaf.templateengine.springintegration.model.FormBean03,public,unknownLib,Class.forName,ognl:ognl:3.1.26
+org.thymeleaf.templateengine.stsm.model.Row,public,unknownLib,Class.forName,ognl:ognl:3.1.26
+org.thymeleaf.templateengine.springintegration.model.FormBean01,public,unknownLib,Class.forName,ognl:ognl:3.1.26
+com.fasterxml.jackson.annotation.JsonManagedReference,public,com.fasterxml.jackson.core:jackson-annotations:2.11.3,cast,com.fasterxml.jackson.core:jackson-databind:2.11.3
+org.springframework.web.context.ConfigurableWebApplicationContext,public,org.springframework:spring-web:5.1.0.RELEASE,cast,org.springframework:spring-webmvc:5.1.0.RELEASE
+org.thymeleaf.templateengine.springintegration.model.FormBean02,public,unknownLib,Class.forName,ognl:ognl:3.1.26
+org.thymeleaf.expression.Numbers,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,ognl:ognl:3.1.26
+org.thymeleaf.context.IExpressionContext,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,subtyping,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.objenesis.ObjenesisStd,public,org.objenesis:objenesis:1.0,method call,org.mockito:mockito-core:1.9.5
+org.springframework.core.convert.Property,public,org.springframework:spring-core:5.1.0.RELEASE,instantiation,org.springframework:spring-beans:5.1.0.RELEASE
+com.fasterxml.jackson.databind.ObjectMapper,public,com.fasterxml.jackson.core:jackson-databind:2.11.3,method call,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+org.springframework.beans.factory.xml.XmlBeanDefinitionReader,public,org.springframework:spring-beans:5.1.0.RELEASE,method call,org.springframework:spring-web:5.1.0.RELEASE
+org.thymeleaf.spring5.processor.SpringMethodTagProcessor,public,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+org.attoparser.trace.MarkupTraceEvent$CloseElementStartTraceEvent,public,org.attoparser:attoparser:2.0.5.RELEASE,method call,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.springframework.expression.spel.CompilablePropertyAccessor,public,org.springframework:spring-expression:5.1.0.RELEASE,subtyping,org.springframework:spring-context:5.1.0.RELEASE
+com.fasterxml.jackson.annotation.JsonRawValue,public,com.fasterxml.jackson.core:jackson-annotations:2.11.3,cast,com.fasterxml.jackson.core:jackson-databind:2.11.3
+org.hamcrest.BaseMatcher,public,org.hamcrest:hamcrest-core:1.1,subtyping,org.mockito:mockito-core:1.9.5
+org.unbescape.uri.UriEscape,public,org.unbescape:unbescape:1.1.6.RELEASE,method call,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.springframework.http.server.ServletServerHttpRequest,public,org.springframework:spring-web:5.1.0.RELEASE,instantiation,org.springframework:spring-webmvc:5.1.0.RELEASE
+org.thymeleaf.standard.expression.VariableExpression,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonRootName,public,com.fasterxml.jackson.core:jackson-annotations:2.11.3,cast,com.fasterxml.jackson.core:jackson-databind:2.11.3
+ognl.Ognl,public,ognl:ognl:3.1.26,method call,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.springframework.core.env.StandardEnvironment,public,org.springframework:spring-core:5.1.0.RELEASE,instantiation,org.springframework:spring-beans:5.1.0.RELEASE
+org.thymeleaf.cache.TemplateCacheKey,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.thymeleaf.expression.Lists,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,instantiation,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+ognl.OgnlContext,public,ognl:ognl:3.1.26,instantiation,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+org.thymeleaf.cache.ExpressionCacheKey,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,instantiation,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonCreator,public,com.fasterxml.jackson.core:jackson-annotations:2.11.3,cast,com.fasterxml.jackson.core:jackson-databind:2.11.3
+org.springframework.web.context.support.ServletRequestHandledEvent,public,org.springframework:spring-web:5.1.0.RELEASE,instantiation,org.springframework:spring-webmvc:5.1.0.RELEASE
+com.fasterxml.jackson.annotation.JsonFormat$Value,public,com.fasterxml.jackson.core:jackson-annotations:2.11.3,method call,com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.11.3
+org.thymeleaf.spring5.processor.SpringInputCheckboxFieldTagProcessor,public,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+org.reactivestreams.Publisher,public,org.reactivestreams:reactive-streams:1.0.2,cast,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.thymeleaf.standard.expression.SelectionVariableExpression,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,ognl:ognl:3.1.26
+org.thymeleaf.expression.Strings,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,instantiation,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.thymeleaf.cache.ExpressionCacheKey,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,instantiation,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+javax.servlet.http.HttpServlet,public,javax.servlet:javax.servlet-api:3.1.0,subtyping,org.springframework:spring-webmvc:5.1.0.RELEASE
+org.thymeleaf.dialect.IExecutionAttributeDialect,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,subtyping,org.thymeleaf.extras:thymeleaf-extras-springsecurity5:3.0.5-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonMerge,public,com.fasterxml.jackson.core:jackson-annotations:2.11.3,cast,com.fasterxml.jackson.core:jackson-databind:2.11.3
+org.attoparser.MarkupParser,public,org.attoparser:attoparser:2.0.5.RELEASE,method call,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+org.thymeleaf.engine.ThrottledTemplateProcessor,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.thymeleaf.exceptions.TemplateProcessingException,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,instantiation,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.springframework.core.convert.TypeDescriptor,public,org.springframework:spring-core:5.1.0.RELEASE,instantiation,org.springframework:spring-beans:5.1.0.RELEASE
+org.thymeleaf.engine.ElementTagStructureHandler,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+com.fasterxml.jackson.core.type.ResolvedType,public,com.fasterxml.jackson.core:jackson-core:2.11.3,subtyping,com.fasterxml.jackson.core:jackson-databind:2.11.3
+com.fasterxml.jackson.annotation.JsonProperty$Access,public,com.fasterxml.jackson.core:jackson-annotations:2.11.3,cast,com.fasterxml.jackson.core:jackson-databind:2.11.3
+com.fasterxml.jackson.datatype.jsr310.ser.LocalDateTimeSerializer,public,com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.11.3,method call,com.fasterxml.jackson.core:jackson-databind:2.11.3
+org.apache.commons.lang3.LocaleUtils,public,org.apache.commons:commons-lang3:3.1,method call,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.springframework.ui.context.ThemeSource,public,org.springframework:spring-context:5.1.0.RELEASE,subtyping,org.springframework:spring-web:5.1.0.RELEASE
+org.springframework.web.context.support.StandardServletEnvironment,public,org.springframework:spring-web:5.1.0.RELEASE,instantiation,org.springframework:spring-webmvc:5.1.0.RELEASE
+org.thymeleaf.messageresolver.StandardMessageResolver,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,instantiation,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+com.fasterxml.jackson.databind.MappingJsonFactory,public,com.fasterxml.jackson.core:jackson-databind:2.11.3,method call,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+org.thymeleaf.engine.IterationStatusVar,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,org.springframework:spring-expression:5.1.0.RELEASE
+java.lang.String,public,unknownLib,Class.forName,ognl:ognl:3.1.26
+org.thymeleaf.spring5.expression.Mvc$Spring41MvcUriComponentsBuilderDelegate,default,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT,Class.forName,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+org.springframework.core.io.UrlResource,public,org.springframework:spring-core:5.1.0.RELEASE,instantiation,org.springframework:spring-web:5.1.0.RELEASE
+javax.servlet.http.HttpServletResponse,public,javax.servlet:javax.servlet-api:3.1.0,cast,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.thymeleaf.expression.Messages,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,ognl:ognl:3.1.26
+com.fasterxml.jackson.annotation.JsonFormat$Shape,public,com.fasterxml.jackson.core:jackson-annotations:2.11.3,method call,com.fasterxml.jackson.core:jackson-databind:2.11.3
+org.thymeleaf.expression.Maps,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,instantiation,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.springframework.beans.factory.HierarchicalBeanFactory,public,org.springframework:spring-beans:5.1.0.RELEASE,subtyping,org.springframework:spring-context:5.1.0.RELEASE
+com.fasterxml.jackson.annotation.ObjectIdGenerator,public,com.fasterxml.jackson.core:jackson-annotations:2.11.3,cast,com.fasterxml.jackson.core:jackson-databind:2.11.3
+org.springframework.beans.BeanUtils,public,org.springframework:spring-beans:5.1.0.RELEASE,method call,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.thymeleaf.spring5.processor.SpringHrefTagProcessor,public,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+org.springframework.security.core.Authentication,public,org.springframework.security:spring-security-core:5.1.0.RELEASE,cast,org.thymeleaf.extras:thymeleaf-extras-springsecurity5:3.0.5-SNAPSHOT
+org.springframework.expression.TypedValue,public,org.springframework:spring-expression:5.1.0.RELEASE,instantiation,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.springframework.validation.BindingResult,public,org.springframework:spring-context:5.1.0.RELEASE,cast,org.springframework:spring-webmvc:5.1.0.RELEASE
+org.springframework.validation.FieldError,public,org.springframework:spring-context:5.1.0.RELEASE,instantiation,org.springframework:spring-web:5.1.0.RELEASE
+org.springframework.web.bind.EscapedErrors,public,org.springframework:spring-web:5.1.0.RELEASE,cast,org.springframework:spring-webmvc:5.1.0.RELEASE
+org.attoparser.select.NodeSelectorMarkupHandler,public,org.attoparser:attoparser:2.0.5.RELEASE,instantiation,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+com.fasterxml.jackson.databind.ObjectMapper$1,default,com.fasterxml.jackson.core:jackson-databind:2.11.3,method call,com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.11.3
+org.thymeleaf.standard.expression.StandardExpressions,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.thymeleaf.TemplateEngine,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,instantiation,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+com.fasterxml.jackson.core.Version,public,com.fasterxml.jackson.core:jackson-core:2.11.3,method call,com.fasterxml.jackson.core:jackson-databind:2.11.3
+org.thymeleaf.spring5.context.webmvc.SpringWebMvcThymeleafRequestContext,public,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT,instantiation,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.springframework.validation.BindException,public,org.springframework:spring-context:5.1.0.RELEASE,cast,org.springframework:spring-webmvc:5.1.0.RELEASE
+com.fasterxml.jackson.core.JsonProcessingException,public,com.fasterxml.jackson.core:jackson-core:2.11.3,subtyping,com.fasterxml.jackson.core:jackson-databind:2.11.3
+org.attoparser.trace.MarkupTraceEvent$CommentTraceEvent,public,org.attoparser:attoparser:2.0.5.RELEASE,method call,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.attoparser.trace.MarkupTraceEvent$DocTypeTraceEvent,public,org.attoparser:attoparser:2.0.5.RELEASE,cast,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+com.fasterxml.jackson.databind.MappingJsonFactory,public,com.fasterxml.jackson.core:jackson-databind:2.11.3,method call,com.fasterxml.jackson.core:jackson-core:2.11.3
+org.springframework.beans.factory.support.DefaultListableBeanFactory,public,org.springframework:spring-beans:5.1.0.RELEASE,instantiation,org.springframework:spring-context:5.1.0.RELEASE
+javax.servlet.ServletException,public,javax.servlet:javax.servlet-api:3.1.0,instantiation,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.springframework.context.expression.BeanFactoryResolver,public,org.springframework:spring-context:5.1.0.RELEASE,instantiation,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.springframework.context.i18n.SimpleTimeZoneAwareLocaleContext,public,org.springframework:spring-context:5.1.0.RELEASE,instantiation,org.springframework:spring-webmvc:5.1.0.RELEASE
+org.springframework.context.expression.MapAccessor,public,org.springframework:spring-context:5.1.0.RELEASE,method call,org.springframework:spring-expression:5.1.0.RELEASE
+org.springframework.context.support.AbstractRefreshableConfigApplicationContext,public,org.springframework:spring-context:5.1.0.RELEASE,subtyping,org.springframework:spring-web:5.1.0.RELEASE
+org.springframework.web.util.WebUtils,public,org.springframework:spring-web:5.1.0.RELEASE,method call,org.springframework:spring-webmvc:5.1.0.RELEASE
+org.springframework.beans.BeanWrapperImpl,public,org.springframework:spring-beans:5.1.0.RELEASE,method call,org.springframework:spring-context:5.1.0.RELEASE
+org.thymeleaf.engine.HTMLAttributeDefinition,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.springframework.beans.PropertyValue,public,org.springframework:spring-beans:5.1.0.RELEASE,cast,org.springframework:spring-context:5.1.0.RELEASE
+com.fasterxml.jackson.databind.deser.ContextualDeserializer,public,com.fasterxml.jackson.core:jackson-databind:2.11.3,subtyping,com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.11.3
+org.springframework.core.io.support.PathMatchingResourcePatternResolver,public,org.springframework:spring-core:5.1.0.RELEASE,instantiation,org.springframework:spring-beans:5.1.0.RELEASE
+interface java.lang.reflect.TypeVariable,public,unknownLib,method call,org.springframework:spring-core:5.1.0.RELEASE
+org.springframework.util.CompositeIterator,public,org.springframework:spring-core:5.1.0.RELEASE,instantiation,org.springframework:spring-beans:5.1.0.RELEASE
+org.thymeleaf.engine.IterationStatusVar,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,ognl:ognl:3.1.26
+com.fasterxml.jackson.annotation.JsonValue,public,com.fasterxml.jackson.core:jackson-annotations:2.11.3,cast,com.fasterxml.jackson.core:jackson-databind:2.11.3
+org.thymeleaf.cache.TemplateCacheKey,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,instantiation,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.springframework.core.io.support.ResourcePatternResolver,public,org.springframework:spring-core:5.1.0.RELEASE,cast,org.springframework:spring-context:5.1.0.RELEASE
+org.thymeleaf.engine.AttributeDefinitions,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.springframework.core.env.MutablePropertySources,public,org.springframework:spring-core:5.1.0.RELEASE,method call,org.springframework:spring-web:5.1.0.RELEASE
+org.thymeleaf.expression.Bools,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,instantiation,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.thymeleaf.exceptions.ConfigurationException,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,instantiation,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.attoparser.trace.MarkupTraceEvent$ProcessingInstructionTraceEvent,public,org.attoparser:attoparser:2.0.5.RELEASE,method call,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.springframework.beans.factory.support.DefaultListableBeanFactory,public,org.springframework:spring-beans:5.1.0.RELEASE,method call,org.springframework:spring-context:5.1.0.RELEASE
+org.thymeleaf.tests.testreporter.MinimalConsoleTestReporter,public,org.thymeleaf:thymeleaf-tests:ci,method call,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.springframework.expression.spel.support.StandardEvaluationContext,public,org.springframework:spring-expression:5.1.0.RELEASE,subtyping,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.springframework.core.env.PropertySource$StubPropertySource,public,org.springframework:spring-core:5.1.0.RELEASE,instantiation,org.springframework:spring-web:5.1.0.RELEASE
+com.fasterxml.jackson.core.Versioned,public,com.fasterxml.jackson.core:jackson-core:2.11.3,subtyping,com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.11.3
+org.attoparser.trace.MarkupTraceEvent$DocumentStartTraceEvent,public,org.attoparser:attoparser:2.0.5.RELEASE,cast,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.thymeleaf.expression.Objects,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,instantiation,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.springframework.core.MethodParameter,public,org.springframework:spring-core:5.1.0.RELEASE,instantiation,org.springframework:spring-beans:5.1.0.RELEASE
+org.springframework.core.convert.support.ConvertingPropertyEditorAdapter,public,org.springframework:spring-core:5.1.0.RELEASE,instantiation,org.springframework:spring-context:5.1.0.RELEASE
+org.springframework.util.ReflectionUtils,public,org.springframework:spring-core:5.1.0.RELEASE,method call,org.springframework:spring-expression:5.1.0.RELEASE
+org.springframework.web.bind.WebDataBinder,public,org.springframework:spring-web:5.1.0.RELEASE,instantiation,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.thymeleaf.spring5.expression.ThymeleafEvaluationContext,public,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT,method call,org.springframework:spring-expression:5.1.0.RELEASE
+org.attoparser.trace.MarkupTraceEvent$OpenElementEndTraceEvent,public,org.attoparser:attoparser:2.0.5.RELEASE,cast,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.springframework.web.context.support.StandardServletEnvironment,public,org.springframework:spring-web:5.1.0.RELEASE,method call,org.springframework:spring-context:5.1.0.RELEASE
+com.fasterxml.jackson.annotation.JsonSetter$Value,public,com.fasterxml.jackson.core:jackson-annotations:2.11.3,method call,com.fasterxml.jackson.core:jackson-databind:2.11.3
+org.springframework.util.Assert,public,org.springframework:spring-core:5.1.0.RELEASE,method call,org.springframework:spring-beans:5.1.0.RELEASE
+com.fasterxml.jackson.core.ObjectCodec,public,com.fasterxml.jackson.core:jackson-core:2.11.3,subtyping,com.fasterxml.jackson.core:jackson-databind:2.11.3
+javax.servlet.ServletContext,public,javax.servlet:javax.servlet-api:3.1.0,cast,org.springframework:spring-web:5.1.0.RELEASE
+org.springframework.util.ConcurrentReferenceHashMap,public,org.springframework:spring-core:5.1.0.RELEASE,instantiation,org.springframework:spring-beans:5.1.0.RELEASE
+org.thymeleaf.standard.processor.StandardMethodTagProcessor,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.springframework.web.context.request.RequestContextHolder,public,org.springframework:spring-web:5.1.0.RELEASE,method call,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.thymeleaf.engine.OpenElementTag,default,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonFilter,public,com.fasterxml.jackson.core:jackson-annotations:2.11.3,cast,com.fasterxml.jackson.core:jackson-databind:2.11.3
+org.attoparser.trace.MarkupTraceEvent$CDATASectionTraceEvent,public,org.attoparser:attoparser:2.0.5.RELEASE,cast,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonIgnoreProperties$Value,public,com.fasterxml.jackson.core:jackson-annotations:2.11.3,method call,com.fasterxml.jackson.core:jackson-databind:2.11.3
+java.math.BigInteger,public,unknownLib,Class.forName,ognl:ognl:3.1.26
+org.springframework.util.Assert,public,org.springframework:spring-core:5.1.0.RELEASE,method call,org.springframework:spring-web:5.1.0.RELEASE
+org.springframework.expression.spel.support.StandardEvaluationContext,public,org.springframework:spring-expression:5.1.0.RELEASE,method call,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.springframework.util.Assert,public,org.springframework:spring-core:5.1.0.RELEASE,method call,org.springframework:spring-expression:5.1.0.RELEASE
+org.thymeleaf.dialect.IExpressionObjectDialect,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,subtyping,org.thymeleaf.extras:thymeleaf-extras-springsecurity5:3.0.5-SNAPSHOT
+java.util.concurrent.TimeUnit,public,unknownLib,Class.forName,ognl:ognl:3.1.26
+org.springframework.web.util.HtmlUtils,public,org.springframework:spring-web:5.1.0.RELEASE,method call,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.springframework.web.bind.EscapedErrors,public,org.springframework:spring-web:5.1.0.RELEASE,instantiation,org.springframework:spring-webmvc:5.1.0.RELEASE
+com.fasterxml.jackson.annotation.ObjectIdResolver,public,com.fasterxml.jackson.core:jackson-annotations:2.11.3,cast,com.fasterxml.jackson.core:jackson-databind:2.11.3
+org.springframework.web.servlet.View,public,org.springframework:spring-webmvc:5.1.0.RELEASE,Class.forName,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+org.thymeleaf.standard.expression.StandardExpressionObjectFactory,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,subtyping,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.springframework.expression.spel.standard.SpelExpressionParser,public,org.springframework:spring-expression:5.1.0.RELEASE,method call,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.springframework.context.ApplicationContext,public,org.springframework:spring-context:5.1.0.RELEASE,subtyping,org.springframework:spring-web:5.1.0.RELEASE
+org.thymeleaf.expression.Dates,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,instantiation,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.springframework.web.context.WebApplicationContext,public,org.springframework:spring-web:5.1.0.RELEASE,cast,org.springframework:spring-webmvc:5.1.0.RELEASE
+org.thymeleaf.exceptions.TemplateInputException,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,Class.forName,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.attoparser.trace.MarkupTraceEvent$TextTraceEvent,public,org.attoparser:attoparser:2.0.5.RELEASE,cast,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.thymeleaf.spring5.expression.ThymeleafEvaluationContext,public,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT,instantiation,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+com.fasterxml.jackson.annotation.JacksonAnnotation,public,com.fasterxml.jackson.core:jackson-annotations:2.11.3,annotation,com.fasterxml.jackson.core:jackson-databind:2.11.3
+org.springframework.core.convert.ConversionService,public,org.springframework:spring-core:5.1.0.RELEASE,cast,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonTypeInfo,public,com.fasterxml.jackson.core:jackson-annotations:2.11.3,cast,com.fasterxml.jackson.core:jackson-databind:2.11.3
+org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator,public,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+org.thymeleaf.spring5.processor.SpringSrcTagProcessor,public,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+org.attoparser.trace.MarkupTraceEvent$DocumentStartTraceEvent,public,org.attoparser:attoparser:2.0.5.RELEASE,method call,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonPropertyOrder,public,com.fasterxml.jackson.core:jackson-annotations:2.11.3,cast,com.fasterxml.jackson.core:jackson-databind:2.11.3
+org.thymeleaf.templateengine.springintegration.requestdata.model.FormBean01,public,unknownLib,Class.forName,ognl:ognl:3.1.26
+org.thymeleaf.templateengine.stsm.model.repository.VarietyRepository,public,unknownLib,Class.forName,ognl:ognl:3.1.26
+org.springframework.core.io.support.PathMatchingResourcePatternResolver,public,org.springframework:spring-core:5.1.0.RELEASE,method call,org.springframework:spring-context:5.1.0.RELEASE
+org.thymeleaf.TemplateEngine,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,Class.forName,ognl:ognl:3.1.26
+org.springframework.core.SmartClassLoader,public,org.springframework:spring-core:5.1.0.RELEASE,subtyping,org.springframework:spring-context:5.1.0.RELEASE
+org.springframework.beans.factory.xml.XmlBeanDefinitionReader,public,org.springframework:spring-beans:5.1.0.RELEASE,method call,org.springframework:spring-context:5.1.0.RELEASE
+org.thymeleaf.standard.expression.SelectionVariableExpression,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.springframework.beans.factory.BeanInitializationException,public,org.springframework:spring-beans:5.1.0.RELEASE,instantiation,org.springframework:spring-webmvc:5.1.0.RELEASE
+org.springframework.beans.PropertyAccessorUtils,public,org.springframework:spring-beans:5.1.0.RELEASE,method call,org.springframework:spring-context:5.1.0.RELEASE
+org.springframework.validation.AbstractPropertyBindingResult,public,org.springframework:spring-context:5.1.0.RELEASE,method call,org.springframework:spring-beans:5.1.0.RELEASE
+javax.servlet.http.HttpSession,public,javax.servlet:javax.servlet-api:3.1.0,cast,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.springframework.context.EnvironmentAware,public,org.springframework:spring-context:5.1.0.RELEASE,subtyping,org.springframework:spring-webmvc:5.1.0.RELEASE
+org.springframework.core.env.EnumerablePropertySource,public,org.springframework:spring-core:5.1.0.RELEASE,subtyping,org.springframework:spring-web:5.1.0.RELEASE
+com.fasterxml.jackson.databind.ser.DefaultSerializerProvider$Impl,public,com.fasterxml.jackson.core:jackson-databind:2.11.3,method call,com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.11.3
+org.thymeleaf.TemplateSpec,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,instantiation,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.thymeleaf.templateengine.conversion.conversion3.Conversion3Object,public,unknownLib,Class.forName,ognl:ognl:3.1.26
+org.springframework.core.NamedThreadLocal,public,org.springframework:spring-core:5.1.0.RELEASE,instantiation,org.springframework:spring-beans:5.1.0.RELEASE
+org.springframework.validation.Errors,public,org.springframework:spring-context:5.1.0.RELEASE,subtyping,org.springframework:spring-web:5.1.0.RELEASE
+org.apache.commons.lang3.StringUtils,public,org.apache.commons:commons-lang3:3.1,method call,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.thymeleaf.templateengine.dataprefix.stsm.model.Type,public,unknownLib,Class.forName,ognl:ognl:3.1.26
+org.springframework.validation.Errors,public,org.springframework:spring-context:5.1.0.RELEASE,cast,org.springframework:spring-webmvc:5.1.0.RELEASE
+org.thymeleaf.expression.Aggregates,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,instantiation,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.springframework.core.env.EnvironmentCapable,public,org.springframework:spring-core:5.1.0.RELEASE,subtyping,org.springframework:spring-beans:5.1.0.RELEASE
+com.fasterxml.jackson.annotation.JsonFormat$Value,public,com.fasterxml.jackson.core:jackson-annotations:2.11.3,method call,com.fasterxml.jackson.core:jackson-databind:2.11.3
+org.thymeleaf.standard.expression.SelectionVariableExpression,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,cast,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+com.fasterxml.jackson.databind.KeyDeserializer,public,com.fasterxml.jackson.core:jackson-databind:2.11.3,subtyping,com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.11.3
+org.thymeleaf.expression.Dates,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,ognl:ognl:3.1.26
+org.springframework.util.LinkedMultiValueMap,public,org.springframework:spring-core:5.1.0.RELEASE,instantiation,org.springframework:spring-web:5.1.0.RELEASE
+org.attoparser.trace.MarkupTraceEvent$TextTraceEvent,public,org.attoparser:attoparser:2.0.5.RELEASE,method call,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.springframework.beans.factory.Aware,public,org.springframework:spring-beans:5.1.0.RELEASE,subtyping,org.springframework:spring-web:5.1.0.RELEASE
+org.thymeleaf.expression.Arrays,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,instantiation,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+javax.servlet.http.HttpServletRequest,public,javax.servlet:javax.servlet-api:3.1.0,cast,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.springframework.core.io.support.PathMatchingResourcePatternResolver,public,org.springframework:spring-core:5.1.0.RELEASE,subtyping,org.springframework:spring-web:5.1.0.RELEASE
+org.hamcrest.Matcher,public,org.hamcrest:hamcrest-core:1.1,subtyping,org.mockito:mockito-core:1.9.5
+com.fasterxml.jackson.annotation.JsonIdentityReference,public,com.fasterxml.jackson.core:jackson-annotations:2.11.3,cast,com.fasterxml.jackson.core:jackson-databind:2.11.3
+com.fasterxml.jackson.databind.ObjectMapper,public,com.fasterxml.jackson.core:jackson-databind:2.11.3,instantiation,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+com.fasterxml.jackson.core.JsonFactory,public,com.fasterxml.jackson.core:jackson-core:2.11.3,subtyping,com.fasterxml.jackson.core:jackson-databind:2.11.3
+org.springframework.web.context.support.StaticWebApplicationContext,public,org.springframework:spring-web:5.1.0.RELEASE,instantiation,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.springframework.core.io.DescriptiveResource,public,org.springframework:spring-core:5.1.0.RELEASE,instantiation,org.springframework:spring-beans:5.1.0.RELEASE
+org.thymeleaf.processor.element.MatchingAttributeName,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.attoparser.trace.TraceBuilderMarkupHandler,public,org.attoparser:attoparser:2.0.5.RELEASE,instantiation,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.springframework.beans.factory.ListableBeanFactory,public,org.springframework:spring-beans:5.1.0.RELEASE,subtyping,org.springframework:spring-context:5.1.0.RELEASE
+org.thymeleaf.testing.templateengine.engine.cache.TestCache,public,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT,method call,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.thymeleaf.standard.expression.IStandardVariableExpressionEvaluator,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,subtyping,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.springframework.web.context.support.WebApplicationObjectSupport,public,org.springframework:spring-web:5.1.0.RELEASE,subtyping,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.thymeleaf.dialect.IDialect,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,cast,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.springframework.beans.support.ResourceEditorRegistrar,public,org.springframework:spring-beans:5.1.0.RELEASE,instantiation,org.springframework:spring-context:5.1.0.RELEASE
+org.springframework.validation.DataBinder,public,org.springframework:spring-context:5.1.0.RELEASE,subtyping,org.springframework:spring-web:5.1.0.RELEASE
+org.attoparser.trace.MarkupTraceEvent$UnmatchedCloseElementEndTraceEvent,public,org.attoparser:attoparser:2.0.5.RELEASE,method call,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.thymeleaf.context.WebEngineContext$SessionAttributesMap,private,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,org.springframework:spring-expression:5.1.0.RELEASE
+com.fasterxml.jackson.core.util.Instantiatable,public,com.fasterxml.jackson.core:jackson-core:2.11.3,cast,com.fasterxml.jackson.core:jackson-databind:2.11.3
+org.springframework.beans.MutablePropertyValues,public,org.springframework:spring-beans:5.1.0.RELEASE,cast,org.springframework:spring-context:5.1.0.RELEASE
+com.fasterxml.jackson.core.io.CharacterEscapes,public,com.fasterxml.jackson.core:jackson-core:2.11.3,subtyping,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+org.springframework.util.ObjectUtils,public,org.springframework:spring-core:5.1.0.RELEASE,method call,org.springframework:spring-expression:5.1.0.RELEASE
+org.attoparser.trace.MarkupTraceEvent$CloseElementEndTraceEvent,public,org.attoparser:attoparser:2.0.5.RELEASE,cast,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonIdentityInfo,public,com.fasterxml.jackson.core:jackson-annotations:2.11.3,cast,com.fasterxml.jackson.core:jackson-databind:2.11.3
+org.thymeleaf.templateengine.attrprocessors.model.ExceptionThrowingBean,public,unknownLib,Class.forName,ognl:ognl:3.1.26
+org.thymeleaf.templateresolver.ITemplateResolver,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,subtyping,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.springframework.util.ObjectUtils,public,org.springframework:spring-core:5.1.0.RELEASE,method call,org.springframework:spring-beans:5.1.0.RELEASE
+com.fasterxml.jackson.core.TreeNode,public,com.fasterxml.jackson.core:jackson-core:2.11.3,subtyping,com.fasterxml.jackson.core:jackson-databind:2.11.3
+com.fasterxml.jackson.annotation.JsonProperty,public,com.fasterxml.jackson.core:jackson-annotations:2.11.3,cast,com.fasterxml.jackson.core:jackson-databind:2.11.3
+org.springframework.web.multipart.MultipartHttpServletRequest,public,org.springframework:spring-web:5.1.0.RELEASE,cast,org.springframework:spring-webmvc:5.1.0.RELEASE
+org.w3c.dom.Element,public,xml-apis:xml-apis:1.4.01,cast,org.springframework:spring-beans:5.1.0.RELEASE
+org.thymeleaf.templateengine.features.User,public,unknownLib,Class.forName,ognl:ognl:3.1.26
+org.attoparser.trace.MarkupTraceEvent$UnmatchedCloseElementEndTraceEvent,public,org.attoparser:attoparser:2.0.5.RELEASE,cast,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.springframework.util.xml.XmlValidationModeDetector,public,org.springframework:spring-core:5.1.0.RELEASE,instantiation,org.springframework:spring-beans:5.1.0.RELEASE
+org.springframework.core.convert.ConversionService,public,org.springframework:spring-core:5.1.0.RELEASE,cast,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.thymeleaf.expression.Strings,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,ognl:ognl:3.1.26
+org.thymeleaf.expression.Sets,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,instantiation,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+javax.servlet.http.HttpServletRequest,public,javax.servlet:javax.servlet-api:3.1.0,cast,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+org.thymeleaf.templateengine.stsm.model.Feature,public,unknownLib,Class.forName,ognl:ognl:3.1.26
+org.attoparser.trace.MarkupTraceEvent$CloseElementEndTraceEvent,public,org.attoparser:attoparser:2.0.5.RELEASE,method call,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.springframework.expression.TypedValue,public,org.springframework:spring-expression:5.1.0.RELEASE,instantiation,org.springframework:spring-context:5.1.0.RELEASE
+com.fasterxml.jackson.core.util.ByteArrayBuilder,public,com.fasterxml.jackson.core:jackson-core:2.11.3,instantiation,com.fasterxml.jackson.core:jackson-databind:2.11.3
+org.thymeleaf.templateengine.dataprefix.stsm.model.repository.SeedStarterRepository,public,unknownLib,Class.forName,ognl:ognl:3.1.26
+org.thymeleaf.standard.processor.StandardActionTagProcessor,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.springframework.beans.ExtendedBeanInfoFactory,public,org.springframework:spring-beans:5.1.0.RELEASE,Class.forName,org.springframework:spring-core:5.1.0.RELEASE
+javax.servlet.ServletRequestWrapper,public,javax.servlet:javax.servlet-api:3.1.0,cast,org.springframework:spring-web:5.1.0.RELEASE
+org.attoparser.trace.MarkupTraceEvent$AutoCloseElementStartTraceEvent,public,org.attoparser:attoparser:2.0.5.RELEASE,method call,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.attoparser.trace.MarkupTraceEvent$InnerWhiteSpaceTraceEvent,public,org.attoparser:attoparser:2.0.5.RELEASE,cast,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.springframework.core.io.support.EncodedResource,public,org.springframework:spring-core:5.1.0.RELEASE,method call,org.springframework:spring-beans:5.1.0.RELEASE
+org.springframework.core.env.EnvironmentCapable,public,org.springframework:spring-core:5.1.0.RELEASE,subtyping,org.springframework:spring-context:5.1.0.RELEASE
+org.springframework.core.ResolvableType$1,default,org.springframework:spring-core:5.1.0.RELEASE,method call,org.springframework:spring-beans:5.1.0.RELEASE
+org.springframework.web.context.support.XmlWebApplicationContext,public,org.springframework:spring-web:5.1.0.RELEASE,method call,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+java.lang.Long,public,unknownLib,Class.forName,ognl:ognl:3.1.26
+org.springframework.util.MultiValueMap,public,org.springframework:spring-core:5.1.0.RELEASE,subtyping,org.springframework:spring-web:5.1.0.RELEASE
+java.io.IOException,public,unknownLib,Class.forName,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+sun.misc.Unsafe,public,unknownLib,Class.forName,ognl:ognl:3.1.26
+org.springframework.core.convert.TypeDescriptor,public,org.springframework:spring-core:5.1.0.RELEASE,instantiation,org.springframework:spring-expression:5.1.0.RELEASE
+org.springframework.util.ObjectUtils,public,org.springframework:spring-core:5.1.0.RELEASE,method call,org.springframework:spring-context:5.1.0.RELEASE
+org.springframework.validation.FieldError,public,org.springframework:spring-context:5.1.0.RELEASE,cast,org.springframework:spring-web:5.1.0.RELEASE
+org.thymeleaf.testing.templateengine.engine.cache.TestCache,public,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT,method call,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+com.fasterxml.jackson.core.json.WriterBasedJsonGenerator,public,com.fasterxml.jackson.core:jackson-core:2.11.3,method call,com.fasterxml.jackson.core:jackson-databind:2.11.3
+org.attoparser.trace.MarkupTraceEvent$InnerWhiteSpaceTraceEvent,public,org.attoparser:attoparser:2.0.5.RELEASE,method call,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.springframework.beans.factory.xml.ResourceEntityResolver,public,org.springframework:spring-beans:5.1.0.RELEASE,instantiation,org.springframework:spring-web:5.1.0.RELEASE
+org.unbescape.html.HtmlEscape,public,org.unbescape:unbescape:1.1.6.RELEASE,method call,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.unbescape.html.HtmlEscape,public,org.unbescape:unbescape:1.1.6.RELEASE,method call,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+java.lang.NullPointerException,public,unknownLib,Class.forName,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.springframework.context.ConfigurableApplicationContext,public,org.springframework:spring-context:5.1.0.RELEASE,subtyping,org.springframework:spring-web:5.1.0.RELEASE
+org.thymeleaf.engine.HTMLAttributeName,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.springframework.util.StringUtils,public,org.springframework:spring-core:5.1.0.RELEASE,method call,org.springframework:spring-beans:5.1.0.RELEASE
+org.thymeleaf.spring5.SpringTemplateEngine,public,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+org.thymeleaf.cache.ICache,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,subtyping,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.xml.sax.ErrorHandler,public,xml-apis:xml-apis:1.4.01,subtyping,org.springframework:spring-core:5.1.0.RELEASE
+org.attoparser.trace.MarkupTraceEvent$OpenElementStartTraceEvent,public,org.attoparser:attoparser:2.0.5.RELEASE,method call,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.thymeleaf.templateengine.dataprefix.stsm.model.SeedStarter,public,unknownLib,Class.forName,ognl:ognl:3.1.26
+org.attoparser.trace.MarkupTraceEvent$AutoCloseElementStartTraceEvent,public,org.attoparser:attoparser:2.0.5.RELEASE,cast,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.thymeleaf.testing.templateengine.report.AbstractTextualTestReporter,public,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT,subtyping,org.thymeleaf:thymeleaf-tests:ci
+org.springframework.validation.ObjectError,public,org.springframework:spring-context:5.1.0.RELEASE,cast,org.springframework:spring-webmvc:5.1.0.RELEASE
+org.springframework.context.i18n.TimeZoneAwareLocaleContext,public,org.springframework:spring-context:5.1.0.RELEASE,cast,org.springframework:spring-webmvc:5.1.0.RELEASE
+org.thymeleaf.context.WebEngineContext$SessionAttributesMap,private,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,ognl:ognl:3.1.26
+org.thymeleaf.context.IEngineContext,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,cast,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.thymeleaf.spring5.processor.SpringErrorsTagProcessor,public,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+org.attoparser.trace.MarkupTraceEvent$OpenElementStartTraceEvent,public,org.attoparser:attoparser:2.0.5.RELEASE,cast,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.thymeleaf.standard.StandardDialect,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,subtyping,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+java.util.TimeZone,public,unknownLib,Class.forName,ognl:ognl:3.1.26
+org.springframework.context.support.ClassPathXmlApplicationContext,public,org.springframework:spring-context:5.1.0.RELEASE,method call,org.springframework:spring-core:5.1.0.RELEASE
+org.springframework.web.context.support.StandardServletEnvironment,public,org.springframework:spring-web:5.1.0.RELEASE,method call,org.springframework:spring-core:5.1.0.RELEASE
+org.attoparser.trace.MarkupTraceEvent$AutoCloseElementEndTraceEvent,public,org.attoparser:attoparser:2.0.5.RELEASE,cast,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.springframework.beans.BeanUtils,public,org.springframework:spring-beans:5.1.0.RELEASE,method call,org.springframework:spring-context:5.1.0.RELEASE
+org.thymeleaf.standard.expression.VariableExpression,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,ognl:ognl:3.1.26
+org.thymeleaf.templateengine.escaping.model.FormBean01,public,unknownLib,Class.forName,ognl:ognl:3.1.26
+com.fasterxml.jackson.core.json.JsonReadFeature,public,com.fasterxml.jackson.core:jackson-core:2.11.3,cast,com.fasterxml.jackson.core:jackson-databind:2.11.3
+org.springframework.util.ClassUtils,public,org.springframework:spring-core:5.1.0.RELEASE,method call,org.springframework:spring-beans:5.1.0.RELEASE
+ognl.OgnlException,public,ognl:ognl:3.1.26,instantiation,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+org.springframework.web.bind.WebDataBinder,public,org.springframework:spring-web:5.1.0.RELEASE,method call,org.springframework:spring-context:5.1.0.RELEASE
+org.thymeleaf.templateparser.markup.decoupled.DecoupledTemplateLogicMarkupHandler,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,org.attoparser:attoparser:2.0.5.RELEASE
+com.fasterxml.jackson.annotation.JsonFormat,public,com.fasterxml.jackson.core:jackson-annotations:2.11.3,cast,com.fasterxml.jackson.core:jackson-databind:2.11.3
+javax.servlet.ServletConfig,public,javax.servlet:javax.servlet-api:3.1.0,cast,org.springframework:spring-web:5.1.0.RELEASE
+com.fasterxml.jackson.annotation.JsonUnwrapped,public,com.fasterxml.jackson.core:jackson-annotations:2.11.3,cast,com.fasterxml.jackson.core:jackson-databind:2.11.3
+org.thymeleaf.testing.templateengine.context.web.Spring5VersionSpecificContextInitializer,default,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT,Class.forName,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+org.thymeleaf.context.WebEngineContext,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.springframework.web.multipart.MultipartResolver,public,org.springframework:spring-web:5.1.0.RELEASE,cast,org.springframework:spring-webmvc:5.1.0.RELEASE
+org.thymeleaf.cache.ICacheManager,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,subtyping,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.attoparser.trace.MarkupTraceEvent$AutoCloseElementEndTraceEvent,public,org.attoparser:attoparser:2.0.5.RELEASE,method call,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.thymeleaf.exceptions.TemplateProcessingException,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,instantiation,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.thymeleaf.expression.Uris,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,ognl:ognl:3.1.26
+org.attoparser.trace.MarkupTraceEvent$DocumentEndTraceEvent,public,org.attoparser:attoparser:2.0.5.RELEASE,method call,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.springframework.util.StringUtils,public,org.springframework:spring-core:5.1.0.RELEASE,method call,org.springframework:spring-context:5.1.0.RELEASE
+org.springframework.core.AliasRegistry,public,org.springframework:spring-core:5.1.0.RELEASE,subtyping,org.springframework:spring-beans:5.1.0.RELEASE
+org.thymeleaf.templatemode.TemplateMode,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,cast,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.thymeleaf.templateengine.features.lazy.LazyExpressionReturner,public,unknownLib,Class.forName,ognl:ognl:3.1.26
+java.lang.Short,public,unknownLib,Class.forName,ognl:ognl:3.1.26
+org.springframework.web.reactive.result.view.View,public,org.springframework:spring-webflux:5.1.0.RELEASE,Class.forName,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+org.thymeleaf.util.Validate,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.attoparser.trace.MarkupTraceEvent$DocumentEndTraceEvent,public,org.attoparser:attoparser:2.0.5.RELEASE,cast,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+javassist.CtField,public,org.javassist:javassist:3.20.0-GA,instantiation,ognl:ognl:3.1.26
+org.thymeleaf.standard.serializer.StandardJavaScriptSerializer$JacksonThymeleafCharacterEscapes,private,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,com.fasterxml.jackson.core:jackson-core:2.11.3
+org.thymeleaf.ITemplateEngine,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,subtyping,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.attoparser.trace.MarkupTraceEvent$XmlDeclarationTraceEvent,public,org.attoparser:attoparser:2.0.5.RELEASE,cast,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.thymeleaf.templatemode.TemplateMode,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.attoparser.trace.MarkupTraceEvent$AttributeTraceEvent,public,org.attoparser:attoparser:2.0.5.RELEASE,method call,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonInclude$Value,public,com.fasterxml.jackson.core:jackson-annotations:2.11.3,method call,com.fasterxml.jackson.core:jackson-databind:2.11.3
+com.fasterxml.jackson.annotation.ObjectIdGenerators$PropertyGenerator,public,com.fasterxml.jackson.core:jackson-annotations:2.11.3,subtyping,com.fasterxml.jackson.core:jackson-databind:2.11.3
+org.apache.commons.logging.LogFactory,public,org.springframework:spring-jcl:5.1.0.RELEASE,method call,org.springframework:spring-context:5.1.0.RELEASE
+org.springframework.core.BridgeMethodResolver,public,org.springframework:spring-core:5.1.0.RELEASE,method call,org.springframework:spring-expression:5.1.0.RELEASE
+org.apache.commons.logging.LogFactory,public,org.springframework:spring-jcl:5.1.0.RELEASE,method call,org.springframework:spring-beans:5.1.0.RELEASE
+org.springframework.validation.ObjectError,public,org.springframework:spring-context:5.1.0.RELEASE,cast,org.springframework:spring-web:5.1.0.RELEASE
+org.thymeleaf.context.WebContext,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,instantiation,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+com.fasterxml.jackson.databind.introspect.AnnotatedMethod,public,com.fasterxml.jackson.core:jackson-databind:2.11.3,cast,com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.11.3
+org.thymeleaf.context.WebEngineContext,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.attoparser.trace.MarkupTraceEvent$XmlDeclarationTraceEvent,public,org.attoparser:attoparser:2.0.5.RELEASE,method call,org.thymeleaf:thymeleaf-testing:3.0.5-SNAPSHOT
+org.thymeleaf.spring5.dialect.SpringStandardDialect,public,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonClassDescription,public,com.fasterxml.jackson.core:jackson-annotations:2.11.3,cast,com.fasterxml.jackson.core:jackson-databind:2.11.3
+org.springframework.core.ReactiveAdapterRegistry,public,org.springframework:spring-core:5.1.0.RELEASE,cast,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.objenesis.ObjenesisStd,public,org.objenesis:objenesis:1.0,instantiation,org.mockito:mockito-core:1.9.5
+com.fasterxml.jackson.databind.ser.ContextualSerializer,public,com.fasterxml.jackson.core:jackson-databind:2.11.3,subtyping,com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.11.3
+org.springframework.util.StringUtils,public,org.springframework:spring-core:5.1.0.RELEASE,method call,org.springframework:spring-expression:5.1.0.RELEASE
+org.thymeleaf.TemplateEngine,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,Class.forName,org.springframework:spring-core:5.1.0.RELEASE
+org.thymeleaf.spring5.processor.SpringActionTagProcessor,public,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+org.thymeleaf.messageresolver.AbstractMessageResolver,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,subtyping,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT
+org.springframework.core.GenericTypeResolver,default,org.springframework:spring-core:5.1.0.RELEASE,method call,org.springframework:spring-beans:5.1.0.RELEASE
+org.thymeleaf.spring5.processor.SpringValueTagProcessor,public,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT
+org.thymeleaf.standard.processor.StandardObjectTagProcessor,public,org.thymeleaf:thymeleaf:3.0.12-SNAPSHOT,method call,org.thymeleaf:thymeleaf-spring5:3.0.12-SNAPSHOT

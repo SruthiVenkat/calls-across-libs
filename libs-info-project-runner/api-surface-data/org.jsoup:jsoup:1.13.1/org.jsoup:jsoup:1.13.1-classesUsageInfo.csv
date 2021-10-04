@@ -1,8 +1,5 @@
 Class Name,Class Visibility,Class Library,Usage,Used In Library
-com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl,public,unknownLib,Class.forName,xml-apis:xml-apis:1.0.b2
-javax.xml.transform.stream.StreamResult,public,xml-apis:xml-apis:1.0.b2,instantiation,org.jsoup:jsoup:1.13.1
-javax.xml.transform.TransformerFactory,public,xml-apis:xml-apis:1.0.b2,method call,org.jsoup:jsoup:1.13.1
-javax.xml.parsers.DocumentBuilderFactory,public,xml-apis:xml-apis:1.0.b2,method call,org.jsoup:jsoup:1.13.1
-org.w3c.dom.Element,public,xml-apis:xml-apis:1.0.b2,cast,org.jsoup:jsoup:1.13.1
-javax.xml.transform.dom.DOMSource,public,xml-apis:xml-apis:1.0.b2,instantiation,org.jsoup:jsoup:1.13.1
-com.sun.org.apache.xalan.internal.xsltc.trax.TransformerFactoryImpl,public,unknownLib,Class.forName,xml-apis:xml-apis:1.0.b2
+javax.xml.parsers.DocumentBuilderFactory,public,javax.xml.parsers,method call,org.jsoup:jsoup:1.13.1
+org.xml.sax.InputSource,public,org.xml.sax,instantiation,javax.xml.parsers
+org.w3c.dom.Element,public,org.w3c.dom,cast,org.jsoup:jsoup:1.13.1
+com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl,public,unknownLib,Class.forName,javax.xml.parsers

@@ -1,0 +1,7 @@
+SubClass,Sub Library,Super Class/Interface,Super Class/Interface Visibility,Super Library,Count
+tech.tablesaw.columns.numbers.fillers.DoubleRangeIterable$1,tech.tablesaw:tablesaw-core:0.38.5,it.unimi.dsi.fastutil.doubles.DoubleIterator,public,it.unimi.dsi:fastutil:8.3.0,1
+tech.tablesaw.columns.booleans.fillers.BooleanIterable,tech.tablesaw:tablesaw-core:0.38.5,it.unimi.dsi.fastutil.booleans.BooleanIterable,public,it.unimi.dsi:fastutil:8.3.0,1
+tech.tablesaw.columns.booleans.fillers.BooleanIterable$1,tech.tablesaw:tablesaw-core:0.38.5,it.unimi.dsi.fastutil.booleans.BooleanIterator,public,it.unimi.dsi:fastutil:8.3.0,1
+tech.tablesaw.sorting.comparators.IntComparatorChain,tech.tablesaw:tablesaw-core:0.38.5,it.unimi.dsi.fastutil.ints.IntComparator,public,it.unimi.dsi:fastutil:8.3.0,1
+tech.tablesaw.selection.Selection,tech.tablesaw:tablesaw-core:0.38.5,it.unimi.dsi.fastutil.ints.IntIterable,public,it.unimi.dsi:fastutil:8.3.0,1
+tech.tablesaw.selection.BitmapBackedSelection$1,tech.tablesaw:tablesaw-core:0.38.5,it.unimi.dsi.fastutil.ints.IntIterator,public,it.unimi.dsi:fastutil:8.3.0,1

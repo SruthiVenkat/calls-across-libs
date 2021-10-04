@@ -1,0 +1,7 @@
+SubClass,Sub Library,Super Class/Interface,Super Class/Interface Visibility,Super Library,Count
+tech.tablesaw.io.html.HtmlReader,tech.tablesaw:tablesaw-html:0.38.5,tech.tablesaw.io.DataReader,public,tech.tablesaw:tablesaw-core:0.38.5,1
+tech.tablesaw.io.html.HtmlReadOptions,tech.tablesaw:tablesaw-html:0.38.5,tech.tablesaw.io.ReadOptions,public,tech.tablesaw:tablesaw-core:0.38.5,1
+tech.tablesaw.io.html.HtmlWriteOptions$Builder,tech.tablesaw:tablesaw-html:0.38.5,tech.tablesaw.io.WriteOptions$Builder,public,tech.tablesaw:tablesaw-core:0.38.5,1
+tech.tablesaw.selection.Selection,tech.tablesaw:tablesaw-core:0.38.5,it.unimi.dsi.fastutil.ints.IntIterable,public,it.unimi.dsi:fastutil:8.3.0,1
+tech.tablesaw.io.html.HtmlWriter,tech.tablesaw:tablesaw-html:0.38.5,tech.tablesaw.io.DataWriter,public,tech.tablesaw:tablesaw-core:0.38.5,1
+tech.tablesaw.io.html.HtmlWriteOptions,tech.tablesaw:tablesaw-html:0.38.5,tech.tablesaw.io.WriteOptions,public,tech.tablesaw:tablesaw-core:0.38.5,1

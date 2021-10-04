@@ -1,2 +1,0 @@
-Class,Method,Field Name:Field Signature,Annotated In Library,Annotation,Annotation Visibility,Annotation Library,Count
-misc.Client,-,-,ca.waterloo.pl:microbenchmark1-client:1.0-SNAPSHOT,packageA.CustomAnnotation,public,ca.waterloo.pl:microbenchmark1-library:1.0-SNAPSHOT,1

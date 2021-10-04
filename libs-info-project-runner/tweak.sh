@@ -1,5 +1,7 @@
 #rocketmq
 cd /calls-across-libs/libs-info-project-runner/projects/rocketmq 
+cd ./projects/rocketmq 
+
 echo "org.apache.rocketmq" > ./acl/group.txt
 echo "org.apache.rocketmq" > ./broker/group.txt
 echo "org.apache.rocketmq" > ./client/group.txt
@@ -21,13 +23,15 @@ echo "rocketmq-tools" > ./tools/artifact.txt
 
 #hygieia-core
 cd /calls-across-libs/libs-info-project-runner/projects/hygieia-core 
+cd ./projects/hygieia-core 
 echo "com.capitalone.dashboard" > ./group.txt
 echo "3.6.9-SNAPSHOT" > ./version.txt
 echo "core" > ./artifact.txt
 
-cd /calls-across-libs/libs-info-project-runner
-rm -rf /calls-across-libs/libs-info-project-runner/api-surface-data
+#cd /calls-across-libs/libs-info-project-runner
+#rm -rf /calls-across-libs/libs-info-project-runner/api-surface-data
 python3 tweak.py
 
 #checkstyle
 cd /calls-across-libs/libs-info-project-runner/projects/checkstyle && mvn tidy:pom
+cd ./projects/checkstyle && mvn tidy:pom

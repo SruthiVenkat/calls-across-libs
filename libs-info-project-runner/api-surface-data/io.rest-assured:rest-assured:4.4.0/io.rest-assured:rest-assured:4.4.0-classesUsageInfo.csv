@@ -1,0 +1,646 @@
+Class Name,Class Visibility,Class Library,Usage,Used In Library
+org.codehaus.groovy.reflection.ClassInfo,private,org.codehaus.groovy:groovy:3.0.8,method call,io.rest-assured:rest-assured:4.4.0
+io.restassured.specification.ProxySpecification,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.callsite.GetEffectivePojoPropertySite,public,org.codehaus.groovy:groovy:3.0.8,method call,io.rest-assured:rest-assured:4.4.0
+io.restassured.internal.support.ParameterUpdater$_updateCollectionParameter_closure2,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.LogRequestAndResponseOnFailListener,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.ResponseSpecificationImpl$_body_closure11,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+org.assertj.core.api.AbstractThrowableAssert,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+java.util.Set,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+com.google.gson.Gson,public,com.google.code.gson:gson:2.6.2,instantiation,io.rest-assured:json-path:4.4.0
+io.restassured.internal.path.json.JSONAssertion,public,io.rest-assured:json-path:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.callsite.PogoInterceptableSite,public,org.codehaus.groovy:groovy:3.0.8,method call,io.rest-assured:rest-assured:4.4.0
+io.restassured.path.json.mapper.factory.DefaultGsonObjectMapperFactory,public,io.rest-assured:json-path:4.4.0,instantiation,io.rest-assured:rest-assured:4.4.0
+java.util.AbstractMap,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.ResponseSpecificationImpl$_contentType_closure13,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.ResponseSpecificationImpl$_contentType_closure12,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+org.mockito.Mockito,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.RequestSpecificationImpl$_header_closure8,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+org.apache.http.protocol.ImmutableHttpProcessor,public,org.apache.httpcomponents:httpcore:4.4.13,instantiation,org.apache.httpcomponents:httpclient:4.5.13
+org.apache.http.HttpEntityEnclosingRequest,public,org.apache.httpcomponents:httpcore:4.4.13,cast,io.rest-assured:rest-assured:4.4.0
+groovy.lang.Reference,public,org.codehaus.groovy:groovy:3.0.8,method call,io.rest-assured:rest-assured:4.4.0
+groovy.json.JsonToken,public,org.codehaus.groovy:groovy-json:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+javax.json.stream.JsonGenerator,public,jakarta.json:jakarta.json-api:1.1.6,subtyping,org.apache.johnzon:johnzon-core:1.1.11
+io.restassured.internal.MapCreator$CollisionStrategy,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+org.apache.http.message.ParserCursor,public,org.apache.httpcomponents:httpcore:4.4.13,method call,org.apache.httpcomponents:httpclient:4.5.13
+java.lang.reflect.AnnotatedElement,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+java.lang.Throwable,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.hamcrest.Description,public,org.hamcrest:hamcrest:2.1,cast,io.rest-assured:rest-assured:4.4.0
+java.lang.Float,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.apache.commons.logging.impl.Jdk14Logger,public,commons-logging:commons-logging:1.2,Class.forName,commons-logging:commons-logging:1.2
+org.codehaus.groovy.runtime.dgm$197,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+java.io.BufferedOutputStream,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+javax.naming.InitialContext,public,unknownLib,Class.forName,org.eclipse:yasson:1.0.6
+groovy.lang.Closure,public,org.codehaus.groovy:groovy:3.0.8,subtyping,org.codehaus.groovy:groovy-json:3.0.8
+java.util.regex.Matcher,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.transform.ImmutableASTTransformation,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.GeneratedClosure,public,org.codehaus.groovy:groovy:3.0.8,subtyping,io.rest-assured:rest-assured:4.4.0
+javax.json.JsonWriterFactory,public,jakarta.json:jakarta.json-api:1.1.6,subtyping,org.apache.johnzon:johnzon-core:1.1.11
+groovy.lang.GString,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+javax.json.spi.JsonProvider,public,jakarta.json:jakarta.json-api:1.1.6,cast,org.eclipse:yasson:1.0.6
+io.restassured.http.Header,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.ScriptBytecodeAdapter,public,org.codehaus.groovy:groovy:3.0.8,method call,io.rest-assured:rest-assured:4.4.0
+java.io.DataOutputStream,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.BytecodeInterface8,public,org.codehaus.groovy:groovy:3.0.8,method call,io.rest-assured:rest-assured-common:4.4.0
+org.codehaus.groovy.runtime.ScriptBytecodeAdapter,public,org.codehaus.groovy:groovy:3.0.8,method call,io.rest-assured:json-path:4.4.0
+java.util.Collection,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.apache.http.client.utils.DateUtils,public,org.apache.httpcomponents:httpclient:4.5.13,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.apache.commons.logging.LogFactory,public,commons-logging:commons-logging:1.2,Class.forName,commons-logging:commons-logging:1.2
+org.codehaus.groovy.runtime.GeneratedClosure,public,org.codehaus.groovy:groovy:3.0.8,subtyping,io.rest-assured:json-path:4.4.0
+io.restassured.internal.path.json.JSONAssertion,public,io.rest-assured:json-path:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.apache.http.impl.client.BasicCookieStore,public,org.apache.httpcomponents:httpclient:4.5.13,instantiation,io.rest-assured:rest-assured:4.4.0
+io.restassured.http.Header,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+javax.json.bind.annotation.JsonbVisibility,public,jakarta.json.bind:jakarta.json.bind-api:1.0.2,cast,org.eclipse:yasson:1.0.6
+io.restassured.internal.RestAssuredResponseImpl,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+groovy.json.JsonToken,public,org.codehaus.groovy:groovy-json:3.0.8,method call,org.codehaus.groovy:groovy:3.0.8
+io.restassured.common.mapper.ObjectDeserializationContext,public,io.rest-assured:rest-assured-common:4.4.0,subtyping,io.rest-assured:rest-assured:4.4.0
+org.apache.johnzon.core.JsonGeneratorImpl,default,org.apache.johnzon:johnzon-core:1.1.11,method call,org.eclipse:yasson:1.0.6
+io.restassured.internal.ResponseSpecificationImplTest,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.junit.Assert,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.callsite.PogoGetPropertySite,public,org.codehaus.groovy:groovy:3.0.8,method call,io.rest-assured:rest-assured:4.4.0
+groovy.lang.Reference,public,org.codehaus.groovy:groovy:3.0.8,method call,io.rest-assured:json-path:4.4.0
+org.codehaus.groovy.runtime.callsite.CallSiteArray,public,org.codehaus.groovy:groovy:3.0.8,instantiation,io.rest-assured:rest-assured-common:4.4.0
+io.restassured.assertion.BodyMatcherGroup,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.apache.http.client.CredentialsProvider,public,org.apache.httpcomponents:httpclient:4.5.13,cast,io.rest-assured:rest-assured:4.4.0
+groovy.transform.ToString,public,org.codehaus.groovy:groovy:3.0.8,annotation,io.rest-assured:rest-assured:4.4.0
+javax.json.bind.annotation.JsonbNumberFormat,public,jakarta.json.bind:jakarta.json.bind-api:1.0.2,cast,org.eclipse:yasson:1.0.6
+org.codehaus.groovy.runtime.callsite.ConstructorSite$NoParamSite,public,org.codehaus.groovy:groovy:3.0.8,method call,io.rest-assured:rest-assured:4.4.0
+jdk.internal.reflect.ConstructorAccessorImpl,default,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.assertion.StreamVerifier,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.assertj.core.api.Assert,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.path.json.ConfigurableJsonSlurper$__clinit__closure1,public,io.rest-assured:json-path:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+io.restassured.path.xml.mapper.factory.DefaultJAXBObjectMapperFactory,public,io.rest-assured:xml-path:4.4.0,instantiation,io.rest-assured:rest-assured:4.4.0
+java.math.BigDecimal,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+javax.json.bind.JsonbException,public,jakarta.json.bind:jakarta.json.bind-api:1.0.2,instantiation,org.eclipse:yasson:1.0.6
+org.apache.http.NameValuePair,public,org.apache.httpcomponents:httpcore:4.4.13,cast,io.rest-assured:rest-assured:4.4.0
+org.codehaus.groovy.runtime.ScriptBytecodeAdapter,private,org.codehaus.groovy:groovy:3.0.8,method call,io.rest-assured:rest-assured:4.4.0
+org.codehaus.groovy.runtime.dgm$1262,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.assertion.CookieMatcher,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+org.apache.http.client.methods.HttpRequestBase,public,org.apache.httpcomponents:httpclient:4.5.13,cast,io.rest-assured:rest-assured:4.4.0
+org.apache.http.HttpHost,public,org.apache.httpcomponents:httpcore:4.4.13,cast,org.apache.httpcomponents:httpclient:4.5.13
+org.codehaus.jackson.map.ObjectMapper,public,org.codehaus.jackson:jackson-mapper-asl:1.9.11,instantiation,io.rest-assured:json-path:4.4.0
+javax.json.bind.annotation.JsonbDateFormat,public,jakarta.json.bind:jakarta.json.bind-api:1.0.2,cast,org.eclipse:yasson:1.0.6
+java.util.BitSet,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+java.io.BufferedReader,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.apache.commons.logging.impl.Log4JLogger,public,commons-logging:commons-logging:1.2,Class.forName,commons-logging:commons-logging:1.2
+groovy.lang.GroovyObject,public,org.codehaus.groovy:groovy:3.0.8,subtyping,io.rest-assured:json-path:4.4.0
+org.codehaus.groovy.runtime.callsite.PogoGetPropertySite,public,org.codehaus.groovy:groovy:3.0.8,method call,io.rest-assured:json-path:4.4.0
+org.codehaus.groovy.runtime.typehandling.DefaultTypeTransformation,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$1153,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.GStringImpl,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$1155,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+javax.json.bind.serializer.JsonbSerializer,public,jakarta.json.bind:jakarta.json.bind-api:1.0.2,cast,org.eclipse:yasson:1.0.6
+org.codehaus.groovy.runtime.dgm$1154,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.assertion.CookieMatcher$_getCookies_closure1,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.util.MatcherErrorMessageBuilder,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.reflection.ClassInfo,public,org.codehaus.groovy:groovy:3.0.8,method call,io.rest-assured:rest-assured:4.4.0
+org.apache.http.message.BasicHeaderElement,public,org.apache.httpcomponents:httpcore:4.4.13,instantiation,org.apache.httpcomponents:httpclient:4.5.13
+org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoCachedMethodSiteNoUnwrapNoCoerce,public,org.codehaus.groovy:groovy:3.0.8,method call,io.rest-assured:rest-assured:4.4.0
+org.hamcrest.MatcherAssert,public,org.hamcrest:hamcrest:2.1,Class.forName,org.codehaus.groovy:groovy:3.0.8
+groovy.lang.GroovyShell,public,org.codehaus.groovy:groovy:3.0.8,cast,io.rest-assured:json-path:4.4.0
+java.nio.charset.Charset,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+groovy.lang.Writable,public,org.codehaus.groovy:groovy:3.0.8,subtyping,org.codehaus.groovy:groovy-xml:3.0.8
+java.util.Locale,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+javax.json.bind.Jsonb,public,jakarta.json.bind:jakarta.json.bind-api:1.0.2,subtyping,org.eclipse:yasson:1.0.6
+org.apache.commons.lang3.ArrayUtils,public,org.apache.commons:commons-lang3:3.11,method call,io.rest-assured:rest-assured:4.4.0
+org.apache.http.impl.client.AbstractHttpClient,public,org.apache.httpcomponents:httpclient:4.5.13,cast,io.rest-assured:rest-assured:4.4.0
+org.codehaus.groovy.runtime.callsite.StaticMetaMethodSite$StaticMetaMethodSiteNoUnwrapNoCoerce,public,org.codehaus.groovy:groovy:3.0.8,method call,io.rest-assured:rest-assured:4.4.0
+org.apache.http.params.HttpParams,public,org.apache.httpcomponents:httpcore:4.4.13,cast,org.apache.httpcomponents:httpclient:4.5.13
+org.codehaus.groovy.runtime.ArrayUtil,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+java.io.PrintStream,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.apache.http.cookie.CookieOrigin,public,org.apache.httpcomponents:httpclient:4.5.13,instantiation,io.rest-assured:rest-assured:4.4.0
+org.codehaus.groovy.runtime.NullObject,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+groovy.lang.GroovyObject,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+javax.json.JsonArray,public,jakarta.json:jakarta.json-api:1.1.6,cast,org.apache.johnzon:johnzon-core:1.1.11
+io.restassured.http.Cookies,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.RequestSpecificationImpl$_removeUnnamedPathParam_closure3,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+org.mockito.verification.VerificationMode,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoCachedMethodSite,public,org.codehaus.groovy:groovy:3.0.8,method call,io.rest-assured:json-path:4.4.0
+org.codehaus.groovy.runtime.callsite.PogoMetaClassSite,public,org.codehaus.groovy:groovy:3.0.8,method call,io.rest-assured:rest-assured-common:4.4.0
+org.apache.http.client.methods.HttpPost,public,org.apache.httpcomponents:httpclient:4.5.13,instantiation,io.rest-assured:rest-assured:4.4.0
+io.restassured.internal.ResponseSpecificationImpl$_time_closure2,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+java.lang.Class,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+groovy.lang.MetaProperty,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+javax.json.bind.annotation.JsonbPropertyOrder,public,jakarta.json.bind:jakarta.json.bind-api:1.0.2,cast,org.eclipse:yasson:1.0.6
+groovy.json.JsonToken,public,org.codehaus.groovy:groovy-json:3.0.8,cast,io.rest-assured:json-path:4.4.0
+io.restassured.internal.LogSpecificationImpl,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.apache.http.HttpEntity,public,org.apache.httpcomponents:httpcore:4.4.13,cast,io.rest-assured:rest-assured:4.4.0
+java.util.SortedSet,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.apache.http.HttpHost,public,org.apache.httpcomponents:httpcore:4.4.13,instantiation,io.rest-assured:rest-assured:4.4.0
+io.restassured.internal.mapping.JsonbMapper,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+io.restassured.path.json.JsonPath,public,io.rest-assured:json-path:4.4.0,cast,io.rest-assured:rest-assured:4.4.0
+groovy.lang.GroovyShell,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.apache.http.concurrent.Cancellable,public,org.apache.httpcomponents:httpcore:4.4.13,cast,org.apache.httpcomponents:httpclient:4.5.13
+org.apache.http.annotation.Obsolete,public,org.apache.httpcomponents:httpcore:4.4.13,annotation,org.apache.httpcomponents:httpclient:4.5.13
+javax.json.bind.JsonbBuilder,public,jakarta.json.bind:jakarta.json.bind-api:1.0.2,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.serialization.SerializationSupport,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+javax.json.bind.annotation.JsonbCreator,public,jakarta.json.bind:jakarta.json.bind-api:1.0.2,cast,org.eclipse:yasson:1.0.6
+org.apache.http.message.ParserCursor,public,org.apache.httpcomponents:httpcore:4.4.13,instantiation,org.apache.httpcomponents:httpclient:4.5.13
+io.restassured.parsing.Parser,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.config.DecoderConfig,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+groovy.lang.Closure,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$_validateHeadersAndCookies_closure6,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.callsite.AbstractCallSite,public,org.codehaus.groovy:groovy:3.0.8,method call,io.rest-assured:rest-assured:4.4.0
+io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$_validateHeadersAndCookies_closure5,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+org.hamcrest.Matcher,public,org.hamcrest:hamcrest:2.1,Class.forName,org.codehaus.groovy:groovy:3.0.8
+groovy.lang.Reference,public,org.codehaus.groovy:groovy:3.0.8,instantiation,io.rest-assured:json-path:4.4.0
+io.restassured.internal.mapping.JsonbMapper$_serialize_closure1,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+java.lang.Process,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$342,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$101,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$343,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$340,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$341,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.apache.http.ProtocolException,public,org.apache.httpcomponents:httpcore:4.4.13,subtyping,org.apache.httpcomponents:httpclient:4.5.13
+org.apache.http.client.methods.HttpGet,public,org.apache.httpcomponents:httpclient:4.5.13,instantiation,io.rest-assured:rest-assured:4.4.0
+io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$_fireFailureListeners_closure4,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$229,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$1229,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$227,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$469,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+groovy.lang.EmptyRange,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.support.ParameterUpdater$Serializer,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+java.lang.StringBuilder,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.UriValidator,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+javax.json.JsonValue,public,jakarta.json:jakarta.json-api:1.1.6,cast,org.eclipse:yasson:1.0.6
+java.util.Comparator,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.path.json.ConfigurableJsonSlurper,public,io.rest-assured:json-path:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$595,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$593,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$472,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+groovy.io.FileType,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+groovy.lang.ObjectRange,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$357,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.apache.commons.lang3.Validate,public,org.apache.commons:commons-lang3:3.11,method call,io.rest-assured:rest-assured:4.4.0
+org.codehaus.groovy.runtime.dgm$358,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.path.json.ConfigurableJsonSlurper,public,io.rest-assured:json-path:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$355,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.callsite.PogoMetaClassSite,public,org.codehaus.groovy:groovy:3.0.8,method call,io.rest-assured:rest-assured:4.4.0
+org.codehaus.groovy.runtime.dgm$356,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+java.lang.reflect.Constructor,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+javax.json.bind.annotation.JsonbTypeDeserializer,public,jakarta.json.bind:jakarta.json.bind-api:1.0.2,cast,org.eclipse:yasson:1.0.6
+io.restassured.internal.RequestSpecificationImpl$_getURI_closure39,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce,public,org.codehaus.groovy:groovy:3.0.8,method call,io.rest-assured:json-path:4.4.0
+org.apache.commons.logging.LogFactory,public,commons-logging:commons-logging:1.2,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.ResponseSpecificationImpl$_cookies_closure8,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+java.lang.Thread,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.log.LogRepository,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+groovy.xml.slurpersupport.GPathResult,public,org.codehaus.groovy:groovy-xml:3.0.8,cast,io.rest-assured:xml-path:4.4.0
+org.codehaus.groovy.runtime.callsite.CallSiteArray,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+java.math.BigInteger,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+groovy.lang.MetaClassImpl,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.apache.http.message.BufferedHeader,public,org.apache.httpcomponents:httpcore:4.4.13,instantiation,org.apache.httpcomponents:httpclient:4.5.13
+org.apache.commons.lang3.StringUtils,public,org.apache.commons:commons-lang3:3.11,method call,io.rest-assured:rest-assured:4.4.0
+io.restassured.internal.ResponseSpecificationImpl,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+javax.json.bind.JsonbConfig,public,jakarta.json.bind:jakarta.json.bind-api:1.0.2,instantiation,org.eclipse:yasson:1.0.6
+org.codehaus.groovy.runtime.dgm$1241,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.common.assertion.AssertionSupport,public,io.rest-assured:rest-assured-common:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$240,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$1240,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$480,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+javax.json.JsonNumber,public,jakarta.json:jakarta.json-api:1.1.6,cast,org.apache.johnzon:johnzon-core:1.1.11
+org.codehaus.groovy.runtime.dgm$243,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$1242,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$247,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.SpecificationMerger$_mergeSessionId_closure2,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+javax.json.JsonBuilderFactory,public,jakarta.json:jakarta.json-api:1.1.6,subtyping,org.apache.johnzon:johnzon-core:1.1.11
+io.restassured.http.ContentType,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$245,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$246,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.reflection.ClassInfo,public,org.codehaus.groovy:groovy:3.0.8,method call,io.rest-assured:rest-assured-common:4.4.0
+org.codehaus.groovy.runtime.dgmimpl.arrays.ObjectArrayPutAtMetaMethod$MyPojoMetaMethodSite,private,org.codehaus.groovy:groovy:3.0.8,method call,io.rest-assured:rest-assured-common:4.4.0
+org.hamcrest.TypeSafeMatcher,public,org.hamcrest:hamcrest:2.1,method call,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.common.assertion.AssertParameter,public,io.rest-assured:rest-assured-common:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.config.Config,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+com.fasterxml.jackson.databind.ObjectMapper,public,com.fasterxml.jackson.core:jackson-databind:2.11.1,instantiation,io.rest-assured:json-path:4.4.0
+io.restassured.assertion.CookieMatcher,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.apache.http.message.BasicHeaderElement,public,org.apache.httpcomponents:httpcore:4.4.13,method call,org.apache.httpcomponents:httpclient:4.5.13
+org.codehaus.groovy.runtime.dgm$251,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+javax.json.bind.JsonbBuilder,public,jakarta.json.bind:jakarta.json.bind-api:1.0.2,subtyping,org.eclipse:yasson:1.0.6
+org.codehaus.groovy.runtime.dgm$372,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.apache.http.HttpException,public,org.apache.httpcomponents:httpcore:4.4.13,cast,org.apache.httpcomponents:httpclient:4.5.13
+org.eclipse.yasson.JsonBindingProvider,public,org.eclipse:yasson:1.0.6,instantiation,io.rest-assured:json-path:4.4.0
+org.codehaus.groovy.runtime.dgm$375,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+java.io.ByteArrayOutputStream,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.response.Response,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$255,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+javax.json.bind.adapter.JsonbAdapter,public,jakarta.json.bind:jakarta.json.bind-api:1.0.2,cast,org.eclipse:yasson:1.0.6
+javax.json.bind.serializer.JsonbDeserializer,public,jakarta.json.bind:jakarta.json.bind-api:1.0.2,subtyping,org.eclipse:yasson:1.0.6
+groovy.io.LineColumnReader,public,org.codehaus.groovy:groovy:3.0.8,instantiation,org.codehaus.groovy:groovy-json:3.0.8
+io.restassured.config.HeaderConfig,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+groovy.lang.MetaClass,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.assertion.BodyMatcher$_isXPathMatcher_closure3,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+org.apache.http.conn.ssl.SSLSocketFactory,public,org.apache.httpcomponents:httpclient:4.5.13,instantiation,io.rest-assured:rest-assured:4.4.0
+io.restassured.assertion.BodyMatcherGroup$_requiresPathParsing_closure4,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.callsite.GetEffectivePojoFieldSite,default,org.codehaus.groovy:groovy:3.0.8,method call,io.rest-assured:rest-assured:4.4.0
+org.codehaus.groovy.runtime.dgmimpl.NumberNumberPlus$IntegerInteger,private,org.codehaus.groovy:groovy:3.0.8,method call,io.rest-assured:rest-assured:4.4.0
+io.restassured.assertion.BodyMatcherGroup$_leftShift_closure1,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+io.restassured.common.mapper.factory.ObjectMapperFactory,public,io.rest-assured:rest-assured-common:4.4.0,subtyping,io.rest-assured:xml-path:4.4.0
+org.hamcrest.Description,public,org.hamcrest:hamcrest:2.1,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.specification.ResponseSpecification,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$424,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.ResponseSpecificationImpl,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$421,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$422,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+groovy.lang.Range,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$306,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$667,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.apache.http.message.BasicHeader,public,org.apache.httpcomponents:httpcore:4.4.13,instantiation,io.rest-assured:rest-assured:4.4.0
+io.restassured.internal.RestAssuredResponseOptionsGroovyImpl,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$309,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.mapper.ObjectMapper,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.BytecodeInterface8,public,org.codehaus.groovy:groovy:3.0.8,method call,io.rest-assured:json-path:4.4.0
+io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+org.apache.http.message.BasicHeader,public,org.apache.httpcomponents:httpcore:4.4.13,method call,org.apache.httpcomponents:httpclient:4.5.13
+org.assertj.core.api.EnumerableAssert,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.ResponseSpecificationImpl$_headers_closure5$_closure17,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+java.util.Collections,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgmimpl.arrays.ObjectArrayGetAtMetaMethod$MyPojoMetaMethodSite,private,org.codehaus.groovy:groovy:3.0.8,method call,io.rest-assured:rest-assured-common:4.4.0
+io.restassured.RequestSpecificationTest$ExampleFilter1,private,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.SpecificationMerger$_mergeFilters_closure3,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+java.lang.Double,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.RequestSpecificationImpl,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.SpecificationMerger$_mergeFilters_closure4,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+org.apache.http.util.TextUtils,public,org.apache.httpcomponents:httpcore:4.4.13,method call,org.apache.httpcomponents:httpclient:4.5.13
+io.restassured.internal.LogSpecificationImpl,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+org.apache.http.HttpEntityEnclosingRequest,public,org.apache.httpcomponents:httpcore:4.4.13,subtyping,org.apache.httpcomponents:httpclient:4.5.13
+$java.io.PrintStream$$EnhancerByMockitoWithCGLIB$$39cf142d,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+javax.json.stream.JsonParser,public,jakarta.json:jakarta.json-api:1.1.6,subtyping,org.apache.johnzon:johnzon-core:1.1.11
+org.codehaus.groovy.runtime.dgm$311,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+groovy.transform.EqualsAndHashCode,public,org.codehaus.groovy:groovy:3.0.8,annotation,io.rest-assured:rest-assured:4.4.0
+org.codehaus.groovy.runtime.dgm$312,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.response.ResponseOptions,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.apache.http.impl.DefaultConnectionReuseStrategy,public,org.apache.httpcomponents:httpcore:4.4.13,instantiation,org.apache.httpcomponents:httpclient:4.5.13
+javax.json.bind.Jsonb,public,jakarta.json.bind:jakarta.json.bind-api:1.0.2,Class.forName,org.codehaus.groovy:groovy:3.0.8
+java.lang.AutoCloseable,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+java.lang.Enum,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.http.ContentTypeSubTypeExtractor,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+java.util.Timer,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgmimpl.arrays.ObjectArrayGetAtMetaMethod$MyPojoMetaMethodSite,private,org.codehaus.groovy:groovy:3.0.8,method call,io.rest-assured:rest-assured:4.4.0
+org.codehaus.groovy.runtime.callsite.AbstractCallSite,public,org.codehaus.groovy:groovy:3.0.8,method call,io.rest-assured:json-path:4.4.0
+org.codehaus.groovy.runtime.callsite.CallSiteArray,public,org.codehaus.groovy:groovy:3.0.8,instantiation,io.rest-assured:json-path:4.4.0
+org.codehaus.groovy.reflection.ClassInfo,public,org.codehaus.groovy:groovy:3.0.8,method call,io.rest-assured:json-path:4.4.0
+org.eclipse.yasson.internal.JsonBindingBuilder,public,org.eclipse:yasson:1.0.6,method call,jakarta.json.bind:jakarta.json.bind-api:1.0.2
+io.restassured.internal.MapCreator$_isRestAssuredArguments_closure1,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+java.util.Iterator,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$563,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.apache.http.impl.client.BasicCookieStore,public,org.apache.httpcomponents:httpclient:4.5.13,method call,io.rest-assured:rest-assured:4.4.0
+groovy.xml.slurpersupport.GPathResult,public,org.codehaus.groovy:groovy-xml:3.0.8,cast,io.rest-assured:rest-assured:4.4.0
+org.codehaus.groovy.runtime.dgm$203,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.RequestSpecificationImpl$_removeMergedHeadersIfNeeded_closure7,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$202,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$449,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+javax.json.JsonException,public,jakarta.json:jakarta.json-api:1.1.6,instantiation,org.apache.johnzon:johnzon-core:1.1.11
+org.apache.http.protocol.HttpContext,public,org.apache.httpcomponents:httpcore:4.4.13,cast,org.apache.httpcomponents:httpclient:4.5.13
+io.restassured.assertion.CookieMatcher$_getCookies_closure1$_closure2,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.callsite.StaticMetaMethodSite,public,org.codehaus.groovy:groovy:3.0.8,method call,io.rest-assured:json-path:4.4.0
+org.codehaus.groovy.runtime.dgm$569,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.typehandling.ShortTypeHandling,public,org.codehaus.groovy:groovy:3.0.8,method call,io.rest-assured:rest-assured-common:4.4.0
+io.restassured.RestAssured,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+org.apache.http.client.HttpResponseException,public,org.apache.httpcomponents:httpclient:4.5.13,subtyping,io.rest-assured:rest-assured:4.4.0
+io.restassured.internal.MapCreator$CollisionStrategy,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.hamcrest.StringDescription,public,org.hamcrest:hamcrest:2.1,Class.forName,org.codehaus.groovy:groovy:3.0.8
+javax.json.bind.serializer.SerializationContext,public,jakarta.json.bind:jakarta.json.bind-api:1.0.2,subtyping,org.eclipse:yasson:1.0.6
+groovy.lang.GroovyObject,public,org.codehaus.groovy:groovy:3.0.8,subtyping,io.rest-assured:rest-assured:4.4.0
+io.restassured.authentication.AuthenticationScheme,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+javax.json.stream.JsonGeneratorFactory,public,jakarta.json:jakarta.json-api:1.1.6,subtyping,org.apache.johnzon:johnzon-core:1.1.11
+org.codehaus.groovy.runtime.dgm$570,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+java.net.Socket,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.apache.http.message.AbstractHttpMessage,public,org.apache.httpcomponents:httpcore:4.4.13,subtyping,org.apache.httpcomponents:httpclient:4.5.13
+org.codehaus.groovy.runtime.dgm$210,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$573,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+java.net.URI,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$574,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+java.net.URL,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+javax.json.bind.config.PropertyNamingStrategy,public,jakarta.json.bind:jakarta.json.bind-api:1.0.2,cast,org.eclipse:yasson:1.0.6
+org.codehaus.groovy.runtime.dgm$692,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$571,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$572,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.RequestSpecificationImpl$1,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+org.apache.http.HttpRequest,public,org.apache.httpcomponents:httpcore:4.4.13,subtyping,org.apache.httpcomponents:httpclient:4.5.13
+groovy.lang.SpreadMap,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.mapper.ObjectMapperSerializationContext,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+java.lang.reflect.Type,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$339,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.apache.groovy.io.StringBuilderWriter,public,org.codehaus.groovy:groovy:3.0.8,instantiation,org.codehaus.groovy:groovy-json:3.0.8
+org.codehaus.groovy.runtime.typehandling.ShortTypeHandling,public,org.codehaus.groovy:groovy:3.0.8,method call,io.rest-assured:rest-assured:4.4.0
+groovy.lang.Closure,public,org.codehaus.groovy:groovy:3.0.8,cast,io.rest-assured:rest-assured:4.4.0
+groovy.lang.GroovyInterceptable,public,org.codehaus.groovy:groovy:3.0.8,subtyping,io.rest-assured:rest-assured:4.4.0
+io.restassured.config.RedirectConfig,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.apache.commons.logging.impl.WeakHashtable,public,commons-logging:commons-logging:1.2,Class.forName,commons-logging:commons-logging:1.2
+io.restassured.internal.common.assertion.AssertionSupport,public,io.rest-assured:rest-assured-common:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+java.io.BufferedInputStream,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+groovy.lang.IntRange,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+java.io.PrintWriter,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+groovy.lang.Buildable,public,org.codehaus.groovy:groovy:3.0.8,subtyping,org.codehaus.groovy:groovy-xml:3.0.8
+groovy.lang.GroovyObjectSupport,public,org.codehaus.groovy:groovy:3.0.8,subtyping,org.codehaus.groovy:groovy-xml:3.0.8
+java.util.Map$Entry,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.hamcrest.core.CombinableMatcher,public,org.hamcrest:hamcrest:2.1,subtyping,io.rest-assured:rest-assured:4.4.0
+io.restassured.internal.common.assertion.Assertion,public,io.rest-assured:rest-assured-common:4.4.0,subtyping,io.rest-assured:json-path:4.4.0
+org.codehaus.groovy.runtime.dgm$981,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+java.io.BufferedWriter,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.MapCreator,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.RequestSpecificationImpl$_getUnnamedPathParamValues_closure44,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$622,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.mockito.stubbing.OngoingStubbing,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.RequestSpecificationImpl$_getUnnamedPathParamValues_closure43,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$983,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+groovy.lang.Reference,public,org.codehaus.groovy:groovy:3.0.8,cast,io.rest-assured:rest-assured:4.4.0
+io.restassured.config.JsonConfig,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.typehandling.ShortTypeHandling,private,org.codehaus.groovy:groovy:3.0.8,method call,io.rest-assured:rest-assured:4.4.0
+io.restassured.internal.ResponseSpecificationImpl$_body_closure1$_closure16,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$623,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.ResponseParserRegistrar,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.apache.http.entity.HttpEntityWrapper,public,org.apache.httpcomponents:httpcore:4.4.13,subtyping,io.rest-assured:rest-assured:4.4.0
+org.apache.http.impl.cookie.DefaultCookieSpec,public,org.apache.httpcomponents:httpclient:4.5.13,instantiation,io.rest-assured:rest-assured:4.4.0
+org.apache.http.NameValuePair,public,org.apache.httpcomponents:httpcore:4.4.13,cast,org.apache.httpcomponents:httpclient:4.5.13
+org.apache.http.HttpEntity,public,org.apache.httpcomponents:httpcore:4.4.13,cast,org.apache.httpcomponents:httpclient:4.5.13
+org.codehaus.groovy.runtime.ArrayUtil,public,org.codehaus.groovy:groovy:3.0.8,method call,io.rest-assured:rest-assured:4.4.0
+org.codehaus.groovy.runtime.ArrayUtil,public,org.codehaus.groovy:groovy:3.0.8,method call,io.rest-assured:json-path:4.4.0
+io.restassured.filter.Filter,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.RestAssured,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.ResponseSpecificationImpl$_cookie_closure9,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.RequestSpecificationImpl$_getMultiPartParams_closure45,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.RequestSpecificationImpl$_getPathParams_closure40,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+javax.json.bind.annotation.JsonbProperty,public,jakarta.json.bind:jakarta.json.bind-api:1.0.2,cast,org.eclipse:yasson:1.0.6
+io.restassured.assertion.ResponseTimeMatcher,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+groovy.lang.GroovyRuntimeException,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoMetaMethodSiteNoUnwrapNoCoerce,public,org.codehaus.groovy:groovy:3.0.8,method call,io.rest-assured:rest-assured-common:4.4.0
+io.restassured.config.MatcherConfig$ErrorDescriptionType,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$519,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+groovy.lang.GroovyObject,public,org.codehaus.groovy:groovy:3.0.8,subtyping,io.rest-assured:rest-assured-common:4.4.0
+io.restassured.config.LogConfig,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+java.lang.Character,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+java.lang.String,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.config.FailureConfig,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.support.ParameterUpdater,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.vmplugin.v9.Java9,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+groovy.lang.MetaMethod,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+java.beans.ConstructorProperties,public,unknownLib,Class.forName,org.eclipse:yasson:1.0.6
+io.restassured.internal.RequestSpecificationImpl,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.RequestSpecificationImpl$_partiallyApplyPathParams_closure36,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+org.apache.http.FormattedHeader,public,org.apache.httpcomponents:httpcore:4.4.13,cast,org.apache.httpcomponents:httpclient:4.5.13
+io.restassured.internal.RequestSpecificationImpl$_partiallyApplyPathParams_closure35,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.RequestSpecificationImpl$EncodingTarget,private,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$885,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$523,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.SpecificationMerger$_mergeConfig_closure1,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$524,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.callsite.GetEffectivePogoPropertySite,default,org.codehaus.groovy:groovy:3.0.8,method call,io.rest-assured:rest-assured:4.4.0
+org.codehaus.groovy.runtime.dgm$525,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.apache.http.impl.cookie.BasicClientCookie,public,org.apache.httpcomponents:httpclient:4.5.13,method call,io.rest-assured:rest-assured:4.4.0
+io.restassured.internal.ResponseSpecificationImpl$_body_closure1,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+io.restassured.listener.ResponseValidationFailureListener,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.apache.http.client.methods.HttpPatch,public,org.apache.httpcomponents:httpclient:4.5.13,instantiation,io.rest-assured:rest-assured:4.4.0
+io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$57,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+javax.json.bind.serializer.JsonbDeserializer,public,jakarta.json.bind:jakarta.json.bind-api:1.0.2,cast,org.eclipse:yasson:1.0.6
+javax.json.JsonReaderFactory,public,jakarta.json:jakarta.json-api:1.1.6,subtyping,org.apache.johnzon:johnzon-core:1.1.11
+org.codehaus.groovy.runtime.GStringImpl,public,org.codehaus.groovy:groovy:3.0.8,instantiation,io.rest-assured:json-path:4.4.0
+java.lang.Comparable,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.BytecodeInterface8,public,org.codehaus.groovy:groovy:3.0.8,method call,io.rest-assured:rest-assured:4.4.0
+javax.xml.datatype.XMLGregorianCalendar,public,javax.xml.datatype,cast,org.eclipse:yasson:1.0.6
+io.restassured.assertion.BodyMatcherGroup$_validate_closure2,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+javax.json.bind.annotation.JsonbTypeAdapter,public,jakarta.json.bind:jakarta.json.bind-api:1.0.2,cast,org.eclipse:yasson:1.0.6
+org.codehaus.groovy.runtime.callsite.ConstructorSite,public,org.codehaus.groovy:groovy:3.0.8,method call,io.rest-assured:rest-assured:4.4.0
+org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce,public,org.codehaus.groovy:groovy:3.0.8,method call,io.rest-assured:json-path:4.4.0
+org.apache.commons.logging.LogFactory,public,commons-logging:commons-logging:1.2,method call,org.apache.httpcomponents:httpclient:4.5.13
+org.codehaus.groovy.runtime.dgm$893,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.callsite.ClassMetaClassGetPropertySite,default,org.codehaus.groovy:groovy:3.0.8,method call,io.rest-assured:json-path:4.4.0
+io.restassured.internal.ResponseSpecificationImpl$_statusLine_closure4,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+org.hamcrest.CoreMatchers,public,org.hamcrest:hamcrest:2.1,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.RequestLogSpecificationImpl,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+org.w3c.dom.Node,public,org.w3c.dom,cast,org.hamcrest:hamcrest:2.1
+io.restassured.http.Cookie$Builder,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.callsite.StaticMetaMethodSite,public,org.codehaus.groovy:groovy:3.0.8,method call,io.rest-assured:rest-assured:4.4.0
+org.codehaus.groovy.runtime.typehandling.DefaultTypeTransformation,private,org.codehaus.groovy:groovy:3.0.8,method call,io.rest-assured:rest-assured:4.4.0
+io.restassured.config.EncoderConfig,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.RequestSpecificationImpl$_noFiltersOfType_closure47,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+io.restassured.common.mapper.factory.ObjectMapperFactory,public,io.rest-assured:rest-assured-common:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.config.RestAssuredConfig,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$539,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.hamcrest.Matchers,public,org.hamcrest:hamcrest:2.1,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$419,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+javax.json.bind.Jsonb,public,jakarta.json.bind:jakarta.json.bind-api:1.0.2,cast,io.rest-assured:json-path:4.4.0
+org.apache.http.impl.cookie.DefaultCookieSpec,public,org.apache.httpcomponents:httpclient:4.5.13,method call,io.rest-assured:rest-assured:4.4.0
+org.codehaus.groovy.runtime.callsite.CallSiteArray,public,org.codehaus.groovy:groovy:3.0.8,instantiation,io.rest-assured:rest-assured:4.4.0
+org.apache.http.HttpHost,public,org.apache.httpcomponents:httpcore:4.4.13,instantiation,org.apache.httpcomponents:httpclient:4.5.13
+javax.json.bind.config.PropertyVisibilityStrategy,public,jakarta.json.bind:jakarta.json.bind-api:1.0.2,cast,org.eclipse:yasson:1.0.6
+java.io.ObjectOutputStream,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.multipart.MultiPartInternal,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+java.lang.Number,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+java.util.TimerTask,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+groovy.json.JsonLexer,public,org.codehaus.groovy:groovy-json:3.0.8,cast,io.rest-assured:json-path:4.4.0
+io.restassured.builder.ResponseSpecBuilder,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.path.json.mapper.factory.DefaultJackson2ObjectMapperFactory,public,io.rest-assured:json-path:4.4.0,instantiation,io.rest-assured:rest-assured:4.4.0
+java.lang.Appendable,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.http.ContentTypeSubTypeExtractor$_getSubTypeValueFromContentType_closure1,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+org.apache.commons.logging.impl.LogFactoryImpl,public,commons-logging:commons-logging:1.2,Class.forName,commons-logging:commons-logging:1.2
+io.restassured.path.json.mapping.JsonPathObjectDeserializer,public,io.rest-assured:json-path:4.4.0,cast,io.rest-assured:rest-assured:4.4.0
+java.io.File,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.config.SessionConfig,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.RequestSpecificationImpl$EncodingTarget,private,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+groovy.xml.slurpersupport.Node,public,org.codehaus.groovy:groovy-xml:3.0.8,cast,io.rest-assured:xml-path:4.4.0
+io.restassured.path.xml.XmlPath,public,io.rest-assured:xml-path:4.4.0,cast,io.rest-assured:rest-assured:4.4.0
+org.codehaus.groovy.runtime.callsite.CallSite,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+javax.json.JsonObject,public,jakarta.json:jakarta.json-api:1.1.6,cast,org.apache.johnzon:johnzon-core:1.1.11
+javax.json.bind.annotation.JsonbTypeSerializer,public,jakarta.json.bind:jakarta.json.bind-api:1.0.2,cast,org.eclipse:yasson:1.0.6
+org.hamcrest.BaseMatcher,public,org.hamcrest:hamcrest:2.1,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.ResponseSpecificationImpl$_headers_closure5,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+org.apache.commons.lang3.StringUtils,public,org.apache.commons:commons-lang3:3.11,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$7,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.apache.http.message.BasicNameValuePair,public,org.apache.httpcomponents:httpcore:4.4.13,instantiation,org.apache.httpcomponents:httpclient:4.5.13
+io.restassured.internal.http.CharsetExtractor,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.apache.http.util.CharArrayBuffer,public,org.apache.httpcomponents:httpcore:4.4.13,method call,org.apache.httpcomponents:httpclient:4.5.13
+org.codehaus.groovy.runtime.dgm$5,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+javax.json.bind.annotation.JsonbNillable,public,jakarta.json.bind:jakarta.json.bind-api:1.0.2,cast,org.eclipse:yasson:1.0.6
+org.codehaus.groovy.runtime.dgm$6,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+java.lang.ThreadLocal,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$4,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.assertion.ResponseTimeMatcher,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+org.apache.johnzon.mapper.MapperBuilder,public,org.apache.johnzon:johnzon-mapper:1.1.11,instantiation,io.rest-assured:json-path:4.4.0
+org.hamcrest.StringDescription,public,org.hamcrest:hamcrest:2.1,instantiation,io.rest-assured:rest-assured:4.4.0
+io.restassured.internal.ContentParser,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+io.restassured.http.Headers,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.response.ResponseBodyData,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.path.json.config.JsonPathConfig$NumberReturnType,public,io.rest-assured:json-path:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.typehandling.DefaultTypeTransformation,public,org.codehaus.groovy:groovy:3.0.8,method call,io.rest-assured:json-path:4.4.0
+io.restassured.internal.ResponseSpecificationImpl$_statusCode_closure3,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+java.util.Random,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.log.LogRepository,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+javax.json.bind.serializer.JsonbSerializer,public,jakarta.json.bind:jakarta.json.bind-api:1.0.2,subtyping,org.eclipse:yasson:1.0.6
+org.apache.http.protocol.HttpRequestExecutor,public,org.apache.httpcomponents:httpcore:4.4.13,instantiation,org.apache.httpcomponents:httpclient:4.5.13
+java.io.ObjectInputStream,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.hamcrest.SelfDescribing,public,org.hamcrest:hamcrest:2.1,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.apache.commons.lang3.math.NumberUtils,public,org.apache.commons:commons-lang3:3.11,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.specification.Argument,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.builder.RequestSpecBuilder,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce,public,org.codehaus.groovy:groovy:3.0.8,method call,io.rest-assured:rest-assured:4.4.0
+org.apache.http.util.Args,public,org.apache.httpcomponents:httpcore:4.4.13,method call,org.apache.httpcomponents:httpclient:4.5.13
+io.restassured.path.json.mapper.factory.DefaultJackson1ObjectMapperFactory,public,io.rest-assured:json-path:4.4.0,instantiation,io.rest-assured:rest-assured:4.4.0
+org.apache.http.HttpResponse,public,org.apache.httpcomponents:httpcore:4.4.13,subtyping,io.rest-assured:rest-assured:4.4.0
+io.restassured.internal.support.ParameterUpdater,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+javax.json.JsonValue,public,jakarta.json:jakarta.json-api:1.1.6,cast,org.apache.johnzon:johnzon-core:1.1.11
+io.restassured.common.mapper.factory.ObjectMapperFactory,public,io.rest-assured:rest-assured-common:4.4.0,subtyping,io.rest-assured:json-path:4.4.0
+io.restassured.internal.ResponseSpecificationImpl$_applyArguments_closure15,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.typehandling.ShortTypeHandling,public,org.codehaus.groovy:groovy:3.0.8,method call,io.rest-assured:json-path:4.4.0
+org.codehaus.groovy.runtime.callsite.AbstractCallSite,public,org.codehaus.groovy:groovy:3.0.8,method call,io.rest-assured:rest-assured-common:4.4.0
+org.codehaus.groovy.runtime.callsite.ClassMetaClassGetPropertySite,default,org.codehaus.groovy:groovy:3.0.8,method call,io.rest-assured:rest-assured:4.4.0
+org.codehaus.groovy.runtime.dgm$95,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.ScriptBytecodeAdapter,public,org.codehaus.groovy:groovy:3.0.8,method call,io.rest-assured:rest-assured-common:4.4.0
+org.codehaus.groovy.runtime.callsite.GetEffectivePojoPropertySite,public,org.codehaus.groovy:groovy:3.0.8,method call,io.rest-assured:rest-assured-common:4.4.0
+org.codehaus.groovy.runtime.dgm$99,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.config.ParamConfig,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$609,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.ResponseLogSpecificationImpl,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+java.util.Arrays,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+java.lang.Integer,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+java.io.DataInputStream,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.apache.http.util.CharArrayBuffer,public,org.apache.httpcomponents:httpcore:4.4.13,instantiation,org.apache.httpcomponents:httpclient:4.5.13
+io.restassured.path.json.mapper.factory.DefaultYassonObjectMapperFactory,public,io.rest-assured:json-path:4.4.0,instantiation,io.rest-assured:rest-assured:4.4.0
+io.restassured.internal.common.assertion.PathFragmentEscaper,public,io.rest-assured:rest-assured-common:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$611,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.RequestSpecificationImpl$_getUnnamedPathParams_closure42,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.RequestSpecificationImpl$_getUnnamedPathParams_closure41,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+io.restassured.path.json.mapper.factory.DefaultJohnzonObjectMapperFactory,public,io.rest-assured:json-path:4.4.0,instantiation,io.rest-assured:rest-assured:4.4.0
+java.util.AbstractCollection,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.common.assertion.AssertionSupport$3,public,io.rest-assured:rest-assured-common:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+org.apache.http.impl.client.DefaultHttpClient,public,org.apache.httpcomponents:httpclient:4.5.13,instantiation,io.rest-assured:rest-assured:4.4.0
+io.restassured.internal.common.assertion.AssertionSupport$4,public,io.rest-assured:rest-assured-common:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.common.assertion.AssertionSupport$1,public,io.rest-assured:rest-assured-common:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+java.io.Reader,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.MethodClosure,public,org.codehaus.groovy:groovy:3.0.8,instantiation,io.rest-assured:rest-assured:4.4.0
+io.restassured.internal.RestAssuredResponseOptionsGroovyImpl,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.common.assertion.AssertionSupport$2,public,io.rest-assured:rest-assured-common:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+java.lang.Short,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.SpecificationMerger,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.apache.http.message.BasicRequestLine,public,org.apache.httpcomponents:httpcore:4.4.13,instantiation,org.apache.httpcomponents:httpclient:4.5.13
+io.restassured.config.RestAssuredConfig,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.http.URIBuilder,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+java.lang.Boolean,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.common.assertion.AssertionSupport$7,public,io.rest-assured:rest-assured-common:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.common.assertion.AssertParameter,public,io.rest-assured:rest-assured-common:4.4.0,method call,io.rest-assured:rest-assured:4.4.0
+org.codehaus.groovy.runtime.callsite.CallSiteArray,public,org.codehaus.groovy:groovy:3.0.8,cast,io.rest-assured:json-path:4.4.0
+org.xml.sax.InputSource,public,org.xml.sax,instantiation,org.codehaus.groovy:groovy-xml:3.0.8
+io.restassured.internal.support.ParameterUpdater$_updateParameters_closure1,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.RequestSpecificationImpl$_getDerivedPath_closure38,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce,public,org.codehaus.groovy:groovy:3.0.8,method call,io.rest-assured:rest-assured:4.4.0
+org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrap,public,org.codehaus.groovy:groovy:3.0.8,method call,io.rest-assured:json-path:4.4.0
+org.apache.commons.lang3.Validate,public,org.apache.commons:commons-lang3:3.11,method call,org.codehaus.groovy:groovy:3.0.8
+java.lang.Module,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+java.util.concurrent.BlockingQueue,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+javax.json.stream.JsonParserFactory,public,jakarta.json:jakarta.json-api:1.1.6,subtyping,org.apache.johnzon:johnzon-core:1.1.11
+io.restassured.http.Cookies,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.assertion.BodyMatcher,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+java.lang.Object,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+javax.json.stream.JsonParsingException,public,jakarta.json:jakarta.json-api:1.1.6,instantiation,org.apache.johnzon:johnzon-core:1.1.11
+org.apache.http.message.BasicNameValuePair,public,org.apache.httpcomponents:httpcore:4.4.13,instantiation,io.rest-assured:rest-assured:4.4.0
+io.restassured.internal.ContentParser,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.hamcrest.StringDescription,public,org.hamcrest:hamcrest:2.1,method call,io.rest-assured:rest-assured:4.4.0
+java.util.Enumeration,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+groovy.util.BufferedIterator,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+groovy.json.JsonBuilder,public,org.codehaus.groovy:groovy-json:3.0.8,instantiation,io.rest-assured:json-path:4.4.0
+org.w3c.dom.Element,public,org.w3c.dom,cast,io.rest-assured:rest-assured:4.4.0
+org.apache.http.conn.ssl.X509HostnameVerifier,public,org.apache.httpcomponents:httpclient:4.5.13,Class.forName,org.codehaus.groovy:groovy:3.0.8
+java.util.Map,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.callsite.CallSiteArray,public,org.codehaus.groovy:groovy:3.0.8,cast,io.rest-assured:rest-assured:4.4.0
+java.lang.String,public,unknownLib,Class.forName,commons-logging:commons-logging:1.2
+io.restassured.builder.RequestSpecBuilder,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+java.lang.Long,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.apache.http.message.BasicNameValuePair,public,org.apache.httpcomponents:httpcore:4.4.13,method call,org.apache.httpcomponents:httpclient:4.5.13
+groovy.lang.groovydoc.Groovydoc,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.RequestSpecificationImpl$_getRedundantNamedPathParams_closure48,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+org.eclipse.yasson.JsonBindingProvider,public,org.eclipse:yasson:1.0.6,method call,jakarta.json.bind:jakarta.json.bind-api:1.0.2
+io.restassured.internal.RequestSpecificationImpl$_cookie_closure10,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+org.apache.johnzon.core.JsonProviderImpl,public,org.apache.johnzon:johnzon-core:1.1.11,method call,org.eclipse:yasson:1.0.6
+org.hamcrest.comparator.ComparatorMatcherBuilder$ComparatorMatcher,private,org.hamcrest:hamcrest:2.1,method call,io.rest-assured:rest-assured:4.4.0
+io.restassured.assertion.BodyMatcher,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.apache.http.message.TokenParser,public,org.apache.httpcomponents:httpcore:4.4.13,method call,org.apache.httpcomponents:httpclient:4.5.13
+io.restassured.assertion.HeaderMatcher,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+org.apache.http.protocol.DefaultedHttpContext,public,org.apache.httpcomponents:httpcore:4.4.13,instantiation,org.apache.httpcomponents:httpclient:4.5.13
+org.apache.http.protocol.BasicHttpContext,public,org.apache.httpcomponents:httpcore:4.4.13,instantiation,org.apache.httpcomponents:httpclient:4.5.13
+io.restassured.internal.RequestSpecificationImpl$_headers_closure6,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+java.util.List,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.MultiValueEntity,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+javax.json.bind.JsonbConfig,public,jakarta.json.bind:jakarta.json.bind-api:1.0.2,method call,org.eclipse:yasson:1.0.6
+org.mockito.Matchers,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+groovy.xml.XmlSlurper,public,org.codehaus.groovy:groovy-xml:3.0.8,cast,io.rest-assured:rest-assured:4.4.0
+java.lang.CharSequence,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.apache.commons.lang3.StringUtils,public,org.apache.commons:commons-lang3:3.11,method call,org.codehaus.groovy:groovy:3.0.8
+groovy.lang.Closure,public,org.codehaus.groovy:groovy:3.0.8,subtyping,io.rest-assured:json-path:4.4.0
+groovy.lang.ListWithDefault,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+groovy.lang.Closure,public,org.codehaus.groovy:groovy:3.0.8,cast,org.codehaus.groovy:groovy-json:3.0.8
+io.restassured.config.ParamConfig$UpdateStrategy,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+javax.json.spi.JsonProvider,public,jakarta.json:jakarta.json-api:1.1.6,subtyping,org.glassfish:jakarta.json:module
+java.net.ServerSocket,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+java.lang.StringBuffer,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoMetaMethodSiteNoUnwrapNoCoerce,public,org.codehaus.groovy:groovy:3.0.8,method call,io.rest-assured:json-path:4.4.0
+groovy.namespace.QName,public,org.codehaus.groovy:groovy:3.0.8,instantiation,org.codehaus.groovy:groovy-xml:3.0.8
+io.restassured.specification.RequestSpecification,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.MapCreator$_createArgumentArrayFromKeyAndValue_closure3,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+javax.json.JsonString,public,jakarta.json:jakarta.json-api:1.1.6,cast,org.apache.johnzon:johnzon-core:1.1.11
+java.io.StringWriter,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.callsite.CallSiteArray,public,org.codehaus.groovy:groovy:3.0.8,cast,io.rest-assured:rest-assured-common:4.4.0
+org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.ResponseSpecificationImpl$_cookies_closure8$_closure19,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.SpecificationMerger,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+io.restassured.assertion.HeaderMatcher,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+java.util.concurrent.TimeUnit,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$31,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.callsite.StaticMetaMethodSite,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$32,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$33,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.callsite.GetEffectivePogoFieldSite,public,org.codehaus.groovy:groovy:3.0.8,method call,io.rest-assured:rest-assured:4.4.0
+java.util.regex.Pattern,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.assertion.BodyMatcherGroup,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.GStringImpl,public,org.codehaus.groovy:groovy:3.0.8,instantiation,io.rest-assured:rest-assured:4.4.0
+java.io.InputStream,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.support.PathSupport,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.RequestSpecificationImpl$_removeMergedHeadersIfNeeded_closure7$_closure50,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+groovy.lang.Closure,public,org.codehaus.groovy:groovy:3.0.8,subtyping,io.rest-assured:rest-assured:4.4.0
+io.restassured.internal.RequestSpecificationImpl$_getUndefinedPathParamPlaceholders_closure46,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoMetaMethodSiteNoUnwrapNoCoerce,public,org.codehaus.groovy:groovy:3.0.8,method call,io.rest-assured:rest-assured:4.4.0
+groovy.io.LineColumnReader,public,org.codehaus.groovy:groovy:3.0.8,method call,org.codehaus.groovy:groovy-json:3.0.8
+io.restassured.config.OAuthConfig,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+javax.json.stream.JsonGenerationException,public,jakarta.json:jakarta.json-api:1.1.6,instantiation,org.apache.johnzon:johnzon-core:1.1.11
+java.util.Deque,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+groovy.json.JsonLexer,public,org.codehaus.groovy:groovy-json:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$40,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+javax.json.bind.spi.JsonbProvider,public,jakarta.json.bind:jakarta.json.bind-api:1.0.2,subtyping,org.eclipse:yasson:1.0.6
+groovy.io.LineColumnReader,public,org.codehaus.groovy:groovy:3.0.8,cast,org.codehaus.groovy:groovy-json:3.0.8
+groovy.lang.Reference,public,org.codehaus.groovy:groovy:3.0.8,instantiation,io.rest-assured:rest-assured:4.4.0
+java.lang.Math,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.assertj.core.api.Assertions,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+groovy.lang.Closure,public,org.codehaus.groovy:groovy:3.0.8,cast,org.codehaus.groovy:groovy-xml:3.0.8
+groovy.json.JsonTokenType$1,default,org.codehaus.groovy:groovy-json:3.0.8,method call,org.codehaus.groovy:groovy:3.0.8
+java.io.OutputStream,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.specification.ProxySpecification,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.apache.commons.lang3.Validate,public,org.apache.commons:commons-lang3:3.11,Class.forName,org.codehaus.groovy:groovy:3.0.8
+java.io.Writer,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.common.assertion.Assertion,public,io.rest-assured:rest-assured-common:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.ResponseSpecificationImpl$_header_closure7,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+javax.json.spi.JsonProvider,public,jakarta.json:jakarta.json-api:1.1.6,subtyping,org.apache.johnzon:johnzon-core:1.1.11
+org.codehaus.groovy.runtime.dgmimpl.NumberNumberMinus$IntegerInteger,private,org.codehaus.groovy:groovy:3.0.8,method call,io.rest-assured:rest-assured:4.4.0
+java.lang.ClassLoader,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+groovy.lang.Writable,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+java.io.Closeable,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$12,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.NameAndValue,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$14,public,org.codehaus.groovy:groovy:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.apache.groovy.xml.extensions.XmlExtensions,public,org.codehaus.groovy:groovy-xml:3.0.8,Class.forName,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$_validate_closure3,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$_validate_closure2,public,io.rest-assured:rest-assured:4.4.0,method call,org.codehaus.groovy:groovy:3.0.8
+org.apache.http.cookie.Cookie,public,org.apache.httpcomponents:httpclient:4.5.13,cast,io.rest-assured:rest-assured:4.4.0
+io.restassured.internal.MapCreator,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+java.util.SortedMap,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap,public,org.codehaus.groovy:groovy:3.0.8,method call,io.rest-assured:rest-assured:4.4.0
+javax.json.bind.serializer.DeserializationContext,public,jakarta.json.bind:jakarta.json.bind-api:1.0.2,subtyping,org.eclipse:yasson:1.0.6
+org.codehaus.groovy.runtime.typehandling.DefaultTypeTransformation,public,org.codehaus.groovy:groovy:3.0.8,method call,io.rest-assured:rest-assured:4.4.0
+java.lang.Iterable,public,unknownLib,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.typehandling.DefaultTypeTransformation,public,org.codehaus.groovy:groovy:3.0.8,method call,io.rest-assured:rest-assured-common:4.4.0
+org.apache.http.message.HeaderGroup,public,org.apache.httpcomponents:httpcore:4.4.13,cast,org.apache.httpcomponents:httpclient:4.5.13
+org.hamcrest.Matcher,public,org.hamcrest:hamcrest:2.1,cast,io.rest-assured:rest-assured:4.4.0
+io.restassured.config.MatcherConfig,public,io.rest-assured:rest-assured:4.4.0,Class.forName,org.codehaus.groovy:groovy:3.0.8
+org.hamcrest.core.IsEqual,public,org.hamcrest:hamcrest:2.1,method call,io.rest-assured:rest-assured:4.4.0
+org.codehaus.groovy.runtime.GStringImpl,public,org.codehaus.groovy:groovy:3.0.8,instantiation,io.rest-assured:rest-assured-common:4.4.0

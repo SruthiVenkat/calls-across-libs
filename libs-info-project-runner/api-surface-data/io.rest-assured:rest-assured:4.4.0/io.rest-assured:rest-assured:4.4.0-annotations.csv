@@ -1,0 +1,8 @@
+Class,Method,Field Name:Field Signature,Annotated In Library,Annotation,Annotation Visibility,Annotation Library,Count
+io.restassured.internal.multipart.MultiPartInternal,-,-,io.rest-assured:rest-assured:4.4.0,groovy.transform.EqualsAndHashCode,public,org.codehaus.groovy:groovy:3.0.8,1
+org.apache.http.impl.cookie.NetscapeDraftSpec,-,-,org.apache.httpcomponents:httpclient:4.5.13,org.apache.http.annotation.Obsolete,public,org.apache.httpcomponents:httpcore:4.4.13,1
+io.restassured.internal.multipart.MultiPartInternal,-,-,io.rest-assured:rest-assured:4.4.0,groovy.transform.ToString,public,org.codehaus.groovy:groovy:3.0.8,1
+org.apache.http.impl.cookie.RFC2109Spec,-,-,org.apache.httpcomponents:httpclient:4.5.13,org.apache.http.annotation.Obsolete,public,org.apache.httpcomponents:httpcore:4.4.13,1
+io.restassured.internal.MapCreator$ArgsAndValue,-,-,io.rest-assured:rest-assured:4.4.0,groovy.transform.ToString,public,org.codehaus.groovy:groovy:3.0.8,1
+io.restassured.internal.MapCreator$ArgsAndValue,-,-,io.rest-assured:rest-assured:4.4.0,groovy.transform.EqualsAndHashCode,public,org.codehaus.groovy:groovy:3.0.8,1
+org.apache.http.impl.cookie.RFC2965Spec,-,-,org.apache.httpcomponents:httpclient:4.5.13,org.apache.http.annotation.Obsolete,public,org.apache.httpcomponents:httpcore:4.4.13,1

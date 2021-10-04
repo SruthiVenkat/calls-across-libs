@@ -1,238 +1,155 @@
 Class Name,Class Visibility,Class Library,Usage,Used In Library
-com.fasterxml.jackson.core.json.UTF8DataInputJsonParser,public,com.fasterxml.jackson.core:jackson-core:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.databind.type.ResolvedRecursiveType,public,com.fasterxml.jackson.core:jackson-databind:2.12.3,method call,com.fasterxml.jackson.core:jackson-core:2.12.3
+com.fasterxml.jackson.databind.exc.MismatchedInputException,public,com.fasterxml.jackson.core:jackson-databind:2.12.3,method call,com.fasterxml.jackson.core
 com.fasterxml.jackson.databind.node.TestConversions$LongContainer1940,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
+com.fasterxml.jackson.core.JsonpCharacterEscapes,public,com.fasterxml.jackson.core,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.ser.std.SqlDateSerializer,public,com.fasterxml.jackson.core:jackson-databind:2.12.3,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
 java.util.EnumSet,public,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.ext.DOMSerializer,public,com.fasterxml.jackson.core:jackson-databind:2.12.3,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.type.TestTypeFactory3108$StringList3108,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
 java.util.GregorianCalendar,public,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.util.JsonParserDelegate,public,com.fasterxml.jackson.core:jackson-core:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.jsontype.TestTypedDeserialization$NullAnimal,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
+com.fasterxml.jackson.core.JsonGenerationException,public,com.fasterxml.jackson.core,instantiation,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.jsontype.TestTypedDeserialization$DummyImpl,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
+com.fasterxml.jackson.core.JsonProcessingException,public,com.fasterxml.jackson.core,cast,com.fasterxml.jackson.core:jackson-databind:2.12.3
+com.fasterxml.jackson.core.JsonFactory,public,com.fasterxml.jackson.core,instantiation,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.type.TestTypeFactory3108$StringStringMap3108,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.databind.node.TreeTraversingParser,public,com.fasterxml.jackson.core:jackson-databind:2.12.3,method call,com.fasterxml.jackson.core:jackson-core:2.12.3
-com.fasterxml.jackson.annotation.JsonTypeInfo$As,public,com.fasterxml.jackson.core:jackson-annotations:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.annotation.PropertyAccessor,public,com.fasterxml.jackson.core:jackson-annotations:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.databind.type.CollectionType,public,com.fasterxml.jackson.core:jackson-databind:2.12.3,method call,com.fasterxml.jackson.core:jackson-core:2.12.3
-com.fasterxml.jackson.core.json.JsonReadFeature,public,com.fasterxml.jackson.core:jackson-core:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
 java.util.TreeMap,public,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
 java.util.concurrent.atomic.AtomicReference,public,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.deser.std.DateDeserializers$SqlDateDeserializer,public,com.fasterxml.jackson.core:jackson-databind:2.12.3,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.databind.type.ArrayType,public,com.fasterxml.jackson.core:jackson-databind:2.12.3,method call,com.fasterxml.jackson.core:jackson-core:2.12.3
 com.fasterxml.jackson.databind.deser.jdk.EnumMapDeserializationTest$Enum1859,public,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.ext.SqlBlobSerializer,public,com.fasterxml.jackson.core:jackson-databind:2.12.3,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.jsontype.TestPropertyTypeInfo$FieldWrapperBean,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.filter.JsonPointerBasedFilter,public,com.fasterxml.jackson.core:jackson-core:2.12.3,instantiation,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.databind.exc.InvalidNullException,public,com.fasterxml.jackson.core:jackson-databind:2.12.3,method call,com.fasterxml.jackson.core:jackson-core:2.12.3
-com.fasterxml.jackson.databind.util.TokenBuffer$Parser,protected,com.fasterxml.jackson.core:jackson-databind:2.12.3,method call,com.fasterxml.jackson.core:jackson-core:2.12.3
-com.fasterxml.jackson.databind.exc.MismatchedInputException,public,com.fasterxml.jackson.core:jackson-databind:2.12.3,method call,com.fasterxml.jackson.core:jackson-core:2.12.3
-com.fasterxml.jackson.databind.node.NodeCursor$RootCursor,protected,com.fasterxml.jackson.core:jackson-databind:2.12.3,method call,com.fasterxml.jackson.core:jackson-core:2.12.3
-com.fasterxml.jackson.annotation.JsonFormat,public,com.fasterxml.jackson.core:jackson-annotations:2.12.3,cast,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.StreamReadFeature,public,com.fasterxml.jackson.core:jackson-core:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.JsonLocation,public,com.fasterxml.jackson.core:jackson-core:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
+com.fasterxml.jackson.core.SerializableString,public,com.fasterxml.jackson.core,cast,com.fasterxml.jackson.core:jackson-databind:2.12.3
 java.nio.file.Path,public,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.jsontype.TestGenericListSerialization$Child2,public,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.jsontype.deftyping.TestDefaultForObject$ComplexChoice,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
+com.fasterxml.jackson.core.JsonLocation,public,com.fasterxml.jackson.core,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.jsontype.TestGenericListSerialization$Child1,public,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.json.JsonReadFeature,public,com.fasterxml.jackson.core:jackson-core:2.12.3,cast,com.fasterxml.jackson.core:jackson-databind:2.12.3
 java.lang.Long,public,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.StreamWriteFeature,public,com.fasterxml.jackson.core:jackson-core:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.filter.TokenFilterContext,public,com.fasterxml.jackson.core:jackson-core:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.annotation.JsonAlias,public,com.fasterxml.jackson.core:jackson-annotations:2.12.3,cast,com.fasterxml.jackson.core:jackson-databind:2.12.3
+com.fasterxml.jackson.databind.node.TreeTraversingParser,public,com.fasterxml.jackson.core:jackson-databind:2.12.3,method call,com.fasterxml.jackson.core
 com.fasterxml.jackson.databind.jsontype.PolymorphicViaRefTypeTest$AtomicStringWrapper,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.objectid.ObjectId825Test$TestC,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.annotation.JsonIgnoreProperties,public,com.fasterxml.jackson.core:jackson-annotations:2.12.3,cast,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.objectid.ObjectId825Test$TestD,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.annotation.OptBoolean,public,com.fasterxml.jackson.core:jackson-annotations:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
 java.util.Locale,public,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-java.util.concurrent.TimeUnit,public,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.ser.std.SqlTimeSerializer,public,com.fasterxml.jackson.core:jackson-databind:2.12.3,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.util.DefaultPrettyPrinter,public,com.fasterxml.jackson.core:jackson-core:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
+com.fasterxml.jackson.databind.exc.InvalidNullException,public,com.fasterxml.jackson.core:jackson-databind:2.12.3,method call,com.fasterxml.jackson.core
 com.fasterxml.jackson.databind.jsontype.TestPropertyTypeInfo$MethodWrapperBean,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.annotation.JsonValue,public,com.fasterxml.jackson.core:jackson-annotations:2.12.3,cast,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.base.ParserMinimalBase,public,com.fasterxml.jackson.core:jackson-core:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.jsontype.TestPolymorphicDeduction$LiveCat,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.deser.creators.TestCreatorWithPolymorphic113$Dog,public,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.jsontype.vld.CustomPTVMatchersTest$CustomGood,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.jsontype.jdk.TypedArrayDeserTest$TypedListAsWrapper,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
 java.lang.Object,public,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.databind.JsonMappingException,public,com.fasterxml.jackson.core:jackson-databind:2.12.3,method call,com.fasterxml.jackson.core:jackson-core:2.12.3
 com.fasterxml.jackson.databind.deser.jdk.MapDeserializationTest$ConcreteType,public,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.json.JsonReadContext,public,com.fasterxml.jackson.core:jackson-core:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.json.ReaderBasedJsonParser,public,com.fasterxml.jackson.core:jackson-core:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.annotation.JsonSetter$Value,public,com.fasterxml.jackson.core:jackson-annotations:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
+com.fasterxml.jackson.core.JsonProcessingException,public,com.fasterxml.jackson.core,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.jsontype.deftyping.TestDefaultWithCreators$UrlJob,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.json.JsonReadContext,public,com.fasterxml.jackson.core:jackson-core:2.12.3,cast,com.fasterxml.jackson.core:jackson-databind:2.12.3
+com.fasterxml.jackson.core.JsonGenerator$Feature,public,com.fasterxml.jackson.core,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
+com.fasterxml.jackson.databind.ObjectMapper,public,com.fasterxml.jackson.core:jackson-databind:2.12.3,method call,com.fasterxml.jackson.core
 java.net.URL,public,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.annotation.JsonFilter,public,com.fasterxml.jackson.core:jackson-annotations:2.12.3,cast,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.annotation.JsonIgnoreProperties$Value,public,com.fasterxml.jackson.core:jackson-annotations:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.util.ByteArrayBuilder,public,com.fasterxml.jackson.core:jackson-core:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.deser.AnySetterTest$Impl,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.annotation.ObjectIdGenerators$PropertyGenerator,public,com.fasterxml.jackson.core:jackson-annotations:2.12.3,subtyping,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.objectid.TestObjectId$Foo,public,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.databind.type.MapType,public,com.fasterxml.jackson.core:jackson-databind:2.12.3,method call,com.fasterxml.jackson.core:jackson-core:2.12.3
 com.fasterxml.jackson.databind.objectid.TestObjectIdWithPolymorphic$Process,public,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
 java.util.Collections$EmptySet,private,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.annotation.JsonGetter,public,com.fasterxml.jackson.core:jackson-annotations:2.12.3,cast,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.annotation.ObjectIdResolver,public,com.fasterxml.jackson.core:jackson-annotations:2.12.3,cast,com.fasterxml.jackson.core:jackson-databind:2.12.3
+org.w3c.dom.Node,public,org.w3c.dom,cast,com.fasterxml.jackson.core:jackson-databind:2.12.3
+com.fasterxml.jackson.core.JsonParser$Feature,public,com.fasterxml.jackson.core,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.jsontype.GenericTypeId1735Test$Nefarious1735,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.jsontype.vld.BasicPTVWithArraysTest$Good2534,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.jsontype.deftyping.TestDefaultForEnums$TestEnum,public,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.databind.ObjectReader,public,com.fasterxml.jackson.core:jackson-databind:2.12.3,method call,com.fasterxml.jackson.core:jackson-core:2.12.3
 java.util.Collections$SynchronizedList,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.databind.exc.InvalidTypeIdException,public,com.fasterxml.jackson.core:jackson-databind:2.12.3,method call,com.fasterxml.jackson.core:jackson-core:2.12.3
+com.fasterxml.jackson.core.JsonGenerator,public,com.fasterxml.jackson.core,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.ext.CoreXMLSerializers,public,com.fasterxml.jackson.core:jackson-databind:2.12.3,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.jsontype.TestPolymorphicDeduction$DeadCat,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.jsontype.TestPropertyTypeInfo$OtherBean,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.JsonStreamContext,public,com.fasterxml.jackson.core:jackson-core:2.12.3,subtyping,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.JsonParser,public,com.fasterxml.jackson.core:jackson-core:2.12.3,cast,com.fasterxml.jackson.core:jackson-databind:2.12.3
+com.fasterxml.jackson.databind.node.NodeCursor$ArrayCursor,protected,com.fasterxml.jackson.core:jackson-databind:2.12.3,method call,com.fasterxml.jackson.core
 com.fasterxml.jackson.databind.jsontype.TestTypedDeserialization$Fish,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
 java.util.Collections$SynchronizedSet,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.annotation.JsonTypeInfo,public,com.fasterxml.jackson.core:jackson-annotations:2.12.3,cast,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.deser.creators.DelegatingExternalProperty1003Test$Superman,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.annotation.JacksonAnnotation,public,com.fasterxml.jackson.core:jackson-annotations:2.12.3,annotation,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.databind.util.TokenBuffer,public,com.fasterxml.jackson.core:jackson-databind:2.12.3,method call,com.fasterxml.jackson.core:jackson-core:2.12.3
+com.fasterxml.jackson.core.ObjectCodec,public,com.fasterxml.jackson.core,subtyping,com.fasterxml.jackson.core:jackson-databind:2.12.3
+com.fasterxml.jackson.core.JsonStreamContext,public,com.fasterxml.jackson.core,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
 java.util.ArrayList,public,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
 java.util.Collections$UnmodifiableCollection,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.JsonParser,public,com.fasterxml.jackson.core:jackson-core:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.io.SegmentedStringWriter,public,com.fasterxml.jackson.core:jackson-core:2.12.3,instantiation,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.annotation.JsonBackReference,public,com.fasterxml.jackson.core:jackson-annotations:2.12.3,cast,com.fasterxml.jackson.core:jackson-databind:2.12.3
+com.fasterxml.jackson.core.JsonLocation,public,com.fasterxml.jackson.core,instantiation,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.objectid.TestObjectIdWithEquals$Element,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.jsontype.jdk.ScalarTypingTest$TestEnum,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.annotation.JsonKey,public,com.fasterxml.jackson.core:jackson-annotations:2.12.3,cast,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.Base64Variant,public,com.fasterxml.jackson.core:jackson-core:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
+com.fasterxml.jackson.core.StreamWriteFeature,public,com.fasterxml.jackson.core,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.ext.CoreXMLDeserializers,public,com.fasterxml.jackson.core:jackson-databind:2.12.3,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
+com.fasterxml.jackson.core.JsonGenerator,public,com.fasterxml.jackson.core,subtyping,com.fasterxml.jackson.core:jackson-databind:2.12.3
 java.util.Collections$UnmodifiableList,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.annotation.JsonFormat$Value,public,com.fasterxml.jackson.core:jackson-annotations:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
 java.util.Arrays$ArrayList,private,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
 java.util.Collections$SynchronizedRandomAccessList,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.annotation.JacksonInject,public,com.fasterxml.jackson.core:jackson-annotations:2.12.3,cast,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.annotation.JsonManagedReference,public,com.fasterxml.jackson.core:jackson-annotations:2.12.3,cast,com.fasterxml.jackson.core:jackson-databind:2.12.3
+org.xml.sax.InputSource,public,org.xml.sax,instantiation,javax.xml.parsers
+com.fasterxml.jackson.databind.node.NodeCursor$RootCursor,protected,com.fasterxml.jackson.core:jackson-databind:2.12.3,method call,com.fasterxml.jackson.core
 com.fasterxml.jackson.databind.jsontype.vld.ValidatePolymSubTypeTest$GoodValue,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.jsontype.vld.ValidatePolymSubTypeTest$MehValue,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
+com.fasterxml.jackson.core.Version,public,com.fasterxml.jackson.core,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.objectid.TestObjectId$Bar,public,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.BaseMapTest$IntWrapper,protected,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.SerializableString,public,com.fasterxml.jackson.core:jackson-core:2.12.3,cast,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.JsonFactory,public,com.fasterxml.jackson.core:jackson-core:2.12.3,subtyping,com.fasterxml.jackson.core:jackson-databind:2.12.3
 java.util.HashMap,public,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
+com.fasterxml.jackson.core.StreamReadFeature,public,com.fasterxml.jackson.core,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.jsontype.TestWithGenerics$MyParam,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
 java.lang.Byte,public,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.databind.type.SimpleType,public,com.fasterxml.jackson.core:jackson-databind:2.12.3,method call,com.fasterxml.jackson.core:jackson-core:2.12.3
-com.fasterxml.jackson.annotation.JsonAnyGetter,public,com.fasterxml.jackson.core:jackson-annotations:2.12.3,cast,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.util.Instantiatable,public,com.fasterxml.jackson.core:jackson-core:2.12.3,cast,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.util.JacksonFeatureSet,public,com.fasterxml.jackson.core:jackson-core:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.JsonFactory,public,com.fasterxml.jackson.core:jackson-core:2.12.3,instantiation,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.JsonProcessingException,public,com.fasterxml.jackson.core:jackson-core:2.12.3,cast,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.annotation.JsonInclude,public,com.fasterxml.jackson.core:jackson-annotations:2.12.3,cast,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.util.InternCache,public,com.fasterxml.jackson.core:jackson-core:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.annotation.JsonRootName,public,com.fasterxml.jackson.core:jackson-annotations:2.12.3,cast,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.JsonLocation,public,com.fasterxml.jackson.core:jackson-core:2.12.3,instantiation,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.annotation.ObjectIdGenerators$IntSequenceGenerator,public,com.fasterxml.jackson.core:jackson-annotations:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.databind.exc.InvalidFormatException,public,com.fasterxml.jackson.core:jackson-databind:2.12.3,method call,com.fasterxml.jackson.core:jackson-core:2.12.3
-com.fasterxml.jackson.core.JsonProcessingException,public,com.fasterxml.jackson.core:jackson-core:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
+com.fasterxml.jackson.core.JsonStreamContext,public,com.fasterxml.jackson.core,subtyping,com.fasterxml.jackson.core:jackson-databind:2.12.3
+com.fasterxml.jackson.core.Versioned,public,com.fasterxml.jackson.core,subtyping,com.fasterxml.jackson.core:jackson-databind:2.12.3
+com.fasterxml.jackson.core.JsonParseException,public,com.fasterxml.jackson.core,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
+com.fasterxml.jackson.core.JsonParser$NumberType,public,com.fasterxml.jackson.core,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.deser.filter.ProblemHandlerUnknownTypeId2221Test$DummyContent,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.PrettyPrinter,public,com.fasterxml.jackson.core:jackson-core:2.12.3,cast,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.io.NumberInput,public,com.fasterxml.jackson.core:jackson-core:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.databind.exc.IgnoredPropertyException,public,com.fasterxml.jackson.core:jackson-databind:2.12.3,method call,com.fasterxml.jackson.core:jackson-core:2.12.3
 com.fasterxml.jackson.databind.deser.filter.ProblemHandlerUnknownTypeId2221Test$GenericContent,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.annotation.JsonProperty,public,com.fasterxml.jackson.core:jackson-annotations:2.12.3,cast,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.objectid.JSOGDeserialize622Test$IdentifiableExampleJSOG,public,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.Base64Variants,public,com.fasterxml.jackson.core:jackson-core:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.Base64Variants,default,com.fasterxml.jackson.core:jackson-core:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.JsonpCharacterEscapes,public,com.fasterxml.jackson.core:jackson-core:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.util.ByteArrayBuilder,public,com.fasterxml.jackson.core:jackson-core:2.12.3,instantiation,com.fasterxml.jackson.core:jackson-databind:2.12.3
 java.util.List,public,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.jsontype.TestWithGenerics$MyClass,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
 java.util.Collections$SingletonMap,private,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.annotation.JsonTypeName,public,com.fasterxml.jackson.core:jackson-annotations:2.12.3,cast,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.objectid.ObjectId825BTest$Ch,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.jsontype.TestSubtypes$TheBomb,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.annotation.JsonInclude$Include,public,com.fasterxml.jackson.core:jackson-annotations:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.annotation.JsonIdentityInfo,public,com.fasterxml.jackson.core:jackson-annotations:2.12.3,cast,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.annotation.JsonIgnoreType,public,com.fasterxml.jackson.core:jackson-annotations:2.12.3,cast,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.objectid.ObjectId825BTest$Tr,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.jsontype.deftyping.TestDefaultForScalars$Data,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.jsontype.TestPropertyTypeInfo$BooleanValue,protected,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.jsontype.vld.ValidatePolymBaseTypeTest$GoodValue,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.exc.InputCoercionException,public,com.fasterxml.jackson.core:jackson-core:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.jsontype.deftyping.DefaultWithBaseType1093Test$Point1093,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.objectid.ObjectId825BTest$Ti,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.format.MatchStrength,public,com.fasterxml.jackson.core:jackson-core:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
+com.fasterxml.jackson.core.JsonProcessingException,public,com.fasterxml.jackson.core,subtyping,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.jsontype.TestBaseTypeAsDefault$Child,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.annotation.JsonProperty$Access,public,com.fasterxml.jackson.core:jackson-annotations:2.12.3,cast,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.annotation.JsonMerge,public,com.fasterxml.jackson.core:jackson-annotations:2.12.3,cast,com.fasterxml.jackson.core:jackson-databind:2.12.3
+com.fasterxml.jackson.databind.MappingJsonFactory,public,com.fasterxml.jackson.core:jackson-databind:2.12.3,method call,com.fasterxml.jackson.core
+com.fasterxml.jackson.core.PrettyPrinter,public,com.fasterxml.jackson.core,cast,com.fasterxml.jackson.core:jackson-databind:2.12.3
 java.util.EnumMap,public,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.filter.FilteringParserDelegate,public,com.fasterxml.jackson.core:jackson-core:2.12.3,instantiation,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.JsonParseException,public,com.fasterxml.jackson.core:jackson-core:2.12.3,instantiation,com.fasterxml.jackson.core:jackson-databind:2.12.3
+com.fasterxml.jackson.databind.exc.InvalidFormatException,public,com.fasterxml.jackson.core:jackson-databind:2.12.3,method call,com.fasterxml.jackson.core
+com.fasterxml.jackson.core.TreeNode,public,com.fasterxml.jackson.core,subtyping,com.fasterxml.jackson.core:jackson-databind:2.12.3
 java.util.Collections$UnmodifiableRandomAccessList,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.type.ResolvedType,public,com.fasterxml.jackson.core:jackson-core:2.12.3,subtyping,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.annotation.JsonIgnore,public,com.fasterxml.jackson.core:jackson-annotations:2.12.3,cast,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.objectid.ObjectId825BTest$V,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.util.TokenBuffer,public,com.fasterxml.jackson.core:jackson-databind:2.12.3,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.json.UTF8StreamJsonParser,public,com.fasterxml.jackson.core:jackson-core:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.annotation.JsonProperty$Access,public,com.fasterxml.jackson.core:jackson-annotations:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.annotation.ObjectIdGenerator,public,com.fasterxml.jackson.core:jackson-annotations:2.12.3,cast,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.annotation.JsonFormat$Shape,public,com.fasterxml.jackson.core:jackson-annotations:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.databind.node.NodeCursor$ObjectCursor,protected,com.fasterxml.jackson.core:jackson-databind:2.12.3,method call,com.fasterxml.jackson.core:jackson-core:2.12.3
 java.util.Collections$SynchronizedCollection,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.node.TestTreeWithType$SavedCookie,public,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.databind.util.TokenBufferReadContext,public,com.fasterxml.jackson.core:jackson-databind:2.12.3,method call,com.fasterxml.jackson.core:jackson-core:2.12.3
-com.fasterxml.jackson.databind.json.JsonMapper,public,com.fasterxml.jackson.core:jackson-databind:2.12.3,method call,com.fasterxml.jackson.core:jackson-core:2.12.3
 com.fasterxml.jackson.databind.node.ObjectNode,public,com.fasterxml.jackson.core:jackson-databind:2.12.3,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.JsonProcessingException,public,com.fasterxml.jackson.core:jackson-core:2.12.3,subtyping,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.jsontype.deftyping.TestDefaultWithCreators$Bean1385,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.annotation.JsonIncludeProperties$Value,public,com.fasterxml.jackson.core:jackson-annotations:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.io.MergedStream,public,com.fasterxml.jackson.core:jackson-core:2.12.3,instantiation,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.Version,public,com.fasterxml.jackson.core:jackson-core:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.annotation.JacksonInject$Value,public,com.fasterxml.jackson.core:jackson-annotations:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.databind.MappingJsonFactory,public,com.fasterxml.jackson.core:jackson-databind:2.12.3,method call,com.fasterxml.jackson.core:jackson-core:2.12.3
 com.fasterxml.jackson.databind.ext.DOMDeserializer$NodeDeserializer,public,com.fasterxml.jackson.core:jackson-databind:2.12.3,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.base.ParserBase,public,com.fasterxml.jackson.core:jackson-core:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.BaseMapTest$StringWrapper,protected,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
 java.lang.Double,public,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.objectid.AbstractWithObjectIdTest$BaseInterfaceImpl,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.jsontype.deftyping.TestDefaultForObject$PolymorphicType,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.annotation.JsonTypeInfo$Id,public,com.fasterxml.jackson.core:jackson-annotations:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.jsontype.TestWithGenerics$SomeObject,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.jsontype.ext.ExternalTypeId96Test$ValueBean,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.annotation.JsonUnwrapped,public,com.fasterxml.jackson.core:jackson-annotations:2.12.3,cast,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.json.JsonWriteContext,public,com.fasterxml.jackson.core:jackson-core:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.jsontype.jdk.EnumTypingTest$Tag,public,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.annotation.JsonAnySetter,public,com.fasterxml.jackson.core:jackson-annotations:2.12.3,cast,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.io.SegmentedStringWriter,public,com.fasterxml.jackson.core:jackson-core:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.jsontype.vld.BasicPTVWithArraysTest$Bad2534,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.deser.creators.TestValueInstantiator$PolymorphicBean,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
+com.fasterxml.jackson.core.Base64Variants,public,com.fasterxml.jackson.core,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.jsontype.PolymorphicList1451SerTest$B,public,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.JsonFactory,public,com.fasterxml.jackson.core:jackson-core:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.jsontype.PolymorphicList1451SerTest$A,public,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.objectid.TestObjectIdWithPolymorphic$Impl,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.annotation.JsonInclude$Value,public,com.fasterxml.jackson.core:jackson-annotations:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
 java.util.Collections$UnmodifiableMap,private,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.jsontype.deftyping.TestDefaultForObject$Choice,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.format.InputAccessor$Std,public,com.fasterxml.jackson.core:jackson-core:2.12.3,subtyping,com.fasterxml.jackson.core:jackson-databind:2.12.3
+com.fasterxml.jackson.core.JsonParser,public,com.fasterxml.jackson.core,cast,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.jsontype.vld.ValidatePolymSubTypeTest$BadValue,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.Versioned,public,com.fasterxml.jackson.core:jackson-core:2.12.3,subtyping,com.fasterxml.jackson.core:jackson-databind:2.12.3
+com.fasterxml.jackson.core.Base64Variants,default,com.fasterxml.jackson.core,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
+com.fasterxml.jackson.databind.exc.IgnoredPropertyException,public,com.fasterxml.jackson.core:jackson-databind:2.12.3,method call,com.fasterxml.jackson.core
 com.fasterxml.jackson.databind.jsontype.vld.BasicPTVTest$ValueA,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.annotation.JsonAutoDetect$Value,public,com.fasterxml.jackson.core:jackson-annotations:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.jsontype.vld.BasicPTVTest$ValueB,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.io.SerializedString,public,com.fasterxml.jackson.core:jackson-core:2.12.3,instantiation,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.annotation.JsonClassDescription,public,com.fasterxml.jackson.core:jackson-annotations:2.12.3,cast,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.ObjectCodec,public,com.fasterxml.jackson.core:jackson-core:2.12.3,subtyping,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.annotation.JsonIncludeProperties,public,com.fasterxml.jackson.core:jackson-annotations:2.12.3,cast,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.JsonGenerator,public,com.fasterxml.jackson.core:jackson-core:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
+com.fasterxml.jackson.core.JsonParser,public,com.fasterxml.jackson.core,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
 java.lang.Short,public,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.json.UTF8JsonGenerator,public,com.fasterxml.jackson.core:jackson-core:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.util.JsonParserSequence,public,com.fasterxml.jackson.core:jackson-core:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.annotation.JsonSetter,public,com.fasterxml.jackson.core:jackson-annotations:2.12.3,cast,com.fasterxml.jackson.core:jackson-databind:2.12.3
+com.fasterxml.jackson.core.JsonParseException,public,com.fasterxml.jackson.core,instantiation,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.jsontype.TestAbstractTypeNames$BaseValue,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException,public,com.fasterxml.jackson.core:jackson-databind:2.12.3,method call,com.fasterxml.jackson.core:jackson-core:2.12.3
 com.fasterxml.jackson.databind.jsontype.TestTypedDeserialization$Dog,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
+com.fasterxml.jackson.databind.exc.InvalidTypeIdException,public,com.fasterxml.jackson.core:jackson-databind:2.12.3,method call,com.fasterxml.jackson.core
 java.util.Collections$EmptyMap,private,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.struct.TestBackRefsWithPolymorphic$StringPropertyImpl,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.objectid.ObjectId825BTest$CTC,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.databind.deser.DataFormatReaders$AccessorForReader,protected,com.fasterxml.jackson.core:jackson-databind:2.12.3,method call,com.fasterxml.jackson.core:jackson-core:2.12.3
-com.fasterxml.jackson.core.io.NumberOutput,public,com.fasterxml.jackson.core:jackson-core:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.objectid.ObjectId825BTest$CTD,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
 java.util.Collections$SynchronizedMap,private,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.deser.jdk.EnumMapDeserializationTest$Pojo1859,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
@@ -240,68 +157,53 @@ com.fasterxml.jackson.databind.jsontype.deftyping.TestDefaultForLists$SetBean,de
 java.util.TimeZone,public,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.deser.std.DateDeserializers$TimestampDeserializer,public,com.fasterxml.jackson.core:jackson-databind:2.12.3,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
 java.util.Calendar,public,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.JsonParseException,public,com.fasterxml.jackson.core:jackson-core:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.type.TestTypeFactory$EnumForCanonical,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
 java.util.Collections$EmptyList,private,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
 java.util.LinkedList,public,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.annotation.ObjectIdGenerators$StringIdGenerator,public,com.fasterxml.jackson.core:jackson-annotations:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.filter.FilteringParserDelegate,public,com.fasterxml.jackson.core:jackson-core:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.JsonParser$NumberType,public,com.fasterxml.jackson.core:jackson-core:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
+com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl,public,unknownLib,Class.forName,javax.xml.parsers
 com.fasterxml.jackson.databind.objectid.ObjectId825BTest$Dec,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
 java.lang.Class,public,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.json.JsonWriteFeature,public,com.fasterxml.jackson.core:jackson-core:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.annotation.JsonPropertyOrder,public,com.fasterxml.jackson.core:jackson-annotations:2.12.3,cast,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.objectid.JSOGDeserialize622Test$SubInner,public,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.deser.creators.TestPolymorphicDelegating$Issue580Impl,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
+com.fasterxml.jackson.databind.exc.InvalidDefinitionException,public,com.fasterxml.jackson.core:jackson-databind:2.12.3,method call,com.fasterxml.jackson.core
 com.fasterxml.jackson.databind.type.RecursiveType1658Test$Tree,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.databind.node.NodeCursor$ArrayCursor,protected,com.fasterxml.jackson.core:jackson-databind:2.12.3,method call,com.fasterxml.jackson.core:jackson-core:2.12.3
-com.fasterxml.jackson.core.json.JsonWriteFeature,public,com.fasterxml.jackson.core:jackson-core:2.12.3,cast,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.io.SerializedString,public,com.fasterxml.jackson.core:jackson-core:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
+com.fasterxml.jackson.core.JsonPointer,public,com.fasterxml.jackson.core,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
 java.util.Collections$SingletonList,private,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.struct.PojoAsArray646Test$TheItem,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
+com.fasterxml.jackson.databind.util.TokenBuffer$Parser,protected,com.fasterxml.jackson.core:jackson-databind:2.12.3,method call,com.fasterxml.jackson.core
 java.lang.String,public,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.annotation.JsonView,public,com.fasterxml.jackson.core:jackson-annotations:2.12.3,cast,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.annotation.JsonAutoDetect$Visibility,public,com.fasterxml.jackson.core:jackson-annotations:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.jsontype.vld.CustomPTVMatchersTest$CustomBad,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
+com.fasterxml.jackson.core.JsonToken,public,com.fasterxml.jackson.core,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.objectid.ObjectId825BTest$CTV,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.JsonGenerator,public,com.fasterxml.jackson.core:jackson-core:2.12.3,subtyping,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.JsonToken,public,com.fasterxml.jackson.core:jackson-core:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.databind.exc.ValueInstantiationException,public,com.fasterxml.jackson.core:jackson-databind:2.12.3,method call,com.fasterxml.jackson.core:jackson-core:2.12.3
+com.fasterxml.jackson.core.JsonFactory,public,com.fasterxml.jackson.core,subtyping,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.type.TestTypeFactory3108$ConcreteType3108,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.base.ParserMinimalBase,public,com.fasterxml.jackson.core:jackson-core:2.12.3,subtyping,com.fasterxml.jackson.core:jackson-databind:2.12.3
+com.fasterxml.jackson.databind.exc.ValueInstantiationException,public,com.fasterxml.jackson.core:jackson-databind:2.12.3,method call,com.fasterxml.jackson.core
+com.fasterxml.jackson.databind.ObjectReader,public,com.fasterxml.jackson.core:jackson-databind:2.12.3,method call,com.fasterxml.jackson.core
 com.fasterxml.jackson.databind.jsontype.jdk.TypedContainerSerTest$Issue508A,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
 java.util.HashSet,public,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.annotation.SimpleObjectIdResolver,public,com.fasterxml.jackson.core:jackson-annotations:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
+com.fasterxml.jackson.databind.util.TokenBufferReadContext,public,com.fasterxml.jackson.core:jackson-databind:2.12.3,method call,com.fasterxml.jackson.core
 com.fasterxml.jackson.databind.objectid.AbstractWithObjectIdTest$ListWrapper,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.annotation.JsonAutoDetect,public,com.fasterxml.jackson.core:jackson-annotations:2.12.3,cast,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.annotation.JsonIdentityReference,public,com.fasterxml.jackson.core:jackson-annotations:2.12.3,cast,com.fasterxml.jackson.core:jackson-databind:2.12.3
+com.fasterxml.jackson.databind.json.JsonMapper,public,com.fasterxml.jackson.core:jackson-databind:2.12.3,method call,com.fasterxml.jackson.core
+com.fasterxml.jackson.core.Base64Variant,public,com.fasterxml.jackson.core,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
+com.sun.org.apache.xerces.internal.jaxp.datatype.DatatypeFactoryImpl,public,unknownLib,Class.forName,javax.xml.datatype
 com.fasterxml.jackson.databind.objectid.ObjectId825Test$TestA,public,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.JsonParser$Feature,public,com.fasterxml.jackson.core:jackson-core:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.JsonPointer,public,com.fasterxml.jackson.core:jackson-core:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.JsonGenerationException,public,com.fasterxml.jackson.core:jackson-core:2.12.3,instantiation,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.annotation.ObjectIdGenerator$IdKey,public,com.fasterxml.jackson.core:jackson-annotations:2.12.3,instantiation,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.JsonGenerator$Feature,public,com.fasterxml.jackson.core:jackson-core:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
+com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException,public,com.fasterxml.jackson.core:jackson-databind:2.12.3,method call,com.fasterxml.jackson.core
 java.util.Collections$UnmodifiableSet,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.annotation.JsonPropertyDescription,public,com.fasterxml.jackson.core:jackson-annotations:2.12.3,cast,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.jsontype.jdk.TypedArrayDeserTest$TypedListAsProp,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.TreeNode,public,com.fasterxml.jackson.core:jackson-core:2.12.3,subtyping,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.annotation.JsonRawValue,public,com.fasterxml.jackson.core:jackson-annotations:2.12.3,cast,com.fasterxml.jackson.core:jackson-databind:2.12.3
+com.fasterxml.jackson.databind.JsonMappingException,public,com.fasterxml.jackson.core:jackson-databind:2.12.3,method call,com.fasterxml.jackson.core
+com.fasterxml.jackson.databind.node.NodeCursor$ObjectCursor,protected,com.fasterxml.jackson.core:jackson-databind:2.12.3,method call,com.fasterxml.jackson.core
 com.fasterxml.jackson.databind.jsontype.TestTypedDeserialization$Cat,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.annotation.JsonCreator$Mode,public,com.fasterxml.jackson.core:jackson-annotations:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.databind.exc.InvalidDefinitionException,public,com.fasterxml.jackson.core:jackson-databind:2.12.3,method call,com.fasterxml.jackson.core:jackson-core:2.12.3
 com.fasterxml.jackson.databind.jsontype.TestPolymorphicDeserialization676$MapContainer,public,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
 java.util.Collections$SingletonSet,private,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.objectid.PolymorphicWithObjectId1551Test$Car,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.jsontype.ext.ExternalTypeIdTest$Payload928,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.jsontype.deftyping.TestDefaultForObject$DiscussBean,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
+com.fasterxml.jackson.databind.util.TokenBuffer,public,com.fasterxml.jackson.core:jackson-databind:2.12.3,method call,com.fasterxml.jackson.core
+javax.xml.datatype.XMLGregorianCalendar,public,javax.xml.datatype,cast,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.struct.TestBackRefsWithPolymorphic$PropertySheetImpl,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.annotation.JsonSubTypes,public,com.fasterxml.jackson.core:jackson-annotations:2.12.3,cast,com.fasterxml.jackson.core:jackson-databind:2.12.3
 java.util.Date,public,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.json.WriterBasedJsonGenerator,public,com.fasterxml.jackson.core:jackson-core:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.annotation.JsonCreator,public,com.fasterxml.jackson.core:jackson-annotations:2.12.3,cast,com.fasterxml.jackson.core:jackson-databind:2.12.3
+com.fasterxml.jackson.core.JsonFactory,public,com.fasterxml.jackson.core,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
 java.util.UUID,public,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.jsontype.jdk.EnumTypingTest$TestEnum,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.databind.ObjectMapper,public,com.fasterxml.jackson.core:jackson-databind:2.12.3,method call,com.fasterxml.jackson.core:jackson-core:2.12.3
+org.xml.sax.InputSource,public,org.xml.sax,instantiation,com.fasterxml.jackson.core:jackson-databind:2.12.3
 com.fasterxml.jackson.databind.jsontype.deftyping.TestDefaultForObject$StringBean,default,unknownLib,Class.forName,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.annotation.ObjectIdGenerators$UUIDGenerator,public,com.fasterxml.jackson.core:jackson-annotations:2.12.3,method call,com.fasterxml.jackson.core:jackson-databind:2.12.3
-com.fasterxml.jackson.core.type.WritableTypeId,public,com.fasterxml.jackson.core:jackson-core:2.12.3,instantiation,com.fasterxml.jackson.core:jackson-databind:2.12.3

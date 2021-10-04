@@ -35,7 +35,6 @@ org.springframework.format.datetime.standard.DateTimeConverters$LocalDateTimeToL
 org.glassfish.jersey.message.internal.BasicTypesMessageProvider,-,-,org.glassfish.jersey.core:jersey-common:2.23.2,javax.inject.Singleton,public,org.glassfish.hk2.external:javax.inject:2.5.0-b05,1
 org.springframework.format.datetime.standard.TemporalAccessorParser,-,-,org.springframework:spring-context:4.3.7.RELEASE,org.springframework.lang.UsesJava8,public,org.springframework:spring-core:4.3.7.RELEASE,1
 org.glassfish.jersey.message.internal.MediaTypeProvider,-,-,org.glassfish.jersey.core:jersey-common:2.23.2,javax.inject.Singleton,public,org.glassfish.hk2.external:javax.inject:2.5.0-b05,1
-com.google.common.collect.AbstractIndexedListIterator,-,-,com.google.guava:guava:19.0,com.google.common.annotations.GwtCompatible,public,com.google.guava:guava:18.0,1
 org.springframework.format.datetime.standard.DateTimeConverters$OffsetDateTimeToInstantConverter,-,-,org.springframework:spring-context:4.3.7.RELEASE,org.springframework.lang.UsesJava8,public,org.springframework:spring-core:4.3.7.RELEASE,1
 org.springframework.format.datetime.standard.DateTimeConverters$OffsetDateTimeToZonedDateTimeConverter,-,-,org.springframework:spring-context:4.3.7.RELEASE,org.springframework.lang.UsesJava8,public,org.springframework:spring-core:4.3.7.RELEASE,1
 org.glassfish.jersey.internal.inject.ContextInjectionResolver,-,-,org.glassfish.jersey.core:jersey-common:2.23.2,javax.inject.Singleton,public,org.glassfish.hk2.external:javax.inject:2.5.0-b05,1

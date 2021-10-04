@@ -1,0 +1,104 @@
+Class Name,Class Visibility,Class Library,Usage,Used In Library
+org.apache.rocketmq.common.protocol.body.QueryCorrectionOffsetBody,public,org.apache.rocketmq:rocketmq-common:4.9.1,Class.forName,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.protocol.route.TopicRouteData,public,org.apache.rocketmq:rocketmq-common:4.9.1,Class.forName,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.protocol.body.BrokerStatsData,public,org.apache.rocketmq:rocketmq-common:4.9.1,Class.forName,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.logging.InnerLoggerFactory$InnerLogger,public,org.apache.rocketmq:rocketmq-logging:4.9.1,method call,org.apache.rocketmq:rocketmq-common:4.9.1
+org.apache.rocketmq.common.protocol.body.ConsumeMessageDirectlyResult,public,org.apache.rocketmq:rocketmq-common:4.9.1,Class.forName,com.alibaba:fastjson:1.2.76
+java.util.HashSet,public,unknownLib,Class.forName,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.admin.ConsumeStats,public,org.apache.rocketmq:rocketmq-common:4.9.1,method call,com.alibaba:fastjson:1.2.76
+java.util.HashMap,public,unknownLib,Class.forName,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.protocol.body.KVTable,public,org.apache.rocketmq:rocketmq-common:4.9.1,method call,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.protocol.body.Connection,public,org.apache.rocketmq:rocketmq-common:4.9.1,method call,com.alibaba:fastjson:1.2.76
+java.util.concurrent.ConcurrentMap,public,unknownLib,Class.forName,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.protocol.body.ConsumeStatsList,public,org.apache.rocketmq:rocketmq-common:4.9.1,method call,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.protocol.body.RegisterBrokerBody,public,org.apache.rocketmq:rocketmq-common:4.9.1,method call,org.apache.rocketmq:rocketmq-remoting:4.9.1
+java.util.Properties,public,unknownLib,Class.forName,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.admin.TopicOffset,public,org.apache.rocketmq:rocketmq-common:4.9.1,Class.forName,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.protocol.heartbeat.MessageModel,public,org.apache.rocketmq:rocketmq-common:4.9.1,Class.forName,com.alibaba:fastjson:1.2.76
+java.util.Collection,public,unknownLib,Class.forName,com.alibaba:fastjson:1.2.76
+java.lang.Object,public,unknownLib,Class.forName,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.protocol.body.SubscriptionGroupWrapper,public,org.apache.rocketmq:rocketmq-common:4.9.1,Class.forName,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.remoting.protocol.RemotingSerializable,public,org.apache.rocketmq:rocketmq-remoting:4.9.1,subtyping,org.apache.rocketmq:rocketmq-common:4.9.1
+org.apache.rocketmq.common.protocol.body.ConsumeStatus,public,org.apache.rocketmq:rocketmq-common:4.9.1,Class.forName,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.protocol.body.ConsumerConnection,public,org.apache.rocketmq:rocketmq-common:4.9.1,Class.forName,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.protocol.body.ConsumerRunningInfo,public,org.apache.rocketmq:rocketmq-common:4.9.1,Class.forName,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.protocol.topic.OffsetMovedEvent,public,org.apache.rocketmq:rocketmq-common:4.9.1,Class.forName,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.message.MessageQueue,public,org.apache.rocketmq:rocketmq-common:4.9.1,Class.forName,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.protocol.body.SubscriptionGroupWrapper,public,org.apache.rocketmq:rocketmq-common:4.9.1,method call,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.protocol.heartbeat.ConsumeType,public,org.apache.rocketmq:rocketmq-common:4.9.1,Class.forName,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.protocol.body.ConsumeQueueData,public,org.apache.rocketmq:rocketmq-common:4.9.1,Class.forName,com.alibaba:fastjson:1.2.76
+java.util.ArrayList,public,unknownLib,Class.forName,com.alibaba:fastjson:1.2.76
+java.nio.file.Path,public,unknownLib,Class.forName,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.message.MessageQueue,public,org.apache.rocketmq:rocketmq-common:4.9.1,method call,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.protocol.body.ClusterInfo,public,org.apache.rocketmq:rocketmq-common:4.9.1,method call,org.apache.rocketmq:rocketmq-remoting:4.9.1
+org.apache.rocketmq.remoting.protocol.RemotingCommand,public,org.apache.rocketmq:rocketmq-remoting:4.9.1,method call,org.apache.rocketmq:rocketmq-common:4.9.1
+org.apache.rocketmq.common.protocol.route.QueueData,public,org.apache.rocketmq:rocketmq-common:4.9.1,method call,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.consumer.ConsumeFromWhere,public,org.apache.rocketmq:rocketmq-common:4.9.1,Class.forName,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.protocol.body.BrokerStatsItem,public,org.apache.rocketmq:rocketmq-common:4.9.1,method call,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.admin.TopicStatsTable,public,org.apache.rocketmq:rocketmq-common:4.9.1,method call,com.alibaba:fastjson:1.2.76
+java.lang.reflect.Type,public,unknownLib,Class.forName,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.protocol.body.CMResult,public,org.apache.rocketmq:rocketmq-common:4.9.1,Class.forName,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.protocol.body.Connection,public,org.apache.rocketmq:rocketmq-common:4.9.1,Class.forName,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.protocol.body.QueryConsumeTimeSpanBody,public,org.apache.rocketmq:rocketmq-common:4.9.1,method call,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.protocol.body.QueueTimeSpan,public,org.apache.rocketmq:rocketmq-common:4.9.1,Class.forName,com.alibaba:fastjson:1.2.76
+java.lang.AutoCloseable,public,unknownLib,Class.forName,com.alibaba:fastjson:1.2.76
+org.w3c.dom.Node,public,org.w3c.dom,cast,com.alibaba:fastjson:1.2.76
+java.lang.Integer,public,unknownLib,Class.forName,com.alibaba:fastjson:1.2.76
+java.lang.String,public,unknownLib,Class.forName,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.DataVersion,public,org.apache.rocketmq:rocketmq-common:4.9.1,Class.forName,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.protocol.route.BrokerData,public,org.apache.rocketmq:rocketmq-common:4.9.1,method call,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.subscription.SubscriptionGroupConfig,public,org.apache.rocketmq:rocketmq-common:4.9.1,Class.forName,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.protocol.body.ResetOffsetBody,public,org.apache.rocketmq:rocketmq-common:4.9.1,method call,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.remoting.common.RemotingUtil,public,org.apache.rocketmq:rocketmq-remoting:4.9.1,method call,org.apache.rocketmq:rocketmq-common:4.9.1
+com.alibaba.fastjson.JSON,public,com.alibaba:fastjson:1.2.76,method call,org.apache.rocketmq:rocketmq-common:4.9.1
+org.apache.rocketmq.common.protocol.body.CheckClientRequestBody,public,org.apache.rocketmq:rocketmq-common:4.9.1,method call,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.protocol.body.RegisterBrokerBody,public,org.apache.rocketmq:rocketmq-common:4.9.1,Class.forName,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.protocol.body.ConsumeQueueData,public,org.apache.rocketmq:rocketmq-common:4.9.1,method call,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.protocol.body.ProcessQueueInfo,public,org.apache.rocketmq:rocketmq-common:4.9.1,method call,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.protocol.body.ConsumerConnection,public,org.apache.rocketmq:rocketmq-common:4.9.1,method call,com.alibaba:fastjson:1.2.76
+org.apache.commons.lang3.StringUtils,public,org.apache.commons:commons-lang3:3.4,method call,org.apache.rocketmq:rocketmq-common:4.9.1
+org.apache.rocketmq.common.protocol.heartbeat.SubscriptionData,public,org.apache.rocketmq:rocketmq-common:4.9.1,method call,com.alibaba:fastjson:1.2.76
+java.util.TreeMap,public,unknownLib,Class.forName,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.protocol.body.BrokerStatsItem,public,org.apache.rocketmq:rocketmq-common:4.9.1,Class.forName,com.alibaba:fastjson:1.2.76
+com.alibaba.fastjson.JSON,public,com.alibaba:fastjson:1.2.76,Class.forName,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.admin.TopicStatsTable,public,org.apache.rocketmq:rocketmq-common:4.9.1,Class.forName,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.admin.TopicOffset,public,org.apache.rocketmq:rocketmq-common:4.9.1,method call,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.protocol.body.QueryConsumeQueueResponseBody,public,org.apache.rocketmq:rocketmq-common:4.9.1,Class.forName,com.alibaba:fastjson:1.2.76
+java.util.TreeSet,public,unknownLib,Class.forName,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.protocol.route.QueueData,public,org.apache.rocketmq:rocketmq-common:4.9.1,Class.forName,com.alibaba:fastjson:1.2.76
+java.sql.Clob,public,unknownLib,Class.forName,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.protocol.body.QueueTimeSpan,public,org.apache.rocketmq:rocketmq-common:4.9.1,method call,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.TopicConfig,public,org.apache.rocketmq:rocketmq-common:4.9.1,method call,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.remoting.protocol.LanguageCode,public,org.apache.rocketmq:rocketmq-remoting:4.9.1,Class.forName,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.protocol.body.ConsumerRunningInfo,public,org.apache.rocketmq:rocketmq-common:4.9.1,method call,com.alibaba:fastjson:1.2.76
+java.util.concurrent.atomic.AtomicLong,public,unknownLib,Class.forName,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.protocol.body.ConsumeStatus,public,org.apache.rocketmq:rocketmq-common:4.9.1,method call,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.protocol.route.TopicRouteData,public,org.apache.rocketmq:rocketmq-common:4.9.1,method call,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.protocol.body.QueryConsumeQueueResponseBody,public,org.apache.rocketmq:rocketmq-common:4.9.1,method call,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.protocol.body.QueryCorrectionOffsetBody,public,org.apache.rocketmq:rocketmq-common:4.9.1,method call,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.DataVersion,public,org.apache.rocketmq:rocketmq-common:4.9.1,method call,org.apache.rocketmq:rocketmq-remoting:4.9.1
+org.apache.rocketmq.common.protocol.body.KVTable,public,org.apache.rocketmq:rocketmq-common:4.9.1,Class.forName,com.alibaba:fastjson:1.2.76
+javax.xml.datatype.XMLGregorianCalendar,public,javax.xml.datatype,cast,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.protocol.body.QueryConsumeTimeSpanBody,public,org.apache.rocketmq:rocketmq-common:4.9.1,method call,org.apache.rocketmq:rocketmq-remoting:4.9.1
+org.apache.rocketmq.common.admin.ConsumeStats,public,org.apache.rocketmq:rocketmq-common:4.9.1,Class.forName,com.alibaba:fastjson:1.2.76
+com.alibaba.fastjson.JSON,public,com.alibaba:fastjson:1.2.76,method call,org.apache.rocketmq:rocketmq-remoting:4.9.1
+java.util.List,public,unknownLib,Class.forName,com.alibaba:fastjson:1.2.76
+com.alibaba.fastjson.util.ASMUtils,public,com.alibaba:fastjson:1.2.76,Class.forName,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.protocol.body.BrokerStatsData,public,org.apache.rocketmq:rocketmq-common:4.9.1,method call,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.protocol.body.ProcessQueueInfo,public,org.apache.rocketmq:rocketmq-common:4.9.1,Class.forName,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.protocol.body.ConsumeMessageDirectlyResult,public,org.apache.rocketmq:rocketmq-common:4.9.1,method call,com.alibaba:fastjson:1.2.76
+org.apache.commons.validator.routines.InetAddressValidator,public,commons-validator:commons-validator:1.7,method call,org.apache.rocketmq:rocketmq-common:4.9.1
+org.apache.rocketmq.common.DataVersion,public,org.apache.rocketmq:rocketmq-common:4.9.1,method call,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.protocol.body.ConsumeStatsList,public,org.apache.rocketmq:rocketmq-common:4.9.1,Class.forName,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.protocol.body.ClusterInfo,public,org.apache.rocketmq:rocketmq-common:4.9.1,Class.forName,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.protocol.body.QueryConsumeTimeSpanBody,public,org.apache.rocketmq:rocketmq-common:4.9.1,Class.forName,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.protocol.body.TopicConfigSerializeWrapper,public,org.apache.rocketmq:rocketmq-common:4.9.1,Class.forName,com.alibaba:fastjson:1.2.76
+java.beans.Transient,public,unknownLib,Class.forName,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.protocol.body.CheckClientRequestBody,public,org.apache.rocketmq:rocketmq-common:4.9.1,Class.forName,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.subscription.SubscriptionGroupConfig,public,org.apache.rocketmq:rocketmq-common:4.9.1,method call,com.alibaba:fastjson:1.2.76
+java.util.Set,public,unknownLib,Class.forName,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.protocol.topic.OffsetMovedEvent,public,org.apache.rocketmq:rocketmq-common:4.9.1,method call,org.apache.rocketmq:rocketmq-remoting:4.9.1
+org.apache.rocketmq.common.protocol.heartbeat.SubscriptionData,public,org.apache.rocketmq:rocketmq-common:4.9.1,Class.forName,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.protocol.route.BrokerData,public,org.apache.rocketmq:rocketmq-common:4.9.1,Class.forName,com.alibaba:fastjson:1.2.76
+java.util.Map,public,unknownLib,Class.forName,com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.protocol.body.ResetOffsetBody,public,org.apache.rocketmq:rocketmq-common:4.9.1,Class.forName,com.alibaba:fastjson:1.2.76

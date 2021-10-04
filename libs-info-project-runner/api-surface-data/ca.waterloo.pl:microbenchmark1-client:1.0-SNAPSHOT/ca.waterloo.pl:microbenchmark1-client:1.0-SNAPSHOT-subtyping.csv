@@ -1,9 +1,0 @@
-SubClass,Sub Library,Super Class/Interface,Super Class/Interface Visibility,Super Library,Count
-org.postgresql.util.PSQLWarning,org.postgresql:postgresql:42.2.19,java.sql.SQLWarning,public,java.sql,1
-org.postgresql.core.BaseStatement,org.postgresql:postgresql:42.2.19,java.sql.Statement,public,java.sql,1
-callback.CallbackClient$1,ca.waterloo.pl:microbenchmark1-client:1.0-SNAPSHOT,packageA.foo.CallbackInterface,public,ca.waterloo.pl:microbenchmark1-library:1.0-SNAPSHOT,1
-org.postgresql.jdbc.PgStatement,org.postgresql:postgresql:42.2.19,java.sql.Statement,public,java.sql,1
-org.postgresql.Driver,org.postgresql:postgresql:42.2.19,java.sql.Driver,public,java.sql,1
-org.postgresql.util.PSQLException,org.postgresql:postgresql:42.2.19,java.sql.SQLException,public,java.sql,1
-org.postgresql.jdbc.PgResultSet,org.postgresql:postgresql:42.2.19,java.sql.ResultSet,public,java.sql,1
-org.postgresql.core.BaseConnection,org.postgresql:postgresql:42.2.19,java.sql.Connection,public,java.sql,1

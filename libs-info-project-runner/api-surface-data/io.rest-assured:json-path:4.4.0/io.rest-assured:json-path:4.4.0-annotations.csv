@@ -1,0 +1,15 @@
+Class,Method,Field Name:Field Signature,Annotated In Library,Annotation,Annotation Visibility,Annotation Library,Count
+org.apache.johnzon.mapper.JohnzonVirtualObject,-,-,org.apache.johnzon:johnzon-mapper:1.1.11,org.apache.johnzon.core.Experimental,public,org.apache.johnzon:johnzon-core:1.1.11,1
+com.fasterxml.jackson.databind.annotation.JsonTypeResolver,-,-,com.fasterxml.jackson.core:jackson-databind:2.11.1,com.fasterxml.jackson.annotation.JacksonAnnotation,public,com.fasterxml.jackson.core:jackson-annotations:2.11.1,1
+org.codehaus.jackson.map.annotate.JsonRootName,-,-,org.codehaus.jackson:jackson-mapper-asl:1.9.11,org.codehaus.jackson.annotate.JacksonAnnotation,public,org.codehaus.jackson:jackson-core-asl:1.9.11,1
+com.fasterxml.jackson.databind.annotation.JsonValueInstantiator,-,-,com.fasterxml.jackson.core:jackson-databind:2.11.1,com.fasterxml.jackson.annotation.JacksonAnnotation,public,com.fasterxml.jackson.core:jackson-annotations:2.11.1,1
+org.codehaus.jackson.map.annotate.JsonValueInstantiator,-,-,org.codehaus.jackson:jackson-mapper-asl:1.9.11,org.codehaus.jackson.annotate.JacksonAnnotation,public,org.codehaus.jackson:jackson-core-asl:1.9.11,1
+com.fasterxml.jackson.databind.annotation.JsonSerialize,-,-,com.fasterxml.jackson.core:jackson-databind:2.11.1,com.fasterxml.jackson.annotation.JacksonAnnotation,public,com.fasterxml.jackson.core:jackson-annotations:2.11.1,1
+org.codehaus.jackson.map.annotate.JsonView,-,-,org.codehaus.jackson:jackson-mapper-asl:1.9.11,org.codehaus.jackson.annotate.JacksonAnnotation,public,org.codehaus.jackson:jackson-core-asl:1.9.11,1
+com.fasterxml.jackson.databind.annotation.JsonDeserialize,-,-,com.fasterxml.jackson.core:jackson-databind:2.11.1,com.fasterxml.jackson.annotation.JacksonAnnotation,public,com.fasterxml.jackson.core:jackson-annotations:2.11.1,1
+org.codehaus.jackson.map.annotate.JsonSerialize,-,-,org.codehaus.jackson:jackson-mapper-asl:1.9.11,org.codehaus.jackson.annotate.JacksonAnnotation,public,org.codehaus.jackson:jackson-core-asl:1.9.11,1
+org.codehaus.jackson.map.annotate.JsonDeserialize,-,-,org.codehaus.jackson:jackson-mapper-asl:1.9.11,org.codehaus.jackson.annotate.JacksonAnnotation,public,org.codehaus.jackson:jackson-core-asl:1.9.11,1
+org.codehaus.jackson.map.annotate.JacksonInject,-,-,org.codehaus.jackson:jackson-mapper-asl:1.9.11,org.codehaus.jackson.annotate.JacksonAnnotation,public,org.codehaus.jackson:jackson-core-asl:1.9.11,1
+org.codehaus.jackson.map.annotate.JsonFilter,-,-,org.codehaus.jackson:jackson-mapper-asl:1.9.11,org.codehaus.jackson.annotate.JacksonAnnotation,public,org.codehaus.jackson:jackson-core-asl:1.9.11,1
+org.codehaus.jackson.map.annotate.JsonTypeResolver,-,-,org.codehaus.jackson:jackson-mapper-asl:1.9.11,org.codehaus.jackson.annotate.JacksonAnnotation,public,org.codehaus.jackson:jackson-core-asl:1.9.11,1
+com.fasterxml.jackson.databind.annotation.JsonNaming,-,-,com.fasterxml.jackson.core:jackson-databind:2.11.1,com.fasterxml.jackson.annotation.JacksonAnnotation,public,com.fasterxml.jackson.core:jackson-annotations:2.11.1,1

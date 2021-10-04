@@ -162,7 +162,7 @@
     {
         "execDir": "rest-assured/rest-assured-common",
         "rootDir": null,
-        "generatedJarName": "rest-assured-all-4.4.0",
+        "generatedJarName": "rest-assured-common-4.4.0",
         "build": "maven",
         "javaVersion": 11
     },
@@ -267,28 +267,28 @@
     {
         "execDir": "druid",
         "rootDir": null,
-        "generatedJarName": "druid-1.2.6",
+        "generatedJarName": "druid-1.2.5",
         "build": "maven",
         "javaVersion": 8
     },
     {
         "execDir": "druid/druid-admin",
         "rootDir": null,
-        "generatedJarName": "druid-admin-1.2.6",
+        "generatedJarName": "druid-admin-1.2.1",
         "build": "maven",
         "javaVersion": 8
     },
     {
         "execDir": "webmagic/webmagic-core",
         "rootDir": "webmagic",
-        "generatedJarName": "webmagic-core-0.7.5",
+        "generatedJarName": "webmagic-core-0.7.3",
         "build": "maven",
         "javaVersion": 8
     },
     {
         "execDir": "webmagic/webmagic-extension",
         "rootDir": null,
-        "generatedJarName": "webmagic-extension-0.7.5",
+        "generatedJarName": "webmagic-extension-0.7.3",
         "build": "maven",
         "javaVersion": 8
     },
@@ -352,6 +352,13 @@
         "execDir": "thymeleaf",
         "rootDir": null,
         "generatedJarName": "thymeleaf-3.0.12.RELEASE",
+        "build": "maven",
+        "javaVersion": 11
+    },
+    {
+        "execDir": "thymeleaf-tests",
+        "rootDir": null,
+        "generatedJarName": "thymeleaf-tests-ci",
         "build": "maven",
         "javaVersion": 11
     },
