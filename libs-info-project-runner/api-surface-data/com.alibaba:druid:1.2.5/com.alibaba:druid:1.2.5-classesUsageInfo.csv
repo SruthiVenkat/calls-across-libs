@@ -1,0 +1,971 @@
+Class Name,Class Visibility,Class Library,Usage,Used In Library
+org.springframework.beans.factory.config.EmbeddedValueResolver,public,org.springframework:spring-beans:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+org.apache.logging.log4j.core.appender.rolling.action.IfFileName,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+java.security.CodeSource,public,java.security,instantiation,xml-apis:xml-apis:1.0.b2
+java.sql.ResultSet,public,java.sql,subtyping,com.alibaba:druid:1.2.5
+org.apache.logging.log4j.message.ParameterizedMessageFactory,public,org.apache.logging.log4j:log4j-api:2.13.2,Class.forName,org.apache.logging.log4j:log4j-api:2.13.2
+org.springframework.beans.BeanWrapperImpl$BeanPropertyHandler,public,org.springframework:spring-beans:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+java.sql.DriverManager,public,java.sql,method call,net.sourceforge.jtds:jtds:1.3.0
+org.springframework.transaction.annotation.JtaTransactionAnnotationParser,public,org.springframework:spring-tx:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+org.apache.commons.logging.LogFactory$1,public,commons-logging:commons-logging:1.2,instantiation,org.slf4j:jcl-over-slf4j:1.7.21
+org.apache.logging.log4j.core.appender.SocketAppender,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.commons.logging.LogFactory$3,public,commons-logging:commons-logging:1.2,instantiation,org.slf4j:jcl-over-slf4j:1.7.21
+org.apache.commons.logging.LogFactory$2,public,commons-logging:commons-logging:1.2,instantiation,org.slf4j:jcl-over-slf4j:1.7.21
+org.springframework.beans.factory.support.RootBeanDefinition,public,org.springframework:spring:2.5.6.SEC03,method call,org.springframework:spring-context:4.3.20.RELEASE
+org.apache.commons.logging.LogFactory$5,public,commons-logging:commons-logging:1.2,instantiation,org.slf4j:jcl-over-slf4j:1.7.21
+org.apache.commons.logging.LogFactory$4,public,commons-logging:commons-logging:1.2,instantiation,org.slf4j:jcl-over-slf4j:1.7.21
+org.apache.commons.logging.LogFactory$6,public,commons-logging:commons-logging:1.2,instantiation,org.slf4j:jcl-over-slf4j:1.7.21
+org.springframework.beans.BeanWrapperImpl,private,org.springframework:spring:2.5.6.SEC03,method call,org.springframework:spring-beans:4.3.20.RELEASE
+org.springframework.util.Assert,public,org.springframework:spring-core:4.3.20.RELEASE,method call,org.springframework:spring-context:4.3.20.RELEASE
+org.springframework.core.MethodParameter,public,org.springframework:spring:2.5.6.SEC03,instantiation,org.springframework:spring-core:4.3.20.RELEASE
+org.apache.logging.log4j.core.config.yaml.YamlConfigurationFactory,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.orm.hibernate4.LocalSessionFactoryBuilder,public,org.springframework:spring-orm:4.3.20.RELEASE,method call,org.hibernate:hibernate-core:5.1.0.Final
+org.hibernate.engine.jdbc.connections.spi.ConnectionProvider,public,org.hibernate:hibernate-core:5.1.0.Final,subtyping,org.hibernate:hibernate-c3p0:5.1.0.Final
+org.slf4j.helpers.BasicMarkerFactory,public,org.apache.kylin:kylin-jdbc:2.0.0,instantiation,org.apache.logging.log4j:log4j-slf4j-impl:2.10.0
+org.apache.logging.log4j.core.lookup.MainMapLookup,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.jdbc.datasource.TransactionAwareDataSourceProxy,public,org.springframework:spring-jdbc:4.3.20.RELEASE,cast,org.mybatis:mybatis-spring:1.3.0
+org.apache.logging.log4j.core.appender.db.jdbc.DriverManagerConnectionSource,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+java.sql.Driver,public,java.sql,cast,com.alibaba:druid:1.2.5
+org.springframework.aop.SpringProxy,public,org.springframework:spring-aop:4.3.20.RELEASE,subtyping,org.springframework:spring-tx:4.3.20.RELEASE
+org.springframework.util.ConcurrentReferenceHashMap,public,org.springframework:spring-core:4.3.20.RELEASE,method call,org.springframework:spring:2.5.6.SEC03
+org.springframework.beans.MutablePropertyValues,public,org.springframework:spring:2.5.6.SEC03,method call,org.springframework:spring-aop:4.3.20.RELEASE
+org.springframework.util.StringValueResolver,public,org.springframework:spring:2.5.6.SEC03,subtyping,org.springframework:spring-beans:4.3.20.RELEASE
+org.hibernate.service.spi.ServiceRegistryAwareService,public,org.hibernate:hibernate-core:5.1.0.Final,subtyping,org.hibernate:hibernate-c3p0:5.1.0.Final
+org.springframework.util.ClassUtils,public,org.springframework:spring:2.5.6.SEC03,method call,org.springframework:spring-aop:4.3.20.RELEASE
+org.apache.logging.log4j.core.pattern.MaxLengthConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.context.Lifecycle,public,org.springframework:spring:2.5.6.SEC03,subtyping,org.springframework:spring-context:4.3.20.RELEASE
+org.springframework.beans.factory.config.DependencyDescriptor$1,public,org.springframework:spring-beans:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+org.apache.logging.log4j.core.appender.mom.JmsAppender,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.jdbc.support.nativejdbc.NativeJdbcExtractorAdapter,public,org.springframework:spring-jdbc:4.3.20.RELEASE,subtyping,com.alibaba:druid:1.2.5
+java.sql.ResultSet,public,java.sql,subtyping,mysql:mysql-connector-java:8.0.21
+org.mybatis.spring.mapper.MapperFactoryBean,public,org.mybatis:mybatis-spring:1.3.0,Class.forName,org.springframework:spring:2.5.6.SEC03
+java.sql.SQLFeatureNotSupportedException,public,java.sql,instantiation,com.alibaba:druid:1.2.5
+java.io.InputStream,public,unknownLib,Class.forName,org.springframework:spring:2.5.6.SEC03
+org.springframework.core.annotation.AnnotationAwareOrderComparator,public,org.springframework:spring:2.5.6.SEC03,method call,org.springframework:spring-core:4.3.20.RELEASE
+org.springframework.core.DecoratingProxy,public,org.springframework:spring-core:4.3.20.RELEASE,cast,org.springframework:spring:2.5.6.SEC03
+java.sql.Date,public,java.sql,instantiation,com.alibaba:druid:1.2.5
+org.apache.logging.log4j.core.pattern.VariablesNotEmptyReplacementConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.core.appender.rolling.action.ScriptCondition,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.context.support.ClassPathXmlApplicationContext,public,org.springframework:spring:2.5.6.SEC03,method call,org.springframework:spring-context:4.3.20.RELEASE
+org.apache.logging.log4j.core.appender.routing.PurgePolicy,public,org.apache.logging.log4j:log4j-core:2.13.2,subtyping,org.apache.hive:hive-llap-server:3.1.2
+org.springframework.jdbc.datasource.TransactionAwareDataSourceProxy,public,org.springframework:spring-jdbc:4.3.20.RELEASE,cast,org.springframework:spring:2.5.6.SEC03
+java.sql.Wrapper,public,java.sql,subtyping,com.alibaba:druid:1.2.5
+org.apache.logging.log4j.core.pattern.AbstractStyleNameConverter$Green,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.aop.framework.ProxyFactory,public,org.springframework:spring-aop:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+javax.servlet.ServletRequest,public,javax.servlet:servlet-api:2.5,subtyping,org.eclipse.jetty:jetty-runner:9.3.20.v20170531
+com.alibaba.druid.filter.encoding.EncodingConvertFilter,public,com.alibaba:druid:1.2.5,Class.forName,com.alibaba:druid:1.2.5
+org.springframework.beans.TypeConverterSupport,public,org.springframework:spring-beans:4.3.20.RELEASE,subtyping,org.springframework:spring:2.5.6.SEC03
+org.apache.logging.log4j.spi.LoggerRegistry,public,org.apache.logging.log4j:log4j-api:2.13.2,instantiation,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.core.config.plugins.convert.TypeConverters$UuidConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.core.config.CustomLevels,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.beans.PropertyValue,public,org.springframework:spring:2.5.6.SEC03,instantiation,org.springframework:spring-beans:4.3.20.RELEASE
+org.springframework.core.io.ResourceEditor,public,org.springframework:spring:2.5.6.SEC03,instantiation,org.springframework:spring-beans:4.3.20.RELEASE
+org.apache.logging.log4j.core.pattern.FileLocationPatternConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+java.sql.ResultSet,public,java.sql,cast,org.hibernate:hibernate-core:5.1.0.Final
+org.springframework.transaction.config.TxNamespaceHandler,public,org.springframework:spring:2.5.6.SEC03,Class.forName,org.springframework:spring:2.5.6.SEC03
+com.alibaba.druid.support.ibatis.SpringIbatisBeanTypeAutoProxyCreator,public,com.alibaba:druid:1.2.5,method call,org.springframework:spring-aop:4.3.20.RELEASE
+org.hibernate.engine.jdbc.connections.spi.ConnectionProvider,public,org.hibernate:hibernate-core:5.1.0.Final,subtyping,com.alibaba:druid:1.2.5
+org.apache.logging.log4j.core.pattern.LevelPatternConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.transaction.interceptor.DefaultTransactionAttribute,public,org.springframework:spring:2.5.6.SEC03,subtyping,org.springframework:spring-tx:4.3.20.RELEASE
+org.springframework.beans.factory.support.MergedBeanDefinitionPostProcessor,public,org.springframework:spring:2.5.6.SEC03,subtyping,org.springframework:spring-context:4.3.20.RELEASE
+org.hibernate.cfg.Configuration,public,org.hibernate:hibernate-core:5.1.0.Final,subtyping,org.springframework:spring-orm:4.3.20.RELEASE
+org.apache.logging.log4j.core.appender.CountingNoOpAppender,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+java.security.SecureRandom,public,java.security,instantiation,com.alibaba:druid:1.2.5
+org.apache.commons.logging.impl.SLF4JLocationAwareLog,public,org.slf4j:jcl-over-slf4j:1.7.21,method call,org.springframework:spring:2.5.6.SEC03
+org.springframework.jdbc.datasource.DataSourceTransactionManager,public,org.springframework:spring:2.5.6.SEC03,Class.forName,org.springframework:spring:2.5.6.SEC03
+org.springframework.core.convert.TypeDescriptor,public,org.springframework:spring-core:4.3.20.RELEASE,cast,org.springframework:spring-expression:4.3.20.RELEASE
+java.sql.Timestamp,public,java.sql,cast,mysql:mysql-connector-java:8.0.21
+org.springframework.context.EnvironmentAware,public,org.springframework:spring-context:4.3.20.RELEASE,cast,org.springframework:spring:2.5.6.SEC03
+javax.servlet.http.HttpServletResponseWrapper,public,org.eclipse.jetty:jetty-runner:9.3.20.v20170531,subtyping,com.alibaba:druid:1.2.5
+org.springframework.util.CompositeIterator,public,org.springframework:spring-core:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+com.alibaba.druid.wall.WallConfig,public,com.alibaba:druid:1.2.5,Class.forName,org.springframework:spring:2.5.6.SEC03
+org.jboss.logging.Logger,public,org.jboss.logging:jboss-logging:3.3.0.Final,method call,org.hibernate:hibernate-core:5.1.0.Final
+org.osjava.sj.loader.convert.Converter,public,simple-jndi:simple-jndi:0.11.4.1,subtyping,com.alibaba:druid:1.2.5
+com.fasterxml.jackson.core.Versioned,public,com.fasterxml.jackson.core:jackson-core:2.10.0,subtyping,com.fasterxml.jackson.core:jackson-databind:2.10.0
+com.fasterxml.jackson.core.JsonParser,public,com.fasterxml.jackson.core:jackson-core:2.10.0,Class.forName,org.apache.logging.log4j:log4j-api:2.13.2
+oracle.jdbc.OracleResultSet,public,com.oracle.ojdbc:ojdbc8:19.3.0.0,cast,com.alibaba:druid:1.2.5
+org.slf4j.spi.LocationAwareLogger,public,org.apache.kylin:kylin-jdbc:2.0.0,subtyping,org.slf4j:slf4j-log4j12:1.7.9
+java.sql.SQLXML,public,java.sql,cast,com.alibaba:druid:1.2.5
+org.apache.logging.log4j.core.pattern.LoggerPatternConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.core.config.AppendersPlugin,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.core.env.StandardEnvironment,public,org.springframework:spring-core:4.3.20.RELEASE,method call,org.springframework:spring:2.5.6.SEC03
+org.springframework.beans.factory.config.SmartInstantiationAwareBeanPostProcessor,public,org.springframework:spring:2.5.6.SEC03,subtyping,org.springframework:spring-aop:4.3.20.RELEASE
+org.springframework.core.env.StandardEnvironment,public,org.springframework:spring-core:4.3.20.RELEASE,method call,org.springframework:spring-context:4.3.20.RELEASE
+org.apache.logging.log4j.message.StructuredDataMessage,public,org.apache.logging.log4j:log4j-api:2.13.2,cast,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.core.io.support.PropertiesLoaderUtils,public,org.springframework:spring:2.5.6.SEC03,method call,org.springframework:spring-core:4.3.20.RELEASE
+org.springframework.util.ReflectionUtils$MethodFilter,public,org.springframework:spring:2.5.6.SEC03,subtyping,org.springframework:spring-core:4.3.20.RELEASE
+org.apache.logging.log4j.util.PerformanceSensitive,public,org.apache.logging.log4j:log4j-api:2.13.2,annotation,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.core.config.AppenderRef,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+java.util.Optional,public,unknownLib,Class.forName,org.springframework:spring:2.5.6.SEC03
+com.alibaba.druid.filter.logging.Slf4jLogFilter,public,com.alibaba:druid:1.2.5,Class.forName,com.alibaba:druid:1.2.5
+org.apache.logging.log4j.core.pattern.AbstractStyleNameConverter$Yellow,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.core.layout.MessageLayout,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.core.appender.rolling.SizeBasedTriggeringPolicy,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.message.MapMessage,public,org.apache.logging.log4j:log4j-api:2.13.2,cast,org.apache.logging.log4j:log4j-core:2.13.2
+java.security.PrivilegedAction,public,java.security,subtyping,commons-logging:commons-logging:1.2
+org.apache.logging.log4j.core.filter.RegexFilter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.beans.factory.NoUniqueBeanDefinitionException,public,org.springframework:spring-beans:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+org.apache.log4j.Priority,public,log4j:log4j:1.2.17,Class.forName,commons-logging:commons-logging:1.2
+org.apache.logging.log4j.core.appender.rewrite.LoggerNameLevelRewritePolicy,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+oracle.jdbc.internal.OraclePreparedStatement,public,com.oracle.ojdbc:ojdbc8:19.3.0.0,cast,com.alibaba:druid:1.2.5
+org.apache.logging.log4j.core.config.HttpWatcher,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+javax.transaction.xa.XAResource,public,javax.transaction:jta:1.1,subtyping,com.alibaba:druid:1.2.5
+org.apache.logging.log4j.core.layout.Rfc5424Layout,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.commons.logging.LogFactory,public,org.slf4j:jcl-over-slf4j:1.7.21,method call,org.springframework:spring-core:4.3.20.RELEASE
+org.apache.logging.log4j.core.appender.FailoverAppender,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.core.async.AsyncLoggerConfig$RootLogger,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.beans.factory.support.DefaultListableBeanFactory$OptionalDependencyFactory,public,org.springframework:spring-beans:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+java.sql.Time,public,java.sql,cast,com.alibaba:druid:1.2.5
+org.springframework.beans.factory.support.RootBeanDefinition,public,org.springframework:spring:2.5.6.SEC03,method call,org.springframework:spring-aop:4.3.20.RELEASE
+org.apache.logging.log4j.core.appender.WriterAppender,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+java.sql.Time,public,java.sql,cast,mysql:mysql-connector-java:8.0.21
+org.springframework.transaction.interceptor.TransactionAspectSupport$ThrowableHolder,public,org.springframework:spring-tx:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+javax.persistence.AttributeConverter,public,org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final,cast,org.hibernate:hibernate-core:5.1.0.Final
+org.springframework.context.expression.StandardBeanExpressionResolver$1,default,org.springframework:spring-context:4.3.20.RELEASE,method call,org.springframework:spring-expression:4.3.20.RELEASE
+org.xml.sax.EntityResolver,public,xml-apis:xml-apis:1.0.b2,subtyping,org.springframework:spring:2.5.6.SEC03
+java.sql.Clob,public,java.sql,cast,org.hibernate:hibernate-core:5.1.0.Final
+org.apache.logging.log4j.core.appender.AppenderSet,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.beans.factory.FactoryBean,public,org.springframework:spring:2.5.6.SEC03,subtyping,com.alibaba:druid:1.2.5
+java.lang.String,public,unknownLib,Class.forName,log4j:log4j:1.2.17
+org.springframework.context.support.AbstractRefreshableApplicationContext,public,org.springframework:spring:2.5.6.SEC03,subtyping,org.springframework:spring-context:4.3.20.RELEASE
+org.apache.logging.log4j.core.pattern.FullLocationPatternConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+com.alibaba.druid.spring.UserService,public,unknownLib,Class.forName,org.springframework:spring:2.5.6.SEC03
+java.sql.BatchUpdateException,public,java.sql,instantiation,net.sourceforge.jtds:jtds:1.3.0
+org.apache.logging.log4j.core.pattern.IntegerPatternConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+java.security.KeyPair,public,java.security,method call,com.alibaba:druid:1.2.5
+com.ibatis.sqlmap.engine.impl.ExtendedSqlMapClient,public,org.apache.ibatis:ibatis-sqlmap:2.3.4.726,cast,com.alibaba:druid:1.2.5
+org.apache.logging.log4j.core.appender.rolling.CronTriggeringPolicy,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+javax.servlet.http.HttpServletResponse,public,org.eclipse.jetty:jetty-runner:9.3.20.v20170531,cast,com.alibaba:druid:1.2.5
+java.security.PrivilegedAction,public,java.security,subtyping,org.jboss.logging:jboss-logging:3.3.0.Final
+org.slf4j.spi.LocationAwareLogger,public,org.apache.kylin:kylin-jdbc:2.0.0,cast,org.mybatis:mybatis:3.4.0
+org.xml.sax.InputSource,public,xml-apis:xml-apis:1.0.b2,method call,org.springframework:spring:2.5.6.SEC03
+org.hibernate.HibernateException,public,org.hibernate:hibernate-core:5.1.0.Final,instantiation,org.hibernate:hibernate-c3p0:5.1.0.Final
+org.slf4j.Logger,public,org.apache.kylin:kylin-jdbc:2.0.0,cast,org.slf4j:slf4j-log4j12:1.7.9
+java.sql.Time,public,java.sql,instantiation,com.alibaba:fastjson:1.2.73
+org.springframework.context.event.AbstractApplicationEventMulticaster$ListenerRetriever,private,org.springframework:spring-context:4.3.20.RELEASE,cast,org.springframework:spring:2.5.6.SEC03
+org.apache.logging.log4j.core.appender.rewrite.PropertiesRewritePolicy,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+java.sql.NClob,public,java.sql,subtyping,com.alibaba:druid:1.2.5
+org.springframework.context.expression.StandardBeanExpressionResolver,public,org.springframework:spring-context:4.3.20.RELEASE,method call,org.springframework:spring:2.5.6.SEC03
+org.apache.logging.log4j.util.PropertiesUtil,public,org.apache.logging.log4j:log4j-api:2.13.2,method call,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.core.layout.CsvLogEventLayout,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.core.pattern.AbstractStyleNameConverter$Black,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.core.appender.rolling.OnStartupTriggeringPolicy,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.core.pattern.ExtendedThrowablePatternConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.dom4j.Element,public,dom4j:dom4j:1.6.1,cast,org.hibernate:hibernate-core:5.1.0.Final
+java.sql.Driver,public,java.sql,subtyping,com.alibaba:druid:1.2.5
+org.apache.logging.log4j.core.pattern.LineSeparatorPatternConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.log4j.Layout,public,log4j:log4j:1.2.17,Class.forName,log4j:log4j:1.2.17
+java.sql.Connection,public,java.sql,subtyping,net.sourceforge.jtds:jtds:1.3.0
+org.apache.logging.log4j.core.pattern.EqualsReplacementConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.core.filter.StructuredDataFilter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.core.util.KeyValuePair,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.jboss.logging.Logger,public,org.jboss.logging:jboss-logging:3.3.0.Final,method call,org.hibernate.common:hibernate-commons-annotations:5.0.1.Final
+org.apache.logging.log4j.core.layout.PatternLayout,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.core.convert.TypeDescriptor,public,org.springframework:spring-core:4.3.20.RELEASE,instantiation,org.springframework:spring-beans:4.3.20.RELEASE
+java.sql.Timestamp,public,java.sql,cast,com.alibaba:druid:1.2.5
+java.util.stream.Stream,public,unknownLib,Class.forName,org.springframework:spring:2.5.6.SEC03
+org.apache.logging.log4j.core.layout.LevelPatternSelector,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.spi.AbstractLogger,public,org.apache.logging.log4j:log4j-api:2.13.2,cast,org.jboss.logging:jboss-logging:3.3.0.Final
+org.springframework.expression.BeanResolver,public,org.springframework:spring-expression:4.3.20.RELEASE,subtyping,org.springframework:spring-context:4.3.20.RELEASE
+java.sql.Date,public,java.sql,instantiation,org.hibernate:hibernate-core:5.1.0.Final
+org.apache.log4j.spi.ThrowableInformation,public,log4j:log4j:1.2.17,method call,org.apache.logging.log4j:log4j-1.2-api:2.10.0
+org.apache.logging.log4j.LogManager,default,org.apache.logging.log4j:log4j-api:2.13.2,method call,org.jboss.logging:jboss-logging:3.3.0.Final
+java.sql.ParameterMetaData,public,java.sql,cast,net.sourceforge.jtds:jtds:1.3.0
+java.sql.Statement,public,java.sql,cast,com.alibaba:druid:1.2.5
+org.springframework.core.convert.TypeDescriptor,public,org.springframework:spring-core:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+org.springframework.core.ResolvableTypeProvider,public,org.springframework:spring-core:4.3.20.RELEASE,subtyping,org.springframework:spring-context:4.3.20.RELEASE
+org.apache.logging.log4j.web.WebLookup,public,org.apache.logging.log4j:log4j-web:2.10.0,Class.forName,org.apache.logging.log4j:log4j-api:2.13.2
+com.fasterxml.jackson.databind.ObjectMapper,public,com.fasterxml.jackson.core:jackson-databind:2.10.0,Class.forName,org.apache.logging.log4j:log4j-api:2.13.2
+org.springframework.beans.factory.BeanFactoryAware,public,org.springframework:spring:2.5.6.SEC03,subtyping,org.springframework:spring-context:4.3.20.RELEASE
+org.apache.logging.log4j.core.config.plugins.convert.TypeConverters$IntegerConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.beans.factory.config.DestructionAwareBeanPostProcessor,public,org.springframework:spring:2.5.6.SEC03,subtyping,org.springframework:spring-context:4.3.20.RELEASE
+sun.reflect.Reflection,public,unknownLib,Class.forName,org.apache.logging.log4j:log4j-api:2.13.2
+org.apache.logging.log4j.core.appender.RollingRandomAccessFileAppender,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.core.appender.rewrite.RewriteAppender,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.log4j.Priority,public,log4j:log4j:1.2.17,Class.forName,log4j:log4j:1.2.17
+org.apache.commons.logging.impl.SLF4JLogFactory,public,org.slf4j:jcl-over-slf4j:1.7.21,Class.forName,org.slf4j:jcl-over-slf4j:1.7.21
+org.apache.log4j.Logger,public,log4j:log4j:1.2.17,method call,org.apache.logging.log4j:log4j-1.2-api:2.10.0
+org.hibernate.annotations.common.reflection.MetadataProvider,public,org.hibernate.common:hibernate-commons-annotations:5.0.1.Final,subtyping,org.hibernate:hibernate-core:5.1.0.Final
+org.apache.logging.log4j.util.LoaderUtil,private,org.apache.logging.log4j:log4j-api:2.13.2,method call,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.core.ResolvableType$1,default,org.springframework:spring-core:4.3.20.RELEASE,method call,org.springframework:spring:2.5.6.SEC03
+org.springframework.beans.AbstractPropertyAccessor,public,org.springframework:spring:2.5.6.SEC03,subtyping,org.springframework:spring-beans:4.3.20.RELEASE
+org.hibernate.HibernateException,public,org.hibernate:hibernate-core:5.1.0.Final,cast,org.springframework:spring-orm:4.3.20.RELEASE
+javax.transaction.TransactionManager,public,javax.transaction:jta:1.1,cast,org.hibernate:hibernate-core:5.1.0.Final
+java.sql.Statement,public,java.sql,subtyping,mysql:mysql-connector-java:8.0.21
+org.apache.log4j.Logger,public,log4j:log4j:1.2.17,method call,com.alibaba:druid:1.2.5
+org.apache.logging.log4j.core.config.Node,public,org.apache.logging.log4j:log4j-core:2.13.2,cast,org.apache.hive:hive-llap-server:3.1.2
+org.apache.log4j.ConsoleAppender,public,log4j:log4j:1.2.17,Class.forName,log4j:log4j:1.2.17
+java.sql.PreparedStatement,public,java.sql,subtyping,net.sourceforge.jtds:jtds:1.3.0
+org.apache.logging.log4j.core.appender.rolling.CompositeTriggeringPolicy,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.core.pattern.AbstractStyleNameConverter$Magenta,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.expression.spel.standard.SpelExpressionParser,public,org.springframework:spring-expression:4.3.20.RELEASE,instantiation,org.springframework:spring-context:4.3.20.RELEASE
+org.apache.logging.log4j.core.appender.mom.jeromq.JeroMqAppender,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.util.ReflectionUtils,public,org.springframework:spring:2.5.6.SEC03,method call,org.springframework:spring-aop:4.3.20.RELEASE
+org.jboss.logging.BasicLogger,public,org.jboss.logging:jboss-logging:3.3.0.Final,subtyping,org.hibernate:hibernate-core:5.1.0.Final
+interface java.lang.reflect.ParameterizedType,public,unknownLib,method call,org.springframework:spring-core:4.3.20.RELEASE
+org.apache.logging.log4j.core.appender.mom.kafka.KafkaAppender,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.core.appender.routing.Route,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.core.config.plugins.convert.TypeConverters$ClassConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.core.layout.SyslogLayout,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.spi.AbstractLogger,public,org.apache.logging.log4j:log4j-api:2.13.2,Class.forName,org.jboss.logging:jboss-logging:3.3.0.Final
+org.springframework.beans.factory.support.ManagedArray,public,org.springframework:spring-beans:4.3.20.RELEASE,cast,org.springframework:spring:2.5.6.SEC03
+org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator,public,org.springframework:spring-aop:4.3.20.RELEASE,subtyping,com.alibaba:druid:1.2.5
+org.apache.logging.log4j.core.async.ArrayBlockingQueueFactory,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.core.Logger,public,org.apache.logging.log4j:log4j-core:2.13.2,method call,org.apache.logging.log4j:log4j-api:2.13.2
+org.springframework.beans.factory.support.BeanDefinitionRegistryPostProcessor,public,org.springframework:spring-beans:4.3.20.RELEASE,cast,org.springframework:spring-context:4.3.20.RELEASE
+org.apache.logging.log4j.core.config.AppenderControl,public,org.apache.logging.log4j:log4j-core:2.13.2,cast,org.apache.hive:hive-llap-server:3.1.2
+org.apache.logging.log4j.LoggingException,public,org.apache.logging.log4j:log4j-api:2.13.2,instantiation,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.beans.FatalBeanException,public,org.springframework:spring:2.5.6.SEC03,subtyping,org.springframework:spring-beans:4.3.20.RELEASE
+javax.servlet.http.HttpServlet,public,org.eclipse.jetty:jetty-runner:9.3.20.v20170531,subtyping,com.alibaba:druid:1.2.5
+com.mysql.cj.jdbc.exceptions.CommunicationsException,public,mysql:mysql-connector-java:8.0.21,Class.forName,com.alibaba:druid:1.2.5
+org.springframework.expression.spel.support.StandardEvaluationContext,public,org.springframework:spring-expression:4.3.20.RELEASE,instantiation,org.springframework:spring-context:4.3.20.RELEASE
+org.springframework.util.Assert,public,org.springframework:spring-core:4.3.20.RELEASE,method call,org.springframework:spring-aop:4.3.20.RELEASE
+org.apache.logging.log4j.core.net.SocketPerformancePreferences,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+java.sql.PreparedStatement,public,java.sql,cast,mysql:mysql-connector-java:8.0.21
+org.apache.logging.log4j.core.filter.ScriptFilter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.context.ApplicationContextException,public,org.springframework:spring:2.5.6.SEC03,instantiation,org.springframework:spring-context:4.3.20.RELEASE
+org.springframework.core.io.support.PathMatchingResourcePatternResolver,public,org.springframework:spring:2.5.6.SEC03,method call,org.springframework:spring-orm:4.3.20.RELEASE
+org.springframework.core.annotation.MapAnnotationAttributeExtractor,public,org.springframework:spring-core:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+com.alibaba.druid.support.ibatis.SpringIbatisBeanTypeAutoProxyCreator,public,com.alibaba:druid:1.2.5,method call,org.springframework:spring:2.5.6.SEC03
+java.sql.Clob,public,java.sql,subtyping,com.alibaba:druid:1.2.5
+org.springframework.util.StringUtils,public,org.springframework:spring:2.5.6.SEC03,method call,org.springframework:spring-core:4.3.20.RELEASE
+org.apache.logging.log4j.core.pattern.MdcPatternConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.message.MultiformatMessage,public,org.apache.logging.log4j:log4j-api:2.13.2,cast,org.apache.logging.log4j:log4j-core:2.13.2
+java.security.AccessControlContext,public,java.security,instantiation,xml-apis:xml-apis:1.0.b2
+com.alibaba.druid.filter.config.ConfigFilter,public,com.alibaba:druid:1.2.5,Class.forName,com.alibaba:druid:1.2.5
+org.apache.logging.log4j.LoggingException,public,org.apache.logging.log4j:log4j-api:2.13.2,instantiation,org.jboss.logging:jboss-logging:3.3.0.Final
+org.apache.logging.log4j.core.pattern.ThreadNamePatternConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.core.pattern.RegexReplacement,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.spi.AbstractLogger,public,org.apache.logging.log4j:log4j-api:2.13.2,method call,org.apache.logging.log4j:log4j-core:2.13.2
+org.slf4j.LoggerFactory,public,org.apache.kylin:kylin-jdbc:2.0.0,method call,com.alibaba:druid:1.2.5
+org.apache.logging.log4j.core.lookup.ResourceBundleLookup,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.dao.support.PersistenceExceptionTranslator,public,org.springframework:spring:2.5.6.SEC03,subtyping,org.springframework:spring-orm:4.3.20.RELEASE
+org.apache.logging.log4j.core.appender.AsyncAppender,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+com.alibaba.druid.support.ibatis.SpringIbatisBeanTypeAutoProxyCreator,public,com.alibaba:druid:1.2.5,Class.forName,org.springframework:spring:2.5.6.SEC03
+org.apache.hadoop.hive.llap.log.LlapRoutingAppenderPurgePolicy,public,org.apache.hive:hive-llap-server:3.1.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+com.alibaba.druid.bvt.pool.SpringIbatisFilterTest$TestFilter,public,unknownLib,Class.forName,org.springframework:spring:2.5.6.SEC03
+com.ibatis.sqlmap.engine.transaction.TransactionManager,public,org.apache.ibatis:ibatis-sqlmap:2.3.4.726,instantiation,org.springframework:spring:2.5.6.SEC03
+org.springframework.core.MethodParameter,public,org.springframework:spring:2.5.6.SEC03,instantiation,org.springframework:spring-beans:4.3.20.RELEASE
+javax.servlet.http.HttpServletResponse,public,org.eclipse.jetty:jetty-runner:9.3.20.v20170531,subtyping,com.alibaba:druid:1.2.5
+org.springframework.util.AntPathMatcher$PathSeparatorPatternCache,public,org.springframework:spring-core:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+org.apache.logging.log4j.core.pattern.StyleConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.hibernate.MappingException,public,org.hibernate:hibernate-core:5.1.0.Final,instantiation,org.springframework:spring-orm:4.3.20.RELEASE
+org.springframework.context.support.PostProcessorRegistrationDelegate,public,org.springframework:spring-context:4.3.20.RELEASE,method call,org.springframework:spring:2.5.6.SEC03
+org.postgresql.xa.PGXAConnection,public,org.postgresql:postgresql:42.2.18,instantiation,com.alibaba:druid:1.2.5
+org.springframework.aop.support.AbstractBeanFactoryPointcutAdvisor,public,org.springframework:spring-aop:4.3.20.RELEASE,subtyping,org.springframework:spring:2.5.6.SEC03
+com.fasterxml.jackson.databind.JsonNode,public,com.fasterxml.jackson.core:jackson-databind:2.10.0,Class.forName,org.apache.logging.log4j:log4j-api:2.13.2
+org.hibernate.context.spi.CurrentSessionContext,public,org.hibernate:hibernate-core:5.1.0.Final,subtyping,org.springframework:spring-orm:4.3.20.RELEASE
+org.apache.logging.log4j.core.lookup.StructuredDataLookup,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.util.ReadOnlyStringMap,public,org.apache.logging.log4j:log4j-api:2.13.2,cast,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.beans.factory.support.GenericBeanDefinition,public,org.springframework:spring:2.5.6.SEC03,method call,org.springframework:spring-context:4.3.20.RELEASE
+org.springframework.context.event.AbstractApplicationEventMulticaster$ListenerRetriever,public,org.springframework:spring-context:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+org.apache.logging.log4j.core.appender.FileAppender,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.core.layout.AbstractStringLayout,public,org.apache.logging.log4j:log4j-core:2.13.2,cast,org.apache.logging.log4j:log4j-web:2.10.0
+org.apache.logging.log4j.core.filter.CompositeFilter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.core.lookup.Log4jLookup,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.core.io.Resource,public,org.springframework:spring:2.5.6.SEC03,cast,org.springframework:spring-beans:4.3.20.RELEASE
+org.apache.logging.log4j.core.pattern.ThreadPriorityPatternConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+oracle.jdbc.driver.T4CXAConnection,public,com.oracle.ojdbc:ojdbc8:19.3.0.0,instantiation,com.alibaba:druid:1.2.5
+org.springframework.beans.factory.InitializingBean,public,org.springframework:spring:2.5.6.SEC03,subtyping,org.springframework:spring-orm:4.3.20.RELEASE
+javax.xml.parsers.ParserConfigurationException,public,xml-apis:xml-apis:1.0.b2,instantiation,org.springframework:spring:2.5.6.SEC03
+org.apache.logging.log4j.core.lookup.JmxRuntimeInputArgumentsLookup,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+java.sql.Timestamp,public,java.sql,cast,org.hibernate:hibernate-core:5.1.0.Final
+java.security.PrivilegedActionException,public,java.security,cast,org.springframework:spring-beans:4.3.20.RELEASE
+java.sql.CallableStatement,public,java.sql,cast,com.alibaba:druid:1.2.5
+org.apache.logging.log4j.core.lookup.JmxRuntimeInputArgumentsLookup,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-api:2.13.2
+org.apache.logging.log4j.core.appender.rolling.action.DeleteAction,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+java.sql.Date,public,java.sql,cast,net.sourceforge.jtds:jtds:1.3.0
+org.apache.logging.log4j.core.net.SocketAddress,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.core.config.LoggersPlugin,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.asm.ClassVisitor,public,org.springframework:spring:2.5.6.SEC03,subtyping,org.springframework:spring-core:4.3.20.RELEASE
+org.apache.logging.log4j.core.config.PropertiesPlugin,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.core.filter.TimeFilter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.core.appender.db.jdbc.JdbcAppender,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.jdbc.datasource.ConnectionHolder,public,org.springframework:spring-jdbc:4.3.20.RELEASE,cast,org.springframework:spring:2.5.6.SEC03
+org.springframework.expression.AccessException,public,org.springframework:spring-expression:4.3.20.RELEASE,subtyping,org.springframework:spring-context:4.3.20.RELEASE
+oracle.jdbc.internal.OracleConnection,public,com.oracle.ojdbc:ojdbc8:19.3.0.0,cast,com.alibaba:druid:1.2.5
+org.apache.logging.log4j.core.appender.db.jdbc.DataSourceConnectionSource,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.log4j.PatternLayout,public,log4j:log4j:1.2.17,Class.forName,log4j:log4j:1.2.17
+java.security.PrivilegedAction,public,java.security,subtyping,javax.xml.stream
+org.apache.logging.log4j.core.selector.ClassLoaderContextSelector,public,org.apache.logging.log4j:log4j-core:2.13.2,method call,org.apache.logging.log4j:log4j-api:2.13.2
+org.springframework.expression.spel.SpelParserConfiguration,public,org.springframework:spring-expression:4.3.20.RELEASE,instantiation,org.springframework:spring-context:4.3.20.RELEASE
+org.apache.logging.log4j.message.StructuredDataId,public,org.apache.logging.log4j:log4j-api:2.13.2,instantiation,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.core.Ordered,public,org.springframework:spring:2.5.6.SEC03,subtyping,org.springframework:spring-context:4.3.20.RELEASE
+org.apache.logging.log4j.core.config.plugins.convert.TypeConverters$UrlConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.beans.PropertyAccessorUtils,public,org.springframework:spring:2.5.6.SEC03,method call,org.springframework:spring-beans:4.3.20.RELEASE
+java.sql.Blob,public,java.sql,cast,net.sourceforge.jtds:jtds:1.3.0
+org.springframework.core.NestedRuntimeException,public,org.springframework:spring:2.5.6.SEC03,subtyping,org.springframework:spring-core:4.3.20.RELEASE
+org.apache.logging.log4j.core.impl.Log4jProvider,public,org.apache.logging.log4j:log4j-core:2.13.2,method call,org.apache.logging.log4j:log4j-api:2.13.2
+org.springframework.beans.factory.support.DefaultListableBeanFactory,public,org.springframework:spring:2.5.6.SEC03,method call,org.springframework:spring-beans:4.3.20.RELEASE
+org.apache.commons.logging.impl.WeakHashtable,public,commons-logging:commons-logging:1.2,Class.forName,org.slf4j:jcl-over-slf4j:1.7.21
+com.fasterxml.jackson.dataformat.yaml.YAMLFactory,public,com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.10.0,Class.forName,org.apache.logging.log4j:log4j-api:2.13.2
+com.alibaba.druid.support.http.StatViewServlet,public,com.alibaba:druid:1.2.5,method call,org.eclipse.jetty:jetty-runner:9.3.20.v20170531
+org.apache.logging.log4j.util.Supplier,public,org.apache.logging.log4j:log4j-api:2.13.2,subtyping,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.core.lookup.EventLookup,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+java.sql.CallableStatement,public,java.sql,subtyping,mysql:mysql-connector-java:8.0.21
+org.hibernate.annotations.common.util.impl.Log_$logger,public,org.hibernate.common:hibernate-commons-annotations:5.0.1.Final,Class.forName,org.jboss.logging:jboss-logging:3.3.0.Final
+org.apache.logging.log4j.core.lookup.JndiLookup,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-api:2.13.2
+java.sql.SQLException,public,java.sql,instantiation,net.sourceforge.jtds:jtds:1.3.0
+org.apache.logging.log4j.core.pattern.ClassNamePatternConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.log4j.Category,public,log4j:log4j:1.2.17,Class.forName,log4j:log4j:1.2.17
+com.alibaba.druid.filter.stat.StatFilter,public,com.alibaba:druid:1.2.5,Class.forName,org.springframework:spring:2.5.6.SEC03
+org.springframework.core.NestedIOException,public,org.springframework:spring:2.5.6.SEC03,instantiation,org.mybatis:mybatis-spring:1.3.0
+javax.servlet.http.HttpServletRequest,public,org.eclipse.jetty:jetty-runner:9.3.20.v20170531,cast,com.alibaba:druid:1.2.5
+org.apache.logging.log4j.core.pattern.SequenceNumberPatternConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.beans.factory.SmartInitializingSingleton,public,org.springframework:spring-beans:4.3.20.RELEASE,subtyping,org.springframework:spring:2.5.6.SEC03
+java.sql.SQLClientInfoException,public,java.sql,instantiation,mysql:mysql-connector-java:8.0.21
+org.springframework.aop.target.LazyInitTargetSource,public,org.springframework:spring-aop:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+org.apache.ibatis.builder.xml.XMLMapperBuilder,public,org.mybatis:mybatis:3.4.0,instantiation,org.mybatis:mybatis-spring:1.3.0
+com.alibaba.druid.filter.logging.Log4j2Filter,public,com.alibaba:druid:1.2.5,Class.forName,com.alibaba:druid:1.2.5
+com.alibaba.druid.support.spring.DruidLobHandler,public,com.alibaba:druid:1.2.5,method call,org.springframework:spring-jdbc:4.3.20.RELEASE
+javax.xml.transform.dom.DOMSource,public,xml-apis:xml-apis:1.0.b2,instantiation,org.hibernate:hibernate-core:5.1.0.Final
+org.apache.logging.log4j.core.impl.Log4jContextFactory,public,org.apache.logging.log4j:log4j-core:2.13.2,method call,org.apache.logging.log4j:log4j-api:2.13.2
+org.apache.logging.log4j.core.config.plugins.convert.TypeConverters$CharacterConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.xml.sax.InputSource,public,xml-apis:xml-apis:1.0.b2,instantiation,org.springframework:spring:2.5.6.SEC03
+org.apache.logging.log4j.web.appender.ServletAppender,public,org.apache.logging.log4j:log4j-web:2.10.0,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.beans.factory.config.BeanFactoryPostProcessor,public,org.springframework:spring:2.5.6.SEC03,subtyping,org.springframework:spring-beans:4.3.20.RELEASE
+org.apache.logging.log4j.core.script.ScriptRef,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.core.GenericTypeResolver$TypeVariableMapVariableResolver,public,org.springframework:spring-core:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+org.springframework.beans.factory.SmartInitializingSingleton,public,org.springframework:spring-beans:4.3.20.RELEASE,cast,org.springframework:spring:2.5.6.SEC03
+org.apache.commons.logging.Log,public,org.slf4j:jcl-over-slf4j:1.7.21,subtyping,commons-logging:commons-logging:1.2
+org.apache.logging.log4j.core.appender.rolling.TimeBasedTriggeringPolicy,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.transaction.jta.JtaTransactionManager,public,org.springframework:spring:2.5.6.SEC03,cast,org.springframework:spring-orm:4.3.20.RELEASE
+org.springframework.asm.Opcodes,public,org.springframework:spring:2.5.6.SEC03,subtyping,org.springframework:spring-expression:4.3.20.RELEASE
+org.springframework.util.Assert,public,org.springframework:spring-core:4.3.20.RELEASE,method call,org.springframework:spring:2.5.6.SEC03
+org.springframework.beans.factory.support.DefaultListableBeanFactory$Jsr330ProviderFactory,public,org.springframework:spring-beans:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+org.apache.logging.log4j.Level,public,org.apache.logging.log4j:log4j-api:2.13.2,method call,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.core.async.AsyncLoggerConfig,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+javax.xml.parsers.DocumentBuilderFactory,public,xml-apis:xml-apis:1.0.b2,method call,org.springframework:spring:2.5.6.SEC03
+org.apache.logging.log4j.core.config.plugins.convert.TypeConverters$DurationConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.jmx.export.MBeanExporter,public,org.springframework:spring:2.5.6.SEC03,Class.forName,org.springframework:spring:2.5.6.SEC03
+org.apache.logging.log4j.core.appender.RandomAccessFileAppender,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.util.CollectionUtils$EnumerationIterator,public,org.springframework:spring-core:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+java.sql.Timestamp,public,java.sql,instantiation,net.sourceforge.jtds:jtds:1.3.0
+java.security.ProtectionDomain,public,java.security,instantiation,xml-apis:xml-apis:1.0.b2
+org.springframework.core.annotation.AnnotationUtils$DefaultValueHolder,public,org.springframework:spring-core:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+org.springframework.beans.factory.support.DefaultListableBeanFactory$MultiElementDescriptor,public,org.springframework:spring-beans:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+org.springframework.core.OrderComparator$1,public,org.springframework:spring-core:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+org.springframework.beans.factory.support.BeanDefinitionValueResolver$KeyedArgName,public,org.springframework:spring-beans:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+java.sql.Driver,public,java.sql,cast,org.hibernate:hibernate-core:5.1.0.Final
+org.apache.logging.log4j.LogManager,public,org.apache.logging.log4j:log4j-api:2.13.2,method call,com.alibaba:druid:1.2.5
+org.hibernate.c3p0.internal.StrategyRegistrationProviderImpl,public,org.hibernate:hibernate-c3p0:5.1.0.Final,method call,org.hibernate:hibernate-core:5.1.0.Final
+org.springframework.aop.config.AopNamespaceUtils,private,org.springframework:spring-aop:4.3.20.RELEASE,method call,org.springframework:spring:2.5.6.SEC03
+org.apache.logging.log4j.core.appender.OutputStreamAppender,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+javax.xml.transform.stream.StreamResult,public,xml-apis:xml-apis:1.0.b2,instantiation,com.alibaba:fastjson:1.2.73
+java.sql.SQLException,public,java.sql,instantiation,org.apache.logging.log4j:log4j-core:2.13.2
+oracle.jdbc.xa.client.OracleXAConnection,public,com.oracle.ojdbc:ojdbc8:19.3.0.0,instantiation,com.alibaba:druid:1.2.5
+org.apache.logging.log4j.core.pattern.DatePatternConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.core.pattern.FileDatePatternConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.expression.spel.CompilablePropertyAccessor,public,org.springframework:spring-expression:4.3.20.RELEASE,subtyping,org.springframework:spring-context:4.3.20.RELEASE
+org.springframework.beans.propertyeditors.PathEditor,public,org.springframework:spring-beans:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+org.springframework.beans.NullValueInNestedPathException,public,org.springframework:spring:2.5.6.SEC03,instantiation,org.springframework:spring-beans:4.3.20.RELEASE
+org.postgresql.core.BaseConnection,public,org.postgresql:postgresql:42.2.18,cast,com.alibaba:druid:1.2.5
+org.slf4j.helpers.MessageFormatter,public,org.apache.kylin:kylin-jdbc:2.0.0,method call,org.slf4j:slf4j-log4j12:1.7.9
+org.springframework.core.Ordered,public,org.springframework:spring:2.5.6.SEC03,subtyping,org.springframework:spring-beans:4.3.20.RELEASE
+org.springframework.aop.target.LazyInitTargetSource,public,org.springframework:spring-aop:4.3.20.RELEASE,subtyping,org.springframework:spring:2.5.6.SEC03
+java.security.PrivilegedAction,public,java.security,subtyping,java.sql
+org.springframework.beans.AbstractNestablePropertyAccessor,public,org.springframework:spring-beans:4.3.20.RELEASE,subtyping,org.springframework:spring:2.5.6.SEC03
+org.springframework.context.support.DefaultLifecycleProcessor,public,org.springframework:spring-context:4.3.20.RELEASE,method call,org.springframework:spring:2.5.6.SEC03
+net.sourceforge.jtds.jdbc.XASupport,public,net.sourceforge.jtds:jtds:1.3.0,method call,com.alibaba:druid:1.2.5
+com.lmax.disruptor.dsl.Disruptor,public,com.lmax:disruptor:3.3.6,instantiation,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.expression.ParserContext,public,org.springframework:spring-expression:4.3.20.RELEASE,subtyping,org.springframework:spring-context:4.3.20.RELEASE
+org.apache.logging.log4j.core.appender.FailoversPlugin,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.jboss.logging.BasicLogger,public,org.jboss.logging:jboss-logging:3.3.0.Final,subtyping,org.hibernate.common:hibernate-commons-annotations:5.0.1.Final
+org.springframework.aop.support.AbstractBeanFactoryPointcutAdvisor,public,org.springframework:spring-aop:4.3.20.RELEASE,method call,org.springframework:spring-beans:4.3.20.RELEASE
+org.springframework.context.support.ApplicationListenerDetector,public,org.springframework:spring-context:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+org.springframework.util.Assert,public,org.springframework:spring-core:4.3.20.RELEASE,method call,org.springframework:spring-beans:4.3.20.RELEASE
+org.springframework.expression.PropertyAccessor,public,org.springframework:spring-expression:4.3.20.RELEASE,subtyping,org.springframework:spring-context:4.3.20.RELEASE
+org.springframework.beans.factory.BeanFactoryUtils,public,org.springframework:spring:2.5.6.SEC03,method call,org.springframework:spring-context:4.3.20.RELEASE
+org.apache.logging.log4j.core.lookup.MapLookup,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.expression.AccessException,public,org.springframework:spring-expression:4.3.20.RELEASE,instantiation,org.springframework:spring-context:4.3.20.RELEASE
+com.alibaba.druid.wall.WallConfig,public,com.alibaba:druid:1.2.5,method call,org.springframework:spring-beans:4.3.20.RELEASE
+org.apache.logging.log4j.core.Logger,public,org.apache.logging.log4j:log4j-core:2.13.2,method call,org.jboss.logging:jboss-logging:3.3.0.Final
+org.apache.logging.log4j.core.pattern.HighlightConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.context.LifecycleProcessor,public,org.springframework:spring-context:4.3.20.RELEASE,cast,org.springframework:spring:2.5.6.SEC03
+org.apache.logging.log4j.core.config.Property,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.beans.TypeConverterDelegate,default,org.springframework:spring:2.5.6.SEC03,method call,org.springframework:spring-beans:4.3.20.RELEASE
+org.apache.logging.log4j.core.util.ExecutorServices,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-api:2.13.2
+org.apache.logging.log4j.core.config.CustomLevelConfig,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.core.io.AbstractResource,public,org.springframework:spring:2.5.6.SEC03,subtyping,org.springframework:spring-core:4.3.20.RELEASE
+com.mysql.cj.jdbc.Driver,public,mysql:mysql-connector-java:8.0.21,Class.forName,com.alibaba:druid:1.2.5
+org.springframework.core.io.UrlResource,public,org.springframework:spring:2.5.6.SEC03,instantiation,org.springframework:spring-core:4.3.20.RELEASE
+org.springframework.core.convert.TypeDescriptor,public,org.springframework:spring-core:4.3.20.RELEASE,cast,org.springframework:spring:2.5.6.SEC03
+org.apache.logging.log4j.core.appender.rolling.action.IfAccumulatedFileCount,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.beans.factory.BeanNameAware,public,org.springframework:spring-beans:4.3.20.RELEASE,subtyping,org.springframework:spring-context:4.3.20.RELEASE
+org.apache.logging.log4j.core.Appender,public,org.apache.logging.log4j:log4j-core:2.13.2,cast,org.apache.hive:hive-llap-server:3.1.2
+org.hibernate.service.spi.Stoppable,public,org.hibernate:hibernate-core:5.1.0.Final,subtyping,com.alibaba:druid:1.2.5
+org.apache.logging.log4j.core.pattern.ThreadIdPatternConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.core.layout.MarkerPatternSelector,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.util.xml.DomContentHandler,public,org.springframework:spring-core:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+org.springframework.core.CollectionFactory$1,public,org.springframework:spring-core:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+org.springframework.jdbc.datasource.TransactionAwareDataSourceProxy,public,org.springframework:spring-jdbc:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+org.springframework.core.convert.TypeDescriptor,public,org.springframework:spring-core:4.3.20.RELEASE,method call,org.springframework:spring-beans:4.3.20.RELEASE
+org.springframework.context.support.ApplicationContextAwareProcessor$1,public,org.springframework:spring-context:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor,public,org.springframework:spring:2.5.6.SEC03,method call,org.springframework:spring-beans:4.3.20.RELEASE
+java.sql.SQLRecoverableException,public,java.sql,subtyping,mysql:mysql-connector-java:8.0.21
+org.hibernate.annotations.common.reflection.java.JavaReflectionManager,public,org.hibernate.common:hibernate-commons-annotations:5.0.1.Final,instantiation,org.hibernate:hibernate-core:5.1.0.Final
+java.lang.AutoCloseable,public,unknownLib,Class.forName,com.alibaba:fastjson:1.2.73
+org.apache.logging.log4j.core.config.plugins.convert.TypeConverters$CharsetConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.core.env.ConfigurableEnvironment,public,org.springframework:spring-core:4.3.20.RELEASE,cast,org.springframework:spring:2.5.6.SEC03
+org.springframework.jmx.support.MBeanRegistrationSupport,public,org.springframework:spring:2.5.6.SEC03,method call,org.springframework:spring-beans:4.3.20.RELEASE
+com.alibaba.druid.support.simplejndi.DruidDataSourceConverter,public,com.alibaba:druid:1.2.5,method call,simple-jndi:simple-jndi:0.11.4.1
+org.springframework.beans.factory.InitializingBean,public,org.springframework:spring:2.5.6.SEC03,subtyping,org.springframework:spring-context:4.3.20.RELEASE
+java.sql.SQLFeatureNotSupportedException,public,java.sql,instantiation,mysql:mysql-connector-java:8.0.21
+org.apache.logging.log4j.core.config.plugins.convert.TypeConverters$LevelConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+interface java.lang.reflect.TypeVariable,public,unknownLib,method call,org.springframework:spring-core:4.3.20.RELEASE
+org.apache.logging.log4j.core.filter.LevelRangeFilter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.core.config.xml.XmlConfigurationFactory,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.ibatis.builder.xml.XMLConfigBuilder,public,org.mybatis:mybatis:3.4.0,instantiation,org.mybatis:mybatis-spring:1.3.0
+java.sql.NClob,public,java.sql,cast,org.hibernate:hibernate-core:5.1.0.Final
+org.apache.logging.log4j.util.Supplier,public,org.apache.logging.log4j:log4j-api:2.13.2,cast,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.core.annotation.AnnotationUtils$DefaultValueHolder,private,org.springframework:spring-core:4.3.20.RELEASE,cast,org.springframework:spring:2.5.6.SEC03
+org.springframework.expression.common.LiteralExpression,public,org.springframework:spring-expression:4.3.20.RELEASE,method call,org.springframework:spring-context:4.3.20.RELEASE
+org.apache.logging.log4j.core.appender.SyslogAppender,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.util.StringUtils,public,org.springframework:spring:2.5.6.SEC03,method call,org.springframework:spring-context:4.3.20.RELEASE
+org.springframework.core.io.ProtocolResolver,public,org.springframework:spring-core:4.3.20.RELEASE,cast,org.springframework:spring:2.5.6.SEC03
+org.hibernate.HibernateException,public,org.hibernate:hibernate-core:5.1.0.Final,instantiation,org.springframework:spring-orm:4.3.20.RELEASE
+org.springframework.beans.factory.Aware,public,org.springframework:spring-beans:4.3.20.RELEASE,subtyping,org.springframework:spring:2.5.6.SEC03
+org.apache.log4j.Logger,public,log4j:log4j:1.2.17,Class.forName,log4j:log4j:1.2.17
+org.apache.logging.log4j.core.pattern.LoggerFqcnPatternConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.core.annotation.AnnotationConfigurationException,public,org.springframework:spring-core:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+java.sql.Clob,public,java.sql,cast,com.alibaba:druid:1.2.5
+org.springframework.beans.factory.support.ManagedList,public,org.springframework:spring:2.5.6.SEC03,subtyping,org.springframework:spring-beans:4.3.20.RELEASE
+java.sql.Time,public,java.sql,cast,com.alibaba:fastjson:1.2.73
+java.sql.Connection,public,java.sql,cast,com.alibaba:druid:1.2.5
+org.springframework.context.support.AbstractApplicationContext$2,public,org.springframework:spring-context:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+org.springframework.core.convert.TypeDescriptor,public,org.springframework:spring-core:4.3.20.RELEASE,method call,org.springframework:spring:2.5.6.SEC03
+com.alibaba.druid.mock.MockDriver,public,com.alibaba:druid:1.2.5,Class.forName,com.alibaba:druid:1.2.5
+com.alibaba.druid.pool.vendor.NullExceptionSorter,public,com.alibaba:druid:1.2.5,Class.forName,com.alibaba:druid:1.2.5
+org.xml.sax.InputSource,public,xml-apis:xml-apis:1.0.b2,instantiation,org.springframework:spring-beans:4.3.20.RELEASE
+java.sql.SQLException,public,java.sql,cast,org.springframework:spring:2.5.6.SEC03
+org.apache.logging.log4j.spi.LoggerContextShutdownEnabled,public,org.apache.logging.log4j:log4j-api:2.13.2,subtyping,org.apache.logging.log4j:log4j-core:2.13.2
+javax.xml.stream.XMLEventFactory,public,javax.xml.stream,method call,org.hibernate:hibernate-core:5.1.0.Final
+org.jboss.logging.DelegatingBasicLogger,public,org.jboss.logging:jboss-logging:3.3.0.Final,subtyping,org.hibernate.common:hibernate-commons-annotations:5.0.1.Final
+org.springframework.context.expression.StandardBeanExpressionResolver,public,org.springframework:spring-context:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+org.springframework.core.ResolvableType,public,org.springframework:spring-core:4.3.20.RELEASE,method call,org.springframework:spring:2.5.6.SEC03
+org.apache.log4j.Level,public,log4j:log4j:1.2.17,Class.forName,commons-logging:commons-logging:1.2
+org.apache.logging.log4j.core.layout.SerializedLayout,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.web.WebLookup,public,org.apache.logging.log4j:log4j-web:2.10.0,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.beans.factory.Aware,public,org.springframework:spring-beans:4.3.20.RELEASE,subtyping,org.springframework:spring-context:4.3.20.RELEASE
+java.sql.Connection,public,java.sql,subtyping,mysql:mysql-connector-java:8.0.21
+com.alibaba.druid.support.logging.SLF4JImpl,public,com.alibaba:druid:1.2.5,Class.forName,com.alibaba:druid:1.2.5
+org.apache.logging.log4j.core.net.ssl.TrustStoreConfiguration,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.core.lookup.AbstractLookup,public,org.apache.logging.log4j:log4j-core:2.13.2,subtyping,org.apache.logging.log4j:log4j-web:2.10.0
+org.apache.logging.log4j.core.pattern.RegexReplacementConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.core.layout.YamlLayout,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+java.sql.Statement,public,java.sql,subtyping,net.sourceforge.jtds:jtds:1.3.0
+org.springframework.core.annotation.AnnotationUtils,public,org.springframework:spring:2.5.6.SEC03,method call,org.springframework:spring-core:4.3.20.RELEASE
+com.fasterxml.jackson.core.JsonFactory,public,com.fasterxml.jackson.core:jackson-core:2.10.0,subtyping,com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.10.0
+com.alibaba.druid.support.spring.MBeanServerFactoryBean,public,com.alibaba:druid:1.2.5,method call,org.springframework:spring:2.5.6.SEC03
+org.slf4j.spi.LoggerFactoryBinder,public,org.apache.kylin:kylin-jdbc:2.0.0,subtyping,org.slf4j:slf4j-log4j12:1.7.9
+org.springframework.beans.factory.config.DependencyDescriptor,public,org.springframework:spring:2.5.6.SEC03,subtyping,org.springframework:spring-beans:4.3.20.RELEASE
+org.apache.logging.log4j.core.config.plugins.convert.TypeConverters$ByteConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+com.fasterxml.jackson.core.util.ByteArrayBuilder,public,com.fasterxml.jackson.core:jackson-core:2.10.0,instantiation,com.fasterxml.jackson.core:jackson-databind:2.10.0
+org.apache.logging.log4j.spi.LoggerRegistry,public,org.apache.logging.log4j:log4j-api:2.13.2,method call,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.expression.TypedValue,public,org.springframework:spring-expression:4.3.20.RELEASE,instantiation,org.springframework:spring-context:4.3.20.RELEASE
+com.alibaba.druid.support.ibatis.SpringIbatisBeanNameAutoProxyCreator,public,com.alibaba:druid:1.2.5,method call,org.springframework:spring:2.5.6.SEC03
+org.apache.logging.log4j.spi.LoggerContext,public,org.apache.logging.log4j:log4j-api:2.13.2,subtyping,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.core.annotation.AnnotationAttributes,public,org.springframework:spring-core:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+javax.xml.stream.XMLResolver,public,javax.xml.stream,subtyping,org.hibernate:hibernate-core:5.1.0.Final
+org.apache.logging.log4j.core.appender.routing.IdlePurgePolicy,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.beans.factory.support.ManagedArray,public,org.springframework:spring-beans:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+java.sql.Timestamp,public,java.sql,instantiation,org.hibernate:hibernate-core:5.1.0.Final
+org.apache.logging.log4j.core.async.LinkedTransferQueueFactory,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+com.alibaba.druid.wall.WallFilter,public,com.alibaba:druid:1.2.5,Class.forName,org.springframework:spring:2.5.6.SEC03
+org.xml.sax.ErrorHandler,public,xml-apis:xml-apis:1.0.b2,subtyping,org.springframework:spring:2.5.6.SEC03
+org.jboss.logging.Log4j2Logger,default,org.jboss.logging:jboss-logging:3.3.0.Final,method call,org.hibernate:hibernate-core:5.1.0.Final
+org.springframework.beans.factory.config.BeanExpressionContext,public,org.springframework:spring-beans:4.3.20.RELEASE,cast,org.springframework:spring-context:4.3.20.RELEASE
+javax.transaction.xa.XAException,public,javax.transaction:transaction-api:1.1,instantiation,net.sourceforge.jtds:jtds:1.3.0
+org.apache.logging.log4j.core.config.plugins.convert.TypeConverters$ShortConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.LoggingException,public,org.apache.logging.log4j:log4j-api:2.13.2,cast,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.core.config.Node,public,org.apache.logging.log4j:log4j-core:2.13.2,instantiation,org.apache.hive:hive-llap-server:3.1.2
+org.apache.logging.log4j.core.filter.StringMatchFilter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+java.sql.ParameterMetaData,public,java.sql,subtyping,com.alibaba:druid:1.2.5
+org.apache.log4j.Level,public,log4j:log4j:1.2.17,cast,org.apache.logging.log4j:log4j-1.2-api:2.10.0
+org.apache.logging.log4j.core.appender.rolling.action.IfAll,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.core.appender.SmtpAppender,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.beans.TypeConverterDelegate,public,org.springframework:spring:2.5.6.SEC03,instantiation,org.springframework:spring-beans:4.3.20.RELEASE
+org.springframework.util.ClassUtils,public,org.springframework:spring:2.5.6.SEC03,method call,org.springframework:spring-core:4.3.20.RELEASE
+org.apache.logging.log4j.core.layout.CsvParameterLayout,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.core.convert.Property,public,org.springframework:spring-core:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+org.apache.logging.log4j.message.StringFormattedMessage,public,org.apache.logging.log4j:log4j-api:2.13.2,instantiation,org.jboss.logging:jboss-logging:3.3.0.Final
+org.slf4j.LoggerFactory,public,org.apache.kylin:kylin-jdbc:2.0.0,method call,org.slf4j:jcl-over-slf4j:1.7.21
+org.springframework.beans.propertyeditors.TimeZoneEditor,public,org.springframework:spring-beans:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+org.springframework.context.support.ApplicationListenerDetector,default,org.springframework:spring-context:4.3.20.RELEASE,method call,org.springframework:spring:2.5.6.SEC03
+java.sql.Date,public,java.sql,instantiation,com.alibaba:fastjson:1.2.73
+org.apache.logging.log4j.core.config.plugins.convert.TypeConverters$BooleanConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.expression.spel.standard.SpelExpressionParser,public,org.springframework:spring-expression:4.3.20.RELEASE,method call,org.springframework:spring-context:4.3.20.RELEASE
+org.springframework.expression.Expression,public,org.springframework:spring-expression:4.3.20.RELEASE,cast,org.springframework:spring-context:4.3.20.RELEASE
+com.alibaba.druid.bvt.pool.DruidDataSourceTest4$MyExceptionSorter,private,unknownLib,Class.forName,com.alibaba:druid:1.2.5
+org.apache.logging.log4j.core.config.plugins.convert.TypeConverters$UriConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.w3c.dom.Element,public,xml-apis:xml-apis:1.0.b2,cast,org.springframework:spring:2.5.6.SEC03
+java.sql.Date,public,java.sql,instantiation,net.sourceforge.jtds:jtds:1.3.0
+org.apache.logging.log4j.core.pattern.EncodingPatternConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.core.env.EnvironmentCapable,public,org.springframework:spring-core:4.3.20.RELEASE,cast,org.springframework:spring:2.5.6.SEC03
+org.apache.commons.logging.LogFactory,public,org.slf4j:jcl-over-slf4j:1.7.21,method call,org.springframework:spring-aop:4.3.20.RELEASE
+org.springframework.core.Ordered,public,org.springframework:spring:2.5.6.SEC03,cast,org.springframework:spring-aop:4.3.20.RELEASE
+com.alibaba.druid.pool.DruidDataSource,public,com.alibaba:druid:1.2.5,Class.forName,org.springframework:spring:2.5.6.SEC03
+org.springframework.context.event.GenericApplicationListener,public,org.springframework:spring-context:4.3.20.RELEASE,cast,org.springframework:spring:2.5.6.SEC03
+org.hibernate.Session,public,org.hibernate:hibernate-core:5.1.0.Final,cast,org.springframework:spring-orm:4.3.20.RELEASE
+org.springframework.expression.spel.support.StandardEvaluationContext,public,org.springframework:spring-expression:4.3.20.RELEASE,method call,org.springframework:spring-context:4.3.20.RELEASE
+org.springframework.jdbc.datasource.DataSourceTransactionManager$DataSourceTransactionObject,public,org.springframework:spring-jdbc:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+java.sql.Date,public,java.sql,cast,org.hibernate:hibernate-core:5.1.0.Final
+com.aliyun.odps.udf.UDF,public,com.aliyun.odps:odps-sdk-udf:0.17.3,subtyping,com.alibaba:druid:1.2.5
+org.apache.logging.log4j.core.config.plugins.convert.TypeConverters$InetAddressConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.spi.LoggerContextFactory,public,org.apache.logging.log4j:log4j-api:2.13.2,subtyping,org.apache.logging.log4j:log4j-core:2.13.2
+java.sql.Blob,public,java.sql,cast,org.hibernate:hibernate-core:5.1.0.Final
+org.springframework.core.PrioritizedParameterNameDiscoverer,public,org.springframework:spring:2.5.6.SEC03,subtyping,org.springframework:spring-core:4.3.20.RELEASE
+javax.transaction.UserTransaction,public,javax.transaction:transaction-api:1.1,cast,org.hibernate:hibernate-core:5.1.0.Final
+org.apache.logging.log4j.core.pattern.MarkerSimpleNamePatternConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.core.lookup.SystemPropertiesLookup,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.core.env.StandardEnvironment,public,org.springframework:spring-core:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+javax.servlet.ServletResponseWrapper,public,javax.servlet:javax.servlet-api:3.1.0,subtyping,org.eclipse.jetty:jetty-runner:9.3.20.v20170531
+org.springframework.beans.factory.support.DefaultListableBeanFactory$DependencyObjectProvider,public,org.springframework:spring-beans:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+org.apache.logging.log4j.core.config.plugins.convert.TypeConverters$CharArrayConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl,public,unknownLib,Class.forName,xml-apis:xml-apis:1.0.b2
+org.apache.logging.log4j.core.filter.MarkerFilter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.core.appender.ScriptAppenderSelector,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.core.pattern.AbstractStyleNameConverter$White,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.context.ApplicationContextAware,public,org.springframework:spring:2.5.6.SEC03,subtyping,org.springframework:spring-context:4.3.20.RELEASE
+org.apache.logging.log4j.status.StatusLogger,public,org.apache.logging.log4j:log4j-api:2.13.2,method call,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.core.io.support.ResourcePatternUtils,public,org.springframework:spring:2.5.6.SEC03,method call,org.springframework:spring-orm:4.3.20.RELEASE
+org.apache.log4j.CategoryKey,default,log4j:log4j:1.2.17,Class.forName,log4j:log4j:1.2.17
+org.apache.logging.log4j.core.script.Script,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.LogManager,public,org.apache.logging.log4j:log4j-api:2.13.2,method call,org.apache.logging.log4j:log4j-core:2.13.2
+com.alibaba.druid.stat.JdbcStatManagerFactoryBean,public,com.alibaba:druid:1.2.5,Class.forName,org.springframework:spring:2.5.6.SEC03
+org.springframework.beans.factory.config.BeanFactoryPostProcessor,public,org.springframework:spring:2.5.6.SEC03,cast,org.springframework:spring-context:4.3.20.RELEASE
+org.apache.logging.log4j.core.appender.RandomAccessFileAppender,public,org.apache.logging.log4j:log4j-core:2.13.2,cast,org.apache.hive:hive-llap-server:3.1.2
+org.springframework.beans.ExtendedBeanInfoFactory,public,org.springframework:spring-beans:4.3.20.RELEASE,method call,org.springframework:spring:2.5.6.SEC03
+org.springframework.core.convert.ConversionService,public,org.springframework:spring-core:4.3.20.RELEASE,cast,org.springframework:spring:2.5.6.SEC03
+org.springframework.beans.PropertyValue,public,org.springframework:spring:2.5.6.SEC03,method call,org.springframework:spring-beans:4.3.20.RELEASE
+org.slf4j.helpers.MarkerIgnoringBase,public,org.apache.kylin:kylin-jdbc:2.0.0,subtyping,org.slf4j:slf4j-log4j12:1.7.9
+com.alibaba.druid.filter.logging.CommonsLogFilter,public,com.alibaba:druid:1.2.5,Class.forName,com.alibaba:druid:1.2.5
+org.apache.logging.log4j.core.appender.rolling.action.IfAny,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor$1,default,org.springframework:spring:2.5.6.SEC03,method call,org.springframework:spring-aop:4.3.20.RELEASE
+org.springframework.beans.propertyeditors.InputSourceEditor,public,org.springframework:spring-beans:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+org.springframework.context.event.AbstractApplicationEventMulticaster$ListenerCacheKey,public,org.springframework:spring-context:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+org.apache.commons.logging.LogFactory,public,org.slf4j:jcl-over-slf4j:1.7.21,method call,com.alibaba:druid:1.2.5
+org.apache.commons.logging.impl.Log4JLogger,public,commons-logging:commons-logging:1.2,Class.forName,commons-logging:commons-logging:1.2
+org.apache.logging.log4j.core.pattern.EndOfBatchPatternConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.core.config.plugins.convert.TypeConverters$FloatConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.core.filter.ThresholdFilter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.context.event.GenericApplicationListenerAdapter,public,org.springframework:spring-context:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+org.springframework.beans.BeanWrapperImpl,public,org.springframework:spring:2.5.6.SEC03,method call,org.springframework:spring-beans:4.3.20.RELEASE
+org.slf4j.impl.Log4jLoggerFactory,public,org.slf4j:slf4j-log4j12:1.7.9,method call,org.apache.kylin:kylin-jdbc:2.0.0
+org.springframework.core.Ordered,public,org.springframework:spring:2.5.6.SEC03,subtyping,org.springframework:spring-tx:4.3.20.RELEASE
+org.apache.logging.log4j.core.pattern.ProcessIdPatternConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.commons.logging.LogFactory,default,org.slf4j:jcl-over-slf4j:1.7.21,method call,commons-logging:commons-logging:1.2
+com.fasterxml.jackson.core.ObjectCodec,public,com.fasterxml.jackson.core:jackson-core:2.10.0,cast,com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.10.0
+org.apache.log4j.NDC,public,log4j:log4j:1.2.17,method call,org.apache.logging.log4j:log4j-1.2-api:2.10.0
+org.apache.logging.log4j.status.StatusListener,public,org.apache.logging.log4j:log4j-api:2.13.2,subtyping,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.core.MethodParameter,public,org.springframework:spring:2.5.6.SEC03,method call,org.springframework:spring-core:4.3.20.RELEASE
+org.springframework.context.ApplicationEvent,public,org.springframework:spring:2.5.6.SEC03,subtyping,org.springframework:spring-context:4.3.20.RELEASE
+org.xml.sax.SAXParseException,public,xml-apis:xml-apis:1.0.b2,cast,org.springframework:spring:2.5.6.SEC03
+org.apache.logging.log4j.Level,public,org.apache.logging.log4j:log4j-api:2.13.2,cast,org.apache.logging.log4j:log4j-core:2.13.2
+javax.servlet.ServletResponse,public,org.eclipse.jetty:jetty-runner:9.3.20.v20170531,subtyping,javax.servlet:javax.servlet-api:3.1.0
+org.apache.logging.log4j.core.pattern.MapPatternConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.util.PropertiesUtil,public,org.apache.logging.log4j:log4j-api:2.13.2,instantiation,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.core.pattern.RelativeTimePatternConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.context.ApplicationListener,public,org.springframework:spring:2.5.6.SEC03,subtyping,org.mybatis:mybatis-spring:1.3.0
+java.sql.RowId,public,java.sql,cast,com.alibaba:druid:1.2.5
+java.sql.Timestamp,public,java.sql,cast,net.sourceforge.jtds:jtds:1.3.0
+java.lang.AutoCloseable,public,unknownLib,Class.forName,org.springframework:spring:2.5.6.SEC03
+org.springframework.beans.TypeConverter,public,org.springframework:spring:2.5.6.SEC03,subtyping,org.springframework:spring-beans:4.3.20.RELEASE
+org.apache.logging.log4j.core.pattern.EqualsIgnoreCaseReplacementConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.beans.factory.NoSuchBeanDefinitionException,public,org.springframework:spring:2.5.6.SEC03,subtyping,org.springframework:spring-beans:4.3.20.RELEASE
+org.apache.logging.log4j.core.pattern.UuidPatternConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.context.PayloadApplicationEvent,public,org.springframework:spring-context:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+org.apache.logging.log4j.core.net.ssl.KeyStoreConfiguration,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.core.pattern.AbstractStyleNameConverter$Red,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.util.ConcurrentReferenceHashMap,public,org.springframework:spring-core:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+org.springframework.transaction.interceptor.TransactionAspectSupport$2,public,org.springframework:spring-tx:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+java.sql.Savepoint,public,java.sql,cast,net.sourceforge.jtds:jtds:1.3.0
+javax.xml.datatype.XMLGregorianCalendar,public,javax.xml.datatype,cast,com.alibaba:fastjson:1.2.73
+com.ibatis.sqlmap.engine.impl.ExtendedSqlMapClient,public,org.apache.ibatis:ibatis-sqlmap:2.3.4.726,cast,org.springframework:spring:2.5.6.SEC03
+javax.xml.transform.dom.DOMSource,public,xml-apis:xml-apis:1.0.b2,instantiation,com.alibaba:fastjson:1.2.73
+org.apache.logging.log4j.status.StatusListener,public,org.apache.logging.log4j:log4j-api:2.13.2,cast,org.apache.logging.log4j:log4j-core:2.13.2
+com.alibaba.druid.support.ibatis.SpringIbatisBeanNameAutoProxyCreator,public,com.alibaba:druid:1.2.5,method call,org.springframework:spring-beans:4.3.20.RELEASE
+org.springframework.beans.factory.config.NamedBeanHolder,public,org.springframework:spring-beans:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+com.fasterxml.jackson.core.TreeNode,public,com.fasterxml.jackson.core:jackson-core:2.10.0,subtyping,com.fasterxml.jackson.core:jackson-databind:2.10.0
+org.apache.logging.log4j.core.pattern.RootThrowablePatternConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.beans.factory.support.AutowireUtils$ObjectFactoryDelegatingInvocationHandler,public,org.springframework:spring-beans:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+org.apache.logging.log4j.core.config.plugins.convert.TypeConverters$StringConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.commons.logging.impl.Log4JLogger,public,commons-logging:commons-logging:1.2,cast,com.alibaba:druid:1.2.5
+org.apache.logging.log4j.ThreadContext,public,org.apache.logging.log4j:log4j-api:2.13.2,method call,org.apache.logging.log4j:log4j-core:2.13.2
+java.security.BasicPermission,public,java.security,subtyping,java.sql
+org.springframework.util.AntPathMatcher$AntPathStringMatcher,protected,org.springframework:spring-core:4.3.20.RELEASE,cast,org.springframework:spring:2.5.6.SEC03
+org.springframework.util.Assert,default,org.springframework:spring-core:4.3.20.RELEASE,method call,org.springframework:spring:2.5.6.SEC03
+org.apache.logging.log4j.core.config.ScriptsPlugin,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+java.security.KeyFactory,public,java.security,method call,com.alibaba:druid:1.2.5
+org.hibernate.service.spi.Stoppable,public,org.hibernate:hibernate-core:5.1.0.Final,subtyping,org.hibernate:hibernate-c3p0:5.1.0.Final
+org.apache.logging.log4j.LogManager,public,org.apache.logging.log4j:log4j-api:2.13.2,Class.forName,org.jboss.logging:jboss-logging:3.3.0.Final
+org.springframework.util.ReflectionUtils,default,org.springframework:spring:2.5.6.SEC03,method call,org.springframework:spring-core:4.3.20.RELEASE
+org.apache.logging.log4j.core.filter.DenyAllFilter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+java.sql.DriverPropertyInfo,public,java.sql,instantiation,mysql:mysql-connector-java:8.0.21
+org.apache.logging.log4j.core.appender.rolling.action.PathSortByModificationTime,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.core.io.ClassPathResource,public,org.springframework:spring:2.5.6.SEC03,instantiation,org.springframework:spring-orm:4.3.20.RELEASE
+java.sql.SQLException,public,java.sql,instantiation,com.alibaba:druid:1.2.5
+org.hibernate.service.spi.Configurable,public,org.hibernate:hibernate-core:5.1.0.Final,subtyping,com.alibaba:druid:1.2.5
+org.springframework.jdbc.datasource.DataSourceTransactionManager$DataSourceTransactionObject,private,org.springframework:spring-jdbc:4.3.20.RELEASE,cast,org.springframework:spring:2.5.6.SEC03
+org.apache.log4j.LogManager,public,log4j:log4j:1.2.17,method call,org.slf4j:slf4j-log4j12:1.7.9
+net.sourceforge.jtds.jdbc.JtdsConnection,public,net.sourceforge.jtds:jtds:1.3.0,method call,com.alibaba:druid:1.2.5
+org.springframework.beans.factory.InitializingBean,public,org.springframework:spring:2.5.6.SEC03,subtyping,org.mybatis:mybatis-spring:1.3.0
+org.apache.logging.log4j.core.async.JCToolsBlockingQueueFactory,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.beans.propertyeditors.UUIDEditor,public,org.springframework:spring-beans:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+org.hibernate.service.spi.Configurable,public,org.hibernate:hibernate-core:5.1.0.Final,subtyping,org.hibernate:hibernate-c3p0:5.1.0.Final
+org.apache.log4j.Logger,public,log4j:log4j:1.2.17,method call,commons-logging:commons-logging:1.2
+org.springframework.beans.factory.support.AbstractBeanFactory$4,public,org.springframework:spring-beans:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+org.springframework.beans.factory.support.AbstractBeanFactory$3,public,org.springframework:spring-beans:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+org.springframework.util.ObjectUtils,public,org.springframework:spring:2.5.6.SEC03,method call,org.springframework:spring-core:4.3.20.RELEASE
+java.sql.Time,public,java.sql,cast,net.sourceforge.jtds:jtds:1.3.0
+com.alibaba.druid.spring.UserDao,public,unknownLib,Class.forName,org.springframework:spring:2.5.6.SEC03
+org.springframework.beans.factory.support.RootBeanDefinition,public,org.springframework:spring:2.5.6.SEC03,instantiation,org.springframework:spring-aop:4.3.20.RELEASE
+org.apache.logging.log4j.core.pattern.NanoTimePatternConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.core.lookup.ContextMapLookup,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.util.ReflectionUtils$FieldFilter,public,org.springframework:spring:2.5.6.SEC03,subtyping,org.springframework:spring-core:4.3.20.RELEASE
+org.springframework.core.LocalVariableTableParameterNameDiscoverer,public,org.springframework:spring:2.5.6.SEC03,instantiation,org.springframework:spring-core:4.3.20.RELEASE
+org.dom4j.io.STAXEventReader,public,dom4j:dom4j:1.6.1,subtyping,org.hibernate:hibernate-core:5.1.0.Final
+org.slf4j.impl.StaticLoggerBinder,public,org.slf4j:slf4j-log4j12:1.7.9,method call,org.apache.kylin:kylin-jdbc:2.0.0
+oracle.jdbc.OracleConnection,public,com.oracle.ojdbc:ojdbc8:19.3.0.0,cast,com.alibaba:druid:1.2.5
+org.springframework.core.env.EnvironmentCapable,public,org.springframework:spring-core:4.3.20.RELEASE,subtyping,org.springframework:spring:2.5.6.SEC03
+org.apache.logging.log4j.core.lookup.EnvironmentLookup,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.core.appender.ConsoleAppender,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.core.lookup.LowerLookup,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.core.filter.LevelMatchFilter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.hibernate.service.UnknownUnwrapTypeException,public,org.hibernate:hibernate-core:5.1.0.Final,instantiation,org.hibernate:hibernate-c3p0:5.1.0.Final
+org.springframework.beans.factory.support.DefaultListableBeanFactory,public,org.springframework:spring:2.5.6.SEC03,cast,org.springframework:spring-context:4.3.20.RELEASE
+org.xml.sax.InputSource,public,xml-apis:xml-apis:1.0.b2,cast,org.springframework:spring-beans:4.3.20.RELEASE
+com.ibatis.sqlmap.engine.transaction.TransactionConfig,public,org.apache.ibatis:ibatis-sqlmap:2.3.4.726,cast,org.springframework:spring:2.5.6.SEC03
+org.apache.logging.log4j.core.pattern.AbstractStyleNameConverter$Blue,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.core.layout.XmlLayout,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+java.security.Permissions,public,java.security,instantiation,xml-apis:xml-apis:1.0.b2
+org.springframework.beans.factory.support.DefaultListableBeanFactory,public,org.springframework:spring:2.5.6.SEC03,method call,org.springframework:spring-context:4.3.20.RELEASE
+org.springframework.beans.factory.support.DefaultListableBeanFactory,public,org.springframework:spring:2.5.6.SEC03,method call,org.springframework:spring-aop:4.3.20.RELEASE
+org.apache.logging.log4j.core.appender.RandomAccessFileManager,public,org.apache.logging.log4j:log4j-core:2.13.2,cast,org.apache.hive:hive-llap-server:3.1.2
+org.mybatis.spring.SqlSessionFactoryBean,public,org.mybatis:mybatis-spring:1.3.0,Class.forName,org.springframework:spring:2.5.6.SEC03
+org.apache.logging.log4j.util.SortedArrayStringMap,public,org.apache.logging.log4j:log4j-api:2.13.2,instantiation,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.beans.factory.InitializingBean,public,org.springframework:spring:2.5.6.SEC03,subtyping,org.springframework:spring-jdbc:4.3.20.RELEASE
+com.alibaba.druid.stat.JdbcStatManagerFactoryBean,public,com.alibaba:druid:1.2.5,method call,org.springframework:spring:2.5.6.SEC03
+java.sql.SQLException,public,java.sql,cast,mysql:mysql-connector-java:8.0.21
+org.springframework.beans.ExtendedBeanInfoFactory,public,org.springframework:spring-beans:4.3.20.RELEASE,Class.forName,org.springframework:spring:2.5.6.SEC03
+org.apache.logging.log4j.core.lookup.DateLookup,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.beans.factory.config.BeanExpressionContext,public,org.springframework:spring-beans:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+org.springframework.core.LocalVariableTableParameterNameDiscoverer$ParameterNameDiscoveringVisitor,public,org.springframework:spring-core:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+org.hibernate.boot.registry.selector.StrategyRegistrationProvider,public,org.hibernate:hibernate-core:5.1.0.Final,subtyping,org.hibernate:hibernate-c3p0:5.1.0.Final
+org.apache.logging.log4j.core.appender.NullAppender,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+java.sql.SQLWarning,public,java.sql,instantiation,net.sourceforge.jtds:jtds:1.3.0
+org.springframework.jdbc.support.lob.AbstractLobHandler,public,org.springframework:spring-jdbc:4.3.20.RELEASE,subtyping,com.alibaba:druid:1.2.5
+org.apache.logging.log4j.core.pattern.NdcPatternConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.core.type.classreading.CachingMetadataReaderFactory,public,org.springframework:spring:2.5.6.SEC03,instantiation,org.springframework:spring-orm:4.3.20.RELEASE
+org.apache.ibatis.session.Configuration,public,org.mybatis:mybatis:3.4.0,instantiation,org.mybatis:mybatis-spring:1.3.0
+org.springframework.context.ApplicationListener,public,org.springframework:spring:2.5.6.SEC03,subtyping,org.springframework:spring-context:4.3.20.RELEASE
+java.sql.CallableStatement,public,java.sql,subtyping,com.alibaba:druid:1.2.5
+org.hibernate.annotations.common.reflection.ClassLoaderDelegate,public,org.hibernate.common:hibernate-commons-annotations:5.0.1.Final,subtyping,org.hibernate:hibernate-core:5.1.0.Final
+org.apache.commons.logging.impl.SLF4JLocationAwareLog,public,org.slf4j:jcl-over-slf4j:1.7.21,method call,com.alibaba:druid:1.2.5
+org.apache.logging.log4j.LoggingException,public,org.apache.logging.log4j:log4j-api:2.13.2,subtyping,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.core.Ordered,public,org.springframework:spring:2.5.6.SEC03,subtyping,org.springframework:spring-aop:4.3.20.RELEASE
+org.springframework.core.NestedRuntimeException,public,org.springframework:spring:2.5.6.SEC03,subtyping,org.springframework:spring-aop:4.3.20.RELEASE
+org.apache.logging.log4j.core.appender.rolling.action.PosixViewAttributeAction,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+java.sql.Timestamp,public,java.sql,cast,com.alibaba:fastjson:1.2.73
+org.hibernate.boot.registry.classloading.spi.ClassLoadingException,public,org.hibernate:hibernate-core:5.1.0.Final,instantiation,org.hibernate:hibernate-c3p0:5.1.0.Final
+org.springframework.lang.UsesJava7,public,org.springframework:spring-core:4.3.20.RELEASE,annotation,org.springframework:spring-beans:4.3.20.RELEASE
+java.sql.Connection,public,java.sql,subtyping,com.alibaba:druid:1.2.5
+java.sql.DriverManager,public,java.sql,method call,com.alibaba:druid:1.2.5
+org.apache.logging.log4j.core.appender.nosql.NoSqlAppender,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.core.layout.HtmlLayout,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.core.io.AbstractFileResolvingResource,public,org.springframework:spring-core:4.3.20.RELEASE,subtyping,org.springframework:spring:2.5.6.SEC03
+org.springframework.dao.support.DaoSupport,public,org.springframework:spring:2.5.6.SEC03,subtyping,org.mybatis:mybatis-spring:1.3.0
+org.slf4j.Logger,public,org.apache.kylin:kylin-jdbc:2.0.0,Class.forName,com.alibaba:druid:1.2.5
+org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor,public,org.springframework:spring:2.5.6.SEC03,method call,org.springframework:spring-aop:4.3.20.RELEASE
+org.apache.logging.log4j.core.config.DefaultAdvertiser,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+java.time.ZoneId,public,unknownLib,Class.forName,org.springframework:spring:2.5.6.SEC03
+org.springframework.beans.factory.parsing.BeanComponentDefinition,public,org.springframework:spring:2.5.6.SEC03,instantiation,org.springframework:spring-aop:4.3.20.RELEASE
+javax.servlet.Servlet,public,javax.servlet:servlet-api:2.5,subtyping,org.eclipse.jetty:jetty-runner:9.3.20.v20170531
+org.springframework.core.annotation.SynthesizedAnnotationInvocationHandler,public,org.springframework:spring-core:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+java.security.PrivilegedAction,public,java.security,subtyping,org.apache.logging.log4j:log4j-api:2.13.2
+org.springframework.core.MethodClassKey,public,org.springframework:spring-core:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+org.springframework.beans.factory.BeanFactory,public,org.springframework:spring:2.5.6.SEC03,cast,org.springframework:spring-context:4.3.20.RELEASE
+org.springframework.beans.factory.BeanFactoryUtils,public,org.springframework:spring:2.5.6.SEC03,method call,org.springframework:spring-aop:4.3.20.RELEASE
+org.apache.logging.log4j.spi.LoggerContextShutdownAware,public,org.apache.logging.log4j:log4j-api:2.13.2,cast,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.core.config.LoggerConfig$RootLogger,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.message.TimestampMessage,public,org.apache.logging.log4j:log4j-api:2.13.2,cast,org.apache.logging.log4j:log4j-core:2.13.2
+java.sql.Date,public,java.sql,cast,mysql:mysql-connector-java:8.0.21
+java.sql.Blob,public,java.sql,subtyping,com.alibaba:druid:1.2.5
+javax.servlet.Filter,public,org.eclipse.jetty:jetty-runner:9.3.20.v20170531,subtyping,com.alibaba:druid:1.2.5
+org.springframework.beans.factory.BeanCreationException,public,org.springframework:spring:2.5.6.SEC03,cast,org.springframework:spring-aop:4.3.20.RELEASE
+org.springframework.context.support.DefaultLifecycleProcessor,public,org.springframework:spring-context:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+org.springframework.beans.factory.FactoryBean,public,org.springframework:spring:2.5.6.SEC03,subtyping,org.mybatis:mybatis-spring:1.3.0
+org.springframework.util.Assert,public,org.springframework:spring-core:4.3.20.RELEASE,method call,org.springframework:spring-expression:4.3.20.RELEASE
+org.apache.logging.log4j.core.pattern.MarkerPatternConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.hibernate.boot.registry.classloading.spi.ClassLoaderService,public,org.hibernate:hibernate-core:5.1.0.Final,cast,org.hibernate:hibernate-c3p0:5.1.0.Final
+java.nio.file.Path,public,unknownLib,Class.forName,org.springframework:spring:2.5.6.SEC03
+org.springframework.beans.factory.support.AutowireUtils$2,public,org.springframework:spring-beans:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+org.springframework.core.SerializableTypeWrapper$MethodInvokeTypeProvider,default,org.springframework:spring-core:4.3.20.RELEASE,method call,org.springframework:spring:2.5.6.SEC03
+org.apache.logging.log4j.core.config.plugins.convert.TypeConverters$BigIntegerConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.beans.factory.config.ConfigurableBeanFactory,public,org.springframework:spring:2.5.6.SEC03,cast,org.springframework:spring-aop:4.3.20.RELEASE
+org.springframework.beans.factory.support.DefaultListableBeanFactory$FactoryAwareOrderSourceProvider,public,org.springframework:spring-beans:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+org.springframework.core.annotation.AnnotationConfigurationException,public,org.springframework:spring-core:4.3.20.RELEASE,cast,org.springframework:spring:2.5.6.SEC03
+org.springframework.expression.spel.support.StandardTypeConverter,public,org.springframework:spring-expression:4.3.20.RELEASE,instantiation,org.springframework:spring-context:4.3.20.RELEASE
+org.apache.logging.log4j.core.config.plugins.convert.TypeConverters$FileConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.aop.framework.ProxyProcessorSupport,public,org.springframework:spring-aop:4.3.20.RELEASE,method call,org.springframework:spring-beans:4.3.20.RELEASE
+org.w3c.dom.Node,public,xml-apis:xml-apis:1.0.b2,cast,com.alibaba:fastjson:1.2.73
+com.alibaba.druid.bvt.filter.FilterManagerTest$ErrorFilter,public,unknownLib,Class.forName,com.alibaba:druid:1.2.5
+org.apache.log4j.spi.RendererSupport,public,log4j:log4j:1.2.17,cast,org.apache.logging.log4j:log4j-1.2-api:2.10.0
+java.util.Properties,public,unknownLib,Class.forName,org.springframework:spring:2.5.6.SEC03
+org.slf4j.impl.Log4jLoggerAdapter,public,org.slf4j:slf4j-log4j12:1.7.9,method call,org.apache.kylin:kylin-jdbc:2.0.0
+org.springframework.context.support.AbstractRefreshableConfigApplicationContext,public,org.springframework:spring-context:4.3.20.RELEASE,subtyping,org.springframework:spring:2.5.6.SEC03
+com.alibaba.druid.spring.SequenceDao,public,unknownLib,Class.forName,org.springframework:spring:2.5.6.SEC03
+org.apache.logging.log4j.core.layout.GelfLayout,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.core.lookup.UpperLookup,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+java.sql.PreparedStatement,public,java.sql,subtyping,com.alibaba:druid:1.2.5
+org.apache.logging.log4j.core.lookup.JndiLookup,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.hibernate.annotations.common.reflection.java.JavaReflectionManager,public,org.hibernate.common:hibernate-commons-annotations:5.0.1.Final,method call,org.hibernate:hibernate-core:5.1.0.Final
+java.lang.Thread,public,unknownLib,Class.forName,log4j:log4j:1.2.17
+org.springframework.beans.factory.support.BeanDefinitionRegistry,public,org.springframework:spring:2.5.6.SEC03,cast,org.springframework:spring-context:4.3.20.RELEASE
+java.sql.Statement,public,java.sql,cast,net.sourceforge.jtds:jtds:1.3.0
+org.springframework.beans.factory.config.BeanPostProcessor,public,org.springframework:spring:2.5.6.SEC03,subtyping,org.springframework:spring-context:4.3.20.RELEASE
+java.sql.ResultSetMetaData,public,java.sql,subtyping,com.alibaba:druid:1.2.5
+org.apache.logging.log4j.core.appender.rolling.action.IfNot,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.commons.logging.impl.SLF4JLocationAwareLog,public,org.slf4j:jcl-over-slf4j:1.7.21,method call,org.springframework:spring-aop:4.3.20.RELEASE
+org.springframework.beans.NotWritablePropertyException,public,org.springframework:spring:2.5.6.SEC03,instantiation,org.springframework:spring-beans:4.3.20.RELEASE
+java.sql.PreparedStatement,public,java.sql,cast,com.alibaba:druid:1.2.5
+org.aopalliance.intercept.MethodInterceptor,public,org.springframework:spring-aop:4.3.20.RELEASE,subtyping,org.springframework:spring:2.5.6.SEC03
+org.springframework.util.CollectionUtils$MultiValueMapAdapter,public,org.springframework:spring-core:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+org.apache.logging.log4j.core.appender.rolling.action.IfAccumulatedFileSize,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+com.sun.xml.internal.stream.events.XMLEventFactoryImpl,public,unknownLib,Class.forName,javax.xml.stream
+com.ibatis.sqlmap.client.SqlMapClientBuilder,public,org.apache.ibatis:ibatis-sqlmap:2.3.4.726,Class.forName,org.springframework:spring:2.5.6.SEC03
+org.apache.logging.log4j.core.layout.ScriptPatternSelector,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+java.sql.Clob,public,java.sql,cast,net.sourceforge.jtds:jtds:1.3.0
+org.springframework.beans.TypeMismatchException,public,org.springframework:spring:2.5.6.SEC03,subtyping,org.springframework:spring-beans:4.3.20.RELEASE
+org.apache.logging.log4j.message.MessageFormatMessageFactory,public,org.apache.logging.log4j:log4j-api:2.13.2,instantiation,org.jboss.logging:jboss-logging:3.3.0.Final
+org.springframework.beans.InvalidPropertyException,public,org.springframework:spring:2.5.6.SEC03,instantiation,org.springframework:spring-beans:4.3.20.RELEASE
+java.security.CodeSigner[],public,java.security,cast,xml-apis:xml-apis:1.0.b2
+org.apache.log4j.spi.LoggingEvent,public,org.apache.logging.log4j:log4j-1.2-api:2.10.0,method call,log4j:log4j:1.2.17
+java.sql.Timestamp,public,java.sql,instantiation,com.alibaba:fastjson:1.2.73
+org.apache.logging.log4j.core.config.plugins.convert.TypeConverters$BigDecimalConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+com.alibaba.druid.filter.stat.MergeStatFilter,public,com.alibaba:druid:1.2.5,Class.forName,com.alibaba:druid:1.2.5
+org.springframework.beans.factory.config.BeanExpressionContext,public,org.springframework:spring-beans:4.3.20.RELEASE,method call,org.springframework:spring-context:4.3.20.RELEASE
+org.apache.ibatis.session.SqlSessionFactoryBuilder,public,org.mybatis:mybatis:3.4.0,instantiation,org.mybatis:mybatis-spring:1.3.0
+org.apache.logging.log4j.core.appender.rolling.NoOpTriggeringPolicy,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.jdbc.support.lob.LobHandler,public,org.springframework:spring:2.5.6.SEC03,subtyping,org.springframework:spring-jdbc:4.3.20.RELEASE
+org.apache.logging.log4j.util.Strings,private,org.apache.logging.log4j:log4j-api:2.13.2,method call,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.util.StringBuilderFormattable,public,org.apache.logging.log4j:log4j-api:2.13.2,subtyping,org.apache.logging.log4j:log4j-core:2.13.2
+java.lang.reflect.Executable,public,unknownLib,Class.forName,org.springframework:spring:2.5.6.SEC03
+org.apache.logging.log4j.message.DefaultFlowMessageFactory,public,org.apache.logging.log4j:log4j-api:2.13.2,Class.forName,org.apache.logging.log4j:log4j-api:2.13.2
+org.apache.logging.log4j.core.appender.MemoryMappedFileAppender,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.hibernate.internal.CoreMessageLogger_$logger,public,org.hibernate:hibernate-core:5.1.0.Final,Class.forName,org.jboss.logging:jboss-logging:3.3.0.Final
+org.springframework.beans.factory.support.DisposableBeanAdapter$2,public,org.springframework:spring-beans:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+org.springframework.beans.factory.support.DisposableBeanAdapter$1,public,org.springframework:spring-beans:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+org.springframework.beans.factory.support.DisposableBeanAdapter$4,public,org.springframework:spring-beans:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+java.sql.NClob,public,java.sql,cast,com.alibaba:druid:1.2.5
+org.springframework.beans.factory.support.DisposableBeanAdapter$3,public,org.springframework:spring-beans:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+org.apache.logging.log4j.core.appender.rolling.DirectWriteRolloverStrategy,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.util.ObjectUtils,private,org.springframework:spring:2.5.6.SEC03,method call,org.springframework:spring-context:4.3.20.RELEASE
+org.apache.logging.log4j.core.config.plugins.convert.TypeConverters$LongConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.context.ApplicationListener,public,org.springframework:spring:2.5.6.SEC03,cast,org.springframework:spring-context:4.3.20.RELEASE
+java.security.PrivilegedAction,public,java.security,subtyping,com.alibaba:druid:1.2.5
+javax.xml.stream.XMLStreamException,public,javax.xml.stream,instantiation,dom4j:dom4j:1.6.1
+org.apache.logging.log4j.core.lookup.MarkerLookup,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.core.config.json.JsonConfigurationFactory,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.core.annotation.AnnotationUtils$AnnotationCacheKey,public,org.springframework:spring-core:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+org.apache.logging.log4j.core.appender.routing.Routes,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.util.Strings,public,org.apache.logging.log4j:log4j-api:2.13.2,method call,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.core.layout.LoggerFields,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.core.config.plugins.convert.TypeConverters$SecurityProviderConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.jboss.logging.DelegatingBasicLogger,public,org.jboss.logging:jboss-logging:3.3.0.Final,subtyping,org.hibernate:hibernate-core:5.1.0.Final
+org.apache.logging.log4j.core.filter.NoMarkerFilter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+com.ibatis.sqlmap.engine.datasource.DataSourceFactory,public,org.apache.ibatis:ibatis-sqlmap:2.3.4.726,subtyping,com.alibaba:druid:1.2.5
+com.fasterxml.jackson.core.ObjectCodec,public,com.fasterxml.jackson.core:jackson-core:2.10.0,subtyping,com.fasterxml.jackson.core:jackson-databind:2.10.0
+org.apache.logging.log4j.core.net.ssl.SslConfiguration,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.jdbc.support.lob.LobCreator,public,org.springframework:spring:2.5.6.SEC03,subtyping,com.alibaba:druid:1.2.5
+org.springframework.util.ClassUtils,default,org.springframework:spring:2.5.6.SEC03,method call,org.springframework:spring-core:4.3.20.RELEASE
+org.springframework.lang.UsesJava7,public,org.springframework:spring-core:4.3.20.RELEASE,annotation,org.springframework:spring:2.5.6.SEC03
+org.springframework.core.ParameterNameDiscoverer,public,org.springframework:spring:2.5.6.SEC03,subtyping,org.springframework:spring-core:4.3.20.RELEASE
+com.alibaba.druid.support.spring.MBeanServerFactoryBean,public,com.alibaba:druid:1.2.5,Class.forName,org.springframework:spring:2.5.6.SEC03
+org.springframework.core.MethodParameter,public,org.springframework:spring:2.5.6.SEC03,instantiation,org.springframework:spring-expression:4.3.20.RELEASE
+javax.servlet.Servlet,public,javax.servlet:servlet-api:2.5,Class.forName,org.apache.logging.log4j:log4j-api:2.13.2
+org.springframework.context.PayloadApplicationEvent,public,org.springframework:spring-context:4.3.20.RELEASE,cast,org.springframework:spring:2.5.6.SEC03
+javax.xml.transform.stream.StreamSource,public,xml-apis:xml-apis:1.0.b2,instantiation,org.hibernate:hibernate-core:5.1.0.Final
+java.sql.SQLException,public,java.sql,subtyping,com.alibaba:druid:1.2.5
+org.apache.logging.log4j.core.pattern.LineLocationPatternConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.util.ObjectUtils,protected,org.springframework:spring:2.5.6.SEC03,method call,org.springframework:spring-core:4.3.20.RELEASE
+org.springframework.core.annotation.AnnotationUtils$AnnotationCollector,public,org.springframework:spring-core:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+org.apache.logging.log4j.core.appender.db.jdbc.ColumnConfig,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.beans.factory.config.ConfigurableListableBeanFactory,public,org.springframework:spring:2.5.6.SEC03,cast,org.springframework:spring-context:4.3.20.RELEASE
+org.springframework.beans.factory.config.ConfigurableListableBeanFactory,public,org.springframework:spring:2.5.6.SEC03,cast,org.springframework:spring-aop:4.3.20.RELEASE
+org.apache.logging.log4j.core.config.plugins.convert.TypeConverters$CronExpressionConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.core.appender.RollingFileAppender,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+java.sql.Date,public,java.sql,cast,com.alibaba:fastjson:1.2.73
+org.slf4j.impl.Log4jLoggerAdapter,public,org.slf4j:slf4j-log4j12:1.7.9,method call,com.alibaba:druid:1.2.5
+org.apache.logging.log4j.core.pattern.MethodLocationPatternConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.hibernate.annotations.common.reflection.AnnotationReader,public,org.hibernate.common:hibernate-commons-annotations:5.0.1.Final,cast,org.hibernate:hibernate-core:5.1.0.Final
+java.sql.Time,public,java.sql,instantiation,org.hibernate:hibernate-core:5.1.0.Final
+org.springframework.core.LocalVariableTableParameterNameDiscoverer$LocalVariableTableVisitor,public,org.springframework:spring:2.5.6.SEC03,instantiation,org.springframework:spring-core:4.3.20.RELEASE
+org.hibernate.c3p0.internal.StrategyRegistrationProviderImpl,public,org.hibernate:hibernate-c3p0:5.1.0.Final,Class.forName,org.hibernate:hibernate-core:5.1.0.Final
+org.springframework.context.ConfigurableApplicationContext,public,org.springframework:spring:2.5.6.SEC03,cast,org.springframework:spring-context:4.3.20.RELEASE
+org.apache.logging.log4j.core.config.plugins.convert.TypeConverters$DoubleConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.core.jmx.StatusLoggerAdmin,public,org.apache.logging.log4j:log4j-core:2.13.2,method call,org.apache.logging.log4j:log4j-api:2.13.2
+org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.util.ReflectionUtils,public,org.springframework:spring:2.5.6.SEC03,method call,org.springframework:spring-core:4.3.20.RELEASE
+org.apache.logging.log4j.core.net.MulticastDnsAdvertiser,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.beans.factory.BeanClassLoaderAware,public,org.springframework:spring:2.5.6.SEC03,subtyping,org.springframework:spring-aop:4.3.20.RELEASE
+com.alibaba.druid.spring.MBeanServerFactoryBean,public,unknownLib,Class.forName,org.springframework:spring:2.5.6.SEC03
+org.apache.logging.log4j.core.config.properties.PropertiesConfigurationFactory,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.beans.propertyeditors.ReaderEditor,public,org.springframework:spring-beans:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+org.apache.log4j.Logger,public,log4j:log4j:1.2.17,method call,org.slf4j:slf4j-log4j12:1.7.9
+com.ibatis.sqlmap.engine.transaction.external.ExternalTransactionConfig,public,org.apache.ibatis:ibatis-sqlmap:2.3.4.726,Class.forName,org.springframework:spring:2.5.6.SEC03
+oracle.jdbc.OracleStatement,public,com.oracle.ojdbc:ojdbc8:19.3.0.0,cast,com.alibaba:druid:1.2.5
+org.apache.commons.logging.LogFactory,public,org.slf4j:jcl-over-slf4j:1.7.21,method call,org.springframework:spring:2.5.6.SEC03
+org.springframework.orm.ibatis.SqlMapClientFactoryBean,public,org.springframework:spring:2.5.6.SEC03,Class.forName,org.springframework:spring:2.5.6.SEC03
+java.sql.Timestamp,public,java.sql,instantiation,com.alibaba:druid:1.2.5
+org.springframework.beans.MethodInvocationException,public,org.springframework:spring:2.5.6.SEC03,instantiation,org.springframework:spring-beans:4.3.20.RELEASE
+org.springframework.beans.propertyeditors.ZoneIdEditor,public,org.springframework:spring-beans:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+org.apache.logging.log4j.core.filter.BurstFilter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+com.alibaba.druid.pool.vendor.MySqlValidConnectionChecker,public,com.alibaba:druid:1.2.5,Class.forName,com.alibaba:druid:1.2.5
+org.springframework.beans.factory.support.DefaultListableBeanFactory$3,public,org.springframework:spring-beans:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+org.springframework.aop.support.StaticMethodMatcherPointcut,public,org.springframework:spring-aop:4.3.20.RELEASE,subtyping,org.springframework:spring:2.5.6.SEC03
+java.sql.SQLException,public,java.sql,instantiation,mysql:mysql-connector-java:8.0.21
+org.jboss.logging.Log4j2Logger,default,org.jboss.logging:jboss-logging:3.3.0.Final,method call,org.hibernate.common:hibernate-commons-annotations:5.0.1.Final
+org.springframework.beans.factory.support.DefaultListableBeanFactory$2,public,org.springframework:spring-beans:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+org.apache.logging.log4j.core.config.plugins.convert.TypeConverters$PathConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.beans.factory.support.DefaultListableBeanFactory$1,public,org.springframework:spring-beans:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+org.apache.log4j.helpers.Loader,public,log4j:log4j:1.2.17,Class.forName,log4j:log4j:1.2.17
+org.springframework.beans.factory.config.BeanExpressionResolver,public,org.springframework:spring-beans:4.3.20.RELEASE,subtyping,org.springframework:spring-context:4.3.20.RELEASE
+org.springframework.expression.spel.support.StandardTypeLocator,public,org.springframework:spring-expression:4.3.20.RELEASE,instantiation,org.springframework:spring-context:4.3.20.RELEASE
+java.sql.CallableStatement,public,java.sql,subtyping,net.sourceforge.jtds:jtds:1.3.0
+org.springframework.context.EmbeddedValueResolverAware,public,org.springframework:spring-context:4.3.20.RELEASE,cast,org.springframework:spring:2.5.6.SEC03
+org.springframework.core.DefaultParameterNameDiscoverer,public,org.springframework:spring-core:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+org.apache.log4j.spi.LocationInfo,public,log4j:log4j:1.2.17,instantiation,org.apache.logging.log4j:log4j-1.2-api:2.10.0
+java.lang.Throwable,public,unknownLib,Class.forName,log4j:log4j:1.2.17
+java.sql.SQLClientInfoException,public,java.sql,instantiation,com.alibaba:druid:1.2.5
+org.apache.logging.log4j.core.appender.rewrite.MapRewritePolicy,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.core.appender.rolling.DefaultRolloverStrategy,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.core.appender.AbstractAppender,public,org.apache.logging.log4j:log4j-core:2.13.2,subtyping,org.apache.hive:hive-llap-server:3.1.2
+org.springframework.core.env.Environment,public,org.springframework:spring-core:4.3.20.RELEASE,cast,org.springframework:spring-context:4.3.20.RELEASE
+org.apache.hadoop.hive.llap.log.LlapWrappedAppender,public,org.apache.hive:hive-llap-server:3.1.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+java.sql.Connection,public,java.sql,cast,org.springframework:spring-jdbc:4.3.20.RELEASE
+org.springframework.beans.factory.xml.ParserContext,public,org.springframework:spring:2.5.6.SEC03,method call,org.springframework:spring-aop:4.3.20.RELEASE
+org.springframework.beans.PropertyEditorRegistrySupport,public,org.springframework:spring:2.5.6.SEC03,subtyping,org.springframework:spring-beans:4.3.20.RELEASE
+org.springframework.util.LinkedMultiValueMap,public,org.springframework:spring-core:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+org.apache.logging.log4j.status.StatusData,public,org.apache.logging.log4j:log4j-api:2.13.2,cast,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.beans.factory.InjectionPoint,public,org.springframework:spring-beans:4.3.20.RELEASE,subtyping,org.springframework:spring:2.5.6.SEC03
+org.apache.logging.log4j.core.net.SocketOptions,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.slf4j.impl.Log4jLoggerAdapter,public,org.slf4j:slf4j-log4j12:1.7.9,method call,org.mybatis:mybatis:3.4.0
+org.apache.logging.log4j.core.appender.AbstractAppender,public,org.apache.logging.log4j:log4j-core:2.13.2,subtyping,org.apache.logging.log4j:log4j-web:2.10.0
+com.alibaba.druid.support.ibatis.SpringIbatisBeanNameAutoProxyCreator,public,com.alibaba:druid:1.2.5,method call,org.springframework:spring-aop:4.3.20.RELEASE
+org.springframework.beans.factory.BeanExpressionException,public,org.springframework:spring-beans:4.3.20.RELEASE,instantiation,org.springframework:spring-context:4.3.20.RELEASE
+org.apache.logging.log4j.core.pattern.MessagePatternConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.core.config.AppenderControl,public,org.apache.logging.log4j:log4j-core:2.13.2,instantiation,org.apache.hive:hive-llap-server:3.1.2
+org.springframework.jmx.export.MBeanExporter,public,org.springframework:spring:2.5.6.SEC03,method call,org.springframework:spring-beans:4.3.20.RELEASE
+org.apache.logging.log4j.core.config.plugins.convert.TypeConverters$PatternConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.util.AntPathMatcher$AntPathStringMatcher,public,org.springframework:spring-core:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+org.springframework.context.ResourceLoaderAware,public,org.springframework:spring:2.5.6.SEC03,subtyping,org.springframework:spring-orm:4.3.20.RELEASE
+org.springframework.beans.factory.config.BeanPostProcessor,public,org.springframework:spring:2.5.6.SEC03,cast,org.springframework:spring-context:4.3.20.RELEASE
+org.springframework.util.StringUtils,public,org.springframework:spring:2.5.6.SEC03,method call,org.springframework:spring-aop:4.3.20.RELEASE
+org.springframework.beans.factory.support.SimpleInstantiationStrategy$1,public,org.springframework:spring-beans:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+org.springframework.beans.factory.support.SimpleInstantiationStrategy$2,public,org.springframework:spring-beans:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+org.springframework.beans.factory.support.SimpleInstantiationStrategy$3,public,org.springframework:spring-beans:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+org.springframework.beans.GenericTypeAwarePropertyDescriptor,default,org.springframework:spring:2.5.6.SEC03,method call,org.springframework:spring-beans:4.3.20.RELEASE
+java.security.KeyPairGenerator,public,java.security,method call,com.alibaba:druid:1.2.5
+org.springframework.util.AntPathMatcher$AntPatternComparator,public,org.springframework:spring-core:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+org.springframework.transaction.annotation.AnnotationTransactionAttributeSource,public,org.springframework:spring:2.5.6.SEC03,Class.forName,org.springframework:spring:2.5.6.SEC03
+com.alibaba.druid.filter.logging.Log4jFilter,public,com.alibaba:druid:1.2.5,Class.forName,com.alibaba:druid:1.2.5
+org.apache.logging.log4j.util.StackLocatorUtil,public,org.apache.logging.log4j:log4j-api:2.13.2,method call,org.apache.logging.log4j:log4j-core:2.13.2
+java.sql.SQLWarning,public,java.sql,instantiation,mysql:mysql-connector-java:8.0.21
+org.apache.logging.log4j.core.layout.PatternMatch,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.context.event.EventListenerFactory,public,org.springframework:spring-context:4.3.20.RELEASE,subtyping,org.springframework:spring-tx:4.3.20.RELEASE
+org.springframework.core.convert.TypeDescriptor,public,org.springframework:spring-core:4.3.20.RELEASE,instantiation,org.springframework:spring-expression:4.3.20.RELEASE
+org.apache.log4j.spi.ThrowableInformation,public,log4j:log4j:1.2.17,instantiation,org.apache.logging.log4j:log4j-1.2-api:2.10.0
+org.springframework.context.Lifecycle,public,org.springframework:spring:2.5.6.SEC03,cast,org.springframework:spring-context:4.3.20.RELEASE
+org.apache.logging.log4j.Logger,public,org.apache.logging.log4j:log4j-api:2.13.2,Class.forName,org.jboss.logging:jboss-logging:3.3.0.Final
+java.sql.ResultSet,public,java.sql,cast,com.alibaba:druid:1.2.5
+javax.transaction.TransactionManager,public,javax.transaction:jta:1.1,cast,org.springframework:spring-orm:4.3.20.RELEASE
+org.apache.logging.log4j.core.script.ScriptFile,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.slf4j.helpers.FormattingTuple,public,org.apache.kylin:kylin-jdbc:2.0.0,method call,org.slf4j:slf4j-log4j12:1.7.9
+org.apache.logging.log4j.core.filter.ThreadContextMapFilter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.core.io.support.EncodedResource,public,org.springframework:spring:2.5.6.SEC03,instantiation,org.springframework:spring-beans:4.3.20.RELEASE
+org.springframework.core.GenericTypeResolver,public,org.springframework:spring:2.5.6.SEC03,method call,org.springframework:spring-core:4.3.20.RELEASE
+org.springframework.jdbc.datasource.ConnectionHolder,public,org.springframework:spring-jdbc:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+org.apache.logging.log4j.core.pattern.ThrowablePatternConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.message.LoggerNameAwareMessage,public,org.apache.logging.log4j:log4j-api:2.13.2,cast,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.core.annotation.AnnotatedElementUtils,public,org.springframework:spring-core:4.3.20.RELEASE,method call,org.springframework:spring:2.5.6.SEC03
+java.sql.Time,public,java.sql,instantiation,net.sourceforge.jtds:jtds:1.3.0
+org.springframework.beans.GenericTypeAwarePropertyDescriptor,default,org.springframework:spring:2.5.6.SEC03,cast,org.springframework:spring-beans:4.3.20.RELEASE
+org.apache.logging.log4j.core.layout.JsonLayout,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+com.alibaba.druid.filter.stat.StatFilter,public,com.alibaba:druid:1.2.5,Class.forName,com.alibaba:druid:1.2.5
+org.apache.logging.log4j.core.filter.MapFilter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+java.sql.CallableStatement,public,java.sql,cast,org.hibernate:hibernate-core:5.1.0.Final
+org.springframework.beans.factory.BeanFactoryAware,public,org.springframework:spring:2.5.6.SEC03,subtyping,org.springframework:spring-aop:4.3.20.RELEASE
+com.alibaba.druid.mock.MockResultSet,public,com.alibaba:druid:1.2.5,method call,org.springframework:spring-jdbc:4.3.20.RELEASE
+org.apache.logging.log4j.message.SimpleMessage,public,org.apache.logging.log4j:log4j-api:2.13.2,instantiation,org.apache.logging.log4j:log4j-core:2.13.2
+javax.inject.Provider,public,org.glassfish.hk2.external:javax.inject:2.5.0-b32,Class.forName,org.springframework:spring:2.5.6.SEC03
+com.alibaba.druid.spring.SequenceService,public,unknownLib,Class.forName,org.springframework:spring:2.5.6.SEC03
+org.springframework.aop.framework.autoproxy.InfrastructureAdvisorAutoProxyCreator,public,org.springframework:spring-aop:4.3.20.RELEASE,method call,org.springframework:spring:2.5.6.SEC03
+org.apache.logging.log4j.util.StringBuilderFormattable,public,org.apache.logging.log4j:log4j-api:2.13.2,cast,org.apache.logging.log4j:log4j-core:2.13.2
+java.sql.SQLException,public,java.sql,cast,com.alibaba:druid:1.2.5
+org.springframework.beans.NotReadablePropertyException,public,org.springframework:spring:2.5.6.SEC03,instantiation,org.springframework:spring-beans:4.3.20.RELEASE
+org.apache.log4j.Appender,public,log4j:log4j:1.2.17,Class.forName,log4j:log4j:1.2.17
+com.mysql.cj.jdbc.ConnectionImpl,public,mysql:mysql-connector-java:8.0.21,Class.forName,com.alibaba:druid:1.2.5
+org.apache.commons.logging.impl.SLF4JLocationAwareLog,public,org.slf4j:jcl-over-slf4j:1.7.21,method call,org.springframework:spring-core:4.3.20.RELEASE
+org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator,public,org.springframework:spring-aop:4.3.20.RELEASE,subtyping,com.alibaba:druid:1.2.5
+org.slf4j.LoggerFactory,public,org.apache.kylin:kylin-jdbc:2.0.0,method call,org.mybatis:mybatis:3.4.0
+com.alibaba.druid.support.ibatis.SpringIbatisBeanNameAutoProxyCreator,public,com.alibaba:druid:1.2.5,Class.forName,org.springframework:spring:2.5.6.SEC03
+org.apache.logging.log4j.message.ObjectMessage,public,org.apache.logging.log4j:log4j-api:2.13.2,instantiation,org.apache.logging.log4j:log4j-core:2.13.2
+org.slf4j.ILoggerFactory,public,org.apache.kylin:kylin-jdbc:2.0.0,subtyping,org.slf4j:slf4j-log4j12:1.7.9
+org.apache.logging.log4j.core.pattern.AbstractStyleNameConverter$Cyan,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.context.support.LiveBeansView,public,org.springframework:spring-context:4.3.20.RELEASE,method call,org.springframework:spring:2.5.6.SEC03
+org.apache.logging.log4j.util.LoaderUtil,public,org.apache.logging.log4j:log4j-api:2.13.2,method call,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.beans.factory.support.FactoryBeanRegistrySupport$2,public,org.springframework:spring-beans:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+org.apache.commons.logging.LogFactory,public,org.slf4j:jcl-over-slf4j:1.7.21,Class.forName,org.slf4j:jcl-over-slf4j:1.7.21
+java.sql.Array,public,java.sql,cast,com.alibaba:druid:1.2.5
+org.apache.logging.log4j.core.appender.HttpAppender,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+java.security.KeyPairGenerator$Delegate,private,java.security,method call,com.alibaba:druid:1.2.5
+com.alibaba.druid.support.simplejndi.DruidDataSourceConverter,public,com.alibaba:druid:1.2.5,Class.forName,simple-jndi:simple-jndi:0.11.4.1
+org.springframework.beans.TypeMismatchException,public,org.springframework:spring:2.5.6.SEC03,instantiation,org.springframework:spring-beans:4.3.20.RELEASE
+org.springframework.beans.factory.FactoryBean,public,org.springframework:spring:2.5.6.SEC03,subtyping,org.springframework:spring-orm:4.3.20.RELEASE
+org.slf4j.spi.LocationAwareLogger,public,org.apache.kylin:kylin-jdbc:2.0.0,cast,org.slf4j:jcl-over-slf4j:1.7.21
+org.springframework.core.convert.Property,public,org.springframework:spring-core:4.3.20.RELEASE,instantiation,org.springframework:spring-expression:4.3.20.RELEASE
+org.apache.logging.log4j.core.lookup.JavaLookup,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.commons.logging.LogFactory,public,org.slf4j:jcl-over-slf4j:1.7.21,method call,org.springframework:spring-context:4.3.20.RELEASE
+com.fasterxml.jackson.core.io.SegmentedStringWriter,public,com.fasterxml.jackson.core:jackson-core:2.10.0,instantiation,com.fasterxml.jackson.core:jackson-databind:2.10.0
+org.apache.logging.log4j.spi.LoggerContextShutdownAware,public,org.apache.logging.log4j:log4j-api:2.13.2,subtyping,org.apache.logging.log4j:log4j-core:2.13.2
+java.sql.Time,public,java.sql,cast,org.hibernate:hibernate-core:5.1.0.Final
+org.slf4j.impl.Log4jLoggerAdapter,public,org.slf4j:slf4j-log4j12:1.7.9,method call,org.slf4j:jcl-over-slf4j:1.7.21
+javax.persistence.SharedCacheMode,public,org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final,cast,org.hibernate:hibernate-core:5.1.0.Final
+java.sql.PreparedStatement,public,java.sql,subtyping,mysql:mysql-connector-java:8.0.21
+org.apache.logging.log4j.util.PropertiesUtil,private,org.apache.logging.log4j:log4j-api:2.13.2,method call,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.spi.AbstractLogger,public,org.apache.logging.log4j:log4j-api:2.13.2,subtyping,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.beans.factory.DisposableBean,public,org.springframework:spring:2.5.6.SEC03,subtyping,org.springframework:spring-orm:4.3.20.RELEASE
+org.springframework.expression.spel.support.StandardEvaluationContext,public,org.springframework:spring-expression:4.3.20.RELEASE,cast,org.springframework:spring-context:4.3.20.RELEASE
+org.apache.logging.log4j.core.filter.DynamicThresholdFilter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.springframework.core.io.support.PathMatchingResourcePatternResolver,public,org.springframework:spring:2.5.6.SEC03,instantiation,org.springframework:spring-orm:4.3.20.RELEASE
+org.apache.log4j.spi.LoggingEvent,public,org.apache.logging.log4j:log4j-1.2-api:2.10.0,instantiation,log4j:log4j:1.2.17
+java.sql.Statement,public,java.sql,subtyping,com.alibaba:druid:1.2.5
+java.sql.Blob,public,java.sql,cast,com.alibaba:druid:1.2.5
+org.slf4j.spi.LocationAwareLogger,public,org.apache.kylin:kylin-jdbc:2.0.0,cast,com.alibaba:druid:1.2.5
+java.sql.Date,public,java.sql,method call,com.alibaba:druid:1.2.5
+org.apache.logging.log4j.core.appender.routing.RoutingAppender,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+com.alibaba.druid.wall.WallFilter,public,com.alibaba:druid:1.2.5,Class.forName,com.alibaba:druid:1.2.5
+org.apache.logging.log4j.spi.Terminable,public,org.apache.logging.log4j:log4j-api:2.13.2,subtyping,org.apache.logging.log4j:log4j-core:2.13.2
+java.sql.Date,public,java.sql,cast,com.alibaba:druid:1.2.5
+org.springframework.beans.BeanInfoFactory,public,org.springframework:spring-beans:4.3.20.RELEASE,cast,org.springframework:spring:2.5.6.SEC03
+javax.persistence.Converter,public,org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final,Class.forName,org.springframework:spring:2.5.6.SEC03
+org.apache.logging.log4j.core.LoggerContext,public,org.apache.logging.log4j:log4j-core:2.13.2,method call,org.apache.logging.log4j:log4j-api:2.13.2
+org.springframework.beans.factory.support.DefaultListableBeanFactory$SerializedBeanFactoryReference,public,org.springframework:spring-beans:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+org.springframework.beans.propertyeditors.CurrencyEditor,public,org.springframework:spring-beans:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+org.hibernate.annotations.common.reflection.java.JavaMetadataProvider,public,org.hibernate.common:hibernate-commons-annotations:5.0.1.Final,instantiation,org.hibernate:hibernate-core:5.1.0.Final
+java.sql.Ref,public,java.sql,cast,com.alibaba:druid:1.2.5
+org.apache.logging.log4j.core.async.DisruptorBlockingQueueFactory,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.core.config.plugins.convert.TypeConverters$ByteArrayConverter,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.core.appender.rolling.action.IfLastModified,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.spi.Provider,public,org.apache.logging.log4j:log4j-api:2.13.2,subtyping,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.message.StructuredDataCollectionMessage,public,org.apache.logging.log4j:log4j-api:2.13.2,cast,org.apache.logging.log4j:log4j-core:2.13.2
+java.sql.Driver,public,java.sql,subtyping,mysql:mysql-connector-java:8.0.21
+org.apache.logging.log4j.core.appender.db.ColumnMapping,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.logging.log4j.core.config.LoggerConfig,public,org.apache.logging.log4j:log4j-core:2.13.2,Class.forName,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.log4j.spi.OptionHandler,public,log4j:log4j:1.2.17,Class.forName,log4j:log4j:1.2.17
+org.apache.logging.log4j.util.MultiFormatStringBuilderFormattable,public,org.apache.logging.log4j:log4j-api:2.13.2,cast,org.apache.logging.log4j:log4j-core:2.13.2
+org.apache.ibatis.mapping.Environment,public,org.mybatis:mybatis:3.4.0,instantiation,org.mybatis:mybatis-spring:1.3.0
+org.springframework.core.annotation.DefaultAnnotationAttributeExtractor,public,org.springframework:spring-core:4.3.20.RELEASE,instantiation,org.springframework:spring:2.5.6.SEC03
+java.security.PrivilegedAction,public,java.security,subtyping,com.alibaba:fastjson:1.2.73
+org.slf4j.spi.MarkerFactoryBinder,public,org.apache.kylin:kylin-jdbc:2.0.0,subtyping,org.apache.logging.log4j:log4j-slf4j-impl:2.10.0

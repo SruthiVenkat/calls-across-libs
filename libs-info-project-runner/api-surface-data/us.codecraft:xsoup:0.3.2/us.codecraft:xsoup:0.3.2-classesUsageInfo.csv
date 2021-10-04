@@ -1,0 +1,51 @@
+Class Name,Class Visibility,Class Library,Usage,Used In Library
+org.w3c.dom.Node,public,org.w3c.dom,subtyping,us.codecraft:xsoup:0.3.2
+org.jsoup.select.Evaluator$AttributeWithValueNot,public,org.jsoup:jsoup:1.13.1,instantiation,us.codecraft:xsoup:0.3.2
+org.w3c.dom.Attr,public,org.w3c.dom,subtyping,us.codecraft:xsoup:0.3.2
+org.jsoup.select.Selector$SelectorParseException,public,org.jsoup:jsoup:1.13.1,instantiation,us.codecraft:xsoup:0.3.2
+org.jsoup.helper.Validate,default,org.jsoup:jsoup:1.13.1,method call,us.codecraft:xsoup:0.3.2
+org.jsoup.nodes.TextNode,public,org.jsoup:jsoup:1.13.1,method call,us.codecraft:xsoup:0.3.2
+us.codecraft.xsoup.xevaluator.XEvaluators$IsNthOfType,public,us.codecraft:xsoup:0.3.2,method call,org.jsoup:jsoup:1.13.1
+org.jsoup.select.Evaluator$AttributeWithValueContaining,public,org.jsoup:jsoup:1.13.1,method call,us.codecraft:xsoup:0.3.2
+org.jsoup.select.Evaluator$AttributeWithValue,public,org.jsoup:jsoup:1.13.1,method call,us.codecraft:xsoup:0.3.2
+org.w3c.dom.Node,public,org.w3c.dom,cast,us.codecraft:xsoup:0.3.2
+org.jsoup.select.Elements,public,org.jsoup:jsoup:1.13.1,method call,us.codecraft:xsoup:0.3.2
+org.jsoup.Jsoup,public,org.jsoup:jsoup:1.13.1,method call,us.codecraft:xsoup:0.3.2
+org.jsoup.select.Evaluator$AllElements,public,org.jsoup:jsoup:1.13.1,instantiation,us.codecraft:xsoup:0.3.2
+org.w3c.dom.Element,public,org.w3c.dom,subtyping,us.codecraft:xsoup:0.3.2
+org.jsoup.select.Evaluator$Attribute,public,org.jsoup:jsoup:1.13.1,method call,us.codecraft:xsoup:0.3.2
+org.jsoup.select.Evaluator$AllElements,public,org.jsoup:jsoup:1.13.1,method call,us.codecraft:xsoup:0.3.2
+org.jsoup.select.Evaluator$AttributeWithValueContaining,public,org.jsoup:jsoup:1.13.1,instantiation,us.codecraft:xsoup:0.3.2
+org.jsoup.nodes.Document,public,org.jsoup:jsoup:1.13.1,method call,us.codecraft:xsoup:0.3.2
+org.jsoup.select.Evaluator$AttributeWithValueMatching,public,org.jsoup:jsoup:1.13.1,instantiation,us.codecraft:xsoup:0.3.2
+org.jsoup.select.Evaluator$Attribute,public,org.jsoup:jsoup:1.13.1,instantiation,us.codecraft:xsoup:0.3.2
+org.jsoup.nodes.Attributes,public,org.jsoup:jsoup:1.13.1,method call,us.codecraft:xsoup:0.3.2
+us.codecraft.xsoup.xevaluator.CombiningEvaluator$And,default,us.codecraft:xsoup:0.3.2,method call,org.jsoup:jsoup:1.13.1
+org.jsoup.select.Elements,public,org.jsoup:jsoup:1.13.1,instantiation,us.codecraft:xsoup:0.3.2
+org.jsoup.select.Evaluator$AttributeWithValue,public,org.jsoup:jsoup:1.13.1,instantiation,us.codecraft:xsoup:0.3.2
+org.jsoup.select.Evaluator$AttributeWithValueStarting,public,org.jsoup:jsoup:1.13.1,instantiation,us.codecraft:xsoup:0.3.2
+org.jsoup.select.Evaluator$Class,public,org.jsoup:jsoup:1.13.1,instantiation,us.codecraft:xsoup:0.3.2
+org.w3c.dom.Document,public,org.w3c.dom,subtyping,us.codecraft:xsoup:0.3.2
+org.jsoup.select.Evaluator,public,org.jsoup:jsoup:1.13.1,cast,us.codecraft:xsoup:0.3.2
+org.jsoup.nodes.Element,public,org.jsoup:jsoup:1.13.1,method call,us.codecraft:xsoup:0.3.2
+org.jsoup.select.Evaluator,public,org.jsoup:jsoup:1.13.1,subtyping,us.codecraft:xsoup:0.3.2
+org.jsoup.select.Evaluator$CssNthEvaluator,public,org.jsoup:jsoup:1.13.1,subtyping,us.codecraft:xsoup:0.3.2
+org.jsoup.select.Collector,public,org.jsoup:jsoup:1.13.1,method call,us.codecraft:xsoup:0.3.2
+org.jsoup.nodes.Attribute,public,org.jsoup:jsoup:1.13.1,cast,us.codecraft:xsoup:0.3.2
+org.jsoup.select.Evaluator$AttributeWithValueEnding,public,org.jsoup:jsoup:1.13.1,instantiation,us.codecraft:xsoup:0.3.2
+java.security.AccessController,default,java.security,method call,javax.xml.xpath
+org.jsoup.select.Evaluator$Tag,public,org.jsoup:jsoup:1.13.1,method call,us.codecraft:xsoup:0.3.2
+org.jsoup.nodes.TextNode,public,org.jsoup:jsoup:1.13.1,cast,us.codecraft:xsoup:0.3.2
+org.jsoup.select.Evaluator$AttributeWithValueMatching,public,org.jsoup:jsoup:1.13.1,method call,us.codecraft:xsoup:0.3.2
+org.jsoup.nodes.Attribute,public,org.jsoup:jsoup:1.13.1,instantiation,us.codecraft:xsoup:0.3.2
+org.jsoup.nodes.Attribute,public,org.jsoup:jsoup:1.13.1,method call,us.codecraft:xsoup:0.3.2
+java.security.PrivilegedAction,public,java.security,subtyping,javax.xml.xpath
+org.jsoup.parser.Tag,public,org.jsoup:jsoup:1.13.1,method call,us.codecraft:xsoup:0.3.2
+org.jsoup.nodes.Node,public,org.jsoup:jsoup:1.13.1,cast,us.codecraft:xsoup:0.3.2
+org.jsoup.nodes.Element,public,org.jsoup:jsoup:1.13.1,cast,us.codecraft:xsoup:0.3.2
+org.jsoup.select.Evaluator$AttributeWithValueEnding,public,org.jsoup:jsoup:1.13.1,method call,us.codecraft:xsoup:0.3.2
+org.jsoup.select.Evaluator$Tag,public,org.jsoup:jsoup:1.13.1,instantiation,us.codecraft:xsoup:0.3.2
+org.w3c.dom.NamedNodeMap,public,org.w3c.dom,subtyping,us.codecraft:xsoup:0.3.2
+org.jsoup.select.Evaluator$Class,public,org.jsoup:jsoup:1.13.1,method call,us.codecraft:xsoup:0.3.2
+org.jsoup.internal.StringUtil,public,org.jsoup:jsoup:1.13.1,method call,us.codecraft:xsoup:0.3.2
+org.jsoup.helper.Validate,public,org.jsoup:jsoup:1.13.1,method call,us.codecraft:xsoup:0.3.2
