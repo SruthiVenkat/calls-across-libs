@@ -1,0 +1,282 @@
+Class Name,Class Visibility,Class Library,Usage,Used In Library
+org.apache.http.impl.conn.CPool,default,org.apache.httpcomponents:httpclient:4.5.2,method call,org.apache.httpcomponents:httpcore:4.4.4
+redis.clients.jedis.JedisPool,public,redis.clients:jedis:2.9.0,instantiation,us.codecraft:webmagic-extension:0.7.3
+us.codecraft.webmagic.Request,public,us.codecraft:webmagic-core:0.7.3,instantiation,us.codecraft:webmagic-extension:0.7.3
+org.apache.http.annotation.Immutable,public,org.apache.httpcomponents:httpcore:4.4.4,annotation,org.apache.httpcomponents:httpclient:4.5.2
+org.apache.http.NoHttpResponseException,public,org.apache.httpcomponents:httpcore:4.4.4,instantiation,org.apache.httpcomponents:httpclient:4.5.2
+org.apache.commons.lang3.time.DateUtils,public,org.apache.commons:commons-lang3:3.1,method call,us.codecraft:webmagic-extension:0.7.3
+org.apache.http.message.BufferedHeader,public,org.apache.httpcomponents:httpcore:4.4.4,instantiation,org.apache.httpcomponents:httpclient:4.5.2
+org.apache.http.util.Args,default,org.apache.httpcomponents:httpcore:4.4.4,method call,org.apache.httpcomponents:httpclient:4.5.2
+org.jsoup.Jsoup,public,org.jsoup:jsoup:1.10.3,method call,us.codecraft:webmagic-core:0.7.3
+org.apache.http.util.LangUtils,public,org.apache.httpcomponents:httpcore:4.4.4,method call,org.apache.httpcomponents:httpclient:4.5.2
+org.apache.http.impl.conn.CPoolEntry,default,org.apache.httpcomponents:httpclient:4.5.2,method call,org.apache.httpcomponents:httpcore:4.4.4
+us.codecraft.webmagic.pipeline.Pipeline,public,us.codecraft:webmagic-core:0.7.3,subtyping,us.codecraft:webmagic-extension:0.7.3
+us.codecraft.webmagic.utils.Experimental,public,us.codecraft:webmagic-core:0.7.3,annotation,us.codecraft:webmagic-extension:0.7.3
+sun.security.ec.ECParameters,public,unknownLib,Class.forName,java.security
+org.w3c.dom.Element,public,org.w3c.dom,cast,log4j:log4j:1.2.17
+us.codecraft.webmagic.selector.Html,public,us.codecraft:webmagic-core:0.7.3,method call,us.codecraft:webmagic-extension:0.7.3
+org.apache.http.entity.BufferedHttpEntity,public,org.apache.httpcomponents:httpcore:4.4.4,instantiation,org.apache.httpcomponents:httpclient:4.5.2
+org.jsoup.helper.StringUtil,public,org.jsoup:jsoup:1.10.3,method call,us.codecraft:xsoup:0.3.1
+org.apache.commons.logging.LogFactory,public,commons-logging:commons-logging:1.2,method call,org.apache.httpcomponents:httpclient:4.5.2
+org.apache.http.message.HeaderGroup,public,org.apache.httpcomponents:httpcore:4.4.4,instantiation,org.apache.httpcomponents:httpclient:4.5.2
+org.apache.commons.lang3.StringUtils,default,org.apache.commons:commons-lang3:3.1,method call,us.codecraft:webmagic-extension:0.7.3
+org.apache.http.HttpHost,public,org.apache.httpcomponents:httpcore:4.4.4,method call,org.apache.httpcomponents:httpclient:4.5.2
+org.apache.http.protocol.RequestUserAgent,public,org.apache.httpcomponents:httpcore:4.4.4,instantiation,org.apache.httpcomponents:httpclient:4.5.2
+org.apache.http.util.Asserts,public,org.apache.httpcomponents:httpcore:4.4.4,method call,org.apache.httpcomponents:httpclient:4.5.2
+org.apache.http.HttpHost,public,org.apache.httpcomponents:httpcore:4.4.4,cast,org.apache.httpcomponents:httpclient:4.5.2
+us.codecraft.xsoup.xevaluator.DefaultXPathEvaluator,public,us.codecraft:xsoup:0.3.1,method call,us.codecraft:webmagic-core:0.7.3
+org.jsoup.helper.StringUtil,public,org.jsoup:jsoup:1.10.3,method call,us.codecraft:webmagic-core:0.7.3
+java.security.MessageDigest,default,java.security,method call,com.google.guava:guava:15.0
+org.apache.http.protocol.BasicHttpContext,public,org.apache.httpcomponents:httpcore:4.4.4,instantiation,org.apache.httpcomponents:httpclient:4.5.2
+org.jsoup.nodes.Element,public,org.jsoup:jsoup:1.10.3,cast,us.codecraft:webmagic-core:0.7.3
+org.jsoup.select.Evaluator$Tag,public,org.jsoup:jsoup:1.10.3,instantiation,us.codecraft:xsoup:0.3.1
+org.apache.http.io.HttpMessageParserFactory,public,org.apache.httpcomponents:httpcore:4.4.4,subtyping,org.apache.httpcomponents:httpclient:4.5.2
+org.apache.http.client.methods.HttpGet,public,org.apache.httpcomponents:httpclient:4.5.2,instantiation,us.codecraft:webmagic-core:0.7.3
+org.apache.commons.logging.LogFactory,public,commons-logging:commons-logging:1.2,Class.forName,commons-logging:commons-logging:1.2
+org.apache.http.ProtocolException,public,org.apache.httpcomponents:httpcore:4.4.4,subtyping,org.apache.httpcomponents:httpclient:4.5.2
+org.apache.http.message.BasicRequestLine,public,org.apache.httpcomponents:httpcore:4.4.4,instantiation,org.apache.httpcomponents:httpclient:4.5.2
+org.apache.http.HttpException,public,org.apache.httpcomponents:httpcore:4.4.4,instantiation,org.apache.httpcomponents:httpclient:4.5.2
+sun.security.ec.ECDSASignature$SHA1,public,unknownLib,Class.forName,java.security
+us.codecraft.xsoup.Xsoup,public,us.codecraft:xsoup:0.3.1,method call,us.codecraft:webmagic-core:0.7.3
+org.jsoup.nodes.Element,public,org.jsoup:jsoup:1.10.3,method call,us.codecraft:webmagic-core:0.7.3
+org.jsoup.nodes.Document,public,org.jsoup:jsoup:1.10.3,method call,us.codecraft:webmagic-core:0.7.3
+sun.security.provider.NativePRNG,public,unknownLib,Class.forName,java.security
+org.jsoup.select.Selector$SelectorParseException,public,org.jsoup:jsoup:1.10.3,instantiation,us.codecraft:xsoup:0.3.1
+org.apache.http.impl.DefaultConnectionReuseStrategy,public,org.apache.httpcomponents:httpcore:4.4.4,subtyping,org.apache.httpcomponents:httpclient:4.5.2
+org.apache.http.config.Lookup,public,org.apache.httpcomponents:httpcore:4.4.4,cast,org.apache.httpcomponents:httpclient:4.5.2
+org.apache.http.HttpRequest,public,org.apache.httpcomponents:httpcore:4.4.4,cast,org.apache.httpcomponents:httpclient:4.5.2
+org.apache.http.client.protocol.RequestExpectContinue,public,org.apache.httpcomponents:httpclient:4.5.2,method call,org.apache.httpcomponents:httpcore:4.4.4
+org.slf4j.impl.Log4jLoggerAdapter,public,org.slf4j:slf4j-log4j12:1.7.6,method call,us.codecraft:webmagic-core:0.7.3
+us.codecraft.webmagic.processor.PageProcessor,public,us.codecraft:webmagic-core:0.7.3,subtyping,us.codecraft:webmagic-extension:0.7.3
+org.apache.http.config.ConnectionConfig,public,org.apache.httpcomponents:httpcore:4.4.4,method call,org.apache.httpcomponents:httpclient:4.5.2
+org.apache.http.message.BasicHeaderElementIterator,public,org.apache.httpcomponents:httpcore:4.4.4,instantiation,org.apache.httpcomponents:httpclient:4.5.2
+us.codecraft.webmagic.model.OOSpider,public,us.codecraft:webmagic-extension:0.7.3,method call,us.codecraft:webmagic-core:0.7.3
+org.apache.http.message.AbstractHttpMessage,public,org.apache.httpcomponents:httpcore:4.4.4,subtyping,org.apache.httpcomponents:httpclient:4.5.2
+us.codecraft.webmagic.selector.PlainText,public,us.codecraft:webmagic-core:0.7.3,method call,us.codecraft:webmagic-extension:0.7.3
+org.apache.http.client.methods.HttpRequestWrapper,public,org.apache.httpcomponents:httpclient:4.5.2,method call,org.apache.httpcomponents:httpcore:4.4.4
+sun.security.provider.SHA2$SHA256,public,unknownLib,Class.forName,java.security
+org.apache.http.config.ConnectionConfig,public,org.apache.httpcomponents:httpcore:4.4.4,cast,org.apache.httpcomponents:httpclient:4.5.2
+java.security.MessageDigest$Delegate,default,java.security,method call,com.google.guava:guava:15.0
+us.codecraft.webmagic.selector.AndSelector,public,us.codecraft:webmagic-core:0.7.3,instantiation,us.codecraft:webmagic-extension:0.7.3
+us.codecraft.webmagic.selector.RegexSelector,public,us.codecraft:webmagic-core:0.7.3,method call,us.codecraft:webmagic-extension:0.7.3
+org.apache.http.protocol.ImmutableHttpProcessor,public,org.apache.httpcomponents:httpcore:4.4.4,method call,org.apache.httpcomponents:httpclient:4.5.2
+org.slf4j.impl.Log4jLoggerFactory,public,org.slf4j:slf4j-log4j12:1.7.6,method call,org.slf4j:slf4j-api:1.7.6
+org.apache.http.impl.conn.LoggingManagedHttpClientConnection,default,org.apache.httpcomponents:httpclient:4.5.2,method call,org.apache.httpcomponents:httpcore:4.4.4
+org.slf4j.LoggerFactory,public,org.slf4j:slf4j-api:1.7.6,method call,us.codecraft:webmagic-extension:0.7.3
+org.apache.http.pool.ConnFactory,public,org.apache.httpcomponents:httpcore:4.4.4,subtyping,org.apache.httpcomponents:httpclient:4.5.2
+org.apache.log4j.PatternLayout,public,log4j:log4j:1.2.17,Class.forName,log4j:log4j:1.2.17
+org.apache.http.client.methods.HttpPost,public,org.apache.httpcomponents:httpclient:4.5.2,instantiation,us.codecraft:webmagic-core:0.7.3
+org.apache.http.message.HeaderGroup,public,org.apache.httpcomponents:httpcore:4.4.4,cast,org.apache.httpcomponents:httpclient:4.5.2
+net.minidev.json.parser.JSONParser,public,net.minidev:json-smart:2.3,method call,com.jayway.jsonpath:json-path:2.4.0
+org.apache.http.params.BasicHttpParams,public,org.apache.httpcomponents:httpcore:4.4.4,instantiation,org.apache.httpcomponents:httpclient:4.5.2
+sun.security.ec.ECKeyFactory,public,unknownLib,Class.forName,java.security
+us.codecraft.webmagic.scheduler.MonitorableScheduler,public,us.codecraft:webmagic-core:0.7.3,subtyping,us.codecraft:webmagic-extension:0.7.3
+org.apache.http.params.HttpParams,public,org.apache.httpcomponents:httpcore:4.4.4,cast,org.apache.httpcomponents:httpclient:4.5.2
+org.jsoup.select.Evaluator$AttributeWithValueEnding,public,org.jsoup:jsoup:1.10.3,instantiation,us.codecraft:xsoup:0.3.1
+org.apache.log4j.CategoryKey,default,log4j:log4j:1.2.17,Class.forName,log4j:log4j:1.2.17
+org.apache.http.HttpResponseInterceptor,public,org.apache.httpcomponents:httpcore:4.4.4,subtyping,org.apache.httpcomponents:httpclient:4.5.2
+org.apache.commons.logging.impl.LogFactoryImpl,public,commons-logging:commons-logging:1.2,Class.forName,commons-logging:commons-logging:1.2
+org.apache.http.client.protocol.RequestDefaultHeaders,public,org.apache.httpcomponents:httpclient:4.5.2,method call,org.apache.httpcomponents:httpcore:4.4.4
+us.codecraft.webmagic.Request,public,us.codecraft:webmagic-core:0.7.3,method call,us.codecraft:webmagic-extension:0.7.3
+java.security.MessageDigestSpi,public,java.security,Class.forName,java.security
+org.slf4j.impl.Log4jLoggerAdapter,public,org.slf4j:slf4j-log4j12:1.7.6,method call,com.jayway.jsonpath:json-path:2.4.0
+us.codecraft.webmagic.Spider,public,us.codecraft:webmagic-core:0.7.3,method call,us.codecraft:webmagic-extension:0.7.3
+org.apache.http.HttpException,public,org.apache.httpcomponents:httpcore:4.4.4,subtyping,org.apache.httpcomponents:httpclient:4.5.2
+org.slf4j.helpers.MarkerIgnoringBase,public,org.slf4j:slf4j-api:1.7.6,subtyping,org.slf4j:slf4j-log4j12:1.7.6
+org.apache.http.params.HttpParamsNames,public,org.apache.httpcomponents:httpcore:4.4.4,cast,org.apache.httpcomponents:httpclient:4.5.2
+org.apache.http.client.config.RequestConfig,public,org.apache.httpcomponents:httpclient:4.5.2,method call,us.codecraft:webmagic-core:0.7.3
+org.apache.commons.logging.impl.Log4JLogger,public,commons-logging:commons-logging:1.2,Class.forName,commons-logging:commons-logging:1.2
+org.apache.http.HttpResponse,public,org.apache.httpcomponents:httpcore:4.4.4,subtyping,org.apache.httpcomponents:httpclient:4.5.2
+us.codecraft.webmagic.downloader.HttpClientGenerator$2,default,us.codecraft:webmagic-core:0.7.3,method call,org.apache.httpcomponents:httpcore:4.4.4
+us.codecraft.webmagic.Request,public,us.codecraft:webmagic-core:0.7.3,cast,us.codecraft:webmagic-extension:0.7.3
+org.apache.http.concurrent.Cancellable,public,org.apache.httpcomponents:httpcore:4.4.4,cast,org.apache.httpcomponents:httpclient:4.5.2
+org.apache.log4j.Category,public,log4j:log4j:1.2.17,Class.forName,log4j:log4j:1.2.17
+org.apache.http.annotation.NotThreadSafe,public,org.apache.httpcomponents:httpcore:4.4.4,annotation,org.apache.httpcomponents:httpclient:4.5.2
+org.jsoup.nodes.TextNode,public,org.jsoup:jsoup:1.10.3,cast,us.codecraft:xsoup:0.3.1
+org.apache.http.entity.ByteArrayEntity,public,org.apache.httpcomponents:httpcore:4.4.4,instantiation,us.codecraft:webmagic-core:0.7.3
+org.slf4j.spi.LoggerFactoryBinder,public,org.slf4j:slf4j-api:1.7.6,subtyping,org.slf4j:slf4j-log4j12:1.7.6
+us.codecraft.webmagic.selector.XpathSelector,public,us.codecraft:webmagic-core:0.7.3,instantiation,us.codecraft:webmagic-extension:0.7.3
+org.apache.log4j.Logger,public,log4j:log4j:1.2.17,method call,org.slf4j:slf4j-log4j12:1.7.6
+org.apache.http.message.BasicNameValuePair,public,org.apache.httpcomponents:httpcore:4.4.4,instantiation,org.apache.httpcomponents:httpclient:4.5.2
+us.codecraft.webmagic.scheduler.DuplicateRemovedScheduler,public,us.codecraft:webmagic-core:0.7.3,subtyping,us.codecraft:webmagic-extension:0.7.3
+org.jsoup.parser.Tag,public,org.jsoup:jsoup:1.10.3,method call,us.codecraft:xsoup:0.3.1
+org.xml.sax.InputSource,public,org.xml.sax,instantiation,javax.xml.parsers
+org.jsoup.nodes.Node,public,org.jsoup:jsoup:1.10.3,cast,us.codecraft:xsoup:0.3.1
+org.apache.http.config.SocketConfig,public,org.apache.httpcomponents:httpcore:4.4.4,method call,us.codecraft:webmagic-core:0.7.3
+us.codecraft.webmagic.Spider,public,us.codecraft:webmagic-core:0.7.3,subtyping,us.codecraft:webmagic-extension:0.7.3
+org.apache.http.conn.ssl.SSLConnectionSocketFactory,public,org.apache.httpcomponents:httpclient:4.5.2,instantiation,us.codecraft:webmagic-core:0.7.3
+org.apache.http.concurrent.Cancellable,public,org.apache.httpcomponents:httpcore:4.4.4,subtyping,org.apache.httpcomponents:httpclient:4.5.2
+org.apache.http.HttpEntityEnclosingRequest,public,org.apache.httpcomponents:httpcore:4.4.4,subtyping,org.apache.httpcomponents:httpclient:4.5.2
+org.jsoup.select.Evaluator$Class,public,org.jsoup:jsoup:1.10.3,method call,us.codecraft:xsoup:0.3.1
+us.codecraft.xsoup.xevaluator.DefaultXElements,public,us.codecraft:xsoup:0.3.1,method call,us.codecraft:webmagic-core:0.7.3
+us.codecraft.webmagic.ResultItems,public,us.codecraft:webmagic-core:0.7.3,method call,us.codecraft:webmagic-extension:0.7.3
+sun.security.ssl.SSLContextImpl$TLS10Context,public,unknownLib,Class.forName,java.security
+sun.security.ec.ECKeyPairGenerator,public,unknownLib,Class.forName,java.security
+org.xml.sax.ErrorHandler,public,org.xml.sax,subtyping,log4j:log4j:1.2.17
+java.security.PrivilegedAction,public,java.security,subtyping,commons-logging:commons-logging:1.2
+org.apache.http.auth.AuthState,public,org.apache.httpcomponents:httpclient:4.5.2,instantiation,us.codecraft:webmagic-core:0.7.3
+com.google.common.hash.Funnels,public,com.google.guava:guava:15.0,method call,us.codecraft:webmagic-extension:0.7.3
+org.apache.http.Header,public,org.apache.httpcomponents:httpcore:4.4.4,cast,org.apache.httpcomponents:httpclient:4.5.2
+org.apache.log4j.Priority,public,log4j:log4j:1.2.17,Class.forName,commons-logging:commons-logging:1.2
+org.jsoup.nodes.Document,public,org.jsoup:jsoup:1.10.3,instantiation,us.codecraft:webmagic-core:0.7.3
+org.jsoup.nodes.TextNode,public,org.jsoup:jsoup:1.10.3,method call,us.codecraft:xsoup:0.3.1
+us.codecraft.webmagic.scheduler.component.DuplicateRemover,public,us.codecraft:webmagic-core:0.7.3,subtyping,us.codecraft:webmagic-extension:0.7.3
+org.apache.http.protocol.HttpRequestExecutor,public,org.apache.httpcomponents:httpcore:4.4.4,instantiation,org.apache.httpcomponents:httpclient:4.5.2
+org.apache.http.HttpInetConnection,public,org.apache.httpcomponents:httpcore:4.4.4,subtyping,org.apache.httpcomponents:httpclient:4.5.2
+org.apache.http.message.BasicHttpRequest,public,org.apache.httpcomponents:httpcore:4.4.4,instantiation,org.apache.httpcomponents:httpclient:4.5.2
+org.jsoup.select.Elements,public,org.jsoup:jsoup:1.10.3,method call,us.codecraft:xsoup:0.3.1
+org.apache.http.HttpEntityEnclosingRequest,public,org.apache.httpcomponents:httpcore:4.4.4,cast,org.apache.httpcomponents:httpclient:4.5.2
+org.apache.http.protocol.RequestContent,public,org.apache.httpcomponents:httpcore:4.4.4,instantiation,org.apache.httpcomponents:httpclient:4.5.2
+org.jsoup.select.Evaluator$AllElements,public,org.jsoup:jsoup:1.10.3,instantiation,us.codecraft:xsoup:0.3.1
+org.jsoup.select.Evaluator$AttributeWithValueContaining,public,org.jsoup:jsoup:1.10.3,instantiation,us.codecraft:xsoup:0.3.1
+java.lang.Throwable,public,unknownLib,Class.forName,log4j:log4j:1.2.17
+org.apache.http.HttpHost,public,org.apache.httpcomponents:httpcore:4.4.4,instantiation,org.apache.httpcomponents:httpclient:4.5.2
+org.apache.http.HttpClientConnection,public,org.apache.httpcomponents:httpcore:4.4.4,subtyping,org.apache.httpcomponents:httpclient:4.5.2
+org.apache.http.HttpEntity,public,org.apache.httpcomponents:httpcore:4.4.4,cast,org.apache.httpcomponents:httpclient:4.5.2
+org.apache.http.config.SocketConfig,public,org.apache.httpcomponents:httpcore:4.4.4,cast,org.apache.httpcomponents:httpclient:4.5.2
+org.xml.sax.InputSource,public,org.xml.sax,method call,log4j:log4j:1.2.17
+org.apache.http.client.protocol.RequestAcceptEncoding,public,org.apache.httpcomponents:httpclient:4.5.2,method call,org.apache.httpcomponents:httpcore:4.4.4
+org.slf4j.helpers.FormattingTuple,public,org.slf4j:slf4j-api:1.7.6,method call,org.slf4j:slf4j-log4j12:1.7.6
+org.jsoup.select.Evaluator$AttributeWithValue,public,org.jsoup:jsoup:1.10.3,instantiation,us.codecraft:xsoup:0.3.1
+java.lang.String,public,unknownLib,Class.forName,log4j:log4j:1.2.17
+org.apache.http.config.SocketConfig,public,org.apache.httpcomponents:httpcore:4.4.4,method call,org.apache.httpcomponents:httpclient:4.5.2
+org.apache.commons.collections.CollectionUtils,public,commons-collections:commons-collections:3.2.2,method call,us.codecraft:webmagic-core:0.7.3
+org.jsoup.select.Evaluator$Class,public,org.jsoup:jsoup:1.10.3,instantiation,us.codecraft:xsoup:0.3.1
+java.security.AlgorithmParametersSpi,public,java.security,Class.forName,java.security
+org.apache.http.impl.client.BasicCookieStore,public,org.apache.httpcomponents:httpclient:4.5.2,instantiation,us.codecraft:webmagic-core:0.7.3
+org.apache.http.FormattedHeader,public,org.apache.httpcomponents:httpcore:4.4.4,cast,org.apache.httpcomponents:httpclient:4.5.2
+org.slf4j.helpers.MessageFormatter,public,org.slf4j:slf4j-api:1.7.6,method call,org.slf4j:slf4j-log4j12:1.7.6
+org.apache.http.impl.client.HttpClients,public,org.apache.httpcomponents:httpclient:4.5.2,method call,us.codecraft:webmagic-core:0.7.3
+org.jsoup.select.Evaluator$CssNthEvaluator,public,org.jsoup:jsoup:1.10.3,subtyping,us.codecraft:xsoup:0.3.1
+org.apache.http.pool.PoolEntry,public,org.apache.httpcomponents:httpcore:4.4.4,subtyping,org.apache.httpcomponents:httpclient:4.5.2
+org.apache.log4j.LogManager,public,log4j:log4j:1.2.17,method call,org.slf4j:slf4j-log4j12:1.7.6
+org.jsoup.examples.HtmlToPlainText,public,org.jsoup:jsoup:1.10.3,method call,us.codecraft:xsoup:0.3.1
+org.apache.http.HttpClientConnection,public,org.apache.httpcomponents:httpcore:4.4.4,cast,org.apache.httpcomponents:httpclient:4.5.2
+org.slf4j.Logger,public,org.slf4j:slf4j-api:1.7.6,cast,org.slf4j:slf4j-log4j12:1.7.6
+org.apache.http.impl.conn.PoolingHttpClientConnectionManager$InternalConnectionFactory,default,org.apache.httpcomponents:httpclient:4.5.2,method call,org.apache.httpcomponents:httpcore:4.4.4
+us.codecraft.webmagic.scheduler.MonitorableScheduler,public,us.codecraft:webmagic-core:0.7.3,cast,us.codecraft:webmagic-extension:0.7.3
+org.apache.http.pool.AbstractConnPool,public,org.apache.httpcomponents:httpcore:4.4.4,subtyping,org.apache.httpcomponents:httpclient:4.5.2
+org.apache.log4j.Logger,public,log4j:log4j:1.2.17,method call,commons-logging:commons-logging:1.2
+org.jsoup.select.Elements,public,org.jsoup:jsoup:1.10.3,method call,us.codecraft:webmagic-core:0.7.3
+org.apache.http.impl.cookie.BasicClientCookie,public,org.apache.httpcomponents:httpclient:4.5.2,instantiation,us.codecraft:webmagic-core:0.7.3
+net.minidev.asm.Accessor,public,net.minidev:accessors-smart:1.2,cast,net.minidev:json-smart:2.3
+org.apache.http.config.RegistryBuilder,public,org.apache.httpcomponents:httpcore:4.4.4,method call,us.codecraft:webmagic-core:0.7.3
+org.apache.http.HttpHost,public,org.apache.httpcomponents:httpcore:4.4.4,instantiation,us.codecraft:webmagic-core:0.7.3
+us.codecraft.webmagic.selector.CssSelector,public,us.codecraft:webmagic-core:0.7.3,instantiation,us.codecraft:webmagic-extension:0.7.3
+org.slf4j.impl.Log4jLoggerAdapter,public,org.slf4j:slf4j-log4j12:1.7.6,method call,us.codecraft:webmagic-extension:0.7.3
+org.apache.http.impl.client.HttpClientBuilder,public,org.apache.httpcomponents:httpclient:4.5.2,method call,us.codecraft:webmagic-core:0.7.3
+net.minidev.json.writer.DefaultMapperOrdered,public,net.minidev:json-smart:2.3,method call,com.jayway.jsonpath:json-path:2.4.0
+java.lang.String,public,unknownLib,Class.forName,commons-logging:commons-logging:1.2
+org.apache.http.config.Registry,public,org.apache.httpcomponents:httpcore:4.4.4,method call,org.apache.httpcomponents:httpclient:4.5.2
+org.apache.http.ProtocolException,public,org.apache.httpcomponents:httpcore:4.4.4,instantiation,org.apache.httpcomponents:httpclient:4.5.2
+org.jsoup.helper.Validate,public,org.jsoup:jsoup:1.10.3,method call,us.codecraft:xsoup:0.3.1
+us.codecraft.webmagic.SpiderListener,public,us.codecraft:webmagic-core:0.7.3,subtyping,us.codecraft:webmagic-extension:0.7.3
+com.google.common.hash.BloomFilter,public,com.google.guava:guava:15.0,method call,us.codecraft:webmagic-extension:0.7.3
+org.apache.http.auth.UsernamePasswordCredentials,public,org.apache.httpcomponents:httpclient:4.5.2,instantiation,us.codecraft:webmagic-core:0.7.3
+us.codecraft.webmagic.selector.OrSelector,public,us.codecraft:webmagic-core:0.7.3,instantiation,us.codecraft:webmagic-extension:0.7.3
+javax.xml.parsers.DocumentBuilderFactory,public,javax.xml.parsers,method call,log4j:log4j:1.2.17
+java.security.MessageDigest,public,java.security,cast,com.google.guava:guava:15.0
+sun.security.ec.ECDSASignature$Raw,public,unknownLib,Class.forName,java.security
+org.slf4j.impl.StaticLoggerBinder,public,org.slf4j:slf4j-log4j12:1.7.6,method call,org.slf4j:slf4j-api:1.7.6
+org.jsoup.select.Evaluator$AttributeWithValueNot,public,org.jsoup:jsoup:1.10.3,instantiation,us.codecraft:xsoup:0.3.1
+us.codecraft.xsoup.xevaluator.XEvaluators$IsNthOfType,public,us.codecraft:xsoup:0.3.1,method call,org.jsoup:jsoup:1.10.3
+org.xml.sax.EntityResolver,public,org.xml.sax,subtyping,log4j:log4j:1.2.17
+org.apache.http.impl.client.LaxRedirectStrategy,public,org.apache.httpcomponents:httpclient:4.5.2,subtyping,us.codecraft:webmagic-core:0.7.3
+org.xml.sax.InputSource,public,org.xml.sax,instantiation,log4j:log4j:1.2.17
+org.apache.http.client.methods.HttpRequestWrapper,public,org.apache.httpcomponents:httpclient:4.5.2,method call,us.codecraft:webmagic-core:0.7.3
+org.apache.http.impl.DefaultBHttpClientConnection,public,org.apache.httpcomponents:httpcore:4.4.4,subtyping,org.apache.httpcomponents:httpclient:4.5.2
+org.apache.http.message.BasicHeaderIterator,public,org.apache.httpcomponents:httpcore:4.4.4,instantiation,org.apache.httpcomponents:httpclient:4.5.2
+org.apache.log4j.xml.DOMConfigurator,public,log4j:log4j:1.2.17,Class.forName,log4j:log4j:1.2.17
+org.apache.http.config.RegistryBuilder,public,org.apache.httpcomponents:httpcore:4.4.4,method call,org.apache.httpcomponents:httpclient:4.5.2
+org.jsoup.select.Evaluator$AttributeWithValue,public,org.jsoup:jsoup:1.10.3,method call,us.codecraft:xsoup:0.3.1
+org.slf4j.LoggerFactory,default,org.slf4j:slf4j-api:1.7.6,method call,us.codecraft:webmagic-extension:0.7.3
+sun.security.provider.SHA,public,unknownLib,Class.forName,java.security
+org.apache.http.client.methods.RequestBuilder,public,org.apache.httpcomponents:httpclient:4.5.2,method call,us.codecraft:webmagic-core:0.7.3
+org.apache.commons.logging.LogFactory,default,commons-logging:commons-logging:1.2,method call,org.apache.httpcomponents:httpclient:4.5.2
+org.apache.http.client.protocol.RequestAuthCache,public,org.apache.httpcomponents:httpclient:4.5.2,method call,org.apache.httpcomponents:httpcore:4.4.4
+redis.clients.jedis.JedisPoolConfig,public,redis.clients:jedis:2.9.0,instantiation,us.codecraft:webmagic-extension:0.7.3
+org.apache.http.impl.conn.DefaultHttpResponseParserFactory,public,org.apache.httpcomponents:httpclient:4.5.2,method call,org.apache.httpcomponents:httpcore:4.4.4
+org.slf4j.LoggerFactory,public,org.slf4j:slf4j-api:1.7.6,method call,us.codecraft:webmagic-core:0.7.3
+us.codecraft.webmagic.selector.HtmlNode,public,us.codecraft:webmagic-core:0.7.3,method call,us.codecraft:webmagic-extension:0.7.3
+org.apache.http.util.CharArrayBuffer,public,org.apache.httpcomponents:httpcore:4.4.4,instantiation,org.apache.httpcomponents:httpclient:4.5.2
+org.apache.http.message.BasicHeader,public,org.apache.httpcomponents:httpcore:4.4.4,instantiation,org.apache.httpcomponents:httpclient:4.5.2
+org.jsoup.nodes.Document,public,org.jsoup:jsoup:1.10.3,method call,us.codecraft:xsoup:0.3.1
+sun.security.provider.SHA5$SHA512,public,unknownLib,Class.forName,java.security
+org.apache.http.impl.conn.PoolingHttpClientConnectionManager,public,org.apache.httpcomponents:httpclient:4.5.2,method call,us.codecraft:webmagic-core:0.7.3
+org.jsoup.select.Evaluator$Attribute,public,org.jsoup:jsoup:1.10.3,instantiation,us.codecraft:xsoup:0.3.1
+org.jsoup.select.Evaluator$AttributeWithValueMatching,public,org.jsoup:jsoup:1.10.3,instantiation,us.codecraft:xsoup:0.3.1
+org.apache.http.message.ParserCursor,public,org.apache.httpcomponents:httpcore:4.4.4,instantiation,org.apache.httpcomponents:httpclient:4.5.2
+us.codecraft.xsoup.xevaluator.CombiningEvaluator$And,default,us.codecraft:xsoup:0.3.1,method call,org.jsoup:jsoup:1.10.3
+us.codecraft.webmagic.selector.JsonPathSelector,public,us.codecraft:webmagic-core:0.7.3,method call,us.codecraft:webmagic-extension:0.7.3
+org.apache.http.HttpRequest,public,org.apache.httpcomponents:httpcore:4.4.4,subtyping,org.apache.httpcomponents:httpclient:4.5.2
+org.apache.http.annotation.Obsolete,public,org.apache.httpcomponents:httpcore:4.4.4,annotation,org.apache.httpcomponents:httpclient:4.5.2
+org.apache.http.client.config.RequestConfig$Builder,public,org.apache.httpcomponents:httpclient:4.5.2,method call,us.codecraft:webmagic-core:0.7.3
+us.codecraft.webmagic.configurable.ConfigurablePageProcessor,public,us.codecraft:webmagic-extension:0.7.3,method call,us.codecraft:webmagic-core:0.7.3
+org.jsoup.select.Evaluator$AttributeWithValueStarting,public,org.jsoup:jsoup:1.10.3,instantiation,us.codecraft:xsoup:0.3.1
+org.apache.http.NameValuePair,public,org.apache.httpcomponents:httpcore:4.4.4,cast,org.apache.httpcomponents:httpclient:4.5.2
+org.jsoup.select.Elements,public,org.jsoup:jsoup:1.10.3,instantiation,us.codecraft:xsoup:0.3.1
+org.apache.http.params.HttpProtocolParams,public,org.apache.httpcomponents:httpcore:4.4.4,method call,org.apache.httpcomponents:httpclient:4.5.2
+org.jsoup.select.Evaluator,public,org.jsoup:jsoup:1.10.3,subtyping,us.codecraft:xsoup:0.3.1
+org.apache.log4j.ConsoleAppender,public,log4j:log4j:1.2.17,Class.forName,log4j:log4j:1.2.17
+org.apache.http.impl.client.CloseableHttpClient,public,org.apache.httpcomponents:httpclient:4.5.2,cast,us.codecraft:webmagic-core:0.7.3
+org.apache.http.HttpRequestInterceptor,public,org.apache.httpcomponents:httpcore:4.4.4,subtyping,us.codecraft:webmagic-core:0.7.3
+org.jsoup.examples.HtmlToPlainText,public,org.jsoup:jsoup:1.10.3,instantiation,us.codecraft:xsoup:0.3.1
+org.jsoup.nodes.Element,public,org.jsoup:jsoup:1.10.3,method call,us.codecraft:xsoup:0.3.1
+org.slf4j.spi.LocationAwareLogger,public,org.slf4j:slf4j-api:1.7.6,subtyping,org.slf4j:slf4j-log4j12:1.7.6
+org.apache.http.util.Args,public,org.apache.httpcomponents:httpcore:4.4.4,method call,org.apache.httpcomponents:httpclient:4.5.2
+org.apache.http.client.protocol.HttpClientContext,public,org.apache.httpcomponents:httpclient:4.5.2,instantiation,us.codecraft:webmagic-core:0.7.3
+com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl,public,unknownLib,Class.forName,javax.xml.parsers
+org.apache.http.HttpResponseInterceptor,public,org.apache.httpcomponents:httpcore:4.4.4,cast,org.apache.httpcomponents:httpclient:4.5.2
+org.apache.http.client.protocol.RequestAddCookies,public,org.apache.httpcomponents:httpclient:4.5.2,method call,org.apache.httpcomponents:httpcore:4.4.4
+org.jsoup.select.Evaluator,public,org.jsoup:jsoup:1.10.3,cast,us.codecraft:xsoup:0.3.1
+org.jsoup.select.Collector,public,org.jsoup:jsoup:1.10.3,method call,us.codecraft:xsoup:0.3.1
+us.codecraft.webmagic.model.ModelPageProcessor,default,us.codecraft:webmagic-extension:0.7.3,method call,us.codecraft:webmagic-core:0.7.3
+org.apache.http.client.methods.HttpRequestWrapper,public,org.apache.httpcomponents:httpclient:4.5.2,cast,us.codecraft:webmagic-core:0.7.3
+org.apache.log4j.Logger,public,log4j:log4j:1.2.17,Class.forName,log4j:log4j:1.2.17
+org.jsoup.select.Evaluator$Tag,public,org.jsoup:jsoup:1.10.3,method call,us.codecraft:xsoup:0.3.1
+org.apache.http.protocol.HttpContext,public,org.apache.httpcomponents:httpcore:4.4.4,subtyping,org.apache.httpcomponents:httpclient:4.5.2
+us.codecraft.webmagic.model.ModelPipeline,default,us.codecraft:webmagic-extension:0.7.3,method call,us.codecraft:webmagic-core:0.7.3
+net.minidev.json.parser.JSONParser,public,net.minidev:json-smart:2.3,instantiation,com.jayway.jsonpath:json-path:2.4.0
+org.slf4j.ILoggerFactory,public,org.slf4j:slf4j-api:1.7.6,subtyping,org.slf4j:slf4j-log4j12:1.7.6
+org.jsoup.nodes.Node,public,org.jsoup:jsoup:1.10.3,cast,us.codecraft:webmagic-core:0.7.3
+org.apache.http.protocol.HttpProcessorBuilder,public,org.apache.httpcomponents:httpcore:4.4.4,method call,org.apache.httpcomponents:httpclient:4.5.2
+org.apache.http.params.BasicHttpParams,public,org.apache.httpcomponents:httpcore:4.4.4,method call,org.apache.httpcomponents:httpclient:4.5.2
+org.apache.http.impl.conn.PoolingHttpClientConnectionManager,public,org.apache.httpcomponents:httpclient:4.5.2,instantiation,us.codecraft:webmagic-core:0.7.3
+org.apache.http.impl.io.AbstractMessageParser,public,org.apache.httpcomponents:httpcore:4.4.4,subtyping,org.apache.httpcomponents:httpclient:4.5.2
+org.apache.http.client.protocol.HttpClientContext,public,org.apache.httpcomponents:httpclient:4.5.2,method call,org.apache.httpcomponents:httpcore:4.4.4
+sun.security.provider.MD5,public,unknownLib,Class.forName,java.security
+org.jsoup.nodes.Element,public,org.jsoup:jsoup:1.10.3,cast,us.codecraft:xsoup:0.3.1
+org.apache.log4j.spi.Configurator,public,log4j:log4j:1.2.17,Class.forName,log4j:log4j:1.2.17
+org.apache.http.protocol.HttpContext,public,org.apache.httpcomponents:httpcore:4.4.4,cast,org.apache.httpcomponents:httpclient:4.5.2
+org.apache.http.annotation.ThreadSafe,public,org.apache.httpcomponents:httpcore:4.4.4,annotation,org.apache.httpcomponents:httpclient:4.5.2
+us.codecraft.webmagic.utils.UrlUtils,public,us.codecraft:webmagic-core:0.7.3,method call,us.codecraft:webmagic-extension:0.7.3
+org.apache.http.impl.client.DefaultHttpRequestRetryHandler,public,org.apache.httpcomponents:httpclient:4.5.2,instantiation,us.codecraft:webmagic-core:0.7.3
+org.apache.log4j.Level,public,log4j:log4j:1.2.17,Class.forName,commons-logging:commons-logging:1.2
+org.apache.commons.logging.impl.Log4JLogger,public,commons-logging:commons-logging:1.2,method call,org.apache.httpcomponents:httpclient:4.5.2
+org.apache.http.message.BasicRequestLine,public,org.apache.httpcomponents:httpcore:4.4.4,method call,org.apache.httpcomponents:httpclient:4.5.2
+us.codecraft.webmagic.Page,public,us.codecraft:webmagic-core:0.7.3,method call,us.codecraft:webmagic-extension:0.7.3
+org.jsoup.nodes.TextNode,public,org.jsoup:jsoup:1.10.3,cast,us.codecraft:webmagic-core:0.7.3
+org.apache.http.protocol.ImmutableHttpProcessor,public,org.apache.httpcomponents:httpcore:4.4.4,instantiation,org.apache.httpcomponents:httpclient:4.5.2
+us.codecraft.webmagic.selector.JsonPathSelector,public,us.codecraft:webmagic-core:0.7.3,instantiation,us.codecraft:webmagic-extension:0.7.3
+com.jayway.jsonpath.JsonPath,public,com.jayway.jsonpath:json-path:2.4.0,method call,us.codecraft:webmagic-core:0.7.3
+org.apache.http.protocol.HttpCoreContext,public,org.apache.httpcomponents:httpcore:4.4.4,subtyping,org.apache.httpcomponents:httpclient:4.5.2
+net.minidev.json.writer.JsonReaderI,public,net.minidev:json-smart:2.3,subtyping,com.jayway.jsonpath:json-path:2.4.0
+org.apache.http.HttpRequestInterceptor,public,org.apache.httpcomponents:httpcore:4.4.4,cast,org.apache.httpcomponents:httpclient:4.5.2
+org.apache.http.message.BasicTokenIterator,public,org.apache.httpcomponents:httpcore:4.4.4,instantiation,org.apache.httpcomponents:httpclient:4.5.2
+us.codecraft.webmagic.selector.Selectors,public,us.codecraft:webmagic-core:0.7.3,method call,us.codecraft:webmagic-extension:0.7.3
+org.apache.http.annotation.ThreadSafe,public,org.apache.httpcomponents:httpcore:4.4.4,annotation,us.codecraft:webmagic-core:0.7.3
+java.security.PrivilegedAction,public,java.security,subtyping,javax.xml.parsers
+org.apache.commons.lang3.StringUtils,public,org.apache.commons:commons-lang3:3.1,method call,us.codecraft:webmagic-core:0.7.3
+org.apache.http.util.TextUtils,public,org.apache.httpcomponents:httpcore:4.4.4,method call,org.apache.httpcomponents:httpclient:4.5.2
+us.codecraft.webmagic.selector.RegexSelector,public,us.codecraft:webmagic-core:0.7.3,instantiation,us.codecraft:webmagic-extension:0.7.3
+net.minidev.json.writer.JsonReader,public,net.minidev:json-smart:2.3,cast,com.jayway.jsonpath:json-path:2.4.0
+org.apache.http.config.SocketConfig$Builder,public,org.apache.httpcomponents:httpcore:4.4.4,method call,us.codecraft:webmagic-core:0.7.3
+us.codecraft.webmagic.monitor.SpiderMonitor$MonitorSpiderListener,public,us.codecraft:webmagic-extension:0.7.3,method call,us.codecraft:webmagic-core:0.7.3
+org.apache.http.impl.auth.BasicScheme,public,org.apache.httpcomponents:httpclient:4.5.2,instantiation,us.codecraft:webmagic-core:0.7.3
+org.apache.http.pool.ConnPoolControl,public,org.apache.httpcomponents:httpcore:4.4.4,subtyping,org.apache.httpcomponents:httpclient:4.5.2
+org.apache.http.impl.client.InternalHttpClient,default,org.apache.httpcomponents:httpclient:4.5.2,method call,us.codecraft:webmagic-core:0.7.3
+java.lang.Thread,public,unknownLib,Class.forName,log4j:log4j:1.2.17
+org.apache.http.HttpRequestInterceptor,public,org.apache.httpcomponents:httpcore:4.4.4,subtyping,org.apache.httpcomponents:httpclient:4.5.2
+org.apache.commons.logging.impl.WeakHashtable,public,commons-logging:commons-logging:1.2,Class.forName,commons-logging:commons-logging:1.2
+org.apache.http.protocol.RequestTargetHost,public,org.apache.httpcomponents:httpcore:4.4.4,instantiation,org.apache.httpcomponents:httpclient:4.5.2
+org.apache.http.client.protocol.RequestClientConnControl,public,org.apache.httpcomponents:httpclient:4.5.2,method call,org.apache.httpcomponents:httpcore:4.4.4

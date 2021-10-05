@@ -50,8 +50,8 @@ for x in plugins:
 							a.text = a.text + " -javaagent:/calls-across-libs/libs-info-agent/target/libs-info-agent-1.0-SNAPSHOT.jar -Xbootclasspath/a:/root/.m2/repository/org/javassist/javassist/3.27.0-GA/javassist-3.27.0-GA.jar:/calls-across-libs/libs-info-agent/target/libs-info-agent-1.0-SNAPSHOT.jar"
 tree.write('./projects/thymeleaf-tests/pom.xml')
 
-# thymeleaf-tests
-tree = ET.parse('./projects/thymeleaf-tests/pom.xml')
+# socket.io-client-java
+tree = ET.parse('./projects/socket.io-client-java/pom.xml')
 ET.register_namespace("", "http://maven.apache.org/POM/4.0.0")
 root = tree.getroot()
 build = next((x for x in root if x.tag=="{http://maven.apache.org/POM/4.0.0}build"), None)
@@ -64,7 +64,7 @@ for x in plugins:
 					for a in z:
 						if a.tag=="{http://maven.apache.org/POM/4.0.0}argLine":
 							a.text = a.text + " -javaagent:/calls-across-libs/libs-info-agent/target/libs-info-agent-1.0-SNAPSHOT.jar -Xbootclasspath/a:/root/.m2/repository/org/javassist/javassist/3.27.0-GA/javassist-3.27.0-GA.jar:/calls-across-libs/libs-info-agent/target/libs-info-agent-1.0-SNAPSHOT.jar"
-tree.write('./projects/thymeleaf-tests/pom.xml')
+tree.write('./projects/socket.io-client-java/pom.xml')
 
 # rest-assured
 tree = ET.parse('./projects/rest-assured/pom.xml')

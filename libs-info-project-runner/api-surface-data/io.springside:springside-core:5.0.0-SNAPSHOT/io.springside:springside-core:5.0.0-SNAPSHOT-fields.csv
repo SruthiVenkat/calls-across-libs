@@ -1,0 +1,7 @@
+Callee Library,Field Name,Declared Class,Actual Class,Field Signature,Static,Visibility,Field Library,Reflective,Count
+org.slf4j:slf4j-api:1.7.22,org.slf4j.impl.StaticLoggerBinder::REQUESTED_API_VERSION,org.slf4j.impl.StaticLoggerBinder,org.slf4j.impl.StaticLoggerBinder,java.lang.String,true,public,ch.qos.logback:logback-classic:1.1.8,false,1
+ch.qos.logback:logback-classic:1.1.8,ch.qos.logback.core.spi.FilterReply::ACCEPT,ch.qos.logback.core.spi.FilterReply,ch.qos.logback.core.spi.FilterReply,ch.qos.logback.core.spi.FilterReply,true,public,ch.qos.logback:logback-core:1.1.8,false,7
+ch.qos.logback:logback-classic:1.1.8,ch.qos.logback.core.spi.FilterReply::DENY,ch.qos.logback.core.spi.FilterReply,ch.qos.logback.core.spi.FilterReply,ch.qos.logback.core.spi.FilterReply,true,public,ch.qos.logback:logback-core:1.1.8,false,10
+ch.qos.logback:logback-classic:1.1.8,ch.qos.logback.core.spi.FilterReply::NEUTRAL,ch.qos.logback.core.spi.FilterReply,ch.qos.logback.core.spi.FilterReply,ch.qos.logback.core.spi.FilterReply,true,public,ch.qos.logback:logback-core:1.1.8,false,14
+io.springside:springside-utils:5.0.0-SNAPSHOT,org.apache.commons.lang3.ArrayUtils::EMPTY_OBJECT_ARRAY,org.apache.commons.lang3.ArrayUtils,org.apache.commons.lang3.ArrayUtils,java.lang.Object[],true,public,org.apache.commons:commons-lang3:3.5,false,1
+ch.qos.logback:logback-classic:1.1.8,ch.qos.logback.core.CoreConstants::LINE_SEPARATOR,ch.qos.logback.core.CoreConstants,ch.qos.logback.core.CoreConstants,java.lang.String,true,public,ch.qos.logback:logback-core:1.1.8,false,5

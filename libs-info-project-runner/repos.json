@@ -945,5 +945,9 @@
   {
     "scmURL": "https://github.com/lukas-krecan/JsonUnit.git",
     "selectedTag": "json-unit-parent-2.28.0"
+  },
+  {
+    "scmURL": "https://github.com/springside/springside4.git",
+    "selectedTag": "5.0.0-RC1"
   }
 ]

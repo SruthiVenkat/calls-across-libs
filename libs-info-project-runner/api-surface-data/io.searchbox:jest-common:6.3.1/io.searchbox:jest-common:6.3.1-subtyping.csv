@@ -1,0 +1,10 @@
+SubClass,Sub Library,Super Class/Interface,Super Class/Interface Visibility,Super Library,Count
+org.slf4j.impl.Log4jLoggerAdapter,org.slf4j:slf4j-log4j12:1.7.25,org.slf4j.helpers.MarkerIgnoringBase,public,org.slf4j:slf4j-api:1.7.25,1
+org.slf4j.impl.Log4jLoggerFactory,org.slf4j:slf4j-log4j12:1.7.25,org.slf4j.ILoggerFactory,public,org.slf4j:slf4j-api:1.7.25,1
+org.slf4j.impl.Log4jLoggerAdapter,org.slf4j:slf4j-log4j12:1.7.25,org.slf4j.spi.LocationAwareLogger,public,org.slf4j:slf4j-api:1.7.25,1
+io.searchbox.client.config.discovery.NodeChecker,io.searchbox:jest-common:6.3.1,com.google.common.util.concurrent.AbstractScheduledService,public,com.google.guava:guava:21.0,1
+io.searchbox.core.Bulk$1,io.searchbox:jest-common:6.3.1,com.google.common.reflect.TypeToken,public,com.google.guava:guava:21.0,1
+io.searchbox.core.MultiGet$1,io.searchbox:jest-common:6.3.1,com.google.common.base.Function,public,com.google.guava:guava:21.0,1
+org.slf4j.impl.StaticLoggerBinder,org.slf4j:slf4j-log4j12:1.7.25,org.slf4j.spi.LoggerFactoryBinder,public,org.slf4j:slf4j-api:1.7.25,1
+io.searchbox.client.config.idle.IdleConnectionReaper,io.searchbox:jest-common:6.3.1,com.google.common.util.concurrent.AbstractScheduledService,public,com.google.guava:guava:21.0,1
+io.searchbox.client.config.discovery.NodeChecker$1,io.searchbox:jest-common:6.3.1,com.google.common.util.concurrent.Service$Listener,public,com.google.guava:guava:21.0,1

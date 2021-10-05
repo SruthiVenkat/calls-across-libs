@@ -1,0 +1,14 @@
+Class Name,Class Visibility,Class Library,Usage,Used In Library
+org.slf4j.LoggerFactory,public,org.slf4j:slf4j-api:1.7.25,method call,org.sql2o:sql2o:1.6.0
+org.slf4j.Logger,public,org.slf4j:slf4j-api:1.7.25,Class.forName,org.sql2o:sql2o:1.6.0
+java.sql.Statement,public,java.sql,cast,org.sql2o:sql2o:1.6.0
+javax.persistence.Column,public,javax.persistence:persistence-api:1.0.2,cast,org.sql2o:sql2o:1.6.0
+java.sql.SQLFeatureNotSupportedException,public,java.sql,instantiation,org.sql2o:sql2o:1.6.0
+sun.security.provider.NativePRNG,public,unknownLib,Class.forName,java.security
+java.security.MessageDigestSpi,public,java.security,Class.forName,java.security
+javax.persistence.Column,public,javax.persistence:persistence-api:1.0.2,Class.forName,org.sql2o:sql2o:1.6.0
+java.security.PrivilegedAction,public,java.security,subtyping,java.sql
+java.sql.Time,public,java.sql,cast,org.sql2o:sql2o:1.6.0
+java.sql.Timestamp,public,java.sql,cast,org.sql2o:sql2o:1.6.0
+java.sql.DriverManager,public,java.sql,method call,org.sql2o:sql2o:1.6.0
+sun.security.provider.SHA,public,unknownLib,Class.forName,java.security

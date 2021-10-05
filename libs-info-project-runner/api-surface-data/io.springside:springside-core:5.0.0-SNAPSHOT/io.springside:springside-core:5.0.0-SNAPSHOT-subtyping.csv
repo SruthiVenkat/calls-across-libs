@@ -1,0 +1,15 @@
+SubClass,Sub Library,Super Class/Interface,Super Class/Interface Visibility,Super Library,Count
+ch.qos.logback.classic.Logger,ch.qos.logback:logback-classic:1.1.8,org.slf4j.Logger,public,org.slf4j:slf4j-api:1.7.22,1
+ch.qos.logback.classic.spi.Configurator,ch.qos.logback:logback-classic:1.1.8,ch.qos.logback.core.spi.ContextAware,public,ch.qos.logback:logback-core:1.1.8,1
+ch.qos.logback.classic.pattern.ClassicConverter,ch.qos.logback:logback-classic:1.1.8,ch.qos.logback.core.pattern.DynamicConverter,public,ch.qos.logback:logback-core:1.1.8,1
+ch.qos.logback.classic.layout.TTLLLayout,ch.qos.logback:logback-classic:1.1.8,ch.qos.logback.core.LayoutBase,public,ch.qos.logback:logback-core:1.1.8,1
+ch.qos.logback.classic.LoggerContext,ch.qos.logback:logback-classic:1.1.8,ch.qos.logback.core.ContextBase,public,ch.qos.logback:logback-core:1.1.8,1
+ch.qos.logback.classic.LoggerContext,ch.qos.logback:logback-classic:1.1.8,ch.qos.logback.core.spi.LifeCycle,public,ch.qos.logback:logback-core:1.1.8,1
+ch.qos.logback.classic.LoggerContext,ch.qos.logback:logback-classic:1.1.8,org.slf4j.ILoggerFactory,public,org.slf4j:slf4j-api:1.7.22,1
+ch.qos.logback.classic.joran.JoranConfigurator,ch.qos.logback:logback-classic:1.1.8,ch.qos.logback.core.joran.JoranConfiguratorBase,public,ch.qos.logback:logback-core:1.1.8,1
+ch.qos.logback.core.util.Loader$1,ch.qos.logback:logback-core:1.1.8,java.security.PrivilegedAction,public,java.security,1
+org.slf4j.impl.StaticLoggerBinder,ch.qos.logback:logback-classic:1.1.8,org.slf4j.spi.LoggerFactoryBinder,public,org.slf4j:slf4j-api:1.7.22,1
+ch.qos.logback.classic.Logger,ch.qos.logback:logback-classic:1.1.8,org.slf4j.spi.LocationAwareLogger,public,org.slf4j:slf4j-api:1.7.22,1
+ch.qos.logback.classic.BasicConfigurator,ch.qos.logback:logback-classic:1.1.8,ch.qos.logback.core.spi.ContextAwareBase,public,ch.qos.logback:logback-core:1.1.8,1
+ch.qos.logback.classic.spi.ILoggingEvent,ch.qos.logback:logback-classic:1.1.8,ch.qos.logback.core.spi.DeferredProcessingAware,public,ch.qos.logback:logback-core:1.1.8,1
+ch.qos.logback.classic.Logger,ch.qos.logback:logback-classic:1.1.8,ch.qos.logback.core.spi.AppenderAttachable,public,ch.qos.logback:logback-core:1.1.8,1

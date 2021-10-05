@@ -1,0 +1,498 @@
+Class Name,Class Visibility,Class Library,Usage,Used In Library
+org.apache.http.impl.conn.CPool,default,org.apache.httpcomponents:httpclient:4.5.3,method call,org.apache.httpcomponents:httpcore:4.4.5
+org.apache.http.impl.conn.PoolingHttpClientConnectionManager,public,org.apache.httpcomponents:httpclient:4.5.3,instantiation,io.searchbox:jest:6.3.1
+org.apache.http.impl.conn.DefaultProxyRoutePlanner,public,org.apache.httpcomponents:httpclient:4.5.3,instantiation,io.searchbox:jest:6.3.1
+org.apache.http.nio.pool.AbstractNIOConnPool,public,org.apache.httpcomponents:httpcore-nio:4.4.6,subtyping,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.slf4j.ILoggerFactory,public,org.slf4j:slf4j-api:1.7.25,subtyping,org.slf4j:slf4j-log4j12:1.7.25
+org.apache.http.impl.DefaultHttpResponseFactory,public,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpcore-nio:4.4.6
+org.apache.http.entity.StringEntity,public,org.apache.httpcomponents:httpcore:4.4.5,instantiation,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.impl.execchain.ResponseEntityProxy,default,org.apache.httpcomponents:httpclient:4.5.3,method call,org.apache.httpcomponents:httpcore:4.4.5
+org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager,public,org.apache.httpcomponents:httpasyncclient:4.1.3,method call,io.searchbox:jest:6.3.1
+org.apache.http.util.CharArrayBuffer,public,org.apache.httpcomponents:httpcore:4.4.5,cast,org.apache.httpcomponents:httpcore-nio:4.4.6
+org.apache.http.client.protocol.ResponseContentEncoding,public,org.apache.httpcomponents:httpclient:4.5.3,method call,org.apache.httpcomponents:httpcore:4.4.5
+org.apache.http.NoHttpResponseException,public,org.apache.httpcomponents:httpcore:4.4.5,instantiation,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.message.BufferedHeader,public,org.apache.httpcomponents:httpcore:4.4.5,method call,io.searchbox:jest:6.3.1
+org.apache.http.message.BufferedHeader,public,org.apache.httpcomponents:httpcore:4.4.5,instantiation,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.params.BasicHttpParams,public,org.apache.httpcomponents:httpcore:4.4.5,instantiation,org.apache.httpcomponents:httpcore-nio:4.4.6
+org.apache.http.HttpInetConnection,public,org.apache.httpcomponents:httpcore:4.4.5,subtyping,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.client.config.RequestConfig,public,org.apache.httpcomponents:httpclient:4.5.3,method call,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.message.BasicLineParser,public,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpcore-nio:4.4.6
+org.apache.http.util.Args,default,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.logging.log4j.util.LoaderUtil,public,org.apache.logging.log4j.util,method call,org.apache.logging.log4j.core.util
+org.apache.http.util.TextUtils,public,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.client.protocol.HttpClientContext,default,org.apache.httpcomponents:httpclient:4.5.3,method call,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.impl.client.BasicCredentialsProvider,public,org.apache.httpcomponents:httpclient:4.5.3,instantiation,io.searchbox:jest:6.3.1
+org.apache.http.util.Asserts,public,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpcore-nio:4.4.6
+org.apache.http.entity.BasicHttpEntity,public,org.apache.httpcomponents:httpcore:4.4.5,instantiation,org.apache.httpcomponents:httpcore-nio:4.4.6
+org.apache.http.message.BasicHeaderElementIterator,public,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.HttpResponse,public,org.apache.httpcomponents:httpcore:4.4.5,cast,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.message.BasicLineParser,public,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.entity.BufferedHttpEntity,public,org.apache.httpcomponents:httpcore:4.4.5,instantiation,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.impl.cookie.IgnoreSpecProvider,public,org.apache.httpcomponents:httpclient:4.5.3,instantiation,org.apache.httpcomponents:httpasyncclient:4.1.3
+java.sql.Date,public,java.sql,cast,com.google.code.gson:gson:2.8.0
+com.google.common.collect.LinkedHashMultimap,protected,com.google.guava:guava:21.0,method call,io.searchbox:jest-common:6.3.1
+org.apache.http.util.CharsetUtils,public,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.HttpEntityEnclosingRequest,public,org.apache.httpcomponents:httpcore:4.4.5,cast,io.searchbox:jest:6.3.1
+org.apache.http.nio.reactor.ssl.SSLIOSession,public,org.apache.httpcomponents:httpcore-nio:4.4.6,cast,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.protocol.BasicHttpContext,public,org.apache.httpcomponents:httpcore:4.4.5,instantiation,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.protocol.RequestUserAgent,public,org.apache.httpcomponents:httpcore:4.4.5,instantiation,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.client.methods.HttpDelete,public,org.apache.httpcomponents:httpclient:4.5.3,instantiation,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.util.Asserts,public,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.HttpHost,public,org.apache.httpcomponents:httpcore:4.4.5,cast,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.impl.auth.HttpAuthenticator,public,org.apache.httpcomponents:httpclient:4.5.3,instantiation,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.message.BasicLineFormatter,public,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpcore-nio:4.4.6
+org.apache.logging.log4j.message.ReusableMessageFactory,public,org.apache.logging.log4j.message,Class.forName,org.apache.logging.log4j.util
+org.slf4j.impl.Log4jLoggerAdapter,public,org.slf4j:slf4j-log4j12:1.7.25,method call,io.searchbox:jest-common:6.3.1
+org.apache.http.impl.auth.BasicSchemeFactory,public,org.apache.httpcomponents:httpclient:4.5.3,instantiation,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.impl.DefaultHttpResponseFactory,public,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.config.Registry,public,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.client.methods.HttpTrace,public,org.apache.httpcomponents:httpclient:4.5.3,instantiation,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.logging.log4j.message.MessageFactory,public,org.apache.logging.log4j.message,cast,org.apache.logging.log4j.spi
+sun.security.ssl.KeyManagerFactoryImpl$SunX509,public,unknownLib,Class.forName,java.security
+sun.security.ssl.TrustManagerFactoryImpl$PKIXFactory,public,unknownLib,Class.forName,java.security
+org.apache.http.util.Args,default,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpcore-nio:4.4.6
+sun.security.ec.ECDSASignature$SHA1,public,unknownLib,Class.forName,java.security
+org.apache.http.impl.auth.HttpAuthenticator,public,org.apache.httpcomponents:httpclient:4.5.3,method call,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.message.BasicRequestLine,public,org.apache.httpcomponents:httpcore:4.4.5,instantiation,org.apache.httpcomponents:httpclient:4.5.3
+org.slf4j.helpers.FormattingTuple,public,org.slf4j:slf4j-api:1.7.25,method call,org.slf4j:slf4j-log4j12:1.7.25
+sun.security.provider.NativePRNG,public,unknownLib,Class.forName,java.security
+org.apache.logging.log4j.util.StringBuilderFormattable,public,org.apache.logging.log4j.util,subtyping,org.apache.logging.log4j.message
+org.apache.http.pool.PoolEntry,public,org.apache.httpcomponents:httpcore:4.4.5,subtyping,org.apache.httpcomponents:httpasyncclient:4.1.3
+sun.security.ssl.SSLContextImpl$TLSContext,public,unknownLib,Class.forName,java.security
+org.apache.http.auth.UsernamePasswordCredentials,public,org.apache.httpcomponents:httpclient:4.5.3,instantiation,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.impl.client.InternalHttpClient,default,org.apache.httpcomponents:httpclient:4.5.3,method call,io.searchbox:jest:6.3.1
+org.apache.http.impl.conn.SystemDefaultRoutePlanner,public,org.apache.httpcomponents:httpclient:4.5.3,instantiation,io.searchbox:jest:6.3.1
+org.apache.http.impl.DefaultConnectionReuseStrategy,public,org.apache.httpcomponents:httpcore:4.4.5,subtyping,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.config.ConnectionConfig,public,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.client.methods.HttpHead,public,org.apache.httpcomponents:httpclient:4.5.3,instantiation,io.searchbox:jest:6.3.1
+org.apache.http.entity.ContentType,public,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.log4j.Logger,public,log4j:log4j:1.2.17,method call,commons-logging:commons-logging:1.1.3
+org.apache.http.message.BasicHeaderElementIterator,public,org.apache.httpcomponents:httpcore:4.4.5,instantiation,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.client.utils.URIUtils,public,org.apache.httpcomponents:httpclient:4.5.3,method call,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.impl.client.DefaultClientConnectionReuseStrategy,public,org.apache.httpcomponents:httpclient:4.5.3,method call,org.apache.httpcomponents:httpcore:4.4.5
+org.apache.http.client.methods.HttpRequestWrapper,public,org.apache.httpcomponents:httpclient:4.5.3,cast,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.client.methods.HttpUriRequest,public,org.apache.httpcomponents:httpclient:4.5.3,cast,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.entity.BasicHttpEntity,public,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpcore-nio:4.4.6
+org.apache.http.protocol.ImmutableHttpProcessor,public,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.message.AbstractHttpMessage,public,org.apache.httpcomponents:httpcore:4.4.5,subtyping,org.apache.httpcomponents:httpclient:4.5.3
+io.searchbox.client.http.apache.HttpGetWithEntity,public,io.searchbox:jest:6.3.1,method call,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.protocol.HttpContext,public,org.apache.httpcomponents:httpcore:4.4.5,subtyping,org.apache.httpcomponents:httpcore-nio:4.4.6
+org.apache.http.impl.conn.LoggingManagedHttpClientConnection,default,org.apache.httpcomponents:httpclient:4.5.3,method call,org.apache.httpcomponents:httpcore:4.4.5
+org.apache.log4j.spi.ThrowableInformation,public,log4j:log4j:1.2.17,instantiation,org.slf4j:slf4j-log4j12:1.7.25
+org.apache.http.pool.ConnPoolControl,public,org.apache.httpcomponents:httpcore:4.4.5,subtyping,org.apache.httpcomponents:httpasyncclient:4.1.3
+sun.security.ec.ECKeyFactory,public,unknownLib,Class.forName,java.security
+org.apache.http.params.BasicHttpParams,public,org.apache.httpcomponents:httpcore:4.4.5,instantiation,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.log4j.CategoryKey,default,log4j:log4j:1.2.17,Class.forName,log4j:log4j:1.2.17
+org.apache.http.concurrent.Cancellable,public,org.apache.httpcomponents:httpcore:4.4.5,subtyping,org.apache.httpcomponents:httpcore-nio:4.4.6
+org.apache.http.impl.conn.PoolingHttpClientConnectionManager,public,org.apache.httpcomponents:httpclient:4.5.3,method call,io.searchbox:jest:6.3.1
+org.apache.http.entity.StringEntity,public,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager,public,org.apache.httpcomponents:httpasyncclient:4.1.3,instantiation,io.searchbox:jest:6.3.1
+com.google.gson.JsonObject,public,com.google.code.gson:gson:2.8.0,cast,io.searchbox:jest-common:6.3.1
+org.apache.http.client.protocol.RequestDefaultHeaders,public,org.apache.httpcomponents:httpclient:4.5.3,method call,org.apache.httpcomponents:httpcore:4.4.5
+java.security.MessageDigestSpi,public,java.security,Class.forName,java.security
+org.apache.http.params.HttpParamsNames,public,org.apache.httpcomponents:httpcore:4.4.5,cast,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.conn.HttpHostConnectException,public,org.apache.httpcomponents:httpclient:4.5.3,method call,io.searchbox:jest:6.3.1
+org.apache.http.util.VersionInfo,public,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.config.ConnectionConfig,public,org.apache.httpcomponents:httpcore:4.4.5,cast,org.apache.httpcomponents:httpasyncclient:4.1.3
+com.google.common.util.concurrent.Service$Listener,public,com.google.guava:guava:21.0,subtyping,io.searchbox:jest-common:6.3.1
+org.apache.http.HttpResponse,public,org.apache.httpcomponents:httpcore:4.4.5,subtyping,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.config.RegistryBuilder,public,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.Header,public,org.apache.httpcomponents:httpcore:4.4.5,cast,org.apache.httpcomponents:httpcore-nio:4.4.6
+org.apache.http.client.methods.HttpPut,public,org.apache.httpcomponents:httpclient:4.5.3,method call,io.searchbox:jest:6.3.1
+org.apache.http.conn.util.PublicSuffixMatcherLoader,public,org.apache.httpcomponents:httpclient:4.5.3,method call,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.impl.cookie.DefaultCookieSpecProvider,public,org.apache.httpcomponents:httpclient:4.5.3,instantiation,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.client.protocol.HttpClientContext,public,org.apache.httpcomponents:httpclient:4.5.3,method call,io.searchbox:jest:6.3.1
+org.apache.http.entity.BasicHttpEntity,public,org.apache.httpcomponents:httpcore:4.4.5,instantiation,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.logging.log4j.message.DefaultFlowMessageFactory,public,org.apache.logging.log4j.message,Class.forName,org.apache.logging.log4j.util
+org.apache.logging.log4j.message.StringFormattedMessage,public,org.apache.logging.log4j.message,instantiation,org.apache.logging.log4j.spi
+com.google.gson.JsonParser,public,com.google.code.gson:gson:2.8.0,method call,io.searchbox:jest-common:6.3.1
+org.apache.http.concurrent.Cancellable,public,org.apache.httpcomponents:httpcore:4.4.5,subtyping,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.client.entity.EntityBuilder,public,org.apache.httpcomponents:httpclient:4.5.3,method call,io.searchbox:jest:6.3.1
+org.apache.logging.log4j.message.ReusableParameterizedMessage,public,org.apache.logging.log4j.message,method call,org.apache.logging.log4j.spi
+org.apache.http.pool.PoolStats,public,org.apache.httpcomponents:httpcore:4.4.5,instantiation,org.apache.httpcomponents:httpcore-nio:4.4.6
+org.apache.http.client.methods.HttpExecutionAware,public,org.apache.httpcomponents:httpclient:4.5.3,cast,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.Header,public,org.apache.httpcomponents:httpcore:4.4.5,cast,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.ProtocolException,public,org.apache.httpcomponents:httpcore:4.4.5,instantiation,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.impl.client.HttpClientBuilder,public,org.apache.httpcomponents:httpclient:4.5.3,method call,io.searchbox:jest:6.3.1
+org.apache.http.nio.conn.ssl.SSLIOSessionStrategy,public,org.apache.httpcomponents:httpasyncclient:4.1.3,method call,io.searchbox:jest:6.3.1
+org.apache.http.HttpEntityEnclosingRequest,public,org.apache.httpcomponents:httpcore:4.4.5,cast,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.nio.pool.NIOConnFactory,public,org.apache.httpcomponents:httpcore-nio:4.4.6,subtyping,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.nio.protocol.BasicAsyncRequestProducer,public,org.apache.httpcomponents:httpcore-nio:4.4.6,subtyping,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.entity.BasicHttpEntity,public,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.impl.nio.DefaultNHttpClientConnection,public,org.apache.httpcomponents:httpcore-nio:4.4.6,cast,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.HttpHost,public,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.impl.nio.SessionHttpContext,default,org.apache.httpcomponents:httpcore-nio:4.4.6,method call,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.entity.StringEntity,public,org.apache.httpcomponents:httpcore:4.4.5,subtyping,org.apache.httpcomponents:httpclient:4.5.3
+io.searchbox.indices.Stats,public,io.searchbox:jest-common:6.3.1,method call,io.searchbox:jest:6.3.1
+org.apache.http.client.methods.HttpPut,public,org.apache.httpcomponents:httpclient:4.5.3,instantiation,io.searchbox:jest:6.3.1
+io.searchbox.client.config.ClientConfig$AbstractBuilder,protected,io.searchbox:jest-common:6.3.1,subtyping,io.searchbox:jest:6.3.1
+org.apache.logging.log4j.spi.LoggerRegistry,public,org.apache.logging.log4j.spi,method call,org.apache.logging.log4j.util
+org.apache.http.entity.ByteArrayEntity,public,org.apache.httpcomponents:httpcore:4.4.5,instantiation,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.client.methods.HttpRequestBase,public,org.apache.httpcomponents:httpclient:4.5.3,cast,io.searchbox:jest:6.3.1
+org.apache.http.entity.SerializableEntity,public,org.apache.httpcomponents:httpcore:4.4.5,instantiation,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.entity.ContentType,public,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpcore-nio:4.4.6
+org.apache.logging.log4j.util.PropertiesUtil,default,org.apache.logging.log4j.util,method call,org.apache.logging.log4j.spi
+org.apache.http.config.SocketConfig,public,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpclient:4.5.3
+java.lang.String,public,unknownLib,Class.forName,log4j:log4j:1.2.17
+org.apache.http.conn.routing.HttpRoute,public,org.apache.httpcomponents:httpclient:4.5.3,cast,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.nio.protocol.HttpAsyncRequestExecutor,public,org.apache.httpcomponents:httpcore-nio:4.4.6,instantiation,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.HttpRequest,public,org.apache.httpcomponents:httpcore:4.4.5,cast,org.apache.httpcomponents:httpasyncclient:4.1.3
+io.searchbox.client.http.apache.HttpGetWithEntity,public,io.searchbox:jest:6.3.1,method call,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.HttpConnection,public,org.apache.httpcomponents:httpcore:4.4.5,subtyping,org.apache.httpcomponents:httpcore-nio:4.4.6
+org.apache.http.client.protocol.RequestAuthCache,public,org.apache.httpcomponents:httpclient:4.5.3,instantiation,org.apache.httpcomponents:httpasyncclient:4.1.3
+io.searchbox.client.http.JestHttpClient,public,io.searchbox:jest:6.3.1,method call,io.searchbox:jest-common:6.3.1
+org.apache.http.impl.conn.SystemDefaultDnsResolver,public,org.apache.httpcomponents:httpclient:4.5.3,method call,org.apache.httpcomponents:httpasyncclient:4.1.3
+com.google.gson.JsonParser,public,com.google.code.gson:gson:2.8.0,instantiation,io.searchbox:jest-common:6.3.1
+org.apache.http.client.protocol.RequestDefaultHeaders,public,org.apache.httpcomponents:httpclient:4.5.3,instantiation,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.impl.cookie.NetscapeDraftSpecProvider,public,org.apache.httpcomponents:httpclient:4.5.3,instantiation,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.commons.logging.LogFactory,public,commons-logging:commons-logging:1.1.3,method call,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.pool.AbstractConnPool,public,org.apache.httpcomponents:httpcore:4.4.5,subtyping,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.commons.logging.impl.WeakHashtable,public,commons-logging:commons-logging:1.1.3,Class.forName,commons-logging:commons-logging:1.1.3
+org.slf4j.impl.Log4jLoggerFactory,public,org.slf4j:slf4j-log4j12:1.7.25,method call,org.slf4j:slf4j-api:1.7.25
+org.apache.http.message.ParserCursor,public,org.apache.httpcomponents:httpcore:4.4.5,instantiation,org.apache.httpcomponents:httpcore-nio:4.4.6
+org.apache.http.impl.nio.codecs.LengthDelimitedDecoder,public,org.apache.httpcomponents:httpcore-nio:4.4.6,method call,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.HttpEntityEnclosingRequest,public,org.apache.httpcomponents:httpcore:4.4.5,cast,org.apache.httpcomponents:httpcore-nio:4.4.6
+org.apache.http.ssl.SSLContexts,public,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpasyncclient:4.1.3
+com.google.gson.GsonBuilder,public,com.google.code.gson:gson:2.8.0,method call,io.searchbox:jest-common:6.3.1
+org.apache.http.util.VersionInfo,public,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager$InternalAddressResolver,default,org.apache.httpcomponents:httpasyncclient:4.1.3,method call,org.apache.httpcomponents:httpcore-nio:4.4.6
+org.apache.http.util.Args,public,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.ProtocolException,public,org.apache.httpcomponents:httpcore:4.4.5,instantiation,org.apache.httpcomponents:httpcore-nio:4.4.6
+com.google.common.base.Strings,public,com.google.guava:guava:21.0,method call,io.searchbox:jest:6.3.1
+org.apache.logging.log4j.util.PropertiesUtil,public,org.apache.logging.log4j.util,method call,org.apache.logging.log4j.spi
+org.apache.log4j.Layout,public,log4j:log4j:1.2.17,Class.forName,log4j:log4j:1.2.17
+sun.security.ssl.SSLContextImpl$DefaultSSLContext,public,unknownLib,Class.forName,java.security
+org.apache.http.io.BufferInfo,public,org.apache.httpcomponents:httpcore:4.4.5,cast,org.apache.httpcomponents:httpcore-nio:4.4.6
+org.apache.http.nio.pool.SocketAddressResolver,public,org.apache.httpcomponents:httpcore-nio:4.4.6,subtyping,org.apache.httpcomponents:httpasyncclient:4.1.3
+io.searchbox.client.config.discovery.NodeChecker$1,default,io.searchbox:jest-common:6.3.1,method call,com.google.guava:guava:21.0
+org.apache.http.impl.HttpConnectionMetricsImpl,public,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpcore-nio:4.4.6
+org.apache.http.message.BasicListHeaderIterator,public,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpclient:4.5.3
+io.searchbox.client.config.exception.CouldNotConnectException,public,io.searchbox:jest-common:6.3.1,instantiation,io.searchbox:jest:6.3.1
+org.apache.http.client.methods.HttpHead,public,org.apache.httpcomponents:httpclient:4.5.3,method call,io.searchbox:jest:6.3.1
+org.apache.log4j.spi.LocationInfo,public,log4j:log4j:1.2.17,instantiation,org.slf4j:slf4j-log4j12:1.7.25
+org.apache.logging.log4j.message.MessageFactory2,public,org.apache.logging.log4j.message,cast,org.apache.logging.log4j.spi
+org.apache.logging.log4j.util.Strings,public,org.apache.logging.log4j.util,method call,org.apache.logging.log4j.core.util
+org.apache.http.protocol.BasicHttpContext,public,org.apache.httpcomponents:httpcore:4.4.5,instantiation,org.apache.httpcomponents:httpasyncclient:4.1.3
+sun.security.ec.ECDSASignature$Raw,public,unknownLib,Class.forName,java.security
+org.apache.http.HttpResponse,public,org.apache.httpcomponents:httpcore:4.4.5,cast,org.apache.httpcomponents:httpcore-nio:4.4.6
+org.apache.http.impl.nio.client.InternalIODispatch,default,org.apache.httpcomponents:httpasyncclient:4.1.3,method call,org.apache.httpcomponents:httpcore-nio:4.4.6
+io.searchbox.client.http.apache.HttpGetWithEntity,public,io.searchbox:jest:6.3.1,method call,org.apache.httpcomponents:httpcore-nio:4.4.6
+org.apache.http.conn.routing.RouteTracker,public,org.apache.httpcomponents:httpclient:4.5.3,method call,org.apache.httpcomponents:httpasyncclient:4.1.3
+com.google.common.util.concurrent.AbstractScheduledService$Scheduler,public,com.google.guava:guava:21.0,method call,io.searchbox:jest-common:6.3.1
+org.apache.http.message.BasicHeaderIterator,public,org.apache.httpcomponents:httpcore:4.4.5,instantiation,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.auth.AuthState,public,org.apache.httpcomponents:httpclient:4.5.3,instantiation,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.nio.entity.NByteArrayEntity,public,org.apache.httpcomponents:httpcore-nio:4.4.6,instantiation,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.entity.HttpEntityWrapper,public,org.apache.httpcomponents:httpcore:4.4.5,subtyping,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager$1,default,org.apache.httpcomponents:httpasyncclient:4.1.3,method call,org.apache.httpcomponents:httpcore:4.4.5
+org.apache.logging.log4j.util.PerformanceSensitive(value={"allocation"}),public,org.apache.logging.log4j.util,annotation,org.apache.logging.log4j.message
+org.apache.http.impl.conn.SystemDefaultRoutePlanner,public,org.apache.httpcomponents:httpclient:4.5.3,method call,org.apache.httpcomponents:httpasyncclient:4.1.3
+com.google.common.util.concurrent.ThreadFactoryBuilder,public,com.google.guava:guava:21.0,instantiation,io.searchbox:jest-common:6.3.1
+org.apache.http.impl.nio.reactor.IOReactorConfig$Builder,public,org.apache.httpcomponents:httpcore-nio:4.4.6,method call,io.searchbox:jest:6.3.1
+org.apache.http.impl.conn.DefaultHttpResponseParserFactory,public,org.apache.httpcomponents:httpclient:4.5.3,method call,org.apache.httpcomponents:httpcore:4.4.5
+org.apache.http.impl.client.BasicAuthCache,public,org.apache.httpcomponents:httpclient:4.5.3,instantiation,io.searchbox:jest:6.3.1
+org.apache.http.concurrent.Cancellable,public,org.apache.httpcomponents:httpcore:4.4.5,cast,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.logging.log4j.message.FlowMessageFactory,public,org.apache.logging.log4j.message,cast,org.apache.logging.log4j.spi
+com.google.common.collect.ImmutableSet$Builder,public,com.google.guava:guava:21.0,method call,io.searchbox:jest-common:6.3.1
+org.apache.http.protocol.RequestContent,public,org.apache.httpcomponents:httpcore:4.4.5,instantiation,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.message.BasicHeader,public,org.apache.httpcomponents:httpcore:4.4.5,instantiation,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.conn.routing.BasicRouteDirector,public,org.apache.httpcomponents:httpclient:4.5.3,method call,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.commons.logging.impl.Log4JLogger,public,commons-logging:commons-logging:1.1.3,method call,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.util.CharArrayBuffer,public,org.apache.httpcomponents:httpcore:4.4.5,instantiation,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.annotation.Obsolete,public,org.apache.httpcomponents:httpcore:4.4.5,annotation,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.protocol.RequestTargetHost,public,org.apache.httpcomponents:httpcore:4.4.5,instantiation,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.conn.routing.RouteTracker,public,org.apache.httpcomponents:httpclient:4.5.3,cast,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.log4j.spi.LoggingEvent,public,log4j:log4j:1.2.17,instantiation,org.slf4j:slf4j-log4j12:1.7.25
+org.apache.http.entity.ContentType,public,org.apache.httpcomponents:httpcore:4.4.5,method call,io.searchbox:jest:6.3.1
+io.searchbox.client.config.discovery.NodeChecker,public,io.searchbox:jest-common:6.3.1,method call,io.searchbox:jest:6.3.1
+org.apache.http.params.HttpProtocolParams,public,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.log4j.ConsoleAppender,public,log4j:log4j:1.2.17,Class.forName,log4j:log4j:1.2.17
+org.apache.http.nio.NHttpClientConnection,public,org.apache.httpcomponents:httpcore-nio:4.4.6,subtyping,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.client.methods.HttpRequestWrapper$HttpEntityEnclosingRequestWrapper,default,org.apache.httpcomponents:httpclient:4.5.3,method call,org.apache.httpcomponents:httpcore:4.4.5
+sun.security.rsa.RSAKeyFactory$Legacy,public,unknownLib,Class.forName,java.security
+org.apache.http.message.BasicHttpRequest,public,org.apache.httpcomponents:httpcore:4.4.5,instantiation,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.util.Args,public,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.message.BasicStatusLine,public,org.apache.httpcomponents:httpcore:4.4.5,method call,io.searchbox:jest:6.3.1
+org.slf4j.Logger,public,org.slf4j:slf4j-api:1.7.25,cast,org.slf4j:slf4j-log4j12:1.7.25
+io.searchbox.core.Search,public,io.searchbox:jest-common:6.3.1,method call,io.searchbox:jest:6.3.1
+org.apache.http.impl.client.BasicCookieStore,public,org.apache.httpcomponents:httpclient:4.5.3,instantiation,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.HttpException,public,org.apache.httpcomponents:httpcore:4.4.5,instantiation,org.apache.httpcomponents:httpcore-nio:4.4.6
+java.security.Principal,public,java.security,subtyping,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.protocol.HttpContext,public,org.apache.httpcomponents:httpcore:4.4.5,subtyping,org.apache.httpcomponents:httpclient:4.5.3
+java.sql.Date,public,java.sql,instantiation,com.google.code.gson:gson:2.8.0
+org.apache.http.params.BasicHttpParams,public,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.util.Asserts,default,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpcore-nio:4.4.6
+org.slf4j.impl.Log4jLoggerAdapter,public,org.slf4j:slf4j-log4j12:1.7.25,method call,org.slf4j:slf4j-api:1.7.25
+org.apache.http.impl.auth.DigestSchemeFactory,public,org.apache.httpcomponents:httpclient:4.5.3,instantiation,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.impl.nio.client.AbstractClientExchangeHandler$1,default,org.apache.httpcomponents:httpasyncclient:4.1.3,method call,org.apache.httpcomponents:httpcore:4.4.5
+org.apache.http.impl.entity.LaxContentLengthStrategy,public,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpcore-nio:4.4.6
+org.apache.http.impl.client.BasicCredentialsProvider,public,org.apache.httpcomponents:httpclient:4.5.3,method call,io.searchbox:jest:6.3.1
+org.apache.http.impl.io.HttpTransportMetricsImpl,public,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpcore-nio:4.4.6
+org.apache.logging.log4j.util.ProviderUtil,public,org.apache.logging.log4j.util,method call,org.apache.logging.log4j.spi
+org.apache.http.nio.protocol.BasicAsyncResponseConsumer,public,org.apache.httpcomponents:httpcore-nio:4.4.6,method call,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.HttpException,public,org.apache.httpcomponents:httpcore:4.4.5,instantiation,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.client.UserTokenHandler,public,org.apache.httpcomponents:httpclient:4.5.3,subtyping,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.config.RegistryBuilder,public,org.apache.httpcomponents:httpcore:4.4.5,method call,io.searchbox:jest:6.3.1
+org.apache.http.concurrent.BasicFuture,public,org.apache.httpcomponents:httpcore:4.4.5,instantiation,org.apache.httpcomponents:httpcore-nio:4.4.6
+org.apache.http.entity.FileEntity,public,org.apache.httpcomponents:httpcore:4.4.5,instantiation,org.apache.httpcomponents:httpclient:4.5.3
+java.security.KeyStoreSpi,public,java.security,Class.forName,java.security
+org.apache.http.HttpHost,public,org.apache.httpcomponents:httpcore:4.4.5,method call,io.searchbox:jest:6.3.1
+org.apache.http.HttpRequestInterceptor,public,org.apache.httpcomponents:httpcore:4.4.5,subtyping,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.util.Asserts,default,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.HttpHost,public,org.apache.httpcomponents:httpcore:4.4.5,cast,io.searchbox:jest:6.3.1
+org.apache.http.message.BasicTokenIterator,public,org.apache.httpcomponents:httpcore:4.4.5,instantiation,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.client.methods.HttpRequestWrapper,default,org.apache.httpcomponents:httpclient:4.5.3,method call,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.util.EntityUtils,public,org.apache.httpcomponents:httpcore:4.4.5,method call,io.searchbox:jest:6.3.1
+org.apache.http.impl.io.SessionInputBufferImpl,public,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.auth.UsernamePasswordCredentials,public,org.apache.httpcomponents:httpclient:4.5.3,instantiation,io.searchbox:jest:6.3.1
+org.apache.http.impl.cookie.RFC6265CookieSpecProvider,public,org.apache.httpcomponents:httpclient:4.5.3,instantiation,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.impl.entity.StrictContentLengthStrategy,public,org.apache.httpcomponents:httpcore:4.4.5,instantiation,org.apache.httpcomponents:httpcore-nio:4.4.6
+org.apache.http.impl.DefaultConnectionReuseStrategy,public,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.logging.log4j.message.Message,public,org.apache.logging.log4j.message,cast,org.apache.logging.log4j.spi
+org.apache.http.impl.nio.reactor.AbstractIODispatch,public,org.apache.httpcomponents:httpcore-nio:4.4.6,subtyping,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.impl.nio.client.HttpAsyncClients,public,org.apache.httpcomponents:httpasyncclient:4.1.3,method call,io.searchbox:jest:6.3.1
+io.searchbox.client.AbstractJestClient,public,io.searchbox:jest-common:6.3.1,subtyping,io.searchbox:jest:6.3.1
+org.apache.http.client.methods.HttpEntityEnclosingRequestBase,public,org.apache.httpcomponents:httpclient:4.5.3,subtyping,io.searchbox:jest:6.3.1
+java.lang.Thread,public,unknownLib,Class.forName,log4j:log4j:1.2.17
+org.apache.http.protocol.RequestTargetHost,public,org.apache.httpcomponents:httpcore:4.4.5,instantiation,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.HttpRequest,public,org.apache.httpcomponents:httpcore:4.4.5,cast,org.apache.httpcomponents:httpcore-nio:4.4.6
+org.apache.http.protocol.ImmutableHttpProcessor,public,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.commons.logging.impl.Log4JLogger,public,commons-logging:commons-logging:1.1.3,method call,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.client.protocol.RequestClientConnControl,public,org.apache.httpcomponents:httpclient:4.5.3,method call,org.apache.httpcomponents:httpcore:4.4.5
+io.searchbox.client.http.JestHttpClient$DefaultCallback,protected,io.searchbox:jest:6.3.1,method call,org.apache.httpcomponents:httpcore:4.4.5
+org.slf4j.spi.LocationAwareLogger,public,org.slf4j:slf4j-api:1.7.25,subtyping,org.slf4j:slf4j-log4j12:1.7.25
+org.apache.http.conn.UnsupportedSchemeException,public,org.apache.httpcomponents:httpclient:4.5.3,instantiation,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.HttpResponse,public,org.apache.httpcomponents:httpcore:4.4.5,cast,io.searchbox:jest:6.3.1
+org.apache.http.conn.ssl.DefaultHostnameVerifier,public,org.apache.httpcomponents:httpclient:4.5.3,instantiation,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.client.methods.HttpPut,public,org.apache.httpcomponents:httpclient:4.5.3,instantiation,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.impl.conn.ConnectionShutdownException,public,org.apache.httpcomponents:httpclient:4.5.3,instantiation,org.apache.httpcomponents:httpasyncclient:4.1.3
+sun.security.ec.ECParameters,public,unknownLib,Class.forName,java.security
+org.apache.http.impl.client.BasicAuthCache,public,org.apache.httpcomponents:httpclient:4.5.3,method call,io.searchbox:jest:6.3.1
+org.apache.http.util.LangUtils,public,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.impl.auth.NTLMSchemeFactory,public,org.apache.httpcomponents:httpclient:4.5.3,instantiation,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.concurrent.BasicFuture,public,org.apache.httpcomponents:httpcore:4.4.5,instantiation,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.HttpHost,public,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpclient:4.5.3
+java.sql.Timestamp,public,java.sql,cast,com.google.code.gson:gson:2.8.0
+io.searchbox.client.config.idle.IdleConnectionReaper,public,io.searchbox:jest-common:6.3.1,instantiation,io.searchbox:jest:6.3.1
+org.apache.http.impl.nio.conn.CPool,default,org.apache.httpcomponents:httpasyncclient:4.1.3,method call,org.apache.httpcomponents:httpcore-nio:4.4.6
+com.google.common.base.Joiner,public,com.google.guava:guava:21.0,method call,io.searchbox:jest-common:6.3.1
+org.apache.http.ssl.SSLContexts,public,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.HttpException,public,org.apache.httpcomponents:httpcore:4.4.5,instantiation,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.impl.auth.SPNegoSchemeFactory,public,org.apache.httpcomponents:httpclient:4.5.3,instantiation,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.impl.conn.DefaultHttpResponseParser,public,org.apache.httpcomponents:httpclient:4.5.3,method call,org.apache.httpcomponents:httpcore:4.4.5
+org.apache.http.impl.nio.client.InternalHttpAsyncClient,default,org.apache.httpcomponents:httpasyncclient:4.1.3,method call,io.searchbox:jest:6.3.1
+org.apache.log4j.Priority,public,log4j:log4j:1.2.17,Class.forName,commons-logging:commons-logging:1.1.3
+org.apache.http.util.CharArrayBuffer,public,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpcore-nio:4.4.6
+com.google.common.base.Strings,public,com.google.guava:guava:21.0,method call,io.searchbox:jest-common:6.3.1
+org.apache.http.io.HttpMessageParserFactory,public,org.apache.httpcomponents:httpcore:4.4.5,subtyping,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.ProtocolException,public,org.apache.httpcomponents:httpcore:4.4.5,subtyping,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.nio.entity.ContentBufferEntity,public,org.apache.httpcomponents:httpcore-nio:4.4.6,method call,org.apache.httpcomponents:httpcore:4.4.5
+org.apache.http.config.Lookup,public,org.apache.httpcomponents:httpcore:4.4.5,cast,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.HttpRequest,public,org.apache.httpcomponents:httpcore:4.4.5,cast,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.nio.protocol.BasicAsyncResponseConsumer,public,org.apache.httpcomponents:httpcore-nio:4.4.6,instantiation,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.log4j.Level,public,log4j:log4j:1.2.17,Class.forName,commons-logging:commons-logging:1.1.3
+com.google.gson.JsonObject,public,com.google.code.gson:gson:2.8.0,instantiation,io.searchbox:jest-common:6.3.1
+org.apache.http.pool.PoolEntry,public,org.apache.httpcomponents:httpcore:4.4.5,cast,org.apache.httpcomponents:httpcore-nio:4.4.6
+org.apache.http.client.protocol.RequestExpectContinue,public,org.apache.httpcomponents:httpclient:4.5.3,method call,org.apache.httpcomponents:httpcore:4.4.5
+java.sql.Time,public,java.sql,instantiation,com.google.code.gson:gson:2.8.0
+org.apache.http.impl.conn.DefaultProxyRoutePlanner,public,org.apache.httpcomponents:httpclient:4.5.3,instantiation,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.concurrent.BasicFuture,public,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.ContentTooLongException,public,org.apache.httpcomponents:httpcore:4.4.5,instantiation,org.apache.httpcomponents:httpcore-nio:4.4.6
+org.apache.http.config.ConnectionConfig,public,org.apache.httpcomponents:httpcore:4.4.5,cast,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.pool.ConnFactory,public,org.apache.httpcomponents:httpcore:4.4.5,subtyping,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.log4j.PatternLayout,public,log4j:log4j:1.2.17,Class.forName,log4j:log4j:1.2.17
+org.apache.http.protocol.HttpRequestExecutor,public,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.message.HeaderGroup,public,org.apache.httpcomponents:httpcore:4.4.5,cast,org.apache.httpcomponents:httpclient:4.5.3
+com.google.gson.JsonArray,public,com.google.code.gson:gson:2.8.0,method call,io.searchbox:jest-common:6.3.1
+org.apache.http.client.methods.HttpPost,public,org.apache.httpcomponents:httpclient:4.5.3,method call,io.searchbox:jest:6.3.1
+org.apache.commons.codec.binary.Base64,public,commons-codec:commons-codec:1.10,instantiation,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.message.BasicStatusLine,public,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpcore-nio:4.4.6
+org.apache.http.conn.socket.PlainConnectionSocketFactory,public,org.apache.httpcomponents:httpclient:4.5.3,method call,io.searchbox:jest:6.3.1
+org.apache.http.pool.ConnPool,public,org.apache.httpcomponents:httpcore:4.4.5,subtyping,org.apache.httpcomponents:httpcore-nio:4.4.6
+io.searchbox.client.config.ClientConfig,public,io.searchbox:jest-common:6.3.1,subtyping,io.searchbox:jest:6.3.1
+org.apache.http.client.protocol.HttpClientContext,public,org.apache.httpcomponents:httpclient:4.5.3,method call,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.conn.HttpHostConnectException,public,org.apache.httpcomponents:httpclient:4.5.3,cast,io.searchbox:jest:6.3.1
+org.apache.http.config.ConnectionConfig,public,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.HttpResponseInterceptor,public,org.apache.httpcomponents:httpcore:4.4.5,subtyping,org.apache.httpcomponents:httpclient:4.5.3
+com.google.gson.JsonArray,public,com.google.code.gson:gson:2.8.0,instantiation,io.searchbox:jest-common:6.3.1
+org.apache.http.client.methods.HttpPost,public,org.apache.httpcomponents:httpclient:4.5.3,instantiation,io.searchbox:jest:6.3.1
+org.apache.commons.logging.LogFactory,public,commons-logging:commons-logging:1.1.3,Class.forName,commons-logging:commons-logging:1.1.3
+org.apache.http.client.methods.HttpRequestWrapper$HttpEntityEnclosingRequestWrapper,default,org.apache.httpcomponents:httpclient:4.5.3,method call,org.apache.httpcomponents:httpcore-nio:4.4.6
+org.apache.http.HttpException,public,org.apache.httpcomponents:httpcore:4.4.5,subtyping,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.util.CharArrayBuffer,public,org.apache.httpcomponents:httpcore:4.4.5,instantiation,org.apache.httpcomponents:httpcore-nio:4.4.6
+org.apache.http.concurrent.FutureCallback,public,org.apache.httpcomponents:httpcore:4.4.5,subtyping,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.logging.log4j.util.PropertiesUtil,public,org.apache.logging.log4j.util,method call,org.apache.logging.log4j.core.util
+org.apache.log4j.Category,public,log4j:log4j:1.2.17,Class.forName,log4j:log4j:1.2.17
+org.apache.http.impl.conn.BasicHttpClientConnectionManager,public,org.apache.httpcomponents:httpclient:4.5.3,instantiation,io.searchbox:jest:6.3.1
+java.security.PrivilegedAction,public,java.security,subtyping,commons-logging:commons-logging:1.1.3
+com.google.gson.JsonObject,public,com.google.code.gson:gson:2.8.0,method call,io.searchbox:jest-common:6.3.1
+org.apache.http.impl.client.DefaultConnectionKeepAliveStrategy,public,org.apache.httpcomponents:httpclient:4.5.3,method call,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.HttpEntityEnclosingRequest,public,org.apache.httpcomponents:httpcore:4.4.5,subtyping,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.impl.nio.DefaultNHttpClientConnection,public,org.apache.httpcomponents:httpcore-nio:4.4.6,subtyping,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.protocol.RequestUserAgent,public,org.apache.httpcomponents:httpcore:4.4.5,instantiation,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.message.BasicHttpResponse,public,org.apache.httpcomponents:httpcore:4.4.5,method call,io.searchbox:jest:6.3.1
+org.apache.http.message.BasicNameValuePair,public,org.apache.httpcomponents:httpcore:4.4.5,instantiation,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.auth.AuthState,public,org.apache.httpcomponents:httpclient:4.5.3,method call,org.apache.httpcomponents:httpasyncclient:4.1.3
+java.lang.String,public,unknownLib,Class.forName,commons-logging:commons-logging:1.1.3
+org.apache.http.client.methods.HttpRequestWrapper$HttpEntityEnclosingRequestWrapper,default,org.apache.httpcomponents:httpclient:4.5.3,method call,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.client.protocol.RequestClientConnControl,public,org.apache.httpcomponents:httpclient:4.5.3,instantiation,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.protocol.HttpProcessorBuilder,public,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.client.methods.HttpOptions,public,org.apache.httpcomponents:httpclient:4.5.3,instantiation,org.apache.httpcomponents:httpasyncclient:4.1.3
+sun.reflect.Reflection,public,unknownLib,Class.forName,org.apache.logging.log4j.util
+org.apache.http.params.HttpParams,public,org.apache.httpcomponents:httpcore:4.4.5,cast,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.conn.routing.HttpRoute,public,org.apache.httpcomponents:httpclient:4.5.3,method call,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.io.BufferInfo,public,org.apache.httpcomponents:httpcore:4.4.5,subtyping,org.apache.httpcomponents:httpcore-nio:4.4.6
+sun.security.ec.ECKeyPairGenerator,public,unknownLib,Class.forName,java.security
+org.apache.http.util.Args,public,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpcore-nio:4.4.6
+org.apache.http.impl.nio.reactor.IOReactorConfig,public,org.apache.httpcomponents:httpcore-nio:4.4.6,method call,io.searchbox:jest:6.3.1
+org.apache.http.client.protocol.RequestAcceptEncoding,public,org.apache.httpcomponents:httpclient:4.5.3,method call,org.apache.httpcomponents:httpcore:4.4.5
+org.apache.logging.log4j.message.SimpleMessage,public,org.apache.logging.log4j.message,instantiation,org.apache.logging.log4j.spi
+org.apache.log4j.Logger,public,log4j:log4j:1.2.17,method call,org.slf4j:slf4j-log4j12:1.7.25
+org.apache.log4j.helpers.Loader,public,log4j:log4j:1.2.17,Class.forName,log4j:log4j:1.2.17
+org.apache.http.HttpResponseInterceptor,public,org.apache.httpcomponents:httpcore:4.4.5,cast,org.apache.httpcomponents:httpasyncclient:4.1.3
+io.searchbox.cluster.NodesInfo,public,io.searchbox:jest-common:6.3.1,method call,io.searchbox:jest:6.3.1
+org.slf4j.impl.StaticLoggerBinder,public,org.slf4j:slf4j-log4j12:1.7.25,method call,org.slf4j:slf4j-api:1.7.25
+org.apache.http.protocol.HttpRequestExecutor,public,org.apache.httpcomponents:httpcore:4.4.5,instantiation,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.commons.logging.LogFactory,public,commons-logging:commons-logging:1.1.3,method call,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl,default,org.apache.httpcomponents:httpasyncclient:4.1.3,method call,org.apache.httpcomponents:httpcore-nio:4.4.6
+org.apache.http.message.BasicHttpRequest,public,org.apache.httpcomponents:httpcore:4.4.5,instantiation,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.nio.entity.NStringEntity,public,org.apache.httpcomponents:httpcore-nio:4.4.6,instantiation,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.HttpInetConnection,public,org.apache.httpcomponents:httpcore:4.4.5,subtyping,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.HttpHost,public,org.apache.httpcomponents:httpcore:4.4.5,instantiation,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.nio.reactor.ssl.SSLIOSession,public,org.apache.httpcomponents:httpcore-nio:4.4.6,instantiation,org.apache.httpcomponents:httpasyncclient:4.1.3
+com.google.common.collect.ImmutableSet,private,com.google.guava:guava:21.0,method call,io.searchbox:jest-common:6.3.1
+org.apache.http.HttpEntity,public,org.apache.httpcomponents:httpcore:4.4.5,subtyping,org.apache.httpcomponents:httpclient:4.5.3
+java.lang.Throwable,public,unknownLib,Class.forName,log4j:log4j:1.2.17
+org.apache.http.config.SocketConfig,public,org.apache.httpcomponents:httpcore:4.4.5,cast,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.HttpEntity,public,org.apache.httpcomponents:httpcore:4.4.5,cast,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.logging.log4j.core.lookup.JndiLookup,public,unknownLib,Class.forName,org.apache.logging.log4j.util
+org.apache.http.protocol.RequestContent,public,org.apache.httpcomponents:httpcore:4.4.5,instantiation,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.HttpClientConnection,public,org.apache.httpcomponents:httpcore:4.4.5,subtyping,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.message.BasicStatusLine,public,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpclient:4.5.3
+com.google.common.util.concurrent.ThreadFactoryBuilder,public,com.google.guava:guava:21.0,method call,io.searchbox:jest-common:6.3.1
+org.apache.logging.log4j.spi.Provider,public,org.apache.logging.log4j.spi,instantiation,org.apache.logging.log4j.util
+org.apache.logging.log4j.util.LoaderUtil,public,org.apache.logging.log4j.util,method call,org.apache.logging.log4j.spi
+org.slf4j.helpers.MarkerIgnoringBase,public,org.slf4j:slf4j-api:1.7.25,subtyping,org.slf4j:slf4j-log4j12:1.7.25
+java.security.PrivilegedAction,public,java.security,subtyping,org.apache.logging.log4j.util
+java.security.AlgorithmParametersSpi,public,java.security,Class.forName,java.security
+org.apache.http.FormattedHeader,public,org.apache.httpcomponents:httpcore:4.4.5,cast,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.pool.PoolEntry,public,org.apache.httpcomponents:httpcore:4.4.5,subtyping,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.auth.AuthScope,public,org.apache.httpcomponents:httpclient:4.5.3,instantiation,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.log4j.LogManager,public,log4j:log4j:1.2.17,method call,org.slf4j:slf4j-log4j12:1.7.25
+org.apache.http.nio.protocol.HttpAsyncRequestExecutor,public,org.apache.httpcomponents:httpcore-nio:4.4.6,method call,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.HttpClientConnection,public,org.apache.httpcomponents:httpcore:4.4.5,cast,org.apache.httpcomponents:httpclient:4.5.3
+sun.security.provider.X509Factory,public,unknownLib,Class.forName,java.security
+org.apache.http.client.protocol.RequestAddCookies,public,org.apache.httpcomponents:httpclient:4.5.3,instantiation,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.client.NonRepeatableRequestException,public,org.apache.httpcomponents:httpclient:4.5.3,instantiation,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor,public,org.apache.httpcomponents:httpcore-nio:4.4.6,instantiation,io.searchbox:jest:6.3.1
+io.searchbox.client.config.discovery.NodeChecker,public,io.searchbox:jest-common:6.3.1,instantiation,io.searchbox:jest:6.3.1
+org.apache.http.HttpRequestInterceptor,public,org.apache.httpcomponents:httpcore:4.4.5,cast,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.client.utils.URIUtils,default,org.apache.httpcomponents:httpclient:4.5.3,method call,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.slf4j.spi.LoggerFactoryBinder,public,org.slf4j:slf4j-api:1.7.25,subtyping,org.slf4j:slf4j-log4j12:1.7.25
+org.apache.http.ProtocolException,public,org.apache.httpcomponents:httpcore:4.4.5,instantiation,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.HttpInetConnection,public,org.apache.httpcomponents:httpcore:4.4.5,subtyping,org.apache.httpcomponents:httpcore-nio:4.4.6
+org.apache.http.config.Lookup,public,org.apache.httpcomponents:httpcore:4.4.5,cast,org.apache.httpcomponents:httpasyncclient:4.1.3
+io.searchbox.client.config.HttpClientConfig,public,io.searchbox:jest:6.3.1,method call,io.searchbox:jest-common:6.3.1
+org.slf4j.impl.Log4jLoggerAdapter,public,org.slf4j:slf4j-log4j12:1.7.25,method call,io.searchbox:jest:6.3.1
+org.apache.http.config.Registry,public,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.message.BasicRequestLine,public,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpcore-nio:4.4.6
+org.apache.logging.log4j.message.ParameterizedMessage,public,org.apache.logging.log4j.message,instantiation,org.apache.logging.log4j.spi
+java.lang.Thread,public,unknownLib,Class.forName,commons-logging:commons-logging:1.1.3
+org.apache.http.client.methods.Configurable,public,org.apache.httpcomponents:httpclient:4.5.3,cast,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.conn.routing.HttpRoute,public,org.apache.httpcomponents:httpclient:4.5.3,cast,io.searchbox:jest:6.3.1
+org.apache.http.entity.BasicHttpEntity,public,org.apache.httpcomponents:httpcore:4.4.5,subtyping,org.apache.httpcomponents:httpcore-nio:4.4.6
+com.google.gson.JsonElement,public,com.google.code.gson:gson:2.8.0,cast,io.searchbox:jest-common:6.3.1
+com.google.common.collect.ImmutableSet,public,com.google.guava:guava:21.0,method call,io.searchbox:jest-common:6.3.1
+org.apache.http.impl.conn.DefaultRoutePlanner,public,org.apache.httpcomponents:httpclient:4.5.3,instantiation,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.impl.auth.BasicScheme,public,org.apache.httpcomponents:httpclient:4.5.3,instantiation,io.searchbox:jest:6.3.1
+org.apache.http.impl.DefaultBHttpClientConnection,public,org.apache.httpcomponents:httpcore:4.4.5,subtyping,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.commons.logging.LogFactory,default,commons-logging:commons-logging:1.1.3,method call,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.message.BasicHttpResponse,public,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.impl.nio.client.HttpAsyncClientBuilder,public,org.apache.httpcomponents:httpasyncclient:4.1.3,method call,io.searchbox:jest:6.3.1
+org.apache.http.config.RegistryBuilder,public,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpclient:4.5.3
+sun.security.provider.SHA,public,unknownLib,Class.forName,java.security
+com.google.common.collect.ImmutableList,private,com.google.guava:guava:21.0,method call,io.searchbox:jest-common:6.3.1
+org.apache.http.pool.ConnPoolControl,public,org.apache.httpcomponents:httpcore:4.4.5,subtyping,org.apache.httpcomponents:httpcore-nio:4.4.6
+org.apache.http.client.protocol.RequestAuthCache,public,org.apache.httpcomponents:httpclient:4.5.3,method call,org.apache.httpcomponents:httpcore:4.4.5
+org.apache.http.impl.nio.conn.CPoolEntry,default,org.apache.httpcomponents:httpasyncclient:4.1.3,method call,org.apache.httpcomponents:httpcore-nio:4.4.6
+org.apache.http.impl.client.HttpClients,public,org.apache.httpcomponents:httpclient:4.5.3,method call,io.searchbox:jest:6.3.1
+org.apache.log4j.Appender,public,log4j:log4j:1.2.17,Class.forName,log4j:log4j:1.2.17
+org.apache.http.concurrent.BasicFuture,public,org.apache.httpcomponents:httpcore:4.4.5,cast,org.apache.httpcomponents:httpcore-nio:4.4.6
+org.apache.http.message.BasicTokenIterator,public,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.HttpHost,public,org.apache.httpcomponents:httpcore:4.4.5,instantiation,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.message.ParserCursor,public,org.apache.httpcomponents:httpcore:4.4.5,instantiation,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.HttpRequest,public,org.apache.httpcomponents:httpcore:4.4.5,subtyping,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.client.protocol.ResponseProcessCookies,public,org.apache.httpcomponents:httpclient:4.5.3,instantiation,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.logging.log4j.util.Supplier[],public,org.apache.logging.log4j.util,cast,org.apache.logging.log4j.spi
+org.apache.logging.log4j.util.SortedArrayStringMap,public,org.apache.logging.log4j.util,instantiation,org.apache.logging.log4j.spi
+org.apache.http.NameValuePair,public,org.apache.httpcomponents:httpcore:4.4.5,cast,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.logging.log4j.util.StringBuilderFormattable,public,org.apache.logging.log4j.util,cast,org.apache.logging.log4j.message
+org.apache.http.concurrent.BasicFuture,public,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpcore-nio:4.4.6
+org.apache.http.client.protocol.ResponseProcessCookies,public,org.apache.httpcomponents:httpclient:4.5.3,method call,org.apache.httpcomponents:httpcore:4.4.5
+java.sql.Timestamp,public,java.sql,instantiation,com.google.code.gson:gson:2.8.0
+org.apache.http.client.methods.HttpPost,public,org.apache.httpcomponents:httpclient:4.5.3,instantiation,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.slf4j.helpers.MessageFormatter,public,org.slf4j:slf4j-api:1.7.25,method call,org.slf4j:slf4j-log4j12:1.7.25
+org.apache.http.impl.client.DefaultRedirectStrategy,public,org.apache.httpcomponents:httpclient:4.5.3,method call,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.commons.logging.LogFactory,default,commons-logging:commons-logging:1.1.3,method call,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.nio.NHttpClientConnection,public,org.apache.httpcomponents:httpcore-nio:4.4.6,cast,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.HttpResponseInterceptor,public,org.apache.httpcomponents:httpcore:4.4.5,cast,org.apache.httpcomponents:httpclient:4.5.3
+com.google.gson.JsonSyntaxException,public,com.google.code.gson:gson:2.8.0,instantiation,io.searchbox:jest-common:6.3.1
+org.apache.http.impl.HttpConnectionMetricsImpl,public,org.apache.httpcomponents:httpcore:4.4.5,instantiation,org.apache.httpcomponents:httpcore-nio:4.4.6
+org.apache.http.client.protocol.RequestAddCookies,public,org.apache.httpcomponents:httpclient:4.5.3,method call,org.apache.httpcomponents:httpcore:4.4.5
+org.apache.http.config.MessageConstraints,public,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpcore-nio:4.4.6
+org.apache.http.util.TextUtils,public,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.ConnectionClosedException,public,org.apache.httpcomponents:httpcore:4.4.5,instantiation,org.apache.httpcomponents:httpcore-nio:4.4.6
+org.apache.http.client.protocol.RequestExpectContinue,public,org.apache.httpcomponents:httpclient:4.5.3,instantiation,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.protocol.ImmutableHttpProcessor,public,org.apache.httpcomponents:httpcore:4.4.5,instantiation,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.log4j.Logger,public,log4j:log4j:1.2.17,Class.forName,log4j:log4j:1.2.17
+org.apache.http.client.config.RequestConfig$Builder,public,org.apache.httpcomponents:httpclient:4.5.3,method call,io.searchbox:jest:6.3.1
+org.apache.http.impl.nio.reactor.IOSessionImpl,public,org.apache.httpcomponents:httpcore-nio:4.4.6,method call,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.client.protocol.HttpClientContext,public,org.apache.httpcomponents:httpclient:4.5.3,method call,org.apache.httpcomponents:httpcore:4.4.5
+com.google.gson.GsonBuilder,public,com.google.code.gson:gson:2.8.0,instantiation,io.searchbox:jest-common:6.3.1
+org.apache.http.conn.ssl.SSLConnectionSocketFactory,public,org.apache.httpcomponents:httpclient:4.5.3,method call,io.searchbox:jest:6.3.1
+org.apache.http.message.BasicHttpResponse,public,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpcore-nio:4.4.6
+org.apache.http.impl.execchain.HttpResponseProxy,default,org.apache.httpcomponents:httpclient:4.5.3,method call,io.searchbox:jest:6.3.1
+com.google.gson.Gson,public,com.google.code.gson:gson:2.8.0,method call,io.searchbox:jest-common:6.3.1
+org.apache.http.impl.io.AbstractMessageParser,public,org.apache.httpcomponents:httpcore:4.4.5,subtyping,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.impl.conn.DefaultSchemePortResolver,public,org.apache.httpcomponents:httpclient:4.5.3,method call,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.impl.nio.client.DefaultClientExchangeHandlerImpl,default,org.apache.httpcomponents:httpasyncclient:4.1.3,method call,org.apache.httpcomponents:httpcore-nio:4.4.6
+org.apache.http.MessageConstraintException,public,org.apache.httpcomponents:httpcore:4.4.5,instantiation,org.apache.httpcomponents:httpcore-nio:4.4.6
+org.apache.logging.log4j.util.StringMap,public,org.apache.logging.log4j.util,cast,org.apache.logging.log4j.spi
+org.apache.http.protocol.HttpProcessorBuilder,public,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpclient:4.5.3
+com.google.gson.JsonPrimitive,public,com.google.code.gson:gson:2.8.0,instantiation,io.searchbox:jest-common:6.3.1
+org.apache.http.protocol.HttpContext,public,org.apache.httpcomponents:httpcore:4.4.5,cast,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.nio.protocol.HttpAsyncClientExchangeHandler,public,org.apache.httpcomponents:httpcore-nio:4.4.6,subtyping,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.conn.routing.RouteTracker,public,org.apache.httpcomponents:httpclient:4.5.3,instantiation,org.apache.httpcomponents:httpasyncclient:4.1.3
+java.sql.Time,public,java.sql,cast,com.google.code.gson:gson:2.8.0
+org.apache.http.client.RedirectException,public,org.apache.httpcomponents:httpclient:4.5.3,instantiation,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.commons.logging.impl.LogFactoryImpl,public,commons-logging:commons-logging:1.1.3,Class.forName,commons-logging:commons-logging:1.1.3
+org.apache.logging.log4j.core.lookup.JmxRuntimeInputArgumentsLookup,public,unknownLib,Class.forName,org.apache.logging.log4j.util
+org.apache.http.entity.InputStreamEntity,public,org.apache.httpcomponents:httpcore:4.4.5,instantiation,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.client.ClientProtocolException,public,org.apache.httpcomponents:httpclient:4.5.3,instantiation,org.apache.httpcomponents:httpasyncclient:4.1.3
+sun.security.provider.JavaKeyStore$DualFormatJKS,public,unknownLib,Class.forName,java.security
+org.apache.http.message.BasicRequestLine,public,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.protocol.HttpCoreContext,public,org.apache.httpcomponents:httpcore:4.4.5,subtyping,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.logging.log4j.message.ReusableMessageFactory,public,org.apache.logging.log4j.message,method call,org.apache.logging.log4j.spi
+org.apache.http.conn.routing.BasicRouteDirector,public,org.apache.httpcomponents:httpclient:4.5.3,instantiation,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.HttpRequestInterceptor,public,org.apache.httpcomponents:httpcore:4.4.5,cast,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.logging.log4j.core.impl.Log4jContextFactory,public,unknownLib,Class.forName,org.apache.logging.log4j.spi
+org.apache.http.util.CharArrayBuffer,public,org.apache.httpcomponents:httpcore:4.4.5,method call,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.impl.io.HttpTransportMetricsImpl,public,org.apache.httpcomponents:httpcore:4.4.5,instantiation,org.apache.httpcomponents:httpcore-nio:4.4.6
+org.apache.http.protocol.ImmutableHttpProcessor,public,org.apache.httpcomponents:httpcore:4.4.5,instantiation,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager$InternalConnectionFactory,default,org.apache.httpcomponents:httpasyncclient:4.1.3,method call,org.apache.httpcomponents:httpcore-nio:4.4.6
+org.apache.http.client.methods.HttpGet,public,org.apache.httpcomponents:httpclient:4.5.3,instantiation,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor,public,org.apache.httpcomponents:httpcore-nio:4.4.6,method call,org.apache.httpcomponents:httpasyncclient:4.1.3
+com.google.common.util.concurrent.MoreExecutors,public,com.google.guava:guava:21.0,method call,io.searchbox:jest-common:6.3.1
+org.apache.log4j.spi.OptionHandler,public,log4j:log4j:1.2.17,Class.forName,log4j:log4j:1.2.17
+com.google.common.collect.LinkedHashMultimap,public,com.google.guava:guava:21.0,method call,io.searchbox:jest-common:6.3.1
+org.apache.http.impl.entity.LaxContentLengthStrategy,public,org.apache.httpcomponents:httpcore:4.4.5,instantiation,org.apache.httpcomponents:httpcore-nio:4.4.6
+io.searchbox.client.config.discovery.NodeChecker,public,io.searchbox:jest-common:6.3.1,method call,com.google.guava:guava:21.0
+org.apache.http.ConnectionClosedException,public,org.apache.httpcomponents:httpcore:4.4.5,instantiation,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.logging.log4j.core.util.Loader,public,org.apache.logging.log4j.core.util,method call,org.apache.logging.log4j.util
+org.apache.http.pool.ConnPoolControl,public,org.apache.httpcomponents:httpcore:4.4.5,subtyping,org.apache.httpcomponents:httpclient:4.5.3
+org.apache.http.impl.client.BasicCredentialsProvider,public,org.apache.httpcomponents:httpclient:4.5.3,instantiation,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.commons.logging.impl.Log4JLogger,public,commons-logging:commons-logging:1.1.3,Class.forName,commons-logging:commons-logging:1.1.3
+com.google.common.util.concurrent.AbstractScheduledService,public,com.google.guava:guava:21.0,subtyping,io.searchbox:jest-common:6.3.1
+org.apache.http.client.config.RequestConfig,public,org.apache.httpcomponents:httpclient:4.5.3,method call,io.searchbox:jest:6.3.1
+org.apache.http.impl.auth.KerberosSchemeFactory,public,org.apache.httpcomponents:httpclient:4.5.3,instantiation,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.impl.conn.SystemDefaultRoutePlanner,public,org.apache.httpcomponents:httpclient:4.5.3,instantiation,org.apache.httpcomponents:httpasyncclient:4.1.3
+org.apache.http.concurrent.FutureCallback,public,org.apache.httpcomponents:httpcore:4.4.5,subtyping,io.searchbox:jest:6.3.1
