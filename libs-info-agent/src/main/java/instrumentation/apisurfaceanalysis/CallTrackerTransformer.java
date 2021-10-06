@@ -106,8 +106,8 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 				HashMap<String, HashSet<CtMethod>> implsToMethods = new HashMap<String, HashSet<CtMethod>>();
 				HashMap<String, String> implsToLibs = new HashMap<String, String>();
 				for (String implinfo : data[1].split(";")) {
-					if (implinfo.contains("\t")) {
-						String[] impls = implinfo.split("\t");
+					if (implinfo.contains(",")) {
+						String[] impls = implinfo.split(",");
 						String implName = "", impllib = "";
 						if (impls.length>1) {
 							implName = impls[0];

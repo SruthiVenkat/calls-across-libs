@@ -84,7 +84,7 @@ public class JarUtility {
             prop.load(input);
             new File(prop.getProperty("outputPath")+File.separator+lib).mkdir();
             libsInfoPath = prop.getProperty("outputPath")+File.separator
-            		+lib+File.separator+lib+"-libsInfo.csv";
+            		+lib+File.separator+lib+"-libsInfo.tsv";
             if (new File(libsInfoPath).exists()) {
             	String row;
     			BufferedReader reader = new BufferedReader(new FileReader(libsInfoPath));
@@ -126,11 +126,11 @@ public class JarUtility {
 			if (!file.exists()) file.createNewFile();
 			FileWriter writer = new FileWriter(libsInfoPath, true);	
 			if (new File(libsInfoPath).length() == 0) {
-				writer.write("Library Name,No. of Public/Protected Methods,No. of Methods Called By Tests,Classes\n");
-				writer.write("unknownLib,0,0, \n");
+				writer.write("Library Name\tNo. of Public/Protected Methods\tNo. of Methods Called By Tests\tClasses\n");
+				writer.write("unknownLib\t0\t0\t \n");
 			}
 			for (String lib: libsToCountsAndClasses.keySet()) {
-				writer.write(lib.trim()+","+libsToCountsAndClasses.get(lib).get(0)+","+libsToCountsAndClasses.get(lib).get(1)+","+libsToCountsAndClasses.get(lib).get(2)+"\n");
+				writer.write(lib.trim()+"\t"+libsToCountsAndClasses.get(lib).get(0)+"\t"+libsToCountsAndClasses.get(lib).get(1)+"\t"+libsToCountsAndClasses.get(lib).get(2)+"\n");
 		    }
 			writer.write("\n");
 			writer.flush();
@@ -150,10 +150,10 @@ public class JarUtility {
 			if (!file.exists()) file.createNewFile();
 			FileWriter writer = new FileWriter(servicesInfoPath, false);	
 			if (new File(servicesInfoPath).length() == 0) {
-				writer.write("SPI,SPI Implementations\n");
+				writer.write("SPI\tSPI Implementations\n");
 			}
 			for (String spi: servicesInfo.keySet()) {
-				writer.write(spi+","+String.join(";", servicesInfo.get(spi))+"\n");
+				writer.write(spi+"\t"+String.join(";", servicesInfo.get(spi))+"\n");
 		    }
 			writer.flush();
 			writer.close();
@@ -332,8 +332,8 @@ public class JarUtility {
 						
 					reader.close();
 					servicesInfo.putIfAbsent(key, new HashSet<String>());
-					if (!servicesInfo.get(key).contains(row+"\t"+dependencyName))
-						servicesInfo.get(key).add(row+"\t"+dependencyName);
+					if (!servicesInfo.get(key).contains(row+","+dependencyName))
+						servicesInfo.get(key).add(row+","+dependencyName);
 				}
 			}
 			crunchifyJarFile.close();
