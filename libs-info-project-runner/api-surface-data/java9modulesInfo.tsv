@@ -1,0 +1,15 @@
+Project	Depends On	Transitive Depends On	Uses Service	Provides Service	Exports
+com.fasterxml.jackson.core:jackson-databind:2.12.3	java.desktop;java.sql;java.xml 	com.fasterxml.jackson.annotation;com.fasterxml.jackson.core	com.fasterxml.jackson.databind.Module	"com.fasterxml.jackson.core.ObjectCodec,com.fasterxml.jackson.databind.ObjectMapper"	com.fasterxml.jackson.databind;com.fasterxml.jackson.databind.annotation;com.fasterxml.jackson.databind.cfg;com.fasterxml.jackson.databind.deser;com.fasterxml.jackson.databind.deser.impl;com.fasterxml.jackson.databind.deser.std;com.fasterxml.jackson.databind.exc;com.fasterxml.jackson.databind.ext;com.fasterxml.jackson.databind.introspect;com.fasterxml.jackson.databind.json;com.fasterxml.jackson.databind.jsonFormatVisitors;com.fasterxml.jackson.databind.jsonschema;com.fasterxml.jackson.databind.jsontype;com.fasterxml.jackson.databind.jsontype.impl;com.fasterxml.jackson.databind.module;com.fasterxml.jackson.databind.node;com.fasterxml.jackson.databind.ser;com.fasterxml.jackson.databind.ser.impl;com.fasterxml.jackson.databind.ser.std;com.fasterxml.jackson.databind.type;com.fasterxml.jackson.databind.util;
+com.google.code.gson:gson:2.8.8		java.sql			com.google.gson;com.google.gson.annotations;com.google.gson.reflect;com.google.gson.stream
+com.fasterxml.jackson.core:jackson-core:2.12.3			com.fasterxml.jackson.core.ObjectCodec		com.fasterxml.jackson.core;com.fasterxml.jackson.core.async;com.fasterxml.jackson.core.base;com.fasterxml.jackson.core.exc;com.fasterxml.jackson.core.filter;com.fasterxml.jackson.core.format;com.fasterxml.jackson.core.io;com.fasterxml.jackson.core.json;com.fasterxml.jackson.core.json.async;com.fasterxml.jackson.core.sym;com.fasterxml.jackson.core.type;com.fasterxml.jackson.core.util
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
