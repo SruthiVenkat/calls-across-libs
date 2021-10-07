@@ -1,0 +1,4 @@
+SubClass	Sub Library	Super Class/Interface	Super Class/Interface Visibility	Super Library	Count
+com.fasterxml.jackson.databind.ObjectMapper	com.fasterxml.jackson.databind	com.fasterxml.jackson.core.Versioned	public	com.fasterxml.jackson.core	1
+com.fasterxml.jackson.databind.JsonNode	com.fasterxml.jackson.databind	com.fasterxml.jackson.core.TreeNode	public	com.fasterxml.jackson.core	1
+com.fasterxml.jackson.databind.ObjectMapper	com.fasterxml.jackson.databind	com.fasterxml.jackson.core.ObjectCodec	public	com.fasterxml.jackson.core	1

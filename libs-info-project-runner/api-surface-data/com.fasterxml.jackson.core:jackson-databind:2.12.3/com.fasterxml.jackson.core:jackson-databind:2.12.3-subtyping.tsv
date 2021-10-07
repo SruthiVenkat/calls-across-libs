@@ -1,0 +1,16 @@
+SubClass	Sub Library	Super Class/Interface	Super Class/Interface Visibility	Super Library	Count
+com.fasterxml.jackson.databind.cfg.PackageVersion	com.fasterxml.jackson.core:jackson-databind:2.12.3	com.fasterxml.jackson.core.Versioned	public	com.fasterxml.jackson.core	1
+com.fasterxml.jackson.databind.util.TokenBuffer	com.fasterxml.jackson.core:jackson-databind:2.12.3	com.fasterxml.jackson.core.JsonGenerator	public	com.fasterxml.jackson.core	2
+com.fasterxml.jackson.databind.ObjectMapper	com.fasterxml.jackson.core:jackson-databind:2.12.3	com.fasterxml.jackson.core.ObjectCodec	public	com.fasterxml.jackson.core	2
+com.fasterxml.jackson.databind.ObjectMapper	com.fasterxml.jackson.core:jackson-databind:2.12.3	com.fasterxml.jackson.core.Versioned	public	com.fasterxml.jackson.core	2
+com.fasterxml.jackson.databind.ObjectReader	com.fasterxml.jackson.core:jackson-databind:2.12.3	com.fasterxml.jackson.core.Versioned	public	com.fasterxml.jackson.core	2
+com.fasterxml.jackson.databind.util.TokenBufferReadContext	com.fasterxml.jackson.core:jackson-databind:2.12.3	com.fasterxml.jackson.core.JsonStreamContext	public	com.fasterxml.jackson.core	1
+com.fasterxml.jackson.databind.ObjectReader	com.fasterxml.jackson.core:jackson-databind:2.12.3	com.fasterxml.jackson.core.ObjectCodec	public	com.fasterxml.jackson.core	2
+com.fasterxml.jackson.databind.node.NodeCursor	com.fasterxml.jackson.core:jackson-databind:2.12.3	com.fasterxml.jackson.core.JsonStreamContext	public	com.fasterxml.jackson.core	1
+com.fasterxml.jackson.databind.ObjectWriter	com.fasterxml.jackson.core:jackson-databind:2.12.3	com.fasterxml.jackson.core.Versioned	public	com.fasterxml.jackson.core	2
+com.fasterxml.jackson.databind.MappingJsonFactory	com.fasterxml.jackson.core:jackson-databind:2.12.3	com.fasterxml.jackson.core.JsonFactory	public	com.fasterxml.jackson.core	2
+com.fasterxml.jackson.databind.Module	com.fasterxml.jackson.core:jackson-databind:2.12.3	com.fasterxml.jackson.core.Versioned	public	com.fasterxml.jackson.core	2
+com.fasterxml.jackson.databind.AnnotationIntrospector	com.fasterxml.jackson.core:jackson-databind:2.12.3	com.fasterxml.jackson.core.Versioned	public	com.fasterxml.jackson.core	2
+com.fasterxml.jackson.databind.JsonMappingException	com.fasterxml.jackson.core:jackson-databind:2.12.3	com.fasterxml.jackson.core.JsonProcessingException	public	com.fasterxml.jackson.core	2
+com.fasterxml.jackson.databind.JsonNode	com.fasterxml.jackson.core:jackson-databind:2.12.3	com.fasterxml.jackson.core.TreeNode	public	com.fasterxml.jackson.core	2
+com.fasterxml.jackson.databind.SequenceWriter	com.fasterxml.jackson.core:jackson-databind:2.12.3	com.fasterxml.jackson.core.Versioned	public	com.fasterxml.jackson.core	1

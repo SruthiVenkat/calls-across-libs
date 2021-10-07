@@ -1,0 +1,15 @@
+Class Name	Class Visibility	Class Library	Usage	Used In Library
+org.springside.modules.metrics.metric.Counter	public	io.springside:springside-metrics:5.0.0-SNAPSHOT	method call	junit:junit:4.12
+java.security.PrivilegedAction	public	java.security	subtyping	javax.xml.parsers
+org.springside.modules.metrics.MetricRegistry	public	io.springside:springside-metrics:5.0.0-SNAPSHOT	method call	junit:junit:4.12
+org.springside.modules.metrics.utils.Clock$DefaultClock	public	io.springside:springside-metrics:5.0.0-SNAPSHOT	method call	junit:junit:4.12
+com.sun.org.apache.xerces.internal.jaxp.SAXParserFactoryImpl	public	unknownLib	Class.forName	javax.xml.parsers
+org.xml.sax.InputSource	public	org.xml.sax	instantiation	javax.xml.parsers
+org.springside.modules.metrics.reporter.Slf4jReporter	public	io.springside:springside-metrics:5.0.0-SNAPSHOT	method call	junit:junit:4.12
+java.security.BasicPermissionCollection	default	java.security	method call	junit:junit:4.12
+org.slf4j.LoggerFactory	public	org.slf4j:slf4j-api:1.7.22	method call	io.springside:springside-metrics:5.0.0-SNAPSHOT
+org.springside.modules.metrics.reporter.ConsoleReporter	public	io.springside:springside-metrics:5.0.0-SNAPSHOT	method call	junit:junit:4.12
+org.springside.modules.metrics.metric.Histogram	public	io.springside:springside-metrics:5.0.0-SNAPSHOT	method call	junit:junit:4.12
+org.hamcrest.SelfDescribing	public	org.hamcrest:hamcrest-core:1.3	subtyping	junit:junit:4.12
+sun.security.provider.PolicyFile	public	unknownLib	Class.forName	java.security
+org.springside.modules.metrics.utils.Clock$MockClock	public	io.springside:springside-metrics:5.0.0-SNAPSHOT	method call	junit:junit:4.12

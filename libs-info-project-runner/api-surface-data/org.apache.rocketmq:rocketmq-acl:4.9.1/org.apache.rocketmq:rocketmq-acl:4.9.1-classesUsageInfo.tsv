@@ -1,0 +1,85 @@
+Class Name	Class Visibility	Class Library	Usage	Used In Library
+org.apache.rocketmq.remoting.CommandCustomHeader	public	org.apache.rocketmq:rocketmq-remoting:4.9.1	subtyping	org.apache.rocketmq:rocketmq-common:4.9.1
+org.yaml.snakeyaml.Yaml	public	org.yaml:snakeyaml:1.19	instantiation	org.apache.rocketmq:rocketmq-acl:4.9.1
+org.apache.rocketmq.srvutil.FileWatchService	public	org.apache.rocketmq:rocketmq-srvutil:4.9.1	instantiation	org.apache.rocketmq:rocketmq-acl:4.9.1
+org.apache.rocketmq.srvutil.FileWatchService	public	org.apache.rocketmq:rocketmq-srvutil:4.9.1	method call	org.apache.rocketmq:rocketmq-acl:4.9.1
+org.yaml.snakeyaml.Yaml	public	org.yaml:snakeyaml:1.19	method call	org.apache.rocketmq:rocketmq-acl:4.9.1
+org.apache.rocketmq.common.protocol.heartbeat.ConsumerData	public	org.apache.rocketmq:rocketmq-common:4.9.1	method call	com.alibaba:fastjson:1.2.76
+org.apache.commons.validator.routines.InetAddressValidator	public	commons-validator:commons-validator:1.7	method call	org.apache.rocketmq:rocketmq-acl:4.9.1
+org.apache.rocketmq.common.protocol.heartbeat.HeartbeatData	public	org.apache.rocketmq:rocketmq-common:4.9.1	method call	org.apache.rocketmq:rocketmq-remoting:4.9.1
+org.apache.rocketmq.logging.Slf4jLoggerFactory$Slf4jLogger	public	org.apache.rocketmq:rocketmq-logging:4.9.1	method call	org.apache.rocketmq:rocketmq-acl:4.9.1
+java.util.HashSet	public	unknownLib	Class.forName	com.alibaba:fastjson:1.2.76
+com.alibaba.fastjson.JSON	public	com.alibaba:fastjson:1.2.76	Class.forName	com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.remoting.protocol.RemotingCommand	public	org.apache.rocketmq:rocketmq-remoting:4.9.1	method call	org.apache.rocketmq:rocketmq-acl:4.9.1
+org.apache.rocketmq.common.protocol.header.UpdateConsumerOffsetRequestHeader	public	org.apache.rocketmq:rocketmq-common:4.9.1	method call	org.apache.rocketmq:rocketmq-remoting:4.9.1
+java.util.HashMap	public	unknownLib	Class.forName	com.alibaba:fastjson:1.2.76
+com.alibaba.fastjson.JSONObject	public	com.alibaba:fastjson:1.2.76	cast	org.apache.rocketmq:rocketmq-acl:4.9.1
+org.apache.commons.lang3.StringUtils	public	org.apache.commons:commons-lang3:3.4	method call	org.apache.rocketmq:rocketmq-srvutil:4.9.1
+org.apache.rocketmq.common.AclConfig	public	org.apache.rocketmq:rocketmq-common:4.9.1	instantiation	org.apache.rocketmq:rocketmq-acl:4.9.1
+org.apache.rocketmq.srvutil.FileWatchService	public	org.apache.rocketmq:rocketmq-srvutil:4.9.1	method call	org.apache.rocketmq:rocketmq-common:4.9.1
+org.apache.rocketmq.common.protocol.heartbeat.MessageModel	public	org.apache.rocketmq:rocketmq-common:4.9.1	Class.forName	com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.protocol.heartbeat.SubscriptionData	public	org.apache.rocketmq:rocketmq-common:4.9.1	method call	org.apache.rocketmq:rocketmq-acl:4.9.1
+org.apache.rocketmq.common.protocol.header.UnregisterClientRequestHeader	public	org.apache.rocketmq:rocketmq-common:4.9.1	method call	org.apache.rocketmq:rocketmq-remoting:4.9.1
+java.util.Collection	public	unknownLib	Class.forName	com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.protocol.header.GetConsumerListByGroupRequestHeader	public	org.apache.rocketmq:rocketmq-common:4.9.1	method call	org.apache.rocketmq:rocketmq-remoting:4.9.1
+org.apache.rocketmq.common.protocol.heartbeat.HeartbeatData	public	org.apache.rocketmq:rocketmq-common:4.9.1	method call	org.apache.rocketmq:rocketmq-acl:4.9.1
+java.lang.Object	public	unknownLib	Class.forName	com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.DataVersion	public	org.apache.rocketmq:rocketmq-common:4.9.1	cast	org.apache.rocketmq:rocketmq-acl:4.9.1
+java.sql.Clob	public	unknownLib	Class.forName	com.alibaba:fastjson:1.2.76
+org.xml.sax.InputSource	public	org.xml.sax	instantiation	javax.xml.parsers
+org.apache.rocketmq.common.protocol.heartbeat.ProducerData	public	org.apache.rocketmq:rocketmq-common:4.9.1	Class.forName	com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.remoting.protocol.RemotingSerializable	public	org.apache.rocketmq:rocketmq-remoting:4.9.1	subtyping	org.apache.rocketmq:rocketmq-common:4.9.1
+org.apache.rocketmq.remoting.protocol.LanguageCode	public	org.apache.rocketmq:rocketmq-remoting:4.9.1	Class.forName	com.alibaba:fastjson:1.2.76
+org.apache.commons.codec.binary.Base64	public	commons-codec:commons-codec:1.9	method call	org.apache.rocketmq:rocketmq-acl:4.9.1
+org.apache.rocketmq.common.PlainAccessConfig	public	org.apache.rocketmq:rocketmq-common:4.9.1	method call	com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.protocol.header.GetConsumerListByGroupRequestHeader	public	org.apache.rocketmq:rocketmq-common:4.9.1	method call	org.apache.rocketmq:rocketmq-acl:4.9.1
+org.apache.rocketmq.common.protocol.heartbeat.ConsumeType	public	org.apache.rocketmq:rocketmq-common:4.9.1	Class.forName	com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.remoting.RPCHook	public	org.apache.rocketmq:rocketmq-remoting:4.9.1	subtyping	org.apache.rocketmq:rocketmq-acl:4.9.1
+org.apache.rocketmq.common.PlainAccessConfig	public	org.apache.rocketmq:rocketmq-common:4.9.1	Class.forName	com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.logging.Slf4jLoggerFactory$Slf4jLogger	public	org.apache.rocketmq:rocketmq-logging:4.9.1	method call	org.apache.rocketmq:rocketmq-common:4.9.1
+org.apache.rocketmq.common.protocol.header.GetConsumerListByGroupRequestHeader	public	org.apache.rocketmq:rocketmq-common:4.9.1	cast	org.apache.rocketmq:rocketmq-acl:4.9.1
+java.nio.file.Path	public	unknownLib	Class.forName	com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.remoting.protocol.SerializeType	public	org.apache.rocketmq:rocketmq-remoting:4.9.1	Class.forName	com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.protocol.heartbeat.SubscriptionData	public	org.apache.rocketmq:rocketmq-common:4.9.1	cast	org.apache.rocketmq:rocketmq-acl:4.9.1
+org.apache.rocketmq.common.protocol.heartbeat.ConsumerData	public	org.apache.rocketmq:rocketmq-common:4.9.1	Class.forName	com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.protocol.heartbeat.ConsumerData	public	org.apache.rocketmq:rocketmq-common:4.9.1	method call	org.apache.rocketmq:rocketmq-acl:4.9.1
+org.apache.rocketmq.common.consumer.ConsumeFromWhere	public	org.apache.rocketmq:rocketmq-common:4.9.1	Class.forName	com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.protocol.header.UnregisterClientRequestHeader	public	org.apache.rocketmq:rocketmq-common:4.9.1	method call	org.apache.rocketmq:rocketmq-acl:4.9.1
+org.apache.rocketmq.common.ServiceThread	public	org.apache.rocketmq:rocketmq-common:4.9.1	subtyping	org.apache.rocketmq:rocketmq-srvutil:4.9.1
+javax.xml.datatype.XMLGregorianCalendar	public	javax.xml.datatype	cast	com.alibaba:fastjson:1.2.76
+com.sun.org.apache.xerces.internal.jaxp.SAXParserFactoryImpl	public	unknownLib	Class.forName	javax.xml.parsers
+java.lang.reflect.Type	public	unknownLib	Class.forName	com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.DataVersion	public	org.apache.rocketmq:rocketmq-common:4.9.1	method call	org.apache.rocketmq:rocketmq-acl:4.9.1
+com.alibaba.fastjson.JSON	public	com.alibaba:fastjson:1.2.76	method call	org.apache.rocketmq:rocketmq-remoting:4.9.1
+org.apache.rocketmq.acl.plain.PlainPermissionManager$2	default	org.apache.rocketmq:rocketmq-acl:4.9.1	method call	org.apache.rocketmq:rocketmq-srvutil:4.9.1
+org.apache.rocketmq.common.protocol.heartbeat.ConsumerData	public	org.apache.rocketmq:rocketmq-common:4.9.1	cast	org.apache.rocketmq:rocketmq-acl:4.9.1
+java.util.List	public	unknownLib	Class.forName	com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.srvutil.FileWatchService$Listener	public	org.apache.rocketmq:rocketmq-srvutil:4.9.1	subtyping	org.apache.rocketmq:rocketmq-acl:4.9.1
+com.alibaba.fastjson.util.ASMUtils	public	com.alibaba:fastjson:1.2.76	Class.forName	com.alibaba:fastjson:1.2.76
+java.lang.AutoCloseable	public	unknownLib	Class.forName	com.alibaba:fastjson:1.2.76
+org.w3c.dom.Node	public	org.w3c.dom	cast	com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.logging.Slf4jLoggerFactory$Slf4jLogger	public	org.apache.rocketmq:rocketmq-logging:4.9.1	method call	org.apache.rocketmq:rocketmq-srvutil:4.9.1
+org.apache.rocketmq.common.protocol.heartbeat.HeartbeatData	public	org.apache.rocketmq:rocketmq-common:4.9.1	cast	org.apache.rocketmq:rocketmq-acl:4.9.1
+org.apache.commons.lang3.StringUtils	public	org.apache.commons:commons-lang3:3.4	method call	org.apache.rocketmq:rocketmq-acl:4.9.1
+org.apache.rocketmq.common.protocol.heartbeat.HeartbeatData	public	org.apache.rocketmq:rocketmq-common:4.9.1	Class.forName	com.alibaba:fastjson:1.2.76
+java.lang.Integer	public	unknownLib	Class.forName	com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.protocol.header.UnregisterClientRequestHeader	public	org.apache.rocketmq:rocketmq-common:4.9.1	cast	org.apache.rocketmq:rocketmq-acl:4.9.1
+org.apache.rocketmq.common.protocol.header.UpdateConsumerOffsetRequestHeader	public	org.apache.rocketmq:rocketmq-common:4.9.1	cast	org.apache.rocketmq:rocketmq-acl:4.9.1
+java.util.Map	public	unknownLib	Class.forName	org.yaml:snakeyaml:1.19
+com.alibaba.fastjson.JSONArray	public	com.alibaba:fastjson:1.2.76	method call	org.apache.rocketmq:rocketmq-acl:4.9.1
+org.apache.rocketmq.common.PlainAccessConfig	public	org.apache.rocketmq:rocketmq-common:4.9.1	method call	org.apache.rocketmq:rocketmq-acl:4.9.1
+org.apache.rocketmq.common.MixAll	public	org.apache.rocketmq:rocketmq-common:4.9.1	method call	org.apache.rocketmq:rocketmq-acl:4.9.1
+org.apache.rocketmq.common.AclConfig	public	org.apache.rocketmq:rocketmq-common:4.9.1	method call	org.apache.rocketmq:rocketmq-acl:4.9.1
+java.lang.String	public	unknownLib	Class.forName	com.alibaba:fastjson:1.2.76
+com.alibaba.fastjson.JSONObject	public	com.alibaba:fastjson:1.2.76	method call	org.apache.rocketmq:rocketmq-acl:4.9.1
+org.apache.rocketmq.common.protocol.header.UpdateConsumerOffsetRequestHeader	public	org.apache.rocketmq:rocketmq-common:4.9.1	method call	org.apache.rocketmq:rocketmq-acl:4.9.1
+java.beans.Transient	public	unknownLib	Class.forName	com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.common.UtilAll	public	org.apache.rocketmq:rocketmq-common:4.9.1	method call	org.apache.rocketmq:rocketmq-srvutil:4.9.1
+java.util.Set	public	unknownLib	Class.forName	com.alibaba:fastjson:1.2.76
+com.alibaba.fastjson.JSONObject	public	com.alibaba:fastjson:1.2.76	Class.forName	org.yaml:snakeyaml:1.19
+org.apache.rocketmq.common.protocol.heartbeat.SubscriptionData	public	org.apache.rocketmq:rocketmq-common:4.9.1	Class.forName	com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.remoting.protocol.RemotingCommand	public	org.apache.rocketmq:rocketmq-remoting:4.9.1	Class.forName	com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.logging.Slf4jLoggerFactory$Slf4jLogger	public	org.apache.rocketmq:rocketmq-logging:4.9.1	method call	org.apache.rocketmq:rocketmq-remoting:4.9.1
+org.apache.rocketmq.common.PlainAccessConfig	public	org.apache.rocketmq:rocketmq-common:4.9.1	cast	org.apache.rocketmq:rocketmq-acl:4.9.1
+org.apache.rocketmq.common.DataVersion	public	org.apache.rocketmq:rocketmq-common:4.9.1	instantiation	org.apache.rocketmq:rocketmq-acl:4.9.1
+org.apache.rocketmq.remoting.protocol.RemotingCommand	public	org.apache.rocketmq:rocketmq-remoting:4.9.1	method call	com.alibaba:fastjson:1.2.76

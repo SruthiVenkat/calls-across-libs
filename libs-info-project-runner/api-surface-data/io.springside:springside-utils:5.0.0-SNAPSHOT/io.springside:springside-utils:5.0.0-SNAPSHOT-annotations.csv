@@ -1,9 +1,0 @@
-Class,Method,Field Name:Field Signature,Annotated In Library,Annotation,Annotation Visibility,Annotation Library,Count
-org.springside.modules.utils.misc.IdGenerator,-,-,io.springside:springside-utils:5.0.0-SNAPSHOT,com.google.common.annotations.Beta,public,com.google.guava:guava:20.0,1
-com.fasterxml.jackson.databind.annotation.JsonAppend,-,-,com.fasterxml.jackson.core:jackson-databind:2.8.6,com.fasterxml.jackson.annotation.JacksonAnnotation,public,com.fasterxml.jackson.core:jackson-annotations:2.8.0,1
-com.fasterxml.jackson.databind.annotation.JsonNaming,-,-,com.fasterxml.jackson.core:jackson-databind:2.8.6,com.fasterxml.jackson.annotation.JacksonAnnotation,public,com.fasterxml.jackson.core:jackson-annotations:2.8.0,1
-org.springside.modules.utils.net.NetUtil,-,-,io.springside:springside-utils:5.0.0-SNAPSHOT,com.google.common.annotations.Beta,public,com.google.guava:guava:20.0,1
-com.fasterxml.jackson.databind.annotation.JsonSerialize,-,-,com.fasterxml.jackson.core:jackson-databind:2.8.6,com.fasterxml.jackson.annotation.JacksonAnnotation,public,com.fasterxml.jackson.core:jackson-annotations:2.8.0,1
-com.fasterxml.jackson.databind.annotation.JsonDeserialize,-,-,com.fasterxml.jackson.core:jackson-databind:2.8.6,com.fasterxml.jackson.annotation.JacksonAnnotation,public,com.fasterxml.jackson.core:jackson-annotations:2.8.0,1
-com.fasterxml.jackson.databind.annotation.JsonValueInstantiator,-,-,com.fasterxml.jackson.core:jackson-databind:2.8.6,com.fasterxml.jackson.annotation.JacksonAnnotation,public,com.fasterxml.jackson.core:jackson-annotations:2.8.0,1
-com.fasterxml.jackson.databind.annotation.JsonTypeResolver,-,-,com.fasterxml.jackson.core:jackson-databind:2.8.6,com.fasterxml.jackson.annotation.JacksonAnnotation,public,com.fasterxml.jackson.core:jackson-annotations:2.8.0,1

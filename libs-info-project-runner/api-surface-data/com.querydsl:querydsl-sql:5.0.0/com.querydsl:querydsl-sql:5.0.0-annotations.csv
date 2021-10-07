@@ -1,4 +1,0 @@
-Class,Method,Field Name:Field Signature,Annotated In Library,Annotation,Annotation Visibility,Annotation Library,Count
-com.querydsl.sql.PrimaryKey,-,-,com.querydsl:querydsl-sql:5.0.0,com.querydsl.core.annotations.Immutable,public,com.querydsl:querydsl-core:5.0.0,1
-com.querydsl.sql.StatementOptions,-,-,com.querydsl:querydsl-sql:5.0.0,com.querydsl.core.annotations.Immutable,public,com.querydsl:querydsl-core:5.0.0,1
-com.querydsl.sql.ForeignKey,-,-,com.querydsl:querydsl-sql:5.0.0,com.querydsl.core.annotations.Immutable,public,com.querydsl:querydsl-core:5.0.0,1

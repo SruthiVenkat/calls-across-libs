@@ -1,5 +1,0 @@
-Class,Method,Field Name:Field Signature,Annotated In Library,Annotation,Annotation Visibility,Annotation Library,Count
-org.apache.logging.log4j.core.config.AppenderControlArraySet,-,-,org.apache.logging.log4j:log4j-core:2.13.2,org.apache.logging.log4j.util.PerformanceSensitive,public,org.apache.logging.log4j:log4j-api:2.13.2,1
-org.springframework.beans.propertyeditors.PathEditor,-,-,org.springframework:spring-beans:4.3.20.RELEASE,org.springframework.lang.UsesJava7,public,org.springframework:spring-core:4.3.20.RELEASE,1
-org.springframework.context.support.ContextTypeMatchClassLoader,-,-,org.springframework:spring:2.5.6.SEC03,org.springframework.lang.UsesJava7,public,org.springframework:spring-core:4.3.20.RELEASE,1
-org.springframework.core.DecoratingClassLoader,-,-,org.springframework:spring:2.5.6.SEC03,org.springframework.lang.UsesJava7,public,org.springframework:spring-core:4.3.20.RELEASE,1

@@ -1,0 +1,11 @@
+Class Name	Class Visibility	Class Library	Usage	Used In Library
+sun.security.provider.NativePRNG	public	unknownLib	Class.forName	java.security
+java.security.MessageDigestSpi	public	java.security	Class.forName	java.security
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream	public	org.apache.commons:commons-compress:1.19	method call	com.github.eirslett:frontend-plugin-core:1.12.0
+org.apache.commons.compress.compressors.gzip.GzipCompressorInputStream	public	org.apache.commons:commons-compress:1.19	instantiation	com.github.eirslett:frontend-plugin-core:1.12.0
+org.apache.commons.io.IOUtils	default	commons-io:commons-io:2.7	method call	com.github.eirslett:frontend-plugin-core:1.12.0
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream	public	org.apache.commons:commons-compress:1.19	instantiation	com.github.eirslett:frontend-plugin-core:1.12.0
+org.codehaus.plexus.util.FileUtils	default	org.codehaus.plexus:plexus-utils:3.0.22	method call	com.github.eirslett:frontend-plugin-core:1.12.0
+java.security.SecureRandom	public	java.security	instantiation	org.codehaus.plexus:plexus-utils:3.0.22
+org.apache.commons.compress.archivers.tar.TarArchiveEntry	public	org.apache.commons:commons-compress:1.19	method call	com.github.eirslett:frontend-plugin-core:1.12.0
+sun.security.provider.SHA	public	unknownLib	Class.forName	java.security

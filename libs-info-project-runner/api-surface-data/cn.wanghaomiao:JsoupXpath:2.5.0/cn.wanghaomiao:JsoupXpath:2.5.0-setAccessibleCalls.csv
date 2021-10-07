@@ -1,2 +1,0 @@
-Caller Method,Caller Library,setAccessible Called On,Visibility,Callee Name,Field Signature,Callee Library
-org.seimicrawler.xpath.core.node.Text$1::head(Lorg/jsoup/nodes/Node;I)V,cn.wanghaomiao:JsoupXpath:2.5.0,java.lang.reflect.Method,protected,org.jsoup.nodes.Node::setParentNode(Lorg/jsoup/nodes/Node;)V,,org.jsoup:jsoup:1.14.1

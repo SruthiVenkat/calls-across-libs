@@ -1,0 +1,69 @@
+Class Name	Class Visibility	Class Library	Usage	Used In Library
+java.sql.Timestamp	public	java.sql	instantiation	com.google.code.gson:gson:2.8.0
+org.apache.log4j.CategoryKey	default	log4j:log4j:1.2.17	Class.forName	log4j:log4j:1.2.17
+org.slf4j.helpers.MessageFormatter	public	org.slf4j:slf4j-api:1.7.25	method call	org.slf4j:slf4j-log4j12:1.7.25
+org.slf4j.ILoggerFactory	public	org.slf4j:slf4j-api:1.7.25	subtyping	org.slf4j:slf4j-log4j12:1.7.25
+com.google.gson.JsonObject	public	com.google.code.gson:gson:2.8.0	cast	io.searchbox:jest-common:6.3.1
+com.google.gson.JsonSyntaxException	public	com.google.code.gson:gson:2.8.0	instantiation	io.searchbox:jest-common:6.3.1
+io.searchbox.core.MultiGet$1	default	io.searchbox:jest-common:6.3.1	method call	com.google.guava:guava:21.0
+org.apache.log4j.LogManager	public	log4j:log4j:1.2.17	method call	org.slf4j:slf4j-log4j12:1.7.25
+com.google.gson.JsonArray	public	com.google.code.gson:gson:2.8.0	instantiation	io.searchbox:jest-common:6.3.1
+java.security.MessageDigestSpi	public	java.security	Class.forName	java.security
+com.google.gson.JsonParser	public	com.google.code.gson:gson:2.8.0	instantiation	io.searchbox:jest-common:6.3.1
+org.slf4j.spi.LocationAwareLogger	public	org.slf4j:slf4j-api:1.7.25	subtyping	org.slf4j:slf4j-log4j12:1.7.25
+org.slf4j.Logger	public	org.slf4j:slf4j-api:1.7.25	cast	org.slf4j:slf4j-log4j12:1.7.25
+com.google.common.util.concurrent.Service$Listener	public	com.google.guava:guava:21.0	subtyping	io.searchbox:jest-common:6.3.1
+org.apache.log4j.Logger	public	log4j:log4j:1.2.17	Class.forName	log4j:log4j:1.2.17
+com.google.gson.JsonPrimitive	public	com.google.code.gson:gson:2.8.0	method call	io.searchbox:jest-common:6.3.1
+java.sql.Date	public	java.sql	instantiation	com.google.code.gson:gson:2.8.0
+org.slf4j.impl.Log4jLoggerFactory	public	org.slf4j:slf4j-log4j12:1.7.25	method call	org.slf4j:slf4j-api:1.7.25
+org.apache.log4j.Category	public	log4j:log4j:1.2.17	Class.forName	log4j:log4j:1.2.17
+com.google.gson.JsonObject	public	com.google.code.gson:gson:2.8.0	method call	io.searchbox:jest-common:6.3.1
+com.google.common.base.CharMatcher$IsEither	private	com.google.guava:guava:21.0	method call	io.searchbox:jest-common:6.3.1
+org.slf4j.spi.LoggerFactoryBinder	public	org.slf4j:slf4j-api:1.7.25	subtyping	org.slf4j:slf4j-log4j12:1.7.25
+java.sql.Timestamp	public	java.sql	cast	com.google.code.gson:gson:2.8.0
+com.google.gson.GsonBuilder	public	com.google.code.gson:gson:2.8.0	method call	io.searchbox:jest-common:6.3.1
+com.google.gson.GsonBuilder	public	com.google.code.gson:gson:2.8.0	instantiation	io.searchbox:jest-common:6.3.1
+com.google.common.base.Joiner	public	com.google.guava:guava:21.0	method call	io.searchbox:jest-common:6.3.1
+java.sql.Date	public	java.sql	cast	com.google.code.gson:gson:2.8.0
+com.google.gson.Gson	public	com.google.code.gson:gson:2.8.0	method call	io.searchbox:jest-common:6.3.1
+com.google.common.collect.LinkedHashMultimap	protected	com.google.guava:guava:21.0	method call	io.searchbox:jest-common:6.3.1
+com.google.common.collect.Lists	public	com.google.guava:guava:21.0	method call	io.searchbox:jest-common:6.3.1
+com.google.gson.JsonParser	public	com.google.code.gson:gson:2.8.0	method call	io.searchbox:jest-common:6.3.1
+org.slf4j.impl.Log4jLoggerAdapter	public	org.slf4j:slf4j-log4j12:1.7.25	method call	io.searchbox:jest-common:6.3.1
+com.google.gson.JsonPrimitive	public	com.google.code.gson:gson:2.8.0	instantiation	io.searchbox:jest-common:6.3.1
+com.google.common.base.Strings	public	com.google.guava:guava:21.0	method call	io.searchbox:jest-common:6.3.1
+com.google.gson.JsonNull	public	com.google.code.gson:gson:2.8.0	method call	io.searchbox:jest-common:6.3.1
+com.google.common.collect.ImmutableMap	public	com.google.guava:guava:21.0	method call	io.searchbox:jest-common:6.3.1
+org.apache.log4j.spi.LocationInfo	public	log4j:log4j:1.2.17	instantiation	org.slf4j:slf4j-log4j12:1.7.25
+com.google.common.reflect.TypeToken	public	com.google.guava:guava:21.0	subtyping	io.searchbox:jest-common:6.3.1
+com.google.gson.JsonElement	public	com.google.code.gson:gson:2.8.0	cast	io.searchbox:jest-common:6.3.1
+java.sql.Time	public	java.sql	cast	com.google.code.gson:gson:2.8.0
+com.google.common.collect.ImmutableSet	public	com.google.guava:guava:21.0	method call	io.searchbox:jest-common:6.3.1
+org.apache.log4j.Logger	public	log4j:log4j:1.2.17	method call	org.slf4j:slf4j-log4j12:1.7.25
+org.apache.log4j.helpers.Loader	public	log4j:log4j:1.2.17	Class.forName	log4j:log4j:1.2.17
+com.google.common.util.concurrent.AbstractScheduledService$Scheduler	public	com.google.guava:guava:21.0	method call	io.searchbox:jest-common:6.3.1
+org.slf4j.helpers.FormattingTuple	public	org.slf4j:slf4j-api:1.7.25	method call	org.slf4j:slf4j-log4j12:1.7.25
+sun.security.provider.NativePRNG	public	unknownLib	Class.forName	java.security
+org.slf4j.impl.StaticLoggerBinder	public	org.slf4j:slf4j-log4j12:1.7.25	method call	org.slf4j:slf4j-api:1.7.25
+com.google.gson.JsonArray	public	com.google.code.gson:gson:2.8.0	cast	io.searchbox:jest-common:6.3.1
+com.google.gson.JsonObject	public	com.google.code.gson:gson:2.8.0	instantiation	io.searchbox:jest-common:6.3.1
+sun.security.provider.SHA	public	unknownLib	Class.forName	java.security
+com.google.common.collect.ImmutableList	private	com.google.guava:guava:21.0	method call	io.searchbox:jest-common:6.3.1
+com.google.common.util.concurrent.ThreadFactoryBuilder	public	com.google.guava:guava:21.0	instantiation	io.searchbox:jest-common:6.3.1
+java.sql.Time	public	java.sql	instantiation	com.google.code.gson:gson:2.8.0
+com.google.common.base.Function	public	com.google.guava:guava:21.0	subtyping	io.searchbox:jest-common:6.3.1
+com.google.common.collect.ImmutableSet	private	com.google.guava:guava:21.0	method call	io.searchbox:jest-common:6.3.1
+com.google.common.collect.ImmutableSet$Builder	public	com.google.guava:guava:21.0	method call	io.searchbox:jest-common:6.3.1
+com.google.common.base.Splitter	public	com.google.guava:guava:21.0	method call	io.searchbox:jest-common:6.3.1
+com.google.common.collect.LinkedHashMultimap	public	com.google.guava:guava:21.0	method call	io.searchbox:jest-common:6.3.1
+com.google.gson.Gson	public	com.google.code.gson:gson:2.8.0	instantiation	io.searchbox:jest-common:6.3.1
+com.google.common.collect.RegularImmutableList	default	com.google.guava:guava:21.0	method call	io.searchbox:jest-common:6.3.1
+com.google.gson.JsonArray	public	com.google.code.gson:gson:2.8.0	method call	io.searchbox:jest-common:6.3.1
+com.google.common.io.CharStreams	public	com.google.guava:guava:21.0	method call	io.searchbox:jest-common:6.3.1
+org.apache.log4j.spi.ThrowableInformation	public	log4j:log4j:1.2.17	instantiation	org.slf4j:slf4j-log4j12:1.7.25
+sun.misc.Unsafe	public	unknownLib	Class.forName	com.google.code.gson:gson:2.8.0
+com.google.common.util.concurrent.AbstractScheduledService	public	com.google.guava:guava:21.0	subtyping	io.searchbox:jest-common:6.3.1
+org.slf4j.helpers.MarkerIgnoringBase	public	org.slf4j:slf4j-api:1.7.25	subtyping	org.slf4j:slf4j-log4j12:1.7.25
+java.lang.Thread	public	unknownLib	Class.forName	log4j:log4j:1.2.17
+org.apache.log4j.spi.LoggingEvent	public	log4j:log4j:1.2.17	instantiation	org.slf4j:slf4j-log4j12:1.7.25

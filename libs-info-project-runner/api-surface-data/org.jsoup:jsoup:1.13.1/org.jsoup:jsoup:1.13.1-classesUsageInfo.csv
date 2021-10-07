@@ -1,5 +1,0 @@
-Class Name,Class Visibility,Class Library,Usage,Used In Library
-javax.xml.parsers.DocumentBuilderFactory,public,javax.xml.parsers,method call,org.jsoup:jsoup:1.13.1
-org.xml.sax.InputSource,public,org.xml.sax,instantiation,javax.xml.parsers
-org.w3c.dom.Element,public,org.w3c.dom,cast,org.jsoup:jsoup:1.13.1
-com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl,public,unknownLib,Class.forName,javax.xml.parsers

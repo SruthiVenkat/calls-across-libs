@@ -1,0 +1,70 @@
+Class Name	Class Visibility	Class Library	Usage	Used In Library
+org.seimicrawler.xpath.antlr.XpathParser$AxisSpecifierContext	public	cn.wanghaomiao:JsoupXpath:2.5.0	method call	org.antlr:antlr4-runtime:4.7.2
+org.seimicrawler.xpath.antlr.XpathParser$UnionExprNoRootContext	public	cn.wanghaomiao:JsoupXpath:2.5.0	method call	org.antlr:antlr4-runtime:4.7.2
+org.seimicrawler.xpath.antlr.XpathParser$AbsoluteLocationPathNorootContext	public	cn.wanghaomiao:JsoupXpath:2.5.0	method call	org.antlr:antlr4-runtime:4.7.2
+org.antlr.v4.runtime.CommonTokenStream	public	org.antlr:antlr4-runtime:4.7.2	instantiation	cn.wanghaomiao:JsoupXpath:2.5.0
+org.jsoup.nodes.Document	public	org.jsoup:jsoup:1.14.1	method call	cn.wanghaomiao:JsoupXpath:2.5.0
+org.seimicrawler.xpath.antlr.XpathParser$NCNameContext	public	cn.wanghaomiao:JsoupXpath:2.5.0	method call	org.antlr:antlr4-runtime:4.7.2
+org.jsoup.nodes.Element	public	org.jsoup:jsoup:1.14.1	method call	cn.wanghaomiao:JsoupXpath:2.5.0
+org.seimicrawler.xpath.antlr.XpathLexer	public	cn.wanghaomiao:JsoupXpath:2.5.0	method call	org.antlr:antlr4-runtime:4.7.2
+org.seimicrawler.xpath.antlr.XpathParser	public	cn.wanghaomiao:JsoupXpath:2.5.0	method call	org.antlr:antlr4-runtime:4.7.2
+org.seimicrawler.xpath.antlr.XpathParser$PredicateContext	public	cn.wanghaomiao:JsoupXpath:2.5.0	method call	org.antlr:antlr4-runtime:4.7.2
+org.antlr.v4.runtime.tree.ParseTree	public	org.antlr:antlr4-runtime:4.7.2	cast	cn.wanghaomiao:JsoupXpath:2.5.0
+org.jsoup.nodes.Element	public	org.jsoup:jsoup:1.14.1	instantiation	cn.wanghaomiao:JsoupXpath:2.5.0
+org.antlr.v4.runtime.CharStreams	public	org.antlr:antlr4-runtime:4.7.2	method call	cn.wanghaomiao:JsoupXpath:2.5.0
+org.antlr.v4.runtime.CommonTokenStream	public	org.antlr:antlr4-runtime:4.7.2	method call	cn.wanghaomiao:JsoupXpath:2.5.0
+org.jsoup.nodes.TextNode	public	org.jsoup:jsoup:1.14.1	cast	cn.wanghaomiao:JsoupXpath:2.5.0
+org.antlr.v4.runtime.DefaultErrorStrategy	public	org.antlr:antlr4-runtime:4.7.2	subtyping	cn.wanghaomiao:JsoupXpath:2.5.0
+org.seimicrawler.xpath.core.node.Text$1	default	cn.wanghaomiao:JsoupXpath:2.5.0	method call	org.jsoup:jsoup:1.14.1
+org.seimicrawler.xpath.antlr.XpathParser$AbbreviatedStepContext	public	cn.wanghaomiao:JsoupXpath:2.5.0	method call	org.antlr:antlr4-runtime:4.7.2
+org.seimicrawler.xpath.antlr.XpathParser$AndExprContext	public	cn.wanghaomiao:JsoupXpath:2.5.0	method call	org.antlr:antlr4-runtime:4.7.2
+org.antlr.v4.runtime.CommonToken	public	org.antlr:antlr4-runtime:4.7.2	method call	cn.wanghaomiao:JsoupXpath:2.5.0
+org.apache.commons.lang3.math.NumberUtils	public	org.apache.commons:commons-lang3:3.12.0	method call	cn.wanghaomiao:JsoupXpath:2.5.0
+org.antlr.v4.runtime.tree.ParseTreeVisitor	public	org.antlr:antlr4-runtime:4.7.2	subtyping	cn.wanghaomiao:JsoupXpath:2.5.0
+org.seimicrawler.xpath.antlr.XpathParser$ExprContext	public	cn.wanghaomiao:JsoupXpath:2.5.0	method call	org.antlr:antlr4-runtime:4.7.2
+org.seimicrawler.xpath.antlr.XpathParser$FilterExprContext	public	cn.wanghaomiao:JsoupXpath:2.5.0	method call	org.antlr:antlr4-runtime:4.7.2
+org.seimicrawler.xpath.antlr.XpathParser$QNameContext	public	cn.wanghaomiao:JsoupXpath:2.5.0	method call	org.antlr:antlr4-runtime:4.7.2
+org.antlr.v4.runtime.atn.LexerATNSimulator	public	org.antlr:antlr4-runtime:4.7.2	instantiation	cn.wanghaomiao:JsoupXpath:2.5.0
+org.antlr.v4.runtime.tree.TerminalNodeImpl	public	org.antlr:antlr4-runtime:4.7.2	method call	cn.wanghaomiao:JsoupXpath:2.5.0
+org.apache.commons.lang3.time.FastDateFormat	public	org.apache.commons:commons-lang3:3.12.0	method call	cn.wanghaomiao:JsoupXpath:2.5.0
+org.seimicrawler.xpath.antlr.XpathParser$UnaryExprNoRootContext	public	cn.wanghaomiao:JsoupXpath:2.5.0	method call	org.antlr:antlr4-runtime:4.7.2
+org.slf4j.LoggerFactory	public	org.slf4j:slf4j-api:1.7.32	method call	cn.wanghaomiao:JsoupXpath:2.5.0
+org.jsoup.nodes.TextNode	public	org.jsoup:jsoup:1.14.1	method call	cn.wanghaomiao:JsoupXpath:2.5.0
+org.apache.commons.lang3.builder.ToStringBuilder	public	org.apache.commons:commons-lang3:3.12.0	method call	cn.wanghaomiao:JsoupXpath:2.5.0
+org.seimicrawler.xpath.antlr.XpathParser$LocationPathContext	public	cn.wanghaomiao:JsoupXpath:2.5.0	method call	org.antlr:antlr4-runtime:4.7.2
+org.seimicrawler.xpath.antlr.XpathParser$EqualityExprContext	public	cn.wanghaomiao:JsoupXpath:2.5.0	method call	org.antlr:antlr4-runtime:4.7.2
+org.antlr.v4.runtime.tree.AbstractParseTreeVisitor	public	org.antlr:antlr4-runtime:4.7.2	subtyping	cn.wanghaomiao:JsoupXpath:2.5.0
+org.jsoup.select.NodeTraversor	public	org.jsoup:jsoup:1.14.1	method call	cn.wanghaomiao:JsoupXpath:2.5.0
+org.antlr.v4.runtime.Parser	public	org.antlr:antlr4-runtime:4.7.2	subtyping	cn.wanghaomiao:JsoupXpath:2.5.0
+org.seimicrawler.xpath.antlr.XpathParser$OrExprContext	public	cn.wanghaomiao:JsoupXpath:2.5.0	method call	org.antlr:antlr4-runtime:4.7.2
+org.seimicrawler.xpath.antlr.XpathParser$NameTestContext	public	cn.wanghaomiao:JsoupXpath:2.5.0	method call	org.antlr:antlr4-runtime:4.7.2
+org.jsoup.select.Elements	public	org.jsoup:jsoup:1.14.1	instantiation	cn.wanghaomiao:JsoupXpath:2.5.0
+org.antlr.v4.runtime.Lexer	public	org.antlr:antlr4-runtime:4.7.2	subtyping	cn.wanghaomiao:JsoupXpath:2.5.0
+org.seimicrawler.xpath.antlr.XpathParser$MultiplicativeExprContext	public	cn.wanghaomiao:JsoupXpath:2.5.0	method call	org.antlr:antlr4-runtime:4.7.2
+org.seimicrawler.xpath.antlr.XpathParser$RelationalExprContext	public	cn.wanghaomiao:JsoupXpath:2.5.0	method call	org.antlr:antlr4-runtime:4.7.2
+org.seimicrawler.xpath.exception.DoFailOnErrorHandler	public	cn.wanghaomiao:JsoupXpath:2.5.0	method call	org.antlr:antlr4-runtime:4.7.2
+org.jsoup.select.NodeVisitor	public	org.jsoup:jsoup:1.14.1	subtyping	cn.wanghaomiao:JsoupXpath:2.5.0
+org.seimicrawler.xpath.antlr.XpathParser$StepContext	public	cn.wanghaomiao:JsoupXpath:2.5.0	method call	org.antlr:antlr4-runtime:4.7.2
+org.seimicrawler.xpath.antlr.XpathParser$NodeTestContext	public	cn.wanghaomiao:JsoupXpath:2.5.0	method call	org.antlr:antlr4-runtime:4.7.2
+org.seimicrawler.xpath.antlr.XpathParser$MainContext	public	cn.wanghaomiao:JsoupXpath:2.5.0	method call	org.antlr:antlr4-runtime:4.7.2
+org.antlr.v4.runtime.NoViableAltException	public	org.antlr:antlr4-runtime:4.7.2	instantiation	cn.wanghaomiao:JsoupXpath:2.5.0
+org.seimicrawler.xpath.antlr.XpathParser$FunctionNameContext	public	cn.wanghaomiao:JsoupXpath:2.5.0	method call	org.antlr:antlr4-runtime:4.7.2
+org.seimicrawler.xpath.antlr.XpathParser$PathExprNoRootContext	public	cn.wanghaomiao:JsoupXpath:2.5.0	method call	org.antlr:antlr4-runtime:4.7.2
+org.seimicrawler.xpath.antlr.XpathParser$AdditiveExprContext	public	cn.wanghaomiao:JsoupXpath:2.5.0	method call	org.antlr:antlr4-runtime:4.7.2
+org.seimicrawler.xpath.antlr.XpathParser$PrimaryExprContext	public	cn.wanghaomiao:JsoupXpath:2.5.0	method call	org.antlr:antlr4-runtime:4.7.2
+org.jsoup.nodes.FormElement	public	org.jsoup:jsoup:1.14.1	method call	cn.wanghaomiao:JsoupXpath:2.5.0
+org.antlr.v4.runtime.atn.ParserATNSimulator	public	org.antlr:antlr4-runtime:4.7.2	instantiation	cn.wanghaomiao:JsoupXpath:2.5.0
+org.antlr.v4.runtime.InputMismatchException	public	org.antlr:antlr4-runtime:4.7.2	instantiation	cn.wanghaomiao:JsoupXpath:2.5.0
+org.jsoup.Jsoup	public	org.jsoup:jsoup:1.14.1	method call	cn.wanghaomiao:JsoupXpath:2.5.0
+org.jsoup.select.Elements	public	org.jsoup:jsoup:1.14.1	method call	cn.wanghaomiao:JsoupXpath:2.5.0
+org.apache.commons.lang3.builder.ToStringBuilder	public	org.apache.commons:commons-lang3:3.12.0	instantiation	cn.wanghaomiao:JsoupXpath:2.5.0
+org.seimicrawler.xpath.antlr.XpathParser$RelativeLocationPathContext	public	cn.wanghaomiao:JsoupXpath:2.5.0	method call	org.antlr:antlr4-runtime:4.7.2
+org.seimicrawler.xpath.antlr.XpathParser$FunctionCallContext	public	cn.wanghaomiao:JsoupXpath:2.5.0	method call	org.antlr:antlr4-runtime:4.7.2
+org.antlr.v4.runtime.atn.ParserATNSimulator	public	org.antlr:antlr4-runtime:4.7.2	cast	cn.wanghaomiao:JsoupXpath:2.5.0
+org.antlr.v4.runtime.ParserRuleContext	public	org.antlr:antlr4-runtime:4.7.2	subtyping	cn.wanghaomiao:JsoupXpath:2.5.0
+org.jsoup.select.Elements	public	org.jsoup:jsoup:1.14.1	cast	cn.wanghaomiao:JsoupXpath:2.5.0
+org.apache.commons.lang3.StringUtils	public	org.apache.commons:commons-lang3:3.12.0	method call	cn.wanghaomiao:JsoupXpath:2.5.0
+org.antlr.v4.runtime.atn.ParserATNSimulator	public	org.antlr:antlr4-runtime:4.7.2	method call	cn.wanghaomiao:JsoupXpath:2.5.0
+org.jsoup.nodes.Element	public	org.jsoup:jsoup:1.14.1	cast	cn.wanghaomiao:JsoupXpath:2.5.0
+org.antlr.v4.runtime.misc.ParseCancellationException	public	org.antlr:antlr4-runtime:4.7.2	instantiation	cn.wanghaomiao:JsoupXpath:2.5.0
+org.jsoup.helper.Validate	public	org.jsoup:jsoup:1.14.1	method call	cn.wanghaomiao:JsoupXpath:2.5.0

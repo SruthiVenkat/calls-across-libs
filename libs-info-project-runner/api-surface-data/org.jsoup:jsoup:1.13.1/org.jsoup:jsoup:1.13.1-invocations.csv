@@ -1,2 +1,0 @@
-Caller Method,Caller Library,Callee Visibility,Declared Callee Method,Declared Callee Library,Actual Callee Method,Actual Callee Library,Count,Reflective,DynamicProxy,Service Bypass
-org.jsoup.helper.W3CDom::W3CDom()V,org.jsoup:jsoup:1.13.1,public,javax.xml.parsers.DocumentBuilderFactory::newInstance()Ljavax/xml/parsers/DocumentBuilderFactory;,javax.xml.parsers,javax.xml.parsers.DocumentBuilderFactory::newInstance()Ljavax/xml/parsers/DocumentBuilderFactory;,javax.xml.parsers,17,false,false,

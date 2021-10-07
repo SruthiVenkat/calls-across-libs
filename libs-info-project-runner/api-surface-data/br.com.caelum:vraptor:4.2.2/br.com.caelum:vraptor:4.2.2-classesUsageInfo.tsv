@@ -1,0 +1,486 @@
+Class Name	Class Visibility	Class Library	Usage	Used In Library
+javax.validation.executable.ValidateOnExecution	public	javax.validation:validation-api:1.1.0.Final	cast	org.hibernate:hibernate-validator-cdi:5.1.0.Final
+javax.validation.ConstraintValidatorFactory	public	javax.validation:validation-api:1.1.0.Final	subtyping	org.hibernate:hibernate-validator:5.1.0.Final
+java.util.EnumSet	public	unknownLib	Class.forName	com.thoughtworks.xstream:xstream:1.4.7
+org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator	public	org.hibernate:hibernate-validator:5.1.0.Final	method call	br.com.caelum:vraptor:4.2.2
+javax.enterprise.inject.Alternative	public	javax.enterprise:cdi-api:1.1	annotation	br.com.caelum:vraptor:4.2.2
+com.google.common.collect.Sets	public	com.google.guava:guava:15.0	method call	br.com.caelum:iogi:1.0.1
+javax.validation.ValidationException	public	javax.validation:validation-api:1.1.0.Final	method call	org.hibernate:hibernate-validator:5.1.0.Final
+br.com.caelum.vraptor.proxy.JavassistProxifier$1	default	br.com.caelum:vraptor:4.2.2	method call	org.javassist:javassist:3.18.1-GA
+br.com.caelum.vraptor.serialization.gson.DateGsonConverter	public	br.com.caelum:vraptor:4.2.2	method call	com.google.code.gson:gson:2.2.4
+com.google.common.collect.LinkedHashMultimap	public	com.google.guava:guava:15.0	method call	br.com.caelum:vraptor:4.2.2
+com.google.common.collect.FluentIterable	public	com.google.guava:guava:15.0	method call	br.com.caelum:vraptor:4.2.2
+java.sql.Date	public	java.sql	instantiation	com.google.code.gson:gson:2.2.4
+javax.inject.Qualifier	public	javax.inject:javax.inject:1	annotation	javax.enterprise:cdi-api:1.1
+com.google.gson.JsonArray	public	com.google.code.gson:gson:2.2.4	method call	br.com.caelum:vraptor:4.2.2
+javax.enterprise.inject.spi.Interceptor	public	javax.enterprise:cdi-api:1.1	subtyping	org.jboss.weld:weld-core-impl:2.1.2.Final
+com.google.gson.JsonObject	public	com.google.code.gson:gson:2.2.4	instantiation	br.com.caelum:vraptor:4.2.2
+javax.servlet.jsp.jstl.fmt.LocalizationContext	public	javax.servlet:jstl:1.2	cast	br.com.caelum:vraptor:4.2.2
+javax.validation.MessageInterpolator	public	javax.validation:validation-api:1.1.0.Final	subtyping	org.hibernate:hibernate-validator:5.1.0.Final
+javax.enterprise.context.ApplicationScoped	public	javax.enterprise:cdi-api:1.1	annotation	br.com.caelum:vraptor:4.2.2
+org.jboss.logging.BasicLogger	public	org.jboss.logging:jboss-logging:3.1.3.GA	subtyping	org.jboss.weld:weld-core-impl:2.1.2.Final
+br.com.caelum.vraptor.validator.MessageList	public	br.com.caelum:vraptor:4.2.2	method call	org.jboss.spec.javax.el:jboss-el-api_3.0_spec:1.0.0.Alpha1
+java.lang.StringBuilder	public	unknownLib	Class.forName	com.thoughtworks.xstream:xstream:1.4.7
+org.xml.sax.InputSource[]	public	org.xml.sax	cast	org.jboss.weld:weld-core-impl:2.1.2.Final
+br.com.caelum.vraptor.proxy.JavassistProxifier	public	br.com.caelum:vraptor:4.2.2	method call	net.vidageek:mirror:1.6.1
+com.google.common.io.ByteStreams	public	com.google.guava:guava:15.0	method call	br.com.caelum:vraptor:4.2.2
+org.apache.commons.io.IOUtils	public	commons-io:commons-io:2.2	method call	br.com.caelum:vraptor:4.2.2
+javax.xml.datatype.Duration	public	javax.xml.datatype	Class.forName	com.thoughtworks.xstream:xstream:1.4.7
+java.sql.Timestamp	public	java.sql	instantiation	com.thoughtworks.xstream:xstream:1.4.7
+org.hibernate.validator.internal.engine.ValidatorFactoryImpl	public	org.hibernate:hibernate-validator:5.1.0.Final	method call	org.hibernate:hibernate-validator-cdi:5.1.0.Final
+javax.security.auth.Subject	public	unknownLib	Class.forName	com.thoughtworks.xstream:xstream:1.4.7
+br.com.caelum.iogi.collections.ArrayInstantiator	public	br.com.caelum:iogi:1.0.1	instantiation	br.com.caelum:vraptor:4.2.2
+br.com.caelum.iogi.collections.ArrayInstantiator	public	br.com.caelum:iogi:1.0.1	method call	br.com.caelum:vraptor:4.2.2
+javax.enterprise.inject.spi.Producer	public	javax.enterprise:cdi-api:1.1	cast	org.jboss.weld:weld-core-impl:2.1.2.Final
+com.google.common.collect.Multimaps	default	com.google.guava:guava:15.0	method call	br.com.caelum:iogi:1.0.1
+sun.security.provider.NativePRNG	public	unknownLib	Class.forName	java.security
+br.com.caelum.vraptor.serialization.xstream.CalendarConverter	public	br.com.caelum:vraptor:4.2.2	method call	com.thoughtworks.xstream:xstream:1.4.7
+org.xmlpull.v1.XmlPullParser	public	xpp3:xpp3_min:1.1.4c	cast	com.thoughtworks.xstream:xstream:1.4.7
+org.hibernate.validator.internal.engine.path.NodeImpl	public	org.hibernate:hibernate-validator:5.1.0.Final	method call	br.com.caelum:vraptor:4.2.2
+com.thoughtworks.xstream.converters.enums.EnumMapConverter	public	com.thoughtworks.xstream:xstream:1.4.7	Class.forName	com.thoughtworks.xstream:xstream:1.4.7
+org.hibernate.validator.internal.util.TypeResolutionHelper	public	org.hibernate:hibernate-validator:5.1.0.Final	instantiation	org.hibernate:hibernate-validator-cdi:5.1.0.Final
+javax.validation.Path$ParameterNode	public	javax.validation:validation-api:1.1.0.Final	subtyping	org.hibernate:hibernate-validator:5.1.0.Final
+javax.validation.OverridesAttribute	public	javax.validation:validation-api:1.1.0.Final	cast	org.hibernate:hibernate-validator:5.1.0.Final
+javax.validation.constraints.Future	public	javax.validation:validation-api:1.1.0.Final	cast	org.hibernate:hibernate-validator:5.1.0.Final
+javax.validation.ConstraintViolation	public	javax.validation:validation-api:1.1.0.Final	cast	br.com.caelum:vraptor:4.2.2
+br.com.caelum.vraptor.interceptor.StepInvoker$1	default	br.com.caelum:vraptor:4.2.2	method call	com.google.guava:guava:15.0
+br.com.caelum.vraptor.interceptor.StepInvoker$2	default	br.com.caelum:vraptor:4.2.2	method call	com.google.guava:guava:15.0
+org.jboss.weld.serialization.spi.ContextualStore	public	org.jboss.weld:weld-spi:2.1.Final	cast	org.jboss.weld:weld-core-impl:2.1.2.Final
+net.vidageek.mirror.reflect.DefaultMethodReflector	public	net.vidageek:mirror:1.6.1	method call	br.com.caelum:vraptor:4.2.2
+br.com.caelum.iogi.reflection.NewObject$ScalaSetter$1	default	br.com.caelum:iogi:1.0.1	method call	net.vidageek:mirror:1.6.1
+br.com.caelum.iogi.reflection.Target	public	br.com.caelum:iogi:1.0.1	instantiation	br.com.caelum:vraptor:4.2.2
+br.com.caelum.vraptor.http.route.JavaEvaluator	public	br.com.caelum:vraptor:4.2.2	method call	net.vidageek:mirror:1.6.1
+javax.enterprise.inject.spi.Decorator	public	javax.enterprise:cdi-api:1.1	subtyping	org.jboss.weld:weld-core-impl:2.1.2.Final
+br.com.caelum.iogi.util.IogiCollections$1$1	default	br.com.caelum:iogi:1.0.1	method call	com.google.guava:guava:15.0
+org.hibernate.validator.internal.cdi.ValidationExtension$1	default	org.hibernate:hibernate-validator-cdi:5.1.0.Final	method call	javax.enterprise:cdi-api:1.1
+org.jboss.weld.bootstrap.spi.Metadata	public	org.jboss.weld:weld-spi:2.1.Final	subtyping	org.jboss.weld:weld-core-impl:2.1.2.Final
+org.hibernate.validator.internal.cdi.ValidationExtension$2	default	org.hibernate:hibernate-validator-cdi:5.1.0.Final	method call	javax.enterprise:cdi-api:1.1
+com.google.common.base.Predicate	public	com.google.guava:guava:15.0	subtyping	br.com.caelum:vraptor:4.2.2
+javax.validation.executable.ExecutableValidator	public	javax.validation:validation-api:1.1.0.Final	subtyping	org.hibernate:hibernate-validator:5.1.0.Final
+javax.validation.GroupSequence	public	javax.validation:validation-api:1.1.0.Final	cast	org.hibernate:hibernate-validator:5.1.0.Final
+javax.validation.constraints.Size	public	javax.validation:validation-api:1.1.0.Final	cast	org.hibernate:hibernate-validator:5.1.0.Final
+br.com.caelum.vraptor.http.iogi.ArrayAdapter	default	br.com.caelum:vraptor:4.2.2	method call	br.com.caelum:iogi:1.0.1
+java.util.UUID	public	unknownLib	Class.forName	com.thoughtworks.xstream:xstream:1.4.7
+com.google.gson.JsonSerializer	public	com.google.code.gson:gson:2.2.4	subtyping	br.com.caelum:vraptor:4.2.2
+javax.inject.Provider	public	javax.inject:javax.inject:1	subtyping	javax.enterprise:cdi-api:1.1
+javax.validation.constraints.Pattern	public	javax.validation:validation-api:1.1.0.Final	cast	org.hibernate:hibernate-validator:5.1.0.Final
+javax.xml.stream.XMLInputFactory	public	javax.xml.stream	method call	org.hibernate:hibernate-validator:5.1.0.Final
+br.com.caelum.vraptor.proxy.JavassistProxifier$MethodInvocationAdapter	private	br.com.caelum:vraptor:4.2.2	method call	net.vidageek:mirror:1.6.1
+org.jboss.weld.context.SingletonContext	public	org.jboss.weld:weld-api:2.1.Final	cast	org.jboss.weld:weld-core-impl:2.1.2.Final
+java.security.MessageDigestSpi	public	java.security	Class.forName	java.security
+com.google.common.base.Objects	public	com.google.guava:guava:15.0	method call	net.vidageek:mirror:1.6.1
+javax.validation.constraints.Min	public	javax.validation:validation-api:1.1.0.Final	cast	org.hibernate:hibernate-validator:5.1.0.Final
+com.google.gson.JsonObject	public	com.google.code.gson:gson:2.2.4	method call	br.com.caelum:vraptor:4.2.2
+javax.validation.Path$Node	public	javax.validation:validation-api:1.1.0.Final	cast	org.hibernate:hibernate-validator:5.1.0.Final
+java.util.concurrent.ConcurrentHashMap	public	unknownLib	Class.forName	com.thoughtworks.xstream:xstream:1.4.7
+org.jboss.weld.resources.spi.ResourceLoadingException	public	org.jboss.weld:weld-spi:2.1.Final	instantiation	org.jboss.weld.se:weld-se-core:2.1.2.Final
+org.jboss.weld.context.ApplicationContext	public	org.jboss.weld:weld-api:2.1.Final	cast	org.jboss.weld:weld-core-impl:2.1.2.Final
+org.jboss.weld.bootstrap.spi.Metadata	public	org.jboss.weld:weld-spi:2.1.Final	cast	org.jboss.weld:weld-core-impl:2.1.2.Final
+javax.validation.spi.ValidationProvider	public	javax.validation:validation-api:1.1.0.Final	subtyping	org.hibernate:hibernate-validator:5.1.0.Final
+org.jboss.logging.JDKLogger	default	org.jboss.logging:jboss-logging:3.1.3.GA	method call	org.hibernate:hibernate-validator:5.1.0.Final
+com.thoughtworks.xstream.mapper.MapperWrapper	public	com.thoughtworks.xstream:xstream:1.4.7	subtyping	br.com.caelum:vraptor:4.2.2
+javax.servlet.http.HttpServletResponseWrapper	public	javax.servlet:javax.servlet-api:3.1.0	subtyping	br.com.caelum:vraptor:4.2.2
+org.jboss.logging.Logger	public	org.jboss.logging:jboss-logging:3.1.3.GA	method call	org.hibernate:hibernate-validator:5.1.0.Final
+javax.validation.spi.ValidationProvider	public	javax.validation:validation-api:1.1.0.Final	cast	org.hibernate:hibernate-validator:5.1.0.Final
+java.awt.Font	public	unknownLib	Class.forName	com.thoughtworks.xstream:xstream:1.4.7
+br.com.caelum.vraptor.serialization.xstream.XStreamXmlDeserializerTest$Person	default	unknownLib	Class.forName	com.thoughtworks.xstream:xstream:1.4.7
+br.com.caelum.vraptor.http.iogi.NullDecorator	default	br.com.caelum:vraptor:4.2.2	method call	br.com.caelum:iogi:1.0.1
+javassist.util.proxy.ProxyFactory	public	org.javassist:javassist:3.18.1-GA	method call	br.com.caelum:vraptor:4.2.2
+javax.enterprise.inject.Instance	public	javax.enterprise:cdi-api:1.1	subtyping	br.com.caelum:vraptor:4.2.2
+com.google.gson.JsonSerializer	public	com.google.code.gson:gson:2.2.4	cast	br.com.caelum:vraptor:4.2.2
+org.apache.commons.fileupload.FileItem	public	commons-fileupload:commons-fileupload:1.3.1	cast	br.com.caelum:vraptor:4.2.2
+com.thoughtworks.xstream.converters.Converter	public	com.thoughtworks.xstream:xstream:1.4.7	subtyping	br.com.caelum:vraptor:4.2.2
+br.com.caelum.vraptor.http.iogi.ArrayAdapter$1	default	br.com.caelum:vraptor:4.2.2	method call	com.google.guava:guava:15.0
+br.com.caelum.iogi.reflection.NewObject$JavaSetter$1	default	br.com.caelum:iogi:1.0.1	method call	net.vidageek:mirror:1.6.1
+javax.validation.metadata.ParameterDescriptor	public	javax.validation:validation-api:1.1.0.Final	subtyping	org.hibernate:hibernate-validator:5.1.0.Final
+org.jboss.weld.bootstrap.api.helpers.ForwardingBootstrap	public	org.jboss.weld:weld-spi:2.1.Final	subtyping	org.jboss.weld.se:weld-se-core:2.1.2.Final
+javax.servlet.Filter	public	javax.servlet:javax.servlet-api:3.1.0	subtyping	br.com.caelum:vraptor:4.2.2
+javax.servlet.http.HttpServletRequest	public	javax.servlet:javax.servlet-api:3.1.0	subtyping	br.com.caelum:vraptor:4.2.2
+com.google.common.collect.ImmutableList	public	com.google.guava:guava:15.0	method call	br.com.caelum:vraptor:4.2.2
+javax.validation.MessageInterpolator$Context	public	javax.validation:validation-api:1.1.0.Final	subtyping	org.hibernate:hibernate-validator:5.1.0.Final
+javassist.ClassPool	public	org.javassist:javassist:3.18.1-GA	method call	br.com.caelum:vraptor:4.2.2
+org.jboss.weld.bootstrap.WeldBootstrap	public	org.jboss.weld:weld-core-impl:2.1.2.Final	method call	org.jboss.weld.se:weld-se-core:2.1.2.Final
+com.google.common.collect.AbstractIterator	public	com.google.guava:guava:15.0	subtyping	br.com.caelum:iogi:1.0.1
+br.com.caelum.vraptor.http.route.DefaultRouter$5	default	br.com.caelum:vraptor:4.2.2	method call	com.google.guava:guava:15.0
+java.security.PrivilegedAction	public	java.security	subtyping	org.jboss.logging:jboss-logging:3.1.3.GA
+org.xmlpull.v1.XmlPullParser	public	xpp3:xpp3_min:1.1.4c	cast	xmlpull:xmlpull:1.1.3.1
+br.com.caelum.vraptor.http.route.DefaultRouter$3	default	br.com.caelum:vraptor:4.2.2	method call	com.google.guava:guava:15.0
+br.com.caelum.vraptor.http.route.DefaultRouter$4	default	br.com.caelum:vraptor:4.2.2	method call	com.google.guava:guava:15.0
+javax.validation.Validation	public	javax.validation:validation-api:1.1.0.Final	method call	org.hibernate:hibernate-validator-cdi:5.1.0.Final
+javax.inject.Named	public	javax.inject:javax.inject:1	cast	com.thoughtworks.paranamer:paranamer:2.7
+br.com.caelum.vraptor.serialization.xstream.VRaptorClassMapper	public	br.com.caelum:vraptor:4.2.2	method call	com.thoughtworks.xstream:xstream:1.4.7
+com.thoughtworks.xstream.converters.reflection.SunUnsafeReflectionProvider	public	com.thoughtworks.xstream:xstream:1.4.7	Class.forName	com.thoughtworks.xstream:xstream:1.4.7
+javax.enterprise.inject.spi.Bean	public	javax.enterprise:cdi-api:1.1	cast	org.jboss.weld:weld-core-impl:2.1.2.Final
+com.google.common.base.Present	default	com.google.guava:guava:15.0	method call	br.com.caelum:vraptor:4.2.2
+br.com.caelum.iogi.reflection.Target	public	br.com.caelum:iogi:1.0.1	method call	br.com.caelum:vraptor:4.2.2
+com.google.common.collect.Lists	public	com.google.guava:guava:15.0	method call	br.com.caelum:iogi:1.0.1
+java.lang.StackTraceElement	public	unknownLib	Class.forName	com.thoughtworks.xstream:xstream:1.4.7
+java.security.PrivilegedAction	public	java.security	subtyping	br.com.caelum:vraptor:4.2.2
+net.vidageek.mirror.invoke.MethodHandlerByMethod	public	net.vidageek:mirror:1.6.1	method call	br.com.caelum:iogi:1.0.1
+br.com.caelum.iogi.conversion.StringConverter	public	br.com.caelum:iogi:1.0.1	instantiation	br.com.caelum:vraptor:4.2.2
+java.security.BasicPermission	public	java.security	subtyping	javax.xml.bind
+javax.validation.Path$MethodNode	public	javax.validation:validation-api:1.1.0.Final	subtyping	org.hibernate:hibernate-validator:5.1.0.Final
+javassist.CtNewClass	default	org.javassist:javassist:3.18.1-GA	method call	br.com.caelum:vraptor:4.2.2
+java.sql.Time	public	java.sql	instantiation	com.google.code.gson:gson:2.2.4
+com.fasterxml.classmate.TypeResolver	public	com.fasterxml:classmate:1.0.0	instantiation	org.hibernate:hibernate-validator:5.1.0.Final
+br.com.caelum.iogi.Instantiator	public	br.com.caelum:iogi:1.0.1	subtyping	br.com.caelum:vraptor:4.2.2
+org.xmlpull.v1.XmlPullParserFactory	public	xmlpull:xmlpull:1.1.3.1	method call	com.thoughtworks.xstream:xstream:1.4.7
+sun.misc.Unsafe	public	unknownLib	Class.forName	com.google.code.gson:gson:2.2.4
+com.thoughtworks.xstream.io.xml.CompactWriter	public	com.thoughtworks.xstream:xstream:1.4.7	instantiation	br.com.caelum:vraptor:4.2.2
+br.com.caelum.vraptor.validator.Messages	public	br.com.caelum:vraptor:4.2.2	method call	org.jboss.spec.javax.el:jboss-el-api_3.0_spec:1.0.0.Alpha1
+javax.validation.constraints.Past	public	javax.validation:validation-api:1.1.0.Final	cast	org.hibernate:hibernate-validator:5.1.0.Final
+javax.enterprise.inject.spi.BeanManager	public	javax.enterprise:cdi-api:1.1	subtyping	org.jboss.weld:weld-spi:2.1.Final
+javax.validation.Configuration	public	javax.validation:validation-api:1.1.0.Final	subtyping	org.hibernate:hibernate-validator:5.1.0.Final
+br.com.caelum.vraptor.http.route.DefaultParametersControl	public	br.com.caelum:vraptor:4.2.2	method call	net.vidageek:mirror:1.6.1
+javax.servlet.ServletContext	public	javax.servlet:javax.servlet-api:3.1.0	cast	br.com.caelum:vraptor:4.2.2
+br.com.caelum.iogi.parameters.Parameter	public	br.com.caelum:iogi:1.0.1	method call	br.com.caelum:vraptor:4.2.2
+javax.validation.ReportAsSingleViolation	public	javax.validation:validation-api:1.1.0.Final	annotation	org.hibernate:hibernate-validator:5.1.0.Final
+javax.ejb.ApplicationException	public	javax.ejb:javax.ejb-api:3.2	annotation	br.com.caelum:vraptor:4.2.2
+com.google.gson.ExclusionStrategy	public	com.google.code.gson:gson:2.2.4	subtyping	br.com.caelum:vraptor:4.2.2
+br.com.caelum.iogi.parameters.Parameter	public	br.com.caelum:iogi:1.0.1	cast	br.com.caelum:vraptor:4.2.2
+javax.validation.Path	public	javax.validation:validation-api:1.1.0.Final	subtyping	org.hibernate:hibernate-validator:5.1.0.Final
+com.google.common.base.Function	public	com.google.guava:guava:15.0	subtyping	br.com.caelum:iogi:1.0.1
+javax.enterprise.context.RequestScoped	public	javax.enterprise:cdi-api:1.1	annotation	br.com.caelum:vraptor:4.2.2
+org.hibernate.validator.internal.engine.ConstraintViolationImpl	public	org.hibernate:hibernate-validator:5.1.0.Final	method call	br.com.caelum:vraptor:4.2.2
+javax.validation.Path$ConstructorNode	public	javax.validation:validation-api:1.1.0.Final	subtyping	org.hibernate:hibernate-validator:5.1.0.Final
+org.jboss.weld.resources.spi.ResourceLoader	public	org.jboss.weld:weld-spi:2.1.Final	subtyping	org.jboss.weld.se:weld-se-core:2.1.2.Final
+org.slf4j.LoggerFactory	public	org.slf4j:slf4j-api:1.7.5	method call	br.com.caelum:vraptor:4.2.2
+java.util.EnumMap	public	unknownLib	Class.forName	com.thoughtworks.xstream:xstream:1.4.7
+org.apache.commons.fileupload.servlet.ServletFileUpload	public	commons-fileupload:commons-fileupload:1.3.1	method call	br.com.caelum:vraptor:4.2.2
+com.thoughtworks.xstream.io.xml.CompactWriter	public	com.thoughtworks.xstream:xstream:1.4.7	method call	br.com.caelum:vraptor:4.2.2
+javax.validation.TraversableResolver	public	javax.validation:validation-api:1.1.0.Final	cast	org.hibernate:hibernate-validator:5.1.0.Final
+javax.enterprise.inject.spi.InjectionPoint	public	javax.enterprise:cdi-api:1.1	cast	org.jboss.weld:weld-core-impl:2.1.2.Final
+br.com.caelum.vraptor.view.DefaultValidationViewsFactory	public	br.com.caelum:vraptor:4.2.2	method call	net.vidageek:mirror:1.6.1
+com.google.common.collect.Lists	public	com.google.guava:guava:15.0	method call	br.com.caelum:vraptor:4.2.2
+javax.enterprise.context.spi.Context	public	javax.enterprise:cdi-api:1.1	cast	org.jboss.weld:weld-core-impl:2.1.2.Final
+org.hibernate.validator.internal.engine.ValidatorFactoryImpl	public	org.hibernate:hibernate-validator:5.1.0.Final	method call	br.com.caelum:vraptor:4.2.2
+javax.validation.MessageInterpolator$Context	public	javax.validation:validation-api:1.1.0.Final	subtyping	br.com.caelum:vraptor:4.2.2
+com.thoughtworks.xstream.io.ExtendedHierarchicalStreamWriter	public	com.thoughtworks.xstream:xstream:1.4.7	cast	br.com.caelum:vraptor:4.2.2
+br.com.caelum.vraptor.interceptor.VoidReturn	default	br.com.caelum:vraptor:4.2.2	method call	net.vidageek:mirror:1.6.1
+javax.validation.Path$ParameterNode	public	javax.validation:validation-api:1.1.0.Final	cast	br.com.caelum:vraptor:4.2.2
+javax.el.ELContext	public	org.jboss.spec.javax.el:jboss-el-api_3.0_spec:1.0.0.Alpha1	subtyping	org.hibernate:hibernate-validator:5.1.0.Final
+javax.validation.ConstraintValidatorFactory	public	javax.validation:validation-api:1.1.0.Final	cast	org.hibernate:hibernate-validator:5.1.0.Final
+org.jboss.weld.environment.se.Weld	public	org.jboss.weld.se:weld-se-core:2.1.2.Final	method call	net.vidageek:mirror:1.6.1
+net.vidageek.mirror.dsl.Mirror	public	net.vidageek:mirror:1.6.1	instantiation	br.com.caelum:vraptor:4.2.2
+javax.enterprise.inject.spi.AnnotatedField	public	javax.enterprise:cdi-api:1.1	cast	org.jboss.weld:weld-core-impl:2.1.2.Final
+org.jboss.weld.metadata.MetadataImpl	public	org.jboss.weld:weld-core-impl:2.1.2.Final	instantiation	org.jboss.weld.se:weld-se-core:2.1.2.Final
+javax.el.ExpressionFactory	public	javax.el:javax.el-api:3.0.0	Class.forName	org.hibernate:hibernate-validator:5.1.0.Final
+javax.enterprise.inject.spi.Extension	public	javax.enterprise:cdi-api:1.1	subtyping	org.hibernate:hibernate-validator-cdi:5.1.0.Final
+javax.validation.ValidatorFactory	public	javax.validation:validation-api:1.1.0.Final	subtyping	org.hibernate:hibernate-validator:5.1.0.Final
+java.sql.Time	public	java.sql	cast	com.google.code.gson:gson:2.2.4
+br.com.caelum.vraptor.core.DefaultReflectionProvider	public	br.com.caelum:vraptor:4.2.2	method call	net.vidageek:mirror:1.6.1
+javax.validation.metadata.MethodDescriptor	public	javax.validation:validation-api:1.1.0.Final	cast	org.hibernate:hibernate-validator:5.1.0.Final
+javax.validation.ConstraintValidatorContext	public	javax.validation:validation-api:1.1.0.Final	subtyping	org.hibernate:hibernate-validator:5.1.0.Final
+javax.validation.ElementKind	public	javax.validation:validation-api:1.1.0.Final	method call	org.hibernate:hibernate-validator:5.1.0.Final
+org.jboss.weld.context.RequestContext	public	org.jboss.weld:weld-api:2.1.Final	cast	org.jboss.weld:weld-core-impl:2.1.2.Final
+org.hibernate.validator.internal.util.logging.Messages_$bundle	public	org.hibernate:hibernate-validator:5.1.0.Final	Class.forName	org.jboss.logging:jboss-logging:3.1.3.GA
+br.com.caelum.vraptor.serialization.xstream.XStreamXmlDeserializerTest$Dog	default	unknownLib	Class.forName	com.thoughtworks.xstream:xstream:1.4.7
+com.google.common.io.CharStreams	public	com.google.guava:guava:15.0	method call	br.com.caelum:vraptor:4.2.2
+javax.validation.ConstraintValidator	public	javax.validation:validation-api:1.1.0.Final	cast	org.hibernate:hibernate-validator:5.1.0.Final
+net.vidageek.mirror.invoke.DefaultInvocationHandler	public	net.vidageek:mirror:1.6.1	method call	br.com.caelum:vraptor:4.2.2
+org.hibernate.validator.internal.util.ExecutableHelper	public	org.hibernate:hibernate-validator:5.1.0.Final	instantiation	org.hibernate:hibernate-validator-cdi:5.1.0.Final
+javax.servlet.jsp.jstl.core.Config	public	javax.servlet:jstl:1.2	method call	br.com.caelum:vraptor:4.2.2
+javax.validation.constraints.Digits	public	javax.validation:validation-api:1.1.0.Final	cast	org.hibernate:hibernate-validator:5.1.0.Final
+javax.validation.GroupDefinitionException	public	javax.validation:validation-api:1.1.0.Final	instantiation	org.hibernate:hibernate-validator:5.1.0.Final
+com.google.gson.JsonDeserializer	public	com.google.code.gson:gson:2.2.4	cast	br.com.caelum:vraptor:4.2.2
+javax.validation.metadata.ElementDescriptor	public	javax.validation:validation-api:1.1.0.Final	subtyping	org.hibernate:hibernate-validator:5.1.0.Final
+com.google.common.base.Throwables	public	com.google.guava:guava:15.0	method call	br.com.caelum:vraptor:4.2.2
+org.apache.commons.fileupload.FileUploadBase$SizeLimitExceededException	public	commons-fileupload:commons-fileupload:1.3.1	method call	br.com.caelum:vraptor:4.2.2
+com.google.common.collect.Sets$3	default	com.google.guava:guava:15.0	method call	br.com.caelum:vraptor:4.2.2
+javax.servlet.http.HttpServletResponse	public	javax.servlet:javax.servlet-api:3.1.0	cast	br.com.caelum:vraptor:4.2.2
+com.google.common.base.Preconditions	public	com.google.guava:guava:15.0	method call	br.com.caelum:vraptor:4.2.2
+com.google.common.collect.ForwardingMap	public	com.google.guava:guava:15.0	subtyping	br.com.caelum:vraptor:4.2.2
+br.com.caelum.vraptor.view.LinkToHandlerTest$TestController$linkTo$path	public	unknownLib	Class.forName	br.com.caelum:vraptor:4.2.2
+javax.validation.ParameterNameProvider	public	javax.validation:validation-api:1.1.0.Final	cast	org.hibernate:hibernate-validator:5.1.0.Final
+javax.xml.bind.ValidationException	public	javax.xml.bind	subtyping	org.hibernate:hibernate-validator:5.1.0.Final
+com.google.gson.JsonSyntaxException	public	com.google.code.gson:gson:2.2.4	instantiation	br.com.caelum:vraptor:4.2.2
+com.google.common.collect.SingletonImmutableList	default	com.google.guava:guava:15.0	method call	br.com.caelum:iogi:1.0.1
+com.thoughtworks.xstream.converters.extended.DurationConverter	public	com.thoughtworks.xstream:xstream:1.4.7	Class.forName	com.thoughtworks.xstream:xstream:1.4.7
+com.thoughtworks.xstream.converters.extended.CharsetConverter	public	com.thoughtworks.xstream:xstream:1.4.7	Class.forName	com.thoughtworks.xstream:xstream:1.4.7
+java.sql.Timestamp	public	java.sql	Class.forName	com.thoughtworks.xstream:xstream:1.4.7
+javax.inject.Named	public	javax.inject:javax.inject:1	cast	org.jboss.weld:weld-core-impl:2.1.2.Final
+org.xml.sax.InputSource	public	org.xml.sax	instantiation	org.jboss.weld:weld-core-impl:2.1.2.Final
+com.google.gson.JsonPrimitive	public	com.google.code.gson:gson:2.2.4	instantiation	br.com.caelum:vraptor:4.2.2
+javax.inject.Qualifier	public	javax.inject:javax.inject:1	annotation	org.hibernate:hibernate-validator-cdi:5.1.0.Final
+com.google.common.base.Function	public	com.google.guava:guava:15.0	subtyping	br.com.caelum:vraptor:4.2.2
+br.com.caelum.iogi.reflection.NewObject	public	br.com.caelum:iogi:1.0.1	method call	br.com.caelum:vraptor:4.2.2
+com.google.common.cache.LocalCache$LocalManualCache	default	com.google.guava:guava:15.0	method call	br.com.caelum:vraptor:4.2.2
+javax.enterprise.inject.spi.AnnotatedParameter	public	javax.enterprise:cdi-api:1.1	cast	org.jboss.weld:weld-core-impl:2.1.2.Final
+java.sql.Date	public	java.sql	cast	com.google.code.gson:gson:2.2.4
+com.thoughtworks.xstream.converters.extended.StackTraceElementConverter	public	com.thoughtworks.xstream:xstream:1.4.7	Class.forName	com.thoughtworks.xstream:xstream:1.4.7
+com.google.gson.Gson	public	com.google.code.gson:gson:2.2.4	method call	br.com.caelum:vraptor:4.2.2
+java.util.LinkedHashMap	public	unknownLib	Class.forName	com.thoughtworks.xstream:xstream:1.4.7
+com.google.gson.GsonBuilder	public	com.google.code.gson:gson:2.2.4	instantiation	br.com.caelum:vraptor:4.2.2
+org.xmlpull.mxp1.MXParser	public	xpp3:xpp3_min:1.1.4c	Class.forName	xmlpull:xmlpull:1.1.3.1
+com.thoughtworks.xstream.converters.reflection.PureJavaReflectionProvider	public	com.thoughtworks.xstream:xstream:1.4.7	instantiation	br.com.caelum:vraptor:4.2.2
+br.com.caelum.vraptor.serialization.gson.MessageGsonConverter	public	br.com.caelum:vraptor:4.2.2	method call	com.google.code.gson:gson:2.2.4
+com.google.common.collect.LinkedListMultimap	default	com.google.guava:guava:15.0	method call	br.com.caelum:iogi:1.0.1
+com.google.common.collect.Sets	public	com.google.guava:guava:15.0	method call	br.com.caelum:vraptor:4.2.2
+com.thoughtworks.xstream.converters.enums.EnumConverter	public	com.thoughtworks.xstream:xstream:1.4.7	Class.forName	com.thoughtworks.xstream:xstream:1.4.7
+javax.enterprise.inject.spi.AnnotatedMethod	public	javax.enterprise:cdi-api:1.1	cast	org.hibernate:hibernate-validator-cdi:5.1.0.Final
+net.vidageek.mirror.reflect.DefaultReflectionHandler	public	net.vidageek:mirror:1.6.1	method call	br.com.caelum:vraptor:4.2.2
+com.thoughtworks.xstream.XStream	public	com.thoughtworks.xstream:xstream:1.4.7	subtyping	br.com.caelum:vraptor:4.2.2
+javax.validation.constraints.DecimalMin	public	javax.validation:validation-api:1.1.0.Final	cast	org.hibernate:hibernate-validator:5.1.0.Final
+com.thoughtworks.paranamer.CachingParanamer	public	com.thoughtworks.paranamer:paranamer:2.7	instantiation	br.com.caelum:vraptor:4.2.2
+org.jboss.logging.DelegatingBasicLogger	public	org.jboss.logging:jboss-logging:3.1.3.GA	subtyping	org.jboss.weld:weld-core-impl:2.1.2.Final
+br.com.caelum.iogi.parameters.Parameters	public	br.com.caelum:iogi:1.0.1	instantiation	br.com.caelum:vraptor:4.2.2
+br.com.caelum.vraptor.validator.beanvalidation.BeanValidatorContext	public	br.com.caelum:vraptor:4.2.2	method call	org.hibernate:hibernate-validator:5.1.0.Final
+javax.enterprise.util.AnnotationLiteral	public	javax.enterprise:cdi-api:1.1	subtyping	org.hibernate:hibernate-validator-cdi:5.1.0.Final
+javax.validation.constraints.AssertFalse	public	javax.validation:validation-api:1.1.0.Final	cast	org.hibernate:hibernate-validator:5.1.0.Final
+javax.enterprise.inject.spi.AnnotatedConstructor	public	javax.enterprise:cdi-api:1.1	cast	org.hibernate:hibernate-validator-cdi:5.1.0.Final
+javax.enterprise.inject.spi.Interceptor	public	javax.enterprise:cdi-api:1.1	cast	org.jboss.weld:weld-core-impl:2.1.2.Final
+javax.validation.metadata.CrossParameterDescriptor	public	javax.validation:validation-api:1.1.0.Final	subtyping	org.hibernate:hibernate-validator:5.1.0.Final
+org.jboss.weld.resources.spi.AnnotationDiscovery	public	org.jboss.weld:weld-spi:2.1.Final	cast	org.jboss.weld:weld-core-impl:2.1.2.Final
+java.security.PrivilegedAction	public	java.security	subtyping	javax.xml.datatype
+org.jboss.logging.JDKLogger	default	org.jboss.logging:jboss-logging:3.1.3.GA	method call	org.jboss.weld:weld-core-impl:2.1.2.Final
+javax.xml.datatype.DatatypeFactory	default	javax.xml.datatype	method call	com.thoughtworks.xstream:xstream:1.4.7
+br.com.caelum.vraptor.http.VRaptorRequest	public	br.com.caelum:vraptor:4.2.2	method call	javax.servlet:javax.servlet-api:3.1.0
+br.com.caelum.vraptor.view.SubGenericController$linkTo$path	public	unknownLib	Class.forName	br.com.caelum:vraptor:4.2.2
+br.com.caelum.iogi.collections.ListInstantiator	public	br.com.caelum:iogi:1.0.1	instantiation	br.com.caelum:vraptor:4.2.2
+javax.enterprise.inject.spi.PassivationCapable	public	javax.enterprise:cdi-api:1.1	subtyping	org.jboss.weld:weld-core-impl:2.1.2.Final
+org.hibernate.validator.internal.engine.path.PathImpl	public	org.hibernate:hibernate-validator:5.1.0.Final	method call	br.com.caelum:vraptor:4.2.2
+com.google.common.collect.Maps	default	com.google.guava:guava:15.0	method call	br.com.caelum:iogi:1.0.1
+net.vidageek.mirror.invoke.MethodHandlerByName	public	net.vidageek:mirror:1.6.1	method call	br.com.caelum:vraptor:4.2.2
+javax.swing.LookAndFeel	public	unknownLib	Class.forName	com.thoughtworks.xstream:xstream:1.4.7
+br.com.caelum.vraptor.serialization.gson.Exclusions	public	br.com.caelum:vraptor:4.2.2	method call	com.google.code.gson:gson:2.2.4
+br.com.caelum.vraptor.validator.ValidationException	public	br.com.caelum:vraptor:4.2.2	method call	net.vidageek:mirror:1.6.1
+javax.validation.constraints.NotNull	public	javax.validation:validation-api:1.1.0.Final	cast	org.hibernate:hibernate-validator:5.1.0.Final
+org.jboss.weld.util.collections.EnumerationList	public	org.jboss.weld:weld-core-impl:2.1.2.Final	instantiation	org.jboss.weld.se:weld-se-core:2.1.2.Final
+com.google.common.base.Supplier	public	com.google.guava:guava:15.0	subtyping	br.com.caelum:vraptor:4.2.2
+java.sql.Timestamp	public	java.sql	instantiation	com.google.code.gson:gson:2.2.4
+com.google.common.collect.Ordering	public	com.google.guava:guava:15.0	subtyping	br.com.caelum:iogi:1.0.1
+javax.validation.constraintvalidation.SupportedValidationTarget	public	javax.validation:validation-api:1.1.0.Final	cast	org.hibernate:hibernate-validator:5.1.0.Final
+org.jboss.weld.manager.api.ExecutorServices	public	org.jboss.weld:weld-spi:2.1.Final	cast	org.jboss.weld:weld-core-impl:2.1.2.Final
+br.com.caelum.iogi.parameters.Parameters	public	br.com.caelum:iogi:1.0.1	method call	br.com.caelum:vraptor:4.2.2
+org.jboss.weld.logging.VersionLogger_$logger	public	org.jboss.weld:weld-core-impl:2.1.2.Final	Class.forName	org.jboss.logging:jboss-logging:3.1.3.GA
+br.com.caelum.vraptor.interceptor.CustomAcceptsVerifier$1	default	br.com.caelum:vraptor:4.2.2	method call	com.google.guava:guava:15.0
+javax.validation.metadata.PropertyDescriptor	public	javax.validation:validation-api:1.1.0.Final	subtyping	org.hibernate:hibernate-validator:5.1.0.Final
+javax.validation.metadata.ReturnValueDescriptor	public	javax.validation:validation-api:1.1.0.Final	subtyping	org.hibernate:hibernate-validator:5.1.0.Final
+com.google.common.base.Predicates	public	com.google.guava:guava:15.0	method call	br.com.caelum:vraptor:4.2.2
+com.google.common.collect.ForwardingList	public	com.google.guava:guava:15.0	subtyping	br.com.caelum:vraptor:4.2.2
+javax.validation.ValidatorContext	public	javax.validation:validation-api:1.1.0.Final	subtyping	org.hibernate:hibernate-validator:5.1.0.Final
+javax.validation.metadata.ConstructorDescriptor	public	javax.validation:validation-api:1.1.0.Final	subtyping	org.hibernate:hibernate-validator:5.1.0.Final
+java.sql.Timestamp	public	java.sql	cast	com.thoughtworks.xstream:xstream:1.4.7
+javax.validation.ConstraintValidator	public	javax.validation:validation-api:1.1.0.Final	subtyping	org.hibernate:hibernate-validator:5.1.0.Final
+com.google.common.collect.ImmutableListMultimap	public	com.google.guava:guava:15.0	method call	br.com.caelum:vraptor:4.2.2
+com.google.common.collect.RegularImmutableList	default	com.google.guava:guava:15.0	method call	br.com.caelum:iogi:1.0.1
+com.google.gson.ExclusionStrategy	public	com.google.code.gson:gson:2.2.4	cast	br.com.caelum:vraptor:4.2.2
+net.vidageek.mirror.DefaultAccessorsController	public	net.vidageek:mirror:1.6.1	method call	br.com.caelum:vraptor:4.2.2
+com.thoughtworks.xstream.XStream$1	default	com.thoughtworks.xstream:xstream:1.4.7	method call	br.com.caelum:vraptor:4.2.2
+com.thoughtworks.xstream.converters.extended.ThrowableConverter	public	com.thoughtworks.xstream:xstream:1.4.7	Class.forName	com.thoughtworks.xstream:xstream:1.4.7
+javax.validation.TraversableResolver	public	javax.validation:validation-api:1.1.0.Final	subtyping	org.hibernate:hibernate-validator:5.1.0.Final
+br.com.caelum.vraptor.http.iogi.VRaptorInstantiator$DependencyInstantiator	private	br.com.caelum:vraptor:4.2.2	method call	br.com.caelum:iogi:1.0.1
+br.com.caelum.vraptor.http.iogi.VRaptorDependencyProvider	public	br.com.caelum:vraptor:4.2.2	method call	br.com.caelum:iogi:1.0.1
+javax.validation.metadata.MethodType	public	javax.validation:validation-api:1.1.0.Final	method call	org.hibernate:hibernate-validator:5.1.0.Final
+br.com.caelum.iogi.reflection.Constructors$1	default	br.com.caelum:iogi:1.0.1	method call	com.google.guava:guava:15.0
+com.thoughtworks.paranamer.BytecodeReadingParanamer	public	com.thoughtworks.paranamer:paranamer:2.7	instantiation	br.com.caelum:vraptor:4.2.2
+com.thoughtworks.xstream.converters.extended.RegexPatternConverter	public	com.thoughtworks.xstream:xstream:1.4.7	Class.forName	com.thoughtworks.xstream:xstream:1.4.7
+javax.validation.ConstraintDeclarationException	public	javax.validation:validation-api:1.1.0.Final	instantiation	org.hibernate:hibernate-validator:5.1.0.Final
+br.com.caelum.vraptor.view.Results	public	br.com.caelum:vraptor:4.2.2	method call	net.vidageek:mirror:1.6.1
+javax.xml.validation.Schema	public	javax.xml.validation	cast	org.hibernate:hibernate-validator:5.1.0.Final
+java.security.PrivilegedAction	public	java.security	subtyping	org.hibernate:hibernate-validator:5.1.0.Final
+org.jboss.weld.bootstrap.spi.Metadata	public	org.jboss.weld:weld-spi:2.1.Final	cast	org.jboss.weld.se:weld-se-core:2.1.2.Final
+java.security.PrivilegedAction	public	java.security	subtyping	javax.validation:validation-api:1.1.0.Final
+javax.validation.groups.ConvertGroup	public	javax.validation:validation-api:1.1.0.Final	cast	org.hibernate:hibernate-validator:5.1.0.Final
+javax.validation.metadata.MethodDescriptor	public	javax.validation:validation-api:1.1.0.Final	subtyping	org.hibernate:hibernate-validator:5.1.0.Final
+javassist.util.proxy.MethodFilter	public	org.javassist:javassist:3.18.1-GA	subtyping	br.com.caelum:vraptor:4.2.2
+org.jboss.weld.bootstrap.api.Service	public	org.jboss.weld:weld-spi:2.1.Final	subtyping	org.jboss.weld:weld-core-impl:2.1.2.Final
+javax.servlet.http.HttpServletResponse	public	javax.servlet:javax.servlet-api:3.1.0	subtyping	br.com.caelum:vraptor:4.2.2
+com.google.common.base.Supplier	public	com.google.guava:guava:15.0	subtyping	br.com.caelum:iogi:1.0.1
+javax.validation.metadata.BeanDescriptor	public	javax.validation:validation-api:1.1.0.Final	subtyping	org.hibernate:hibernate-validator:5.1.0.Final
+net.vidageek.mirror.dsl.Mirror	public	net.vidageek:mirror:1.6.1	instantiation	br.com.caelum:iogi:1.0.1
+br.com.caelum.vraptor.view.DefaultAcceptHeaderToFormat$2	default	br.com.caelum:vraptor:4.2.2	method call	com.google.guava:guava:15.0
+java.security.PrivilegedAction	public	java.security	subtyping	javax.xml.stream
+javax.validation.Path$PropertyNode	public	javax.validation:validation-api:1.1.0.Final	subtyping	org.hibernate:hibernate-validator:5.1.0.Final
+java.awt.Color	public	unknownLib	Class.forName	com.thoughtworks.xstream:xstream:1.4.7
+br.com.caelum.vraptor.http.iogi.VRaptorInstantiator	public	br.com.caelum:vraptor:4.2.2	method call	br.com.caelum:iogi:1.0.1
+com.google.common.collect.ImmutableList$Builder	public	com.google.guava:guava:15.0	method call	br.com.caelum:iogi:1.0.1
+br.com.caelum.vraptor.http.route.PathAnnotationRoutesParser	public	br.com.caelum:vraptor:4.2.2	method call	net.vidageek:mirror:1.6.1
+com.google.gson.JsonDeserializer	public	com.google.code.gson:gson:2.2.4	subtyping	br.com.caelum:vraptor:4.2.2
+org.jboss.weld.bootstrap.api.helpers.SimpleServiceRegistry	public	org.jboss.weld:weld-spi:2.1.Final	instantiation	org.jboss.weld.se:weld-se-core:2.1.2.Final
+br.com.caelum.iogi.ObjectInstantiator	public	br.com.caelum:iogi:1.0.1	instantiation	br.com.caelum:vraptor:4.2.2
+javax.enterprise.context.spi.Contextual	public	javax.enterprise:cdi-api:1.1	cast	org.jboss.weld:weld-core-impl:2.1.2.Final
+javax.enterprise.inject.spi.Extension	public	javax.enterprise:cdi-api:1.1	subtyping	org.jboss.weld.se:weld-se-core:2.1.2.Final
+com.thoughtworks.xstream.InitializationException	public	com.thoughtworks.xstream:xstream:1.4.7	instantiation	br.com.caelum:vraptor:4.2.2
+org.hibernate.validator.internal.metadata.descriptor.BeanDescriptorImpl	public	org.hibernate:hibernate-validator:5.1.0.Final	method call	br.com.caelum:vraptor:4.2.2
+br.com.caelum.vraptor.serialization.xstream.XStreamXmlDeserializerTest$DogWithAnnotations	default	unknownLib	Class.forName	com.thoughtworks.xstream:xstream:1.4.7
+org.jboss.weld.manager.api.WeldManager	public	org.jboss.weld:weld-spi:2.1.Final	subtyping	org.jboss.weld:weld-core-impl:2.1.2.Final
+net.vidageek.mirror.DefaultClassController	public	net.vidageek:mirror:1.6.1	method call	br.com.caelum:iogi:1.0.1
+java.sql.Date	public	java.sql	Class.forName	com.thoughtworks.xstream:xstream:1.4.7
+com.google.common.collect.FluentIterable	default	com.google.guava:guava:15.0	method call	br.com.caelum:vraptor:4.2.2
+java.security.PrivilegedExceptionAction	public	java.security	subtyping	org.javassist:javassist:3.18.1-GA
+org.hibernate.validator.internal.engine.ConfigurationImpl	public	org.hibernate:hibernate-validator:5.1.0.Final	method call	javax.validation:validation-api:1.1.0.Final
+interface java.lang.annotation.Annotation	public	unknownLib	method call	org.hibernate:hibernate-validator:5.1.0.Final
+br.com.caelum.vraptor.http.route.DefaultRouteBuilder	public	br.com.caelum:vraptor:4.2.2	method call	net.vidageek:mirror:1.6.1
+com.fasterxml.classmate.ResolvedType	public	com.fasterxml:classmate:1.0.0	cast	org.hibernate:hibernate-validator:5.1.0.Final
+com.thoughtworks.paranamer.AnnotationParanamer	public	com.thoughtworks.paranamer:paranamer:2.7	instantiation	br.com.caelum:vraptor:4.2.2
+br.com.caelum.iogi.parameters.Parameter	public	br.com.caelum:iogi:1.0.1	instantiation	br.com.caelum:vraptor:4.2.2
+javax.validation.metadata.ParameterDescriptor	public	javax.validation:validation-api:1.1.0.Final	cast	org.hibernate:hibernate-validator:5.1.0.Final
+com.google.common.base.Objects	public	com.google.guava:guava:15.0	method call	br.com.caelum:vraptor:4.2.2
+java.util.LinkedHashSet	public	unknownLib	Class.forName	com.thoughtworks.xstream:xstream:1.4.7
+javax.validation.constraints.AssertTrue	public	javax.validation:validation-api:1.1.0.Final	cast	org.hibernate:hibernate-validator:5.1.0.Final
+br.com.caelum.vraptor.http.iogi.VRaptorInstantiator$VRaptorTypeConverter	private	br.com.caelum:vraptor:4.2.2	method call	br.com.caelum:iogi:1.0.1
+javax.validation.spi.ConfigurationState	public	javax.validation:validation-api:1.1.0.Final	subtyping	org.hibernate:hibernate-validator:5.1.0.Final
+com.thoughtworks.xstream.converters.Converter	public	com.thoughtworks.xstream:xstream:1.4.7	cast	br.com.caelum:vraptor:4.2.2
+com.google.common.collect.ImmutableList$Builder	public	com.google.guava:guava:15.0	instantiation	br.com.caelum:iogi:1.0.1
+com.thoughtworks.xstream.converters.basic.StringBuilderConverter	public	com.thoughtworks.xstream:xstream:1.4.7	Class.forName	com.thoughtworks.xstream:xstream:1.4.7
+br.com.caelum.iogi.collections.ParametersByIndex$1	default	br.com.caelum:iogi:1.0.1	method call	com.google.guava:guava:15.0
+javax.el.FactoryFinder	public	org.jboss.spec.javax.el:jboss-el-api_3.0_spec:1.0.0.Alpha1	method call	javax.el:javax.el-api:3.0.0
+javax.validation.UnexpectedTypeException	public	javax.validation:validation-api:1.1.0.Final	instantiation	org.hibernate:hibernate-validator:5.1.0.Final
+com.google.gson.JsonParser	public	com.google.code.gson:gson:2.2.4	method call	br.com.caelum:vraptor:4.2.2
+com.google.common.base.Throwables	default	com.google.guava:guava:15.0	method call	br.com.caelum:vraptor:4.2.2
+org.apache.commons.fileupload.servlet.ServletFileUpload	public	commons-fileupload:commons-fileupload:1.3.1	instantiation	br.com.caelum:vraptor:4.2.2
+com.thoughtworks.xstream.converters.extended.StackTraceElementFactory15	default	com.thoughtworks.xstream:xstream:1.4.7	Class.forName	com.thoughtworks.xstream:xstream:1.4.7
+com.thoughtworks.xstream.io.xml.PrettyPrintWriter	public	com.thoughtworks.xstream:xstream:1.4.7	instantiation	br.com.caelum:vraptor:4.2.2
+com.google.common.base.Absent	default	com.google.guava:guava:15.0	method call	br.com.caelum:vraptor:4.2.2
+com.google.common.collect.ArrayListMultimap	public	com.google.guava:guava:15.0	method call	br.com.caelum:iogi:1.0.1
+br.com.caelum.iogi.reflection.Target	public	br.com.caelum:iogi:1.0.1	cast	br.com.caelum:vraptor:4.2.2
+net.vidageek.mirror.invoke.DefaultInvocationHandler	public	net.vidageek:mirror:1.6.1	method call	br.com.caelum:iogi:1.0.1
+java.util.Currency	public	unknownLib	Class.forName	com.thoughtworks.xstream:xstream:1.4.7
+java.awt.font.TextAttribute	public	unknownLib	Class.forName	com.thoughtworks.xstream:xstream:1.4.7
+org.jboss.weld.bootstrap.api.CDI11Bootstrap	public	org.jboss.weld:weld-spi:2.1.Final	subtyping	org.jboss.weld:weld-core-impl:2.1.2.Final
+org.jboss.weld.interceptor.util.proxy.TargetInstanceProxy	public	org.jboss.weld:weld-core-impl:2.1.2.Final	cast	br.com.caelum:vraptor:4.2.2
+javax.servlet.http.HttpServletRequest	public	javax.servlet:javax.servlet-api:3.1.0	cast	br.com.caelum:vraptor:4.2.2
+javax.validation.constraints.DecimalMax	public	javax.validation:validation-api:1.1.0.Final	cast	org.hibernate:hibernate-validator:5.1.0.Final
+com.google.common.collect.ImmutableMap$Builder	public	com.google.guava:guava:15.0	method call	br.com.caelum:iogi:1.0.1
+javax.inject.Qualifier	public	javax.inject:javax.inject:1	annotation	br.com.caelum:vraptor:4.2.2
+br.com.caelum.vraptor.serialization.xstream.VRaptorXStream	public	br.com.caelum:vraptor:4.2.2	method call	com.thoughtworks.xstream:xstream:1.4.7
+br.com.caelum.vraptor.validator.MessageList$3	default	br.com.caelum:vraptor:4.2.2	method call	com.google.guava:guava:15.0
+java.beans.EventHandler	public	unknownLib	Class.forName	com.thoughtworks.xstream:xstream:1.4.7
+javax.enterprise.inject.spi.Bean	public	javax.enterprise:cdi-api:1.1	subtyping	org.jboss.weld:weld-core-impl:2.1.2.Final
+net.vidageek.mirror.DefaultClassController	public	net.vidageek:mirror:1.6.1	method call	br.com.caelum:vraptor:4.2.2
+br.com.caelum.iogi.conversion.FallbackConverter	public	br.com.caelum:iogi:1.0.1	method call	br.com.caelum:vraptor:4.2.2
+com.google.common.collect.Ordering	default	com.google.guava:guava:15.0	method call	br.com.caelum:iogi:1.0.1
+com.google.gson.FieldAttributes	public	com.google.code.gson:gson:2.2.4	method call	br.com.caelum:vraptor:4.2.2
+br.com.caelum.iogi.MultiInstantiator	public	br.com.caelum:iogi:1.0.1	instantiation	br.com.caelum:vraptor:4.2.2
+br.com.caelum.vraptor.http.iogi.RequestAttributeInstantiator	default	br.com.caelum:vraptor:4.2.2	method call	br.com.caelum:iogi:1.0.1
+javax.validation.constraints.NotNull	public	javax.validation:validation-api:1.1.0.Final	annotation	org.hibernate:hibernate-validator:5.1.0.Final
+javax.annotation.Priority	public	javax.annotation:javax.annotation-api:1.2	cast	br.com.caelum:vraptor:4.2.2
+com.google.common.collect.FluentIterable$1	default	com.google.guava:guava:15.0	method call	br.com.caelum:vraptor:4.2.2
+javax.validation.Path$CrossParameterNode	public	javax.validation:validation-api:1.1.0.Final	subtyping	org.hibernate:hibernate-validator:5.1.0.Final
+javax.xml.bind.DatatypeConverter	public	javax.xml.bind	method call	br.com.caelum:vraptor:4.2.2
+com.google.common.collect.NaturalOrdering	default	com.google.guava:guava:15.0	method call	br.com.caelum:iogi:1.0.1
+br.com.caelum.vraptor.validator.MessageList$1	default	br.com.caelum:vraptor:4.2.2	method call	com.google.guava:guava:15.0
+br.com.caelum.vraptor.validator.MessageList$2	default	br.com.caelum:vraptor:4.2.2	method call	com.google.guava:guava:15.0
+br.com.caelum.vraptor.util.test.MockedLogic	public	br.com.caelum:vraptor:4.2.2	method call	net.vidageek:mirror:1.6.1
+javax.validation.ConstraintViolation	public	javax.validation:validation-api:1.1.0.Final	subtyping	org.hibernate:hibernate-validator:5.1.0.Final
+org.jboss.weld.bootstrap.WeldBootstrap	public	org.jboss.weld:weld-core-impl:2.1.2.Final	Class.forName	org.jboss.weld.se:weld-se-core:2.1.2.Final
+br.com.caelum.iogi.reflection.NewObject	public	br.com.caelum:iogi:1.0.1	instantiation	br.com.caelum:vraptor:4.2.2
+com.google.common.collect.ByFunctionOrdering	default	com.google.guava:guava:15.0	method call	br.com.caelum:iogi:1.0.1
+javax.validation.Constraint	public	javax.validation:validation-api:1.1.0.Final	cast	org.hibernate:hibernate-validator:5.1.0.Final
+javassist.util.proxy.ProxyFactory	public	org.javassist:javassist:3.18.1-GA	instantiation	br.com.caelum:vraptor:4.2.2
+javax.servlet.http.HttpServletRequestWrapper	public	javax.servlet:javax.servlet-api:3.1.0	subtyping	br.com.caelum:vraptor:4.2.2
+javax.validation.Validation$DefaultValidationProviderResolver	private	javax.validation:validation-api:1.1.0.Final	method call	org.hibernate:hibernate-validator:5.1.0.Final
+org.slf4j.LoggerFactory	public	org.slf4j:slf4j-api:1.7.5	method call	net.vidageek:mirror:1.6.1
+br.com.caelum.iogi.ObjectInstantiator	public	br.com.caelum:iogi:1.0.1	method call	br.com.caelum:vraptor:4.2.2
+com.thoughtworks.paranamer.CachingParanamer	public	com.thoughtworks.paranamer:paranamer:2.7	method call	br.com.caelum:vraptor:4.2.2
+br.com.caelum.vraptor.serialization.xstream.MessageConverter	public	br.com.caelum:vraptor:4.2.2	method call	com.thoughtworks.xstream:xstream:1.4.7
+org.hibernate.validator.HibernateValidator	public	org.hibernate:hibernate-validator:5.1.0.Final	method call	javax.validation:validation-api:1.1.0.Final
+javax.validation.ConstraintTarget	public	javax.validation:validation-api:1.1.0.Final	cast	org.hibernate:hibernate-validator:5.1.0.Final
+com.sun.el.ExpressionFactoryImpl	public	unknownLib	Class.forName	org.jboss.spec.javax.el:jboss-el-api_3.0_spec:1.0.0.Alpha1
+com.sun.xml.internal.stream.XMLInputFactoryImpl	public	unknownLib	Class.forName	javax.xml.stream
+javax.enterprise.inject.Vetoed	public	javax.enterprise:cdi-api:1.1	annotation	br.com.caelum:vraptor:4.2.2
+org.hibernate.validator.internal.metadata.descriptor.ExecutableDescriptorImpl	public	org.hibernate:hibernate-validator:5.1.0.Final	method call	br.com.caelum:vraptor:4.2.2
+com.google.gson.JsonParser	public	com.google.code.gson:gson:2.2.4	instantiation	br.com.caelum:vraptor:4.2.2
+net.vidageek.mirror.reflect.DefaultAllReflectionHandler	public	net.vidageek:mirror:1.6.1	method call	br.com.caelum:iogi:1.0.1
+net.vidageek.mirror.invoke.ConstructorHandlerByConstructor	public	net.vidageek:mirror:1.6.1	method call	br.com.caelum:iogi:1.0.1
+javax.validation.Path$BeanNode	public	javax.validation:validation-api:1.1.0.Final	subtyping	org.hibernate:hibernate-validator:5.1.0.Final
+com.google.common.base.Joiner	public	com.google.guava:guava:15.0	method call	br.com.caelum:vraptor:4.2.2
+javax.validation.metadata.ConstructorDescriptor	public	javax.validation:validation-api:1.1.0.Final	cast	org.hibernate:hibernate-validator:5.1.0.Final
+br.com.caelum.vraptor.observer.ExecuteMethod	public	br.com.caelum:vraptor:4.2.2	method call	net.vidageek:mirror:1.6.1
+javax.enterprise.inject.spi.Decorator	public	javax.enterprise:cdi-api:1.1	cast	org.jboss.weld:weld-core-impl:2.1.2.Final
+javax.enterprise.inject.spi.Extension	public	javax.enterprise:cdi-api:1.1	cast	org.jboss.weld:weld-core-impl:2.1.2.Final
+net.vidageek.mirror.invoke.MethodHandlerByMethod	public	net.vidageek:mirror:1.6.1	method call	br.com.caelum:vraptor:4.2.2
+net.vidageek.mirror.list.dsl.Matcher	public	net.vidageek:mirror:1.6.1	subtyping	br.com.caelum:iogi:1.0.1
+com.google.common.base.Strings	public	com.google.guava:guava:15.0	method call	br.com.caelum:vraptor:4.2.2
+com.google.common.collect.Multimaps$UnmodifiableListMultimap	private	com.google.guava:guava:15.0	method call	br.com.caelum:iogi:1.0.1
+javax.enterprise.inject.UnsatisfiedResolutionException	public	javax.enterprise:cdi-api:1.1	instantiation	org.jboss.weld.se:weld-se-core:2.1.2.Final
+javax.validation.metadata.ConstraintDescriptor	public	javax.validation:validation-api:1.1.0.Final	subtyping	org.hibernate:hibernate-validator:5.1.0.Final
+java.nio.charset.Charset	public	unknownLib	Class.forName	com.thoughtworks.xstream:xstream:1.4.7
+javax.validation.Path$ReturnValueNode	public	javax.validation:validation-api:1.1.0.Final	subtyping	org.hibernate:hibernate-validator:5.1.0.Final
+com.thoughtworks.xstream.converters.extended.CurrencyConverter	public	com.thoughtworks.xstream:xstream:1.4.7	Class.forName	com.thoughtworks.xstream:xstream:1.4.7
+com.google.common.base.Preconditions	default	com.google.guava:guava:15.0	method call	br.com.caelum:vraptor:4.2.2
+javax.validation.MessageInterpolator	public	javax.validation:validation-api:1.1.0.Final	cast	org.hibernate:hibernate-validator:5.1.0.Final
+org.jboss.weld.bootstrap.spi.CDI11Deployment	public	org.jboss.weld:weld-spi:2.1.Final	subtyping	org.jboss.weld.se:weld-se-core:2.1.2.Final
+com.google.common.collect.LinkedListMultimap	public	com.google.guava:guava:15.0	method call	br.com.caelum:iogi:1.0.1
+javax.enterprise.inject.spi.BeanAttributes	public	javax.enterprise:cdi-api:1.1	subtyping	org.jboss.weld:weld-core-impl:2.1.2.Final
+javax.validation.Validation$GenericBootstrapImpl	private	javax.validation:validation-api:1.1.0.Final	method call	org.hibernate:hibernate-validator-cdi:5.1.0.Final
+sun.security.provider.SHA	public	unknownLib	Class.forName	java.security
+com.google.common.collect.ImmutableList	public	com.google.guava:guava:15.0	method call	br.com.caelum:iogi:1.0.1
+br.com.caelum.iogi.spi.ParameterNamesProvider	public	br.com.caelum:iogi:1.0.1	subtyping	br.com.caelum:vraptor:4.2.2
+br.com.caelum.iogi.collections.ListInstantiator	public	br.com.caelum:iogi:1.0.1	method call	br.com.caelum:vraptor:4.2.2
+br.com.caelum.iogi.spi.DependencyProvider	public	br.com.caelum:iogi:1.0.1	subtyping	br.com.caelum:vraptor:4.2.2
+com.google.common.collect.HashMultiset	public	com.google.guava:guava:15.0	method call	br.com.caelum:vraptor:4.2.2
+org.jboss.weld.bootstrap.api.helpers.SimpleServiceRegistry	public	org.jboss.weld:weld-spi:2.1.Final	instantiation	org.jboss.weld:weld-core-impl:2.1.2.Final
+javax.validation.metadata.PropertyDescriptor	public	javax.validation:validation-api:1.1.0.Final	cast	org.hibernate:hibernate-validator:5.1.0.Final
+com.google.common.base.Supplier	public	com.google.guava:guava:15.0	cast	br.com.caelum:iogi:1.0.1
+javax.validation.Validation$GenericBootstrapImpl	private	javax.validation:validation-api:1.1.0.Final	method call	org.hibernate:hibernate-validator:5.1.0.Final
+class java.lang.Object	public	unknownLib	method call	org.hibernate:hibernate-validator:5.1.0.Final
+br.com.caelum.iogi.MultiInstantiator	public	br.com.caelum:iogi:1.0.1	method call	br.com.caelum:vraptor:4.2.2
+javassist.CtNewMethod	public	org.javassist:javassist:3.18.1-GA	method call	br.com.caelum:vraptor:4.2.2
+com.google.gson.JsonPrimitive	public	com.google.code.gson:gson:2.2.4	method call	br.com.caelum:vraptor:4.2.2
+br.com.caelum.vraptor.http.VRaptorResponse	public	br.com.caelum:vraptor:4.2.2	method call	javax.servlet:javax.servlet-api:3.1.0
+com.google.common.base.Joiner	public	com.google.guava:guava:15.0	method call	br.com.caelum:iogi:1.0.1
+net.vidageek.mirror.reflect.DefaultAllReflectionHandler	public	net.vidageek:mirror:1.6.1	method call	br.com.caelum:vraptor:4.2.2
+javax.validation.ValidationException	public	javax.validation:validation-api:1.1.0.Final	instantiation	org.hibernate:hibernate-validator:5.1.0.Final
+javax.validation.Validator	public	javax.validation:validation-api:1.1.0.Final	subtyping	org.hibernate:hibernate-validator:5.1.0.Final
+com.thoughtworks.xstream.converters.basic.UUIDConverter	public	com.thoughtworks.xstream:xstream:1.4.7	Class.forName	com.thoughtworks.xstream:xstream:1.4.7
+org.hibernate.validator.internal.util.logging.Log_$logger	public	org.hibernate:hibernate-validator:5.1.0.Final	Class.forName	org.jboss.logging:jboss-logging:3.1.3.GA
+javax.validation.constraints.Null	public	javax.validation:validation-api:1.1.0.Final	cast	org.hibernate:hibernate-validator:5.1.0.Final
+br.com.caelum.iogi.reflection.NewObject	public	br.com.caelum:iogi:1.0.1	method call	net.vidageek:mirror:1.6.1
+org.jboss.weld.bootstrap.api.Bootstrap	public	org.jboss.weld:weld-spi:2.1.Final	cast	org.jboss.weld.se:weld-se-core:2.1.2.Final
+javax.enterprise.context.Dependent	public	javax.enterprise:cdi-api:1.1	annotation	br.com.caelum:vraptor:4.2.2
+org.jboss.logging.DelegatingBasicLogger	public	org.jboss.logging:jboss-logging:3.1.3.GA	subtyping	org.hibernate:hibernate-validator:5.1.0.Final
+javax.validation.constraints.Max	public	javax.validation:validation-api:1.1.0.Final	cast	org.hibernate:hibernate-validator:5.1.0.Final
+org.hibernate.validator.internal.xml.BootstrapConfigurationImpl	public	org.hibernate:hibernate-validator:5.1.0.Final	method call	org.hibernate:hibernate-validator-cdi:5.1.0.Final
+com.google.common.collect.LinkedListMultimap	public	com.google.guava:guava:15.0	method call	br.com.caelum:vraptor:4.2.2
+javax.validation.ConstraintDefinitionException	public	javax.validation:validation-api:1.1.0.Final	instantiation	org.hibernate:hibernate-validator:5.1.0.Final
+com.google.common.collect.Multiset$Entry	public	com.google.guava:guava:15.0	cast	org.jboss.weld:weld-core-impl:2.1.2.Final
+javax.validation.Path$Node	public	javax.validation:validation-api:1.1.0.Final	cast	br.com.caelum:vraptor:4.2.2
+org.jboss.weld.bootstrap.spi.BootstrapConfiguration	public	org.jboss.weld:weld-spi:2.1.Final	cast	org.jboss.weld:weld-core-impl:2.1.2.Final
+org.hibernate.validator.internal.engine.ConfigurationImpl	public	org.hibernate:hibernate-validator:5.1.0.Final	method call	org.hibernate:hibernate-validator-cdi:5.1.0.Final
+br.com.caelum.vraptor.http.iogi.VRaptorParameterNamesProvider	public	br.com.caelum:vraptor:4.2.2	method call	br.com.caelum:iogi:1.0.1
+net.vidageek.mirror.list.BackedMirrorList	public	net.vidageek:mirror:1.6.1	method call	br.com.caelum:iogi:1.0.1
+org.apache.commons.io.FilenameUtils	public	commons-io:commons-io:2.2	method call	br.com.caelum:vraptor:4.2.2
+br.com.caelum.vraptor.validator.MessageList$MessageListItem	public	br.com.caelum:vraptor:4.2.2	method call	org.jboss.spec.javax.el:jboss-el-api_3.0_spec:1.0.0.Alpha1
+com.thoughtworks.xstream.converters.SingleValueConverter	public	com.thoughtworks.xstream:xstream:1.4.7	cast	br.com.caelum:vraptor:4.2.2
+javassist.CtMethod	public	org.javassist:javassist:3.18.1-GA	method call	br.com.caelum:vraptor:4.2.2
+org.jboss.weld.bootstrap.spi.CDI11Deployment	public	org.jboss.weld:weld-spi:2.1.Final	cast	org.jboss.weld:weld-core-impl:2.1.2.Final
+org.apache.commons.fileupload.disk.DiskFileItemFactory	public	commons-fileupload:commons-fileupload:1.3.1	instantiation	br.com.caelum:vraptor:4.2.2
+com.google.common.cache.CacheBuilder	public	com.google.guava:guava:15.0	method call	br.com.caelum:vraptor:4.2.2
+java.sql.Timestamp	public	java.sql	cast	com.google.code.gson:gson:2.2.4
+javax.validation.BootstrapConfiguration	public	javax.validation:validation-api:1.1.0.Final	subtyping	org.hibernate:hibernate-validator:5.1.0.Final
+com.fasterxml.classmate.MemberResolver	public	com.fasterxml:classmate:1.0.0	instantiation	org.hibernate:hibernate-validator:5.1.0.Final
+br.com.caelum.vraptor.validator.MessageList	public	br.com.caelum:vraptor:4.2.2	method call	com.google.guava:guava:15.0
+com.google.common.collect.Multimaps	public	com.google.guava:guava:15.0	method call	br.com.caelum:iogi:1.0.1
+com.google.common.collect.Iterables	public	com.google.guava:guava:15.0	method call	br.com.caelum:vraptor:4.2.2
+br.com.caelum.vraptor.validator.MessageList$MessageListItem	public	br.com.caelum:vraptor:4.2.2	method call	com.google.guava:guava:15.0
+com.sun.org.apache.xerces.internal.jaxp.datatype.DatatypeFactoryImpl	public	unknownLib	Class.forName	javax.xml.datatype
+com.thoughtworks.xstream.converters.enums.EnumSetConverter	public	com.thoughtworks.xstream:xstream:1.4.7	Class.forName	com.thoughtworks.xstream:xstream:1.4.7
+org.jboss.logging.BasicLogger	public	org.jboss.logging:jboss-logging:3.1.3.GA	subtyping	org.hibernate:hibernate-validator:5.1.0.Final
+javax.servlet.ServletException	public	javax.servlet:javax.servlet-api:3.1.0	instantiation	br.com.caelum:vraptor:4.2.2
+com.google.common.base.Preconditions	public	com.google.guava:guava:15.0	method call	net.vidageek:mirror:1.6.1
+org.xmlpull.mxp1.MXParser	public	xpp3:xpp3_min:1.1.4c	method call	com.thoughtworks.xstream:xstream:1.4.7
+javassist.util.proxy.MethodHandler	public	org.javassist:javassist:3.18.1-GA	subtyping	br.com.caelum:vraptor:4.2.2
+org.jboss.weld.bootstrap.spi.helpers.FileBasedBootstrapConfiguration	public	org.jboss.weld:weld-spi:2.1.Final	instantiation	org.jboss.weld:weld-core-impl:2.1.2.Final
+javax.validation.OverridesAttribute$List	public	javax.validation:validation-api:1.1.0.Final	cast	org.hibernate:hibernate-validator:5.1.0.Final
+javax.validation.groups.ConvertGroup$List	public	javax.validation:validation-api:1.1.0.Final	cast	org.hibernate:hibernate-validator:5.1.0.Final
+br.com.caelum.vraptor.serialization.gson.CalendarGsonConverter	public	br.com.caelum:vraptor:4.2.2	method call	com.google.code.gson:gson:2.2.4
+com.google.common.collect.ImmutableMap	public	com.google.guava:guava:15.0	method call	br.com.caelum:iogi:1.0.1
+net.vidageek.mirror.dsl.Mirror	public	net.vidageek:mirror:1.6.1	method call	br.com.caelum:vraptor:4.2.2
+org.xmlpull.v1.XmlPullParserException	public	xpp3:xpp3_min:1.1.4c	instantiation	xmlpull:xmlpull:1.1.3.1
+java.sql.Time	public	java.sql	Class.forName	com.thoughtworks.xstream:xstream:1.4.7
+com.thoughtworks.xstream.io.xml.XppReader	public	com.thoughtworks.xstream:xstream:1.4.7	method call	br.com.caelum:vraptor:4.2.2
+com.thoughtworks.xstream.converters.extended.SubjectConverter	public	com.thoughtworks.xstream:xstream:1.4.7	Class.forName	com.thoughtworks.xstream:xstream:1.4.7
+net.vidageek.mirror.dsl.Mirror	public	net.vidageek:mirror:1.6.1	method call	br.com.caelum:iogi:1.0.1
+com.thoughtworks.paranamer.CachingParanamer	public	com.thoughtworks.paranamer:paranamer:2.7	method call	br.com.caelum:iogi:1.0.1
+com.google.common.collect.Iterables$6	default	com.google.guava:guava:15.0	method call	br.com.caelum:vraptor:4.2.2
+com.google.common.collect.Iterables$8	default	com.google.guava:guava:15.0	method call	br.com.caelum:vraptor:4.2.2
+com.google.gson.GsonBuilder	public	com.google.code.gson:gson:2.2.4	method call	br.com.caelum:vraptor:4.2.2
+net.vidageek.mirror.exception.ReflectionProviderException	public	net.vidageek:mirror:1.6.1	method call	br.com.caelum:vraptor:4.2.2
+javax.validation.ParameterNameProvider	public	javax.validation:validation-api:1.1.0.Final	subtyping	org.hibernate:hibernate-validator:5.1.0.Final
+com.thoughtworks.xstream.mapper.AnnotationMapper	public	com.thoughtworks.xstream:xstream:1.4.7	Class.forName	com.thoughtworks.xstream:xstream:1.4.7
+net.vidageek.mirror.DefaultAccessorsController	public	net.vidageek:mirror:1.6.1	method call	br.com.caelum:iogi:1.0.1
+org.hibernate.validator.internal.engine.ValidatorImpl	public	org.hibernate:hibernate-validator:5.1.0.Final	method call	br.com.caelum:vraptor:4.2.2
+javax.enterprise.inject.Stereotype	public	javax.enterprise:cdi-api:1.1	annotation	br.com.caelum:vraptor:4.2.2
+com.thoughtworks.xstream.mapper.EnumMapper	public	com.thoughtworks.xstream:xstream:1.4.7	Class.forName	com.thoughtworks.xstream:xstream:1.4.7

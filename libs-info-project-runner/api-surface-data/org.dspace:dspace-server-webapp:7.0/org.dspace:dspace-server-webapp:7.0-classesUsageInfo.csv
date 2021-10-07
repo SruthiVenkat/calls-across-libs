@@ -1,5 +1,0 @@
-Class Name,Class Visibility,Class Library,Usage,Used In Library
-com.fasterxml.jackson.core.TreeNode,public,com.fasterxml.jackson.core,subtyping,com.fasterxml.jackson.databind
-com.fasterxml.jackson.core.ObjectCodec,public,com.fasterxml.jackson.core,subtyping,com.fasterxml.jackson.databind
-com.fasterxml.jackson.core.Versioned,public,com.fasterxml.jackson.core,subtyping,com.fasterxml.jackson.databind
-org.apache.logging.log4j.spi.ExtendedLogger,public,unknownLib,Class.forName,org.apache.commons.logging

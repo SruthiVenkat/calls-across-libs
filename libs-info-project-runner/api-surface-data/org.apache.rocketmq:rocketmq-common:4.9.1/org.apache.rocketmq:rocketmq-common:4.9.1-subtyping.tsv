@@ -1,0 +1,22 @@
+SubClass	Sub Library	Super Class/Interface	Super Class/Interface Visibility	Super Library	Count
+org.apache.rocketmq.common.protocol.body.ConsumerConnection	org.apache.rocketmq:rocketmq-common:4.9.1	org.apache.rocketmq.remoting.protocol.RemotingSerializable	public	org.apache.rocketmq:rocketmq-remoting:4.9.1	1
+org.apache.rocketmq.common.protocol.body.CheckClientRequestBody	org.apache.rocketmq:rocketmq-common:4.9.1	org.apache.rocketmq.remoting.protocol.RemotingSerializable	public	org.apache.rocketmq:rocketmq-remoting:4.9.1	1
+org.apache.rocketmq.common.protocol.body.BrokerStatsData	org.apache.rocketmq:rocketmq-common:4.9.1	org.apache.rocketmq.remoting.protocol.RemotingSerializable	public	org.apache.rocketmq:rocketmq-remoting:4.9.1	1
+org.apache.rocketmq.common.admin.TopicStatsTable	org.apache.rocketmq:rocketmq-common:4.9.1	org.apache.rocketmq.remoting.protocol.RemotingSerializable	public	org.apache.rocketmq:rocketmq-remoting:4.9.1	1
+org.apache.rocketmq.common.protocol.topic.OffsetMovedEvent	org.apache.rocketmq:rocketmq-common:4.9.1	org.apache.rocketmq.remoting.protocol.RemotingSerializable	public	org.apache.rocketmq:rocketmq-remoting:4.9.1	1
+org.apache.rocketmq.common.protocol.body.QueryConsumeQueueResponseBody	org.apache.rocketmq:rocketmq-common:4.9.1	org.apache.rocketmq.remoting.protocol.RemotingSerializable	public	org.apache.rocketmq:rocketmq-remoting:4.9.1	1
+org.apache.rocketmq.common.admin.ConsumeStats	org.apache.rocketmq:rocketmq-common:4.9.1	org.apache.rocketmq.remoting.protocol.RemotingSerializable	public	org.apache.rocketmq:rocketmq-remoting:4.9.1	1
+org.apache.rocketmq.common.protocol.body.ConsumeMessageDirectlyResult	org.apache.rocketmq:rocketmq-common:4.9.1	org.apache.rocketmq.remoting.protocol.RemotingSerializable	public	org.apache.rocketmq:rocketmq-remoting:4.9.1	1
+org.apache.rocketmq.common.protocol.body.RegisterBrokerBody	org.apache.rocketmq:rocketmq-common:4.9.1	org.apache.rocketmq.remoting.protocol.RemotingSerializable	public	org.apache.rocketmq:rocketmq-remoting:4.9.1	1
+org.apache.rocketmq.common.protocol.body.ResetOffsetBody	org.apache.rocketmq:rocketmq-common:4.9.1	org.apache.rocketmq.remoting.protocol.RemotingSerializable	public	org.apache.rocketmq:rocketmq-remoting:4.9.1	1
+org.apache.rocketmq.common.protocol.body.ConsumerRunningInfo	org.apache.rocketmq:rocketmq-common:4.9.1	org.apache.rocketmq.remoting.protocol.RemotingSerializable	public	org.apache.rocketmq:rocketmq-remoting:4.9.1	1
+org.apache.rocketmq.common.protocol.body.GroupList	org.apache.rocketmq:rocketmq-common:4.9.1	org.apache.rocketmq.remoting.protocol.RemotingSerializable	public	org.apache.rocketmq:rocketmq-remoting:4.9.1	1
+org.apache.rocketmq.common.protocol.body.QueryCorrectionOffsetBody	org.apache.rocketmq:rocketmq-common:4.9.1	org.apache.rocketmq.remoting.protocol.RemotingSerializable	public	org.apache.rocketmq:rocketmq-remoting:4.9.1	1
+org.apache.rocketmq.common.protocol.body.ConsumeStatsList	org.apache.rocketmq:rocketmq-common:4.9.1	org.apache.rocketmq.remoting.protocol.RemotingSerializable	public	org.apache.rocketmq:rocketmq-remoting:4.9.1	1
+org.apache.rocketmq.common.protocol.route.TopicRouteData	org.apache.rocketmq:rocketmq-common:4.9.1	org.apache.rocketmq.remoting.protocol.RemotingSerializable	public	org.apache.rocketmq:rocketmq-remoting:4.9.1	1
+org.apache.rocketmq.common.protocol.body.QueryConsumeTimeSpanBody	org.apache.rocketmq:rocketmq-common:4.9.1	org.apache.rocketmq.remoting.protocol.RemotingSerializable	public	org.apache.rocketmq:rocketmq-remoting:4.9.1	1
+org.apache.rocketmq.common.protocol.body.ClusterInfo	org.apache.rocketmq:rocketmq-common:4.9.1	org.apache.rocketmq.remoting.protocol.RemotingSerializable	public	org.apache.rocketmq:rocketmq-remoting:4.9.1	1
+org.apache.rocketmq.common.protocol.body.KVTable	org.apache.rocketmq:rocketmq-common:4.9.1	org.apache.rocketmq.remoting.protocol.RemotingSerializable	public	org.apache.rocketmq:rocketmq-remoting:4.9.1	1
+org.apache.rocketmq.common.protocol.body.TopicConfigSerializeWrapper	org.apache.rocketmq:rocketmq-common:4.9.1	org.apache.rocketmq.remoting.protocol.RemotingSerializable	public	org.apache.rocketmq:rocketmq-remoting:4.9.1	1
+org.apache.rocketmq.common.DataVersion	org.apache.rocketmq:rocketmq-common:4.9.1	org.apache.rocketmq.remoting.protocol.RemotingSerializable	public	org.apache.rocketmq:rocketmq-remoting:4.9.1	1
+org.apache.rocketmq.common.protocol.body.SubscriptionGroupWrapper	org.apache.rocketmq:rocketmq-common:4.9.1	org.apache.rocketmq.remoting.protocol.RemotingSerializable	public	org.apache.rocketmq:rocketmq-remoting:4.9.1	1

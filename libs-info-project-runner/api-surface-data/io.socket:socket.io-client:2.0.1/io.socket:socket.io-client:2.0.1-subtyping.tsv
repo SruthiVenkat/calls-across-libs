@@ -1,0 +1,22 @@
+SubClass	Sub Library	Super Class/Interface	Super Class/Interface Visibility	Super Library	Count
+okhttp3.internal.http1.Http1Codec$FixedLengthSink	com.squareup.okhttp3:okhttp:3.12.12	okio.Sink	public	com.squareup.okio:okio:1.15.0	1
+io.socket.client.Manager$2	io.socket:socket.io-client:2.0.1	io.socket.emitter.Emitter$Listener	public	io.socket:engine.io-client:2.0.0	1
+io.socket.client.Manager$3	io.socket:socket.io-client:2.0.1	io.socket.emitter.Emitter$Listener	public	io.socket:engine.io-client:2.0.0	1
+io.socket.client.Manager$4	io.socket:socket.io-client:2.0.1	io.socket.emitter.Emitter$Listener	public	io.socket:engine.io-client:2.0.0	1
+okhttp3.RealCall$1	com.squareup.okhttp3:okhttp:3.12.12	okio.AsyncTimeout	public	com.squareup.okio:okio:1.15.0	1
+io.socket.engineio.client.transports.WebSocket$1	io.socket:engine.io-client:2.0.0	okhttp3.WebSocketListener	public	com.squareup.okhttp3:okhttp:3.12.12	1
+io.socket.client.Manager$Engine	io.socket:socket.io-client:2.0.1	io.socket.engineio.client.Socket	public	io.socket:engine.io-client:2.0.0	1
+io.socket.client.Socket$2$4	io.socket:socket.io-client:2.0.1	io.socket.emitter.Emitter$Listener	public	io.socket:engine.io-client:2.0.0	1
+io.socket.client.Socket$2$3	io.socket:socket.io-client:2.0.1	io.socket.emitter.Emitter$Listener	public	io.socket:engine.io-client:2.0.0	1
+io.socket.client.Socket$2$2	io.socket:socket.io-client:2.0.1	io.socket.emitter.Emitter$Listener	public	io.socket:engine.io-client:2.0.0	1
+io.socket.client.Socket$2$1	io.socket:socket.io-client:2.0.1	io.socket.emitter.Emitter$Listener	public	io.socket:engine.io-client:2.0.0	1
+io.socket.client.Manager$1$2	io.socket:socket.io-client:2.0.1	io.socket.emitter.Emitter$Listener	public	io.socket:engine.io-client:2.0.0	1
+io.socket.client.Manager$1$3	io.socket:socket.io-client:2.0.1	io.socket.emitter.Emitter$Listener	public	io.socket:engine.io-client:2.0.0	1
+io.socket.client.Manager$1$1	io.socket:socket.io-client:2.0.1	io.socket.emitter.Emitter$Listener	public	io.socket:engine.io-client:2.0.0	1
+okhttp3.internal.http1.Http1Codec$AbstractSource	com.squareup.okhttp3:okhttp:3.12.12	okio.Source	public	com.squareup.okio:okio:1.15.0	1
+io.socket.engineio.client.transports.PollingXHR$Request$1	io.socket:engine.io-client:2.0.0	okhttp3.Callback	public	com.squareup.okhttp3:okhttp:3.12.12	1
+okhttp3.internal.http.CallServerInterceptor$CountingSink	com.squareup.okhttp3:okhttp:3.12.12	okio.ForwardingSink	public	com.squareup.okio:okio:1.15.0	1
+io.socket.client.Socket	io.socket:socket.io-client:2.0.1	io.socket.emitter.Emitter	public	io.socket:engine.io-client:2.0.0	1
+io.socket.client.Manager	io.socket:socket.io-client:2.0.1	io.socket.emitter.Emitter	public	io.socket:engine.io-client:2.0.0	1
+okhttp3.internal.ws.WebSocketWriter$FrameSink	com.squareup.okhttp3:okhttp:3.12.12	okio.Sink	public	com.squareup.okio:okio:1.15.0	1
+io.socket.client.Manager$Options	io.socket:socket.io-client:2.0.1	io.socket.engineio.client.Socket$Options	public	io.socket:engine.io-client:2.0.0	1

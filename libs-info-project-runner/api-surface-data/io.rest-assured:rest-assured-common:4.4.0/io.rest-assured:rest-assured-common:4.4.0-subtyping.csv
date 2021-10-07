@@ -1,2 +1,0 @@
-SubClass,Sub Library,Super Class/Interface,Super Class/Interface Visibility,Super Library,Count
-io.restassured.internal.common.path.ObjectConverter,io.rest-assured:rest-assured-common:4.4.0,groovy.lang.GroovyObject,public,org.codehaus.groovy:groovy:3.0.8,1

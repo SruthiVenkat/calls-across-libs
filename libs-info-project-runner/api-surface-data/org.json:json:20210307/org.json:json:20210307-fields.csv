@@ -1,9 +1,0 @@
-Callee Library,Field Name,Declared Class,Actual Class,Field Signature,Static,Visibility,Field Library,Reflective,Count
-org.json:json:20210307,org.json.junit.data.MyPublicClass::publicInt,org.json.junit.data.MyPublicClass,org.json.junit.data.MyPublicClass,java.lang.Integer,false,public,unknownLib,true,1
-org.json:json:20210307,org.json.junit.data.MyEnumField::VAL1,org.json.junit.data.MyEnumField,org.json.junit.data.MyEnumField,org.json.junit.data.MyEnumField,true,public,unknownLib,true,2
-org.json:json:20210307,org.json.junit.data.MyEnum::VAL3,org.json.junit.data.MyEnum,org.json.junit.data.MyEnum,org.json.junit.data.MyEnum,true,public,unknownLib,true,2
-org.json:json:20210307,org.json.junit.data.MyPublicClass::publicString,org.json.junit.data.MyPublicClass,org.json.junit.data.MyPublicClass,java.lang.String,false,public,unknownLib,true,1
-org.json:json:20210307,org.json.junit.data.MyEnum::VAL2,org.json.junit.data.MyEnum,org.json.junit.data.MyEnum,org.json.junit.data.MyEnum,true,public,unknownLib,true,2
-org.json:json:20210307,org.json.junit.data.MyEnum::VAL1,org.json.junit.data.MyEnum,org.json.junit.data.MyEnum,org.json.junit.data.MyEnum,true,public,unknownLib,true,2
-org.json:json:20210307,org.json.junit.data.MyEnumField::VAL3,org.json.junit.data.MyEnumField,org.json.junit.data.MyEnumField,org.json.junit.data.MyEnumField,true,public,unknownLib,true,2
-org.json:json:20210307,org.json.junit.data.MyEnumField::VAL2,org.json.junit.data.MyEnumField,org.json.junit.data.MyEnumField,org.json.junit.data.MyEnumField,true,public,unknownLib,true,2

@@ -1,0 +1,211 @@
+Class Name	Class Visibility	Class Library	Usage	Used In Library
+com.github.mangstadt.vinnie.validate.VObjectValidator	public	com.github.mangstadt:vinnie:2.0.2	method call	com.googlecode.ez-vcard:ez-vcard:0.11.3
+java.lang.reflect.Type	public	unknownLib	Class.forName	org.freemarker:freemarker:2.3.31
+javax.xml.transform.ErrorListener	public	javax.xml.transform	subtyping	com.googlecode.ez-vcard:ez-vcard:0.11.3
+com.fasterxml.jackson.databind.JsonDeserializer	public	com.fasterxml.jackson.core:jackson-databind:2.12.5	subtyping	com.googlecode.ez-vcard:ez-vcard:0.11.3
+ezvcard.property.Telephone	public	com.googlecode.ez-vcard:ez-vcard:0.11.3	method call	org.freemarker:freemarker:2.3.31
+ezvcard.property.ListProperty	public	com.googlecode.ez-vcard:ez-vcard:0.11.3	method call	org.freemarker:freemarker:2.3.31
+ezvcard.io.json.JCardPrettyPrinter	public	com.googlecode.ez-vcard:ez-vcard:0.11.3	method call	com.fasterxml.jackson.core:jackson-core:2.12.5
+ezvcard.parameter.MediaTypeParameter	public	com.googlecode.ez-vcard:ez-vcard:0.11.3	method call	org.freemarker:freemarker:2.3.31
+com.fasterxml.jackson.core.Version	public	com.fasterxml.jackson.core:jackson-core:2.12.5	instantiation	com.googlecode.ez-vcard:ez-vcard:0.11.3
+java.lang.reflect.Method	public	unknownLib	Class.forName	org.freemarker:freemarker:2.3.31
+com.fasterxml.jackson.annotation.JsonSetter$Value	public	com.fasterxml.jackson.core:jackson-annotations:2.12.5	method call	com.fasterxml.jackson.core:jackson-databind:2.12.5
+ezvcard.parameter.VCardParameter	public	com.googlecode.ez-vcard:ez-vcard:0.11.3	method call	org.freemarker:freemarker:2.3.31
+javax.xml.transform.TransformerFactory	public	javax.xml.transform	method call	com.googlecode.ez-vcard:ez-vcard:0.11.3
+com.fasterxml.jackson.annotation.JsonRawValue	public	com.fasterxml.jackson.core:jackson-annotations:2.12.5	cast	com.fasterxml.jackson.core:jackson-databind:2.12.5
+org.w3c.dom.Text	public	org.w3c.dom	cast	com.googlecode.ez-vcard:ez-vcard:0.11.3
+org.jsoup.Jsoup	public	org.jsoup:jsoup:1.14.2	method call	com.googlecode.ez-vcard:ez-vcard:0.11.3
+freemarker.template.Configuration	public	org.freemarker:freemarker:2.3.31	instantiation	com.googlecode.ez-vcard:ez-vcard:0.11.3
+com.fasterxml.jackson.annotation.JsonFormat	public	com.fasterxml.jackson.core:jackson-annotations:2.12.5	cast	com.fasterxml.jackson.core:jackson-databind:2.12.5
+com.github.mangstadt.vinnie.VObjectProperty	public	com.github.mangstadt:vinnie:2.0.2	method call	com.googlecode.ez-vcard:ez-vcard:0.11.3
+java.util.concurrent.ConcurrentMap	public	unknownLib	Class.forName	org.freemarker:freemarker:2.3.31
+com.fasterxml.jackson.core.json.JsonReadFeature	public	com.fasterxml.jackson.core:jackson-core:2.12.5	cast	com.fasterxml.jackson.core:jackson-databind:2.12.5
+com.fasterxml.jackson.core.JsonLocation	public	com.fasterxml.jackson.core:jackson-core:2.12.5	method call	com.googlecode.ez-vcard:ez-vcard:0.11.3
+java.lang.Class	public	unknownLib	Class.forName	org.freemarker:freemarker:2.3.31
+ezvcard.io.json.JCardDeserializer	public	com.googlecode.ez-vcard:ez-vcard:0.11.3	method call	com.fasterxml.jackson.core:jackson-databind:2.12.5
+com.fasterxml.jackson.annotation.JsonIgnoreProperties	public	com.fasterxml.jackson.core:jackson-annotations:2.12.5	cast	com.fasterxml.jackson.core:jackson-databind:2.12.5
+com.fasterxml.jackson.annotation.JsonValue	public	com.fasterxml.jackson.core:jackson-annotations:2.12.5	cast	com.fasterxml.jackson.core:jackson-databind:2.12.5
+java.lang.reflect.Constructor	public	unknownLib	Class.forName	org.freemarker:freemarker:2.3.31
+com.fasterxml.jackson.annotation.JsonGetter	public	com.fasterxml.jackson.core:jackson-annotations:2.12.5	cast	com.fasterxml.jackson.core:jackson-databind:2.12.5
+com.github.mangstadt.vinnie.io.VObjectPropertyValues$SemiStructuredValueIterator	public	com.github.mangstadt:vinnie:2.0.2	method call	com.googlecode.ez-vcard:ez-vcard:0.11.3
+java.lang.annotation.Annotation	public	unknownLib	Class.forName	org.freemarker:freemarker:2.3.31
+com.fasterxml.jackson.core.util.DefaultPrettyPrinter	public	com.fasterxml.jackson.core:jackson-core:2.12.5	subtyping	com.googlecode.ez-vcard:ez-vcard:0.11.3
+com.fasterxml.jackson.core.JsonToken	public	com.fasterxml.jackson.core:jackson-core:2.12.5	method call	com.googlecode.ez-vcard:ez-vcard:0.11.3
+com.sun.org.apache.xerces.internal.jaxp.SAXParserFactoryImpl	public	unknownLib	Class.forName	javax.xml.parsers
+ezvcard.util.TelUri	public	com.googlecode.ez-vcard:ez-vcard:0.11.3	method call	org.freemarker:freemarker:2.3.31
+com.fasterxml.jackson.annotation.JsonAlias	public	com.fasterxml.jackson.core:jackson-annotations:2.12.5	cast	com.fasterxml.jackson.core:jackson-databind:2.12.5
+ezvcard.io.json.JCardPrettyPrinter	public	com.googlecode.ez-vcard:ez-vcard:0.11.3	method call	com.fasterxml.jackson.core:jackson-databind:2.12.5
+sun.security.provider.NativePRNG	public	unknownLib	Class.forName	java.security
+com.fasterxml.jackson.core.json.ReaderBasedJsonParser	public	com.fasterxml.jackson.core:jackson-core:2.12.5	method call	com.fasterxml.jackson.core:jackson-databind:2.12.5
+com.fasterxml.jackson.core.JsonFactory	public	com.fasterxml.jackson.core:jackson-core:2.12.5	instantiation	com.googlecode.ez-vcard:ez-vcard:0.11.3
+ezvcard.property.Email	public	com.googlecode.ez-vcard:ez-vcard:0.11.3	method call	org.freemarker:freemarker:2.3.31
+com.fasterxml.jackson.databind.BeanProperty$Std	public	com.fasterxml.jackson.core:jackson-databind:2.12.5	method call	com.googlecode.ez-vcard:ez-vcard:0.11.3
+org.w3c.dom.DOMException	public	org.w3c.dom	subtyping	org.apache.xml.dtm
+java.security.ProtectionDomain	public	java.security	instantiation	javax.xml.transform
+com.fasterxml.jackson.annotation.ObjectIdResolver	public	com.fasterxml.jackson.core:jackson-annotations:2.12.5	cast	com.fasterxml.jackson.core:jackson-databind:2.12.5
+com.fasterxml.jackson.annotation.JsonIgnoreProperties$Value	public	com.fasterxml.jackson.core:jackson-annotations:2.12.5	method call	com.fasterxml.jackson.core:jackson-databind:2.12.5
+com.github.mangstadt.vinnie.io.VObjectWriter	public	com.github.mangstadt:vinnie:2.0.2	instantiation	com.googlecode.ez-vcard:ez-vcard:0.11.3
+com.fasterxml.jackson.annotation.ObjectIdGenerators$PropertyGenerator	public	com.fasterxml.jackson.core:jackson-annotations:2.12.5	subtyping	com.fasterxml.jackson.core:jackson-databind:2.12.5
+ezvcard.property.Impp	public	com.googlecode.ez-vcard:ez-vcard:0.11.3	method call	org.freemarker:freemarker:2.3.31
+com.github.mangstadt.vinnie.io.VObjectDataListener	public	com.github.mangstadt:vinnie:2.0.2	subtyping	com.googlecode.ez-vcard:ez-vcard:0.11.3
+java.security.ProtectionDomain	public	java.security	Class.forName	org.freemarker:freemarker:2.3.31
+com.fasterxml.jackson.annotation.JsonFilter	public	com.fasterxml.jackson.core:jackson-annotations:2.12.5	cast	com.fasterxml.jackson.core:jackson-databind:2.12.5
+org.w3c.dom.Node	public	org.w3c.dom	cast	org.freemarker:freemarker:2.3.31
+java.lang.reflect.Executable	public	unknownLib	Class.forName	org.freemarker:freemarker:2.3.31
+com.github.mangstadt.vinnie.io.VObjectPropertyValues$StructuredValueIterator	public	com.github.mangstadt:vinnie:2.0.2	instantiation	com.googlecode.ez-vcard:ez-vcard:0.11.3
+org.xml.sax.InputSource	public	org.xml.sax	instantiation	com.googlecode.ez-vcard:ez-vcard:0.11.3
+com.github.mangstadt.vinnie.VObjectParameters	public	com.github.mangstadt:vinnie:2.0.2	instantiation	com.googlecode.ez-vcard:ez-vcard:0.11.3
+org.jsoup.nodes.Node	public	org.jsoup:jsoup:1.14.2	cast	com.googlecode.ez-vcard:ez-vcard:0.11.3
+java.security.MessageDigestSpi	public	java.security	Class.forName	java.security
+com.fasterxml.jackson.annotation.JacksonAnnotation	public	com.fasterxml.jackson.core:jackson-annotations:2.12.5	annotation	com.fasterxml.jackson.core:jackson-databind:2.12.5
+ezvcard.property.Geo	public	com.googlecode.ez-vcard:ez-vcard:0.11.3	method call	org.freemarker:freemarker:2.3.31
+java.sql.Time	public	java.sql	cast	org.freemarker:freemarker:2.3.31
+com.fasterxml.jackson.core.JsonParser	public	com.fasterxml.jackson.core:jackson-core:2.12.5	cast	com.fasterxml.jackson.core:jackson-databind:2.12.5
+com.fasterxml.jackson.core.io.SegmentedStringWriter	public	com.fasterxml.jackson.core:jackson-core:2.12.5	instantiation	com.fasterxml.jackson.core:jackson-databind:2.12.5
+com.fasterxml.jackson.annotation.JsonBackReference	public	com.fasterxml.jackson.core:jackson-annotations:2.12.5	cast	com.fasterxml.jackson.core:jackson-databind:2.12.5
+java.lang.Thread	public	unknownLib	Class.forName	org.freemarker:freemarker:2.3.31
+com.github.mangstadt.vinnie.io.VObjectPropertyValues$SemiStructuredValueBuilder	public	com.github.mangstadt:vinnie:2.0.2	method call	com.googlecode.ez-vcard:ez-vcard:0.11.3
+org.jsoup.nodes.TextNode	public	org.jsoup:jsoup:1.14.2	cast	com.googlecode.ez-vcard:ez-vcard:0.11.3
+com.fasterxml.jackson.annotation.JsonFormat$Value	public	com.fasterxml.jackson.core:jackson-annotations:2.12.5	method call	com.fasterxml.jackson.core:jackson-databind:2.12.5
+ezvcard.io.scribe.ImppScribe	public	com.googlecode.ez-vcard:ez-vcard:0.11.3	method call	org.freemarker:freemarker:2.3.31
+com.fasterxml.jackson.databind.ser.ContextualSerializer	public	com.fasterxml.jackson.core:jackson-databind:2.12.5	subtyping	com.googlecode.ez-vcard:ez-vcard:0.11.3
+java.lang.reflect.AccessibleObject	public	unknownLib	Class.forName	org.freemarker:freemarker:2.3.31
+com.fasterxml.jackson.annotation.JacksonInject	public	com.fasterxml.jackson.core:jackson-annotations:2.12.5	cast	com.fasterxml.jackson.core:jackson-databind:2.12.5
+ezvcard.util.UtcOffset	public	com.googlecode.ez-vcard:ez-vcard:0.11.3	method call	org.freemarker:freemarker:2.3.31
+com.fasterxml.jackson.annotation.JsonKey	public	com.fasterxml.jackson.core:jackson-annotations:2.12.5	cast	com.fasterxml.jackson.core:jackson-databind:2.12.5
+org.xml.sax.InputSource	public	org.xml.sax	instantiation	javax.xml.parsers
+com.github.mangstadt.vinnie.io.VObjectWriter	public	com.github.mangstadt:vinnie:2.0.2	method call	com.googlecode.ez-vcard:ez-vcard:0.11.3
+com.fasterxml.jackson.core.SerializableString	public	com.fasterxml.jackson.core:jackson-core:2.12.5	cast	com.fasterxml.jackson.core:jackson-databind:2.12.5
+com.fasterxml.jackson.annotation.JsonTypeInfo	public	com.fasterxml.jackson.core:jackson-annotations:2.12.5	cast	com.fasterxml.jackson.core:jackson-databind:2.12.5
+com.fasterxml.jackson.annotation.JsonManagedReference	public	com.fasterxml.jackson.core:jackson-annotations:2.12.5	cast	com.fasterxml.jackson.core:jackson-databind:2.12.5
+com.fasterxml.jackson.core.JsonFactory	public	com.fasterxml.jackson.core:jackson-core:2.12.5	subtyping	com.fasterxml.jackson.core:jackson-databind:2.12.5
+org.jsoup.nodes.TextNode	public	org.jsoup:jsoup:1.14.2	method call	com.googlecode.ez-vcard:ez-vcard:0.11.3
+java.lang.System	public	unknownLib	Class.forName	org.freemarker:freemarker:2.3.31
+com.fasterxml.jackson.core.json.JsonWriteContext	public	com.fasterxml.jackson.core:jackson-core:2.12.5	method call	com.googlecode.ez-vcard:ez-vcard:0.11.3
+com.fasterxml.jackson.databind.ser.std.StdSerializer	public	com.fasterxml.jackson.core:jackson-databind:2.12.5	subtyping	com.googlecode.ez-vcard:ez-vcard:0.11.3
+java.security.PrivilegedAction	public	java.security	subtyping	org.freemarker:freemarker:2.3.31
+ezvcard.VCard	public	com.googlecode.ez-vcard:ez-vcard:0.11.3	method call	org.freemarker:freemarker:2.3.31
+ezvcard.property.Organization	public	com.googlecode.ez-vcard:ez-vcard:0.11.3	method call	org.freemarker:freemarker:2.3.31
+com.fasterxml.jackson.core.util.InternCache	public	com.fasterxml.jackson.core:jackson-core:2.12.5	method call	com.fasterxml.jackson.core:jackson-databind:2.12.5
+com.fasterxml.jackson.core.util.Instantiatable	public	com.fasterxml.jackson.core:jackson-core:2.12.5	cast	com.fasterxml.jackson.core:jackson-databind:2.12.5
+com.fasterxml.jackson.core.JsonLocation	public	com.fasterxml.jackson.core:jackson-core:2.12.5	instantiation	com.fasterxml.jackson.core:jackson-databind:2.12.5
+java.lang.reflect.AnnotatedType	public	unknownLib	Class.forName	org.freemarker:freemarker:2.3.31
+java.lang.reflect.Member	public	unknownLib	Class.forName	org.freemarker:freemarker:2.3.31
+com.fasterxml.jackson.core.JsonProcessingException	public	com.fasterxml.jackson.core:jackson-core:2.12.5	cast	com.fasterxml.jackson.core:jackson-databind:2.12.5
+com.fasterxml.jackson.annotation.JsonAnyGetter	public	com.fasterxml.jackson.core:jackson-annotations:2.12.5	cast	com.fasterxml.jackson.core:jackson-databind:2.12.5
+com.fasterxml.jackson.annotation.JsonRootName	public	com.fasterxml.jackson.core:jackson-annotations:2.12.5	cast	com.fasterxml.jackson.core:jackson-databind:2.12.5
+java.sql.Timestamp	public	java.sql	cast	org.freemarker:freemarker:2.3.31
+java.security.AccessController	default	java.security	method call	javax.xml.xpath
+com.fasterxml.jackson.annotation.JsonProperty	public	com.fasterxml.jackson.core:jackson-annotations:2.12.5	cast	com.fasterxml.jackson.core:jackson-databind:2.12.5
+com.fasterxml.jackson.core.json.ReaderBasedJsonParser	public	com.fasterxml.jackson.core:jackson-core:2.12.5	method call	com.googlecode.ez-vcard:ez-vcard:0.11.3
+com.fasterxml.jackson.core.PrettyPrinter	public	com.fasterxml.jackson.core:jackson-core:2.12.5	cast	com.fasterxml.jackson.core:jackson-databind:2.12.5
+com.fasterxml.jackson.annotation.JsonTypeName	public	com.fasterxml.jackson.core:jackson-annotations:2.12.5	cast	com.fasterxml.jackson.core:jackson-databind:2.12.5
+java.security.PrivilegedAction	public	java.security	subtyping	org.apache.xml.dtm
+com.fasterxml.jackson.annotation.JsonInclude$Include	public	com.fasterxml.jackson.core:jackson-annotations:2.12.5	method call	com.fasterxml.jackson.core:jackson-databind:2.12.5
+com.fasterxml.jackson.annotation.JsonInclude	public	com.fasterxml.jackson.core:jackson-annotations:2.12.5	cast	com.fasterxml.jackson.core:jackson-databind:2.12.5
+com.fasterxml.jackson.core.JsonFactory	public	com.fasterxml.jackson.core:jackson-core:2.12.5	method call	com.googlecode.ez-vcard:ez-vcard:0.11.3
+freemarker.template.Template	public	org.freemarker:freemarker:2.3.31	method call	com.googlecode.ez-vcard:ez-vcard:0.11.3
+com.fasterxml.jackson.annotation.JsonIdentityInfo	public	com.fasterxml.jackson.core:jackson-annotations:2.12.5	cast	com.fasterxml.jackson.core:jackson-databind:2.12.5
+com.fasterxml.jackson.databind.type.SimpleType	public	com.fasterxml.jackson.core:jackson-databind:2.12.5	method call	com.fasterxml.jackson.core:jackson-core:2.12.5
+com.fasterxml.jackson.annotation.JsonIgnoreType	public	com.fasterxml.jackson.core:jackson-annotations:2.12.5	cast	com.fasterxml.jackson.core:jackson-databind:2.12.5
+com.github.mangstadt.vinnie.io.VObjectPropertyValues$SemiStructuredValueBuilder	public	com.github.mangstadt:vinnie:2.0.2	instantiation	com.googlecode.ez-vcard:ez-vcard:0.11.3
+ezvcard.property.BinaryProperty	public	com.googlecode.ez-vcard:ez-vcard:0.11.3	method call	org.freemarker:freemarker:2.3.31
+com.fasterxml.jackson.core.type.ResolvedType	public	com.fasterxml.jackson.core:jackson-core:2.12.5	subtyping	com.fasterxml.jackson.core:jackson-databind:2.12.5
+com.fasterxml.jackson.annotation.JsonIgnore	public	com.fasterxml.jackson.core:jackson-annotations:2.12.5	cast	com.fasterxml.jackson.core:jackson-databind:2.12.5
+com.github.mangstadt.vinnie.io.VObjectReader	public	com.github.mangstadt:vinnie:2.0.2	method call	com.googlecode.ez-vcard:ez-vcard:0.11.3
+com.fasterxml.jackson.annotation.JsonProperty$Access	public	com.fasterxml.jackson.core:jackson-annotations:2.12.5	cast	com.fasterxml.jackson.core:jackson-databind:2.12.5
+com.fasterxml.jackson.core.json.WriterBasedJsonGenerator	public	com.fasterxml.jackson.core:jackson-core:2.12.5	method call	com.googlecode.ez-vcard:ez-vcard:0.11.3
+com.github.mangstadt.vinnie.VObjectParameters	public	com.github.mangstadt:vinnie:2.0.2	method call	com.googlecode.ez-vcard:ez-vcard:0.11.3
+com.github.mangstadt.vinnie.io.VObjectPropertyValues$StructuredValueBuilder	public	com.github.mangstadt:vinnie:2.0.2	instantiation	com.googlecode.ez-vcard:ez-vcard:0.11.3
+com.github.mangstadt.vinnie.io.VObjectPropertyValues$StructuredValueIterator	public	com.github.mangstadt:vinnie:2.0.2	method call	com.googlecode.ez-vcard:ez-vcard:0.11.3
+ezvcard.property.DateOrTimeProperty	public	com.googlecode.ez-vcard:ez-vcard:0.11.3	method call	org.freemarker:freemarker:2.3.31
+com.fasterxml.jackson.annotation.ObjectIdGenerator	public	com.fasterxml.jackson.core:jackson-annotations:2.12.5	cast	com.fasterxml.jackson.core:jackson-databind:2.12.5
+com.fasterxml.jackson.annotation.JsonIncludeProperties$Value	public	com.fasterxml.jackson.core:jackson-annotations:2.12.5	method call	com.fasterxml.jackson.core:jackson-databind:2.12.5
+com.fasterxml.jackson.annotation.JsonProperty$Access	public	com.fasterxml.jackson.core:jackson-annotations:2.12.5	method call	com.fasterxml.jackson.core:jackson-databind:2.12.5
+com.fasterxml.jackson.core.util.ByteArrayBuilder	public	com.fasterxml.jackson.core:jackson-core:2.12.5	instantiation	com.fasterxml.jackson.core:jackson-databind:2.12.5
+com.fasterxml.jackson.annotation.JsonMerge	public	com.fasterxml.jackson.core:jackson-annotations:2.12.5	cast	com.fasterxml.jackson.core:jackson-databind:2.12.5
+org.xml.sax.SAXException	public	org.xml.sax	instantiation	com.googlecode.ez-vcard:ez-vcard:0.11.3
+java.net.URL	public	unknownLib	Class.forName	org.freemarker:freemarker:2.3.31
+java.net.URI	public	unknownLib	Class.forName	org.freemarker:freemarker:2.3.31
+com.fasterxml.jackson.annotation.JsonFormat	public	com.fasterxml.jackson.core:jackson-annotations:2.12.5	annotation	com.googlecode.ez-vcard:ez-vcard:0.11.3
+ezvcard.property.Address	public	com.googlecode.ez-vcard:ez-vcard:0.11.3	method call	org.freemarker:freemarker:2.3.31
+com.fasterxml.jackson.core.JsonProcessingException	public	com.fasterxml.jackson.core:jackson-core:2.12.5	subtyping	com.fasterxml.jackson.core:jackson-databind:2.12.5
+com.fasterxml.jackson.databind.MappingJsonFactory	public	com.fasterxml.jackson.core:jackson-databind:2.12.5	method call	com.fasterxml.jackson.core:jackson-core:2.12.5
+java.lang.reflect.GenericDeclaration	public	unknownLib	Class.forName	org.freemarker:freemarker:2.3.31
+com.fasterxml.jackson.core.TreeNode	public	com.fasterxml.jackson.core:jackson-core:2.12.5	subtyping	com.fasterxml.jackson.core:jackson-databind:2.12.5
+com.fasterxml.jackson.annotation.JsonUnwrapped	public	com.fasterxml.jackson.core:jackson-annotations:2.12.5	cast	com.fasterxml.jackson.core:jackson-databind:2.12.5
+ezvcard.io.html.HCardPage$TemplateUtils	public	com.googlecode.ez-vcard:ez-vcard:0.11.3	method call	org.freemarker:freemarker:2.3.31
+org.jsoup.select.Elements	public	org.jsoup:jsoup:1.14.2	method call	com.googlecode.ez-vcard:ez-vcard:0.11.3
+com.fasterxml.jackson.annotation.JsonAnySetter	public	com.fasterxml.jackson.core:jackson-annotations:2.12.5	cast	com.fasterxml.jackson.core:jackson-databind:2.12.5
+com.fasterxml.jackson.core.io.SegmentedStringWriter	public	com.fasterxml.jackson.core:jackson-core:2.12.5	method call	com.fasterxml.jackson.core:jackson-databind:2.12.5
+com.fasterxml.jackson.databind.module.SimpleModule	public	com.fasterxml.jackson.core:jackson-databind:2.12.5	subtyping	com.googlecode.ez-vcard:ez-vcard:0.11.3
+javax.xml.xpath.XPathFactory	public	javax.xml.xpath	method call	com.googlecode.ez-vcard:ez-vcard:0.11.3
+java.security.CodeSource	public	java.security	instantiation	javax.xml.transform
+java.lang.reflect.Parameter	public	unknownLib	Class.forName	org.freemarker:freemarker:2.3.31
+ezvcard.property.Timezone	public	com.googlecode.ez-vcard:ez-vcard:0.11.3	method call	org.freemarker:freemarker:2.3.31
+ezvcard.io.json.JCardModule	public	com.googlecode.ez-vcard:ez-vcard:0.11.3	method call	com.fasterxml.jackson.core:jackson-databind:2.12.5
+com.fasterxml.jackson.core.Versioned	public	com.fasterxml.jackson.core:jackson-core:2.12.5	subtyping	com.fasterxml.jackson.core:jackson-databind:2.12.5
+com.fasterxml.jackson.annotation.JsonInclude$Value	public	com.fasterxml.jackson.core:jackson-annotations:2.12.5	method call	com.fasterxml.jackson.core:jackson-databind:2.12.5
+sun.security.provider.SHA	public	unknownLib	Class.forName	java.security
+java.lang.String	public	unknownLib	Class.forName	org.freemarker:freemarker:2.3.31
+com.github.mangstadt.vinnie.io.VObjectPropertyValues	public	com.github.mangstadt:vinnie:2.0.2	method call	com.googlecode.ez-vcard:ez-vcard:0.11.3
+com.fasterxml.jackson.annotation.JsonClassDescription	public	com.fasterxml.jackson.core:jackson-annotations:2.12.5	cast	com.fasterxml.jackson.core:jackson-databind:2.12.5
+java.security.PrivilegedAction	public	java.security	subtyping	javax.xml.xpath
+com.fasterxml.jackson.annotation.JsonIncludeProperties	public	com.fasterxml.jackson.core:jackson-annotations:2.12.5	cast	com.fasterxml.jackson.core:jackson-databind:2.12.5
+com.fasterxml.jackson.core.ObjectCodec	public	com.fasterxml.jackson.core:jackson-core:2.12.5	subtyping	com.fasterxml.jackson.core:jackson-databind:2.12.5
+com.fasterxml.jackson.core.io.SerializedString	public	com.fasterxml.jackson.core:jackson-core:2.12.5	instantiation	com.fasterxml.jackson.core:jackson-databind:2.12.5
+java.sql.Date	public	java.sql	cast	org.freemarker:freemarker:2.3.31
+ezvcard.property.SimpleProperty	public	com.googlecode.ez-vcard:ez-vcard:0.11.3	method call	org.freemarker:freemarker:2.3.31
+javax.xml.parsers.DocumentBuilderFactory	public	javax.xml.parsers	method call	com.googlecode.ez-vcard:ez-vcard:0.11.3
+com.fasterxml.jackson.annotation.JsonSetter	public	com.fasterxml.jackson.core:jackson-annotations:2.12.5	cast	com.fasterxml.jackson.core:jackson-databind:2.12.5
+ezvcard.io.json.JCardSerializer	public	com.googlecode.ez-vcard:ez-vcard:0.11.3	method call	com.fasterxml.jackson.core:jackson-databind:2.12.5
+com.github.mangstadt.vinnie.io.Context	public	com.github.mangstadt:vinnie:2.0.2	method call	com.googlecode.ez-vcard:ez-vcard:0.11.3
+com.github.mangstadt.vinnie.io.VObjectReader	public	com.github.mangstadt:vinnie:2.0.2	instantiation	com.googlecode.ez-vcard:ez-vcard:0.11.3
+java.lang.ClassLoader	public	unknownLib	Class.forName	org.freemarker:freemarker:2.3.31
+com.github.mangstadt.vinnie.io.FoldedLineWriter	public	com.github.mangstadt:vinnie:2.0.2	method call	com.googlecode.ez-vcard:ez-vcard:0.11.3
+java.lang.ThreadGroup	public	unknownLib	Class.forName	org.freemarker:freemarker:2.3.31
+com.fasterxml.jackson.core.JsonGenerator	public	com.fasterxml.jackson.core:jackson-core:2.12.5	subtyping	com.fasterxml.jackson.core:jackson-databind:2.12.5
+com.fasterxml.jackson.annotation.JsonPropertyOrder	public	com.fasterxml.jackson.core:jackson-annotations:2.12.5	cast	com.fasterxml.jackson.core:jackson-databind:2.12.5
+com.github.mangstadt.vinnie.io.VObjectPropertyValues$StructuredValueBuilder	public	com.github.mangstadt:vinnie:2.0.2	method call	com.googlecode.ez-vcard:ez-vcard:0.11.3
+com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl	public	unknownLib	Class.forName	javax.xml.parsers
+org.apache.xml.dtm.ref.DTMManagerDefault	public	unknownLib	Class.forName	org.apache.xml.dtm
+org.apache.xml.dtm.ObjectFactory	default	org.apache.xml.dtm	Class.forName	org.apache.xml.dtm
+freemarker.template.Configuration	public	org.freemarker:freemarker:2.3.31	method call	com.googlecode.ez-vcard:ez-vcard:0.11.3
+org.jsoup.select.Elements	public	org.jsoup:jsoup:1.14.2	instantiation	com.googlecode.ez-vcard:ez-vcard:0.11.3
+java.lang.Runtime	public	unknownLib	Class.forName	org.freemarker:freemarker:2.3.31
+java.security.CodeSigner[]	public	java.security	cast	javax.xml.transform
+java.lang.Package	public	unknownLib	Class.forName	org.freemarker:freemarker:2.3.31
+java.lang.reflect.Field	public	unknownLib	Class.forName	org.freemarker:freemarker:2.3.31
+java.lang.reflect.TypeVariable	public	unknownLib	Class.forName	org.freemarker:freemarker:2.3.31
+com.github.mangstadt.vinnie.validate.AllowedCharacters	public	com.github.mangstadt:vinnie:2.0.2	method call	com.googlecode.ez-vcard:ez-vcard:0.11.3
+com.fasterxml.jackson.annotation.JsonAutoDetect	public	com.fasterxml.jackson.core:jackson-annotations:2.12.5	cast	com.fasterxml.jackson.core:jackson-databind:2.12.5
+com.fasterxml.jackson.annotation.JsonView	public	com.fasterxml.jackson.core:jackson-annotations:2.12.5	cast	com.fasterxml.jackson.core:jackson-databind:2.12.5
+com.fasterxml.jackson.annotation.JsonAutoDetect$Visibility	public	com.fasterxml.jackson.core:jackson-annotations:2.12.5	method call	com.fasterxml.jackson.core:jackson-databind:2.12.5
+java.lang.Object	public	unknownLib	Class.forName	org.freemarker:freemarker:2.3.31
+javax.xml.transform.TransformerFactory	private	javax.xml.transform	method call	com.googlecode.ez-vcard:ez-vcard:0.11.3
+com.fasterxml.jackson.core.base.ParserMinimalBase	public	com.fasterxml.jackson.core:jackson-core:2.12.5	subtyping	com.fasterxml.jackson.core:jackson-databind:2.12.5
+com.github.mangstadt.vinnie.io.SyntaxRules	public	com.github.mangstadt:vinnie:2.0.2	method call	com.googlecode.ez-vcard:ez-vcard:0.11.3
+com.fasterxml.jackson.annotation.JsonIdentityReference	public	com.fasterxml.jackson.core:jackson-annotations:2.12.5	cast	com.fasterxml.jackson.core:jackson-databind:2.12.5
+org.jsoup.nodes.Document	public	org.jsoup:jsoup:1.14.2	method call	com.googlecode.ez-vcard:ez-vcard:0.11.3
+java.security.AccessControlContext	public	java.security	instantiation	javax.xml.transform
+com.github.mangstadt.vinnie.io.Warning	public	com.github.mangstadt:vinnie:2.0.2	method call	com.googlecode.ez-vcard:ez-vcard:0.11.3
+com.github.mangstadt.vinnie.io.VObjectPropertyValues$SemiStructuredValueIterator	public	com.github.mangstadt:vinnie:2.0.2	instantiation	com.googlecode.ez-vcard:ez-vcard:0.11.3
+org.jsoup.nodes.Element	public	org.jsoup:jsoup:1.14.2	cast	com.googlecode.ez-vcard:ez-vcard:0.11.3
+com.fasterxml.jackson.core.JsonGenerationException	public	com.fasterxml.jackson.core:jackson-core:2.12.5	instantiation	com.fasterxml.jackson.core:jackson-databind:2.12.5
+com.fasterxml.jackson.annotation.ObjectIdGenerator$IdKey	public	com.fasterxml.jackson.core:jackson-annotations:2.12.5	instantiation	com.fasterxml.jackson.core:jackson-databind:2.12.5
+java.security.PrivilegedAction	public	java.security	subtyping	javax.xml.transform
+ezvcard.io.scribe.ScribeIndex	public	com.googlecode.ez-vcard:ez-vcard:0.11.3	method call	org.freemarker:freemarker:2.3.31
+ezvcard.io.text.VCardReader$VObjectDataListenerImpl	private	com.googlecode.ez-vcard:ez-vcard:0.11.3	method call	com.github.mangstadt:vinnie:2.0.2
+org.jsoup.nodes.Element	public	org.jsoup:jsoup:1.14.2	method call	com.googlecode.ez-vcard:ez-vcard:0.11.3
+org.w3c.dom.Element	public	org.w3c.dom	cast	com.googlecode.ez-vcard:ez-vcard:0.11.3
+com.fasterxml.jackson.core.json.JsonWriteFeature	public	com.fasterxml.jackson.core:jackson-core:2.12.5	cast	com.fasterxml.jackson.core:jackson-databind:2.12.5
+ezvcard.property.StructuredName	public	com.googlecode.ez-vcard:ez-vcard:0.11.3	method call	org.freemarker:freemarker:2.3.31
+org.w3c.dom.Document	public	org.w3c.dom	cast	com.googlecode.ez-vcard:ez-vcard:0.11.3
+java.security.PrivilegedAction	public	java.security	subtyping	javax.xml.parsers
+java.security.Permissions	public	java.security	instantiation	javax.xml.transform
+com.fasterxml.jackson.annotation.JsonPropertyDescription	public	com.fasterxml.jackson.core:jackson-annotations:2.12.5	cast	com.fasterxml.jackson.core:jackson-databind:2.12.5
+com.fasterxml.jackson.annotation.JsonSubTypes	public	com.fasterxml.jackson.core:jackson-annotations:2.12.5	cast	com.fasterxml.jackson.core:jackson-databind:2.12.5
+com.fasterxml.jackson.annotation.JsonCreator	public	com.fasterxml.jackson.core:jackson-annotations:2.12.5	cast	com.fasterxml.jackson.core:jackson-databind:2.12.5
+com.fasterxml.jackson.core.json.WriterBasedJsonGenerator	public	com.fasterxml.jackson.core:jackson-core:2.12.5	method call	com.fasterxml.jackson.core:jackson-databind:2.12.5
+com.github.mangstadt.vinnie.io.VObjectPropertyValues	private	com.github.mangstadt:vinnie:2.0.2	method call	com.googlecode.ez-vcard:ez-vcard:0.11.3
+com.fasterxml.jackson.core.type.WritableTypeId	public	com.fasterxml.jackson.core:jackson-core:2.12.5	instantiation	com.fasterxml.jackson.core:jackson-databind:2.12.5

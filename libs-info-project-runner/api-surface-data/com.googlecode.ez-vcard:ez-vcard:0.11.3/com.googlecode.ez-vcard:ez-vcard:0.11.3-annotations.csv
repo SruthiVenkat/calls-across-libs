@@ -1,8 +1,0 @@
-Class,Method,Field Name:Field Signature,Annotated In Library,Annotation,Annotation Visibility,Annotation Library,Count
-com.fasterxml.jackson.databind.annotation.JsonSerialize,-,-,com.fasterxml.jackson.core:jackson-databind:2.12.5,com.fasterxml.jackson.annotation.JacksonAnnotation,public,com.fasterxml.jackson.core:jackson-annotations:2.12.5,1
-com.fasterxml.jackson.databind.annotation.JsonAppend,-,-,com.fasterxml.jackson.core:jackson-databind:2.12.5,com.fasterxml.jackson.annotation.JacksonAnnotation,public,com.fasterxml.jackson.core:jackson-annotations:2.12.5,1
-com.fasterxml.jackson.databind.annotation.JsonDeserialize,-,-,com.fasterxml.jackson.core:jackson-databind:2.12.5,com.fasterxml.jackson.annotation.JacksonAnnotation,public,com.fasterxml.jackson.core:jackson-annotations:2.12.5,1
-ezvcard.io.json.JCardSerializer,-,-,com.googlecode.ez-vcard:ez-vcard:0.11.3,com.fasterxml.jackson.annotation.JsonFormat,public,com.fasterxml.jackson.core:jackson-annotations:2.12.5,1
-com.fasterxml.jackson.databind.annotation.JsonTypeResolver,-,-,com.fasterxml.jackson.core:jackson-databind:2.12.5,com.fasterxml.jackson.annotation.JacksonAnnotation,public,com.fasterxml.jackson.core:jackson-annotations:2.12.5,1
-com.fasterxml.jackson.databind.annotation.JsonValueInstantiator,-,-,com.fasterxml.jackson.core:jackson-databind:2.12.5,com.fasterxml.jackson.annotation.JacksonAnnotation,public,com.fasterxml.jackson.core:jackson-annotations:2.12.5,1
-com.fasterxml.jackson.databind.annotation.JsonNaming,-,-,com.fasterxml.jackson.core:jackson-databind:2.12.5,com.fasterxml.jackson.annotation.JacksonAnnotation,public,com.fasterxml.jackson.core:jackson-annotations:2.12.5,1

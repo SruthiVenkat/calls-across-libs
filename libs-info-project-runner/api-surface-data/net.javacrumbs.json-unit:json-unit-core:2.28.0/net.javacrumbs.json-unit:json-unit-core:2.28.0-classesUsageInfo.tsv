@@ -1,0 +1,152 @@
+Class Name	Class Visibility	Class Library	Usage	Used In Library
+com.fasterxml.jackson.core.type.ResolvedType	public	com.fasterxml.jackson.core:jackson-core:2.12.4	subtyping	com.fasterxml.jackson.core:jackson-databind:2.12.4
+com.fasterxml.jackson.annotation.JsonIgnore	public	com.fasterxml.jackson.core:jackson-annotations:2.12.4	cast	com.fasterxml.jackson.core:jackson-databind:2.12.4
+com.fasterxml.jackson.annotation.JsonProperty$Access	public	com.fasterxml.jackson.core:jackson-annotations:2.12.4	cast	com.fasterxml.jackson.core:jackson-databind:2.12.4
+com.fasterxml.jackson.databind.node.NullNode	default	com.fasterxml.jackson.core:jackson-databind:2.12.4	method call	net.javacrumbs.json-unit:json-unit-core:2.28.0
+com.fasterxml.jackson.core.filter.FilteringParserDelegate	public	com.fasterxml.jackson.core:jackson-core:2.12.4	instantiation	com.fasterxml.jackson.core:jackson-databind:2.12.4
+com.fasterxml.jackson.core.JsonParseException	public	com.fasterxml.jackson.core:jackson-core:2.12.4	instantiation	com.fasterxml.jackson.core:jackson-databind:2.12.4
+org.json.JSONObject	public	org.json:json:20210307	Class.forName	net.javacrumbs.json-unit:json-unit-core:2.28.0
+com.fasterxml.jackson.annotation.JsonFormat$Shape	public	com.fasterxml.jackson.core:jackson-annotations:2.12.4	method call	com.fasterxml.jackson.core:jackson-databind:2.12.4
+com.fasterxml.jackson.annotation.ObjectIdGenerator	public	com.fasterxml.jackson.core:jackson-annotations:2.12.4	cast	com.fasterxml.jackson.core:jackson-databind:2.12.4
+com.fasterxml.jackson.annotation.JsonProperty$Access	public	com.fasterxml.jackson.core:jackson-annotations:2.12.4	method call	com.fasterxml.jackson.core:jackson-databind:2.12.4
+com.fasterxml.jackson.databind.ObjectMapper	public	com.fasterxml.jackson.core:jackson-databind:2.12.4	method call	net.javacrumbs.json-unit:json-unit-core:2.28.0
+javax.json.stream.JsonParserFactory	public	org.apache.geronimo.specs:geronimo-json_1.1_spec:1.5	subtyping	org.apache.johnzon:johnzon-core:1.2.14
+org.json.JSONArray	public	org.json:json:20210307	cast	net.javacrumbs.json-unit:json-unit-core:2.28.0
+com.fasterxml.jackson.annotation.JsonMerge	public	com.fasterxml.jackson.core:jackson-annotations:2.12.4	cast	com.fasterxml.jackson.core:jackson-databind:2.12.4
+com.google.gson.JsonObject	public	com.google.code.gson:gson:2.8.8	method call	net.javacrumbs.json-unit:json-unit-core:2.28.0
+com.fasterxml.jackson.annotation.JsonSetter$Value	public	com.fasterxml.jackson.core:jackson-annotations:2.12.4	method call	com.fasterxml.jackson.core:jackson-databind:2.12.4
+java.lang.String	public	unknownLib	Class.forName	net.javacrumbs.json-unit:json-unit-core:2.28.0
+org.apache.johnzon.core.JsonProviderImpl	public	org.apache.johnzon:johnzon-core:1.2.14	method call	org.apache.johnzon:johnzon-mapper:1.2.14
+org.json.JSONTokener	public	org.json:json:20210307	instantiation	net.javacrumbs.json-unit:json-unit-core:2.28.0
+com.fasterxml.jackson.annotation.JsonIncludeProperties$Value	public	com.fasterxml.jackson.core:jackson-annotations:2.12.4	method call	com.fasterxml.jackson.core:jackson-databind:2.12.4
+com.squareup.moshi.Moshi	public	com.squareup.moshi:moshi:1.12.0	method call	net.javacrumbs.json-unit:json-unit-core:2.28.0
+com.fasterxml.jackson.core.JsonProcessingException	public	com.fasterxml.jackson.core:jackson-core:2.12.4	subtyping	com.fasterxml.jackson.core:jackson-databind:2.12.4
+com.google.gson.JsonPrimitive	public	com.google.code.gson:gson:2.8.8	cast	net.javacrumbs.json-unit:json-unit-core:2.28.0
+com.fasterxml.jackson.core.TreeNode	public	com.fasterxml.jackson.core:jackson-core:2.12.4	subtyping	com.fasterxml.jackson.core:jackson-databind:2.12.4
+com.fasterxml.jackson.databind.MappingJsonFactory	public	com.fasterxml.jackson.core:jackson-databind:2.12.4	method call	com.fasterxml.jackson.core:jackson-core:2.12.4
+com.google.gson.JsonObject	public	com.google.code.gson:gson:2.8.8	cast	net.javacrumbs.json-unit:json-unit-core:2.28.0
+com.fasterxml.jackson.annotation.JsonFormat	public	com.fasterxml.jackson.core:jackson-annotations:2.12.4	cast	com.fasterxml.jackson.core:jackson-databind:2.12.4
+com.fasterxml.jackson.annotation.JsonUnwrapped	public	com.fasterxml.jackson.core:jackson-annotations:2.12.4	cast	com.fasterxml.jackson.core:jackson-databind:2.12.4
+org.json.JSONArray	public	org.json:json:20210307	method call	net.javacrumbs.json-unit:json-unit-core:2.28.0
+com.fasterxml.jackson.core.json.JsonWriteContext	public	com.fasterxml.jackson.core:jackson-core:2.12.4	method call	com.fasterxml.jackson.core:jackson-databind:2.12.4
+com.fasterxml.jackson.core.filter.JsonPointerBasedFilter	public	com.fasterxml.jackson.core:jackson-core:2.12.4	instantiation	com.fasterxml.jackson.core:jackson-databind:2.12.4
+java.sql.Date	public	java.sql	cast	com.google.code.gson:gson:2.8.8
+com.fasterxml.jackson.core.io.SegmentedStringWriter	public	com.fasterxml.jackson.core:jackson-core:2.12.4	method call	com.fasterxml.jackson.core:jackson-databind:2.12.4
+okio.Buffer	public	com.squareup.okio:okio:2.10.0	instantiation	com.squareup.moshi:moshi:1.12.0
+com.fasterxml.jackson.annotation.JsonAnySetter	public	com.fasterxml.jackson.core:jackson-annotations:2.12.4	cast	com.fasterxml.jackson.core:jackson-databind:2.12.4
+com.squareup.moshi.internal.NullSafeJsonAdapter	public	com.squareup.moshi:moshi:1.12.0	method call	net.javacrumbs.json-unit:json-unit-core:2.28.0
+com.fasterxml.jackson.core.json.JsonReadFeature	public	com.fasterxml.jackson.core:jackson-core:2.12.4	cast	com.fasterxml.jackson.core:jackson-databind:2.12.4
+com.fasterxml.jackson.annotation.JsonValue	public	com.fasterxml.jackson.core:jackson-annotations:2.12.4	cast	com.fasterxml.jackson.core:jackson-databind:2.12.4
+com.google.gson.JsonPrimitive	public	com.google.code.gson:gson:2.8.8	method call	net.javacrumbs.json-unit:json-unit-core:2.28.0
+kotlin.jvm.internal.Intrinsics	public	org.jetbrains.kotlin:kotlin-stdlib:1.4.31	method call	com.squareup.okio:okio:2.10.0
+com.fasterxml.jackson.annotation.JsonIgnoreProperties	public	com.fasterxml.jackson.core:jackson-annotations:2.12.4	cast	com.fasterxml.jackson.core:jackson-databind:2.12.4
+com.fasterxml.jackson.annotation.JsonGetter	public	com.fasterxml.jackson.core:jackson-annotations:2.12.4	cast	com.fasterxml.jackson.core:jackson-databind:2.12.4
+org.json.JSONObject	public	org.json:json:20210307	instantiation	net.javacrumbs.json-unit:json-unit-core:2.28.0
+com.fasterxml.jackson.annotation.JsonAlias	public	com.fasterxml.jackson.core:jackson-annotations:2.12.4	cast	com.fasterxml.jackson.core:jackson-databind:2.12.4
+com.fasterxml.jackson.databind.node.ArrayNode	public	com.fasterxml.jackson.core:jackson-databind:2.12.4	method call	net.javacrumbs.json-unit:json-unit-core:2.28.0
+com.fasterxml.jackson.core.JsonFactory	public	com.fasterxml.jackson.core:jackson-core:2.12.4	method call	com.fasterxml.jackson.core:jackson-databind:2.12.4
+com.fasterxml.jackson.databind.node.ObjectNode	public	com.fasterxml.jackson.core:jackson-databind:2.12.4	method call	net.javacrumbs.json-unit:json-unit-core:2.28.0
+javax.json.JsonBuilderFactory	public	org.apache.geronimo.specs:geronimo-json_1.1_spec:1.5	subtyping	org.apache.johnzon:johnzon-core:1.2.14
+com.fasterxml.jackson.core.json.ReaderBasedJsonParser	public	com.fasterxml.jackson.core:jackson-core:2.12.4	method call	com.fasterxml.jackson.core:jackson-databind:2.12.4
+com.fasterxml.jackson.annotation.JsonInclude$Value	public	com.fasterxml.jackson.core:jackson-annotations:2.12.4	method call	com.fasterxml.jackson.core:jackson-databind:2.12.4
+com.google.gson.JsonArray	public	com.google.code.gson:gson:2.8.8	method call	net.javacrumbs.json-unit:json-unit-core:2.28.0
+com.fasterxml.jackson.core.Versioned	public	com.fasterxml.jackson.core:jackson-core:2.12.4	subtyping	com.fasterxml.jackson.core:jackson-databind:2.12.4
+com.squareup.moshi.Moshi	public	com.squareup.moshi:moshi:1.12.0	Class.forName	net.javacrumbs.json-unit:json-unit-core:2.28.0
+com.google.gson.JsonParser	default	com.google.code.gson:gson:2.8.8	method call	net.javacrumbs.json-unit:json-unit-core:2.28.0
+com.google.gson.JsonNull	public	com.google.code.gson:gson:2.8.8	method call	net.javacrumbs.json-unit:json-unit-core:2.28.0
+java.security.Key	public	java.security	cast	com.squareup.okio:okio:2.10.0
+java.sql.Timestamp	public	java.sql	cast	com.google.code.gson:gson:2.8.8
+com.fasterxml.jackson.annotation.JsonClassDescription	public	com.fasterxml.jackson.core:jackson-annotations:2.12.4	cast	com.fasterxml.jackson.core:jackson-databind:2.12.4
+com.fasterxml.jackson.core.io.SerializedString	public	com.fasterxml.jackson.core:jackson-core:2.12.4	instantiation	com.fasterxml.jackson.core:jackson-databind:2.12.4
+javax.json.JsonValue	public	org.apache.geronimo.specs:geronimo-json_1.1_spec:1.5	cast	org.apache.johnzon:johnzon-mapper:1.2.14
+com.google.gson.JsonArray	public	com.google.code.gson:gson:2.8.8	cast	net.javacrumbs.json-unit:json-unit-core:2.28.0
+javax.json.stream.JsonParsingException	public	org.apache.geronimo.specs:geronimo-json_1.1_spec:1.5	instantiation	org.apache.johnzon:johnzon-core:1.2.14
+com.fasterxml.jackson.annotation.JsonFilter	public	com.fasterxml.jackson.core:jackson-annotations:2.12.4	cast	com.fasterxml.jackson.core:jackson-databind:2.12.4
+com.fasterxml.jackson.annotation.JsonIgnoreProperties$Value	public	com.fasterxml.jackson.core:jackson-annotations:2.12.4	method call	com.fasterxml.jackson.core:jackson-databind:2.12.4
+com.fasterxml.jackson.core.ObjectCodec	public	com.fasterxml.jackson.core:jackson-core:2.12.4	subtyping	com.fasterxml.jackson.core:jackson-databind:2.12.4
+javax.json.JsonException	public	org.apache.geronimo.specs:geronimo-json_1.1_spec:1.5	subtyping	org.apache.johnzon:johnzon-mapper:1.2.14
+java.sql.Time	public	java.sql	instantiation	com.google.code.gson:gson:2.8.8
+com.fasterxml.jackson.annotation.ObjectIdGenerators$PropertyGenerator	public	com.fasterxml.jackson.core:jackson-annotations:2.12.4	subtyping	com.fasterxml.jackson.core:jackson-databind:2.12.4
+com.fasterxml.jackson.annotation.JsonIncludeProperties	public	com.fasterxml.jackson.core:jackson-annotations:2.12.4	cast	com.fasterxml.jackson.core:jackson-databind:2.12.4
+com.fasterxml.jackson.core.json.JsonReadContext	public	com.fasterxml.jackson.core:jackson-core:2.12.4	cast	com.fasterxml.jackson.core:jackson-databind:2.12.4
+com.google.gson.Gson	public	com.google.code.gson:gson:2.8.8	method call	net.javacrumbs.json-unit:json-unit-core:2.28.0
+com.fasterxml.jackson.annotation.JsonSetter	public	com.fasterxml.jackson.core:jackson-annotations:2.12.4	cast	com.fasterxml.jackson.core:jackson-databind:2.12.4
+javax.json.stream.JsonParser	public	org.apache.geronimo.specs:geronimo-json_1.1_spec:1.5	subtyping	org.apache.johnzon:johnzon-core:1.2.14
+javax.json.JsonWriterFactory	public	org.apache.geronimo.specs:geronimo-json_1.1_spec:1.5	subtyping	org.apache.johnzon:johnzon-core:1.2.14
+com.fasterxml.jackson.annotation.ObjectIdResolver	public	com.fasterxml.jackson.core:jackson-annotations:2.12.4	cast	com.fasterxml.jackson.core:jackson-databind:2.12.4
+com.google.gson.JsonElement	public	com.google.code.gson:gson:2.8.8	cast	net.javacrumbs.json-unit:json-unit-core:2.28.0
+javax.json.spi.JsonProvider	public	org.apache.geronimo.specs:geronimo-json_1.1_spec:1.5	method call	org.apache.johnzon:johnzon-mapper:1.2.14
+com.fasterxml.jackson.databind.node.NullNode	public	com.fasterxml.jackson.core:jackson-databind:2.12.4	method call	net.javacrumbs.json-unit:json-unit-core:2.28.0
+org.slf4j.helpers.NOPLogger	public	org.slf4j:slf4j-api:1.7.32	method call	net.javacrumbs.json-unit:json-unit-core:2.28.0
+com.fasterxml.jackson.annotation.JsonPropertyOrder	public	com.fasterxml.jackson.core:jackson-annotations:2.12.4	cast	com.fasterxml.jackson.core:jackson-databind:2.12.4
+com.fasterxml.jackson.databind.node.DoubleNode	public	com.fasterxml.jackson.core:jackson-databind:2.12.4	method call	net.javacrumbs.json-unit:json-unit-core:2.28.0
+com.fasterxml.jackson.core.JsonStreamContext	public	com.fasterxml.jackson.core:jackson-core:2.12.4	subtyping	com.fasterxml.jackson.core:jackson-databind:2.12.4
+java.sql.Timestamp	public	java.sql	instantiation	com.google.code.gson:gson:2.8.8
+com.fasterxml.jackson.databind.JsonNode	public	com.fasterxml.jackson.core:jackson-databind:2.12.4	cast	net.javacrumbs.json-unit:json-unit-core:2.28.0
+com.fasterxml.jackson.annotation.JsonTypeInfo	public	com.fasterxml.jackson.core:jackson-annotations:2.12.4	cast	com.fasterxml.jackson.core:jackson-databind:2.12.4
+com.google.gson.Gson	public	com.google.code.gson:gson:2.8.8	instantiation	net.javacrumbs.json-unit:json-unit-core:2.28.0
+com.fasterxml.jackson.databind.util.TokenBuffer	public	com.fasterxml.jackson.core:jackson-databind:2.12.4	method call	com.fasterxml.jackson.core:jackson-core:2.12.4
+java.sql.Date	public	java.sql	instantiation	com.google.code.gson:gson:2.8.8
+com.fasterxml.jackson.annotation.JacksonAnnotation	public	com.fasterxml.jackson.core:jackson-annotations:2.12.4	annotation	com.fasterxml.jackson.core:jackson-databind:2.12.4
+com.fasterxml.jackson.core.JsonParser	public	com.fasterxml.jackson.core:jackson-core:2.12.4	cast	com.fasterxml.jackson.core:jackson-databind:2.12.4
+org.apache.johnzon.mapper.Mapper	public	org.apache.johnzon:johnzon-mapper:1.2.14	Class.forName	net.javacrumbs.json-unit:json-unit-core:2.28.0
+com.fasterxml.jackson.core.io.SegmentedStringWriter	public	com.fasterxml.jackson.core:jackson-core:2.12.4	instantiation	com.fasterxml.jackson.core:jackson-databind:2.12.4
+com.fasterxml.jackson.annotation.JsonBackReference	public	com.fasterxml.jackson.core:jackson-annotations:2.12.4	cast	com.fasterxml.jackson.core:jackson-databind:2.12.4
+org.json.JSONTokener	public	org.json:json:20210307	method call	net.javacrumbs.json-unit:json-unit-core:2.28.0
+javax.json.stream.JsonGeneratorFactory	public	org.apache.geronimo.specs:geronimo-json_1.1_spec:1.5	subtyping	org.apache.johnzon:johnzon-core:1.2.14
+com.fasterxml.jackson.annotation.JsonKey	public	com.fasterxml.jackson.core:jackson-annotations:2.12.4	cast	com.fasterxml.jackson.core:jackson-databind:2.12.4
+com.fasterxml.jackson.annotation.JsonFormat$Value	public	com.fasterxml.jackson.core:jackson-annotations:2.12.4	method call	com.fasterxml.jackson.core:jackson-databind:2.12.4
+javax.json.JsonBuilderFactory	public	org.apache.geronimo.specs:geronimo-json_1.1_spec:1.5	cast	org.apache.johnzon:johnzon-core:1.2.14
+com.fasterxml.jackson.annotation.JacksonInject	public	com.fasterxml.jackson.core:jackson-annotations:2.12.4	cast	com.fasterxml.jackson.core:jackson-databind:2.12.4
+com.fasterxml.jackson.databind.node.TextNode	public	com.fasterxml.jackson.core:jackson-databind:2.12.4	method call	net.javacrumbs.json-unit:json-unit-core:2.28.0
+com.fasterxml.jackson.core.SerializableString	public	com.fasterxml.jackson.core:jackson-core:2.12.4	cast	com.fasterxml.jackson.core:jackson-databind:2.12.4
+com.fasterxml.jackson.annotation.JsonAutoDetect	public	com.fasterxml.jackson.core:jackson-annotations:2.12.4	cast	com.fasterxml.jackson.core:jackson-databind:2.12.4
+com.fasterxml.jackson.annotation.JsonManagedReference	public	com.fasterxml.jackson.core:jackson-annotations:2.12.4	cast	com.fasterxml.jackson.core:jackson-databind:2.12.4
+com.fasterxml.jackson.annotation.JsonView	public	com.fasterxml.jackson.core:jackson-annotations:2.12.4	cast	com.fasterxml.jackson.core:jackson-databind:2.12.4
+com.fasterxml.jackson.annotation.JsonAutoDetect$Visibility	public	com.fasterxml.jackson.core:jackson-annotations:2.12.4	method call	com.fasterxml.jackson.core:jackson-databind:2.12.4
+com.fasterxml.jackson.core.JsonToken	public	com.fasterxml.jackson.core:jackson-core:2.12.4	method call	com.fasterxml.jackson.core:jackson-databind:2.12.4
+org.apache.johnzon.mapper.MapperBuilder	public	org.apache.johnzon:johnzon-mapper:1.2.14	instantiation	net.javacrumbs.json-unit:json-unit-core:2.28.0
+org.slf4j.LoggerFactory	public	org.slf4j:slf4j-api:1.7.32	method call	net.javacrumbs.json-unit:json-unit-core:2.28.0
+com.fasterxml.jackson.core.JsonGenerator	public	com.fasterxml.jackson.core:jackson-core:2.12.4	subtyping	com.fasterxml.jackson.core:jackson-databind:2.12.4
+org.json.JSONObject	public	org.json:json:20210307	cast	net.javacrumbs.json-unit:json-unit-core:2.28.0
+com.fasterxml.jackson.annotation.JsonIdentityReference	public	com.fasterxml.jackson.core:jackson-annotations:2.12.4	cast	com.fasterxml.jackson.core:jackson-databind:2.12.4
+com.fasterxml.jackson.core.base.ParserMinimalBase	public	com.fasterxml.jackson.core:jackson-core:2.12.4	subtyping	com.fasterxml.jackson.core:jackson-databind:2.12.4
+com.fasterxml.jackson.core.JsonFactory	public	com.fasterxml.jackson.core:jackson-core:2.12.4	subtyping	com.fasterxml.jackson.core:jackson-databind:2.12.4
+com.fasterxml.jackson.annotation.ObjectIdGenerator$IdKey	public	com.fasterxml.jackson.core:jackson-annotations:2.12.4	instantiation	com.fasterxml.jackson.core:jackson-databind:2.12.4
+org.json.JSONObject	default	org.json:json:20210307	method call	net.javacrumbs.json-unit:json-unit-core:2.28.0
+org.json.JSONObject	public	org.json:json:20210307	method call	net.javacrumbs.json-unit:json-unit-core:2.28.0
+com.fasterxml.jackson.core.JsonGenerationException	public	com.fasterxml.jackson.core:jackson-core:2.12.4	instantiation	com.fasterxml.jackson.core:jackson-databind:2.12.4
+javax.json.spi.JsonProvider	public	org.apache.geronimo.specs:geronimo-json_1.1_spec:1.5	subtyping	org.apache.johnzon:johnzon-core:1.2.14
+org.apache.johnzon.mapper.MapperBuilder	public	org.apache.johnzon:johnzon-mapper:1.2.14	method call	net.javacrumbs.json-unit:json-unit-core:2.28.0
+com.fasterxml.jackson.annotation.JsonAnyGetter	public	com.fasterxml.jackson.core:jackson-annotations:2.12.4	cast	com.fasterxml.jackson.core:jackson-databind:2.12.4
+com.fasterxml.jackson.core.util.Instantiatable	public	com.fasterxml.jackson.core:jackson-core:2.12.4	cast	com.fasterxml.jackson.core:jackson-databind:2.12.4
+com.fasterxml.jackson.core.JsonFactory	public	com.fasterxml.jackson.core:jackson-core:2.12.4	instantiation	com.fasterxml.jackson.core:jackson-databind:2.12.4
+com.fasterxml.jackson.core.JsonProcessingException	public	com.fasterxml.jackson.core:jackson-core:2.12.4	cast	com.fasterxml.jackson.core:jackson-databind:2.12.4
+com.fasterxml.jackson.core.util.InternCache	public	com.fasterxml.jackson.core:jackson-core:2.12.4	method call	com.fasterxml.jackson.core:jackson-databind:2.12.4
+javax.json.JsonException	public	org.apache.geronimo.specs:geronimo-json_1.1_spec:1.5	instantiation	org.apache.johnzon:johnzon-core:1.2.14
+com.fasterxml.jackson.annotation.JsonRootName	public	com.fasterxml.jackson.core:jackson-annotations:2.12.4	cast	com.fasterxml.jackson.core:jackson-databind:2.12.4
+com.fasterxml.jackson.annotation.JsonPropertyDescription	public	com.fasterxml.jackson.core:jackson-annotations:2.12.4	cast	com.fasterxml.jackson.core:jackson-databind:2.12.4
+org.slf4j.Logger	public	org.slf4j:slf4j-api:1.7.32	Class.forName	net.javacrumbs.json-unit:json-unit-core:2.28.0
+javax.json.JsonReaderFactory	public	org.apache.geronimo.specs:geronimo-json_1.1_spec:1.5	subtyping	org.apache.johnzon:johnzon-core:1.2.14
+com.fasterxml.jackson.annotation.JsonRawValue	public	com.fasterxml.jackson.core:jackson-annotations:2.12.4	cast	com.fasterxml.jackson.core:jackson-databind:2.12.4
+com.fasterxml.jackson.core.json.JsonWriteFeature	public	com.fasterxml.jackson.core:jackson-core:2.12.4	cast	com.fasterxml.jackson.core:jackson-databind:2.12.4
+com.fasterxml.jackson.annotation.JsonProperty	public	com.fasterxml.jackson.core:jackson-annotations:2.12.4	cast	com.fasterxml.jackson.core:jackson-databind:2.12.4
+java.sql.Time	public	java.sql	cast	com.google.code.gson:gson:2.8.8
+com.fasterxml.jackson.core.PrettyPrinter	public	com.fasterxml.jackson.core:jackson-core:2.12.4	cast	com.fasterxml.jackson.core:jackson-databind:2.12.4
+org.hamcrest.Matcher	public	org.hamcrest:hamcrest:2.2	cast	net.javacrumbs.json-unit:json-unit-core:2.28.0
+com.fasterxml.jackson.databind.ObjectMapper	public	com.fasterxml.jackson.core:jackson-databind:2.12.4	Class.forName	net.javacrumbs.json-unit:json-unit-core:2.28.0
+com.fasterxml.jackson.databind.node.BooleanNode	public	com.fasterxml.jackson.core:jackson-databind:2.12.4	method call	net.javacrumbs.json-unit:json-unit-core:2.28.0
+com.fasterxml.jackson.core.util.ByteArrayBuilder	public	com.fasterxml.jackson.core:jackson-core:2.12.4	instantiation	com.fasterxml.jackson.core:jackson-databind:2.12.4
+com.fasterxml.jackson.core.JsonGenerator	public	com.fasterxml.jackson.core:jackson-core:2.12.4	Class.forName	net.javacrumbs.json-unit:json-unit-core:2.28.0
+com.fasterxml.jackson.annotation.JsonTypeName	public	com.fasterxml.jackson.core:jackson-annotations:2.12.4	cast	com.fasterxml.jackson.core:jackson-databind:2.12.4
+com.fasterxml.jackson.annotation.JsonIgnoreType	public	com.fasterxml.jackson.core:jackson-annotations:2.12.4	cast	com.fasterxml.jackson.core:jackson-databind:2.12.4
+com.fasterxml.jackson.annotation.JsonInclude	public	com.fasterxml.jackson.core:jackson-annotations:2.12.4	cast	com.fasterxml.jackson.core:jackson-databind:2.12.4
+com.fasterxml.jackson.databind.node.IntNode	public	com.fasterxml.jackson.core:jackson-databind:2.12.4	method call	net.javacrumbs.json-unit:json-unit-core:2.28.0
+com.fasterxml.jackson.core.json.WriterBasedJsonGenerator	public	com.fasterxml.jackson.core:jackson-core:2.12.4	method call	com.fasterxml.jackson.core:jackson-databind:2.12.4
+com.fasterxml.jackson.annotation.JsonIdentityInfo	public	com.fasterxml.jackson.core:jackson-annotations:2.12.4	cast	com.fasterxml.jackson.core:jackson-databind:2.12.4
+com.fasterxml.jackson.annotation.JsonCreator	public	com.fasterxml.jackson.core:jackson-annotations:2.12.4	cast	com.fasterxml.jackson.core:jackson-databind:2.12.4
+com.fasterxml.jackson.annotation.JsonSubTypes	public	com.fasterxml.jackson.core:jackson-annotations:2.12.4	cast	com.fasterxml.jackson.core:jackson-databind:2.12.4
+com.fasterxml.jackson.databind.type.SimpleType	public	com.fasterxml.jackson.core:jackson-databind:2.12.4	method call	com.fasterxml.jackson.core:jackson-core:2.12.4
+com.google.gson.Gson	public	com.google.code.gson:gson:2.8.8	Class.forName	net.javacrumbs.json-unit:json-unit-core:2.28.0
+javax.json.JsonValue	public	org.apache.geronimo.specs:geronimo-json_1.1_spec:1.5	cast	net.javacrumbs.json-unit:json-unit-core:2.28.0
+com.fasterxml.jackson.core.type.WritableTypeId	public	com.fasterxml.jackson.core:jackson-core:2.12.4	instantiation	com.fasterxml.jackson.core:jackson-databind:2.12.4

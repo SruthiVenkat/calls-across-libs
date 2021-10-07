@@ -1,3 +1,0 @@
-Callee Library,Field Name,Declared Class,Actual Class,Field Signature,Static,Visibility,Field Library,Reflective,Count
-com.alipay.sdk:alipay-sdk-java:4.16.57.ALL,sun.net.www.protocol.https.HttpsURLConnectionImpl::delegate,sun.net.www.protocol.https.HttpsURLConnectionImpl,sun.net.www.protocol.https.HttpsURLConnectionImpl,sun.net.www.protocol.https.DelegateHttpsURLConnection,false,protected,unknownLib,true,2
-com.alipay.sdk:alipay-sdk-java:4.16.57.ALL,sun.net.www.protocol.https.DelegateHttpsURLConnection::http,sun.net.www.protocol.http.HttpURLConnection,sun.net.www.protocol.https.DelegateHttpsURLConnection,sun.net.www.http.HttpClient,false,protected,unknownLib,true,2

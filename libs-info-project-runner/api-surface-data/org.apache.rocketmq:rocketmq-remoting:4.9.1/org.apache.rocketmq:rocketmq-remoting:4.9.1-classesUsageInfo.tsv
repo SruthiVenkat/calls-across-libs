@@ -1,0 +1,84 @@
+Class Name	Class Visibility	Class Library	Usage	Used In Library
+jdk.internal.misc.Unsafe	public	unknownLib	Class.forName	io.netty:netty-all:4.1.65.Final
+java.lang.management.RuntimeMXBean	public	unknownLib	Class.forName	io.netty:netty-all:4.1.65.Final
+io.netty.channel.socket.nio.NioSocketChannel	public	io.netty:netty-all:4.1.65.Final	method call	org.apache.rocketmq:rocketmq-remoting:4.9.1
+io.netty.handler.ssl.JdkSslClientContext	public	io.netty:netty-all:4.1.65.Final	method call	org.apache.rocketmq:rocketmq-remoting:4.9.1
+io.netty.handler.codec.LengthFieldBasedFrameDecoder	public	io.netty:netty-all:4.1.65.Final	subtyping	org.apache.rocketmq:rocketmq-remoting:4.9.1
+io.netty.channel.ChannelDuplexHandler	public	io.netty:netty-all:4.1.65.Final	subtyping	org.apache.rocketmq:rocketmq-remoting:4.9.1
+org.apache.rocketmq.remoting.netty.NettyRemotingServer$NettyConnectManageHandler	default	org.apache.rocketmq:rocketmq-remoting:4.9.1	method call	io.netty:netty-all:4.1.65.Final
+io.netty.channel.DefaultChannelPipeline	public	io.netty:netty-all:4.1.65.Final	method call	org.apache.rocketmq:rocketmq-remoting:4.9.1
+io.netty.channel.ChannelHandler$Sharable	public	io.netty:netty-all:4.1.65.Final	annotation	org.apache.rocketmq:rocketmq-remoting:4.9.1
+io.netty.util.internal.logging.InternalLoggerFactory	public	io.netty:netty-all:4.1.65.Final	subtyping	org.apache.rocketmq:rocketmq-remoting:4.9.1
+org.apache.rocketmq.remoting.netty.NettyLogger$NettyBridgeLogger	private	org.apache.rocketmq:rocketmq-remoting:4.9.1	method call	io.netty:netty-all:4.1.65.Final
+io.netty.handler.codec.MessageToByteEncoder	public	io.netty:netty-all:4.1.65.Final	subtyping	org.apache.rocketmq:rocketmq-remoting:4.9.1
+io.netty.handler.ssl.JdkSslServerContext	public	io.netty:netty-all:4.1.65.Final	method call	org.apache.rocketmq:rocketmq-remoting:4.9.1
+org.apache.rocketmq.remoting.netty.NettyRemotingServer$7	default	org.apache.rocketmq:rocketmq-remoting:4.9.1	method call	io.netty:netty-all:4.1.65.Final
+io.netty.channel.ChannelFuture	public	io.netty:netty-all:4.1.65.Final	cast	org.apache.rocketmq:rocketmq-remoting:4.9.1
+io.netty.channel.nio.NioEventLoopGroup	public	io.netty:netty-all:4.1.65.Final	instantiation	org.apache.rocketmq:rocketmq-remoting:4.9.1
+sun.nio.ch.SelectorImpl	default	unknownLib	Class.forName	io.netty:netty-all:4.1.65.Final
+com.alibaba.fastjson.JSON	public	com.alibaba:fastjson:1.2.76	Class.forName	com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.remoting.netty.NettyEncoder	public	org.apache.rocketmq:rocketmq-remoting:4.9.1	method call	io.netty:netty-all:4.1.65.Final
+org.apache.rocketmq.remoting.netty.NettyRemotingClient$NettyClientHandler	default	org.apache.rocketmq:rocketmq-remoting:4.9.1	method call	io.netty:netty-all:4.1.65.Final
+org.apache.rocketmq.remoting.netty.NettyRemotingClient$4	default	org.apache.rocketmq:rocketmq-remoting:4.9.1	method call	io.netty:netty-all:4.1.65.Final
+java.util.HashMap	public	unknownLib	Class.forName	com.alibaba:fastjson:1.2.76
+io.netty.handler.ssl.util.SelfSignedCertificate	public	io.netty:netty-all:4.1.65.Final	instantiation	org.apache.rocketmq:rocketmq-remoting:4.9.1
+io.netty.buffer.ByteBuf	public	io.netty:netty-all:4.1.65.Final	cast	org.apache.rocketmq:rocketmq-remoting:4.9.1
+io.netty.buffer.PooledSlicedByteBuf	default	io.netty:netty-all:4.1.65.Final	method call	org.apache.rocketmq:rocketmq-remoting:4.9.1
+io.netty.util.internal.logging.InternalLogLevel	public	io.netty:netty-all:4.1.65.Final	method call	org.apache.rocketmq:rocketmq-remoting:4.9.1
+org.apache.rocketmq.remoting.netty.FileRegionEncoder	public	org.apache.rocketmq:rocketmq-remoting:4.9.1	method call	io.netty:netty-all:4.1.65.Final
+io.netty.channel.socket.nio.NioServerSocketChannel	public	io.netty:netty-all:4.1.65.Final	method call	org.apache.rocketmq:rocketmq-remoting:4.9.1
+java.lang.Object	public	unknownLib	Class.forName	com.alibaba:fastjson:1.2.76
+java.sql.Clob	public	unknownLib	Class.forName	com.alibaba:fastjson:1.2.76
+io.netty.util.concurrent.DefaultEventExecutorGroup	public	io.netty:netty-all:4.1.65.Final	instantiation	org.apache.rocketmq:rocketmq-remoting:4.9.1
+io.netty.channel.SimpleChannelInboundHandler	public	io.netty:netty-all:4.1.65.Final	subtyping	org.apache.rocketmq:rocketmq-remoting:4.9.1
+org.apache.rocketmq.remoting.protocol.LanguageCode	public	org.apache.rocketmq:rocketmq-remoting:4.9.1	Class.forName	com.alibaba:fastjson:1.2.76
+io.netty.channel.ChannelFutureListener	public	io.netty:netty-all:4.1.65.Final	subtyping	org.apache.rocketmq:rocketmq-remoting:4.9.1
+io.netty.channel.nio.NioEventLoopGroup	public	io.netty:netty-all:4.1.65.Final	method call	org.apache.rocketmq:rocketmq-remoting:4.9.1
+io.netty.channel.FileRegion	public	io.netty:netty-all:4.1.65.Final	cast	org.apache.rocketmq:rocketmq-remoting:4.9.1
+java.lang.management.ManagementFactory	public	unknownLib	Class.forName	io.netty:netty-all:4.1.65.Final
+org.apache.rocketmq.remoting.netty.NettyRemotingServer$HandshakeHandler	default	org.apache.rocketmq:rocketmq-remoting:4.9.1	method call	io.netty:netty-all:4.1.65.Final
+org.apache.rocketmq.remoting.netty.NettyRemotingServer$NettyServerHandler	default	org.apache.rocketmq:rocketmq-remoting:4.9.1	method call	io.netty:netty-all:4.1.65.Final
+java.nio.Bits	default	unknownLib	Class.forName	io.netty:netty-all:4.1.65.Final
+io.netty.buffer.PooledUnsafeDirectByteBuf	default	io.netty:netty-all:4.1.65.Final	method call	org.apache.rocketmq:rocketmq-remoting:4.9.1
+java.nio.file.Path	public	unknownLib	Class.forName	com.alibaba:fastjson:1.2.76
+io.netty.bootstrap.ServerBootstrap	public	io.netty:netty-all:4.1.65.Final	cast	org.apache.rocketmq:rocketmq-remoting:4.9.1
+org.apache.rocketmq.remoting.protocol.SerializeType	public	org.apache.rocketmq:rocketmq-remoting:4.9.1	Class.forName	com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.remoting.netty.NettyLogger$NettyBridgeLoggerFactory	private	org.apache.rocketmq:rocketmq-remoting:4.9.1	method call	io.netty:netty-all:4.1.65.Final
+io.netty.handler.timeout.IdleStateEvent	public	io.netty:netty-all:4.1.65.Final	cast	org.apache.rocketmq:rocketmq-remoting:4.9.1
+javax.xml.datatype.XMLGregorianCalendar	public	javax.xml.datatype	cast	com.alibaba:fastjson:1.2.76
+io.netty.bootstrap.Bootstrap	public	io.netty:netty-all:4.1.65.Final	cast	org.apache.rocketmq:rocketmq-remoting:4.9.1
+java.lang.reflect.Type	public	unknownLib	Class.forName	com.alibaba:fastjson:1.2.76
+io.netty.channel.DefaultFileRegion	public	io.netty:netty-all:4.1.65.Final	method call	org.apache.rocketmq:rocketmq-remoting:4.9.1
+com.alibaba.fastjson.JSON	public	com.alibaba:fastjson:1.2.76	method call	org.apache.rocketmq:rocketmq-remoting:4.9.1
+org.apache.rocketmq.remoting.common.RemotingUtil$1	default	org.apache.rocketmq:rocketmq-remoting:4.9.1	method call	io.netty:netty-all:4.1.65.Final
+io.netty.bootstrap.ServerBootstrap	public	io.netty:netty-all:4.1.65.Final	instantiation	org.apache.rocketmq:rocketmq-remoting:4.9.1
+java.lang.AutoCloseable	public	unknownLib	Class.forName	com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.remoting.netty.NettyRemotingAbstract$3	default	org.apache.rocketmq:rocketmq-remoting:4.9.1	method call	io.netty:netty-all:4.1.65.Final
+io.netty.channel.ChannelInitializer	public	io.netty:netty-all:4.1.65.Final	subtyping	org.apache.rocketmq:rocketmq-remoting:4.9.1
+org.w3c.dom.Node	public	org.w3c.dom	cast	com.alibaba:fastjson:1.2.76
+io.netty.bootstrap.Bootstrap	public	io.netty:netty-all:4.1.65.Final	instantiation	org.apache.rocketmq:rocketmq-remoting:4.9.1
+org.apache.rocketmq.remoting.netty.NettyRemotingAbstract$4	default	org.apache.rocketmq:rocketmq-remoting:4.9.1	method call	io.netty:netty-all:4.1.65.Final
+org.apache.rocketmq.remoting.netty.NettyRemotingAbstract$5	default	org.apache.rocketmq:rocketmq-remoting:4.9.1	method call	io.netty:netty-all:4.1.65.Final
+io.netty.handler.ssl.ClientAuth	public	io.netty:netty-all:4.1.65.Final	method call	org.apache.rocketmq:rocketmq-remoting:4.9.1
+io.netty.channel.socket.SocketChannel	public	io.netty:netty-all:4.1.65.Final	cast	org.apache.rocketmq:rocketmq-remoting:4.9.1
+java.lang.String	public	unknownLib	Class.forName	com.alibaba:fastjson:1.2.76
+org.apache.rocketmq.remoting.netty.NettyDecoder	public	org.apache.rocketmq:rocketmq-remoting:4.9.1	method call	io.netty:netty-all:4.1.65.Final
+io.netty.handler.ssl.OpenSsl	public	io.netty:netty-all:4.1.65.Final	method call	org.apache.rocketmq:rocketmq-remoting:4.9.1
+io.netty.channel.DefaultChannelPromise	public	io.netty:netty-all:4.1.65.Final	method call	org.apache.rocketmq:rocketmq-remoting:4.9.1
+io.netty.bootstrap.AbstractBootstrap$PendingRegistrationPromise	default	io.netty:netty-all:4.1.65.Final	method call	org.apache.rocketmq:rocketmq-remoting:4.9.1
+org.apache.rocketmq.remoting.netty.NettyRemotingClient$NettyConnectManageHandler	default	org.apache.rocketmq:rocketmq-remoting:4.9.1	method call	io.netty:netty-all:4.1.65.Final
+io.netty.handler.ssl.util.SelfSignedCertificate	public	io.netty:netty-all:4.1.65.Final	method call	org.apache.rocketmq:rocketmq-remoting:4.9.1
+io.netty.util.concurrent.DefaultEventExecutorGroup	public	io.netty:netty-all:4.1.65.Final	method call	org.apache.rocketmq:rocketmq-remoting:4.9.1
+org.apache.rocketmq.logging.InternalLoggerFactory	private	org.apache.rocketmq:rocketmq-logging:4.9.1	method call	org.apache.rocketmq:rocketmq-remoting:4.9.1
+org.apache.rocketmq.logging.InnerLoggerFactory$InnerLogger	public	org.apache.rocketmq:rocketmq-logging:4.9.1	method call	org.apache.rocketmq:rocketmq-remoting:4.9.1
+java.beans.Transient	public	unknownLib	Class.forName	com.alibaba:fastjson:1.2.76
+io.netty.handler.timeout.IdleStateHandler	public	io.netty:netty-all:4.1.65.Final	instantiation	org.apache.rocketmq:rocketmq-remoting:4.9.1
+io.netty.bootstrap.Bootstrap	public	io.netty:netty-all:4.1.65.Final	method call	org.apache.rocketmq:rocketmq-remoting:4.9.1
+io.netty.channel.DefaultChannelHandlerContext	default	io.netty:netty-all:4.1.65.Final	method call	org.apache.rocketmq:rocketmq-remoting:4.9.1
+org.apache.rocketmq.remoting.protocol.RemotingCommand	public	org.apache.rocketmq:rocketmq-remoting:4.9.1	Class.forName	com.alibaba:fastjson:1.2.76
+io.netty.channel.epoll.EpollEventLoopGroup	public	io.netty:netty-all:4.1.65.Final	instantiation	org.apache.rocketmq:rocketmq-remoting:4.9.1
+io.netty.util.internal.logging.InternalLoggerFactory	public	io.netty:netty-all:4.1.65.Final	method call	org.apache.rocketmq:rocketmq-remoting:4.9.1
+io.netty.handler.ssl.SslContextBuilder	public	io.netty:netty-all:4.1.65.Final	method call	org.apache.rocketmq:rocketmq-remoting:4.9.1
+io.netty.bootstrap.ServerBootstrap	public	io.netty:netty-all:4.1.65.Final	method call	org.apache.rocketmq:rocketmq-remoting:4.9.1
+io.netty.util.internal.logging.InternalLogger	public	io.netty:netty-all:4.1.65.Final	subtyping	org.apache.rocketmq:rocketmq-remoting:4.9.1
+org.apache.rocketmq.remoting.protocol.RemotingCommand	public	org.apache.rocketmq:rocketmq-remoting:4.9.1	method call	com.alibaba:fastjson:1.2.76

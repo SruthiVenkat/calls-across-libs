@@ -1,3 +1,0 @@
-Caller Method,Caller Library,setAccessible Called On,Visibility,Callee Name,Field Signature,Callee Library
-io.netty.util.internal.shaded.org.jctools.util.UnsafeAccess::getUnsafe()Lsun/misc/Unsafe;,io.netty:netty-all:4.1.65.Final,java.lang.reflect.Field,private,sun.misc.Unsafe::theUnsafe,sun.misc.Unsafe,unknownLib
-io.netty.util.internal.ReflectionUtil::trySetAccessible(Ljava/lang/reflect/AccessibleObject;Z)Ljava/lang/Throwable;,io.netty:netty-all:4.1.65.Final,java.lang.reflect.Field,private,sun.misc.Unsafe::theUnsafe,sun.misc.Unsafe,unknownLib

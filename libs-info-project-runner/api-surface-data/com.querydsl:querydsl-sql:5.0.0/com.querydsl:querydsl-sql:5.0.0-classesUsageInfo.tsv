@@ -1,0 +1,157 @@
+Class Name	Class Visibility	Class Library	Usage	Used In Library
+com.querydsl.core.QueryFactory	public	com.querydsl:querydsl-core:5.0.0	subtyping	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.support.QueryMixin	public	com.querydsl:querydsl-core:5.0.0	method call	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.sql.SQLSerializer	public	com.querydsl:querydsl-sql:5.0.0	method call	com.querydsl:querydsl-core:5.0.0
+com.querydsl.core.types.OrderSpecifier	public	com.querydsl:querydsl-core:5.0.0	method call	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.sql.SQLiteTemplates	public	com.querydsl:querydsl-sql:5.0.0	method call	com.querydsl:querydsl-core:5.0.0
+com.querydsl.core.types.SubQueryExpression	public	com.querydsl:querydsl-core:5.0.0	subtyping	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.types.SubQueryExpressionImpl	public	com.querydsl:querydsl-core:5.0.0	method call	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.types.TemplateFactory	public	com.querydsl:querydsl-core:5.0.0	method call	com.querydsl:querydsl-sql:5.0.0
+org.joda.time.format.DateTimeFormatter	public	joda-time:joda-time:2.10.10	method call	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.QueryModifiers	public	com.querydsl:querydsl-core:5.0.0	method call	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.DefaultQueryMetadata	public	com.querydsl:querydsl-core:5.0.0	method call	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.types.TemplateExpression	public	com.querydsl:querydsl-core:5.0.0	cast	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.sql.WithinGroup	public	com.querydsl:querydsl-sql:5.0.0	method call	com.querydsl:querydsl-core:5.0.0
+com.querydsl.core.dml.StoreClause	public	com.querydsl:querydsl-core:5.0.0	subtyping	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.types.dsl.StringOperation	public	com.querydsl:querydsl-core:5.0.0	method call	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.types.AppendingFactoryExpression	default	com.querydsl:querydsl-core:5.0.0	method call	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.QueryFlag	public	com.querydsl:querydsl-core:5.0.0	instantiation	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.types.SubQueryExpression	public	com.querydsl:querydsl-core:5.0.0	cast	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.util.ReflectionUtils	public	com.querydsl:querydsl-core:5.0.0	method call	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.types.OrderSpecifier	public	com.querydsl:querydsl-core:5.0.0	cast	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.JoinType	public	com.querydsl:querydsl-core:5.0.0	method call	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.types.dsl.SimpleTemplate	public	com.querydsl:querydsl-core:5.0.0	method call	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.sql.DerbyTemplates	public	com.querydsl:querydsl-sql:5.0.0	method call	com.querydsl:querydsl-core:5.0.0
+com.querydsl.core.util.StringUtils	public	com.querydsl:querydsl-core:5.0.0	method call	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.sql.AbstractSQLQuery$5	default	com.querydsl:querydsl-sql:5.0.0	method call	com.querydsl:querydsl-core:5.0.0
+com.querydsl.sql.AbstractSQLQuery$3	default	com.querydsl:querydsl-sql:5.0.0	method call	com.querydsl:querydsl-core:5.0.0
+com.querydsl.core.dml.DeleteClause	public	com.querydsl:querydsl-core:5.0.0	subtyping	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.types.dsl.Expressions	public	com.querydsl:querydsl-core:5.0.0	method call	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.sql.PostgreSQLTemplates	public	com.querydsl:querydsl-sql:5.0.0	method call	com.querydsl:querydsl-core:5.0.0
+com.querydsl.core.types.ArrayConstructorExpression	public	com.querydsl:querydsl-core:5.0.0	method call	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.types.Expression	public	com.querydsl:querydsl-core:5.0.0	cast	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.types.ProjectionRole	public	com.querydsl:querydsl-core:5.0.0	subtyping	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.types.Operator	public	com.querydsl:querydsl-core:5.0.0	cast	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.types.QTuple	public	com.querydsl:querydsl-core:5.0.0	method call	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.sql.SQLQuery	public	com.querydsl:querydsl-sql:5.0.0	method call	com.querydsl:querydsl-core:5.0.0
+com.querydsl.core.types.Constant	public	com.querydsl:querydsl-core:5.0.0	cast	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.sql.WindowFirstLast	public	com.querydsl:querydsl-sql:5.0.0	method call	com.querydsl:querydsl-core:5.0.0
+com.querydsl.core.types.ExpressionUtils	public	com.querydsl:querydsl-core:5.0.0	method call	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.sql.H2Templates	public	com.querydsl:querydsl-sql:5.0.0	method call	com.querydsl:querydsl-core:5.0.0
+com.querydsl.core.types.TemplateExpression	public	com.querydsl:querydsl-core:5.0.0	subtyping	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.sql.TeradataTemplates	public	com.querydsl:querydsl-sql:5.0.0	method call	com.querydsl:querydsl-core:5.0.0
+com.querydsl.core.types.dsl.SimpleOperation	public	com.querydsl:querydsl-core:5.0.0	method call	com.querydsl:querydsl-sql:5.0.0
+com.mysema.commons.lang.Pair	default	com.mysema.commons:mysema-commons-lang:0.2.4	method call	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.JoinExpression	public	com.querydsl:querydsl-core:5.0.0	cast	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.types.Template	public	com.querydsl:querydsl-core:5.0.0	method call	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.sql.SQLServer2012Templates	public	com.querydsl:querydsl-sql:5.0.0	method call	com.querydsl:querydsl-core:5.0.0
+com.querydsl.core.types.MutableExpressionBase	public	com.querydsl:querydsl-core:5.0.0	subtyping	com.querydsl:querydsl-sql:5.0.0
+org.joda.time.LocalDate	public	joda-time:joda-time:2.10.10	instantiation	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.BooleanBuilder	public	com.querydsl:querydsl-core:5.0.0	instantiation	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.types.FactoryExpressionUtils	public	com.querydsl:querydsl-core:5.0.0	method call	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.types.ParamNotSetException	public	com.querydsl:querydsl-core:5.0.0	instantiation	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.types.dsl.SimpleExpression	public	com.querydsl:querydsl-core:5.0.0	subtyping	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.types.OperationImpl	public	com.querydsl:querydsl-core:5.0.0	method call	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.types.dsl.DateTimeTemplate	public	com.querydsl:querydsl-core:5.0.0	method call	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.types.Operation	public	com.querydsl:querydsl-core:5.0.0	cast	com.querydsl:querydsl-sql:5.0.0
+org.joda.time.LocalDateTime	public	joda-time:joda-time:2.10.10	method call	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.types.dsl.SimpleOperation	public	com.querydsl:querydsl-core:5.0.0	subtyping	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.types.dsl.BeanPath	public	com.querydsl:querydsl-core:5.0.0	subtyping	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.util.PrimitiveUtils	public	com.querydsl:querydsl-core:5.0.0	method call	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.util.ResultSetAdapter	public	com.querydsl:querydsl-core:5.0.0	subtyping	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.types.dsl.BooleanOperation	public	com.querydsl:querydsl-core:5.0.0	method call	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.sql.OracleTemplates	public	com.querydsl:querydsl-sql:5.0.0	method call	com.querydsl:querydsl-core:5.0.0
+com.mysema.commons.lang.CloseableIterator	public	com.mysema.commons:mysema-commons-lang:0.2.4	subtyping	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.types.Operator	public	com.querydsl:querydsl-core:5.0.0	subtyping	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.types.PredicateOperation	public	com.querydsl:querydsl-core:5.0.0	method call	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.types.FactoryExpressionUtils$FactoryExpressionAdapter	public	com.querydsl:querydsl-core:5.0.0	method call	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.QueryFlag	public	com.querydsl:querydsl-core:5.0.0	cast	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.dml.DMLClause	public	com.querydsl:querydsl-core:5.0.0	subtyping	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.types.TemplateExpressionImpl	public	com.querydsl:querydsl-core:5.0.0	method call	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.sql.WindowFunction	public	com.querydsl:querydsl-sql:5.0.0	method call	com.querydsl:querydsl-core:5.0.0
+com.querydsl.core.QueryMetadata	public	com.querydsl:querydsl-core:5.0.0	cast	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.sql.SQLServerTemplates	public	com.querydsl:querydsl-sql:5.0.0	method call	com.querydsl:querydsl-core:5.0.0
+com.querydsl.core.FilteredClause	public	com.querydsl:querydsl-core:5.0.0	cast	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.util.ArrayUtils	public	com.querydsl:querydsl-core:5.0.0	method call	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.types.Templates	public	com.querydsl:querydsl-core:5.0.0	subtyping	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.util.BeanMap	public	com.querydsl:querydsl-core:5.0.0	instantiation	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.types.PathImpl	public	com.querydsl:querydsl-core:5.0.0	method call	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.types.dsl.DateTimeOperation	public	com.querydsl:querydsl-core:5.0.0	method call	com.querydsl:querydsl-sql:5.0.0
+org.joda.time.LocalDateTime	public	joda-time:joda-time:2.10.10	cast	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.sql.HSQLDBTemplates	public	com.querydsl:querydsl-sql:5.0.0	method call	com.querydsl:querydsl-core:5.0.0
+com.querydsl.core.types.dsl.DatePath	public	com.querydsl:querydsl-core:5.0.0	method call	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.types.QBean	public	com.querydsl:querydsl-core:5.0.0	cast	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.QueryException	public	com.querydsl:querydsl-core:5.0.0	method call	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.util.PrimitiveUtils	default	com.querydsl:querydsl-core:5.0.0	method call	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.types.dsl.TimePath	public	com.querydsl:querydsl-core:5.0.0	method call	com.querydsl:querydsl-sql:5.0.0
+org.joda.time.LocalTime	public	joda-time:joda-time:2.10.10	cast	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.DefaultQueryMetadata	public	com.querydsl:querydsl-core:5.0.0	instantiation	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.types.ParamsVisitor	public	com.querydsl:querydsl-core:5.0.0	method call	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.sql.SQLServer2005Templates	public	com.querydsl:querydsl-sql:5.0.0	method call	com.querydsl:querydsl-core:5.0.0
+com.querydsl.core.types.FactoryExpression	public	com.querydsl:querydsl-core:5.0.0	cast	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.sql.SQLTemplates	public	com.querydsl:querydsl-sql:5.0.0	method call	com.querydsl:querydsl-core:5.0.0
+com.querydsl.sql.RelationalFunctionCall	public	com.querydsl:querydsl-sql:5.0.0	method call	com.querydsl:querydsl-core:5.0.0
+com.querydsl.core.support.FetchableSubQueryBase	public	com.querydsl:querydsl-core:5.0.0	subtyping	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.types.dsl.StringPath	public	com.querydsl:querydsl-core:5.0.0	method call	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.types.EntityPath	public	com.querydsl:querydsl-core:5.0.0	cast	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.util.ReflectionUtils	default	com.querydsl:querydsl-core:5.0.0	method call	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.BooleanBuilder	public	com.querydsl:querydsl-core:5.0.0	method call	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.types.Template$Element	public	com.querydsl:querydsl-core:5.0.0	cast	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.sql.SQLOps	public	com.querydsl:querydsl-sql:5.0.0	method call	com.querydsl:querydsl-core:5.0.0
+com.querydsl.core.types.dsl.DateOperation	public	com.querydsl:querydsl-core:5.0.0	method call	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.types.QBean	public	com.querydsl:querydsl-core:5.0.0	method call	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.types.PathMetadataFactory	public	com.querydsl:querydsl-core:5.0.0	method call	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.types.EntityPath	public	com.querydsl:querydsl-core:5.0.0	subtyping	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.dml.UpdateClause	public	com.querydsl:querydsl-core:5.0.0	subtyping	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.SimpleQuery	public	com.querydsl:querydsl-core:5.0.0	cast	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.types.Path	public	com.querydsl:querydsl-core:5.0.0	cast	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.sql.QBeans	public	com.querydsl:querydsl-sql:5.0.0	method call	com.querydsl:querydsl-core:5.0.0
+com.querydsl.core.types.dsl.BooleanTemplate	public	com.querydsl:querydsl-core:5.0.0	method call	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.sql.WindowOver	public	com.querydsl:querydsl-sql:5.0.0	method call	com.querydsl:querydsl-core:5.0.0
+com.querydsl.core.dml.InsertClause	public	com.querydsl:querydsl-core:5.0.0	subtyping	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.QueryFlag	public	com.querydsl:querydsl-core:5.0.0	method call	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.Fetchable	public	com.querydsl:querydsl-core:5.0.0	subtyping	com.querydsl:querydsl-sql:5.0.0
+org.joda.time.LocalTime	public	joda-time:joda-time:2.10.10	method call	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.QueryResults	public	com.querydsl:querydsl-core:5.0.0	method call	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.sql.MySQLTemplates	public	com.querydsl:querydsl-sql:5.0.0	method call	com.querydsl:querydsl-core:5.0.0
+com.querydsl.core.types.ConstantImpl	public	com.querydsl:querydsl-core:5.0.0	method call	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.support.SerializerBase	public	com.querydsl:querydsl-core:5.0.0	subtyping	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.support.QueryMixin	public	com.querydsl:querydsl-core:5.0.0	instantiation	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.sql.AbstractSQLQuery	public	com.querydsl:querydsl-sql:5.0.0	method call	com.querydsl:querydsl-core:5.0.0
+com.querydsl.core.types.Projections	public	com.querydsl:querydsl-core:5.0.0	method call	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.types.dsl.SimplePath	public	com.querydsl:querydsl-core:5.0.0	method call	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.JoinFlag	public	com.querydsl:querydsl-core:5.0.0	instantiation	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.sql.DB2Templates	public	com.querydsl:querydsl-sql:5.0.0	method call	com.querydsl:querydsl-core:5.0.0
+org.joda.time.LocalDateTime	public	joda-time:joda-time:2.10.10	instantiation	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.sql.FirebirdTemplates	public	com.querydsl:querydsl-sql:5.0.0	method call	com.querydsl:querydsl-core:5.0.0
+com.querydsl.core.types.dsl.NumberTemplate	public	com.querydsl:querydsl-core:5.0.0	method call	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.sql.RelationalPathExtractor	public	com.querydsl:querydsl-sql:5.0.0	method call	com.querydsl:querydsl-core:5.0.0
+org.joda.time.DateTime	public	joda-time:joda-time:2.10.10	instantiation	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.types.ExtractorVisitor	default	com.querydsl:querydsl-core:5.0.0	method call	com.querydsl:querydsl-sql:5.0.0
+org.joda.time.DateTime	public	joda-time:joda-time:2.10.10	method call	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.Query	public	com.querydsl:querydsl-core:5.0.0	cast	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.types.dsl.BooleanPath	public	com.querydsl:querydsl-core:5.0.0	method call	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.Query	public	com.querydsl:querydsl-core:5.0.0	subtyping	com.querydsl:querydsl-sql:5.0.0
+org.joda.time.LocalDate	public	joda-time:joda-time:2.10.10	method call	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.types.Template$ByIndex	public	com.querydsl:querydsl-core:5.0.0	method call	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.types.PathMetadata	public	com.querydsl:querydsl-core:5.0.0	method call	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.QueryResults	public	com.querydsl:querydsl-core:5.0.0	instantiation	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.types.Visitor	public	com.querydsl:querydsl-core:5.0.0	subtyping	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.types.dsl.PathBuilder	public	com.querydsl:querydsl-core:5.0.0	method call	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.annotations.Immutable	public	com.querydsl:querydsl-core:5.0.0	annotation	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.QueryException	public	com.querydsl:querydsl-core:5.0.0	instantiation	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.JoinExpression	public	com.querydsl:querydsl-core:5.0.0	method call	com.querydsl:querydsl-sql:5.0.0
+org.joda.time.DateTime	public	joda-time:joda-time:2.10.10	cast	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.sql.RelationalPathBase	public	com.querydsl:querydsl-sql:5.0.0	method call	com.querydsl:querydsl-core:5.0.0
+com.querydsl.core.types.Template$ByIndex	public	com.querydsl:querydsl-core:5.0.0	cast	com.querydsl:querydsl-sql:5.0.0
+org.joda.time.LocalTime	public	joda-time:joda-time:2.10.10	instantiation	com.querydsl:querydsl-sql:5.0.0
+org.joda.time.LocalDate	public	joda-time:joda-time:2.10.10	cast	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.types.dsl.NumberPath	public	com.querydsl:querydsl-core:5.0.0	method call	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.FetchableQuery	public	com.querydsl:querydsl-core:5.0.0	subtyping	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.types.dsl.NumberOperation	public	com.querydsl:querydsl-core:5.0.0	method call	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.types.ParamExpression	public	com.querydsl:querydsl-core:5.0.0	cast	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.sql.UnionImpl	public	com.querydsl:querydsl-sql:5.0.0	method call	com.querydsl:querydsl-core:5.0.0
+com.querydsl.core.types.FactoryExpressionBase	public	com.querydsl:querydsl-core:5.0.0	subtyping	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.util.CollectionUtils	public	com.querydsl:querydsl-core:5.0.0	method call	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.types.ExpressionUtils	default	com.querydsl:querydsl-core:5.0.0	method call	com.querydsl:querydsl-sql:5.0.0
+com.querydsl.core.types.ConstructorExpression	public	com.querydsl:querydsl-core:5.0.0	method call	com.querydsl:querydsl-sql:5.0.0

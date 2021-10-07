@@ -1,3 +1,0 @@
-Class Name,Class Visibility,Class Library,Usage,Used In Library
-org.w3c.dom.Node,public,org.w3c.dom,cast,org.apache.commons:commons-collections4:4.4
-org.w3c.dom.NodeList,public,org.w3c.dom,cast,org.apache.commons:commons-collections4:4.4

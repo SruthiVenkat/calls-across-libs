@@ -1,3 +1,0 @@
-Caller Method,Caller Library,setAccessible Called On,Visibility,Callee Name,Field Signature,Callee Library
-io.restassured.builder.ResponseSpecBuilder::getResponseParserRegistrar()Lio/restassured/internal/ResponseParserRegistrar;,io.rest-assured:rest-assured:4.4.0,java.lang.reflect.Field,private,io.restassured.RestAssured::RESPONSE_PARSER_REGISTRAR,io.restassured.internal.ResponseParserRegistrar,io.rest-assured:rest-assured:4.4.0
-io.restassured.builder.ResponseSpecBuilder::getResponseParserRegistrar()Lio/restassured/internal/ResponseParserRegistrar;,io.rest-assured:rest-assured:4.4.0,java.lang.reflect.Field,private,io.restassured.RestAssured::RESPONSE_PARSER_REGISTRAR,io.restassured.internal.ResponseParserRegistrar,io.rest-assured:rest-assured:4.4.0

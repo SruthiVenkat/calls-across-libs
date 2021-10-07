@@ -1,0 +1,19 @@
+Callee Library	Field Name	Declared Class	Actual Class	Field Signature	Static	Visibility	Field Library	Reflective	Count
+io.searchbox:jest-common:6.3.1	io.searchbox.core.SearchResultTest$TestObject::id	io.searchbox.core.SearchResultTest$TestObject	io.searchbox.core.SearchResultTest$TestObject	java.lang.String	false	private	unknownLib	true	6
+io.searchbox:jest-common:6.3.1	io.searchbox.core.SearchResultTest$TestObject::version	io.searchbox.core.SearchResultTest$TestObject	io.searchbox.core.SearchResultTest$TestObject	java.lang.Long	false	private	unknownLib	true	6
+com.google.code.gson:gson:2.8.0	io.searchbox.client.JestResultTest$Twitter::user	io.searchbox.client.JestResultTest$Twitter	io.searchbox.client.JestResultTest$Twitter	java.lang.String	false	default	unknownLib	true	5
+org.slf4j:slf4j-log4j12:1.7.25	org.apache.log4j.Level::INFO	org.apache.log4j.Level	org.apache.log4j.Level	org.apache.log4j.Level	true	public	log4j:log4j:1.2.17	false	6
+org.slf4j:slf4j-log4j12:1.7.25	org.apache.log4j.Level::ERROR	org.apache.log4j.Level	org.apache.log4j.Level	org.apache.log4j.Level	true	public	log4j:log4j:1.2.17	false	10
+com.google.code.gson:gson:2.8.0	io.searchbox.client.JestResultTest$SimpleComment::message	io.searchbox.client.JestResultTest$SimpleComment	io.searchbox.client.JestResultTest$SimpleComment	java.lang.String	false	default	unknownLib	true	1
+com.google.code.gson:gson:2.8.0	io.searchbox.client.JestResultTest$Twitter::postDate	io.searchbox.client.JestResultTest$Twitter	io.searchbox.client.JestResultTest$Twitter	java.lang.String	false	default	unknownLib	true	5
+io.searchbox:jest-common:6.3.1	io.searchbox.client.JestResultTest$Comment::someIdName	io.searchbox.client.JestResultTest$Base	io.searchbox.client.JestResultTest$Comment	java.lang.Long	false	default	unknownLib	true	1
+io.searchbox:jest-common:6.3.1	io.searchbox.client.JestResultTest$SimpleComment::someIdName	io.searchbox.client.JestResultTest$SimpleComment	io.searchbox.client.JestResultTest$SimpleComment	java.lang.Long	false	default	unknownLib	true	2
+io.searchbox:jest-common:6.3.1	com.google.gson.JsonNull::INSTANCE	com.google.gson.JsonNull	com.google.gson.JsonNull	com.google.gson.JsonNull	true	public	com.google.code.gson:gson:2.8.0	false	2
+com.google.code.gson:gson:2.8.0	io.searchbox.client.JestResultTest$Comment::someIdName	io.searchbox.client.JestResultTest$Base	io.searchbox.client.JestResultTest$Comment	java.lang.Long	false	default	unknownLib	true	1
+org.slf4j:slf4j-log4j12:1.7.25	org.apache.log4j.Level::WARN	org.apache.log4j.Level	org.apache.log4j.Level	org.apache.log4j.Level	true	public	log4j:log4j:1.2.17	false	10
+org.slf4j:slf4j-log4j12:1.7.25	org.apache.log4j.Level::TRACE	org.apache.log4j.Level	org.apache.log4j.Level	org.apache.log4j.Level	true	public	log4j:log4j:1.2.17	false	7
+org.slf4j:slf4j-api:1.7.25	org.slf4j.impl.StaticLoggerBinder::REQUESTED_API_VERSION	org.slf4j.impl.StaticLoggerBinder	org.slf4j.impl.StaticLoggerBinder	java.lang.String	true	public	org.slf4j:slf4j-log4j12:1.7.25	false	1
+org.slf4j:slf4j-log4j12:1.7.25	org.apache.log4j.Level::DEBUG	org.apache.log4j.Level	org.apache.log4j.Level	org.apache.log4j.Level	true	public	log4j:log4j:1.2.17	false	12
+com.google.code.gson:gson:2.8.0	io.searchbox.client.JestResultTest$Twitter::message	io.searchbox.client.JestResultTest$Twitter	io.searchbox.client.JestResultTest$Twitter	java.lang.String	false	default	unknownLib	true	5
+com.google.code.gson:gson:2.8.0	io.searchbox.client.JestResultTest$Comment::message	io.searchbox.client.JestResultTest$Comment	io.searchbox.client.JestResultTest$Comment	java.lang.String	false	default	unknownLib	true	1
+io.searchbox:jest-common:6.3.1	io.searchbox.action.AbstractActionTest$Source::email	io.searchbox.action.AbstractActionTest$Source	io.searchbox.action.AbstractActionTest$Source	java.lang.String	false	default	unknownLib	true	2

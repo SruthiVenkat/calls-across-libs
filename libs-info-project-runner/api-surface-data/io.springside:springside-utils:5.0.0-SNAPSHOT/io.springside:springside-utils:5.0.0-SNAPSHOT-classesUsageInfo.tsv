@@ -1,0 +1,196 @@
+Class Name	Class Visibility	Class Library	Usage	Used In Library
+com.google.common.collect.Sets	public	com.google.guava:guava:20.0	method call	io.springside:springside-utils:5.0.0-SNAPSHOT
+com.sun.crypto.provider.AESCipher$General	public	unknownLib	Class.forName	java.security
+javax.xml.datatype.XMLGregorianCalendar	public	javax.xml.datatype	cast	ma.glasnost.orika:orika-core:1.5.0
+com.fasterxml.jackson.annotation.JsonInclude$Value	public	com.fasterxml.jackson.core:jackson-annotations:2.8.0	method call	com.fasterxml.jackson.core:jackson-databind:2.8.6
+com.fasterxml.jackson.core.util.Instantiatable	public	com.fasterxml.jackson.core:jackson-core:2.8.6	cast	com.fasterxml.jackson.core:jackson-databind:2.8.6
+com.fasterxml.jackson.databind.ObjectMapper	public	com.fasterxml.jackson.core:jackson-databind:2.8.6	method call	io.springside:springside-utils:5.0.0-SNAPSHOT
+com.fasterxml.jackson.core.util.InternCache	public	com.fasterxml.jackson.core:jackson-core:2.8.6	method call	com.fasterxml.jackson.core:jackson-databind:2.8.6
+java.security.MessageDigest$Delegate	default	java.security	method call	io.springside:springside-utils:5.0.0-SNAPSHOT
+com.fasterxml.jackson.core.JsonLocation	public	com.fasterxml.jackson.core:jackson-core:2.8.6	instantiation	com.fasterxml.jackson.core:jackson-databind:2.8.6
+com.fasterxml.jackson.annotation.JsonFormat$Value	public	com.fasterxml.jackson.core:jackson-annotations:2.8.0	method call	com.fasterxml.jackson.core:jackson-databind:2.8.6
+com.google.common.primitives.Doubles	public	com.google.guava:guava:20.0	method call	io.springside:springside-utils:5.0.0-SNAPSHOT
+com.fasterxml.jackson.core.filter.JsonPointerBasedFilter	public	com.fasterxml.jackson.core:jackson-core:2.8.6	instantiation	com.fasterxml.jackson.core:jackson-databind:2.8.6
+org.apache.commons.lang3.time.DateUtils	public	org.apache.commons:commons-lang3:3.5	method call	io.springside:springside-utils:5.0.0-SNAPSHOT
+com.google.common.hash.HashCode$IntHashCode	private	com.google.guava:guava:20.0	method call	io.springside:springside-utils:5.0.0-SNAPSHOT
+com.google.common.hash.Murmur3_128HashFunction	default	com.google.guava:guava:20.0	method call	io.springside:springside-utils:5.0.0-SNAPSHOT
+com.fasterxml.jackson.core.JsonGenerator	public	com.fasterxml.jackson.core:jackson-core:2.8.6	subtyping	com.fasterxml.jackson.core:jackson-databind:2.8.6
+java.sql.Time	public	java.sql	cast	ma.glasnost.orika:orika-core:1.5.0
+com.google.common.math.LongMath	public	com.google.guava:guava:20.0	method call	io.springside:springside-utils:5.0.0-SNAPSHOT
+com.fasterxml.jackson.core.JsonFactory	public	com.fasterxml.jackson.core:jackson-core:2.8.6	subtyping	com.fasterxml.jackson.core:jackson-databind:2.8.6
+com.google.common.collect.SortedSetMultimap	public	com.google.guava:guava:20.0	cast	io.springside:springside-utils:5.0.0-SNAPSHOT
+org.apache.commons.lang3.time.FastDateFormat	public	org.apache.commons:commons-lang3:3.5	method call	io.springside:springside-utils:5.0.0-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonSetter	public	com.fasterxml.jackson.core:jackson-annotations:2.8.0	cast	com.fasterxml.jackson.core:jackson-databind:2.8.6
+net.sf.cglib.reflect.FastClass	default	cglib:cglib:3.2.4	method call	io.springside:springside-utils:5.0.0-SNAPSHOT
+java.security.SecureRandom	public	java.security	method call	io.springside:springside-utils:5.0.0-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonIdentityInfo	public	com.fasterxml.jackson.core:jackson-annotations:2.8.0	cast	com.fasterxml.jackson.core:jackson-databind:2.8.6
+org.objectweb.asm.ClassReader	public	org.ow2.asm:asm:5.1	instantiation	cglib:cglib:3.2.4
+com.fasterxml.jackson.core.json.WriterBasedJsonGenerator	public	com.fasterxml.jackson.core:jackson-core:2.8.6	method call	com.fasterxml.jackson.core:jackson-databind:2.8.6
+org.apache.commons.lang3.ArrayUtils	public	org.apache.commons:commons-lang3:3.5	method call	io.springside:springside-utils:5.0.0-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonProperty$Access	public	com.fasterxml.jackson.core:jackson-annotations:2.8.0	method call	com.fasterxml.jackson.core:jackson-databind:2.8.6
+com.sun.org.apache.xerces.internal.jaxp.SAXParserFactoryImpl	public	unknownLib	Class.forName	javax.xml.parsers
+com.google.common.collect.ObjectArrays	public	com.google.guava:guava:20.0	method call	io.springside:springside-utils:5.0.0-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonIdentityReference	public	com.fasterxml.jackson.core:jackson-annotations:2.8.0	cast	com.fasterxml.jackson.core:jackson-databind:2.8.6
+sun.security.provider.NativePRNG	public	unknownLib	Class.forName	java.security
+java.security.SecureRandom	public	java.security	instantiation	io.springside:springside-utils:5.0.0-SNAPSHOT
+com.google.common.net.InetAddresses	public	com.google.guava:guava:20.0	method call	io.springside:springside-utils:5.0.0-SNAPSHOT
+com.google.common.hash.HashCode$BytesHashCode	private	com.google.guava:guava:20.0	method call	io.springside:springside-utils:5.0.0-SNAPSHOT
+org.objectweb.asm.ClassWriter	public	org.ow2.asm:asm:5.1	instantiation	cglib:cglib:3.2.4
+com.fasterxml.jackson.annotation.JsonProperty$Access	public	com.fasterxml.jackson.core:jackson-annotations:2.8.0	cast	com.fasterxml.jackson.core:jackson-databind:2.8.6
+com.fasterxml.jackson.core.JsonParser	public	com.fasterxml.jackson.core:jackson-core:2.8.6	cast	com.fasterxml.jackson.core:jackson-databind:2.8.6
+com.fasterxml.jackson.annotation.JsonTypeName	public	com.fasterxml.jackson.core:jackson-annotations:2.8.0	cast	com.fasterxml.jackson.core:jackson-databind:2.8.6
+com.google.common.base.Preconditions	public	com.google.guava:guava:20.0	method call	io.springside:springside-utils:5.0.0-SNAPSHOT
+java.security.CodeSource	public	java.security	method call	io.springside:springside-utils:5.0.0-SNAPSHOT
+com.thoughtworks.paranamer.CachingParanamer	public	com.thoughtworks.paranamer:paranamer:2.8	method call	ma.glasnost.orika:orika-core:1.5.0
+ma.glasnost.orika.impl.MapperFacadeImpl	public	ma.glasnost.orika:orika-core:1.5.0	method call	io.springside:springside-utils:5.0.0-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonBackReference	public	com.fasterxml.jackson.core:jackson-annotations:2.8.0	cast	com.fasterxml.jackson.core:jackson-databind:2.8.6
+com.fasterxml.jackson.annotation.JsonAutoDetect	public	com.fasterxml.jackson.core:jackson-annotations:2.8.0	cast	com.fasterxml.jackson.core:jackson-databind:2.8.6
+com.thoughtworks.paranamer.AdaptiveParanamer	public	com.thoughtworks.paranamer:paranamer:2.8	instantiation	ma.glasnost.orika:orika-core:1.5.0
+javax.xml.bind.JAXBElement	public	javax.xml.bind	instantiation	io.springside:springside-utils:5.0.0-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonUnwrapped	public	com.fasterxml.jackson.core:jackson-annotations:2.8.0	cast	com.fasterxml.jackson.core:jackson-databind:2.8.6
+com.fasterxml.jackson.databind.util.JSONPObject	public	com.fasterxml.jackson.core:jackson-databind:2.8.6	instantiation	io.springside:springside-utils:5.0.0-SNAPSHOT
+com.fasterxml.jackson.databind.type.SimpleType	public	com.fasterxml.jackson.core:jackson-databind:2.8.6	method call	com.fasterxml.jackson.core:jackson-core:2.8.6
+com.fasterxml.jackson.databind.type.TypeFactory	public	com.fasterxml.jackson.core:jackson-databind:2.8.6	method call	io.springside:springside-utils:5.0.0-SNAPSHOT
+sun.security.provider.PolicyFile	public	unknownLib	Class.forName	java.security
+com.fasterxml.jackson.annotation.JsonTypeInfo	public	com.fasterxml.jackson.core:jackson-annotations:2.8.0	cast	com.fasterxml.jackson.core:jackson-databind:2.8.6
+org.xml.sax.ContentHandler	public	org.xml.sax	subtyping	javax.xml.bind
+com.fasterxml.jackson.core.TreeNode	public	com.fasterxml.jackson.core:jackson-core:2.8.6	subtyping	com.fasterxml.jackson.core:jackson-databind:2.8.6
+com.fasterxml.jackson.core.JsonProcessingException	public	com.fasterxml.jackson.core:jackson-core:2.8.6	cast	com.fasterxml.jackson.core:jackson-databind:2.8.6
+com.fasterxml.jackson.databind.MappingJsonFactory	public	com.fasterxml.jackson.core:jackson-databind:2.8.6	method call	com.fasterxml.jackson.core:jackson-core:2.8.6
+com.sun.xml.internal.bind.v2.ContextFactory	public	unknownLib	Class.forName	javax.xml.bind
+com.fasterxml.jackson.core.JsonGenerationException	public	com.fasterxml.jackson.core:jackson-core:2.8.6	instantiation	com.fasterxml.jackson.core:jackson-databind:2.8.6
+javassist.LoaderClassPath	public	org.javassist:javassist:3.19.0-GA	instantiation	ma.glasnost.orika:orika-core:1.5.0
+java.security.MessageDigestSpi	public	java.security	Class.forName	java.security
+com.fasterxml.jackson.core.PrettyPrinter	public	com.fasterxml.jackson.core:jackson-core:2.8.6	cast	com.fasterxml.jackson.core:jackson-databind:2.8.6
+com.fasterxml.jackson.annotation.ObjectIdGenerator$IdKey	public	com.fasterxml.jackson.core:jackson-annotations:2.8.0	instantiation	com.fasterxml.jackson.core:jackson-databind:2.8.6
+java.sql.Date	public	java.sql	cast	com.fasterxml.jackson.core:jackson-databind:2.8.6
+com.fasterxml.jackson.annotation.ObjectIdGenerators$PropertyGenerator	public	com.fasterxml.jackson.core:jackson-annotations:2.8.0	subtyping	com.fasterxml.jackson.core:jackson-databind:2.8.6
+org.xml.sax.InputSource	public	org.xml.sax	instantiation	javax.xml.parsers
+com.fasterxml.jackson.core.type.ResolvedType	public	com.fasterxml.jackson.core:jackson-core:2.8.6	subtyping	com.fasterxml.jackson.core:jackson-databind:2.8.6
+javassist.CtNewMethod	public	org.javassist:javassist:3.19.0-GA	method call	ma.glasnost.orika:orika-core:1.5.0
+com.fasterxml.jackson.databind.ObjectMapper	public	com.fasterxml.jackson.core:jackson-databind:2.8.6	instantiation	io.springside:springside-utils:5.0.0-SNAPSHOT
+org.apache.commons.lang3.reflect.ConstructorUtils	public	org.apache.commons:commons-lang3:3.5	method call	io.springside:springside-utils:5.0.0-SNAPSHOT
+org.apache.commons.lang3.BooleanUtils	public	org.apache.commons:commons-lang3:3.5	method call	io.springside:springside-utils:5.0.0-SNAPSHOT
+org.apache.commons.lang3.Validate	public	org.apache.commons:commons-lang3:3.5	method call	io.springside:springside-utils:5.0.0-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonCreator	public	com.fasterxml.jackson.core:jackson-annotations:2.8.0	cast	com.fasterxml.jackson.core:jackson-databind:2.8.6
+com.fasterxml.jackson.core.JsonProcessingException	public	com.fasterxml.jackson.core:jackson-core:2.8.6	subtyping	com.fasterxml.jackson.core:jackson-databind:2.8.6
+org.springside.modules.utils.io.FileTreeWalker$WildcardFileNameFilter	public	io.springside:springside-utils:5.0.0-SNAPSHOT	method call	com.google.guava:guava:20.0
+com.google.common.math.IntMath	public	com.google.guava:guava:20.0	method call	io.springside:springside-utils:5.0.0-SNAPSHOT
+org.objectweb.asm.ClassVisitor	public	org.ow2.asm:asm:5.1	subtyping	cglib:cglib:3.2.4
+org.apache.commons.lang3.time.DurationFormatUtils	public	org.apache.commons:commons-lang3:3.5	method call	io.springside:springside-utils:5.0.0-SNAPSHOT
+com.google.common.util.concurrent.ThreadFactoryBuilder	public	com.google.guava:guava:20.0	instantiation	io.springside:springside-utils:5.0.0-SNAPSHOT
+com.googlecode.concurrentlinkedhashmap.ConcurrentLinkedHashMap	public	com.googlecode.concurrentlinkedhashmap:concurrentlinkedhashmap-lru:1.4.2	method call	ma.glasnost.orika:orika-core:1.5.0
+com.fasterxml.jackson.annotation.JsonPropertyOrder	public	com.fasterxml.jackson.core:jackson-annotations:2.8.0	cast	com.fasterxml.jackson.core:jackson-databind:2.8.6
+com.fasterxml.jackson.annotation.JsonAutoDetect$Visibility	public	com.fasterxml.jackson.core:jackson-annotations:2.8.0	method call	com.fasterxml.jackson.core:jackson-databind:2.8.6
+javassist.ClassPool	public	org.javassist:javassist:3.19.0-GA	instantiation	ma.glasnost.orika:orika-core:1.5.0
+com.google.common.collect.Maps	public	com.google.guava:guava:20.0	method call	io.springside:springside-utils:5.0.0-SNAPSHOT
+com.sun.crypto.provider.AESKeyGenerator	public	unknownLib	Class.forName	java.security
+org.apache.commons.lang3.EnumUtils	public	org.apache.commons:commons-lang3:3.5	method call	io.springside:springside-utils:5.0.0-SNAPSHOT
+com.google.common.collect.Iterables$4	default	com.google.guava:guava:20.0	method call	io.springside:springside-utils:5.0.0-SNAPSHOT
+com.google.common.primitives.Longs	public	com.google.guava:guava:20.0	method call	io.springside:springside-utils:5.0.0-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonClassDescription	public	com.fasterxml.jackson.core:jackson-annotations:2.8.0	cast	com.fasterxml.jackson.core:jackson-databind:2.8.6
+com.google.common.util.concurrent.ThreadFactoryBuilder	public	com.google.guava:guava:20.0	method call	io.springside:springside-utils:5.0.0-SNAPSHOT
+com.thoughtworks.paranamer.BytecodeReadingParanamer	public	com.thoughtworks.paranamer:paranamer:2.8	instantiation	ma.glasnost.orika:orika-core:1.5.0
+com.fasterxml.jackson.annotation.JsonIgnore	public	com.fasterxml.jackson.core:jackson-annotations:2.8.0	cast	com.fasterxml.jackson.core:jackson-databind:2.8.6
+java.sql.Time	public	java.sql	instantiation	ma.glasnost.orika:orika-core:1.5.0
+com.fasterxml.jackson.databind.ObjectReader	public	com.fasterxml.jackson.core:jackson-databind:2.8.6	method call	io.springside:springside-utils:5.0.0-SNAPSHOT
+sun.security.provider.SecureRandom	public	unknownLib	Class.forName	java.security
+com.fasterxml.jackson.core.ObjectCodec	public	com.fasterxml.jackson.core:jackson-core:2.8.6	subtyping	com.fasterxml.jackson.core:jackson-databind:2.8.6
+com.google.common.collect.Iterators	public	com.google.guava:guava:20.0	method call	io.springside:springside-utils:5.0.0-SNAPSHOT
+com.google.common.base.Utf8	public	com.google.guava:guava:20.0	method call	io.springside:springside-utils:5.0.0-SNAPSHOT
+com.thoughtworks.paranamer.AnnotationParanamer	public	com.thoughtworks.paranamer:paranamer:2.8	instantiation	ma.glasnost.orika:orika-core:1.5.0
+com.fasterxml.jackson.core.Versioned	public	com.fasterxml.jackson.core:jackson-core:2.8.6	subtyping	com.fasterxml.jackson.core:jackson-databind:2.8.6
+com.google.common.primitives.Ints	public	com.google.guava:guava:20.0	method call	io.springside:springside-utils:5.0.0-SNAPSHOT
+com.google.common.io.Files$2	default	com.google.guava:guava:20.0	method call	io.springside:springside-utils:5.0.0-SNAPSHOT
+net.sf.cglib.reflect.FastClass	public	cglib:cglib:3.2.4	cast	io.springside:springside-utils:5.0.0-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonGetter	public	com.fasterxml.jackson.core:jackson-annotations:2.8.0	cast	com.fasterxml.jackson.core:jackson-databind:2.8.6
+java.security.PrivilegedExceptionAction	public	java.security	subtyping	org.javassist:javassist:3.19.0-GA
+com.fasterxml.jackson.annotation.JsonView	public	com.fasterxml.jackson.core:jackson-annotations:2.8.0	cast	com.fasterxml.jackson.core:jackson-databind:2.8.6
+com.fasterxml.jackson.core.io.SegmentedStringWriter	public	com.fasterxml.jackson.core:jackson-core:2.8.6	instantiation	com.fasterxml.jackson.core:jackson-databind:2.8.6
+com.fasterxml.jackson.annotation.JsonFormat	public	com.fasterxml.jackson.core:jackson-annotations:2.8.0	cast	com.fasterxml.jackson.core:jackson-databind:2.8.6
+com.fasterxml.jackson.annotation.JsonValue	public	com.fasterxml.jackson.core:jackson-annotations:2.8.0	cast	com.fasterxml.jackson.core:jackson-databind:2.8.6
+com.fasterxml.jackson.annotation.JsonRootName	public	com.fasterxml.jackson.core:jackson-annotations:2.8.0	cast	com.fasterxml.jackson.core:jackson-databind:2.8.6
+javassist.ClassClassPath	public	org.javassist:javassist:3.19.0-GA	instantiation	ma.glasnost.orika:orika-core:1.5.0
+java.security.MessageDigest	public	java.security	cast	io.springside:springside-utils:5.0.0-SNAPSHOT
+com.fasterxml.jackson.annotation.ObjectIdResolver	public	com.fasterxml.jackson.core:jackson-annotations:2.8.0	cast	com.fasterxml.jackson.core:jackson-databind:2.8.6
+com.fasterxml.jackson.annotation.JsonIgnoreProperties$Value	public	com.fasterxml.jackson.core:jackson-annotations:2.8.0	method call	com.fasterxml.jackson.core:jackson-databind:2.8.6
+com.thoughtworks.paranamer.CachingParanamer	public	com.thoughtworks.paranamer:paranamer:2.8	instantiation	ma.glasnost.orika:orika-core:1.5.0
+com.fasterxml.jackson.annotation.JsonSubTypes	public	com.fasterxml.jackson.core:jackson-annotations:2.8.0	cast	com.fasterxml.jackson.core:jackson-databind:2.8.6
+org.slf4j.LoggerFactory	public	org.slf4j:slf4j-api:1.7.22	method call	ma.glasnost.orika:orika-core:1.5.0
+com.fasterxml.jackson.core.base.ParserMinimalBase	public	com.fasterxml.jackson.core:jackson-core:2.8.6	subtyping	com.fasterxml.jackson.core:jackson-databind:2.8.6
+javax.xml.bind.JAXBContext	public	javax.xml.bind	cast	io.springside:springside-utils:5.0.0-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonFilter	public	com.fasterxml.jackson.core:jackson-annotations:2.8.0	cast	com.fasterxml.jackson.core:jackson-databind:2.8.6
+com.sun.crypto.provider.HmacSHA1KeyGenerator	public	unknownLib	Class.forName	java.security
+com.fasterxml.jackson.annotation.JsonIgnoreType	public	com.fasterxml.jackson.core:jackson-annotations:2.8.0	cast	com.fasterxml.jackson.core:jackson-databind:2.8.6
+com.fasterxml.jackson.annotation.JsonPropertyDescription	public	com.fasterxml.jackson.core:jackson-annotations:2.8.0	cast	com.fasterxml.jackson.core:jackson-databind:2.8.6
+java.security.PrivilegedAction	public	java.security	subtyping	javax.xml.bind
+org.springside.modules.utils.io.FileTreeWalker$RegexFileNameFilter	public	io.springside:springside-utils:5.0.0-SNAPSHOT	method call	com.google.guava:guava:20.0
+com.google.common.base.Throwables	public	com.google.guava:guava:20.0	method call	io.springside:springside-utils:5.0.0-SNAPSHOT
+com.google.common.base.Predicate	public	com.google.guava:guava:20.0	subtyping	io.springside:springside-utils:5.0.0-SNAPSHOT
+com.google.common.collect.Lists	public	com.google.guava:guava:20.0	method call	io.springside:springside-utils:5.0.0-SNAPSHOT
+java.sql.Date	public	java.sql	instantiation	ma.glasnost.orika:orika-core:1.5.0
+javassist.ClassPool	public	org.javassist:javassist:3.19.0-GA	method call	ma.glasnost.orika:orika-core:1.5.0
+com.google.common.io.Resources	public	com.google.guava:guava:20.0	method call	io.springside:springside-utils:5.0.0-SNAPSHOT
+java.sql.Timestamp	public	java.sql	cast	ma.glasnost.orika:orika-core:1.5.0
+org.apache.commons.lang3.RandomStringUtils	public	org.apache.commons:commons-lang3:3.5	method call	io.springside:springside-utils:5.0.0-SNAPSHOT
+com.google.common.collect.ReverseNaturalOrdering	default	com.google.guava:guava:20.0	method call	io.springside:springside-utils:5.0.0-SNAPSHOT
+javax.xml.bind.JAXBContext	public	javax.xml.bind	method call	io.springside:springside-utils:5.0.0-SNAPSHOT
+java.security.ProtectionDomain	public	java.security	method call	io.springside:springside-utils:5.0.0-SNAPSHOT
+com.google.common.collect.Iterables	public	com.google.guava:guava:20.0	method call	io.springside:springside-utils:5.0.0-SNAPSHOT
+com.google.common.collect.MapMaker	public	com.google.guava:guava:20.0	method call	io.springside:springside-utils:5.0.0-SNAPSHOT
+sun.security.provider.SHA	public	unknownLib	Class.forName	java.security
+java.sql.Timestamp	public	java.sql	instantiation	ma.glasnost.orika:orika-core:1.5.0
+com.googlecode.concurrentlinkedhashmap.ConcurrentLinkedHashMap$Builder	public	com.googlecode.concurrentlinkedhashmap:concurrentlinkedhashmap-lru:1.4.2	method call	ma.glasnost.orika:orika-core:1.5.0
+com.fasterxml.jackson.annotation.JsonRawValue	public	com.fasterxml.jackson.core:jackson-annotations:2.8.0	cast	com.fasterxml.jackson.core:jackson-databind:2.8.6
+javassist.CtNewClass	default	org.javassist:javassist:3.19.0-GA	method call	ma.glasnost.orika:orika-core:1.5.0
+org.apache.commons.lang3.exception.ExceptionUtils	public	org.apache.commons:commons-lang3:3.5	method call	io.springside:springside-utils:5.0.0-SNAPSHOT
+com.fasterxml.jackson.core.JsonParseException	public	com.fasterxml.jackson.core:jackson-core:2.8.6	instantiation	com.fasterxml.jackson.core:jackson-databind:2.8.6
+com.fasterxml.jackson.annotation.JsonManagedReference	public	com.fasterxml.jackson.core:jackson-annotations:2.8.0	cast	com.fasterxml.jackson.core:jackson-databind:2.8.6
+javax.xml.datatype.DatatypeFactory	public	javax.xml.datatype	method call	ma.glasnost.orika:orika-core:1.5.0
+java.security.MessageDigest	default	java.security	method call	io.springside:springside-utils:5.0.0-SNAPSHOT
+com.fasterxml.jackson.core.json.ReaderBasedJsonParser	public	com.fasterxml.jackson.core:jackson-core:2.8.6	method call	com.fasterxml.jackson.core:jackson-databind:2.8.6
+java.sql.Time	public	java.sql	cast	com.fasterxml.jackson.core:jackson-databind:2.8.6
+org.apache.commons.lang3.StringUtils	public	org.apache.commons:commons-lang3:3.5	method call	io.springside:springside-utils:5.0.0-SNAPSHOT
+com.sun.crypto.provider.HmacSHA1	public	unknownLib	Class.forName	java.security
+com.fasterxml.jackson.annotation.JsonProperty	public	com.fasterxml.jackson.core:jackson-annotations:2.8.0	cast	com.fasterxml.jackson.core:jackson-databind:2.8.6
+org.apache.commons.lang3.ClassUtils	public	org.apache.commons:commons-lang3:3.5	method call	io.springside:springside-utils:5.0.0-SNAPSHOT
+ma.glasnost.orika.metadata.TypeFactory	public	ma.glasnost.orika:orika-core:1.5.0	method call	io.springside:springside-utils:5.0.0-SNAPSHOT
+com.google.common.io.BaseEncoding$Base16Encoding	default	com.google.guava:guava:20.0	method call	io.springside:springside-utils:5.0.0-SNAPSHOT
+com.fasterxml.jackson.core.util.ByteArrayBuilder	public	com.fasterxml.jackson.core:jackson-core:2.8.6	instantiation	com.fasterxml.jackson.core:jackson-databind:2.8.6
+com.google.common.io.BaseEncoding	public	com.google.guava:guava:20.0	method call	io.springside:springside-utils:5.0.0-SNAPSHOT
+com.fasterxml.jackson.core.SerializableString	public	com.fasterxml.jackson.core:jackson-core:2.8.6	cast	com.fasterxml.jackson.core:jackson-databind:2.8.6
+org.springside.modules.utils.io.FileTreeWalker$FileExtensionFilter	public	io.springside:springside-utils:5.0.0-SNAPSHOT	method call	com.google.guava:guava:20.0
+com.fasterxml.jackson.annotation.JsonFormat$Value	public	com.fasterxml.jackson.core:jackson-annotations:2.8.0	instantiation	com.fasterxml.jackson.core:jackson-databind:2.8.6
+com.google.common.annotations.Beta	public	com.google.guava:guava:20.0	annotation	io.springside:springside-utils:5.0.0-SNAPSHOT
+sun.security.provider.MD5	public	unknownLib	Class.forName	java.security
+com.google.common.collect.NaturalOrdering	default	com.google.guava:guava:20.0	method call	io.springside:springside-utils:5.0.0-SNAPSHOT
+com.fasterxml.jackson.annotation.ObjectIdGenerator	public	com.fasterxml.jackson.core:jackson-annotations:2.8.0	cast	com.fasterxml.jackson.core:jackson-databind:2.8.6
+com.fasterxml.jackson.core.io.SegmentedStringWriter	public	com.fasterxml.jackson.core:jackson-core:2.8.6	method call	com.fasterxml.jackson.core:jackson-databind:2.8.6
+org.apache.commons.lang3.math.NumberUtils	public	org.apache.commons:commons-lang3:3.5	method call	io.springside:springside-utils:5.0.0-SNAPSHOT
+com.google.common.collect.MapMaker	public	com.google.guava:guava:20.0	instantiation	io.springside:springside-utils:5.0.0-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonInclude	public	com.fasterxml.jackson.core:jackson-annotations:2.8.0	cast	com.fasterxml.jackson.core:jackson-databind:2.8.6
+com.fasterxml.jackson.annotation.JsonInclude$Include	public	com.fasterxml.jackson.core:jackson-annotations:2.8.0	method call	com.fasterxml.jackson.core:jackson-databind:2.8.6
+com.sun.org.apache.xerces.internal.jaxp.datatype.DatatypeFactoryImpl	public	unknownLib	Class.forName	javax.xml.datatype
+com.google.common.hash.Murmur3_32HashFunction	default	com.google.guava:guava:20.0	method call	io.springside:springside-utils:5.0.0-SNAPSHOT
+java.security.PrivilegedExceptionAction	public	java.security	subtyping	io.springside:springside-utils:5.0.0-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonFormat$Shape	public	com.fasterxml.jackson.core:jackson-annotations:2.8.0	method call	com.fasterxml.jackson.core:jackson-databind:2.8.6
+com.google.common.hash.Hashing	public	com.google.guava:guava:20.0	method call	io.springside:springside-utils:5.0.0-SNAPSHOT
+com.google.common.collect.Ordering	public	com.google.guava:guava:20.0	method call	io.springside:springside-utils:5.0.0-SNAPSHOT
+com.fasterxml.jackson.annotation.JacksonAnnotation	public	com.fasterxml.jackson.core:jackson-annotations:2.8.0	annotation	com.fasterxml.jackson.core:jackson-databind:2.8.6
+org.slf4j.Logger	public	org.slf4j:slf4j-api:1.7.22	subtyping	io.springside:springside-utils:5.0.0-SNAPSHOT
+com.google.common.util.concurrent.MoreExecutors	public	com.google.guava:guava:20.0	method call	io.springside:springside-utils:5.0.0-SNAPSHOT
+com.fasterxml.jackson.core.filter.FilteringParserDelegate	public	com.fasterxml.jackson.core:jackson-core:2.8.6	instantiation	com.fasterxml.jackson.core:jackson-databind:2.8.6
+java.security.PrivilegedAction	public	java.security	subtyping	javax.xml.datatype
+com.google.common.io.BaseEncoding$Base64Encoding	default	com.google.guava:guava:20.0	method call	io.springside:springside-utils:5.0.0-SNAPSHOT
+com.google.common.collect.TreeTraverser$3	default	com.google.guava:guava:20.0	method call	io.springside:springside-utils:5.0.0-SNAPSHOT
+com.google.common.collect.TreeTraverser$2	default	com.google.guava:guava:20.0	method call	io.springside:springside-utils:5.0.0-SNAPSHOT
+com.googlecode.concurrentlinkedhashmap.ConcurrentLinkedHashMap$Builder	public	com.googlecode.concurrentlinkedhashmap:concurrentlinkedhashmap-lru:1.4.2	instantiation	ma.glasnost.orika:orika-core:1.5.0
+org.springside.modules.utils.io.FileTreeWalker$AntPathFilter	public	io.springside:springside-utils:5.0.0-SNAPSHOT	method call	com.google.guava:guava:20.0
+java.security.PrivilegedAction	public	java.security	subtyping	javax.xml.parsers
+java.security.PrivilegedExceptionAction	public	java.security	subtyping	com.googlecode.concurrentlinkedhashmap:concurrentlinkedhashmap-lru:1.4.2
+org.apache.commons.lang3.StringEscapeUtils	public	org.apache.commons:commons-lang3:3.5	method call	io.springside:springside-utils:5.0.0-SNAPSHOT
+com.fasterxml.jackson.core.io.SerializedString	public	com.fasterxml.jackson.core:jackson-core:2.8.6	instantiation	com.fasterxml.jackson.core:jackson-databind:2.8.6
+java.sql.Date	public	java.sql	cast	ma.glasnost.orika:orika-core:1.5.0
+com.fasterxml.jackson.annotation.JsonIgnoreProperties	public	com.fasterxml.jackson.core:jackson-annotations:2.8.0	cast	com.fasterxml.jackson.core:jackson-databind:2.8.6
+com.google.common.io.Files	public	com.google.guava:guava:20.0	method call	io.springside:springside-utils:5.0.0-SNAPSHOT
+com.fasterxml.jackson.annotation.JacksonInject	public	com.fasterxml.jackson.core:jackson-annotations:2.8.0	cast	com.fasterxml.jackson.core:jackson-databind:2.8.6

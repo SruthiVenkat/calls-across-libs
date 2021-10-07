@@ -1,0 +1,4 @@
+Class Name	Class Visibility	Class Library	Usage	Used In Library
+org.json.JSONArray	public	org.json:json:20170516	method call	com.vdurmont:emoji-java:5.1.1
+org.json.JSONObject	public	org.json:json:20170516	method call	com.vdurmont:emoji-java:5.1.1
+org.json.JSONArray	public	org.json:json:20170516	instantiation	com.vdurmont:emoji-java:5.1.1

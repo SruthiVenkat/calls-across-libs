@@ -1,0 +1,463 @@
+Class Name	Class Visibility	Class Library	Usage	Used In Library
+com.fasterxml.jackson.annotation.JsonIgnoreType	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+com.google.gson.Gson	public	com.google.code.gson:gson:2.6.2	instantiation	io.rest-assured:json-path:4.4.0
+java.util.Set	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.path.json.JSONAssertion	public	io.rest-assured:json-path:4.4.0	method call	org.codehaus.groovy:groovy:3.0.8
+java.util.AbstractMap	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+groovy.json.JsonToken	public	org.codehaus.groovy:groovy-json:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+java.lang.reflect.AnnotatedElement	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+java.lang.Throwable	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+com.fasterxml.jackson.core.base.ParserMinimalBase	public	com.fasterxml.jackson.core:jackson-core:2.11.1	subtyping	com.fasterxml.jackson.core:jackson-databind:2.11.1
+com.fasterxml.jackson.core.io.SegmentedStringWriter	public	com.fasterxml.jackson.core:jackson-core:2.11.1	instantiation	com.fasterxml.jackson.core:jackson-databind:2.11.1
+java.lang.Float	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+com.fasterxml.jackson.core.json.JsonWriteFeature	public	com.fasterxml.jackson.core:jackson-core:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+java.io.BufferedOutputStream	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+javax.naming.InitialContext	public	unknownLib	Class.forName	org.eclipse:yasson:1.0.6
+org.codehaus.groovy.runtime.callsite.StaticMetaMethodSite$StaticMetaMethodSiteNoUnwrapNoCoerce	public	org.codehaus.groovy:groovy:3.0.8	method call	io.rest-assured:json-path:4.4.0
+groovy.lang.Closure	public	org.codehaus.groovy:groovy:3.0.8	subtyping	org.codehaus.groovy:groovy-json:3.0.8
+org.apache.johnzon.core.JsonReaderFactoryImpl	default	org.apache.johnzon:johnzon-core:1.1.11	method call	org.apache.johnzon:johnzon-mapper:1.1.11
+java.util.regex.Matcher	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+javax.json.JsonWriterFactory	public	jakarta.json:jakarta.json-api:1.1.6	subtyping	org.apache.johnzon:johnzon-core:1.1.11
+groovy.lang.GString	public	org.codehaus.groovy:groovy:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+com.fasterxml.jackson.core.SerializableString	public	com.fasterxml.jackson.core:jackson-core:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+javax.json.spi.JsonProvider	public	jakarta.json:jakarta.json-api:1.1.6	cast	org.eclipse:yasson:1.0.6
+com.fasterxml.jackson.annotation.JsonAutoDetect$Visibility	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+java.io.DataOutputStream	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.BytecodeInterface8	public	org.codehaus.groovy:groovy:3.0.8	method call	io.rest-assured:rest-assured-common:4.4.0
+com.fasterxml.jackson.core.JsonGenerationException	public	com.fasterxml.jackson.core:jackson-core:2.11.1	instantiation	com.fasterxml.jackson.core:jackson-databind:2.11.1
+org.codehaus.groovy.runtime.ScriptBytecodeAdapter	public	org.codehaus.groovy:groovy:3.0.8	method call	io.rest-assured:json-path:4.4.0
+com.fasterxml.jackson.annotation.JsonAnyGetter	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+java.util.Collection	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.GeneratedClosure	public	org.codehaus.groovy:groovy:3.0.8	subtyping	io.rest-assured:json-path:4.4.0
+io.restassured.internal.path.json.JSONAssertion	public	io.rest-assured:json-path:4.4.0	Class.forName	org.codehaus.groovy:groovy:3.0.8
+javax.json.stream.JsonParser$Event	public	jakarta.json:jakarta.json-api:1.1.6	method call	org.eclipse:yasson:1.0.6
+com.fasterxml.jackson.annotation.JsonInclude	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+java.util.UUID	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+javax.json.bind.annotation.JsonbVisibility	public	jakarta.json.bind:jakarta.json.bind-api:1.0.2	cast	org.eclipse:yasson:1.0.6
+groovy.json.JsonToken	public	org.codehaus.groovy:groovy-json:3.0.8	method call	org.codehaus.groovy:groovy:3.0.8
+com.fasterxml.jackson.annotation.JsonPropertyDescription	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+groovy.lang.Reference	public	org.codehaus.groovy:groovy:3.0.8	method call	io.rest-assured:json-path:4.4.0
+org.codehaus.groovy.runtime.callsite.CallSiteArray	public	org.codehaus.groovy:groovy:3.0.8	instantiation	io.rest-assured:rest-assured-common:4.4.0
+org.codehaus.jackson.util.TokenBuffer	public	org.codehaus.jackson:jackson-core-asl:1.9.11	instantiation	org.codehaus.jackson:jackson-mapper-asl:1.9.11
+com.fasterxml.jackson.core.type.WritableTypeId	public	com.fasterxml.jackson.core:jackson-core:2.11.1	instantiation	com.fasterxml.jackson.core:jackson-databind:2.11.1
+org.codehaus.jackson.JsonGenerator	public	org.codehaus.jackson:jackson-core-asl:1.9.11	Class.forName	io.rest-assured:rest-assured-common:4.4.0
+groovy.json.JsonOutput	public	org.codehaus.groovy:groovy-json:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+com.fasterxml.jackson.core.JsonGenerator	public	com.fasterxml.jackson.core:jackson-core:2.11.1	Class.forName	io.rest-assured:rest-assured-common:4.4.0
+javax.json.bind.annotation.JsonbNumberFormat	public	jakarta.json.bind:jakarta.json.bind-api:1.0.2	cast	org.eclipse:yasson:1.0.6
+jdk.internal.reflect.ConstructorAccessorImpl	default	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+org.codehaus.jackson.io.SerializedString	public	org.codehaus.jackson:jackson-core-asl:1.9.11	instantiation	org.codehaus.jackson:jackson-mapper-asl:1.9.11
+io.restassured.internal.path.json.ConfigurableJsonSlurper$__clinit__closure1	public	io.rest-assured:json-path:4.4.0	method call	org.codehaus.groovy:groovy:3.0.8
+java.math.BigDecimal	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+org.codehaus.jackson.annotate.JsonValue	public	org.codehaus.jackson:jackson-core-asl:1.9.11	cast	org.codehaus.jackson:jackson-mapper-asl:1.9.11
+javax.json.bind.JsonbException	public	jakarta.json.bind:jakarta.json.bind-api:1.0.2	instantiation	org.eclipse:yasson:1.0.6
+org.codehaus.jackson.annotate.JsonIgnoreType	public	org.codehaus.jackson:jackson-core-asl:1.9.11	cast	org.codehaus.jackson:jackson-mapper-asl:1.9.11
+com.fasterxml.jackson.annotation.JsonSubTypes	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+org.codehaus.groovy.runtime.dgm$1262	public	org.codehaus.groovy:groovy:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+org.codehaus.jackson.annotate.JsonTypeName	public	org.codehaus.jackson:jackson-core-asl:1.9.11	cast	org.codehaus.jackson:jackson-mapper-asl:1.9.11
+groovy.json.JsonBuilder	public	org.codehaus.groovy:groovy-json:3.0.8	method call	org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.path.json.mapping.JsonPathJackson1ObjectDeserializer	public	io.rest-assured:json-path:4.4.0	method call	org.codehaus.groovy:groovy:3.0.8
+org.codehaus.jackson.map.ObjectMapper	public	org.codehaus.jackson:jackson-mapper-asl:1.9.11	instantiation	io.rest-assured:json-path:4.4.0
+org.apache.johnzon.core.JsonObjectImpl	default	org.apache.johnzon:johnzon-core:1.1.11	method call	org.apache.johnzon:johnzon-mapper:1.1.11
+javax.json.bind.annotation.JsonbDateFormat	public	jakarta.json.bind:jakarta.json.bind-api:1.0.2	cast	org.eclipse:yasson:1.0.6
+java.util.BitSet	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+java.io.BufferedReader	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+groovy.lang.GroovyObject	public	org.codehaus.groovy:groovy:3.0.8	subtyping	io.rest-assured:json-path:4.4.0
+org.codehaus.groovy.runtime.callsite.PogoGetPropertySite	public	org.codehaus.groovy:groovy:3.0.8	method call	io.rest-assured:json-path:4.4.0
+org.codehaus.groovy.runtime.typehandling.DefaultTypeTransformation	public	org.codehaus.groovy:groovy:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+org.codehaus.jackson.annotate.JsonPropertyOrder	public	org.codehaus.jackson:jackson-core-asl:1.9.11	cast	org.codehaus.jackson:jackson-mapper-asl:1.9.11
+io.restassured.path.json.mapper.factory.JohnzonObjectMapperFactory	public	io.rest-assured:json-path:4.4.0	Class.forName	org.codehaus.groovy:groovy:3.0.8
+com.fasterxml.jackson.annotation.JsonProperty$Access	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+org.codehaus.jackson.annotate.JsonWriteNullProperties	public	org.codehaus.jackson:jackson-core-asl:1.9.11	cast	org.codehaus.jackson:jackson-mapper-asl:1.9.11
+javax.json.JsonValue	public	jakarta.json:jakarta.json-api:1.1.6	cast	org.apache.johnzon:johnzon-mapper:1.1.11
+org.codehaus.groovy.runtime.GStringImpl	public	org.codehaus.groovy:groovy:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$1155	public	org.codehaus.groovy:groovy:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+io.restassured.path.json.mapper.factory.JsonbObjectMapperFactory	public	io.rest-assured:json-path:4.4.0	Class.forName	org.codehaus.groovy:groovy:3.0.8
+javax.json.bind.serializer.JsonbSerializer	public	jakarta.json.bind:jakarta.json.bind-api:1.0.2	cast	org.eclipse:yasson:1.0.6
+io.restassured.internal.path.json.mapping.JsonPathJohnzonObjectDeserializer$_deserialize_closure1	public	io.rest-assured:json-path:4.4.0	method call	org.codehaus.groovy:groovy:3.0.8
+groovy.lang.GroovyShell	public	org.codehaus.groovy:groovy:3.0.8	cast	io.rest-assured:json-path:4.4.0
+java.util.Locale	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+javax.json.bind.Jsonb	public	jakarta.json.bind:jakarta.json.bind-api:1.0.2	subtyping	org.eclipse:yasson:1.0.6
+com.fasterxml.jackson.databind.ObjectMapper	public	com.fasterxml.jackson.core:jackson-databind:2.11.1	method call	io.rest-assured:json-path:4.4.0
+org.codehaus.groovy.runtime.ArrayUtil	public	org.codehaus.groovy:groovy:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+org.apache.commons.lang3.StringUtils	public	org.apache.commons:commons-lang3:3.11	method call	io.rest-assured:json-path:4.4.0
+java.io.PrintStream	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+com.fasterxml.jackson.annotation.JsonAlias	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+com.fasterxml.jackson.annotation.JsonAnySetter	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+org.codehaus.jackson.JsonNode	public	org.codehaus.jackson:jackson-core-asl:1.9.11	subtyping	org.codehaus.jackson:jackson-mapper-asl:1.9.11
+org.apache.commons.lang3.text.translate.CharSequenceTranslator	public	org.apache.commons:commons-lang3:3.11	Class.forName	org.codehaus.groovy:groovy:3.0.8
+groovy.lang.GroovyObject	public	org.codehaus.groovy:groovy:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+javax.json.JsonArray	public	jakarta.json:jakarta.json-api:1.1.6	cast	org.apache.johnzon:johnzon-core:1.1.11
+com.fasterxml.jackson.annotation.JsonIgnoreProperties	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+org.apache.johnzon.core.JsonReaderImpl	public	org.apache.johnzon:johnzon-core:1.1.11	method call	org.apache.johnzon:johnzon-mapper:1.1.11
+org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoCachedMethodSite	public	org.codehaus.groovy:groovy:3.0.8	method call	io.rest-assured:json-path:4.4.0
+org.codehaus.groovy.runtime.callsite.PogoMetaClassSite	public	org.codehaus.groovy:groovy:3.0.8	method call	io.rest-assured:rest-assured-common:4.4.0
+org.codehaus.jackson.JsonNode	public	org.codehaus.jackson:jackson-core-asl:1.9.11	cast	org.codehaus.jackson:jackson-mapper-asl:1.9.11
+org.apache.johnzon.core.JsonStreamParserImpl	public	org.apache.johnzon:johnzon-core:1.1.11	method call	org.eclipse:yasson:1.0.6
+io.restassured.internal.common.mapper.ObjectDeserializationContextImpl	public	io.rest-assured:rest-assured-common:4.4.0	method call	org.codehaus.groovy:groovy:3.0.8
+java.lang.Class	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+groovy.lang.MetaProperty	public	org.codehaus.groovy:groovy:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+com.fasterxml.jackson.core.Versioned	public	com.fasterxml.jackson.core:jackson-core:2.11.1	subtyping	com.fasterxml.jackson.core:jackson-databind:2.11.1
+javax.json.bind.annotation.JsonbPropertyOrder	public	jakarta.json.bind:jakarta.json.bind-api:1.0.2	cast	org.eclipse:yasson:1.0.6
+groovy.json.JsonToken	public	org.codehaus.groovy:groovy-json:3.0.8	cast	io.rest-assured:json-path:4.4.0
+org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce	public	org.codehaus.groovy:groovy:3.0.8	method call	io.rest-assured:rest-assured-common:4.4.0
+org.codehaus.jackson.util.InternCache	public	org.codehaus.jackson:jackson-core-asl:1.9.11	method call	org.codehaus.jackson:jackson-mapper-asl:1.9.11
+org.apache.johnzon.core.JsonStringImpl	default	org.apache.johnzon:johnzon-core:1.1.11	method call	org.apache.johnzon:johnzon-mapper:1.1.11
+java.util.SortedSet	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+groovy.lang.GroovyShell	public	org.codehaus.groovy:groovy:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+javax.json.bind.annotation.JsonbCreator	public	jakarta.json.bind:jakarta.json.bind-api:1.0.2	cast	org.eclipse:yasson:1.0.6
+groovy.lang.Closure	public	org.codehaus.groovy:groovy:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+groovy.lang.Reference	public	org.codehaus.groovy:groovy:3.0.8	instantiation	io.rest-assured:json-path:4.4.0
+org.codehaus.jackson.annotate.JsonProperty	public	org.codehaus.jackson:jackson-core-asl:1.9.11	cast	org.codehaus.jackson:jackson-mapper-asl:1.9.11
+java.lang.Process	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.path.json.mapping.JsonObjectDeserializer	public	io.rest-assured:json-path:4.4.0	method call	org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.common.path.ObjectConverter	public	io.rest-assured:rest-assured-common:4.4.0	method call	io.rest-assured:json-path:4.4.0
+org.codehaus.groovy.runtime.dgm$342	public	org.codehaus.groovy:groovy:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+io.restassured.path.json.JsonPath	public	io.rest-assured:json-path:4.4.0	method call	org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$343	public	org.codehaus.groovy:groovy:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$340	public	org.codehaus.groovy:groovy:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$341	public	org.codehaus.groovy:groovy:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+com.fasterxml.jackson.core.JsonParser	public	com.fasterxml.jackson.core:jackson-core:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+org.codehaus.groovy.runtime.dgm$469	public	org.codehaus.groovy:groovy:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+com.fasterxml.jackson.annotation.JsonBackReference	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+groovy.lang.EmptyRange	public	org.codehaus.groovy:groovy:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+java.lang.StringBuilder	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+javax.json.JsonValue	public	jakarta.json:jakarta.json-api:1.1.6	cast	org.eclipse:yasson:1.0.6
+java.util.Comparator	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.path.json.ConfigurableJsonSlurper	public	io.rest-assured:json-path:4.4.0	Class.forName	org.codehaus.groovy:groovy:3.0.8
+groovy.io.FileType	public	org.codehaus.groovy:groovy:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+groovy.lang.ObjectRange	public	org.codehaus.groovy:groovy:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$357	public	org.codehaus.groovy:groovy:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.memoize.CommonCache	public	org.codehaus.groovy:groovy:3.0.8	instantiation	org.codehaus.groovy:groovy-json:3.0.8
+io.restassured.internal.path.json.ConfigurableJsonSlurper	public	io.rest-assured:json-path:4.4.0	method call	org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$237	public	org.codehaus.groovy:groovy:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$358	public	org.codehaus.groovy:groovy:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$234	public	org.codehaus.groovy:groovy:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$355	public	org.codehaus.groovy:groovy:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$356	public	org.codehaus.groovy:groovy:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+java.lang.reflect.Constructor	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+javax.json.bind.annotation.JsonbTypeDeserializer	public	jakarta.json.bind:jakarta.json.bind-api:1.0.2	cast	org.eclipse:yasson:1.0.6
+org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce	public	org.codehaus.groovy:groovy:3.0.8	method call	io.rest-assured:json-path:4.4.0
+java.lang.Thread	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.callsite.CallSiteArray	public	org.codehaus.groovy:groovy:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+java.math.BigInteger	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+groovy.lang.MetaClassImpl	public	org.codehaus.groovy:groovy:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+com.fasterxml.jackson.annotation.JsonAutoDetect	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+com.fasterxml.jackson.core.JsonGenerator	public	com.fasterxml.jackson.core:jackson-core:2.11.1	subtyping	com.fasterxml.jackson.core:jackson-databind:2.11.1
+javax.json.bind.JsonbConfig	public	jakarta.json.bind:jakarta.json.bind-api:1.0.2	instantiation	org.eclipse:yasson:1.0.6
+io.restassured.internal.common.assertion.AssertionSupport	public	io.rest-assured:rest-assured-common:4.4.0	Class.forName	org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.DefaultGroovyMethodsSupport	public	org.codehaus.groovy:groovy:3.0.8	method call	org.eclipse:yasson:1.0.6
+org.codehaus.groovy.runtime.dgm$1240	public	org.codehaus.groovy:groovy:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+javax.json.JsonNumber	public	jakarta.json:jakarta.json-api:1.1.6	cast	org.apache.johnzon:johnzon-core:1.1.11
+com.fasterxml.jackson.core.util.InternCache	public	com.fasterxml.jackson.core:jackson-core:2.11.1	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+org.codehaus.groovy.runtime.dgm$1242	public	org.codehaus.groovy:groovy:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+javax.json.JsonBuilderFactory	public	jakarta.json:jakarta.json-api:1.1.6	subtyping	org.apache.johnzon:johnzon-core:1.1.11
+javax.json.JsonStructure	public	jakarta.json:jakarta.json-api:1.1.6	cast	org.apache.johnzon:johnzon-core:1.1.11
+org.codehaus.groovy.runtime.dgm$245	public	org.codehaus.groovy:groovy:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.reflection.ClassInfo	public	org.codehaus.groovy:groovy:3.0.8	method call	io.rest-assured:rest-assured-common:4.4.0
+org.codehaus.groovy.runtime.dgmimpl.arrays.ObjectArrayPutAtMetaMethod$MyPojoMetaMethodSite	private	org.codehaus.groovy:groovy:3.0.8	method call	io.rest-assured:rest-assured-common:4.4.0
+org.codehaus.jackson.type.JavaType	public	org.codehaus.jackson:jackson-core-asl:1.9.11	cast	io.rest-assured:json-path:4.4.0
+org.codehaus.groovy.runtime.dgm$246	public	org.codehaus.groovy:groovy:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+com.fasterxml.jackson.databind.type.SimpleType	public	com.fasterxml.jackson.core:jackson-databind:2.11.1	method call	com.fasterxml.jackson.core:jackson-core:2.11.1
+org.codehaus.jackson.annotate.JsonAutoDetect$Visibility	public	org.codehaus.jackson:jackson-core-asl:1.9.11	method call	org.codehaus.jackson:jackson-mapper-asl:1.9.11
+io.restassured.internal.common.assertion.AssertParameter	public	io.rest-assured:rest-assured-common:4.4.0	Class.forName	org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.path.json.mapping.JsonPathJsonbObjectDeserializer$_deserialize_closure1	public	io.rest-assured:json-path:4.4.0	method call	org.codehaus.groovy:groovy:3.0.8
+groovy.json.JsonTokenType	public	org.codehaus.groovy:groovy-json:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+io.restassured.path.json.config.JsonPathConfig	public	io.rest-assured:json-path:4.4.0	Class.forName	org.codehaus.groovy:groovy:3.0.8
+com.fasterxml.jackson.core.PrettyPrinter	public	com.fasterxml.jackson.core:jackson-core:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+com.fasterxml.jackson.databind.ObjectMapper	public	com.fasterxml.jackson.core:jackson-databind:2.11.1	instantiation	io.rest-assured:json-path:4.4.0
+org.codehaus.groovy.runtime.dgm$372	public	org.codehaus.groovy:groovy:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+javax.json.bind.JsonbBuilder	public	jakarta.json.bind:jakarta.json.bind-api:1.0.2	subtyping	org.eclipse:yasson:1.0.6
+org.eclipse.yasson.JsonBindingProvider	public	org.eclipse:yasson:1.0.6	instantiation	io.rest-assured:json-path:4.4.0
+org.apache.johnzon.mapper.MapperBuilder	public	org.apache.johnzon:johnzon-mapper:1.1.11	method call	io.rest-assured:json-path:4.4.0
+javax.json.bind.adapter.JsonbAdapter	public	jakarta.json.bind:jakarta.json.bind-api:1.0.2	cast	org.eclipse:yasson:1.0.6
+javax.json.bind.serializer.JsonbDeserializer	public	jakarta.json.bind:jakarta.json.bind-api:1.0.2	subtyping	org.eclipse:yasson:1.0.6
+com.fasterxml.jackson.annotation.JsonTypeName	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+groovy.io.LineColumnReader	public	org.codehaus.groovy:groovy:3.0.8	instantiation	org.codehaus.groovy:groovy-json:3.0.8
+io.restassured.internal.path.json.mapping.JsonPathJohnzonObjectDeserializer	public	io.rest-assured:json-path:4.4.0	method call	org.codehaus.groovy:groovy:3.0.8
+groovy.lang.MetaClass	public	org.codehaus.groovy:groovy:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+io.restassured.common.mapper.resolver.ObjectMapperResolver	public	io.rest-assured:rest-assured-common:4.4.0	Class.forName	org.codehaus.groovy:groovy:3.0.8
+com.fasterxml.jackson.core.JsonParseException	public	com.fasterxml.jackson.core:jackson-core:2.11.1	instantiation	com.fasterxml.jackson.core:jackson-databind:2.11.1
+com.fasterxml.jackson.annotation.JsonIgnore	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+groovy.lang.Range	public	org.codehaus.groovy:groovy:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+javax.json.spi.JsonProvider	public	jakarta.json:jakarta.json-api:1.1.6	method call	org.apache.johnzon:johnzon-mapper:1.1.11
+org.codehaus.groovy.runtime.dgm$667	public	org.codehaus.groovy:groovy:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$309	public	org.codehaus.groovy:groovy:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.BytecodeInterface8	public	org.codehaus.groovy:groovy:3.0.8	method call	io.rest-assured:json-path:4.4.0
+io.restassured.internal.path.json.mapping.JsonObjectDeserializer$1	public	io.rest-assured:json-path:4.4.0	method call	org.codehaus.groovy:groovy:3.0.8
+groovy.json.JsonOutput	public	org.codehaus.groovy:groovy-json:3.0.8	method call	io.rest-assured:json-path:4.4.0
+org.codehaus.jackson.annotate.JsonBackReference	public	org.codehaus.jackson:jackson-core-asl:1.9.11	cast	org.codehaus.jackson:jackson-mapper-asl:1.9.11
+org.codehaus.jackson.type.JavaType	public	org.codehaus.jackson:jackson-core-asl:1.9.11	subtyping	org.codehaus.jackson:jackson-mapper-asl:1.9.11
+org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite	public	org.codehaus.groovy:groovy:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgmimpl.arrays.ObjectArrayGetAtMetaMethod$MyPojoMetaMethodSite	private	org.codehaus.groovy:groovy:3.0.8	method call	io.rest-assured:rest-assured-common:4.4.0
+java.lang.Double	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+javax.json.JsonException	public	jakarta.json:jakarta.json-api:1.1.6	subtyping	org.apache.johnzon:johnzon-mapper:1.1.11
+org.codehaus.groovy.runtime.dgm$313	public	org.codehaus.groovy:groovy:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+javax.json.stream.JsonParser	public	jakarta.json:jakarta.json-api:1.1.6	subtyping	org.apache.johnzon:johnzon-core:1.1.11
+org.codehaus.groovy.runtime.dgm$311	public	org.codehaus.groovy:groovy:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+org.codehaus.jackson.impl.ReaderBasedParser	public	org.codehaus.jackson:jackson-core-asl:1.9.11	method call	org.codehaus.jackson:jackson-mapper-asl:1.9.11
+javax.json.JsonString	public	jakarta.json:jakarta.json-api:1.1.6	subtyping	org.apache.johnzon:johnzon-core:1.1.11
+org.codehaus.groovy.runtime.dgm$312	public	org.codehaus.groovy:groovy:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+org.apache.johnzon.core.JsonArrayImpl	default	org.apache.johnzon:johnzon-core:1.1.11	method call	org.apache.johnzon:johnzon-mapper:1.1.11
+javax.json.bind.Jsonb	public	jakarta.json.bind:jakarta.json.bind-api:1.0.2	Class.forName	org.codehaus.groovy:groovy:3.0.8
+java.lang.AutoCloseable	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+java.lang.Enum	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+groovy.lang.GroovyObjectSupport	public	org.codehaus.groovy:groovy:3.0.8	subtyping	org.codehaus.groovy:groovy-json:3.0.8
+java.util.Timer	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+javax.json.JsonArrayBuilder	public	jakarta.json:jakarta.json-api:1.1.6	subtyping	org.apache.johnzon:johnzon-core:1.1.11
+io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer	public	io.rest-assured:json-path:4.4.0	method call	org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.callsite.AbstractCallSite	public	org.codehaus.groovy:groovy:3.0.8	method call	io.rest-assured:json-path:4.4.0
+com.fasterxml.jackson.annotation.ObjectIdGenerator$IdKey	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	instantiation	com.fasterxml.jackson.core:jackson-databind:2.11.1
+org.codehaus.groovy.runtime.callsite.CallSiteArray	public	org.codehaus.groovy:groovy:3.0.8	instantiation	io.rest-assured:json-path:4.4.0
+org.codehaus.groovy.reflection.ClassInfo	public	org.codehaus.groovy:groovy:3.0.8	method call	io.rest-assured:json-path:4.4.0
+java.util.Iterator	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+javax.json.JsonException	public	jakarta.json:jakarta.json-api:1.1.6	instantiation	org.apache.johnzon:johnzon-core:1.1.11
+org.codehaus.groovy.runtime.callsite.StaticMetaMethodSite	public	org.codehaus.groovy:groovy:3.0.8	method call	io.rest-assured:json-path:4.4.0
+org.codehaus.groovy.runtime.typehandling.ShortTypeHandling	public	org.codehaus.groovy:groovy:3.0.8	method call	io.rest-assured:rest-assured-common:4.4.0
+com.fasterxml.jackson.core.json.ReaderBasedJsonParser	public	com.fasterxml.jackson.core:jackson-core:2.11.1	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+javax.json.bind.serializer.SerializationContext	public	jakarta.json.bind:jakarta.json.bind-api:1.0.2	subtyping	org.eclipse:yasson:1.0.6
+com.fasterxml.jackson.core.io.SerializedString	public	com.fasterxml.jackson.core:jackson-core:2.11.1	instantiation	com.fasterxml.jackson.core:jackson-databind:2.11.1
+javax.json.stream.JsonGeneratorFactory	public	jakarta.json:jakarta.json-api:1.1.6	subtyping	org.apache.johnzon:johnzon-core:1.1.11
+java.net.Socket	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+io.restassured.path.json.mapper.factory.Jackson1ObjectMapperFactory	public	io.rest-assured:json-path:4.4.0	Class.forName	org.codehaus.groovy:groovy:3.0.8
+java.net.URI	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+java.net.URL	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$692	public	org.codehaus.groovy:groovy:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+javax.json.bind.config.PropertyNamingStrategy	public	jakarta.json.bind:jakarta.json.bind-api:1.0.2	cast	org.eclipse:yasson:1.0.6
+groovy.lang.SpreadMap	public	org.codehaus.groovy:groovy:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+java.lang.reflect.Type	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+org.apache.groovy.io.StringBuilderWriter	public	org.codehaus.groovy:groovy:3.0.8	instantiation	org.codehaus.groovy:groovy-json:3.0.8
+org.codehaus.groovy.runtime.dgm$339	public	org.codehaus.groovy:groovy:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+com.fasterxml.jackson.annotation.JsonSetter	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+org.codehaus.jackson.map.ObjectMapper	public	org.codehaus.jackson:jackson-mapper-asl:1.9.11	Class.forName	org.codehaus.groovy:groovy:3.0.8
+org.codehaus.jackson.util.ByteArrayBuilder	public	org.codehaus.jackson:jackson-core-asl:1.9.11	instantiation	org.codehaus.jackson:jackson-mapper-asl:1.9.11
+io.restassured.path.json.mapping.JsonPathObjectDeserializer	public	io.rest-assured:json-path:4.4.0	Class.forName	org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.common.assertion.AssertionSupport	public	io.rest-assured:rest-assured-common:4.4.0	method call	org.codehaus.groovy:groovy:3.0.8
+java.io.BufferedInputStream	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+groovy.lang.IntRange	public	org.codehaus.groovy:groovy:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+com.fasterxml.jackson.annotation.JsonGetter	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+java.io.PrintWriter	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+java.util.Map$Entry	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.common.assertion.Assertion	public	io.rest-assured:rest-assured-common:4.4.0	subtyping	io.rest-assured:json-path:4.4.0
+org.codehaus.jackson.Versioned	public	org.codehaus.jackson:jackson-core-asl:1.9.11	subtyping	org.codehaus.jackson:jackson-mapper-asl:1.9.11
+java.io.BufferedWriter	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+io.restassured.common.mapper.DataToDeserialize	public	io.rest-assured:rest-assured-common:4.4.0	Class.forName	org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.path.json.mapping.JsonPathJsonbObjectDeserializer	public	io.rest-assured:json-path:4.4.0	method call	org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.path.json.mapping.JsonPathGsonObjectDeserializer	public	io.rest-assured:json-path:4.4.0	method call	org.codehaus.groovy:groovy:3.0.8
+javax.json.stream.JsonParser$Event	public	jakarta.json:jakarta.json-api:1.1.6	method call	org.apache.johnzon:johnzon-core:1.1.11
+org.codehaus.jackson.annotate.JsonSubTypes	public	org.codehaus.jackson:jackson-core-asl:1.9.11	cast	org.codehaus.jackson:jackson-mapper-asl:1.9.11
+org.codehaus.groovy.runtime.ArrayUtil	public	org.codehaus.groovy:groovy:3.0.8	method call	io.rest-assured:json-path:4.4.0
+javax.json.JsonString	public	jakarta.json:jakarta.json-api:1.1.6	cast	org.apache.johnzon:johnzon-mapper:1.1.11
+org.eclipse.yasson.internal.JsonBindingBuilder	public	org.eclipse:yasson:1.0.6	method call	io.rest-assured:json-path:4.4.0
+javax.json.bind.annotation.JsonbProperty	public	jakarta.json.bind:jakarta.json.bind-api:1.0.2	cast	org.eclipse:yasson:1.0.6
+groovy.lang.GroovyRuntimeException	public	org.codehaus.groovy:groovy:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+javax.json.JsonReader	public	jakarta.json:jakarta.json-api:1.1.6	subtyping	org.apache.johnzon:johnzon-core:1.1.11
+org.codehaus.jackson.io.SegmentedStringWriter	public	org.codehaus.jackson:jackson-core-asl:1.9.11	instantiation	org.codehaus.jackson:jackson-mapper-asl:1.9.11
+org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoMetaMethodSiteNoUnwrapNoCoerce	public	org.codehaus.groovy:groovy:3.0.8	method call	io.rest-assured:rest-assured-common:4.4.0
+com.fasterxml.jackson.databind.JavaType	public	com.fasterxml.jackson.core:jackson-databind:2.11.1	cast	io.rest-assured:json-path:4.4.0
+org.codehaus.groovy.runtime.callsite.GetEffectivePogoPropertySite	default	org.codehaus.groovy:groovy:3.0.8	method call	io.rest-assured:json-path:4.4.0
+groovy.lang.GroovyObject	public	org.codehaus.groovy:groovy:3.0.8	subtyping	io.rest-assured:rest-assured-common:4.4.0
+org.codehaus.jackson.annotate.JsonIgnoreProperties	public	org.codehaus.jackson:jackson-core-asl:1.9.11	cast	org.codehaus.jackson:jackson-mapper-asl:1.9.11
+java.lang.Character	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+org.codehaus.jackson.map.ObjectMapper	public	org.codehaus.jackson:jackson-mapper-asl:1.9.11	cast	io.rest-assured:json-path:4.4.0
+java.lang.String	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+com.fasterxml.jackson.annotation.JsonView	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+org.codehaus.groovy.vmplugin.v9.Java9	public	org.codehaus.groovy:groovy:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+groovy.lang.MetaMethod	public	org.codehaus.groovy:groovy:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+java.beans.ConstructorProperties	public	unknownLib	Class.forName	org.eclipse:yasson:1.0.6
+org.codehaus.jackson.JsonProcessingException	public	org.codehaus.jackson:jackson-core-asl:1.9.11	subtyping	org.codehaus.jackson:jackson-mapper-asl:1.9.11
+org.apache.johnzon.core.Experimental	public	org.apache.johnzon:johnzon-core:1.1.11	annotation	org.apache.johnzon:johnzon-mapper:1.1.11
+com.google.gson.Gson	public	com.google.code.gson:gson:2.6.2	Class.forName	io.rest-assured:rest-assured-common:4.4.0
+com.fasterxml.jackson.core.JsonProcessingException	public	com.fasterxml.jackson.core:jackson-core:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+com.fasterxml.jackson.annotation.JsonCreator	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+com.fasterxml.jackson.annotation.JsonManagedReference	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+org.codehaus.jackson.map.ObjectMapper	public	org.codehaus.jackson:jackson-mapper-asl:1.9.11	Class.forName	io.rest-assured:rest-assured-common:4.4.0
+com.fasterxml.jackson.annotation.JsonRawValue	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+javax.json.bind.serializer.JsonbDeserializer	public	jakarta.json.bind:jakarta.json.bind-api:1.0.2	cast	org.eclipse:yasson:1.0.6
+org.codehaus.groovy.runtime.GStringImpl	public	org.codehaus.groovy:groovy:3.0.8	instantiation	io.rest-assured:json-path:4.4.0
+javax.json.JsonReaderFactory	public	jakarta.json:jakarta.json-api:1.1.6	subtyping	org.apache.johnzon:johnzon-core:1.1.11
+java.lang.Comparable	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+javax.xml.datatype.XMLGregorianCalendar	public	javax.xml.datatype	cast	org.eclipse:yasson:1.0.6
+javax.json.bind.annotation.JsonbTypeAdapter	public	jakarta.json.bind:jakarta.json.bind-api:1.0.2	cast	org.eclipse:yasson:1.0.6
+org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce	public	org.codehaus.groovy:groovy:3.0.8	method call	io.rest-assured:json-path:4.4.0
+org.apache.johnzon.mapper.Mapper	public	org.apache.johnzon:johnzon-mapper:1.1.11	Class.forName	org.codehaus.groovy:groovy:3.0.8
+com.fasterxml.jackson.databind.JavaType	public	com.fasterxml.jackson.core:jackson-databind:2.11.1	Class.forName	org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.callsite.ClassMetaClassGetPropertySite	default	org.codehaus.groovy:groovy:3.0.8	method call	io.rest-assured:json-path:4.4.0
+com.fasterxml.jackson.annotation.JsonRootName	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.restassured.common.mapper.factory.ObjectMapperFactory	public	io.rest-assured:rest-assured-common:4.4.0	Class.forName	org.codehaus.groovy:groovy:3.0.8
+javax.json.bind.Jsonb	public	jakarta.json.bind:jakarta.json.bind-api:1.0.2	cast	io.rest-assured:json-path:4.4.0
+javax.json.bind.config.PropertyVisibilityStrategy	public	jakarta.json.bind:jakarta.json.bind-api:1.0.2	cast	org.eclipse:yasson:1.0.6
+java.io.ObjectOutputStream	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+java.lang.Number	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+java.util.TimerTask	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+groovy.json.JsonLexer	public	org.codehaus.groovy:groovy-json:3.0.8	cast	io.rest-assured:json-path:4.4.0
+com.fasterxml.jackson.annotation.JsonMerge	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+java.lang.Appendable	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+org.codehaus.jackson.io.SerializedString	public	org.codehaus.jackson:jackson-core-asl:1.9.11	cast	org.codehaus.jackson:jackson-mapper-asl:1.9.11
+com.fasterxml.jackson.core.type.ResolvedType	public	com.fasterxml.jackson.core:jackson-core:2.11.1	subtyping	com.fasterxml.jackson.core:jackson-databind:2.11.1
+com.fasterxml.jackson.annotation.JsonProperty$Access	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+java.io.File	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+org.codehaus.jackson.annotate.JacksonAnnotation	public	org.codehaus.jackson:jackson-core-asl:1.9.11	annotation	org.codehaus.jackson:jackson-mapper-asl:1.9.11
+org.codehaus.groovy.runtime.callsite.CallSite	public	org.codehaus.groovy:groovy:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+javax.json.JsonObject	public	jakarta.json:jakarta.json-api:1.1.6	cast	org.apache.johnzon:johnzon-core:1.1.11
+org.apache.johnzon.core.JsonStringImpl	default	org.apache.johnzon:johnzon-core:1.1.11	method call	jakarta.json:jakarta.json-api:1.1.6
+javax.json.bind.annotation.JsonbTypeSerializer	public	jakarta.json.bind:jakarta.json.bind-api:1.0.2	cast	org.eclipse:yasson:1.0.6
+org.apache.commons.lang3.StringUtils	public	org.apache.commons:commons-lang3:3.11	Class.forName	org.codehaus.groovy:groovy:3.0.8
+com.fasterxml.jackson.annotation.ObjectIdGenerator	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+org.codehaus.jackson.util.TokenBuffer	public	org.codehaus.jackson:jackson-core-asl:1.9.11	cast	org.codehaus.jackson:jackson-mapper-asl:1.9.11
+javax.json.bind.annotation.JsonbNillable	public	jakarta.json.bind:jakarta.json.bind-api:1.0.2	cast	org.eclipse:yasson:1.0.6
+java.lang.ThreadLocal	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+com.fasterxml.jackson.databind.ObjectMapper	public	com.fasterxml.jackson.core:jackson-databind:2.11.1	Class.forName	io.rest-assured:rest-assured-common:4.4.0
+org.codehaus.jackson.impl.JsonParserMinimalBase	public	org.codehaus.jackson:jackson-core-asl:1.9.11	subtyping	org.codehaus.jackson:jackson-mapper-asl:1.9.11
+org.apache.johnzon.mapper.MapperBuilder	public	org.apache.johnzon:johnzon-mapper:1.1.11	instantiation	io.rest-assured:json-path:4.4.0
+com.fasterxml.jackson.databind.ObjectMapper	public	com.fasterxml.jackson.core:jackson-databind:2.11.1	cast	io.rest-assured:json-path:4.4.0
+io.restassured.path.json.config.JsonPathConfig$NumberReturnType	public	io.rest-assured:json-path:4.4.0	Class.forName	org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.typehandling.DefaultTypeTransformation	public	org.codehaus.groovy:groovy:3.0.8	method call	io.rest-assured:json-path:4.4.0
+com.fasterxml.jackson.core.filter.JsonPointerBasedFilter	public	com.fasterxml.jackson.core:jackson-core:2.11.1	instantiation	com.fasterxml.jackson.core:jackson-databind:2.11.1
+java.util.Random	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+javax.json.JsonArray	public	jakarta.json:jakarta.json-api:1.1.6	subtyping	org.apache.johnzon:johnzon-core:1.1.11
+javax.json.bind.serializer.JsonbSerializer	public	jakarta.json.bind:jakarta.json.bind-api:1.0.2	subtyping	org.eclipse:yasson:1.0.6
+com.fasterxml.jackson.databind.MappingJsonFactory	public	com.fasterxml.jackson.core:jackson-databind:2.11.1	method call	com.fasterxml.jackson.core:jackson-core:2.11.1
+java.io.ObjectInputStream	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+org.apache.commons.lang3.math.NumberUtils	public	org.apache.commons:commons-lang3:3.11	Class.forName	org.codehaus.groovy:groovy:3.0.8
+groovy.util.Expando	public	org.codehaus.groovy:groovy:3.0.8	cast	org.codehaus.groovy:groovy-json:3.0.8
+javax.json.JsonValue	public	jakarta.json:jakarta.json-api:1.1.6	cast	org.apache.johnzon:johnzon-core:1.1.11
+io.restassured.common.mapper.factory.ObjectMapperFactory	public	io.rest-assured:rest-assured-common:4.4.0	subtyping	io.rest-assured:json-path:4.4.0
+org.codehaus.jackson.util.DefaultPrettyPrinter	public	org.codehaus.jackson:jackson-core-asl:1.9.11	instantiation	org.codehaus.jackson:jackson-mapper-asl:1.9.11
+com.fasterxml.jackson.annotation.JsonValue	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+org.codehaus.groovy.runtime.typehandling.ShortTypeHandling	public	org.codehaus.groovy:groovy:3.0.8	method call	io.rest-assured:json-path:4.4.0
+com.fasterxml.jackson.databind.ObjectMapper	public	com.fasterxml.jackson.core:jackson-databind:2.11.1	Class.forName	org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.callsite.AbstractCallSite	public	org.codehaus.groovy:groovy:3.0.8	method call	io.rest-assured:rest-assured-common:4.4.0
+com.fasterxml.jackson.annotation.JsonIgnoreProperties$Value	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+org.codehaus.jackson.JsonGenerationException	public	org.codehaus.jackson:jackson-core-asl:1.9.11	instantiation	org.codehaus.jackson:jackson-mapper-asl:1.9.11
+org.codehaus.groovy.runtime.ScriptBytecodeAdapter	public	org.codehaus.groovy:groovy:3.0.8	method call	io.rest-assured:rest-assured-common:4.4.0
+com.fasterxml.jackson.core.JsonProcessingException	public	com.fasterxml.jackson.core:jackson-core:2.11.1	subtyping	com.fasterxml.jackson.core:jackson-databind:2.11.1
+com.fasterxml.jackson.annotation.JacksonInject	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+org.codehaus.groovy.runtime.callsite.GetEffectivePojoPropertySite	public	org.codehaus.groovy:groovy:3.0.8	method call	io.rest-assured:rest-assured-common:4.4.0
+org.codehaus.jackson.map.MappingJsonFactory	public	org.codehaus.jackson:jackson-mapper-asl:1.9.11	method call	org.codehaus.jackson:jackson-core-asl:1.9.11
+javax.json.JsonNumber	public	jakarta.json:jakarta.json-api:1.1.6	cast	org.apache.johnzon:johnzon-mapper:1.1.11
+javax.json.JsonArray	public	jakarta.json:jakarta.json-api:1.1.6	cast	org.apache.johnzon:johnzon-mapper:1.1.11
+com.fasterxml.jackson.annotation.JsonFilter	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.restassured.internal.common.path.ObjectConverter	public	io.rest-assured:rest-assured-common:4.4.0	method call	org.codehaus.groovy:groovy:3.0.8
+com.fasterxml.jackson.core.ObjectCodec	public	com.fasterxml.jackson.core:jackson-core:2.11.1	subtyping	com.fasterxml.jackson.core:jackson-databind:2.11.1
+java.lang.Integer	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+java.io.DataInputStream	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.memoize.CommonCache	public	org.codehaus.groovy:groovy:3.0.8	method call	org.codehaus.groovy:groovy-json:3.0.8
+com.fasterxml.jackson.annotation.JsonSetter$Value	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+javax.json.stream.JsonParser	public	jakarta.json:jakarta.json-api:1.1.6	subtyping	org.eclipse:yasson:1.0.6
+io.restassured.internal.common.assertion.PathFragmentEscaper	public	io.rest-assured:rest-assured-common:4.4.0	Class.forName	org.codehaus.groovy:groovy:3.0.8
+javax.json.JsonObject	public	jakarta.json:jakarta.json-api:1.1.6	subtyping	org.apache.johnzon:johnzon-core:1.1.11
+org.codehaus.groovy.runtime.dgm$611	public	org.codehaus.groovy:groovy:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+org.codehaus.jackson.annotate.JsonTypeInfo	public	org.codehaus.jackson:jackson-core-asl:1.9.11	cast	org.codehaus.jackson:jackson-mapper-asl:1.9.11
+org.codehaus.jackson.JsonFactory	public	org.codehaus.jackson:jackson-core-asl:1.9.11	subtyping	org.codehaus.jackson:jackson-mapper-asl:1.9.11
+groovy.json.JsonBuilder	public	org.codehaus.groovy:groovy-json:3.0.8	method call	io.rest-assured:json-path:4.4.0
+org.codehaus.groovy.runtime.dgm$977	public	org.codehaus.groovy:groovy:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$975	public	org.codehaus.groovy:groovy:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+com.fasterxml.jackson.annotation.ObjectIdResolver	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+java.util.AbstractCollection	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.common.assertion.AssertionSupport$3	public	io.rest-assured:rest-assured-common:4.4.0	method call	org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.common.assertion.AssertionSupport$4	public	io.rest-assured:rest-assured-common:4.4.0	method call	org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.common.assertion.AssertionSupport$1	public	io.rest-assured:rest-assured-common:4.4.0	method call	org.codehaus.groovy:groovy:3.0.8
+java.io.Reader	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.common.assertion.AssertionSupport$2	public	io.rest-assured:rest-assured-common:4.4.0	method call	org.codehaus.groovy:groovy:3.0.8
+java.lang.Short	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+com.google.gson.Gson	public	com.google.code.gson:gson:2.6.2	Class.forName	org.codehaus.groovy:groovy:3.0.8
+java.lang.Boolean	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.common.assertion.AssertionSupport$7	public	io.rest-assured:rest-assured-common:4.4.0	method call	org.codehaus.groovy:groovy:3.0.8
+com.fasterxml.jackson.annotation.JsonIdentityReference	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+org.codehaus.groovy.runtime.callsite.CallSiteArray	public	org.codehaus.groovy:groovy:3.0.8	cast	io.rest-assured:json-path:4.4.0
+com.fasterxml.jackson.annotation.JsonTypeInfo	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrap	public	org.codehaus.groovy:groovy:3.0.8	method call	io.rest-assured:json-path:4.4.0
+com.fasterxml.jackson.annotation.JacksonAnnotation	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	annotation	com.fasterxml.jackson.core:jackson-databind:2.11.1
+org.apache.commons.lang3.Validate	public	org.apache.commons:commons-lang3:3.11	method call	org.codehaus.groovy:groovy:3.0.8
+com.fasterxml.jackson.annotation.JsonPropertyOrder	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+java.lang.Module	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+java.util.concurrent.BlockingQueue	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+javax.json.stream.JsonParserFactory	public	jakarta.json:jakarta.json-api:1.1.6	subtyping	org.apache.johnzon:johnzon-core:1.1.11
+java.lang.Object	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+javax.json.stream.JsonParsingException	public	jakarta.json:jakarta.json-api:1.1.6	instantiation	org.apache.johnzon:johnzon-core:1.1.11
+com.fasterxml.jackson.core.JsonFactory	public	com.fasterxml.jackson.core:jackson-core:2.11.1	subtyping	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.restassured.internal.common.assertion.AssertParameter	public	io.rest-assured:rest-assured-common:4.4.0	method call	io.rest-assured:json-path:4.4.0
+java.util.Enumeration	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+groovy.util.BufferedIterator	public	org.codehaus.groovy:groovy:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+groovy.json.JsonBuilder	public	org.codehaus.groovy:groovy-json:3.0.8	instantiation	io.rest-assured:json-path:4.4.0
+com.fasterxml.jackson.annotation.JsonFormat$Value	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+java.util.Map	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+java.lang.Long	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+groovy.lang.groovydoc.Groovydoc	public	org.codehaus.groovy:groovy:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+org.codehaus.jackson.annotate.JsonManagedReference	public	org.codehaus.jackson:jackson-core-asl:1.9.11	cast	org.codehaus.jackson:jackson-mapper-asl:1.9.11
+org.apache.johnzon.core.JsonProviderImpl	public	org.apache.johnzon:johnzon-core:1.1.11	method call	org.eclipse:yasson:1.0.6
+com.fasterxml.jackson.core.util.Instantiatable	public	com.fasterxml.jackson.core:jackson-core:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+com.fasterxml.jackson.annotation.JsonUnwrapped	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+com.fasterxml.jackson.annotation.JsonIdentityInfo	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+com.fasterxml.jackson.core.JsonLocation	public	com.fasterxml.jackson.core:jackson-core:2.11.1	instantiation	com.fasterxml.jackson.core:jackson-databind:2.11.1
+org.apache.johnzon.core.JsonObjectImpl	default	org.apache.johnzon:johnzon-core:1.1.11	method call	jakarta.json:jakarta.json-api:1.1.6
+java.util.List	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+com.fasterxml.jackson.core.TreeNode	public	com.fasterxml.jackson.core:jackson-core:2.11.1	subtyping	com.fasterxml.jackson.core:jackson-databind:2.11.1
+com.fasterxml.jackson.annotation.JsonProperty	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+groovy.lang.Writable	public	org.codehaus.groovy:groovy:3.0.8	subtyping	org.codehaus.groovy:groovy-json:3.0.8
+javax.json.bind.JsonbConfig	public	jakarta.json.bind:jakarta.json.bind-api:1.0.2	method call	org.eclipse:yasson:1.0.6
+java.lang.CharSequence	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+groovy.lang.Closure	public	org.codehaus.groovy:groovy:3.0.8	subtyping	io.rest-assured:json-path:4.4.0
+groovy.lang.ListWithDefault	public	org.codehaus.groovy:groovy:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+groovy.lang.Closure	public	org.codehaus.groovy:groovy:3.0.8	cast	org.codehaus.groovy:groovy-json:3.0.8
+javax.json.bind.config.PropertyVisibilityStrategy	public	jakarta.json.bind:jakarta.json.bind-api:1.0.2	subtyping	org.eclipse:yasson:1.0.6
+javax.json.spi.JsonProvider	public	jakarta.json:jakarta.json-api:1.1.6	subtyping	org.glassfish:jakarta.json:module
+io.restassured.common.mapper.ObjectDeserializationContext	public	io.rest-assured:rest-assured-common:4.4.0	Class.forName	org.codehaus.groovy:groovy:3.0.8
+com.fasterxml.jackson.core.util.ByteArrayBuilder	public	com.fasterxml.jackson.core:jackson-core:2.11.1	instantiation	com.fasterxml.jackson.core:jackson-databind:2.11.1
+java.net.ServerSocket	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+java.lang.StringBuffer	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoMetaMethodSiteNoUnwrapNoCoerce	public	org.codehaus.groovy:groovy:3.0.8	method call	io.rest-assured:json-path:4.4.0
+io.restassured.internal.path.json.mapping.JsonObjectDeserializer	public	io.rest-assured:json-path:4.4.0	Class.forName	org.codehaus.groovy:groovy:3.0.8
+javax.json.JsonObject	public	jakarta.json:jakarta.json-api:1.1.6	cast	org.apache.johnzon:johnzon-mapper:1.1.11
+org.codehaus.jackson.annotate.JsonUnwrapped	public	org.codehaus.jackson:jackson-core-asl:1.9.11	cast	org.codehaus.jackson:jackson-mapper-asl:1.9.11
+com.fasterxml.jackson.core.filter.FilteringParserDelegate	public	com.fasterxml.jackson.core:jackson-core:2.11.1	instantiation	com.fasterxml.jackson.core:jackson-databind:2.11.1
+javax.json.JsonString	public	jakarta.json:jakarta.json-api:1.1.6	cast	org.apache.johnzon:johnzon-core:1.1.11
+org.codehaus.groovy.runtime.callsite.CallSiteArray	public	org.codehaus.groovy:groovy:3.0.8	cast	io.rest-assured:rest-assured-common:4.4.0
+org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite	public	org.codehaus.groovy:groovy:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+org.codehaus.jackson.type.JavaType	public	org.codehaus.jackson:jackson-core-asl:1.9.11	Class.forName	org.codehaus.groovy:groovy:3.0.8
+org.codehaus.jackson.annotate.JsonSetter	public	org.codehaus.jackson:jackson-core-asl:1.9.11	cast	org.codehaus.jackson:jackson-mapper-asl:1.9.11
+org.codehaus.groovy.runtime.callsite.StaticMetaMethodSite	public	org.codehaus.groovy:groovy:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+org.codehaus.jackson.annotate.JsonGetter	public	org.codehaus.jackson:jackson-core-asl:1.9.11	cast	org.codehaus.jackson:jackson-mapper-asl:1.9.11
+java.util.regex.Pattern	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+java.io.InputStream	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+groovy.io.LineColumnReader	public	org.codehaus.groovy:groovy:3.0.8	method call	org.codehaus.groovy:groovy-json:3.0.8
+org.apache.johnzon.mapper.Mapper	public	org.apache.johnzon:johnzon-mapper:1.1.11	cast	io.rest-assured:json-path:4.4.0
+java.util.Deque	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+io.restassured.common.exception.PathException	public	io.rest-assured:rest-assured-common:4.4.0	subtyping	io.rest-assured:json-path:4.4.0
+groovy.json.JsonLexer	public	org.codehaus.groovy:groovy-json:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+javax.json.bind.spi.JsonbProvider	public	jakarta.json.bind:jakarta.json.bind-api:1.0.2	subtyping	org.eclipse:yasson:1.0.6
+org.eclipse.yasson.JsonBindingProvider	public	org.eclipse:yasson:1.0.6	Class.forName	io.rest-assured:rest-assured-common:4.4.0
+groovy.io.LineColumnReader	public	org.codehaus.groovy:groovy:3.0.8	cast	org.codehaus.groovy:groovy-json:3.0.8
+com.fasterxml.jackson.core.json.JsonReadFeature	public	com.fasterxml.jackson.core:jackson-core:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+com.fasterxml.jackson.annotation.JsonFormat	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+org.codehaus.jackson.type.JavaType	public	org.codehaus.jackson:jackson-core-asl:1.9.11	cast	org.codehaus.jackson:jackson-mapper-asl:1.9.11
+groovy.json.JsonTokenType$1	default	org.codehaus.groovy:groovy-json:3.0.8	method call	org.codehaus.groovy:groovy:3.0.8
+org.apache.johnzon.mapper.Mapper	public	org.apache.johnzon:johnzon-mapper:1.1.11	Class.forName	io.rest-assured:rest-assured-common:4.4.0
+java.io.OutputStream	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+io.restassured.common.mapper.DataToDeserialize	public	io.rest-assured:rest-assured-common:4.4.0	subtyping	io.rest-assured:json-path:4.4.0
+org.apache.commons.lang3.Validate	public	org.apache.commons:commons-lang3:3.11	Class.forName	org.codehaus.groovy:groovy:3.0.8
+java.io.Writer	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+io.restassured.internal.common.assertion.HyphenQuoteFragmentEscaper	public	io.rest-assured:rest-assured-common:4.4.0	method call	org.codehaus.groovy:groovy:3.0.8
+org.codehaus.jackson.annotate.JsonAutoDetect	public	org.codehaus.jackson:jackson-core-asl:1.9.11	cast	org.codehaus.jackson:jackson-mapper-asl:1.9.11
+javax.json.spi.JsonProvider	public	jakarta.json:jakarta.json-api:1.1.6	subtyping	org.apache.johnzon:johnzon-core:1.1.11
+java.lang.ClassLoader	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+groovy.lang.Writable	public	org.codehaus.groovy:groovy:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+java.io.Closeable	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$12	public	org.codehaus.groovy:groovy:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.dgm$14	public	org.codehaus.groovy:groovy:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+com.fasterxml.jackson.annotation.JsonInclude$Value	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+org.codehaus.groovy.runtime.dgm$17	public	org.codehaus.groovy:groovy:3.0.8	Class.forName	org.codehaus.groovy:groovy:3.0.8
+org.apache.johnzon.core.JsonProviderImpl	public	org.apache.johnzon:johnzon-core:1.1.11	method call	org.apache.johnzon:johnzon-mapper:1.1.11
+java.util.SortedMap	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+org.codehaus.jackson.ObjectCodec	public	org.codehaus.jackson:jackson-core-asl:1.9.11	subtyping	org.codehaus.jackson:jackson-mapper-asl:1.9.11
+org.eclipse.yasson.JsonBindingProvider	public	org.eclipse:yasson:1.0.6	method call	io.rest-assured:json-path:4.4.0
+com.fasterxml.jackson.annotation.ObjectIdGenerators$PropertyGenerator	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	subtyping	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.restassured.path.json.mapper.factory.Jackson2ObjectMapperFactory	public	io.rest-assured:json-path:4.4.0	Class.forName	org.codehaus.groovy:groovy:3.0.8
+com.fasterxml.jackson.annotation.JsonClassDescription	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+javax.json.bind.serializer.DeserializationContext	public	jakarta.json.bind:jakarta.json.bind-api:1.0.2	subtyping	org.eclipse:yasson:1.0.6
+org.codehaus.jackson.annotate.JsonIgnore	public	org.codehaus.jackson:jackson-core-asl:1.9.11	cast	org.codehaus.jackson:jackson-mapper-asl:1.9.11
+java.lang.Iterable	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:3.0.8
+org.codehaus.groovy.runtime.typehandling.DefaultTypeTransformation	public	org.codehaus.groovy:groovy:3.0.8	method call	io.rest-assured:rest-assured-common:4.4.0
+javax.json.JsonObjectBuilder	public	jakarta.json:jakarta.json-api:1.1.6	subtyping	org.apache.johnzon:johnzon-core:1.1.11
+org.codehaus.groovy.runtime.GStringImpl	public	org.codehaus.groovy:groovy:3.0.8	instantiation	io.rest-assured:rest-assured-common:4.4.0
+org.codehaus.jackson.annotate.JsonRawValue	public	org.codehaus.jackson:jackson-core-asl:1.9.11	cast	org.codehaus.jackson:jackson-mapper-asl:1.9.11

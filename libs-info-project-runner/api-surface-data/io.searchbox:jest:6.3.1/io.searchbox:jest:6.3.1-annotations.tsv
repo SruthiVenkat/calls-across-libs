@@ -1,0 +1,9 @@
+Class	Method	Field Name:Field Signature	Annotated In Library	Annotation	Annotation Visibility	Annotation Library	Count
+org.apache.logging.log4j.message.ReusableParameterizedMessage	-	-	org.apache.logging.log4j.message	org.apache.logging.log4j.util.PerformanceSensitive(value={"allocation"})	public	org.apache.logging.log4j.util	1
+org.apache.http.impl.cookie.RFC2109Spec	-	-	org.apache.httpcomponents:httpclient:4.5.3	org.apache.http.annotation.Obsolete	public	org.apache.httpcomponents:httpcore:4.4.5	1
+org.apache.http.impl.cookie.NetscapeDraftSpecProvider	-	-	org.apache.httpcomponents:httpclient:4.5.3	org.apache.http.annotation.Obsolete	public	org.apache.httpcomponents:httpcore:4.4.5	1
+org.apache.http.impl.cookie.NetscapeDraftSpec	-	-	org.apache.httpcomponents:httpclient:4.5.3	org.apache.http.annotation.Obsolete	public	org.apache.httpcomponents:httpcore:4.4.5	1
+org.apache.logging.log4j.message.ReusableMessageFactory	-	-	org.apache.logging.log4j.message	org.apache.logging.log4j.util.PerformanceSensitive(value={"allocation"})	public	org.apache.logging.log4j.util	1
+org.apache.logging.log4j.message.ReusableMessage	-	-	org.apache.logging.log4j.message	org.apache.logging.log4j.util.PerformanceSensitive(value={"allocation"})	public	org.apache.logging.log4j.util	1
+org.apache.logging.log4j.message.ReusableObjectMessage	-	-	org.apache.logging.log4j.message	org.apache.logging.log4j.util.PerformanceSensitive(value={"allocation"})	public	org.apache.logging.log4j.util	1
+org.apache.http.impl.cookie.RFC2965Spec	-	-	org.apache.httpcomponents:httpclient:4.5.3	org.apache.http.annotation.Obsolete	public	org.apache.httpcomponents:httpcore:4.4.5	1

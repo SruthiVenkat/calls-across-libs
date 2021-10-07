@@ -1,0 +1,6 @@
+SubClass	Sub Library	Super Class/Interface	Super Class/Interface Visibility	Super Library	Count
+javax.xml.parsers.SecuritySupport$1	javax.xml.parsers	java.security.PrivilegedAction	public	java.security	1
+javax.xml.parsers.SecuritySupport$2	javax.xml.parsers	java.security.PrivilegedAction	public	java.security	1
+javax.xml.parsers.SecuritySupport$5	javax.xml.parsers	java.security.PrivilegedAction	public	java.security	1
+org.junit.internal.AssumptionViolatedException	junit:junit:4.12	org.hamcrest.SelfDescribing	public	org.hamcrest:hamcrest-core:1.3	1
+javax.xml.parsers.FactoryFinder$1	javax.xml.parsers	java.security.PrivilegedAction	public	java.security	1
