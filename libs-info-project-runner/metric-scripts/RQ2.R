@@ -26,24 +26,25 @@ for (i in seq_along(file_list)) {
 
 # RQ2 - serviceBypassCalls
 file_list = list.files(path="Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data", recursive = TRUE, pattern="*-serviceBypassCalls.tsv", full.names = TRUE)
-writeLines("CallerLibrary\tInterfaceLibrary\tInterfaceName\tCallerMethod\tCalleeMethod\tImplName\tCounts","Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data/RQ2-serviceBypassCalls.tsv")
+writeLines("CallerLibrary\tCallerMethod\tInterfaceLibrary\tInterfaceName\tImplName\tCalleeMethod\tCounts","Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data/RQ2-serviceBypassCalls.tsv")
 for (i in seq_along(file_list)) {
   filename = file_list[[i]]
   print(filename)
   df <- read.csv(filename, sep='\t')
-  counts = df %>% group_by(Caller.Library, Interface.Library, Interface.Name, Caller.Method, Callee.Method, Impl..Name) %>% summarise(Count = n())
+  counts = df %>% group_by(Caller.Library, Caller.Method, Interface.Library, Interface.Name, Impl..Name, Callee.Method ) %>% summarise(Count = n())
   print(counts)
   write.table(counts,"Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data/RQ2-serviceBypassCalls.tsv",sep="\t",row.names=FALSE, col.names=FALSE, append=TRUE)
 }
 
 # RQ2d - setAccessible
 file_list = list.files(path="Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data", recursive = TRUE, pattern="*-setAccessibleCalls.tsv", full.names = TRUE)
-writeLines("CallerLibrary\tCalleeLibrary\tCallerMethod\tsetAccessible.CalledOn\tVisibility\tCallerName\tFieldSignature\tCounts","Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data/RQ2-setAccessibleCalls.tsv")
+writeLines("CallerLibrary\tCallerMethod\tCalleeLibrary\tsetAccessible.CalledOn\tVisibility\tCalleeName\tFieldSignature\tCounts","Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data/RQ2-setAccessibleCalls.tsv")
 for (i in seq_along(file_list)) {
   filename = file_list[[i]]
   print(filename)
   df <- read.csv(filename, sep='\t')
-  counts = df %>% group_by(Caller.Library, Callee.Library, Caller.Method, setAccessible.Called.On, Visibility, Callee.Name, Field.Signature) %>% summarise(Count = n())
+  df <- df[df$Caller.Library != df$Callee.Library, ]
+  counts = df %>% group_by(Caller.Library, Caller.Method, Callee.Library, setAccessible.Called.On, Visibility, Callee.Name, Field.Signature) %>% summarise(Count = n())
   print(counts)
   write.table(counts,"Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data/RQ2-setAccessibleCalls.tsv",sep="\t",row.names=FALSE, col.names=FALSE, append=TRUE)
 }

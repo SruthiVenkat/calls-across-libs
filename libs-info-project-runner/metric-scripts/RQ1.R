@@ -15,7 +15,7 @@ for (i in seq_along(file_list)) {
 
 # Reflective Fields
 file_list = list.files(path="Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data", recursive = TRUE, pattern="*-fields.tsv", full.names = TRUE)
-writeLines("CallerLibrary\tFieldLibrary\tFieldName\tFieldSignature\tVisibility\tStatic\tCounts","Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data/RQ1-fields.tsv")
+writeLines("ClientLibrary\tFieldLibrary\tFieldName\tFieldSignature\tVisibility\tStatic\tCounts","Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data/RQ1-fields.tsv")
 for (i in seq_along(file_list)) {
   filename = file_list[[i]]
   print(filename)
