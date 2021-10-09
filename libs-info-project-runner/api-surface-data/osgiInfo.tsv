@@ -74,6 +74,7 @@ org.apache.commons:commons-collections4:4.4	org.apache.commons.collections4.trie
  com.fasterxml.jackson.core:jackson-core:2.12.3	com.fasterxml.jackson.core.util	"com.fasterxml.jackson.core,com.fasterxml.jackson.core.io"
 org.slf4j:slf4j-api:1.7.22	org.slf4j	
 org.slf4j:slf4j-api:1.7.22	org.slf4j.spi	
+org.slf4j:slf4j-api:1.7.22	org.slf4j.event	
 org.slf4j:slf4j-api:1.7.22	org.slf4j.helpers	
 com.google.code.gson:gson:2.2.4	com.google.gson	"com.google.gson.reflect,com.google.gson.stream"
 com.google.code.gson:gson:2.2.4	com.google.gson.annotations	

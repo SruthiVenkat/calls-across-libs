@@ -1,0 +1,3 @@
+CallerLibrary	Callee	CalleeLibrary	CalleeType
+"us.codecraft:xsoup:0.3.2"	"org.jsoup.nodes.Element::toString()Ljava/lang/String;"	"org.jsoup:jsoup:1.13.1"	"method call"
+"us.codecraft:xsoup:0.3.2"	"org.jsoup.nodes.Element::toString()Ljava/lang/String;"	"org.jsoup:jsoup:1.13.1"	"method call"
