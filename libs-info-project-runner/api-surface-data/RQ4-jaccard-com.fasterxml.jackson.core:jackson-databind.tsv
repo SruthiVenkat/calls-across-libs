@@ -1,0 +1,13 @@
+Client A/Client B	com.capitalone.dashboard:core 	com.fasterxml.jackson.core 	com.fasterxml.jackson.core:jackson-core 	com.fasterxml.jackson.datatype:jackson-datatype-jdk8 	com.fasterxml.jackson.datatype:jackson-datatype-jsr310 	com.googlecode.ez-vcard:ez-vcard 	io.rest-assured:json-path 	io.springside:springside-utils 	net.javacrumbs.json-unit:json-unit-core 	org.springframework:spring-web 	org.springframework.data:spring-data-redis 	org.thymeleaf:thymeleaf
+com.capitalone.dashboard:core	1	0.00934579439252336	0	0	0	0	0	0	0	0	0	0
+com.fasterxml.jackson.core	0.00934579439252336	1	0.136363636363636	0	0	0	0	0	0	0	0	0
+com.fasterxml.jackson.core:jackson-core	0	0.136363636363636	1	0	0	0	0	0	0	0	0	0
+com.fasterxml.jackson.datatype:jackson-datatype-jdk8	0	0	0	1	0	0	0	0	0	0	0	0
+com.fasterxml.jackson.datatype:jackson-datatype-jsr310	0	0	0	0	1	0	0	0	0	0	0	0
+com.googlecode.ez-vcard:ez-vcard	0	0	0	0	0	1	0	0	0	0	0	0
+io.rest-assured:json-path	0	0	0	0	0	0	1	0	0	0	0	0
+io.springside:springside-utils	0	0	0	0	0	0	0	1	0	0	0	0
+net.javacrumbs.json-unit:json-unit-core	0	0	0	0	0	0	0	0	1	0	0	0
+org.springframework:spring-web	0	0	0	0	0	0	0	0	0	1	0	0
+org.springframework.data:spring-data-redis	0	0	0	0	0	0	0	0	0	0	1	0.09090909
+org.thymeleaf:thymeleaf	0	0	0	0	0	0	0	0	0	0	0.0909090909090909	1

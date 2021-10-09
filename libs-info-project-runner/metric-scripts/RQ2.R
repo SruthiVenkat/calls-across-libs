@@ -43,7 +43,7 @@ for (i in seq_along(file_list)) {
   filename = file_list[[i]]
   print(filename)
   df <- read.csv(filename, sep='\t')
-  df <- df[df$Caller.Library != df$Callee.Library, ]
+  df <- df[df$Caller.Library != df$Callee.Library && !"Test" %in% df$Caller.Method && !"Test" %in%  df$Callee.Name, ]
   counts = df %>% group_by(Caller.Library, Caller.Method, Callee.Library, setAccessible.Called.On, Visibility, Callee.Name, Field.Signature) %>% summarise(Count = n())
   print(counts)
   write.table(counts,"Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data/RQ2-setAccessibleCalls.tsv",sep="\t",row.names=FALSE, col.names=FALSE, append=TRUE)

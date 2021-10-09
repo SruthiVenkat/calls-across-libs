@@ -1,0 +1,6 @@
+Client A/Client B	cn.wanghaomiao:JsoupXpath 	com.googlecode.ez-vcard:ez-vcard 	tech.tablesaw:tablesaw-html 	us.codecraft:webmagic-core 	us.codecraft:xsoup
+cn.wanghaomiao:JsoupXpath	1	0.255813953488372	0.03125	0.0975609756097561	0.1791045
+com.googlecode.ez-vcard:ez-vcard	0.255813953488372	1	0.0384615384615385	0.181818181818182	0.1587302
+tech.tablesaw:tablesaw-html	0.03125	0.0384615384615385	1	0	0.01960784
+us.codecraft:webmagic-core	0.0975609756097561	0.181818181818182	0	1	0.1034483
+us.codecraft:xsoup	0.17910447761194	0.158730158730159	0.0196078431372549	0.103448275862069	1

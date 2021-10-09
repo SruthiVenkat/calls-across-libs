@@ -1,0 +1,13 @@
+Client A/Client B	org.apache.cxf:cxf-core 	org.apache.cxf:cxf-rt-frontend-jaxrs 	org.apache.rocketmq:rocketmq-acl 	org.apache.rocketmq:rocketmq-common 	org.apache.rocketmq:rocketmq-remoting 	org.glassfish.jersey.core:jersey-common 	org.springframework:spring-context 	org.springframework:spring-messaging 	org.springframework:spring-web 	org.springframework:spring-webmvc 	org.springframework:spring-websocket 	us.codecraft:webmagic-core
+org.apache.cxf:cxf-core	1	0	0	0	0	0	0	0	0.0294117647058824	0	0	0
+org.apache.cxf:cxf-rt-frontend-jaxrs	0	1	0	0	0	0.666666666666667	0	0	0	0	0	0
+org.apache.rocketmq:rocketmq-acl	0	0	1	0	0	0	0	0	0	0	0	0
+org.apache.rocketmq:rocketmq-common	0	0	0	1	0	0	0	0	0.0285714285714286	0	0	0.5
+org.apache.rocketmq:rocketmq-remoting	0	0	0	0	1	0	0	0	0	0	0	0
+org.glassfish.jersey.core:jersey-common	0	0.666666666666667	0	0	0	1	0	0	0	0	0	0
+org.springframework:spring-context	0	0	0	0	0	0	1	0	0.027027027027027	0	0	0
+org.springframework:spring-messaging	0	0	0	0	0	0	0	1	0	0	0	0
+org.springframework:spring-web	0.0294117647058824	0	0	0.0285714285714286	0	0	0.027027027027027	0	1	0.0517241379310345	0	0.02941176
+org.springframework:spring-webmvc	0	0	0	0	0	0	0	0	0.0517241379310345	1	0	0
+org.springframework:spring-websocket	0	0	0	0	0	0	0	0	0	0	1	0
+us.codecraft:webmagic-core	0	0	0	0.5	0	0	0	0	0.0294117647058824	0	0	1
