@@ -1,7 +1,7 @@
-Callee Library	Field Name	Declared Class	Actual Class	Field Signature	Static	Visibility	Field Library	Reflective	Count
-com.squareup.okhttp3:okhttp:3.12.12	okio.Timeout::NONE	okio.Timeout	okio.Timeout	okio.Timeout	true	public	com.squareup.okio:okio:1.15.0	false	1
-io.socket:socket.io-client:2.0.1	org.json.JSONObject::NULL	org.json.JSONObject	org.json.JSONObject	java.lang.Object	true	public	org.json:json:20090211	false	1
-com.squareup.okhttp3:okhttp:3.12.12	okio.Buffer$UnsafeCursor::start	okio.Buffer$UnsafeCursor	okio.Buffer$UnsafeCursor	int	false	public	com.squareup.okio:okio:1.15.0	false	215
-com.squareup.okhttp3:okhttp:3.12.12	okio.ByteString::EMPTY	okio.ByteString	okio.ByteString	okio.ByteString	true	public	com.squareup.okio:okio:1.15.0	false	2
-com.squareup.okhttp3:okhttp:3.12.12	okio.Buffer$UnsafeCursor::end	okio.Buffer$UnsafeCursor	okio.Buffer$UnsafeCursor	int	false	public	com.squareup.okio:okio:1.15.0	false	215
-com.squareup.okhttp3:okhttp:3.12.12	okio.Buffer$UnsafeCursor::data	okio.Buffer$UnsafeCursor	okio.Buffer$UnsafeCursor	byte[]	false	public	com.squareup.okio:okio:1.15.0	false	215
+Caller Library	Field Name	Declared Class	Actual Class	Field Signature	Static	Visibility	Field Library	Reflective	Count
+com.squareup.okhttp3:okhttp:3.12.12	okio.Timeout::NONE	okio.Timeout	okio.Timeout	okio.Timeout	TRUE	public	com.squareup.okio:okio:1.15.0	FALSE	1
+io.socket:socket.io-client:2.0.1	org.json.JSONObject::NULL	org.json.JSONObject	org.json.JSONObject	java.lang.Object	TRUE	public	org.json:json:20090211	FALSE	1
+com.squareup.okhttp3:okhttp:3.12.12	okio.Buffer$UnsafeCursor::start	okio.Buffer$UnsafeCursor	okio.Buffer$UnsafeCursor	int	FALSE	public	com.squareup.okio:okio:1.15.0	FALSE	215
+com.squareup.okhttp3:okhttp:3.12.12	okio.ByteString::EMPTY	okio.ByteString	okio.ByteString	okio.ByteString	TRUE	public	com.squareup.okio:okio:1.15.0	FALSE	2
+com.squareup.okhttp3:okhttp:3.12.12	okio.Buffer$UnsafeCursor::end	okio.Buffer$UnsafeCursor	okio.Buffer$UnsafeCursor	int	FALSE	public	com.squareup.okio:okio:1.15.0	FALSE	215
+com.squareup.okhttp3:okhttp:3.12.12	okio.Buffer$UnsafeCursor::data	okio.Buffer$UnsafeCursor	okio.Buffer$UnsafeCursor	byte[]	FALSE	public	com.squareup.okio:okio:1.15.0	FALSE	215

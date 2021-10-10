@@ -53,7 +53,7 @@ public class CallTrackerAgent {
                     writer.close();
                     writer = new FileWriter(fieldsOutputPath, true);
                     if (new File(fieldsOutputPath).length() == 0)
-                        writer.write("Callee Library\tField Name\tDeclared Class\tActual Class\tField Signature\tStatic\tVisibility\tField Library\tReflective\tCount\n");
+                        writer.write("Caller Library\tField Name\tDeclared Class\tActual Class\tField Signature\tStatic\tVisibility\tField Library\tReflective\tCount\n");
                     for (InterLibraryFieldsKey ilfKey: CallTrackerTransformer.interLibraryFields.keySet()) {
                         writer.write(ilfKey.calleeLib+"\t"+ilfKey.fieldName+"\t"+ilfKey.virtualClass+"\t"+ilfKey.actualClass+"\t"+ ilfKey.fieldSignature+"\t"+ ilfKey.isStatic+"\t"+ ilfKey.visibility+"\t"+ ilfKey.libName+"\t"+ ilfKey.reflective+"\t"+CallTrackerTransformer.interLibraryFields.get(ilfKey)+"\n");
                     }

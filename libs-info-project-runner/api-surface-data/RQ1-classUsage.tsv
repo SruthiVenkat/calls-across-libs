@@ -1,4 +1,4 @@
-UsedInLibrary	ClassLibrary	ClassName	ClassVisibility	Usage	Counts
+ClientLibrary	ClassLibrary	ClassName	ClassVisibility	Usage	Counts
 "br.com.caelum:iogi:1.0.1"	"br.com.caelum:vraptor:4.2.2"	"br.com.caelum.vraptor.http.iogi.ArrayAdapter"	"default"	"method call"	1
 "br.com.caelum:iogi:1.0.1"	"br.com.caelum:vraptor:4.2.2"	"br.com.caelum.vraptor.http.iogi.NullDecorator"	"default"	"method call"	1
 "br.com.caelum:iogi:1.0.1"	"br.com.caelum:vraptor:4.2.2"	"br.com.caelum.vraptor.http.iogi.RequestAttributeInstantiator"	"default"	"method call"	1
@@ -39,11 +39,7 @@ UsedInLibrary	ClassLibrary	ClassName	ClassVisibility	Usage	Counts
 "com.google.guava:guava:15.0"	"br.com.caelum:vraptor:4.2.2"	"br.com.caelum.vraptor.validator.MessageList$2"	"default"	"method call"	1
 "com.google.guava:guava:15.0"	"br.com.caelum:vraptor:4.2.2"	"br.com.caelum.vraptor.validator.MessageList$3"	"default"	"method call"	1
 "com.google.guava:guava:15.0"	"br.com.caelum:vraptor:4.2.2"	"br.com.caelum.vraptor.view.DefaultAcceptHeaderToFormat$2"	"default"	"method call"	1
-"com.thoughtworks.xstream:xstream:1.4.7"	"com.thoughtworks.xstream:xstream:1.4.7"	"com.thoughtworks.xstream.converters.extended.StackTraceElementFactory15"	"default"	"Class.forName"	1
 "com.thoughtworks.xstream:xstream:1.4.7"	"javax.xml.datatype"	"javax.xml.datatype.DatatypeFactory"	"default"	"method call"	1
-"com.thoughtworks.xstream:xstream:1.4.7"	"unknownLib"	"br.com.caelum.vraptor.serialization.xstream.XStreamXmlDeserializerTest$Dog"	"default"	"Class.forName"	1
-"com.thoughtworks.xstream:xstream:1.4.7"	"unknownLib"	"br.com.caelum.vraptor.serialization.xstream.XStreamXmlDeserializerTest$DogWithAnnotations"	"default"	"Class.forName"	1
-"com.thoughtworks.xstream:xstream:1.4.7"	"unknownLib"	"br.com.caelum.vraptor.serialization.xstream.XStreamXmlDeserializerTest$Person"	"default"	"Class.forName"	1
 "javax.enterprise:cdi-api:1.1"	"org.hibernate:hibernate-validator-cdi:5.1.0.Final"	"org.hibernate.validator.internal.cdi.ValidationExtension$1"	"default"	"method call"	1
 "javax.enterprise:cdi-api:1.1"	"org.hibernate:hibernate-validator-cdi:5.1.0.Final"	"org.hibernate.validator.internal.cdi.ValidationExtension$2"	"default"	"method call"	1
 "net.vidageek:mirror:1.6.1"	"br.com.caelum:iogi:1.0.1"	"br.com.caelum.iogi.reflection.NewObject$JavaSetter$1"	"default"	"method call"	1
@@ -57,21 +53,15 @@ UsedInLibrary	ClassLibrary	ClassName	ClassVisibility	Usage	Counts
 "org.javassist:javassist:3.18.1-GA"	"br.com.caelum:vraptor:4.2.2"	"br.com.caelum.vraptor.proxy.JavassistProxifier$1"	"default"	"method call"	1
 "org.jboss.weld:weld-core-impl:2.1.2.Final"	"org.jboss.logging:jboss-logging:3.1.3.GA"	"org.jboss.logging.JDKLogger"	"default"	"method call"	1
 "ch.qos.logback:logback-classic:1.2.5"	"ch.qos.logback:logback-core:1.2.5"	"ch.qos.logback.core.util.CloseUtil"	"default"	"method call"	2
-"ch.qos.logback:logback-classic:1.2.5"	"unknownLib"	"sun.reflect.DelegatingMethodAccessorImpl"	"default"	"Class.forName"	4
-"ch.qos.logback:logback-classic:1.2.5"	"unknownLib"	"sun.reflect.NativeMethodAccessorImpl"	"default"	"Class.forName"	4
 "ch.qos.logback:logback-core:1.2.5"	"ch.qos.logback:logback-classic:1.2.5"	"ch.qos.logback.classic.net.server.RemoteAppenderServerListener"	"default"	"method call"	1
 "ch.qos.logback:logback-core:1.2.5"	"ch.qos.logback:logback-classic:1.2.5"	"ch.qos.logback.classic.net.server.RemoteAppenderServerRunner"	"default"	"method call"	1
 "ch.qos.logback:logback-core:1.2.5"	"ch.qos.logback:logback-classic:1.2.5"	"ch.qos.logback.classic.net.server.RemoteAppenderStreamClient"	"default"	"method call"	1
 "ch.qos.logback:logback-core:1.2.5"	"java.security"	"java.security.AccessController"	"default"	"method call"	34
 "javax.xml.xpath"	"java.security"	"java.security.AccessController"	"default"	"method call"	1
-"org.codehaus.groovy:groovy:2.4.0"	"unknownLib"	"sun.reflect.MagicAccessorImpl"	"default"	"Class.forName"	5
 "org.codehaus.groovy.transform"	"org.codehaus.groovy:groovy:2.4.0"	"org.codehaus.groovy.transform.ASTTransformationVisitor"	"default"	"method call"	1
-"org.codehaus.janino:janino:3.0.6"	"unknownLib"	"java.lang.AbstractStringBuilder"	"default"	"Class.forName"	4
 "org.jsoup:jsoup:1.14.1"	"cn.wanghaomiao:JsoupXpath:2.5.0"	"org.seimicrawler.xpath.core.node.Text$1"	"default"	"method call"	1
 "com.alibaba:druid:1.2.5"	"java.security"	"java.security.KeyPairGenerator$Delegate"	"private"	"method call"	1
-"com.alibaba:druid:1.2.5"	"unknownLib"	"com.alibaba.druid.bvt.pool.DruidDataSourceTest4$MyExceptionSorter"	"private"	"Class.forName"	1
 "commons-logging:commons-logging:1.2"	"org.slf4j:jcl-over-slf4j:1.7.21"	"org.apache.commons.logging.LogFactory"	"default"	"method call"	1
-"log4j:log4j:1.2.17"	"log4j:log4j:1.2.17"	"org.apache.log4j.CategoryKey"	"default"	"Class.forName"	1
 "org.apache.logging.log4j:log4j-core:2.13.2"	"org.apache.logging.log4j:log4j-api:2.13.2"	"org.apache.logging.log4j.util.LoaderUtil"	"private"	"method call"	1
 "org.apache.logging.log4j:log4j-core:2.13.2"	"org.apache.logging.log4j:log4j-api:2.13.2"	"org.apache.logging.log4j.util.PropertiesUtil"	"private"	"method call"	1
 "org.apache.logging.log4j:log4j-core:2.13.2"	"org.apache.logging.log4j:log4j-api:2.13.2"	"org.apache.logging.log4j.util.Strings"	"private"	"method call"	1
@@ -104,24 +94,6 @@ UsedInLibrary	ClassLibrary	ClassName	ClassVisibility	Usage	Counts
 "com.alibaba:fastjson:1.2.76"	"org.springframework:spring-web:4.3.7.RELEASE"	"org.springframework.web.method.HandlerMethod$ReturnValueMethodParameter"	"private"	"method call"	1
 "com.alibaba:fastjson:1.2.76"	"org.springframework:spring-webmvc:4.3.7.RELEASE"	"org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver$EmptyBodyCheckingHttpInputMessage"	"private"	"method call"	1
 "com.alibaba:fastjson:1.2.76"	"org.springframework:spring-webmvc:4.3.7.RELEASE"	"org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod$ConcurrentResultMethodParameter"	"private"	"method call"	1
-"com.alibaba:fastjson:1.2.76"	"unknownLib"	"com.alibaba.json.bvt.bug.Bug_for_cduym$A"	"private"	"Class.forName"	1
-"com.alibaba:fastjson:1.2.76"	"unknownLib"	"com.alibaba.json.bvt.bug.Bug_for_lenolix_7$User"	"private"	"Class.forName"	1
-"com.alibaba:fastjson:1.2.76"	"unknownLib"	"com.alibaba.json.bvt.parser.error.TypeNotMatchError$AA"	"private"	"Class.forName"	1
-"com.alibaba:fastjson:1.2.76"	"unknownLib"	"com.alibaba.json.bvt.parser.error.TypeNotMatchError$B"	"private"	"Class.forName"	1
-"com.alibaba:fastjson:1.2.76"	"unknownLib"	"com.alibaba.json.bvt.support.spring.GenericFastJsonRedisSerializerTest$BaseResult"	"default"	"Class.forName"	1
-"com.alibaba:fastjson:1.2.76"	"unknownLib"	"com.alibaba.json.bvt.support.spring.GenericFastJsonRedisSerializerTest$User"	"default"	"Class.forName"	1
-"com.alibaba:fastjson:1.2.76"	"unknownLib"	"com.alibaba.json.bvt.writeClassName.MapTest$VO"	"private"	"Class.forName"	1
-"com.alibaba:fastjson:1.2.76"	"unknownLib"	"com.alibaba.json.bvt.writeClassName.WriteClassNameTest_Collection$A"	"private"	"Class.forName"	1
-"com.alibaba:fastjson:1.2.76"	"unknownLib"	"com.alibaba.json.bvt.writeClassName.WriteClassNameTest_List$A"	"private"	"Class.forName"	1
-"com.alibaba:fastjson:1.2.76"	"unknownLib"	"com.alibaba.json.bvt.writeClassName.WriteClassNameTest_Set2$A"	"private"	"Class.forName"	1
-"com.alibaba:fastjson:1.2.76"	"unknownLib"	"com.alibaba.json.bvt.writeClassName.WriteClassNameTest_Set2$B1"	"private"	"Class.forName"	1
-"com.alibaba:fastjson:1.2.76"	"unknownLib"	"com.alibaba.json.bvt.writeClassName.WriteClassNameTest_Set3$A"	"private"	"Class.forName"	1
-"com.alibaba:fastjson:1.2.76"	"unknownLib"	"com.alibaba.json.bvt.writeClassName.WriteClassNameTest_Set3$B1"	"private"	"Class.forName"	1
-"com.alibaba:fastjson:1.2.76"	"unknownLib"	"com.alibaba.json.bvt.writeClassName.WriteClassNameTest$A"	"private"	"Class.forName"	1
-"com.alibaba:fastjson:1.2.76"	"unknownLib"	"java.time.ZoneRegion"	"default"	"Class.forName"	1
-"com.alibaba:fastjson:1.2.76"	"unknownLib"	"java.util.Collections$UnmodifiableMap"	"private"	"Class.forName"	1
-"com.alibaba:fastjson:1.2.76"	"unknownLib"	"kotlin.ranges.ClosedDoubleRange"	"default"	"Class.forName"	1
-"com.alibaba:fastjson:1.2.76"	"unknownLib"	"kotlin.ranges.ClosedFloatRange"	"default"	"Class.forName"	1
 "com.alibaba:fastjson:1.2.76"	"xerces:xercesImpl:2.8.1"	"org.apache.xerces.jaxp.datatype.XMLGregorianCalendarImpl"	"default"	"method call"	1
 "javax.ws.rs:javax.ws.rs-api:2.0.1"	"org.apache.cxf:cxf-rt-frontend-jaxrs:3.1.2"	"org.apache.cxf.jaxrs.impl.ResponseImpl$1"	"default"	"method call"	1
 "org.apache.cxf:cxf-core:3.1.2"	"org.apache.cxf:cxf-rt-transports-http:3.1.2"	"org.apache.cxf.transport.http.AbstractHTTPDestination$1"	"default"	"method call"	1
@@ -238,11 +210,6 @@ UsedInLibrary	ClassLibrary	ClassName	ClassVisibility	Usage	Counts
 "org.springframework:spring-core:4.3.7.RELEASE"	"org.springframework:spring-webmvc:4.3.7.RELEASE"	"org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter$1"	"default"	"method call"	1
 "org.springframework:spring-core:4.3.7.RELEASE"	"org.springframework:spring-webmvc:4.3.7.RELEASE"	"org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter$2"	"default"	"method call"	1
 "org.springframework:spring-core:4.3.7.RELEASE"	"org.springframework:spring-webmvc:4.3.7.RELEASE"	"org.springframework.web.servlet.mvc.method.RequestMappingInfo$DefaultBuilder"	"private"	"method call"	1
-"org.springframework:spring-core:4.3.7.RELEASE"	"unknownLib"	"com.alibaba.json.bvt.support.spring.mock.testcase.FastJsonHttpMessageConverterCase2Test$Config"	"protected"	"Class.forName"	1
-"org.springframework:spring-core:4.3.7.RELEASE"	"unknownLib"	"com.alibaba.json.bvt.support.spring.mock.testcase.FastJsonHttpMessageConverterJSONPCaseTest$Config"	"protected"	"Class.forName"	1
-"org.springframework:spring-core:4.3.7.RELEASE"	"unknownLib"	"com.alibaba.json.bvt.support.spring.mock.testcase.FastJsonpHttpMessageConverter4Case2Test$Config"	"protected"	"Class.forName"	1
-"org.springframework:spring-core:4.3.7.RELEASE"	"unknownLib"	"com.alibaba.json.bvt.support.spring.mock.testcase.FastJsonpHttpMessageConverter4Case3Test$Config"	"protected"	"Class.forName"	1
-"org.springframework:spring-core:4.3.7.RELEASE"	"unknownLib"	"org.springframework.test.context.web.socket.MockServerContainerContextCustomizerFactory"	"default"	"Class.forName"	1
 "org.springframework:spring-expression:4.3.7.RELEASE"	"org.springframework:spring-context:4.3.7.RELEASE"	"org.springframework.context.expression.StandardBeanExpressionResolver$1"	"default"	"method call"	1
 "org.springframework:spring-messaging:4.3.7.RELEASE"	"org.springframework:spring-core:4.3.7.RELEASE"	"org.springframework.util.Assert"	"private"	"method call"	1
 "org.springframework:spring-web:4.3.7.RELEASE"	"org.springframework:spring-core:4.3.7.RELEASE"	"org.springframework.core.annotation.AnnotationUtils"	"default"	"method call"	1
@@ -273,8 +240,6 @@ UsedInLibrary	ClassLibrary	ClassName	ClassVisibility	Usage	Counts
 "org.springframework:spring-webmvc:4.3.7.RELEASE"	"org.springframework:spring-web:4.3.7.RELEASE"	"org.springframework.web.method.HandlerMethod$HandlerMethodParameter"	"protected"	"method call"	1
 "org.springframework:spring-webmvc:4.3.7.RELEASE"	"org.springframework:spring-web:4.3.7.RELEASE"	"org.springframework.web.method.HandlerMethod$HandlerMethodParameter"	"protected"	"subtyping"	1
 "org.springframework:spring-webmvc:4.3.7.RELEASE"	"org.springframework:spring-web:4.3.7.RELEASE"	"org.springframework.web.method.HandlerMethod$ReturnValueMethodParameter"	"private"	"method call"	1
-"xerces:xercesImpl:2.8.1"	"xerces:xercesImpl:2.8.1"	"org.apache.xerces.impl.dv.ObjectFactory"	"default"	"Class.forName"	1
-"xerces:xercesImpl:2.8.1"	"xerces:xercesImpl:2.8.1"	"org.apache.xerces.parsers.ObjectFactory"	"default"	"Class.forName"	1
 "com.alipay.sdk:alipay-sdk-java:4.16.57.ALL"	"java.security"	"java.security.MessageDigest$Delegate"	"default"	"method call"	1
 "com.alipay.sdk:alipay-sdk-java:4.16.57.ALL"	"java.security"	"java.security.Signature$Delegate"	"private"	"method call"	1
 "com.capitalone.dashboard:core:3.6.9-SNAPSHOT"	"com.google.guava:guava:19.0"	"com.google.common.hash.HashCode$BytesHashCode"	"private"	"method call"	1
@@ -300,7 +265,6 @@ UsedInLibrary	ClassLibrary	ClassName	ClassVisibility	Usage	Counts
 "com.sun.xml.bind:jaxb-impl:2.2.11"	"com.sun.xml.bind:jaxb-core:2.2.11"	"com.sun.xml.bind.v2.model.nav.ReflectionNavigator"	"default"	"method call"	1
 "com.sun.xml.bind:jaxb-impl:2.2.11"	"com.sun.xml.bind:jaxb-core:2.2.11"	"com.sun.xml.bind.v2.TODO"	"default"	"method call"	1
 "org.jboss.logging:jboss-logging:3.3.0.Final"	"org.slf4j:slf4j-api:1.7.13"	"org.slf4j.LoggerFactory"	"default"	"method call"	1
-"org.mockito:mockito-all:1.10.19"	"org.mockito:mockito-all:1.10.19"	"org.mockito.internal.configuration.plugins.DefaultPluginSwitch"	"default"	"Class.forName"	1
 "org.mongodb:mongo-java-driver:3.0.2"	"com.github.fakemongo:fongo:2.0.3"	"com.github.fakemongo.Fongo$2"	"default"	"method call"	1
 "org.mongodb:mongo-java-driver:3.0.2"	"com.github.fakemongo:fongo:2.0.3"	"com.github.fakemongo.FongoConnection$1"	"default"	"method call"	1
 "org.mongodb:mongo-java-driver:3.0.2"	"com.github.fakemongo:fongo:2.0.3"	"com.github.fakemongo.FongoConnectionSource"	"default"	"method call"	1
@@ -422,110 +386,12 @@ UsedInLibrary	ClassLibrary	ClassName	ClassVisibility	Usage	Counts
 "com.fasterxml.jackson.core"	"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"com.fasterxml.jackson.databind.node.NodeCursor$RootCursor"	"protected"	"method call"	1
 "com.fasterxml.jackson.core"	"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"com.fasterxml.jackson.databind.util.TokenBuffer$Parser"	"protected"	"method call"	1
 "com.fasterxml.jackson.core:jackson-databind:2.12.3"	"com.fasterxml.jackson.core"	"com.fasterxml.jackson.core.Base64Variants"	"default"	"method call"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.BaseMapTest$IntWrapper"	"protected"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.BaseMapTest$StringWrapper"	"protected"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.deser.AnySetterTest$Impl"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.deser.creators.DelegatingExternalProperty1003Test$Superman"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.deser.creators.TestPolymorphicDelegating$Issue580Impl"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.deser.creators.TestValueInstantiator$PolymorphicBean"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.deser.filter.ProblemHandlerUnknownTypeId2221Test$DummyContent"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.deser.filter.ProblemHandlerUnknownTypeId2221Test$GenericContent"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.deser.jdk.EnumMapDeserializationTest$Pojo1859"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.jsontype.deftyping.DefaultWithBaseType1093Test$Point1093"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.jsontype.deftyping.TestDefaultForLists$SetBean"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.jsontype.deftyping.TestDefaultForObject$Choice"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.jsontype.deftyping.TestDefaultForObject$ComplexChoice"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.jsontype.deftyping.TestDefaultForObject$DiscussBean"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.jsontype.deftyping.TestDefaultForObject$PolymorphicType"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.jsontype.deftyping.TestDefaultForObject$StringBean"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.jsontype.deftyping.TestDefaultForScalars$Data"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.jsontype.deftyping.TestDefaultWithCreators$Bean1385"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.jsontype.deftyping.TestDefaultWithCreators$UrlJob"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.jsontype.ext.ExternalTypeId96Test$ValueBean"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.jsontype.ext.ExternalTypeIdTest$Payload928"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.jsontype.GenericTypeId1735Test$Nefarious1735"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.jsontype.jdk.EnumTypingTest$TestEnum"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.jsontype.jdk.ScalarTypingTest$TestEnum"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.jsontype.jdk.TypedArrayDeserTest$TypedListAsProp"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.jsontype.jdk.TypedArrayDeserTest$TypedListAsWrapper"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.jsontype.jdk.TypedContainerSerTest$Issue508A"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.jsontype.PolymorphicViaRefTypeTest$AtomicStringWrapper"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.jsontype.TestAbstractTypeNames$BaseValue"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.jsontype.TestBaseTypeAsDefault$Child"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.jsontype.TestPolymorphicDeduction$DeadCat"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.jsontype.TestPolymorphicDeduction$LiveCat"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.jsontype.TestPropertyTypeInfo$BooleanValue"	"protected"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.jsontype.TestPropertyTypeInfo$FieldWrapperBean"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.jsontype.TestPropertyTypeInfo$MethodWrapperBean"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.jsontype.TestPropertyTypeInfo$OtherBean"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.jsontype.TestSubtypes$TheBomb"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.jsontype.TestTypedDeserialization$Cat"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.jsontype.TestTypedDeserialization$Dog"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.jsontype.TestTypedDeserialization$DummyImpl"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.jsontype.TestTypedDeserialization$Fish"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.jsontype.TestTypedDeserialization$NullAnimal"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.jsontype.TestWithGenerics$MyClass"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.jsontype.TestWithGenerics$MyParam"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.jsontype.TestWithGenerics$SomeObject"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.jsontype.vld.BasicPTVTest$ValueA"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.jsontype.vld.BasicPTVTest$ValueB"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.jsontype.vld.BasicPTVWithArraysTest$Bad2534"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.jsontype.vld.BasicPTVWithArraysTest$Good2534"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.jsontype.vld.CustomPTVMatchersTest$CustomBad"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.jsontype.vld.CustomPTVMatchersTest$CustomGood"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.jsontype.vld.ValidatePolymBaseTypeTest$GoodValue"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.jsontype.vld.ValidatePolymSubTypeTest$BadValue"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.jsontype.vld.ValidatePolymSubTypeTest$GoodValue"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.jsontype.vld.ValidatePolymSubTypeTest$MehValue"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.node.TestConversions$LongContainer1940"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.objectid.AbstractWithObjectIdTest$BaseInterfaceImpl"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.objectid.AbstractWithObjectIdTest$ListWrapper"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.objectid.ObjectId825BTest$Ch"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.objectid.ObjectId825BTest$CTC"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.objectid.ObjectId825BTest$CTD"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.objectid.ObjectId825BTest$CTV"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.objectid.ObjectId825BTest$Dec"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.objectid.ObjectId825BTest$Ti"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.objectid.ObjectId825BTest$Tr"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.objectid.ObjectId825BTest$V"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.objectid.ObjectId825Test$TestC"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.objectid.ObjectId825Test$TestD"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.objectid.PolymorphicWithObjectId1551Test$Car"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.objectid.TestObjectIdWithEquals$Element"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.objectid.TestObjectIdWithPolymorphic$Impl"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.struct.PojoAsArray646Test$TheItem"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.struct.TestBackRefsWithPolymorphic$PropertySheetImpl"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.struct.TestBackRefsWithPolymorphic$StringPropertyImpl"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.type.RecursiveType1658Test$Tree"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.type.TestTypeFactory$EnumForCanonical"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.type.TestTypeFactory3108$ConcreteType3108"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.type.TestTypeFactory3108$StringList3108"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"com.fasterxml.jackson.databind.type.TestTypeFactory3108$StringStringMap3108"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"java.util.Arrays$ArrayList"	"private"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"java.util.Collections$EmptyList"	"private"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"java.util.Collections$EmptyMap"	"private"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"java.util.Collections$EmptySet"	"private"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"java.util.Collections$SingletonList"	"private"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"java.util.Collections$SingletonMap"	"private"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"java.util.Collections$SingletonSet"	"private"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"java.util.Collections$SynchronizedCollection"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"java.util.Collections$SynchronizedList"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"java.util.Collections$SynchronizedMap"	"private"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"java.util.Collections$SynchronizedRandomAccessList"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"java.util.Collections$SynchronizedSet"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"java.util.Collections$UnmodifiableCollection"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"java.util.Collections$UnmodifiableList"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"java.util.Collections$UnmodifiableMap"	"private"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"java.util.Collections$UnmodifiableRandomAccessList"	"default"	"Class.forName"	1
-"com.fasterxml.jackson.core:jackson-databind:2.12.3"	"unknownLib"	"java.util.Collections$UnmodifiableSet"	"default"	"Class.forName"	1
 "com.github.eirslett:frontend-plugin-core:1.12.0"	"commons-io:commons-io:2.7"	"org.apache.commons.io.IOUtils"	"default"	"method call"	1
 "com.github.eirslett:frontend-plugin-core:1.12.0"	"org.codehaus.plexus:plexus-utils:3.0.22"	"org.codehaus.plexus.util.FileUtils"	"default"	"method call"	1
 "com.github.mangstadt:vinnie:2.0.2"	"com.googlecode.ez-vcard:ez-vcard:0.11.3"	"ezvcard.io.text.VCardReader$VObjectDataListenerImpl"	"private"	"method call"	1
 "com.googlecode.ez-vcard:ez-vcard:0.11.3"	"com.github.mangstadt:vinnie:2.0.2"	"com.github.mangstadt.vinnie.io.VObjectPropertyValues"	"private"	"method call"	1
 "com.googlecode.ez-vcard:ez-vcard:0.11.3"	"javax.xml.transform"	"javax.xml.transform.TransformerFactory"	"private"	"method call"	1
 "javax.xml.xpath"	"java.security"	"java.security.AccessController"	"default"	"method call"	1
-"org.apache.xml.dtm"	"org.apache.xml.dtm"	"org.apache.xml.dtm.ObjectFactory"	"default"	"Class.forName"	1
-"com.puppycrawl.tools:checkstyle:9.0"	"unknownLib"	"com.puppycrawl.tools.checkstyle.PackageObjectFactoryTest$FailConstructorFileSet"	"private"	"Class.forName"	1
 "com.querydsl:querydsl-core:5.0.0"	"com.querydsl:querydsl-sql:5.0.0"	"com.querydsl.sql.AbstractSQLQuery$3"	"default"	"method call"	1
 "com.querydsl:querydsl-core:5.0.0"	"com.querydsl:querydsl-sql:5.0.0"	"com.querydsl.sql.AbstractSQLQuery$5"	"default"	"method call"	1
 "com.querydsl:querydsl-sql:5.0.0"	"com.mysema.commons:mysema-commons-lang:0.2.4"	"com.mysema.commons.lang.Pair"	"default"	"method call"	1
@@ -552,7 +418,6 @@ UsedInLibrary	ClassLibrary	ClassName	ClassVisibility	Usage	Counts
 "io.netty:netty-buffer:4.1.39.Final"	"io.netty:netty-common:4.1.39.Final"	"io.netty.util.internal.PlatformDependent"	"default"	"method call"	1
 "io.netty:netty-common:4.1.39.Final"	"io.lettuce:lettuce-core:5.1.8.RELEASE"	"io.lettuce.core.resource.Futures$PromiseAggregator"	"default"	"method call"	1
 "io.netty:netty-common:4.1.39.Final"	"io.netty:netty-transport:4.1.39.Final"	"io.netty.channel.group.DefaultChannelGroupFuture"	"default"	"method call"	1
-"io.netty:netty-common:4.1.39.Final"	"unknownLib"	"java.nio.Bits"	"default"	"Class.forName"	1
 "io.projectreactor:reactor-core:3.2.12.RELEASE"	"org.slf4j:slf4j-api:1.7.28"	"org.slf4j.LoggerFactory"	"private"	"method call"	1
 "io.springfox:springfox-spring-web:2.6.1"	"org.springframework:spring-context:5.1.10.RELEASE"	"org.springframework.context.annotation.ConditionEvaluator$ConditionContextImpl"	"private"	"method call"	1
 "org.apache.tomcat.embed:tomcat-embed-el:9.0.26"	"org.glassfish:javax.el:3.0.0"	"javax.el.ExpressionFactory"	"default"	"method call"	1
@@ -796,22 +661,6 @@ UsedInLibrary	ClassLibrary	ClassName	ClassVisibility	Usage	Counts
 "org.springframework:spring-core:5.1.10.RELEASE"	"org.springframework.boot:spring-boot:2.1.9.RELEASE"	"org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource"	"protected"	"method call"	1
 "org.springframework:spring-core:5.1.10.RELEASE"	"org.springframework.boot:spring-boot:2.1.9.RELEASE"	"org.springframework.boot.web.servlet.ServletComponentScanRegistrar"	"default"	"Class.forName"	1
 "org.springframework:spring-core:5.1.10.RELEASE"	"org.springframework.data:spring-data-commons:2.1.11.RELEASE"	"org.springframework.data.repository.config.RepositoryComponentProvider$InterfaceTypeFilter"	"private"	"method call"	1
-"org.springframework:spring-core:5.1.10.RELEASE"	"unknownLib"	"org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizerFactory"	"default"	"Class.forName"	1
-"org.springframework:spring-core:5.1.10.RELEASE"	"unknownLib"	"org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory"	"default"	"Class.forName"	1
-"org.springframework:spring-core:5.1.10.RELEASE"	"unknownLib"	"org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizerFactory"	"default"	"Class.forName"	1
-"org.springframework:spring-core:5.1.10.RELEASE"	"unknownLib"	"org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener$PostProcessor"	"default"	"Class.forName"	1
-"org.springframework:spring-core:5.1.10.RELEASE"	"unknownLib"	"org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener"	"default"	"Class.forName"	1
-"org.springframework:spring-core:5.1.10.RELEASE"	"unknownLib"	"org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener"	"default"	"Class.forName"	1
-"org.springframework:spring-core:5.1.10.RELEASE"	"unknownLib"	"org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory"	"default"	"Class.forName"	1
-"org.springframework:spring-core:5.1.10.RELEASE"	"unknownLib"	"org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener"	"default"	"Class.forName"	1
-"org.springframework:spring-core:5.1.10.RELEASE"	"unknownLib"	"org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizerFactory"	"default"	"Class.forName"	1
-"org.springframework:spring-core:5.1.10.RELEASE"	"unknownLib"	"org.springframework.boot.test.context.ImportsContextCustomizerFactory"	"default"	"Class.forName"	1
-"org.springframework:spring-core:5.1.10.RELEASE"	"unknownLib"	"org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory"	"default"	"Class.forName"	1
-"org.springframework:spring-core:5.1.10.RELEASE"	"unknownLib"	"org.springframework.boot.test.mock.mockito.MockitoContextCustomizerFactory"	"default"	"Class.forName"	1
-"org.springframework:spring-core:5.1.10.RELEASE"	"unknownLib"	"org.springframework.boot.test.web.client.TestRestTemplateContextCustomizerFactory"	"default"	"Class.forName"	1
-"org.springframework:spring-core:5.1.10.RELEASE"	"unknownLib"	"org.springframework.boot.test.web.reactive.server.WebTestClientContextCustomizerFactory"	"default"	"Class.forName"	1
-"org.springframework:spring-core:5.1.10.RELEASE"	"unknownLib"	"org.springframework.boot.test.web.SpringBootTestRandomPortEnvironmentPostProcessor"	"default"	"Class.forName"	1
-"org.springframework:spring-core:5.1.10.RELEASE"	"unknownLib"	"org.springframework.test.context.web.socket.MockServerContainerContextCustomizerFactory"	"default"	"Class.forName"	1
 "org.springframework:spring-expression:5.1.10.RELEASE"	"org.springframework:spring-context:5.1.10.RELEASE"	"org.springframework.context.expression.StandardBeanExpressionResolver$1"	"default"	"method call"	1
 "org.springframework:spring-jcl:5.1.10.RELEASE"	"org.slf4j:slf4j-api:1.7.28"	"org.slf4j.LoggerFactory"	"private"	"method call"	1
 "org.springframework.boot:spring-boot-actuator-autoconfigure:2.1.9.RELEASE"	"org.slf4j:slf4j-api:1.7.28"	"org.slf4j.LoggerFactory"	"default"	"method call"	1
@@ -925,7 +774,6 @@ UsedInLibrary	ClassLibrary	ClassName	ClassVisibility	Usage	Counts
 "org.apache.johnzon:johnzon-mapper:1.1.11"	"org.apache.johnzon:johnzon-core:1.1.11"	"org.apache.johnzon.core.JsonReaderFactoryImpl"	"default"	"method call"	1
 "org.apache.johnzon:johnzon-mapper:1.1.11"	"org.apache.johnzon:johnzon-core:1.1.11"	"org.apache.johnzon.core.JsonStringImpl"	"default"	"method call"	1
 "org.codehaus.groovy:groovy:3.0.8"	"org.codehaus.groovy:groovy-json:3.0.8"	"groovy.json.JsonTokenType$1"	"default"	"method call"	1
-"org.codehaus.groovy:groovy:3.0.8"	"unknownLib"	"jdk.internal.reflect.ConstructorAccessorImpl"	"default"	"Class.forName"	1
 "io.rest-assured:json-path:4.4.0"	"org.codehaus.groovy:groovy:3.0.8"	"org.codehaus.groovy.runtime.callsite.ClassMetaClassGetPropertySite"	"default"	"method call"	1
 "io.rest-assured:rest-assured-common:4.4.0"	"org.codehaus.groovy:groovy:3.0.8"	"org.codehaus.groovy.runtime.dgmimpl.arrays.ObjectArrayGetAtMetaMethod$MyPojoMetaMethodSite"	"private"	"method call"	1
 "io.rest-assured:rest-assured-common:4.4.0"	"org.codehaus.groovy:groovy:3.0.8"	"org.codehaus.groovy.runtime.dgmimpl.arrays.ObjectArrayPutAtMetaMethod$MyPojoMetaMethodSite"	"private"	"method call"	1
@@ -943,8 +791,6 @@ UsedInLibrary	ClassLibrary	ClassName	ClassVisibility	Usage	Counts
 "org.codehaus.groovy:groovy:3.0.8"	"io.rest-assured:rest-assured:4.4.0"	"io.restassured.internal.RequestSpecificationImpl$EncodingTarget"	"private"	"Class.forName"	1
 "org.codehaus.groovy:groovy:3.0.8"	"io.rest-assured:rest-assured:4.4.0"	"io.restassured.internal.RequestSpecificationImpl$EncodingTarget"	"private"	"method call"	1
 "org.codehaus.groovy:groovy:3.0.8"	"org.codehaus.groovy:groovy-json:3.0.8"	"groovy.json.JsonTokenType$1"	"default"	"method call"	1
-"org.codehaus.groovy:groovy:3.0.8"	"unknownLib"	"io.restassured.RequestSpecificationTest$ExampleFilter1"	"private"	"Class.forName"	1
-"org.codehaus.groovy:groovy:3.0.8"	"unknownLib"	"jdk.internal.reflect.ConstructorAccessorImpl"	"default"	"Class.forName"	1
 "org.eclipse:yasson:1.0.6"	"org.apache.johnzon:johnzon-core:1.1.11"	"org.apache.johnzon.core.JsonGeneratorImpl"	"default"	"method call"	1
 "com.google.guava:guava:21.0"	"io.searchbox:jest-common:6.3.1"	"io.searchbox.core.MultiGet$1"	"default"	"method call"	1
 "io.searchbox:jest-common:6.3.1"	"com.google.guava:guava:21.0"	"com.google.common.base.CharMatcher$IsEither"	"private"	"method call"	1
@@ -952,7 +798,6 @@ UsedInLibrary	ClassLibrary	ClassName	ClassVisibility	Usage	Counts
 "io.searchbox:jest-common:6.3.1"	"com.google.guava:guava:21.0"	"com.google.common.collect.ImmutableSet"	"private"	"method call"	1
 "io.searchbox:jest-common:6.3.1"	"com.google.guava:guava:21.0"	"com.google.common.collect.LinkedHashMultimap"	"protected"	"method call"	1
 "io.searchbox:jest-common:6.3.1"	"com.google.guava:guava:21.0"	"com.google.common.collect.RegularImmutableList"	"default"	"method call"	1
-"log4j:log4j:1.2.17"	"log4j:log4j:1.2.17"	"org.apache.log4j.CategoryKey"	"default"	"Class.forName"	1
 "com.google.guava:guava:21.0"	"io.searchbox:jest-common:6.3.1"	"io.searchbox.client.config.discovery.NodeChecker$1"	"default"	"method call"	1
 "io.searchbox:jest-common:6.3.1"	"com.google.guava:guava:21.0"	"com.google.common.collect.ImmutableList"	"private"	"method call"	1
 "io.searchbox:jest-common:6.3.1"	"com.google.guava:guava:21.0"	"com.google.common.collect.ImmutableSet"	"private"	"method call"	1
@@ -961,7 +806,6 @@ UsedInLibrary	ClassLibrary	ClassName	ClassVisibility	Usage	Counts
 "io.searchbox:jest:6.3.1"	"org.apache.httpcomponents:httpasyncclient:4.1.3"	"org.apache.http.impl.nio.client.InternalHttpAsyncClient"	"default"	"method call"	1
 "io.searchbox:jest:6.3.1"	"org.apache.httpcomponents:httpclient:4.5.3"	"org.apache.http.impl.client.InternalHttpClient"	"default"	"method call"	1
 "io.searchbox:jest:6.3.1"	"org.apache.httpcomponents:httpclient:4.5.3"	"org.apache.http.impl.execchain.HttpResponseProxy"	"default"	"method call"	1
-"log4j:log4j:1.2.17"	"log4j:log4j:1.2.17"	"org.apache.log4j.CategoryKey"	"default"	"Class.forName"	1
 "org.apache.httpcomponents:httpasyncclient:4.1.3"	"commons-logging:commons-logging:1.1.3"	"org.apache.commons.logging.LogFactory"	"default"	"method call"	1
 "org.apache.httpcomponents:httpasyncclient:4.1.3"	"org.apache.httpcomponents:httpclient:4.5.3"	"org.apache.http.client.methods.HttpRequestWrapper"	"default"	"method call"	1
 "org.apache.httpcomponents:httpasyncclient:4.1.3"	"org.apache.httpcomponents:httpclient:4.5.3"	"org.apache.http.client.methods.HttpRequestWrapper$HttpEntityEnclosingRequestWrapper"	"default"	"method call"	1
@@ -1032,31 +876,11 @@ UsedInLibrary	ClassLibrary	ClassName	ClassVisibility	Usage	Counts
 "net.javacrumbs.json-unit:json-unit-core:2.28.0"	"com.fasterxml.jackson.core:jackson-databind:2.12.4"	"com.fasterxml.jackson.databind.node.NullNode"	"default"	"method call"	1
 "net.javacrumbs.json-unit:json-unit-core:2.28.0"	"com.google.code.gson:gson:2.8.8"	"com.google.gson.JsonParser"	"default"	"method call"	1
 "net.javacrumbs.json-unit:json-unit-core:2.28.0"	"org.json:json:20210307"	"org.json.JSONObject"	"default"	"method call"	1
-"org.apache.flink:flink-core:1.14.0"	"unknownLib"	"java.nio.DirectByteBuffer"	"default"	"Class.forName"	5
-"org.apache.flink:flink-core:1.14.0"	"unknownLib"	"org.apache.flink.api.common.ExecutionConfigTest$TestSerializer1"	"private"	"Class.forName"	1
-"org.apache.flink:flink-core:1.14.0"	"unknownLib"	"org.apache.flink.api.common.ExecutionConfigTest$TestSerializer2"	"private"	"Class.forName"	1
-"org.apache.flink:flink-core:1.14.0"	"unknownLib"	"org.apache.flink.api.common.typeutils.base.EnumSerializerTest$PrivateEnum"	"private"	"Class.forName"	1
-"org.apache.flink:flink-core:1.14.0"	"unknownLib"	"org.apache.flink.api.common.typeutils.CompositeSerializerTest$Pojo"	"private"	"Class.forName"	1
-"org.apache.flink:flink-core:1.14.0"	"unknownLib"	"org.apache.flink.api.common.typeutils.TypeSerializerSerializationUtilTest$1"	"default"	"Class.forName"	1
-"org.apache.flink:flink-core:1.14.0"	"unknownLib"	"org.apache.flink.api.common.typeutils.TypeSerializerSnapshotTest$TestSerializer"	"private"	"Class.forName"	1
-"org.apache.flink:flink-core:1.14.0"	"unknownLib"	"org.apache.flink.api.java.typeutils.EnumTypeInfoTest$AlternativeEnum"	"default"	"Class.forName"	1
-"org.apache.flink:flink-core:1.14.0"	"unknownLib"	"org.apache.flink.api.java.typeutils.EnumTypeInfoTest$TestEnum"	"default"	"Class.forName"	1
-"org.apache.flink:flink-core:1.14.0"	"unknownLib"	"org.apache.flink.api.java.typeutils.GenericTypeInfoTest$AlternativeClass"	"default"	"Class.forName"	1
-"org.apache.flink:flink-core:1.14.0"	"unknownLib"	"org.apache.flink.api.java.typeutils.GenericTypeInfoTest$TestClass"	"default"	"Class.forName"	1
-"org.apache.flink:flink-core:1.14.0"	"unknownLib"	"org.apache.flink.api.java.typeutils.LambdaExtractionTest$MyClass"	"private"	"Class.forName"	1
-"org.apache.flink:flink-core:1.14.0"	"unknownLib"	"org.apache.flink.api.java.typeutils.LambdaExtractionTest$MyType"	"private"	"Class.forName"	1
-"org.apache.flink:flink-core:1.14.0"	"unknownLib"	"org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializerCompatibilityTest$TestClass"	"private"	"Class.forName"	1
-"org.apache.flink:flink-core:1.14.0"	"unknownLib"	"org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializerCompatibilityTest$TestClassA"	"private"	"Class.forName"	1
-"org.apache.flink:flink-core:1.14.0"	"unknownLib"	"org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializerCompatibilityTest$TestClassB"	"private"	"Class.forName"	1
-"org.apache.flink:flink-core:1.14.0"	"unknownLib"	"org.apache.flink.util.InstantiationUtilTest$TestClassReadFails"	"private"	"Class.forName"	1
-"org.apache.flink:flink-core:1.14.0"	"unknownLib"	"org.apache.flink.util.InstantiationUtilTest$TestClassReadFailsCNF"	"private"	"Class.forName"	1
 "org.apache.flink:flink-shaded-asm-7:7.1-14.0"	"org.apache.flink:flink-core:1.14.0"	"org.apache.flink.api.java.This0AccessFinder"	"default"	"method call"	2
 "org.apache.flink:flink-shaded-asm-7:7.1-14.0"	"org.apache.flink:flink-core:1.14.0"	"org.apache.flink.api.java.This0AccessFinder$1"	"default"	"method call"	2
 "org.apache.rocketmq:rocketmq-srvutil:4.9.1"	"org.apache.rocketmq:rocketmq-acl:4.9.1"	"org.apache.rocketmq.acl.plain.PlainPermissionManager$2"	"default"	"method call"	1
 "io.netty:netty-all:4.1.65.Final"	"org.apache.rocketmq:rocketmq-remoting:4.9.1"	"org.apache.rocketmq.remoting.netty.NettyLogger$NettyBridgeLogger"	"private"	"method call"	11
 "io.netty:netty-all:4.1.65.Final"	"org.apache.rocketmq:rocketmq-remoting:4.9.1"	"org.apache.rocketmq.remoting.netty.NettyLogger$NettyBridgeLoggerFactory"	"private"	"method call"	11
-"io.netty:netty-all:4.1.65.Final"	"unknownLib"	"java.nio.Bits"	"default"	"Class.forName"	13
-"io.netty:netty-all:4.1.65.Final"	"unknownLib"	"sun.nio.ch.SelectorImpl"	"default"	"Class.forName"	11
 "org.apache.rocketmq:rocketmq-broker:4.9.1"	"org.apache.rocketmq:rocketmq-filter:4.9.1"	"org.apache.rocketmq.filter.expression.LogicExpression$2"	"default"	"method call"	2
 "org.apache.rocketmq:rocketmq-broker:4.9.1"	"org.apache.rocketmq:rocketmq-remoting:4.9.1"	"org.apache.rocketmq.remoting.protocol.RemotingCommand"	"default"	"method call"	1
 "org.apache.rocketmq:rocketmq-common:4.9.1"	"org.apache.rocketmq:rocketmq-store:4.9.1"	"org.apache.rocketmq.store.CommitLog$FlushRealTimeService"	"default"	"method call"	2
@@ -1080,8 +904,6 @@ UsedInLibrary	ClassLibrary	ClassName	ClassVisibility	Usage	Counts
 "io.netty:netty-all:4.1.65.Final"	"org.apache.rocketmq:rocketmq-remoting:4.9.1"	"org.apache.rocketmq.remoting.netty.NettyRemotingClient$4"	"default"	"method call"	1
 "io.netty:netty-all:4.1.65.Final"	"org.apache.rocketmq:rocketmq-remoting:4.9.1"	"org.apache.rocketmq.remoting.netty.NettyRemotingClient$NettyClientHandler"	"default"	"method call"	1
 "io.netty:netty-all:4.1.65.Final"	"org.apache.rocketmq:rocketmq-remoting:4.9.1"	"org.apache.rocketmq.remoting.netty.NettyRemotingClient$NettyConnectManageHandler"	"default"	"method call"	1
-"io.netty:netty-all:4.1.65.Final"	"unknownLib"	"java.nio.Bits"	"default"	"Class.forName"	1
-"io.netty:netty-all:4.1.65.Final"	"unknownLib"	"sun.nio.ch.SelectorImpl"	"default"	"Class.forName"	1
 "org.apache.rocketmq:rocketmq-client:4.9.1"	"org.apache.commons:commons-lang3:3.4"	"org.apache.commons.lang3.StringUtils"	"default"	"method call"	1
 "org.apache.rocketmq:rocketmq-client:4.9.1"	"org.apache.rocketmq:rocketmq-common:4.9.1"	"org.apache.rocketmq.common.message.MessageAccessor"	"default"	"method call"	1
 "org.apache.rocketmq:rocketmq-common:4.9.1"	"org.apache.rocketmq:rocketmq-client:4.9.1"	"org.apache.rocketmq.client.consumer.rebalance.AllocateMessageQueueConsistentHash$ClientNode"	"private"	"method call"	1
@@ -1102,8 +924,6 @@ UsedInLibrary	ClassLibrary	ClassName	ClassVisibility	Usage	Counts
 "io.netty:netty-all:4.1.65.Final"	"org.apache.rocketmq:rocketmq-remoting:4.9.1"	"org.apache.rocketmq.remoting.netty.NettyRemotingServer$HandshakeHandler"	"default"	"method call"	1
 "io.netty:netty-all:4.1.65.Final"	"org.apache.rocketmq:rocketmq-remoting:4.9.1"	"org.apache.rocketmq.remoting.netty.NettyRemotingServer$NettyConnectManageHandler"	"default"	"method call"	1
 "io.netty:netty-all:4.1.65.Final"	"org.apache.rocketmq:rocketmq-remoting:4.9.1"	"org.apache.rocketmq.remoting.netty.NettyRemotingServer$NettyServerHandler"	"default"	"method call"	1
-"io.netty:netty-all:4.1.65.Final"	"unknownLib"	"java.nio.Bits"	"default"	"Class.forName"	1
-"io.netty:netty-all:4.1.65.Final"	"unknownLib"	"sun.nio.ch.SelectorImpl"	"default"	"Class.forName"	1
 "org.apache.rocketmq:rocketmq-remoting:4.9.1"	"io.netty:netty-all:4.1.65.Final"	"io.netty.bootstrap.AbstractBootstrap$PendingRegistrationPromise"	"default"	"method call"	1
 "org.apache.rocketmq:rocketmq-remoting:4.9.1"	"io.netty:netty-all:4.1.65.Final"	"io.netty.buffer.PooledSlicedByteBuf"	"default"	"method call"	1
 "org.apache.rocketmq:rocketmq-remoting:4.9.1"	"io.netty:netty-all:4.1.65.Final"	"io.netty.buffer.PooledUnsafeDirectByteBuf"	"default"	"method call"	1
@@ -1111,11 +931,8 @@ UsedInLibrary	ClassLibrary	ClassName	ClassVisibility	Usage	Counts
 "org.apache.rocketmq:rocketmq-remoting:4.9.1"	"org.apache.rocketmq:rocketmq-logging:4.9.1"	"org.apache.rocketmq.logging.InternalLoggerFactory"	"private"	"method call"	1
 "io.netty:netty-all:4.1.65.Final"	"org.apache.rocketmq:rocketmq-remoting:4.9.1"	"org.apache.rocketmq.remoting.netty.NettyLogger$NettyBridgeLogger"	"private"	"method call"	1
 "io.netty:netty-all:4.1.65.Final"	"org.apache.rocketmq:rocketmq-remoting:4.9.1"	"org.apache.rocketmq.remoting.netty.NettyLogger$NettyBridgeLoggerFactory"	"private"	"method call"	1
-"io.netty:netty-all:4.1.65.Final"	"unknownLib"	"java.nio.Bits"	"default"	"Class.forName"	1
-"io.netty:netty-all:4.1.65.Final"	"unknownLib"	"sun.nio.ch.SelectorImpl"	"default"	"Class.forName"	1
 "org.apache.rocketmq:rocketmq-logging:4.9.1"	"org.apache.rocketmq:rocketmq-client:4.9.1"	"org.apache.rocketmq.client.log.ClientLogger$AppenderProxy"	"default"	"method call"	1
 "org.apache.rocketmq:rocketmq-remoting:4.9.1"	"org.apache.rocketmq:rocketmq-logging:4.9.1"	"org.apache.rocketmq.logging.InternalLoggerFactory"	"private"	"method call"	1
-"xalan:xalan:2.7.0"	"xalan:xalan:2.7.0"	"org.apache.xml.serializer.ObjectFactory"	"default"	"Class.forName"	1
 "org.elasticsearch:elasticsearch:7.12.1"	"org.elasticsearch.common.xcontent"	"org.elasticsearch.common.xcontent.ToXContent$1"	"default"	"method call"	1
 "org.elasticsearch:elasticsearch:7.12.1"	"org.elasticsearch.common.xcontent"	"org.elasticsearch.common.xcontent.XContentParser$Token$1"	"default"	"method call"	1
 "org.elasticsearch:elasticsearch:7.12.1"	"org.elasticsearch.common.xcontent"	"org.elasticsearch.common.xcontent.XContentParser$Token$10"	"default"	"method call"	1
@@ -1187,7 +1004,6 @@ UsedInLibrary	ClassLibrary	ClassName	ClassVisibility	Usage	Counts
 "tech.tablesaw:tablesaw-core:0.38.5"	"org.apache.commons:commons-math3:3.6.1"	"org.apache.commons.math3.stat.StatUtils"	"default"	"method call"	1
 "tech.tablesaw:tablesaw-core:0.38.5"	"org.roaringbitmap:RoaringBitmap:0.8.12"	"org.roaringbitmap.RoaringBitmap$RoaringIntIterator"	"private"	"method call"	1
 "commons-codec:commons-codec:1.9"	"java.security"	"java.security.MessageDigest$Delegate"	"default"	"method call"	1
-"log4j:log4j:1.2.17"	"log4j:log4j:1.2.17"	"org.apache.log4j.CategoryKey"	"default"	"Class.forName"	1
 "org.apache.httpcomponents:httpclient:4.5.2"	"commons-logging:commons-logging:1.2"	"org.apache.commons.logging.LogFactory"	"default"	"method call"	1
 "org.apache.httpcomponents:httpclient:4.5.2"	"org.apache.httpcomponents:httpcore:4.4.4"	"org.apache.http.util.Args"	"default"	"method call"	1
 "org.apache.httpcomponents:httpcore:4.4.4"	"org.apache.httpcomponents:httpclient:4.5.2"	"org.apache.http.client.methods.HttpRequestWrapper$HttpEntityEnclosingRequestWrapper"	"default"	"method call"	1
@@ -1205,7 +1021,6 @@ UsedInLibrary	ClassLibrary	ClassName	ClassVisibility	Usage	Counts
 "us.codecraft:webmagic-core:0.7.3"	"org.apache.httpcomponents:httpclient:4.5.2"	"org.apache.http.impl.execchain.ResponseEntityProxy"	"default"	"method call"	1
 "com.google.guava:guava:15.0"	"java.security"	"java.security.MessageDigest"	"default"	"method call"	1
 "com.google.guava:guava:15.0"	"java.security"	"java.security.MessageDigest$Delegate"	"default"	"method call"	1
-"log4j:log4j:1.2.17"	"log4j:log4j:1.2.17"	"org.apache.log4j.CategoryKey"	"default"	"Class.forName"	1
 "org.apache.httpcomponents:httpclient:4.5.2"	"commons-logging:commons-logging:1.2"	"org.apache.commons.logging.LogFactory"	"default"	"method call"	1
 "org.apache.httpcomponents:httpclient:4.5.2"	"org.apache.httpcomponents:httpcore:4.4.4"	"org.apache.http.util.Args"	"default"	"method call"	1
 "org.apache.httpcomponents:httpcore:4.4.4"	"org.apache.httpcomponents:httpclient:4.5.2"	"org.apache.http.impl.conn.CPool"	"default"	"method call"	1

@@ -1,39 +1,37 @@
 library(dplyr)
+library(tidyr)
 
 file_list = list.files(path="Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data", recursive = TRUE, pattern="*-invocations.tsv", full.names = TRUE)
-writeLines("CallerLibrary\tDeclaredCalleeLibrary\tActualCalleeLibrary\tDeclaredCalleeMethod\tActualCalleeMethod\tCalleeVisibility\tServiceBypass\tCounts","Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data/RQ2-serviceBypass.tsv")
+writeLines("CallerLibrary\tCallerMethod\tDeclaredCalleeMethod\tDeclaredCalleeLibrary\tActualCalleeMethod\tActualCalleeLibrary\tCalleeVisibility\tServiceBypass\tCounts","Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data/RQ2-serviceBypasses.tsv")
 for (i in seq_along(file_list)) {
   filename = file_list[[i]]
   df <- read.csv(filename, sep='\t')
   # RQ2a - ServiceLoader + Casts
   reflDf <- df[df$Service.Bypass == "cast", ]
-  counts = reflDf %>% group_by(Caller.Library, Declared.Callee.Library, Actual.Callee.Library, Declared.Callee.Method, Actual.Callee.Method, Callee.Visibility,Service.Bypass) %>% summarise(Count = n())
-  print(counts)
-  write.table(counts,"Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data/RQ2-serviceBypass.tsv",sep="\t",row.names=FALSE, col.names=FALSE, append=TRUE)
+  counts = reflDf %>% group_by(Caller.Library, Caller.Method, Declared.Callee.Method, Declared.Callee.Library, Actual.Callee.Method, Actual.Callee.Library, Callee.Visibility,Service.Bypass) %>% summarise(Count = n())  %>% drop_na()
+  write.table(counts,"Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data/RQ2-serviceBypasses.tsv",sep="\t",row.names=FALSE, col.names=FALSE, append=TRUE)
   
   # RQ2b - ServiceLoader + Instantiations
   reflDf <- df[df$Service.Bypass == "instantiation", ]
-  counts = reflDf %>% group_by(Caller.Library, Declared.Callee.Library, Actual.Callee.Library, Declared.Callee.Method, Actual.Callee.Method, Callee.Visibility,Service.Bypass) %>% summarise(Count = n())
-  print(counts)
-  write.table(counts,"Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data/RQ2-serviceBypass.tsv",sep="\t",row.names=FALSE, col.names=FALSE, append=TRUE)
+  counts = reflDf %>% group_by(Caller.Library, Caller.Method, Declared.Callee.Method, Declared.Callee.Library, Actual.Callee.Method, Actual.Callee.Library, Callee.Visibility,Service.Bypass) %>% summarise(Count = n())  %>% drop_na()
+  write.table(counts,"Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data/RQ2-serviceBypasses.tsv",sep="\t",row.names=FALSE, col.names=FALSE, append=TRUE)
   
   # RQ2c - ServiceLoader + Reflection
   reflDf <- df[df$Service.Bypass == "reflection", ]
-  counts = reflDf %>% group_by(Caller.Library, Declared.Callee.Library, Actual.Callee.Library, Declared.Callee.Method, Actual.Callee.Method, Callee.Visibility,Service.Bypass) %>% summarise(Count = n())
-  print(counts)
-  write.table(counts,"Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data/RQ2-serviceBypass.tsv",sep="\t",row.names=FALSE, col.names=FALSE, append=TRUE)
+  counts = reflDf %>% group_by(Caller.Library, Caller.Method, Declared.Callee.Method, Declared.Callee.Library, Actual.Callee.Method, Actual.Callee.Library, Callee.Visibility,Service.Bypass) %>% summarise(Count = n())  %>% drop_na()
+  write.table(counts,"Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data/RQ2-serviceBypasses.tsv",sep="\t",row.names=FALSE, col.names=FALSE, append=TRUE)
 }
 
 # RQ2 - serviceBypassCalls
 file_list = list.files(path="Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data", recursive = TRUE, pattern="*-serviceBypassCalls.tsv", full.names = TRUE)
-writeLines("CallerLibrary\tCallerMethod\tInterfaceLibrary\tInterfaceName\tImplName\tCalleeMethod\tCounts","Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data/RQ2-serviceBypassCalls.tsv")
+writeLines("CallerLibrary\tCallerMethod\tInterfaceLibrary\tInterfaceName\tImplName\tImplLibrary\tCalleeMethod\tCounts","Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data/RQ2-serviceBypassCalls.tsv")
 for (i in seq_along(file_list)) {
   filename = file_list[[i]]
   print(filename)
   df <- read.csv(filename, sep='\t')
-  counts = df %>% group_by(Caller.Library, Caller.Method, Interface.Library, Interface.Name, Impl..Name, Callee.Method ) %>% summarise(Count = n())
+  counts = df %>% group_by(Caller.Library, Caller.Method, Interface.Library, Interface.Name, Impl..Name, Impl..Library, Callee.Method ) %>% summarise(Count = n())
   print(counts)
-  write.table(counts,"Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data/RQ2-serviceBypassCalls.tsv",sep="\t",row.names=FALSE, col.names=FALSE, append=TRUE)
+  write.table(counts,"Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data/RQ2-serviceBypassMethods.tsv",sep="\t",row.names=FALSE, col.names=FALSE, append=TRUE)
 }
 
 # RQ2d - setAccessible

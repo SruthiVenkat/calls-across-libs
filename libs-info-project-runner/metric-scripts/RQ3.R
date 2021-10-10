@@ -1,5 +1,7 @@
 # RQ3 - crossing Java9-module-info and OSGI boundaries
 library(hash)
+library(dplyr)
+library(tidyr)
 
 java9modulesDataFrame = read.csv("Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data/java9modulesInfo.tsv", sep='\t')
 java9modulesData <- hash()
@@ -19,16 +21,36 @@ for(i in 1:nrow(osgiDataFrame))
     osgiData[[libKey]] <- paste(osgiData[[libKey]], osgiDataFrame[i,2][[1]], sep=",")
 }
 
-writeLines("CallerLibrary\tCallee\tCalleeLibrary\tCalleeType","Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data/RQ3-osgiBypasses.tsv")
-writeLines("CallerLibrary\tCallee\tCalleeLibrary\tCalleeType","Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data/RQ3-moduleBypasses.tsv")
+writeLines("CallerLibrary\tCalleeName\tCalleeLibrary\tCalleeType","Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data/RQ3-osgiBypasses.tsv")
+writeLines("CallerLibrary\tCalleeName\tCalleeLibrary\tCalleeType","Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data/RQ3-moduleBypasses.tsv")
 
 returnInvocationsDataRow <- function(df) {
-  dataRow = data.frame(df[j,2], df[j,6],df[j,7], "method call")
+  dataRow = data.frame(df[j,2], df[j,6],df[j,7], "method")
   return(dataRow)
 }
 
 returnFieldsDataRow <- function(df) {
   dataRow = data.frame(df[j,1], paste(df[j,2],df[j,5],";"),df[j,8], "field")
+  return(dataRow)
+}
+
+returnClassUsageDataRow <- function(df) {
+  dataRow = data.frame(df[j,5], paste(df[j,1],df[j,2],df[j,4],";"),df[j,3], "class usage")
+  return(dataRow)
+}
+
+returnAnnotationsDataRow <- function(df) {
+  dataRow = data.frame(df[j,4], paste(df[j,5],df[j,6],";"),df[j,7], "annotations")
+  return(dataRow)
+}
+
+returnSubtypingDataRow <- function(df) {
+  dataRow = data.frame(df[j,2], paste(df[j,3],df[j,4],";"),df[j,5], "subtyping")
+  return(dataRow)
+}
+
+returnSetAccessibleDataRow <- function(df) {
+  dataRow = data.frame(df[j,2], df[j,5],df[j,7], "setAccessible")
   return(dataRow)
 }
 
@@ -50,7 +72,7 @@ detectOSGIModuleBypasses <- function(file_list, calleeIndex, libIndex, fn) {
         if (is.character(osgiData[[lib]])) { # checks if lib exists in osgiData
           osgiExports = strsplit(osgiData[[lib]], ",")
           if (!(pkg %in% osgiExports[[1]])) {
-            dataRow = fn(df)
+            dataRow = fn(df)  %>% drop_na()
             write.table(dataRow,"Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data/RQ3-osgiBypasses.tsv",sep="\t",row.names=FALSE, col.names=FALSE, append=TRUE)
             
           }
@@ -58,7 +80,7 @@ detectOSGIModuleBypasses <- function(file_list, calleeIndex, libIndex, fn) {
         if (is.character(java9modulesData[[lib]])) { # checks if lib exists in osgiData
           moduleExports = strsplit(java9modulesData[[lib]], ";")
           if (!(pkg %in% moduleExports[[1]])) {
-            dataRow = fn(df)
+            dataRow = fn(df)  %>% drop_na()
             write.table(dataRow,"Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data/RQ3-moduleBypasses.tsv",sep="\t",row.names=FALSE, col.names=FALSE, append=TRUE)
           }
         }
@@ -73,4 +95,17 @@ detectOSGIModuleBypasses(list.files(path="Documents/Waterloo/PL/calls-across-lib
 # fields 
 detectOSGIModuleBypasses(list.files(path="Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data", recursive = TRUE, pattern="*-fields.tsv", full.names = TRUE)
                          ,2, 8, returnFieldsDataRow)
+# class usage
+detectOSGIModuleBypasses(list.files(path="Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data", recursive = TRUE, pattern="*-classesUsageInfo.tsv", full.names = TRUE)
+                         ,1, 3, returnClassUsageDataRow)
+
+# annotations
+detectOSGIModuleBypasses(list.files(path="Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data", recursive = TRUE, pattern="*-annotations.tsv", full.names = TRUE)
+                         ,5, 7, returnAnnotationsDataRow)
+# subtyping
+detectOSGIModuleBypasses(list.files(path="Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data", recursive = TRUE, pattern="*-subtyping.tsv", full.names = TRUE)
+                         ,3, 5, returnSubtypingDataRow)
+# setAccessible
+detectOSGIModuleBypasses(list.files(path="Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data", recursive = TRUE, pattern="*-setAccessibleCalls.tsv", full.names = TRUE)
+                         ,5, 7, returnSetAccessibleDataRow)
 

@@ -2,10 +2,6 @@
 library(hash)
 libraries <- c("com.alibaba:fastjson", "org.apache.commons:commons-collections4", "commons-io:commons-io", "joda-time:joda-time", 
                "", "", "org.jsoup:jsoup", "", "com.fasterxml.jackson.core:jackson-databind", "com.fasterxml.jackson.core:jackson-core") #gson,org.json,slf4j
-jackson_databind_clients <- c("io.rest-assured:rest-assured-common", "org.thymeleaf:thymeleaf", "com.capitalone.dashboard:core", 
-                              "io.springside:springside-core", "io.geekidea:spring-boot-plus")
-libsAndClients <- hash()
-libsAndClients[["com.fasterxml.jackson.core:jackson-databind"]] <- jackson_databind_clients
 
 callee_methods <- hash() # client -> (library -> [list of methods])
 
@@ -16,7 +12,6 @@ for (i in seq_along(file_list)) {
   df <- read.csv(filename, sep='\t')
   for(i in 1:nrow(df)) 
   {
-    #df$Actual.Callee.Method # add for each client based on lib (client-caller lib)
     if (is.character(df[i, 2]) && is.character(df[i, 7])) {
       calleeLibGAV = strsplit(df[i,7], ":")
       if(length(calleeLibGAV[[1]])>=3)

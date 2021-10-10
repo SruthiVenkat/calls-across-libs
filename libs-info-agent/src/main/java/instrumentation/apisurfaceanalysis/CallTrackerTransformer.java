@@ -294,7 +294,7 @@ public class CallTrackerTransformer implements ClassFileTransformer {
                                                                                 return;
                                                                         } else {
                                                                                 // reflective call
-                                                                                m.replace("{instrumentation.apisurfaceanalysis.CallTrackerTransformer.updateReflectiveCaller(Thread.currentThread().getId(), \""+callingMethodName+callingDescriptorName+"\", \""+methodCallerClassName+"\", $0); $_ = $proceed($$);}");
+                                                                                m.replace("{if ($0 != null) instrumentation.apisurfaceanalysis.CallTrackerTransformer.updateReflectiveCaller(Thread.currentThread().getId(), \""+callingMethodName+callingDescriptorName+"\", \""+methodCallerClassName+"\", $0); $_ = $proceed($$);}");
                                                                         }
                                                                 }
                                                 
