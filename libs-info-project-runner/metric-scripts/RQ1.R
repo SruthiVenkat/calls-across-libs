@@ -35,7 +35,7 @@ for (i in seq_along(file_list)) {
   filename = file_list[[i]]
   print(filename)
   df <- read.csv(filename, sep='\t')
-  filteredDf = filter(df, Used.In.Library != Class.Library, !grepl("unknownLib", Class.Library, fixed=TRUE), !grepl("unknownLib", Used.In.Library, fixed=TRUE), !grepl("public", Class.Visibility, fixed=TRUE))
+  filteredDf = filter(df, Used.In.Library != Class.Library, !grepl("unknownLib", Class.Library, fixed=TRUE), !grepl("unknownLib", Used.In.Library, fixed=TRUE))
   counts = filteredDf %>% group_by(Used.In.Library, Class.Library, Class.Name, Class.Visibility, Usage) %>% summarise(Count = n())
   write.table(counts,"Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data/RQ1-classUsage.tsv",sep="\t",row.names=FALSE, col.names=FALSE, append=TRUE)
 }
