@@ -1,9 +1,8 @@
-# Jaccard Similarity = intersection/union
 library(hash)
 libraries <- c("com.alibaba:fastjson", "org.apache.commons:commons-collections4", "commons-io:commons-io", "joda-time:joda-time", 
                "com.google.code.gson:gson", "org.json:json", "org.jsoup:jsoup", "org.slf4j:slf4j-api", "com.fasterxml.jackson.core:jackson-databind", "com.fasterxml.jackson.core:jackson-core")
 
-callee_methods <- hash() # client -> (library -> [list of methods])
+callee_methods <- hash() # library -> (client -> [list of methods])
 
 file_list = list.files(path="Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data", recursive = TRUE, pattern="*-invocations.tsv", full.names = TRUE)
 
@@ -41,6 +40,10 @@ for (i in seq_along(file_list)) {
   }
 }
 
+libsInfoList = list.files(path="Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data", recursive = TRUE, pattern="*-libsInfo.tsv", full.names = TRUE)
+
+
+# Jaccard Similarity = intersection/union
 jacSimilarities <- hash()
 for (lib in libraries){
   if(lib == "" || is.null(callee_methods[[lib]])){
@@ -84,3 +87,20 @@ for (lib in libraries){
   }
 }
 
+# API Proportions
+apiProportions <- hash()
+for (lib in libraries){
+  if(lib == "" || is.null(callee_methods[[lib]])){
+    next
+  }
+  if(is.null(jacSimilarities[[lib]])){
+    apiProportions[lib] <- hash()
+  }
+  path <- paste("Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data/RQ4-api-proportion-",lib,".tsv",sep="")
+
+  cat("Client\tAPI Proportion",file=path,sep="")
+  for (client in keys(callee_methods[[lib]])){
+    #apiProportions[[lib]][[client]] <- 
+    print(paste("lib",lib,"client",client,length(callee_methods[[lib]][[client]]),sep=" "))
+  }
+}

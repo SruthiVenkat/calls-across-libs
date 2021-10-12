@@ -1,3 +1,6 @@
+library(sjPlot)
+library(xtable)
+
 # modules
 
 # osgi
