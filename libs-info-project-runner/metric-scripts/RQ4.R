@@ -40,9 +40,6 @@ for (i in seq_along(file_list)) {
   }
 }
 
-libsInfoList = list.files(path="Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data", recursive = TRUE, pattern="*-libsInfo.tsv", full.names = TRUE)
-
-
 # Jaccard Similarity = intersection/union
 jacSimilarities <- hash()
 for (lib in libraries){
@@ -87,6 +84,24 @@ for (lib in libraries){
   }
 }
 
+# get total number of public/protected methods of each library
+totalMethods <- hash()
+libsInfoList = list.files(path="Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data", recursive = TRUE, pattern="*-libsInfo.tsv", full.names = TRUE)
+for (i in seq_along(file_list)) {
+  libsInfoFile = libsInfoList[[i]]
+  subdirs = str_split(libsInfoFile,"/")
+  gav = strsplit(subdirs[[1]][length(subdirs[[1]])-1], ":")
+  file = paste(gav[[1]][[1]], gav[[1]][[2]], sep=":")
+  if (file %in% libraries) {
+    libsDf <- read.csv(libsInfoFile, sep='\t')
+    for(j in 1:nrow(libsDf)) {
+      if(startsWith(libsDf[j, "Library.Name"], file)) {
+        totalMethods[file] = libsDf[j, 2]
+      }
+    }
+  }
+}
+
 # API Proportions
 apiProportions <- hash()
 for (lib in libraries){
@@ -100,7 +115,8 @@ for (lib in libraries){
 
   cat("Client\tAPI Proportion",file=path,sep="")
   for (client in keys(callee_methods[[lib]])){
-    #apiProportions[[lib]][[client]] <- 
-    print(paste("lib",lib,"client",client,length(callee_methods[[lib]][[client]]),sep=" "))
+    print(paste("lib",lib,"client",client,1.0*length(callee_methods[[lib]][[client]])/totalMethods[[lib]],sep=" "))
+    cat("\n",paste(client,1.0*length(callee_methods[[lib]][[client]])/totalMethods[[lib]],sep="\t"),file=path,sep="",append=TRUE)
   }
 }
+
