@@ -86,17 +86,28 @@ for (lib in libraries){
 
 # get total number of public/protected methods of each library
 totalMethods <- hash()
+testMethods <- hash()
+totalFields <- hash()
+totalClasses <- hash()
+totalAnnotations <- hash()
+
 libsInfoList = list.files(path="Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data", recursive = TRUE, pattern="*-libsInfo.tsv", full.names = TRUE)
-for (i in seq_along(file_list)) {
+for (i in seq_along(libsInfoList)) {
+  print(libsInfoList[[i]])
   libsInfoFile = libsInfoList[[i]]
   subdirs = str_split(libsInfoFile,"/")
   gav = strsplit(subdirs[[1]][length(subdirs[[1]])-1], ":")
   file = paste(gav[[1]][[1]], gav[[1]][[2]], sep=":")
+  print(file)
   if (file %in% libraries) {
     libsDf <- read.csv(libsInfoFile, sep='\t')
     for(j in 1:nrow(libsDf)) {
       if(startsWith(libsDf[j, "Library.Name"], file)) {
         totalMethods[file] = libsDf[j, 2]
+        totalClasses[file] = libsDf[j, 3]
+        totalFields[file] = libsDf[j, 4]
+        totalAnnotations[file] = libsDf[j, 5]
+        testMethods[file] = libsDf[j, 6]
       }
     }
   }
@@ -108,15 +119,43 @@ for (lib in libraries){
   if(lib == "" || is.null(callee_methods[[lib]])){
     next
   }
-  if(is.null(jacSimilarities[[lib]])){
+  if(is.null(apiProportions[[lib]])){
     apiProportions[lib] <- hash()
   }
   path <- paste("Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data/RQ4-api-proportion-",lib,".tsv",sep="")
 
-  cat("Client\tAPI Proportion",file=path,sep="")
+  cat("Client\tAPI Proportion\tNo. Of Methods",file=path,sep="")
   for (client in keys(callee_methods[[lib]])){
     print(paste("lib",lib,"client",client,1.0*length(callee_methods[[lib]][[client]])/totalMethods[[lib]],sep=" "))
-    cat("\n",paste(client,1.0*length(callee_methods[[lib]][[client]])/totalMethods[[lib]],sep="\t"),file=path,sep="",append=TRUE)
+    cat("\n",paste(client,1.0*length(callee_methods[[lib]][[client]])/totalMethods[[lib]],length(callee_methods[[lib]][[client]]),sep="\t"),file=path,sep="",append=TRUE)
   }
 }
+
+libsDetailsDf <- data.frame("Library"=character(), "No. Of Public/Protected Methods"=integer(), "No. Of Methods Called By Library Tests"=integer(), "No. Of Methods Called By All Clients"=integer(), "(methods called by library's tests)/total"=double())
+for (lib in libraries) {
+  allMethods <- c()
+  for (client in keys(callee_methods[[lib]])) {
+    allMethods <- c(allMethods, callee_methods[[lib]][[client]])
+  }
+  allMethods = as.list(unique(allMethods))
+  #todo - look into these libs
+  if (testMethods[[lib]]>totalMethods[[lib]]) testMethods[[lib]] = 0
+  row = data.frame(list("Library"=lib, "No. Of Public/Protected Methods"=totalMethods[[lib]], "No. Of Methods Called By Library Tests"=testMethods[[lib]], "No. Of Methods Called By All Clients"=length(allMethods), "(methods called by library's tests)/total"=1.0*testMethods[[lib]]/totalMethods[[lib]]))
+  libsDetailsDf = rbind(libsDetailsDf, row)
+}
+
+
+
+
+tab_df(
+  libsDetailsDf,
+  title = "Library Details",
+  footnote = NULL,
+  col.header = c("Library", "No. Of Public/Protected Methods", "No. Of Methods Called By Library Tests", "No. Of Methods Called By All Clients", "(methods called by library's tests)/total"),
+  sort.column = 1,
+  CSS = list(css.centeralign = 'text-align: left;')
+)
+print(xtable(libsDetailsDf,
+             caption = "Library Details", digits = 5, colnames(c("Library", "No. Of Public/Protected Methods", "No. Of Methods Called By Library Tests", "No. Of Methods Called By All Clients", "(methods called by library's tests)/total"))), 
+      file = "Documents/Waterloo/PL/21.icse.library-usage/rq4-library-details.tex", size="small")
 
