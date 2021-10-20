@@ -1,4 +1,5 @@
-Client A/Client B	com.alibaba:fastjson 	com.querydsl:querydsl-sql 	org.springframework:spring-context
-com.alibaba:fastjson	1	0.04	0
-com.querydsl:querydsl-sql	0.04	1	0
-org.springframework:spring-context	0	0	1
+Client A/Client B	com.alibaba:fastjson 	com.querydsl:querydsl-sql 	io.swagger:swagger-codegen 	org.springframework:spring-context
+com.alibaba:fastjson	1	0.04	0	0
+com.querydsl:querydsl-sql	0.04	1	0	0
+io.swagger:swagger-codegen	0	0	1	0
+org.springframework:spring-context	0	0	0	1

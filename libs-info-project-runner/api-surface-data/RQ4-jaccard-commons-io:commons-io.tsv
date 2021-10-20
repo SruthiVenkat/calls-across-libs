@@ -1,4 +1,6 @@
-Client A/Client B	br.com.caelum:vraptor 	com.github.eirslett:frontend-plugin-core 	us.codecraft:webmagic-core
-br.com.caelum:vraptor	1	0.25	0
-com.github.eirslett:frontend-plugin-core	0.25	1	0
-us.codecraft:webmagic-core	0	0	1
+Client A/Client B	br.com.caelum:vraptor 	com.github.eirslett:frontend-plugin-core 	io.swagger:swagger-codegen 	io.swagger:swagger-parser 	us.codecraft:webmagic-core
+br.com.caelum:vraptor	1	0.25	0.5	0	0
+com.github.eirslett:frontend-plugin-core	0.25	1	0.333333333333333	0	0
+io.swagger:swagger-codegen	0.5	0.333333333333333	1	0	0
+io.swagger:swagger-parser	0	0	0	1	0
+us.codecraft:webmagic-core	0	0	0	0	1

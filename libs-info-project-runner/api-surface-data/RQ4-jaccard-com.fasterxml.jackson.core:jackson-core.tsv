@@ -1,6 +1,6 @@
 Client A/Client B	com.capitalone.dashboard:core 	com.fasterxml.jackson.core:jackson-databind 	com.fasterxml.jackson.datatype:jackson-datatype-jsr310 	com.googlecode.ez-vcard:ez-vcard 	org.springframework:spring-web
 com.capitalone.dashboard:core	1	0	0	0	0
-com.fasterxml.jackson.core:jackson-databind	0	1	0.0131578947368421	0.168421052631579	0
-com.fasterxml.jackson.datatype:jackson-datatype-jsr310	0	0.0131578947368421	1	0.0285714285714286	0
-com.googlecode.ez-vcard:ez-vcard	0	0.168421052631579	0.0285714285714286	1	0
+com.fasterxml.jackson.core:jackson-databind	0	1	0.0120481927710843	0.168316831683168	0
+com.fasterxml.jackson.datatype:jackson-datatype-jsr310	0	0.0120481927710843	1	0.0285714285714286	0
+com.googlecode.ez-vcard:ez-vcard	0	0.168316831683168	0.0285714285714286	1	0
 org.springframework:spring-web	0	0	0	0	1
