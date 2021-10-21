@@ -113,7 +113,7 @@ public class DependentTestRunner {
 		InvocationRequest request = new DefaultInvocationRequest();
 		request.setPomFile(new File(pomFile));
 		request.setGoals(Arrays.asList("help:evaluate"));
-		request.setJavaHome(new File(javaHomes.get(javaVersion)));
+		//request.setJavaHome(new File(javaHomes.get(javaVersion)));
 		
 		//System.setProperty("maven.home", "/usr/share/maven");
 		System.setProperty("maven.home", "/opt/homebrew/Cellar/maven/3.8.2/libexec");
@@ -189,8 +189,9 @@ public class DependentTestRunner {
         	File pomFile = new File(new File(".").getAbsolutePath()+File.separator+"projects"+File.separator+projectObject.get("execDir")+File.separator+"pom.xml");
         	setJavaVersion((long) projectObject.get("javaVersion"));
         	mvnInstallProject(pomFile, (long)projectObject.get("javaVersion")); // generate jars
-        	if (((String)projectObject.get("rootDir")) != null)
+        	if (!((String)projectObject.get("rootDir")).equals("")) {
         		mvnInstallProject(new File(new File(".").getAbsolutePath()+File.separator+"projects"+File.separator+projectObject.get("rootDir")+File.separator+"pom.xml"), (long)projectObject.get("javaVersion"));
+        	}
         }
 	}
 		
@@ -236,7 +237,7 @@ public class DependentTestRunner {
 		InvocationRequest request = new DefaultInvocationRequest();
 		request.setPomFile(pomFile);
 		request.setGoals(Arrays.asList("clean", "install"));
-		request.setMavenOpts("-Dlicense.skip=true -DskipTests=true -Dcheckstyle.skip=true -Dgpg.skip=true -Drat.skip=true");
+		request.setMavenOpts("-Dlicense.skip=true -DskipTests=true -Dcheckstyle.skip=true -Dgpg.skip=true -Drat.skip=true -Dmaven.buildNumber.doCheck=false");
 		request.setJavaHome(new File(javaHomes.get(javaVersion)));
 		//System.setProperty("maven.home", "/usr/share/maven");
 		System.setProperty("maven.home", "/opt/homebrew/Cellar/maven/3.8.2/libexec");
@@ -252,8 +253,8 @@ public class DependentTestRunner {
 		InvocationRequest request = new DefaultInvocationRequest();
 		request.setPomFile(pomFile);
 		request.setGoals(Arrays.asList("test")); 
-		request.setMavenOpts("-Drat.skip=true -Dmaven.test.skip=false");
-		request.setJavaHome(new File(javaHomes.get(javaVersion)));
+		request.setMavenOpts("-Drat.skip=true -Dmaven.test.skip=false -Dmaven.buildNumber.doCheck=false");
+		//request.setJavaHome(new File(javaHomes.get(javaVersion)));
 		
 		// parse pom and get existing argLine param
 		String argLine = "";

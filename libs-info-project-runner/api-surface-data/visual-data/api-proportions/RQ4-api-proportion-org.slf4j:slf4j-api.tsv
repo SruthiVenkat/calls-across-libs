@@ -1,0 +1,27 @@
+Client	API Proportion	No. Of Methods
+br.com.caelum:vraptor	0.00364963503649635	1
+ch.qos.logback:logback-classic	0.0693430656934307	19
+cn.wanghaomiao:JsoupXpath	0.00364963503649635	1
+com.alibaba:druid	0.00364963503649635	1
+com.alibaba:fastjson	0.00364963503649635	1
+io.netty:netty-all	0.0072992700729927	2
+io.netty:netty-common	0.0072992700729927	2
+io.projectreactor:reactor-core	0.00364963503649635	1
+io.springside:springside-metrics	0.00364963503649635	1
+ma.glasnost.orika:orika-core	0.00364963503649635	1
+net.javacrumbs.json-unit:json-unit-core	0.0072992700729927	2
+net.vidageek:mirror	0.00364963503649635	1
+org.apache.logging.log4j:log4j-to-slf4j	0.00364963503649635	1
+org.apache.rocketmq:rocketmq-logging	0.0072992700729927	2
+org.codehaus.janino:janino	0.0072992700729927	2
+org.jboss.logging:jboss-logging	0.00364963503649635	1
+org.mybatis:mybatis	0.00364963503649635	1
+org.slf4j:jcl-over-slf4j	0.0364963503649635	10
+org.slf4j:slf4j-log4j12	0.0145985401459854	4
+org.springframework:spring-beans	0.00364963503649635	1
+org.springframework:spring-core	0.00364963503649635	1
+org.springframework:spring-jcl	0.00364963503649635	1
+org.springframework.boot:spring-boot-actuator-autoconfigure	0.00364963503649635	1
+org.sql2o:sql2o	0.00364963503649635	1
+us.codecraft:webmagic-core	0.00364963503649635	1
+us.codecraft:webmagic-extension	0.00364963503649635	1

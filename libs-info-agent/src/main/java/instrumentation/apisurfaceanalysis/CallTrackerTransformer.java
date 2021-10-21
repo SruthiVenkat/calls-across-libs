@@ -68,7 +68,6 @@ public class CallTrackerTransformer implements ClassFileTransformer {
                 while (!configPath.endsWith("calls-across-libs"))
                         configPath = configPath.getParent();
                 String configPathName = configPath.toString()+"/src/main/resources/config.properties";
-                System.out.println("config path--"+configPathName);
                 try (FileReader input = new FileReader(configPathName)) {
                         Properties prop = new Properties();
                         prop.load(input); 
@@ -76,13 +75,11 @@ public class CallTrackerTransformer implements ClassFileTransformer {
                         runningLibrary = prop.getProperty("runningLibrary");
                         String row;
                         BufferedReader reader = new BufferedReader(new FileReader(libsInfoPath));
-                        System.out.println("????????");
                         while ((row = reader.readLine()) != null) {
-                                System.out.println("----row---"+row);
-                            String[] data = row.split(",");
-                            if (data.length == 4) {
+                            String[] data = row.split("\t");
+                            if (data.length >= 8) {
                                 TrieUtil t = new TrieUtil();
-                                for (String str : data[3].split(":"))
+                                for (String str : data[7].split(":"))
                                         t.insert(str);
                                 libsToClasses.put(data[0], t);
                             }
@@ -90,8 +87,9 @@ public class CallTrackerTransformer implements ClassFileTransformer {
                         reader.close();
                         String servicesInfoPath = prop.getProperty("servicesInfoPath");
                         reader = new BufferedReader(new FileReader(servicesInfoPath));
+
                         while ((row = reader.readLine()) != null) {
-                                String[] data = row.split(",");
+                                String[] data = row.split("\t");
                                 if (CallTrackerTransformer.findLibrary(data[0]).equals(unknownEntry.getKey())) {
                                         String packageName = "";
                                         try {
@@ -103,28 +101,23 @@ public class CallTrackerTransformer implements ClassFileTransformer {
                                         }
                                         libsToClasses.put(packageName, new TrieUtil());
                                 }
-                                HashMap<String, HashSet<CtMethod>> implsToMethods = new HashMap<String, HashSet<CtMethod>>();
-                                HashMap<String, String> implsToLibs = new HashMap<String, String>();
-                                for (String implinfo : data[1].split(";")) {
-                                        if (implinfo.contains(",")) {
-                                                String[] impls = implinfo.split(",");
-                                                String implName = "", impllib = "";
-                                                if (impls.length>1) {
-                                                        implName = impls[0];
-                                                        impllib = impls[1];
-                                                }
-                                                
-                                                HashSet<CtMethod> implMethods = new HashSet<CtMethod>();
-                                                implsToLibs.put(implName, impllib);
-                                                implsToMethods.put(implName, implMethods);
-                                        }
-                                }
                                 
                                 ServicesInfoKey servicesInfoKey = new ServicesInfoKey(data[0], findLibrary(data[0]));
-                                ServicesInfoValue servicesInfoValue = new ServicesInfoValue(implsToLibs, implsToMethods);
-                                servicesInfo.putIfAbsent(servicesInfoKey, servicesInfoValue);
+                                servicesInfo.putIfAbsent(servicesInfoKey, 
+                                		new ServicesInfoValue(new HashMap<String, String>(), new HashMap<String, HashSet<CtMethod>>()));
+               
+                                String[] impls = data[1].split(";");
+                                String implName = "", impllib = "";
+                                if (impls.length>1) {
+                                        implName = impls[0];
+                                        impllib = impls[1];
+                                }
+                                
+                                servicesInfo.get(servicesInfoKey).implLibs.put(implName, impllib);
+                                servicesInfo.get(servicesInfoKey).implMethodsNotInInterface.put(implName, new HashSet<CtMethod>());            
                         }
                         reader.close();
+                        
                 } catch (IOException ex) {
                     System.out.println(ex);
                 }
@@ -254,7 +247,7 @@ public class CallTrackerTransformer implements ClassFileTransformer {
                         // reflective calls
                         method.insertBefore("{if (!instrumentation.apisurfaceanalysis.CallTrackerTransformer.reflectiveCaller.isEmpty()) instrumentation.apisurfaceanalysis.CallTrackerTransformer.getStackTrace(\""+methodCallerClassName+"::"+callingMethodName+callingDescriptorName+"\", \""+callingMethodLibName+"\", \""+methodVisibility+"\", \""+callerClassVisibility+"\");}");
 
-                        // Annotations - methods
+                // Annotations - methods
                         Object[] methodAnnotations = method.getAnnotations();
                         if (methodAnnotations!=null) {
                                         for (Object annotationObj : methodAnnotations) {
@@ -369,6 +362,7 @@ public class CallTrackerTransformer implements ClassFileTransformer {
                                                                         System.out.println("Cannot Compile "+cce);
                                                                 } catch (Exception e) {
                                                                         System.out.println("Exception while instrumenting "+e);
+                                                                        e.printStackTrace();
                                                                 }
                                                 }
 
@@ -599,8 +593,7 @@ public class CallTrackerTransformer implements ClassFileTransformer {
                         String calledMethodFullName = methodCalledClassName+"::"+calledMethodName;
                 if (!libsToMethods.containsKey(calledMethodLibName))
                         libsToMethods.put(calledMethodLibName, new HashSet<String>(Arrays.asList(calledMethodFullName)));
-                else if (!libsToMethods.get(calledMethodLibName).contains(calledMethodFullName))
-                        libsToMethods.get(calledMethodLibName).add(calledMethodFullName);
+                libsToMethods.get(calledMethodLibName).add(calledMethodFullName);
         }
         
         public static void updateInterLibraryCounts(String callerMethod, String callerLibrary, String calleeVisibility, String virtualCalleeMethod, String actualCalleeMethod, 

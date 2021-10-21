@@ -1,0 +1,4 @@
+Client	API Proportion	No. Of Methods
+com.alibaba:fastjson	0.00587199060481503	20
+com.querydsl:querydsl-sql	0.00176159718144451	6
+org.springframework:spring-context	0.000880798590722255	3

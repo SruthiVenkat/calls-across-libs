@@ -1,0 +1,582 @@
+Class Name	Class Visibility	Class Library	Usage	Used In Library
+com.fasterxml.jackson.databind.module.SimpleModule	public	com.fasterxml.jackson.core:jackson-databind:2.11.1	instantiation	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.properties.DateProperty	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.properties.RefProperty	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+com.fasterxml.jackson.dataformat.yaml.YAMLFactory	public	com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.11.1	instantiation	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.properties.Property	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+com.fasterxml.jackson.databind.node.ObjectNode	public	com.fasterxml.jackson.core:jackson-databind:2.11.1	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.Path	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.properties.LongProperty	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.properties.StringProperty	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+org.slf4j.Logger	public	org.slf4j:slf4j-api:1.7.12	cast	org.slf4j:slf4j-simple:1.7.12
+io.swagger.models.properties.ArrayProperty	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+com.google.common.collect.ImmutableMap$Builder	public	com.google.guava:guava:27.0.1-android	instantiation	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+org.slf4j.ILoggerFactory	public	org.slf4j:slf4j-api:1.7.12	subtyping	org.slf4j:slf4j-simple:1.7.12
+io.swagger.models.properties.RefProperty	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+org.slf4j.helpers.MarkerIgnoringBase	public	org.slf4j:slf4j-api:1.7.12	subtyping	org.slf4j:slf4j-simple:1.7.12
+io.swagger.models.parameters.FormParameter	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.parameters.BodyParameter	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.util.DeserializationModule	public	io.swagger:swagger-core:1.6.3	instantiation	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.ComposedModel	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+org.slf4j.spi.LoggerFactoryBinder	public	org.slf4j:slf4j-api:1.7.12	subtyping	org.slf4j:slf4j-simple:1.7.12
+java.security.PrivilegedAction	public	java.security	subtyping	org.slf4j:slf4j-simple:1.7.12
+io.swagger.models.properties.DateTimeProperty	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.Response	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.properties.ArrayProperty	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.parser.SwaggerParser	public	io.swagger:swagger-parser:1.0.56	instantiation	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.parameters.SerializableParameter	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.parameters.QueryParameter	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.properties.DoubleProperty	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.properties.MapProperty	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.RefModel	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.ArrayModel	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.auth.SecuritySchemeDefinition	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+org.slf4j.impl.StaticLoggerBinder	public	org.slf4j:slf4j-simple:1.7.12	method call	org.slf4j:slf4j-api:1.7.12
+com.fasterxml.jackson.databind.ObjectMapper	public	com.fasterxml.jackson.core:jackson-databind:2.11.1	instantiation	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.properties.MapProperty	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.properties.AbstractNumericProperty	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.parameters.Parameter	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.properties.DecimalProperty	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.parameters.HeaderParameter	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.ModelImpl	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.auth.OAuth2Definition	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.auth.ApiKeyAuthDefinition	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.ModelImpl	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.Model	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.Operation	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+org.slf4j.LoggerFactory	public	org.slf4j:slf4j-api:1.7.12	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+org.slf4j.impl.SimpleLoggerFactory	public	org.slf4j:slf4j-simple:1.7.12	method call	org.slf4j:slf4j-api:1.7.12
+com.samskivert.mustache.Mustache$Lambda	public	com.samskivert:jmustache:1.12	subtyping	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.Swagger	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.properties.BooleanProperty	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.HttpMethod	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.properties.FloatProperty	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+com.google.common.base.Strings	public	com.google.guava:guava:27.0.1-android	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.properties.BaseIntegerProperty	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.parser.util.ParseOptions	public	io.swagger:swagger-parser:1.0.56	instantiation	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.properties.StringProperty	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.properties.IntegerProperty	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+com.fasterxml.jackson.databind.ObjectMapper	public	com.fasterxml.jackson.core:jackson-databind:2.11.1	instantiation	io.swagger:swagger-core:1.6.3
+io.swagger.models.properties.DateProperty	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.codegen.mustache.CamelCaseLambda	public	io.swagger:swagger-codegen:2.4.24-SNAPSHOT	method call	com.samskivert:jmustache:1.12
+com.fasterxml.jackson.annotation.JsonIgnoreType	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+com.fasterxml.jackson.databind.node.ObjectNode	public	com.fasterxml.jackson.core:jackson-databind:2.11.1	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.codegen.DefaultCodegen$3	default	io.swagger:swagger-codegen:2.4.24-SNAPSHOT	method call	com.google.guava:guava:27.0.1-android
+io.swagger.models.properties.DateTimeProperty	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.parameters.PathParameter	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-compat-spec-parser:1.0.56
+io.swagger.models.properties.LongProperty	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.properties.StringProperty	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+org.slf4j.ILoggerFactory	public	org.slf4j:slf4j-api:1.7.12	subtyping	org.slf4j:slf4j-simple:1.7.12
+com.fasterxml.jackson.databind.util.TokenBuffer	public	com.fasterxml.jackson.core:jackson-databind:2.11.1	method call	com.fasterxml.jackson.core:jackson-core:2.11.1
+io.swagger.util.DeserializationModule	public	io.swagger:swagger-core:1.6.3	instantiation	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+com.fasterxml.jackson.core.base.ParserMinimalBase	public	com.fasterxml.jackson.core:jackson-core:2.11.1	subtyping	com.fasterxml.jackson.core:jackson-databind:2.11.1
+com.fasterxml.jackson.core.io.SegmentedStringWriter	public	com.fasterxml.jackson.core:jackson-core:2.11.1	instantiation	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.ExternalDocs	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-parser:1.0.56
+io.swagger.models.Swagger	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-parser:1.0.56
+com.fasterxml.jackson.core.json.JsonWriteFeature	public	com.fasterxml.jackson.core:jackson-core:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+com.fasterxml.jackson.core.ObjectCodec	public	com.fasterxml.jackson.core:jackson-core:2.11.1	cast	com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.11.1
+io.swagger.models.parameters.BodyParameter	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-compat-spec-parser:1.0.56
+io.swagger.models.auth.AuthorizationValue	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.License	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-parser:1.0.56
+com.fasterxml.jackson.core.SerializableString	public	com.fasterxml.jackson.core:jackson-core:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+com.fasterxml.jackson.annotation.JsonAutoDetect$Visibility	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.properties.MapProperty	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.properties.ObjectProperty	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-core:1.6.3
+com.fasterxml.jackson.core.JsonGenerationException	public	com.fasterxml.jackson.core:jackson-core:2.11.1	instantiation	com.fasterxml.jackson.core:jackson-databind:2.11.1
+com.fasterxml.jackson.databind.ObjectMapper	public	com.fasterxml.jackson.core:jackson-databind:2.11.1	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonAnyGetter	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+com.fasterxml.jackson.databind.node.TextNode	public	com.fasterxml.jackson.core:jackson-databind:2.11.1	method call	io.swagger:swagger-core:1.6.3
+com.fasterxml.jackson.core.JsonFactory	public	com.fasterxml.jackson.core:jackson-core:2.11.1	instantiation	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.properties.BooleanProperty	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-core:1.6.3
+io.swagger.models.properties.DecimalProperty	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+com.fasterxml.jackson.databind.node.ObjectNode	public	com.fasterxml.jackson.core:jackson-databind:2.11.1	method call	io.swagger:swagger-parser:1.0.56
+com.fasterxml.jackson.annotation.JsonInclude	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.RefModel	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+com.google.common.collect.ArrayListMultimap	public	com.google.guava:guava:27.0.1-android	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.parameters.BodyParameter	public	io.swagger:swagger-models:1.6.3	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+sun.security.provider.NativePRNG	public	unknownLib	Class.forName	java.security
+io.swagger.models.properties.PropertyBuilder	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.util.Json	public	io.swagger:swagger-core:1.6.3	method call	io.swagger:swagger-parser:1.0.56
+io.swagger.models.properties.DoubleProperty	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-parser:1.0.56
+com.fasterxml.jackson.annotation.JsonPropertyDescription	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+java.sql.Date	public	java.sql	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.Tag	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.properties.UUIDProperty	public	io.swagger:swagger-models:1.6.3	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.codegen.DefaultGenerator$4	default	io.swagger:swagger-codegen:2.4.24-SNAPSHOT	method call	com.samskivert:jmustache:1.12
+io.swagger.codegen.DefaultGenerator$3	default	io.swagger:swagger-codegen:2.4.24-SNAPSHOT	method call	com.samskivert:jmustache:1.12
+com.fasterxml.jackson.core.type.WritableTypeId	public	com.fasterxml.jackson.core:jackson-core:2.11.1	instantiation	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.properties.LongProperty	public	io.swagger:swagger-models:1.6.3	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.ComposedModel	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-parser:1.0.56
+io.swagger.models.ArrayModel	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.parameters.Parameter	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-core:1.6.3
+org.apache.commons.lang3.ObjectUtils	default	org.apache.commons:commons-lang3:3.4	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.properties.StringProperty	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-parser:1.0.56
+com.google.common.base.Strings	public	com.google.guava:guava:27.0.1-android	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonSubTypes	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+org.slf4j.helpers.FormattingTuple	public	org.slf4j:slf4j-api:1.7.12	method call	org.slf4j:slf4j-simple:1.7.12
+io.swagger.models.Info	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-parser:1.0.56
+io.swagger.models.parameters.PathParameter	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-parser:1.0.56
+io.swagger.models.properties.IntegerProperty	public	io.swagger:swagger-models:1.6.3	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+com.fasterxml.jackson.databind.module.SimpleModule	public	com.fasterxml.jackson.core:jackson-databind:2.11.1	instantiation	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.properties.RefProperty	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.auth.SecuritySchemeDefinition	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-core:1.6.3
+io.swagger.models.properties.Property	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+com.fasterxml.jackson.databind.type.TypeFactory	public	com.fasterxml.jackson.core:jackson-databind:2.11.1	method call	io.swagger:swagger-parser:1.0.56
+io.swagger.models.properties.ObjectProperty	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+com.fasterxml.jackson.databind.ObjectMapper	public	com.fasterxml.jackson.core:jackson-databind:2.11.1	method call	io.swagger:swagger-core:1.6.3
+io.swagger.models.Path	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.RefModel	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-core:1.6.3
+java.security.MessageDigestSpi	public	java.security	Class.forName	java.security
+com.fasterxml.jackson.databind.JsonDeserializer	public	com.fasterxml.jackson.core:jackson-databind:2.11.1	subtyping	io.swagger:swagger-core:1.6.3
+org.commonmark.parser.Parser	public	com.atlassian.commonmark:commonmark:0.9.0	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonInclude$Include	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+com.fasterxml.jackson.databind.node.DoubleNode	public	com.fasterxml.jackson.core:jackson-databind:2.11.1	method call	io.swagger:swagger-parser:1.0.56
+io.swagger.models.properties.MapProperty	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-parser:1.0.56
+io.swagger.models.Xml	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-core:1.6.3
+com.fasterxml.jackson.databind.module.SimpleModule	public	com.fasterxml.jackson.core:jackson-databind:2.11.1	subtyping	io.swagger:swagger-core:1.6.3
+io.swagger.models.properties.EmailProperty	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonProperty$Access	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.parameters.HeaderParameter	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-parser:1.0.56
+io.swagger.models.properties.StringProperty	public	io.swagger:swagger-models:1.6.3	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+com.fasterxml.jackson.databind.node.ObjectNode	public	com.fasterxml.jackson.core:jackson-databind:2.11.1	cast	io.swagger:swagger-compat-spec-parser:1.0.56
+io.swagger.models.ExternalDocs	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-parser:1.0.56
+io.swagger.models.properties.BinaryProperty	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-core:1.6.3
+io.swagger.models.properties.ArrayProperty	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+org.apache.commons.io.IOUtils	public	commons-io:commons-io:2.4	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+org.slf4j.impl.SimpleLogger	public	org.slf4j:slf4j-simple:1.7.12	method call	io.swagger:swagger-core:1.6.3
+io.swagger.models.properties.LongProperty	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-parser:1.0.56
+java.sql.Time	public	java.sql	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.properties.ByteArrayProperty	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-parser:1.0.56
+io.swagger.models.properties.DateTimeProperty	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.Contact	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+com.fasterxml.jackson.databind.ObjectWriter	public	com.fasterxml.jackson.core:jackson-databind:2.11.1	method call	io.swagger:swagger-core:1.6.3
+io.swagger.models.ModelImpl	public	io.swagger:swagger-models:1.6.3	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.RefResponse	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-parser:1.0.56
+io.swagger.models.parameters.QueryParameter	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.RefModel	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-compat-spec-parser:1.0.56
+io.swagger.models.properties.UUIDProperty	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-parser:1.0.56
+com.fasterxml.jackson.annotation.JsonAlias	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+com.fasterxml.jackson.annotation.JsonAnySetter	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+com.fasterxml.jackson.databind.node.ArrayNode	public	com.fasterxml.jackson.core:jackson-databind:2.11.1	cast	io.swagger:swagger-core:1.6.3
+io.swagger.models.properties.RefProperty	public	io.swagger:swagger-models:1.6.3	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.parser.util.SwaggerDeserializationResult	public	io.swagger:swagger-parser:1.0.56	instantiation	io.swagger:swagger-compat-spec-parser:1.0.56
+io.swagger.models.parameters.BodyParameter	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-parser:1.0.56
+com.fasterxml.jackson.databind.ObjectMapper	public	com.fasterxml.jackson.core:jackson-databind:2.11.1	instantiation	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.AbstractModel	public	io.swagger:swagger-models:1.6.3	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+com.fasterxml.jackson.core.util.DefaultPrettyPrinter	public	com.fasterxml.jackson.core:jackson-core:2.11.1	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+com.fasterxml.jackson.databind.node.ArrayNode	public	com.fasterxml.jackson.core:jackson-databind:2.11.1	method call	io.swagger:swagger-parser:1.0.56
+com.fasterxml.jackson.annotation.JsonIgnoreProperties	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.ModelImpl	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.auth.OAuth2Definition	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.Xml	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-parser:1.0.56
+io.swagger.models.Info	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-parser:1.0.56
+com.fasterxml.jackson.core.Versioned	public	com.fasterxml.jackson.core:jackson-core:2.11.1	subtyping	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.properties.DateProperty	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-parser:1.0.56
+org.apache.commons.lang3.StringUtils	default	org.apache.commons:commons-lang3:3.4	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+org.apache.commons.lang3.Validate	public	org.apache.commons:commons-lang3:3.4	method call	io.swagger:swagger-parser:1.0.56
+com.fasterxml.jackson.databind.node.JsonNodeType	public	com.fasterxml.jackson.core:jackson-databind:2.11.1	method call	io.swagger:swagger-core:1.6.3
+org.slf4j.impl.SimpleLoggerFactory	public	org.slf4j:slf4j-simple:1.7.12	method call	org.slf4j:slf4j-api:1.7.12
+io.swagger.models.Swagger	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-parser:1.0.56
+io.swagger.models.SecurityRequirement	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.Tag	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.ArrayModel	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-compat-spec-parser:1.0.56
+io.swagger.models.Xml	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-core:1.6.3
+io.swagger.models.Operation	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.properties.BaseIntegerProperty	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.parameters.FormParameter	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-parser:1.0.56
+io.swagger.models.Path	public	io.swagger:swagger-models:1.6.3	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.properties.IntegerProperty	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+org.json.JSONObject	public	org.json:json:20210307	instantiation	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+org.yaml.snakeyaml.composer.Composer	public	org.yaml:snakeyaml:1.29	method call	io.swagger:swagger-parser:1.0.56
+io.swagger.models.properties.ComposedProperty	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.properties.RefProperty	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-compat-spec-parser:1.0.56
+io.swagger.models.properties.IntegerProperty	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-core:1.6.3
+io.swagger.models.RefResponse	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-parser:1.0.56
+org.apache.commons.lang3.Validate	public	org.apache.commons:commons-lang3:3.4	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+com.fasterxml.jackson.core.JsonParser	public	com.fasterxml.jackson.core:jackson-core:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.properties.FloatProperty	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.auth.OAuth2Definition	public	io.swagger:swagger-models:1.6.3	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+com.fasterxml.jackson.annotation.JsonBackReference	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.Response	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-parser:1.0.56
+org.slf4j.spi.LoggerFactoryBinder	public	org.slf4j:slf4j-api:1.7.12	subtyping	org.slf4j:slf4j-simple:1.7.12
+io.swagger.models.properties.BinaryProperty	public	io.swagger:swagger-models:1.6.3	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.ModelImpl	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-parser:1.0.56
+org.slf4j.impl.SimpleLogger	public	org.slf4j:slf4j-simple:1.7.12	method call	io.swagger:swagger-parser:1.0.56
+io.swagger.models.auth.BasicAuthDefinition	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-compat-spec-parser:1.0.56
+io.swagger.models.auth.ApiKeyAuthDefinition	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-parser:1.0.56
+io.swagger.models.Scheme	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.properties.PropertyBuilder	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-core:1.6.3
+io.swagger.models.ArrayModel	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.properties.DateProperty	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-core:1.6.3
+com.fasterxml.jackson.databind.JsonSerializer	public	com.fasterxml.jackson.core:jackson-databind:2.11.1	subtyping	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.parameters.QueryParameter	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+java.security.PrivilegedAction	public	java.security	subtyping	joda-time:joda-time:2.10.5
+io.swagger.models.Scheme	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonAutoDetect	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.codegen.CodegenResponse	public	io.swagger:swagger-codegen:2.4.24-SNAPSHOT	method call	com.samskivert:jmustache:1.12
+com.fasterxml.jackson.core.JsonGenerator	public	com.fasterxml.jackson.core:jackson-core:2.11.1	subtyping	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.Path	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-core:1.6.3
+org.yaml.snakeyaml.nodes.MappingNode	public	org.yaml:snakeyaml:1.29	method call	io.swagger:swagger-parser:1.0.56
+com.fasterxml.jackson.core.util.InternCache	public	com.fasterxml.jackson.core:jackson-core:2.11.1	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.Response	public	io.swagger:swagger-models:1.6.3	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.Path	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-parser:1.0.56
+com.fasterxml.jackson.databind.node.ObjectNode	public	com.fasterxml.jackson.core:jackson-databind:2.11.1	cast	io.swagger:swagger-core:1.6.3
+io.swagger.models.refs.RefType	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-parser:1.0.56
+org.yaml.snakeyaml.LoaderOptions	public	org.yaml:snakeyaml:1.29	method call	io.swagger:swagger-parser:1.0.56
+com.fasterxml.jackson.databind.type.SimpleType	public	com.fasterxml.jackson.core:jackson-databind:2.11.1	method call	com.fasterxml.jackson.core:jackson-core:2.11.1
+io.swagger.models.properties.AbstractNumericProperty	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.License	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-parser:1.0.56
+org.yaml.snakeyaml.nodes.MappingNode	public	org.yaml:snakeyaml:1.29	cast	io.swagger:swagger-parser:1.0.56
+io.swagger.models.parameters.Parameter	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.properties.FloatProperty	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-parser:1.0.56
+com.fasterxml.jackson.core.PrettyPrinter	public	com.fasterxml.jackson.core:jackson-core:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+org.slf4j.impl.SimpleLogger	public	org.slf4j:slf4j-simple:1.7.12	method call	io.swagger:swagger-models:1.6.3
+io.swagger.models.Contact	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-parser:1.0.56
+org.yaml.snakeyaml.Yaml	public	org.yaml:snakeyaml:1.29	method call	io.swagger:swagger-parser:1.0.56
+io.swagger.models.parameters.FormParameter	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-parser:1.0.56
+io.swagger.models.properties.DateTimeProperty	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-parser:1.0.56
+io.swagger.models.parameters.Parameter	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-parser:1.0.56
+io.swagger.models.ModelImpl	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.properties.StringProperty	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-core:1.6.3
+org.apache.commons.lang3.ArrayUtils	public	org.apache.commons:commons-lang3:3.4	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonTypeName	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.RefPath	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-parser:1.0.56
+com.google.common.collect.ImmutableMap	public	com.google.guava:guava:27.0.1-android	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.properties.RefProperty	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-parser:1.0.56
+com.samskivert.mustache.Mustache$Lambda	public	com.samskivert:jmustache:1.12	subtyping	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.utils.PropertyModelConverter	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.Model	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-parser:1.0.56
+io.swagger.models.properties.FloatProperty	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+org.joda.time.DateTime	public	joda-time:joda-time:2.10.5	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.Path	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-compat-spec-parser:1.0.56
+io.swagger.models.properties.DateTimeProperty	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-core:1.6.3
+io.swagger.models.utils.PropertyModelConverter	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-parser:1.0.56
+io.swagger.parser.Swagger20Parser	public	io.swagger:swagger-parser:1.0.56	instantiation	io.swagger:swagger-compat-spec-parser:1.0.56
+com.fasterxml.jackson.databind.node.ObjectNode	public	com.fasterxml.jackson.core:jackson-databind:2.11.1	method call	io.swagger:swagger-core:1.6.3
+io.swagger.models.ModelImpl	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.properties.RefProperty	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-parser:1.0.56
+io.swagger.models.properties.DecimalProperty	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-core:1.6.3
+io.swagger.models.properties.FileProperty	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+com.fasterxml.jackson.core.json.UTF8StreamJsonParser	public	com.fasterxml.jackson.core:jackson-core:2.11.1	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.Contact	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-compat-spec-parser:1.0.56
+com.fasterxml.jackson.dataformat.yaml.YAMLFactory	public	com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.11.1	instantiation	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+com.fasterxml.jackson.core.JsonParseException	public	com.fasterxml.jackson.core:jackson-core:2.11.1	instantiation	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.codegen.config.CodegenConfigurator	public	io.swagger:swagger-codegen:2.4.24-SNAPSHOT	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+com.fasterxml.jackson.annotation.JsonIgnore	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.properties.MapProperty	public	io.swagger:swagger-models:1.6.3	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.parameters.SerializableParameter	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-compat-spec-parser:1.0.56
+org.slf4j.helpers.MessageFormatter	public	org.slf4j:slf4j-api:1.7.12	method call	org.slf4j:slf4j-simple:1.7.12
+io.swagger.models.ModelImpl	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-core:1.6.3
+io.swagger.models.properties.ObjectProperty	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-parser:1.0.56
+io.swagger.models.parameters.FormParameter	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+com.fasterxml.jackson.databind.ObjectWriter	public	com.fasterxml.jackson.core:jackson-databind:2.11.1	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+com.google.common.base.Predicate	public	com.google.guava:guava:27.0.1-android	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.parameters.FormParameter	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+com.samskivert.mustache.Template$1	default	com.samskivert:jmustache:1.12	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.parameters.QueryParameter	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-parser:1.0.56
+com.fasterxml.jackson.databind.node.ArrayNode	public	com.fasterxml.jackson.core:jackson-databind:2.11.1	cast	io.swagger:swagger-compat-spec-parser:1.0.56
+io.swagger.models.properties.IntegerProperty	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-parser:1.0.56
+io.swagger.models.properties.BooleanProperty	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.parameters.AbstractParameter	public	io.swagger:swagger-models:1.6.3	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.properties.ArrayProperty	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-compat-spec-parser:1.0.56
+com.fasterxml.jackson.core.io.SegmentedStringWriter	public	com.fasterxml.jackson.core:jackson-core:2.11.1	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.properties.PropertyBuilder	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-parser:1.0.56
+org.yaml.snakeyaml.nodes.NodeTuple	public	org.yaml:snakeyaml:1.29	cast	io.swagger:swagger-parser:1.0.56
+io.swagger.models.properties.ArrayProperty	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-core:1.6.3
+io.swagger.models.SecurityRequirement	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-parser:1.0.56
+io.swagger.models.properties.ObjectProperty	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-parser:1.0.56
+io.swagger.models.properties.PasswordProperty	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.properties.BaseIntegerProperty	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-parser:1.0.56
+io.swagger.models.Operation	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-parser:1.0.56
+io.swagger.models.parameters.RefParameter	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-parser:1.0.56
+io.swagger.parser.SwaggerParser	public	io.swagger:swagger-parser:1.0.56	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.Path	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-parser:1.0.56
+org.commonmark.parser.Parser$Builder	public	com.atlassian.commonmark:commonmark:0.9.0	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+com.google.common.collect.ImmutableMap$Builder	public	com.google.guava:guava:27.0.1-android	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.Swagger	public	io.swagger:swagger-models:1.6.3	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.properties.DoubleProperty	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+com.google.common.collect.HashBiMap	public	com.google.guava:guava:27.0.1-android	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.properties.DoubleProperty	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.properties.PasswordProperty	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+org.yaml.snakeyaml.nodes.NodeTuple	public	org.yaml:snakeyaml:1.29	method call	io.swagger:swagger-parser:1.0.56
+com.fasterxml.jackson.databind.node.LongNode	public	com.fasterxml.jackson.core:jackson-databind:2.11.1	method call	io.swagger:swagger-core:1.6.3
+com.fasterxml.jackson.annotation.ObjectIdGenerator$IdKey	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	instantiation	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.RefModel	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.ArrayModel	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.properties.ArrayProperty	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-parser:1.0.56
+io.swagger.models.parameters.PathParameter	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-parser:1.0.56
+org.yaml.snakeyaml.DumperOptions	public	org.yaml:snakeyaml:1.29	instantiation	io.swagger:swagger-parser:1.0.56
+io.swagger.models.HttpMethod	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-parser:1.0.56
+com.fasterxml.jackson.core.JsonFactory	public	com.fasterxml.jackson.core:jackson-core:2.11.1	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.ComposedModel	public	io.swagger:swagger-models:1.6.3	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.RefModel	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.properties.MapProperty	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.Xml	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+com.fasterxml.jackson.databind.node.IntNode	public	com.fasterxml.jackson.core:jackson-databind:2.11.1	method call	io.swagger:swagger-parser:1.0.56
+io.swagger.models.Scheme	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-parser:1.0.56
+io.swagger.models.parameters.HeaderParameter	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+com.fasterxml.jackson.core.json.ReaderBasedJsonParser	public	com.fasterxml.jackson.core:jackson-core:2.11.1	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+com.fasterxml.jackson.core.io.SerializedString	public	com.fasterxml.jackson.core:jackson-core:2.11.1	instantiation	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.properties.ComposedProperty	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-parser:1.0.56
+io.swagger.models.Tag	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-parser:1.0.56
+io.swagger.util.PropertyDeserializer	public	io.swagger:swagger-core:1.6.3	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.parameters.HeaderParameter	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+com.fasterxml.jackson.databind.JsonNode	public	com.fasterxml.jackson.core:jackson-databind:2.11.1	cast	io.swagger:swagger-compat-spec-parser:1.0.56
+com.fasterxml.jackson.annotation.JsonSetter	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.properties.BooleanProperty	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.properties.DateProperty	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+com.fasterxml.jackson.core.json.JsonReadContext	public	com.fasterxml.jackson.core:jackson-core:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.properties.FileProperty	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+org.apache.commons.lang3.StringUtils	public	org.apache.commons:commons-lang3:3.4	method call	io.swagger:swagger-parser:1.0.56
+io.swagger.models.parameters.QueryParameter	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-compat-spec-parser:1.0.56
+com.fasterxml.jackson.databind.node.IntNode	public	com.fasterxml.jackson.core:jackson-databind:2.11.1	method call	io.swagger:swagger-core:1.6.3
+org.apache.commons.lang3.BooleanUtils	public	org.apache.commons:commons-lang3:3.4	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonGetter	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+com.fasterxml.jackson.core.JsonStreamContext	public	com.fasterxml.jackson.core:jackson-core:2.11.1	subtyping	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.codegen.mustache.IndentedLambda	public	io.swagger:swagger-codegen:2.4.24-SNAPSHOT	method call	com.samskivert:jmustache:1.12
+io.swagger.models.properties.ArrayProperty	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-compat-spec-parser:1.0.56
+com.fasterxml.jackson.core.io.NumberOutput	public	com.fasterxml.jackson.core:jackson-core:2.11.1	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.codegen.CodegenModel	public	io.swagger:swagger-codegen:2.4.24-SNAPSHOT	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.parser.SwaggerParserExtension	public	io.swagger:swagger-parser:1.0.56	subtyping	io.swagger:swagger-compat-spec-parser:1.0.56
+com.google.common.collect.Lists	public	com.google.guava:guava:27.0.1-android	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.properties.UUIDProperty	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+com.fasterxml.jackson.databind.util.TokenBuffer$Parser	protected	com.fasterxml.jackson.core:jackson-databind:2.11.1	method call	io.swagger:swagger-core:1.6.3
+com.google.common.collect.ImmutableMap$Builder	public	com.google.guava:guava:27.0.1-android	instantiation	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.properties.ArrayProperty	public	io.swagger:swagger-models:1.6.3	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+org.commonmark.renderer.html.HtmlRenderer$Builder	public	com.atlassian.commonmark:commonmark:0.9.0	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.codegen.mustache.TitlecaseLambda	public	io.swagger:swagger-codegen:2.4.24-SNAPSHOT	method call	com.samskivert:jmustache:1.12
+io.swagger.models.properties.LongProperty	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.auth.SecuritySchemeDefinition	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-parser:1.0.56
+io.swagger.parser.SwaggerParser	public	io.swagger:swagger-parser:1.0.56	instantiation	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.Operation	public	io.swagger:swagger-models:1.6.3	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.properties.DecimalProperty	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-parser:1.0.56
+org.apache.commons.lang3.StringEscapeUtils	public	org.apache.commons:commons-lang3:3.4	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.parameters.SerializableParameter	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.Info	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+com.fasterxml.jackson.databind.node.TextNode	public	com.fasterxml.jackson.core:jackson-databind:2.11.1	cast	io.swagger:swagger-core:1.6.3
+com.fasterxml.jackson.databind.node.ArrayNode	public	com.fasterxml.jackson.core:jackson-databind:2.11.1	method call	io.swagger:swagger-core:1.6.3
+com.fasterxml.jackson.annotation.JsonView	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+com.fasterxml.jackson.dataformat.yaml.YAMLFactory	public	com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.11.1	instantiation	io.swagger:swagger-core:1.6.3
+com.fasterxml.jackson.core.JsonToken	public	com.fasterxml.jackson.core:jackson-core:2.11.1	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.properties.BaseIntegerProperty	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-core:1.6.3
+io.swagger.models.properties.ArrayProperty	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-parser:1.0.56
+io.swagger.models.properties.IntegerProperty	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+com.google.common.base.Function	public	com.google.guava:guava:27.0.1-android	subtyping	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.properties.StringProperty	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-parser:1.0.56
+com.fasterxml.jackson.core.JsonProcessingException	public	com.fasterxml.jackson.core:jackson-core:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.properties.FloatProperty	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-core:1.6.3
+io.swagger.models.properties.DoubleProperty	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-core:1.6.3
+com.fasterxml.jackson.annotation.JsonCreator	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+com.fasterxml.jackson.annotation.JsonManagedReference	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.properties.MapProperty	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonRawValue	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.auth.OAuth2Definition	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.properties.DecimalProperty	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+com.fasterxml.jackson.databind.node.ObjectNode	public	com.fasterxml.jackson.core:jackson-databind:2.11.1	cast	io.swagger:swagger-parser:1.0.56
+io.swagger.models.properties.StringProperty	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.properties.RefProperty	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-core:1.6.3
+io.swagger.models.License	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+com.google.common.collect.ImmutableSet	public	com.google.guava:guava:27.0.1-android	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.properties.StringProperty	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-compat-spec-parser:1.0.56
+org.slf4j.LoggerFactory	public	org.slf4j:slf4j-api:1.7.12	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonRootName	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+com.fasterxml.jackson.core.JsonFactory	public	com.fasterxml.jackson.core:jackson-core:2.11.1	subtyping	com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.11.1
+io.swagger.models.Tag	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-parser:1.0.56
+org.yaml.snakeyaml.representer.Representer	public	org.yaml:snakeyaml:1.29	instantiation	io.swagger:swagger-parser:1.0.56
+com.samskivert.mustache.Mustache$Compiler	public	com.samskivert:jmustache:1.12	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.ComposedModel	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-core:1.6.3
+com.fasterxml.jackson.databind.ObjectMapper	public	com.fasterxml.jackson.core:jackson-databind:2.11.1	method call	io.swagger:swagger-parser:1.0.56
+io.swagger.models.ComposedModel	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-parser:1.0.56
+io.swagger.models.properties.AbstractNumericProperty	public	io.swagger:swagger-models:1.6.3	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.util.Json	public	io.swagger:swagger-core:1.6.3	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonMerge	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.ArrayModel	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-parser:1.0.56
+com.fasterxml.jackson.core.type.ResolvedType	public	com.fasterxml.jackson.core:jackson-core:2.11.1	subtyping	com.fasterxml.jackson.core:jackson-databind:2.11.1
+com.fasterxml.jackson.annotation.JsonProperty$Access	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.RefModel	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-parser:1.0.56
+io.swagger.models.properties.EmailProperty	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+com.fasterxml.jackson.databind.JsonNode	public	com.fasterxml.jackson.core:jackson-databind:2.11.1	cast	io.swagger:swagger-parser:1.0.56
+io.swagger.models.Responses	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-parser:1.0.56
+io.swagger.models.parameters.PathParameter	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.properties.ArrayProperty	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.properties.BaseIntegerProperty	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonFormat$Shape	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.parameters.PathParameter	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-compat-spec-parser:1.0.56
+io.swagger.models.parameters.BodyParameter	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-compat-spec-parser:1.0.56
+io.swagger.models.properties.MapProperty	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-core:1.6.3
+com.fasterxml.jackson.annotation.ObjectIdGenerator	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.parameters.FormParameter	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-compat-spec-parser:1.0.56
+io.swagger.models.SecurityRequirement	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.Model	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-core:1.6.3
+io.swagger.models.properties.MapProperty	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-parser:1.0.56
+org.slf4j.LoggerFactory	public	org.slf4j:slf4j-api:1.7.12	method call	io.swagger:swagger-core:1.6.3
+io.swagger.models.utils.PropertyModelConverter	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.properties.DateTimeProperty	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.parameters.BodyParameter	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-parser:1.0.56
+io.swagger.models.properties.BooleanProperty	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-parser:1.0.56
+io.swagger.models.Swagger	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-compat-spec-parser:1.0.56
+com.fasterxml.jackson.core.Version	public	com.fasterxml.jackson.core:jackson-core:2.11.1	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+com.fasterxml.jackson.core.filter.JsonPointerBasedFilter	public	com.fasterxml.jackson.core:jackson-core:2.11.1	instantiation	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.Tag	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+com.fasterxml.jackson.databind.MappingJsonFactory	public	com.fasterxml.jackson.core:jackson-databind:2.11.1	method call	com.fasterxml.jackson.core:jackson-core:2.11.1
+io.swagger.models.Path	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.codegen.mustache.UppercaseLambda	public	io.swagger:swagger-codegen:2.4.24-SNAPSHOT	method call	com.samskivert:jmustache:1.12
+io.swagger.models.properties.IntegerProperty	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+org.slf4j.impl.StaticLoggerBinder	public	org.slf4j:slf4j-simple:1.7.12	method call	org.slf4j:slf4j-api:1.7.12
+com.fasterxml.jackson.annotation.JsonValue	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+org.yaml.snakeyaml.LoaderOptions	public	org.yaml:snakeyaml:1.29	instantiation	io.swagger:swagger-parser:1.0.56
+io.swagger.models.properties.UUIDProperty	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-core:1.6.3
+io.swagger.models.properties.ObjectProperty	public	io.swagger:swagger-models:1.6.3	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.auth.OAuth2Definition	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonIgnoreProperties$Value	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+com.fasterxml.jackson.core.JsonProcessingException	public	com.fasterxml.jackson.core:jackson-core:2.11.1	subtyping	com.fasterxml.jackson.core:jackson-databind:2.11.1
+com.fasterxml.jackson.annotation.JacksonInject	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.ComposedModel	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-parser:1.0.56
+com.samskivert.mustache.Mustache$InvertibleLambda	public	com.samskivert:jmustache:1.12	subtyping	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+com.fasterxml.jackson.databind.node.ArrayNode	public	com.fasterxml.jackson.core:jackson-databind:2.11.1	cast	io.swagger:swagger-parser:1.0.56
+io.swagger.models.parameters.HeaderParameter	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-compat-spec-parser:1.0.56
+io.swagger.models.properties.ByteArrayProperty	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-core:1.6.3
+org.apache.commons.lang3.StringUtils	public	org.apache.commons:commons-lang3:3.4	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonFilter	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.properties.LongProperty	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-core:1.6.3
+com.fasterxml.jackson.core.ObjectCodec	public	com.fasterxml.jackson.core:jackson-core:2.11.1	subtyping	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.Response	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-core:1.6.3
+io.swagger.models.auth.ApiKeyAuthDefinition	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-compat-spec-parser:1.0.56
+io.swagger.models.Operation	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonSetter$Value	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+com.google.common.collect.LinkedListMultimap	public	com.google.guava:guava:27.0.1-android	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+com.fasterxml.jackson.databind.node.DoubleNode	public	com.fasterxml.jackson.core:jackson-databind:2.11.1	method call	io.swagger:swagger-core:1.6.3
+io.swagger.models.Response	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-parser:1.0.56
+io.swagger.models.HttpMethod	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+com.fasterxml.jackson.annotation.ObjectIdResolver	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+com.fasterxml.jackson.databind.node.JsonNodeType	public	com.fasterxml.jackson.core:jackson-databind:2.11.1	method call	io.swagger:swagger-parser:1.0.56
+org.commonmark.renderer.html.HtmlRenderer	public	com.atlassian.commonmark:commonmark:0.9.0	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.properties.DateTimeProperty	public	io.swagger:swagger-models:1.6.3	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.parameters.HeaderParameter	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-parser:1.0.56
+io.swagger.parser.util.ParseOptions	public	io.swagger:swagger-parser:1.0.56	instantiation	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.properties.StringProperty	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.properties.ObjectProperty	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.Swagger	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-parser:1.0.56
+io.swagger.models.Info	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-compat-spec-parser:1.0.56
+io.swagger.util.DeserializationModule	public	io.swagger:swagger-core:1.6.3	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+com.fasterxml.jackson.annotation.JsonIdentityReference	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.Responses	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-parser:1.0.56
+io.swagger.models.properties.BooleanProperty	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.ArrayModel	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-parser:1.0.56
+com.fasterxml.jackson.annotation.JsonTypeInfo	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.properties.MapProperty	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-core:1.6.3
+io.swagger.models.properties.RefProperty	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.Response	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.properties.AbstractProperty	public	io.swagger:swagger-models:1.6.3	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+com.fasterxml.jackson.annotation.JacksonAnnotation	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	annotation	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.parser.util.DeserializationUtils$CustomSnakeYamlConstructor	default	io.swagger:swagger-parser:1.0.56	method call	org.yaml:snakeyaml:1.29
+io.swagger.models.Response	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-compat-spec-parser:1.0.56
+io.swagger.models.RefModel	public	io.swagger:swagger-models:1.6.3	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.auth.In	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-parser:1.0.56
+com.fasterxml.jackson.annotation.JsonPropertyOrder	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.RefPath	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-parser:1.0.56
+io.swagger.models.RefModel	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-parser:1.0.56
+io.swagger.models.ArrayModel	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-parser:1.0.56
+io.swagger.models.properties.BinaryProperty	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-parser:1.0.56
+io.swagger.models.properties.RefProperty	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+com.samskivert.mustache.Mustache$TemplateLoader	public	com.samskivert:jmustache:1.12	subtyping	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+org.slf4j.helpers.MarkerIgnoringBase	public	org.slf4j:slf4j-api:1.7.12	subtyping	org.slf4j:slf4j-simple:1.7.12
+io.swagger.parser.util.ParseOptions	public	io.swagger:swagger-parser:1.0.56	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+java.security.PrivilegedAction	public	java.security	subtyping	org.slf4j:slf4j-simple:1.7.12
+com.fasterxml.jackson.core.JsonFactory	public	com.fasterxml.jackson.core:jackson-core:2.11.1	subtyping	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.Response	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.RefModel	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-parser:1.0.56
+io.swagger.models.properties.ArrayProperty	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.auth.ApiKeyAuthDefinition	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonFormat$Value	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+com.samskivert.mustache.Template	public	com.samskivert:jmustache:1.12	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.ModelImpl	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-compat-spec-parser:1.0.56
+org.apache.commons.io.IOUtils	public	commons-io:commons-io:2.4	method call	io.swagger:swagger-parser:1.0.56
+io.swagger.models.Path	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-compat-spec-parser:1.0.56
+org.apache.commons.lang3.text.WordUtils	public	org.apache.commons:commons-lang3:3.4	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+org.yaml.snakeyaml.constructor.SafeConstructor	public	org.yaml:snakeyaml:1.29	subtyping	io.swagger:swagger-parser:1.0.56
+io.swagger.models.auth.BasicAuthDefinition	public	io.swagger:swagger-models:1.6.3	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.properties.RefProperty	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-core:1.6.3
+com.fasterxml.jackson.core.util.Instantiatable	public	com.fasterxml.jackson.core:jackson-core:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.parameters.BodyParameter	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-parser:1.0.56
+com.fasterxml.jackson.annotation.JsonUnwrapped	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+com.fasterxml.jackson.annotation.JsonIdentityInfo	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+com.fasterxml.jackson.core.JsonLocation	public	com.fasterxml.jackson.core:jackson-core:2.11.1	instantiation	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.properties.FloatProperty	public	io.swagger:swagger-models:1.6.3	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+com.fasterxml.jackson.annotation.JsonProperty	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+com.fasterxml.jackson.core.TreeNode	public	com.fasterxml.jackson.core:jackson-core:2.11.1	subtyping	com.fasterxml.jackson.core:jackson-databind:2.11.1
+com.samskivert.mustache.Mustache	public	com.samskivert:jmustache:1.12	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+org.json.JSONObject	public	org.json:json:20210307	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.properties.ComposedProperty	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-core:1.6.3
+io.swagger.models.auth.ApiKeyAuthDefinition	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+org.slf4j.impl.SimpleLogger	public	org.slf4j:slf4j-simple:1.7.12	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+sun.security.provider.SHA	public	unknownLib	Class.forName	java.security
+io.swagger.models.ModelImpl	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-parser:1.0.56
+io.swagger.models.Model	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+com.fasterxml.jackson.databind.JsonNode	public	com.fasterxml.jackson.core:jackson-databind:2.11.1	cast	io.swagger:swagger-core:1.6.3
+io.swagger.models.auth.AuthorizationValue	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.Response	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-parser:1.0.56
+io.swagger.models.auth.ApiKeyAuthDefinition	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-parser:1.0.56
+io.swagger.models.ArrayModel	public	io.swagger:swagger-models:1.6.3	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+com.fasterxml.jackson.core.util.ByteArrayBuilder	public	com.fasterxml.jackson.core:jackson-core:2.11.1	instantiation	com.fasterxml.jackson.core:jackson-databind:2.11.1
+java.security.BasicPermission	public	java.security	subtyping	joda-time:joda-time:2.10.5
+org.yaml.snakeyaml.nodes.Tag	public	org.yaml:snakeyaml:1.29	instantiation	io.swagger:swagger-parser:1.0.56
+io.swagger.models.ModelImpl	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-parser:1.0.56
+com.fasterxml.jackson.core.json.WriterBasedJsonGenerator	public	com.fasterxml.jackson.core:jackson-core:2.11.1	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.parameters.QueryParameter	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-parser:1.0.56
+org.yaml.snakeyaml.constructor.SafeConstructor	public	org.yaml:snakeyaml:1.29	instantiation	io.swagger:swagger-parser:1.0.56
+com.fasterxml.jackson.core.filter.FilteringParserDelegate	public	com.fasterxml.jackson.core:jackson-core:2.11.1	instantiation	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.properties.ByteArrayProperty	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.properties.FloatProperty	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.parameters.BodyParameter	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.ComposedModel	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+org.slf4j.Logger	public	org.slf4j:slf4j-api:1.7.12	cast	org.slf4j:slf4j-simple:1.7.12
+io.swagger.models.properties.ByteArrayProperty	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.Xml	public	io.swagger:swagger-models:1.6.3	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.utils.PropertyModelConverter	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-parser:1.0.56
+com.fasterxml.jackson.databind.node.TextNode	public	com.fasterxml.jackson.core:jackson-databind:2.11.1	cast	io.swagger:swagger-parser:1.0.56
+io.swagger.models.parameters.BodyParameter	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+com.samskivert.mustache.Mustache$Compiler	public	com.samskivert:jmustache:1.12	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.ComposedModel	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.properties.PropertyBuilder$PropertyId	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-core:1.6.3
+io.swagger.models.License	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-compat-spec-parser:1.0.56
+io.swagger.models.parameters.AbstractSerializableParameter	public	io.swagger:swagger-models:1.6.3	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.Operation	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-compat-spec-parser:1.0.56
+com.fasterxml.jackson.databind.util.TokenBufferReadContext	public	com.fasterxml.jackson.core:jackson-databind:2.11.1	method call	com.fasterxml.jackson.core:jackson-core:2.11.1
+com.fasterxml.jackson.core.json.JsonWriteContext	public	com.fasterxml.jackson.core:jackson-core:2.11.1	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.properties.DateProperty	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.properties.RefProperty	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-parser:1.0.56
+com.fasterxml.jackson.databind.node.TextNode	public	com.fasterxml.jackson.core:jackson-databind:2.11.1	method call	io.swagger:swagger-parser:1.0.56
+io.swagger.models.properties.DateProperty	public	io.swagger:swagger-models:1.6.3	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+org.yaml.snakeyaml.Yaml	public	org.yaml:snakeyaml:1.29	instantiation	io.swagger:swagger-parser:1.0.56
+com.fasterxml.jackson.core.json.JsonReadFeature	public	com.fasterxml.jackson.core:jackson-core:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+com.fasterxml.jackson.annotation.JsonFormat	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+com.fasterxml.jackson.databind.util.TokenBuffer$Parser	protected	com.fasterxml.jackson.core:jackson-databind:2.11.1	method call	com.fasterxml.jackson.core:jackson-core:2.11.1
+com.google.common.base.Predicate	public	com.google.guava:guava:27.0.1-android	subtyping	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.auth.SecuritySchemeDefinition	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.properties.BooleanProperty	public	io.swagger:swagger-models:1.6.3	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.SecurityRequirement	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-parser:1.0.56
+io.swagger.models.auth.OAuth2Definition	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-compat-spec-parser:1.0.56
+io.swagger.models.Path	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-parser:1.0.56
+io.swagger.models.properties.Property	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-core:1.6.3
+com.fasterxml.jackson.core.util.DefaultPrettyPrinter	public	com.fasterxml.jackson.core:jackson-core:2.11.1	instantiation	io.swagger:swagger-core:1.6.3
+io.swagger.models.properties.ObjectProperty	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-core:1.6.3
+com.fasterxml.jackson.annotation.JsonInclude$Value	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.parameters.RefParameter	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-parser:1.0.56
+org.apache.commons.io.FileUtils	public	commons-io:commons-io:2.4	method call	io.swagger:swagger-parser:1.0.56
+com.fasterxml.jackson.databind.node.BooleanNode	public	com.fasterxml.jackson.core:jackson-databind:2.11.1	method call	io.swagger:swagger-parser:1.0.56
+com.fasterxml.jackson.annotation.ObjectIdGenerators$PropertyGenerator	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	subtyping	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.properties.ArrayProperty	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-core:1.6.3
+io.swagger.codegen.mustache.LowercaseLambda	public	io.swagger:swagger-codegen:2.4.24-SNAPSHOT	method call	com.samskivert:jmustache:1.12
+com.fasterxml.jackson.annotation.JsonClassDescription	public	com.fasterxml.jackson.core:jackson-annotations:2.11.1	cast	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.Swagger	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.Operation	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-parser:1.0.56
+com.fasterxml.jackson.databind.node.BooleanNode	public	com.fasterxml.jackson.core:jackson-databind:2.11.1	method call	io.swagger:swagger-core:1.6.3
+io.swagger.models.properties.DoubleProperty	public	io.swagger:swagger-models:1.6.3	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.properties.Property	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-parser:1.0.56
+io.swagger.models.properties.PasswordProperty	public	io.swagger:swagger-models:1.6.3	method call	com.fasterxml.jackson.core:jackson-databind:2.11.1
+io.swagger.models.SecurityRequirement	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-parser:1.0.56
+io.swagger.models.Swagger	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT
+io.swagger.models.Operation	public	io.swagger:swagger-models:1.6.3	cast	io.swagger:swagger-parser:1.0.56
+io.swagger.models.Contact	public	io.swagger:swagger-models:1.6.3	instantiation	io.swagger:swagger-parser:1.0.56
+io.swagger.models.properties.BinaryProperty	public	io.swagger:swagger-models:1.6.3	method call	io.swagger:swagger-codegen:2.4.24-SNAPSHOT

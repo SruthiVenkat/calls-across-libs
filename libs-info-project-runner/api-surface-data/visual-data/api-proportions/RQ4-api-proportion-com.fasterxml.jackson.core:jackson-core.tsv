@@ -1,0 +1,6 @@
+Client	API Proportion	No. Of Methods
+com.capitalone.dashboard:core	0.00100200400801603	2
+com.fasterxml.jackson.core:jackson-databind	0.0380761523046092	76
+com.fasterxml.jackson.datatype:jackson-datatype-jsr310	0.000501002004008016	1
+com.googlecode.ez-vcard:ez-vcard	0.0175350701402806	35
+org.springframework:spring-web	0.000501002004008016	1

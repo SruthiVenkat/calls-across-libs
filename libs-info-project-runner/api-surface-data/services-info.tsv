@@ -49,8 +49,8 @@ javax.annotation.processing.Processor	org.eclipse.sisu.space.SisuIndexAPT6;org.e
 javax.annotation.processing.Processor	org.jvnet.hudson.annotation_indexer.AnnotationProcessorImpl;org.jvnet.hudson:annotation-indexer:1.2;
 javax.annotation.processing.Processor	javaslang.match.PatternsProcessor;io.javaslang:javaslang-match:2.0.6
 javax.annotation.processing.Processor	org.apache.logging.log4j.core.config.plugins.processor.PluginProcessor;org.apache.logging.log4j:log4j-core:2.13.2
-javax.money.spi.CurrencyProviderSpi	"org.javamoney.moneta.internal.JDKCurrencyProvider,org.javamoney.moneta:moneta-core:1.3"
-javax.cache.spi.CachingProvider	"org.ehcache.jsr107.EhcacheCachingProvider;org.ehcache:ehcache:3.3.1,org.ehcache:ehcache:3.3.1"
+javax.money.spi.CurrencyProviderSpi	org.javamoney.moneta.internal.JDKCurrencyProvider;org.javamoney.moneta:moneta-core:1.3
+javax.cache.spi.CachingProvider	org.ehcache.jsr107.EhcacheCachingProvider;org.ehcache:ehcache:3.3.1
 org.apache.hadoop.security.token.TokenRenewer	org.apache.hadoop.mapreduce.security.token.JobTokenIdentifier$Renewer;org.apache.hadoop:hadoop-mapreduce-client-core:2.7.1
 org.apache.hadoop.security.token.TokenRenewer	org.apache.hadoop.mapreduce.v2.security.MRDelegationTokenRenewer;org.apache.hadoop:hadoop-mapreduce-client-common:2.7.1
 org.apache.hadoop.security.token.TokenRenewer	org.apache.hadoop.yarn.security.AMRMTokenIdentifier$Renewer;org.apache.hadoop:hadoop-yarn-common:3.1.0

@@ -2,9 +2,9 @@
 library(hash)
 library(ggplot2)  
 
-libraries <- c("com.alibaba:fastjson", "org.apache.commons:commons-collections4", "commons-io:commons-io", "joda-time:joda-time", 
+libraries <- c("com.alibaba:fastjson", "commons-collections:commons-collections", "commons-io:commons-io", "joda-time:joda-time", 
                "com.google.code.gson:gson", "org.json:json", "org.jsoup:jsoup", "org.slf4j:slf4j-api", "com.fasterxml.jackson.core:jackson-databind", "com.fasterxml.jackson.core:jackson-core")
-
+#libraries <- c("commons-collections:commons-collections")
 callee_methods <- hash() # client -> (library -> [list of methods])
 
 file_list = list.files(path="/Users/sruthivenkat/Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data", recursive = TRUE, pattern="*-invocations.tsv", full.names = TRUE)
@@ -44,7 +44,6 @@ for (i in seq_along(file_list)) {
 
   }
 }
-#print(keys(callee_methods))
 
 jacSimilarities <- hash()
 for (lib in libraries){
@@ -54,7 +53,7 @@ for (lib in libraries){
   if(is.null(jacSimilarities[[lib]])){
     jacSimilarities[lib] <- hash()
   }
-  path <- paste("/Users/sruthivenkat/Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data/jaccard-",lib,".tsv",sep="")
+  path <- paste("/Users/sruthivenkat/Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data/visual-data/jaccard-similarities/jaccard-declared-",lib,".tsv",sep="")
   cat("Client A/Client B",file=path,sep="")
   for (clientA in keys(callee_methods[[lib]])){
     if(is.null(jacSimilarities[[lib]][[clientA]])){
@@ -132,3 +131,23 @@ ggsave(
   "Documents/Waterloo/PL/21.icse.library-usage/jac-sim-box-plot.png",
   plot = GPlot1,
   device = "png")
+
+for (lib in libraries) {
+  methodsToNoOfClients <- hash()
+  intersectingMethods <- list()
+  for (client in keys(callee_methods[[lib]])) {
+    intersectingMethods <- intersect(intersectingMethods, callee_methods[[lib]][[client]])
+    for (method in callee_methods[[lib]][[client]]) {
+      if (!is.na(method)) {
+        if(is.null(methodsToNoOfClients[[method]]))
+          methodsToNoOfClients[[method]] <- 1
+        else
+          methodsToNoOfClients[[method]] <- methodsToNoOfClients[[method]] + 1
+      }
+    }
+  }
+  print(paste("Library", lib, length(callee_methods[[lib]]), max(values(methodsToNoOfClients))))
+ # print(methodsToNoOfClients)
+  #print(paste(lib, intersectingMethods))
+}
+

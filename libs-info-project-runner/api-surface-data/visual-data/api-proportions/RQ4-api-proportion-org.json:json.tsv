@@ -1,0 +1,5 @@
+Client	API Proportion	No. Of Methods
+com.vdurmont:emoji-java	0.0310077519379845	8
+io.socket:engine.io-client	0.0193798449612403	5
+io.socket:socket.io-client	0.0581395348837209	15
+net.javacrumbs.json-unit:json-unit-core	0.0193798449612403	5

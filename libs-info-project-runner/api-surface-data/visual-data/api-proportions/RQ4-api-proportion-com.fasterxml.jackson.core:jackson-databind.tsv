@@ -1,0 +1,13 @@
+Client	API Proportion	No. Of Methods
+com.capitalone.dashboard:core	0.00147275405007364	1
+com.fasterxml.jackson.core	0.157584683357879	107
+com.fasterxml.jackson.core:jackson-core	0.0265095729013255	18
+com.fasterxml.jackson.datatype:jackson-datatype-jdk8	0.00441826215022091	3
+com.fasterxml.jackson.datatype:jackson-datatype-jsr310	0.00294550810014728	2
+com.googlecode.ez-vcard:ez-vcard	0.00147275405007364	1
+io.rest-assured:json-path	0.00147275405007364	1
+io.springside:springside-utils	0.0132547864506627	9
+net.javacrumbs.json-unit:json-unit-core	0.069219440353461	47
+org.springframework:spring-web	0.00441826215022091	3
+org.springframework.data:spring-data-redis	0.00441826215022091	3
+org.thymeleaf:thymeleaf	0.0132547864506627	9

@@ -7,6 +7,8 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.lang.annotation.Annotation;
+import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 import java.net.MalformedURLException;
@@ -66,11 +68,9 @@ public class JarUtility {
             	String tmpFolder = new File(".").getAbsolutePath()+File.separator+"projects"+File.separator+projectObject.get("execDir")+File.separator+"tmp";
             	String libName = (String)projectObject.get("libName");
             	ArrayList<Object> countsAndClasses = getPublicProtectedMethodsCountAndClasses(generatedJarName, tmpFolder, pathToProject, pathToRootPrj, build, libName, (long) projectObject.get("javaVersion"));
-            	libsToCountsAndClasses.putIfAbsent(libName, new ArrayList<Object>(Arrays.asList(0, 0, "")));
-            	ArrayList<Object> libVals = libsToCountsAndClasses.get(libName);
-            	libVals.set(0, (Integer)libVals.get(0) + (Integer)countsAndClasses.get(0));
-            	libVals.set(1, 0);
-            	libVals.set(2, ((String)libVals.get(2)).concat((String)countsAndClasses.get(1)));
+            	libsToCountsAndClasses.putIfAbsent(libName, new ArrayList<Object>(Arrays.asList((Integer)countsAndClasses.get(0), (Integer)countsAndClasses.get(1),
+        				(Integer)countsAndClasses.get(2), (Integer)countsAndClasses.get(3), 0, (String)countsAndClasses.get(4), (String)countsAndClasses.get(5),
+        				(String)countsAndClasses.get(6), (String)countsAndClasses.get(7))));
         	}
         	addToLibsInfo((String) projectObject.get("libName"));
         }
@@ -107,10 +107,11 @@ public class JarUtility {
             if (new File(servicesInfoPath).exists()) {
             	String row;
     			BufferedReader reader = new BufferedReader(new FileReader(servicesInfoPath));
+    			row = reader.readLine();
 				while ((row = reader.readLine()) != null) {
-				    String[] data = row.split(",");
+				    String[] data = row.split("\t");
 				    servicesInfo.putIfAbsent(data[0], new HashSet<String>());
-				    servicesInfo.get(data[0]).addAll(Arrays.asList(data[1].split(";")));
+				    servicesInfo.get(data[0]).add(data[1]);
 				}
 				servicesInfo.remove("SPI");
 				reader.close();
@@ -126,11 +127,12 @@ public class JarUtility {
 			if (!file.exists()) file.createNewFile();
 			FileWriter writer = new FileWriter(libsInfoPath, true);	
 			if (new File(libsInfoPath).length() == 0) {
-				writer.write("Library Name\tNo. of Public/Protected Methods\tNo. of Methods Called By Tests\tClasses\n");
-				writer.write("unknownLib\t0\t0\t \n");
+				writer.write("Library Name\tNo. of Public/Protected Methods\tNo. of Public/Protected Classes\tNo. of Public/Protected Fields\tNo. of Public/Protected Annotations\tNo. of Methods Called By Tests\tMethods\tClasses\tFields\tAnnotations\n");
+				writer.write("unknownLib\t0\t0\t0\t0\t0\t \n");
 			}
 			for (String lib: libsToCountsAndClasses.keySet()) {
-				writer.write(lib.trim()+"\t"+libsToCountsAndClasses.get(lib).get(0)+"\t"+libsToCountsAndClasses.get(lib).get(1)+"\t"+libsToCountsAndClasses.get(lib).get(2)+"\n");
+				writer.write(lib.trim()+"\t"+libsToCountsAndClasses.get(lib).get(0)+"\t"+libsToCountsAndClasses.get(lib).get(1)+"\t"+libsToCountsAndClasses.get(lib).get(2)+"\t"+libsToCountsAndClasses.get(lib).get(3)+"\t"+libsToCountsAndClasses.get(lib).get(4)+"\t\t"+libsToCountsAndClasses.get(lib).get(6)+"\n");
+						//+"\t"+libsToCountsAndClasses.get(lib).get(5)//+"\t"+libsToCountsAndClasses.get(lib).get(6)+"\t"+libsToCountsAndClasses.get(lib).get(7)+"\n");
 		    }
 			writer.write("\n");
 			writer.flush();
@@ -153,7 +155,8 @@ public class JarUtility {
 				writer.write("SPI\tSPI Implementations\n");
 			}
 			for (String spi: servicesInfo.keySet()) {
-				writer.write(spi+"\t"+String.join(";", servicesInfo.get(spi))+"\n");
+				for (String impl: servicesInfo.get(spi))
+					writer.write(spi+"\t"+impl+"\n");
 		    }
 			writer.flush();
 			writer.close();
@@ -162,7 +165,8 @@ public class JarUtility {
 		}
 	}
 	
-	public static ArrayList<Object> getPublicProtectedMethodsCountAndClasses(String crunchifyJarName, String tmpFolder, String pathToProject, String pathToRootPrj, String build, String libName, long javaVersion) {
+	public static ArrayList<Object> getPublicProtectedMethodsCountAndClasses(String crunchifyJarName, String tmpFolder, 
+			String pathToProject, String pathToRootPrj, String build, String libName, long javaVersion) {
 			File destDir = new File(tmpFolder);
 			if (!destDir.exists()) {
 				destDir.mkdir();
@@ -190,7 +194,7 @@ public class JarUtility {
 				addDependencyToLibsInfo(dependency.trim(), new File(deps.get(dependency)), child);
 			}
 
-			deleteDirectory(destDir);
+			//deleteDirectory(destDir);
 			return getDatafromJar(new File(crunchifyJarName), child, libName.trim());
 	}
 	
@@ -201,7 +205,7 @@ public class JarUtility {
 		request.setPomFile(pomFile);
 		request.setGoals(Arrays.asList("dependency:list"));
 		request.setMavenOpts("-DincludeScope=compile -DoutputFile="+tmpDir.getPath()+File.separator+"deps-output.txt -DoutputAbsoluteArtifactFilename=true");
-		request.setJavaHome(new File(DependentTestRunner.javaHomes.get(javaVersion)));
+		//request.setJavaHome(new File(DependentTestRunner.javaHomes.get(javaVersion)));
 		
 		//System.setProperty("maven.home", "/usr/share/maven");
 		System.setProperty("maven.home", "/opt/homebrew/Cellar/maven/3.8.2/libexec");
@@ -281,12 +285,18 @@ public class JarUtility {
 		if (libsToCountsAndClasses.containsKey(dependencyName))
 			return;
 		ArrayList<Object> countsAndClasses = getDatafromJar(dependency, child, dependencyName);
-		libsToCountsAndClasses.putIfAbsent(dependencyName, new ArrayList<Object>(Arrays.asList((Integer)countsAndClasses.get(0), 0, (String)countsAndClasses.get(1))));
+		libsToCountsAndClasses.putIfAbsent(dependencyName, new ArrayList<Object>(Arrays.asList((Integer)countsAndClasses.get(0), (Integer)countsAndClasses.get(1),
+				(Integer)countsAndClasses.get(2), (Integer)countsAndClasses.get(3), 0, (String)countsAndClasses.get(4), (String)countsAndClasses.get(5),
+				(String)countsAndClasses.get(6), (String)countsAndClasses.get(7))));
 	}
 	
 	private static ArrayList<Object> getDatafromJar(File dependency, URLClassLoader child, String dependencyName) {
-		int count = 0;
+		int methodsCount = 0, fieldsCount = 0, annotationsCount = 0, classesCount = 0;
 		Set<String> classNames = new HashSet<String>();
+		Set<String> methodNames = new HashSet<String>();
+		Set<String> fieldNames = new HashSet<String>();
+		Set<String> annotationNames = new HashSet<String>();
+		System.out.println("--+==+--"+dependencyName);
 		try {
 			JarInputStream crunchifyJarFile = new JarInputStream(new FileInputStream(dependency));
 			JarEntry crunchifyJar;
@@ -306,9 +316,25 @@ public class JarUtility {
 						Class<?> c = Class.forName(className, false, child);
 						Method[] classMethods = c.getDeclaredMethods();
 						for (Method m : classMethods) {
+							methodNames.add(m.toGenericString());
 							int modifier = m.getModifiers();
 							if (Modifier.isPublic(modifier) || Modifier.isProtected(modifier))
-								count++;
+								methodsCount++;
+						}
+						for (Field f : c.getDeclaredFields()) {
+							fieldNames.add(f.toGenericString());
+							int modifier = f.getModifiers();
+							if (Modifier.isPublic(modifier) || Modifier.isProtected(modifier))
+								fieldsCount++;
+						}
+						int modifier = c.getModifiers();
+						if (c.isAnnotation()) {
+							annotationNames.add(c.getTypeName());
+							if (Modifier.isPublic(modifier) || Modifier.isProtected(modifier))
+								annotationsCount++;
+						} else {
+							if (Modifier.isPublic(modifier) || Modifier.isProtected(modifier))
+								classesCount++;
 						}
 					} catch (NoClassDefFoundError e) {
 						System.out.println("No class def found "+ e);
@@ -340,7 +366,9 @@ public class JarUtility {
 		} catch (Exception e) {
 			System.out.println(e);
 		}
-		return new ArrayList<Object>(Arrays.asList(count, String.join(":", classNames)));
+
+		return new ArrayList<Object>(Arrays.asList(methodsCount, classesCount, fieldsCount, annotationsCount, 
+				String.join(":", methodNames), String.join(":", classNames), String.join(":", fieldNames), String.join(":", annotationNames)));
 	}
 
 	private static void deleteDirectory(File fileOrDirectory) {

@@ -1,15 +1,8 @@
 [
-    {
-        "execDir": "Jest/jest",
-        "rootDir": "Jest",
-        "generatedJarName": "jest-6.3.1",
-        "build": "maven",
-        "javaVersion": 8
-    },
-    {
-        "execDir": "Jest/jest-common",
-        "rootDir": null,
-        "generatedJarName": "jest-common-6.3.1",
+   {
+        "execDir": "fastjson",
+        "rootDir": "",
+        "generatedJarName": "fastjson-1.2.76",
         "build": "maven",
         "javaVersion": 8
     }

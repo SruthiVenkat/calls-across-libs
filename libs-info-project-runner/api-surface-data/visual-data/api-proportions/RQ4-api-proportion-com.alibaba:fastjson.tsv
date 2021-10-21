@@ -1,0 +1,13 @@
+Client	API Proportion	No. Of Methods
+org.apache.cxf:cxf-core	0.000613120784794605	1
+org.apache.cxf:cxf-rt-frontend-jaxrs	0.00245248313917842	4
+org.apache.rocketmq:rocketmq-acl	0.00490496627835684	8
+org.apache.rocketmq:rocketmq-common	0.00122624156958921	2
+org.apache.rocketmq:rocketmq-remoting	0.00122624156958921	2
+org.glassfish.jersey.core:jersey-common	0.00367872470876763	6
+org.springframework:spring-context	0.00245248313917842	4
+org.springframework:spring-messaging	0.00490496627835684	8
+org.springframework:spring-web	0.0208461066830166	34
+org.springframework:spring-webmvc	0.0165542611894543	27
+org.springframework:spring-websocket	0.00183936235438381	3
+us.codecraft:webmagic-core	0.000613120784794605	1

@@ -11,5 +11,6 @@ import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.CLASS)
 @Target(ElementType.TYPE)
-public @interface CustomAnnotation {
+public
+@interface CustomAnnotation {
 }

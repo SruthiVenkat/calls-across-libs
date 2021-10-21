@@ -4,38 +4,53 @@ library(stringr)
 
 df <- read.csv("Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data/RQ2-setAccessibleCalls.tsv", sep='\t')
 
+getVersionlessLibs <- function(column) {
+  calleeLibs <- c()
+  for (i in column) {
+    calleeLibGAV = strsplit(i, ":")
+    if(length(calleeLibGAV[[1]])>=3)
+      calleeLib <- paste(calleeLibGAV[[1]][[1]], calleeLibGAV[[1]][[2]], sep=":")
+    else
+      calleeLib <- calleeLibGAV[[1]][[1]]
+    calleeLibs = c(calleeLibs,calleeLib)
+  }
+  return(calleeLibs)
+}
+
+df$CalleeLibrary <- getVersionlessLibs(df$CalleeLibrary)
+df$CallerLibrary <- getVersionlessLibs(df$CallerLibrary)
+df = df[!duplicated(c(df$CalleeName, df$FieldSignature)),]
+
 # setAccessible
-aggDf <- aggregate(df$Count, by=list(df$CalleeLibrary,df$setAccessible.CalledOn, df$Visibility), FUN=length)
-totalsDf <- aggregate(df$Count, by=list(df$CalleeLibrary, df$setAccessible.CalledOn), FUN=length)
-mergedDf <- merge(aggDf, totalsDf, by = c("Group.1","Group.2"))
-print(mergedDf)
+aggDf <- aggregate(df$Count, by=list(df$CalleeLibrary, df$CallerLibrary, df$setAccessible.CalledOn, df$Visibility), FUN=length)
+totalsDf <- aggregate(df$Count, by=list(df$CalleeLibrary, df$CallerLibrary, df$setAccessible.CalledOn), FUN=length)
+mergedDf <- merge(aggDf, totalsDf, by = c("Group.1","Group.2","Group.3"))
+
 counts <- hash()
 for( i in rownames(mergedDf) ) {
-  lib <- mergedDf[i, "Group.1"]
-  calledOn <- mergedDf[i, "Group.2"]
-  if(!(paste(lib,calledOn) %in% keys(counts))) {
-    counts[[paste(lib,calledOn)]] <- hash()
-    counts[[paste(lib,calledOn)]][["default"]] = 0
-    counts[[paste(lib,calledOn)]][["private"]] = 0
-    counts[[paste(lib,calledOn)]][["protected"]] = 0
-    counts[[paste(lib,calledOn)]][["public"]] = 0
-    counts[[paste(lib,calledOn)]][["total"]] = mergedDf[i, "x.y"]
-    counts[[paste(lib,calledOn)]][[mergedDf[i, "Group.3"]]] = mergedDf[i, "x.x"]
+  callerCallee <- paste(mergedDf[i, "Group.1"], mergedDf[i, "Group.2"], mergedDf[i, "Group.3"])
+  if(!(callerCallee %in% keys(counts))) {
+    counts[[callerCallee]] <- hash()
+    counts[[callerCallee]][["default"]] = 0
+    counts[[callerCallee]][["private"]] = 0
+    counts[[callerCallee]][["protected"]] = 0
+    counts[[callerCallee]][["public"]] = 0
+    counts[[callerCallee]][["total"]] = mergedDf[i, "x.y"]
+    counts[[callerCallee]][[mergedDf[i, "Group.4"]]] = mergedDf[i, "x.x"]
   } else {
-    counts[[paste(lib,calledOn)]][[mergedDf[i, "Group.3"]]] = mergedDf[i, "x.x"]
-    counts[[paste(lib,calledOn)]][["total"]] = mergedDf[i, "x.y"]
+    counts[[callerCallee]][[mergedDf[i, "Group.4"]]] = mergedDf[i, "x.x"]
+    counts[[callerCallee]][["total"]] = mergedDf[i, "x.y"]
   }
 }
-print(counts)
 
-finalDf <- data.frame("Library"=character(), "Object"=character(), "default"=integer(), "private"=integer(), "protected"=integer(), "public"=integer(), "total"=integer(), check.names = FALSE)
+finalDf <- data.frame("Library"=character(), "Client"=character(), "Object"=character(), "default"=integer(), "private"=integer(), "protected"=integer(), "public"=integer(), "total"=integer(), check.names = FALSE)
 for (lib in keys(counts)) {
   print(lib)
   if (is.null(counts[[lib]][["protected"]])) counts[[lib]][["protected"]] = 0
   if (is.null(counts[[lib]][["public"]])) counts[[lib]][["public"]] = 0
   if (is.null(counts[[lib]][["default"]])) counts[[lib]][["default"]] = 0
   if (is.null(counts[[lib]][["total"]])) counts[[lib]][["total"]] = 0
-  row = data.frame(list("Library"=str_split(lib, pattern=" ")[[1]][1], "Object"=str_split(lib, pattern=" ")[[1]][2], "default"=counts[[lib]][["default"]], "private"=counts[[lib]][["private"]], 
+  row = data.frame(list("Library"=str_split(lib, pattern=" ")[[1]][1], "Client"=str_split(lib, pattern=" ")[[1]][2], "Object"=str_split(lib, pattern=" ")[[1]][3], "default"=counts[[lib]][["default"]], "private"=counts[[lib]][["private"]], 
                         "protected"=counts[[lib]][["protected"]], "public"=counts[[lib]][["public"]], "total"=counts[[lib]][["total"]]), check.names = FALSE)
   print(finalDf)
   print(row)

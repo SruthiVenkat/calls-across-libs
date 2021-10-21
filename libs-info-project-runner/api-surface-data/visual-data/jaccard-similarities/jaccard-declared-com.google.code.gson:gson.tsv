@@ -1,0 +1,5 @@
+Client A/Client B	br.com.caelum:vraptor 	com.capitalone.dashboard:core 	io.searchbox:jest-common 	net.javacrumbs.json-unit:json-unit-core
+br.com.caelum:vraptor	1	0.0833333333333333	0.210526315789474	0.1621622
+com.capitalone.dashboard:core	0.0833333333333333	1	0.0444444444444444	0.05
+io.searchbox:jest-common	0.210526315789474	0.0444444444444444	1	0.2307692
+net.javacrumbs.json-unit:json-unit-core	0.162162162162162	0.05	0.230769230769231	1

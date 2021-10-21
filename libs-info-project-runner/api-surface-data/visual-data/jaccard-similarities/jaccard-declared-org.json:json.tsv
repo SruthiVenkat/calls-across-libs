@@ -1,0 +1,6 @@
+Client A/Client B	com.vdurmont:emoji-java 	io.socket:engine.io-client 	io.socket:socket.io-client 	io.swagger:swagger-codegen 	net.javacrumbs.json-unit:json-unit-core
+com.vdurmont:emoji-java	1	0.444444444444444	0.15	0	0
+io.socket:engine.io-client	0.444444444444444	1	0.111111111111111	0	0
+io.socket:socket.io-client	0.15	0.111111111111111	1	0	0.1111111
+io.swagger:swagger-codegen	0	0	0	1	0
+net.javacrumbs.json-unit:json-unit-core	0	0	0.111111111111111	0	1

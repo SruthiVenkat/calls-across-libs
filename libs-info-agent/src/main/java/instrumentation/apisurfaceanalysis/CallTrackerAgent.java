@@ -107,11 +107,12 @@ public class CallTrackerAgent {
                     }
                     reader.close();
                     BufferedWriter writer2 = new BufferedWriter(new FileWriter(libsInfoPath, false));
+                    System.out.println(CallTrackerTransformer.libsToMethods.toString());
                     for (String rowString : rows) {
                         if (rowString!=null) {
                             String[] data = rowString.split("\t");
                             if (CallTrackerTransformer.libsToMethods.containsKey(data[0]))
-                                data[2] = String.valueOf(CallTrackerTransformer.libsToMethods.get(data[0]).size());
+                                data[5] = String.valueOf(CallTrackerTransformer.libsToMethods.get(data[0]).size());
                             writer2.write(String.join("\t", data)+"\n");
                         }
                     }

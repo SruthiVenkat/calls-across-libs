@@ -4,6 +4,25 @@ library(stringr)
 
 # service bypass methods
 df <- read.csv("Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data/RQ2-serviceBypassCalls.tsv", sep='\t')
+
+getVersionlessLibs <- function(column) {
+  calleeLibs <- c()
+  for (i in column) {
+    calleeLibGAV = strsplit(i, ":")
+    if(length(calleeLibGAV[[1]])>=3)
+      calleeLib <- paste(calleeLibGAV[[1]][[1]], calleeLibGAV[[1]][[2]], sep=":")
+    else
+      calleeLib <- calleeLibGAV[[1]][[1]]
+    print(calleeLib)
+    calleeLibs = c(calleeLibs,calleeLib)
+  }
+  return(calleeLibs)
+}
+
+df$CallerLibrary <- getVersionlessLibs(df$CallerLibrary)
+df$InterfaceLibrary <- getVersionlessLibs(df$InterfaceLibrary)
+df$ImplLibrary <- getVersionlessLibs(df$ImplLibrary)
+
 aggDf <- aggregate(df$Count, by=list(df$CallerLibrary,df$InterfaceLibrary,df$InterfaceName,df$ImplLibrary,df$ImplName), FUN=length)
 colnames(aggDf) <- c("Client", "Interface Library", "Interface", "Implementation Library", "Implementation", "Count")
 print(aggDf)
@@ -23,6 +42,10 @@ print(xtable(aggDf,
 
 # service bypass
 df <- read.csv("Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data/RQ2-serviceBypass.tsv", sep='\t')
+
+df$ActualCalleeLibrary <- getVersionlessLibs(df$ActualCalleeLibrary)
+df$CallerLibrary <- getVersionlessLibs(df$CallerLibrary)
+
 servicesInfo <- read.csv("Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data/services-info.tsv", sep='\t')
 file_list = list.files(path="Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data", recursive = TRUE, pattern="*-libsInfo.tsv", full.names = TRUE)
 finalDf <- data.frame("CallerLibrary"=character(), "CallerMethod"=character(), "DeclaredCalleeMethod"=character(),	
@@ -64,6 +87,8 @@ for( i in rownames(df) ) {
   row = data.frame(list(df[i,], "Interface"=interface, "Interface.Library"=interfaceLib, "Implementation"=calledClassName))
   finalDf = rbind(finalDf, row)
 }
+finalDf$Interface.Library <- getVersionlessLibs(finalDf$Interface.Library)
+
 aggDf <- aggregate(finalDf$Count, by=list(finalDf$CallerLibrary,finalDf$ActualCalleeLibrary,finalDf$Implementation,finalDf$Interface.Library,finalDf$Interface,finalDf$ServiceBypass), FUN=length)
 
 # temporary - till I fix versions - todo
