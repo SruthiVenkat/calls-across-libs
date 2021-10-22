@@ -238,7 +238,7 @@ public class DependentTestRunner {
 		request.setPomFile(pomFile);
 		request.setGoals(Arrays.asList("clean", "install"));
 		request.setMavenOpts("-Dlicense.skip=true -DskipTests=true -Dcheckstyle.skip=true -Dgpg.skip=true -Drat.skip=true -Dmaven.buildNumber.doCheck=false");
-		request.setJavaHome(new File(javaHomes.get(javaVersion)));
+		//request.setJavaHome(new File(javaHomes.get(javaVersion)));
 		//System.setProperty("maven.home", "/usr/share/maven");
 		System.setProperty("maven.home", "/opt/homebrew/Cellar/maven/3.8.2/libexec");
 		Invoker invoker = new DefaultInvoker();

@@ -2,7 +2,7 @@ library(sjPlot)
 library(xtable)
 library(stringr)
 
-df <- read.csv("Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data/RQ1-fields.tsv", sep='\t')
+df <- read.csv("Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data/visual-data/RQ1-fields.tsv", sep='\t')
 
 getVersionlessLibs <- function(column) {
   calleeLibs <- c()
@@ -55,17 +55,30 @@ for (lib in keys(counts)) {
   finalDf = rbind(finalDf, row)
 }
 
+getArtifactNames <- function(column) {
+  artNames <- c()
+  for (i in column) {
+    artGAV = strsplit(i, ":")
+    if(length(artGAV[[1]])>=2)
+      art <- artGAV[[1]][[2]]
+    else
+      art <- artGAV[[1]][[1]]
+    artNames = c(artNames,art)
+  }
+  return(artNames)
+}
+finalDf$Library <- getArtifactNames(finalDf$Library)
+finalDf$Client <- getArtifactNames(finalDf$Client)
 
 tab_df(
   finalDf,
-  title = "Reflective Fields",
+  title = "Reflection on fields",
   footnote = NULL,
-  col.header = c("Library", "Visibility", "Count", "Total"),
   sort.column = 1,
-  CSS = list(css.centeralign = 'text-align: left;')
+  CSS = list(css.centeralign = 'text-align: right;')
 )
 
 print(xtable(finalDf,
-       caption = "Reflective Fields", digits = 0, colnames(c("Library", "Visibility", "Count", "Total"))), 
-      file = "Documents/Waterloo/PL/21.icse.library-usage/rq1a-reflective-fields.tex",size="small")
+       caption = "Reflection on fields", digits = 0), 
+      file = "Documents/Waterloo/PL/21.icse.library-usage/tables/results/reflective-fields.tex",size="small",include.rownames = FALSE)
 

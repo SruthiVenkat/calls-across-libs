@@ -132,11 +132,16 @@ ggsave(
   plot = GPlot1,
   device = "png")
 
+# compare all clients
+finalDf <- data.frame("Library"=character(), "Total No. of clients"=integer(), "% Clients calling same methods"=double(), 
+                      "No. of methods called by (%) clients"=integer(), check.names = FALSE)
 for (lib in libraries) {
   methodsToNoOfClients <- hash()
   intersectingMethods <- list()
   for (client in keys(callee_methods[[lib]])) {
+    print(callee_methods[[lib]][[client]])
     intersectingMethods <- intersect(intersectingMethods, callee_methods[[lib]][[client]])
+    print(intersectingMethods)
     for (method in callee_methods[[lib]][[client]]) {
       if (!is.na(method)) {
         if(is.null(methodsToNoOfClients[[method]]))
@@ -146,10 +151,37 @@ for (lib in libraries) {
       }
     }
   }
-  print(paste("Library", lib, length(callee_methods[[lib]]), max(values(methodsToNoOfClients)), 
-              100.0*max(values(methodsToNoOfClients))/length(callee_methods[[lib]]), length(invert(methodsToNoOfClients)[[toString(max(values(methodsToNoOfClients)))]])))
-  
- # print(methodsToNoOfClients)
-  #print(paste(lib, intersectingMethods))
+  row = data.frame(list("Library"=lib, "Total No. of clients"=length(callee_methods[[lib]]), "% Clients calling same methods"=100.0*max(values(methodsToNoOfClients))/length(callee_methods[[lib]]), 
+                        "No. of methods called by (%) clients"=length(invert(methodsToNoOfClients)[[toString(max(values(methodsToNoOfClients)))]])), 
+                   check.names = FALSE)
+  finalDf = rbind(finalDf, row)
+  #print(paste("Library", lib, length(callee_methods[[lib]]), max(values(methodsToNoOfClients)), 
+  #            100.0*max(values(methodsToNoOfClients))/length(callee_methods[[lib]]), length(invert(methodsToNoOfClients)[[toString(max(values(methodsToNoOfClients)))]])))
 }
+
+getArtifactNames <- function(column) {
+  artNames <- c()
+  for (i in column) {
+    artGAV = strsplit(i, ":")
+    if(length(artGAV[[1]])>=2)
+      art <- artGAV[[1]][[2]]
+    else
+      art <- artGAV[[1]][[1]]
+    artNames = c(artNames,art)
+  }
+  return(artNames)
+}
+finalDf$Library <- getArtifactNames(finalDf$Library)
+
+
+tab_df(
+  finalDf,
+  title = "% of clients calling same methods",
+  footnote = NULL,
+  sort.column = 1,
+  CSS = list(css.centeralign = 'text-align: right;')
+)
+print(xtable(finalDf, align = c('l','r','r','r','r'),
+             caption = "\\% of clients calling same methods", digits = c(0,0,0,2,0)),
+      file = "Documents/Waterloo/PL/21.icse.library-usage/tables/results/perc-clients-same-methods.tex",size="small",include.rownames = FALSE)
 

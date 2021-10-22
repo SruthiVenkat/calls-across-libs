@@ -3,9 +3,6 @@ library(xtable)
 library(stringr)
 library(dplyr)
 
-
-df <- read.csv("Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data/visual-data/RQ1-invocations.tsv", sep='\t')
-
 getVersionlessLibs <- function(column) {
   calleeLibs <- c()
   for (i in column) {
@@ -14,14 +11,37 @@ getVersionlessLibs <- function(column) {
       calleeLib <- paste(calleeLibGAV[[1]][[1]], calleeLibGAV[[1]][[2]], sep=":")
     else
       calleeLib <- calleeLibGAV[[1]][[1]]
-    print(calleeLib)
     calleeLibs = c(calleeLibs,calleeLib)
   }
   return(calleeLibs)
 }
 
+
+# Reflective Callbacks
+file_list = list.files(path="Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data", recursive = TRUE, pattern="*-invocations.tsv", full.names = TRUE)
+writeLines("CallerLibrary\tActualCalleeLibrary\tActualCalleeMethod\tCalleeVisibility\tCounts","Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data/visual-data/RQ1-reflective-callbacks.tsv")
+for (i in seq_along(file_list)) {
+  filename = file_list[[i]]
+  if (endsWith(filename,"RQ1-invocations.tsv"))
+    break
+  subdirs = str_split(filename,"/")
+  client =subdirs[[1]][length(subdirs[[1]])-1]
+  df <- read.csv(filename, sep='\t')
+  # Extract reflective calls
+  reflDf <- df[df$Reflective == "true", ]
+  if (nrow(reflDf)==0) break
+  
+  reflDf$Caller.Library <- getVersionlessLibs(reflDf$Caller.Library)
+  reflDf <- subset(reflDf, reflDf$Actual.Callee.Library==client)
+  print(reflDf)
+  counts = reflDf %>% group_by(Caller.Library, Actual.Callee.Library, Actual.Callee.Method,Callee.Visibility) %>% summarise(Count = n())
+  write.table(counts,"Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data/visual-data/RQ1-reflective-callbacks.tsv",sep="\t",row.names=FALSE, col.names=FALSE, append=TRUE)
+}
+
+df <- read.csv("Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data/visual-data/RQ1-reflective-callbacks.tsv", sep='\t')
+
+
 df$ActualCalleeLibrary <- getVersionlessLibs(df$ActualCalleeLibrary)
-df$CallerLibrary <- getVersionlessLibs(df$CallerLibrary)
 df = df[!duplicated(df$ActualCalleeMethod),]
 
 # reflective invocations - client to lib
@@ -53,16 +73,11 @@ for (lib in keys(counts)) {
   if (is.null(counts[[lib]][["public"]])) counts[[lib]][["public"]] = 0
   if (is.null(counts[[lib]][["default"]])) counts[[lib]][["default"]] = 0
   if (is.null(counts[[lib]][["total"]])) counts[[lib]][["total"]] = 0
-  row = data.frame(list("Library"=str_split(lib, pattern=" ")[[1]][1], "Client"=str_split(lib, pattern=" ")[[1]][2], "default"=counts[[lib]][["default"]], "private"=counts[[lib]][["private"]], 
-             "protected"=counts[[lib]][["protected"]], "public"=counts[[lib]][["public"]], "total"=counts[[lib]][["total"]]), check.names = FALSE)
+  row = data.frame(list("Library"=str_split(lib, pattern=" ")[[1]][2], "Client"=str_split(lib, pattern=" ")[[1]][1], "default"=counts[[lib]][["default"]], "private"=counts[[lib]][["private"]], 
+                        "protected"=counts[[lib]][["protected"]], "public"=counts[[lib]][["public"]], "total"=counts[[lib]][["total"]]), check.names = FALSE)
   finalDf = rbind(finalDf, row)
 }
-finalDf <- finalDf[grepl(":", finalDf$Library),]
-finalDf <- aggregate(cbind(finalDf$default, finalDf$private, finalDf$protected, finalDf$public, finalDf$total), by=list(finalDf$Library), sum)
-colnames(finalDf) <- c("Library", "default", "private", "protected", "public", "total")
-finalDf <- finalDf %>% rowwise() %>% mutate(Clients = subset(totalClientsDf, Group.1==Library)$x)
-finalDf <- data.frame(finalDf)
-finalDf <- finalDf[,c(1,7,2,3,4,5,6)]
+
 getArtifactNames <- function(column) {
   artNames <- c()
   for (i in column) {
@@ -76,16 +91,16 @@ getArtifactNames <- function(column) {
   return(artNames)
 }
 finalDf$Library <- getArtifactNames(finalDf$Library)
+finalDf$Client <- getArtifactNames(finalDf$Client)
 tab_df(
   finalDf,
-  title = "Reflective Invocations in both directions",
+  title = "Reflective Callbacks",
   footnote = NULL,
-  col.header = c("Library", "Visibility", "Count", "Total"),
   sort.column = 1,
   CSS = list(css.centeralign = 'text-align: left;')
 )
 
 print(xtable(finalDf,
-       caption = "Reflective Invocations in both directions", digits = 0), 
-      file = "Documents/Waterloo/PL/21.icse.library-usage/tables/results/reflective-invocations-both-directions.tex",size="small",include.rownames = FALSE)
+             caption = "Reflective Callbacks", digits = 0), 
+      file = "Documents/Waterloo/PL/21.icse.library-usage/tables/results/reflective-callbacks.tex",size="small",include.rownames = FALSE)
 

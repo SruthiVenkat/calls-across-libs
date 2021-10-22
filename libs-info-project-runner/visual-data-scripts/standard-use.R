@@ -182,16 +182,28 @@ getValsfromCallee(callee_fields)
 finalDf <- data.frame("Library"=character(),
                       "No. of Clients Using Methods"=integer(), "No. of Methods in Lib"=integer(), "No. of Distinct Methods Used By All Clients"=integer(), "Total No. of Methods Used By All Clients"=integer(),
                       "No. of Clients Using Fields"=integer(), "No. of Fields in Lib"=integer(), "No. of Distinct Fields Used By All Clients"=integer(), "Total No. of Fields Used By All Clients"=integer(), 
-                      "No. of Clients Using Annotations"=integer(), "No. of Annotations in Lib"=integer(), "No. of Distinct Annotations Used By All Clients"=integer(), "Total No. of Annotations Used By All Clients"=integer(), 
                       "No. of Clients Using Types"=integer(), "No. of Types in Lib"=integer(), "No. of Distinct Types Used By All Clients"=integer(), "Total No. of Types Used By All Clients"=integer())
 for (lib in libraries) {
   row = data.frame(list("Library"=lib, "No. of Clients Using Methods"=length(callee_methods[[lib]]), "No. of Methods in Lib"=totalMethods[[lib]], "No. of Distinct Methods Used By All Clients"=length(unique(getValsfromCallee(callee_methods[[lib]]))), "Total No. of Methods Used By All Clients"=length(getValsfromCallee(callee_methods[[lib]])),
                         "No. of Clients Using Fields"=length(callee_fields[[lib]]), "No. of Fields in Lib"= totalFields[[lib]], "No. of Distinct Fields Used By All Clients"=length(unique(getValsfromCallee(callee_fields[[lib]]))), "Total No. of Fields Used By All Clients"=length(getValsfromCallee(callee_fields[[lib]])),
-                        "No. of Clients Using Annotations"=length(callee_annotations[[lib]]), "No. of Annotations in Lib"=totalAnnotations[[lib]],"No. of Distinct Annotations Used By All Clients"=length(unique(getValsfromCallee(callee_annotations[[lib]]))), "Total No. of Annotations Used By All Clients"=length(getValsfromCallee(callee_annotations[[lib]])),
                         "No. of Clients Using Types"=length(callee_types[[lib]]), "No. of Types in Lib"=totalClasses[[lib]],"No. of Distinct Types Used By All Clients"=length(unique(getValsfromCallee(callee_types[[lib]]))), "Total No. of Types Used By All Clients"=length(getValsfromCallee(callee_types[[lib]]))
                         ))
   finalDf = rbind(finalDf, row)
 }
+
+getArtifactNames <- function(column) {
+  artNames <- c()
+  for (i in column) {
+    artGAV = strsplit(i, ":")
+    if(length(artGAV[[1]])>=2)
+      art <- artGAV[[1]][[2]]
+    else
+      art <- artGAV[[1]][[1]]
+    artNames = c(artNames,art)
+  }
+  return(artNames)
+}
+finalDf$Library <- getArtifactNames(finalDf$Library)
 
 tab_df(
   finalDf,
@@ -199,20 +211,17 @@ tab_df(
   footnote = NULL,
   col.header = c("Library", "No. of Clients Using Methods", "No. of Methods in Lib", "No. of Distinct Methods Used By All Clients", "Total No. of Methods Used By All Clients",
                  "No. of Clients Using Fields", "No. of Fields in Lib", "No. of Distinct Fields Used By All Clients", "Total No. of Fields Used By All Clients", 
-                 "No. of Clients Using Annotations", "No. of Annotations in Lib", "No. of Distinct Annotations Used By All Clients", "Total No. of Annotations Used By All Clients", 
                  "No. of Clients Using Types", "No. of Types in Lib", "No. of Distinct Types Used By All Clients", "Total No. of Types Used By All Clients"),
   sort.column = 1,
   CSS = list(css.centeralign = 'text-align: left;')
 )
 colnames(finalDf) = c("Library", "No. of Clients Using Methods", "No. of Methods in Lib", "No. of Distinct Methods Used By All Clients", "Total No. of Methods Used By All Clients",
                       "No. of Clients Using Fields", "No. of Fields in Lib", "No. of Distinct Fields Used By All Clients", "Total No. of Fields Used By All Clients", 
-                      "No. of Clients Using Annotations", "No. of Annotations in Lib", "No. of Distinct Annotations Used By All Clients", "Total No. of Annotations Used By All Clients", 
                       "No. of Clients Using Types", "No. of Types in Lib", "No. of Distinct Types Used By All Clients", "Total No. of Types Used By All Clients")
 
-print(xtable(finalDf, align = c("l", "p{0.5cm}","p{0.5cm}","p{0.5cm}","p{0.5cm}","p{0.5cm}","p{0.5cm}","p{0.5cm}","p{0.5cm}","p{0.5cm}","p{0.5cm}","p{0.5cm}","p{0.5cm}","p{0.5cm}","p{0.5cm}","p{0.5cm}","p{0.5cm}","p{0.5cm}"),
+print(xtable(finalDf, 
              caption = "Standard API Usage", digits = 0, colnames(c("Library", "No. of Clients Using Methods", "No. of Methods in Lib", "No. of Distinct Methods Used By All Clients", "Total No. of Methods Used By All Clients",
                                                                     "No. of Clients Using Fields", "No. of Fields in Lib", "No. of Distinct Fields Used By All Clients", "Total No. of Fields Used By All Clients", 
-                                                                    "No. of Clients Using Annotations", "No. of Annotations in Lib", "No. of Distinct Annotations Used By All Clients", "Total No. of Annotations Used By All Clients", 
                                                                     "No. of Clients Using Types", "No. of Types in Lib", "No. of Distinct Types Used By All Clients", "Total No. of Types Used By All Clients"))), 
-      file = "Documents/Waterloo/PL/21.icse.library-usage/standard-api-usage.tex",size="small", include.rownames = FALSE)
+      file = "Documents/Waterloo/PL/21.icse.library-usage/tables/results/standard-api-usage.tex",size="small", include.rownames = FALSE)
 
