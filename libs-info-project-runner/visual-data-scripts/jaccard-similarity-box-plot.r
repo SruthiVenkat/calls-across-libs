@@ -146,7 +146,9 @@ for (lib in libraries) {
       }
     }
   }
-  print(paste("Library", lib, length(callee_methods[[lib]]), max(values(methodsToNoOfClients))))
+  print(paste("Library", lib, length(callee_methods[[lib]]), max(values(methodsToNoOfClients)), 
+              100.0*max(values(methodsToNoOfClients))/length(callee_methods[[lib]]), length(invert(methodsToNoOfClients)[[toString(max(values(methodsToNoOfClients)))]])))
+  
  # print(methodsToNoOfClients)
   #print(paste(lib, intersectingMethods))
 }

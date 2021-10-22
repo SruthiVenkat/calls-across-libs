@@ -2,7 +2,7 @@ library(sjPlot)
 library(xtable)
 library(stringr)
 
-df <- read.csv("Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data/RQ2-setAccessibleCalls.tsv", sep='\t')
+df <- read.csv("Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data/visual-data/RQ2-setAccessibleCalls.tsv", sep='\t')
 
 getVersionlessLibs <- function(column) {
   calleeLibs <- c()
