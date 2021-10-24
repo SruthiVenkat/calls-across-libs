@@ -1,0 +1,35 @@
+Class Name	Class Visibility	Class Library	Usage	Used In Library
+org.h2.store.fs.FilePathDisk	public	com.h2database:h2:1.4.200	method call	org.zapodot:embedded-db-core:2.0.1-SNAPSHOT
+java.nio.file.CopyOption	public	unknownLib	Class.forName	net.bytebuddy:byte-buddy:1.10.8
+org.h2.store.fs.FilePathMem	public	com.h2database:h2:1.4.200	Class.forName	com.h2database:h2:1.4.200
+org.h2.store.fs.FilePathSplit	public	com.h2database:h2:1.4.200	Class.forName	com.h2database:h2:1.4.200
+org.h2.store.fs.FilePathNio	public	com.h2database:h2:1.4.200	Class.forName	com.h2database:h2:1.4.200
+java.sql.DriverManager	public	java.sql	method call	org.zapodot:embedded-db-core:2.0.1-SNAPSHOT
+java.sql.DriverManager	public	java.sql	method call	com.h2database:h2:1.4.200
+org.h2.store.fs.FilePath	public	com.h2database:h2:1.4.200	method call	org.zapodot:embedded-db-core:2.0.1-SNAPSHOT
+java.sql.SQLException	public	java.sql	cast	com.h2database:h2:1.4.200
+org.h2.store.fs.FilePathRetryOnInterrupt	public	com.h2database:h2:1.4.200	Class.forName	com.h2database:h2:1.4.200
+java.sql.DriverAction	public	java.sql	subtyping	org.hsqldb:hsqldb:2.5.0
+java.sql.SQLFeatureNotSupportedException	public	java.sql	cast	org.hsqldb:hsqldb:2.5.0
+java.security.PrivilegedAction	public	java.security	subtyping	java.sql
+org.h2.store.fs.FilePathZip	public	com.h2database:h2:1.4.200	Class.forName	com.h2database:h2:1.4.200
+java.nio.file.Path	public	unknownLib	Class.forName	net.bytebuddy:byte-buddy:1.10.8
+org.h2.store.fs.FilePathDisk	public	com.h2database:h2:1.4.200	Class.forName	com.h2database:h2:1.4.200
+org.h2.store.fs.FilePathMemLZF	default	com.h2database:h2:1.4.200	Class.forName	com.h2database:h2:1.4.200
+java.sql.DriverPropertyInfo	public	java.sql	instantiation	org.hsqldb:hsqldb:2.5.0
+org.h2.store.fs.FilePathAsync	public	com.h2database:h2:1.4.200	Class.forName	com.h2database:h2:1.4.200
+java.sql.Connection	public	java.sql	cast	com.h2database:h2:1.4.200
+java.sql.Connection	public	java.sql	cast	org.zapodot:embedded-db-core:2.0.1-SNAPSHOT
+java.lang.reflect.Executable	public	unknownLib	Class.forName	net.bytebuddy:byte-buddy:1.10.8
+java.sql.SQLException	public	java.sql	instantiation	com.h2database:h2:1.4.200
+java.sql.SQLException	public	java.sql	subtyping	com.h2database:h2:1.4.200
+java.nio.file.StandardCopyOption	public	unknownLib	Class.forName	net.bytebuddy:byte-buddy:1.10.8
+java.sql.Driver	public	java.sql	subtyping	org.hsqldb:hsqldb:2.5.0
+org.h2.store.fs.FilePathNioMem	public	com.h2database:h2:1.4.200	Class.forName	com.h2database:h2:1.4.200
+org.junit.platform.engine.TestExecutionResult	public	org.junit.platform.engine	method call	org.zapodot:embedded-db-core:2.0.1-SNAPSHOT
+org.h2.store.fs.FilePathNioMapped	public	com.h2database:h2:1.4.200	Class.forName	com.h2database:h2:1.4.200
+java.nio.file.Files	public	unknownLib	Class.forName	net.bytebuddy:byte-buddy:1.10.8
+java.sql.Driver	public	java.sql	subtyping	com.h2database:h2:1.4.200
+java.security.PrivilegedAction	public	java.security	subtyping	net.bytebuddy:byte-buddy:1.10.8
+java.lang.reflect.AnnotatedType	public	unknownLib	Class.forName	net.bytebuddy:byte-buddy:1.10.8
+org.h2.store.fs.FilePathNioMemLZF	default	com.h2database:h2:1.4.200	Class.forName	com.h2database:h2:1.4.200

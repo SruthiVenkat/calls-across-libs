@@ -1,0 +1,25 @@
+SubClass	Sub Library	Super Class/Interface	Super Class/Interface Visibility	Super Library	Count
+com.ibm.common.activitystreams.util.Converters$5	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT	com.google.common.base.Function	public	com.google.guava:guava:16.0.1	1
+com.ibm.common.activitystreams.ASObject$1	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT	com.google.common.base.Function	public	com.google.guava:guava:16.0.1	1
+com.ibm.common.activitystreams.util.Converters$4	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT	com.google.common.base.Function	public	com.google.guava:guava:16.0.1	1
+com.ibm.common.activitystreams.util.Converters$7	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT	com.google.common.base.Function	public	com.google.guava:guava:16.0.1	1
+com.ibm.common.activitystreams.util.Converters$6	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT	com.google.common.base.Function	public	com.google.guava:guava:16.0.1	1
+com.ibm.common.activitystreams.util.Converters$1	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT	com.google.common.base.Function	public	com.google.guava:guava:16.0.1	1
+com.ibm.common.activitystreams.util.Converters$3	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT	com.google.common.base.Function	public	com.google.guava:guava:16.0.1	1
+org.joda.time.JodaTimePermission	joda-time:joda-time:2.3	java.security.BasicPermission	public	java.security	1
+com.ibm.common.activitystreams.ASObject$AbstractBuilder	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT	com.google.common.base.Supplier	public	com.google.guava:guava:16.0.1	1
+com.ibm.common.activitystreams.util.Converters$2	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT	com.google.common.base.Function	public	com.google.guava:guava:16.0.1	1
+com.ibm.common.activitystreams.util.Converters$11	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT	com.google.common.base.Converter	public	com.google.guava:guava:16.0.1	1
+com.ibm.common.activitystreams.util.AbstractWritable$AbstractWritableBuilder	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT	com.google.common.base.Supplier	public	com.google.guava:guava:16.0.1	1
+com.ibm.common.activitystreams.util.Converters$12	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT	com.google.common.base.Converter	public	com.google.guava:guava:16.0.1	1
+com.ibm.common.activitystreams.internal.Adapter	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT	com.google.gson.JsonSerializer	public	com.google.code.gson:gson:2.2.4	1
+com.ibm.common.activitystreams.internal.SimpleAdapter	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT	com.google.common.base.Function	public	com.google.guava:guava:16.0.1	1
+com.ibm.common.activitystreams.internal.Adapter	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT	com.google.gson.JsonDeserializer	public	com.google.code.gson:gson:2.2.4	1
+com.ibm.common.activitystreams.internal.Schema$Builder	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT	com.google.common.base.Supplier	public	com.google.guava:guava:16.0.1	1
+com.ibm.common.activitystreams.internal.GsonWrapper$Builder	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT	com.google.common.base.Supplier	public	com.google.guava:guava:16.0.1	1
+com.ibm.common.activitystreams.IO$Builder	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT	com.google.common.base.Supplier	public	com.google.guava:guava:16.0.1	1
+com.ibm.common.activitystreams.internal.ASObjectAdapter$1	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT	com.google.common.base.Converter	public	com.google.guava:guava:16.0.1	1
+com.ibm.common.activitystreams.util.Converters$9	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT	com.google.common.base.Function	public	com.google.guava:guava:16.0.1	1
+com.ibm.common.activitystreams.util.Converters$10	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT	com.google.common.base.Function	public	com.google.guava:guava:16.0.1	1
+com.ibm.common.activitystreams.util.Converters$8	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT	com.google.common.base.Function	public	com.google.guava:guava:16.0.1	1
+com.ibm.common.activitystreams.internal.Model$Builder	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT	com.google.common.base.Supplier	public	com.google.guava:guava:16.0.1	1

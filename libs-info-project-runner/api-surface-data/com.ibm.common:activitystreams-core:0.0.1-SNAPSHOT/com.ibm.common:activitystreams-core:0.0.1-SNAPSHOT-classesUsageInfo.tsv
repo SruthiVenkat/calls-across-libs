@@ -1,0 +1,81 @@
+Class Name	Class Visibility	Class Library	Usage	Used In Library
+com.google.gson.internal.LazilyParsedNumber	public	com.google.code.gson:gson:2.2.4	cast	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+java.sql.Timestamp	public	java.sql	instantiation	com.google.code.gson:gson:2.2.4
+com.ibm.common.activitystreams.internal.Adapters$2	default	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT	method call	com.google.code.gson:gson:2.2.4
+com.ibm.common.activitystreams.internal.Adapters$4	default	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT	method call	com.google.code.gson:gson:2.2.4
+java.security.BasicPermission	public	java.security	subtyping	joda-time:joda-time:2.3
+java.security.MessageDigestSpi	public	java.security	Class.forName	java.security
+com.google.common.collect.RegularImmutableBiMap	default	com.google.guava:guava:16.0.1	method call	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+com.ibm.common.activitystreams.internal.ASObjectAdapter	public	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT	method call	com.google.code.gson:gson:2.2.4
+com.google.common.base.Function	public	com.google.guava:guava:16.0.1	subtyping	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+java.sql.Date	public	java.sql	instantiation	com.google.code.gson:gson:2.2.4
+com.google.gson.GsonBuilder	public	com.google.code.gson:gson:2.2.4	instantiation	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+com.google.common.base.Converter$ReverseConverter	private	com.google.guava:guava:16.0.1	method call	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+java.sql.Date	public	java.sql	cast	com.google.code.gson:gson:2.2.4
+com.google.gson.Gson	public	com.google.code.gson:gson:2.2.4	method call	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+com.ibm.common.activitystreams.ASObject$1	default	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT	method call	com.google.guava:guava:16.0.1
+com.google.common.collect.ImmutableList	public	com.google.guava:guava:16.0.1	method call	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+com.google.gson.GsonBuilder	public	com.google.code.gson:gson:2.2.4	method call	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+com.google.common.base.Absent	default	com.google.guava:guava:16.0.1	method call	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+com.google.common.collect.ImmutableSet	public	com.google.guava:guava:16.0.1	method call	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+com.google.common.collect.ImmutableList$Builder	public	com.google.guava:guava:16.0.1	method call	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+java.sql.Timestamp	public	java.sql	cast	com.google.code.gson:gson:2.2.4
+com.google.common.collect.Maps	protected	com.google.guava:guava:16.0.1	method call	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+com.google.common.base.Optional	public	com.google.guava:guava:16.0.1	method call	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+com.ibm.common.activitystreams.util.Converters$4	default	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT	method call	com.google.guava:guava:16.0.1
+com.google.common.collect.RegularImmutableMap$EntrySet	private	com.google.guava:guava:16.0.1	method call	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+com.google.common.collect.ImmutableMap	public	com.google.guava:guava:16.0.1	method call	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+com.google.common.base.Supplier	public	com.google.guava:guava:16.0.1	cast	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+com.google.common.collect.Range	public	com.google.guava:guava:16.0.1	cast	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+com.google.gson.JsonPrimitive	public	com.google.code.gson:gson:2.2.4	instantiation	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+com.google.common.collect.Sets	public	com.google.guava:guava:16.0.1	method call	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+com.google.gson.JsonObject	public	com.google.code.gson:gson:2.2.4	method call	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+com.google.common.base.Optional	public	com.google.guava:guava:16.0.1	cast	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+com.google.common.collect.Iterables	public	com.google.guava:guava:16.0.1	method call	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+com.google.gson.JsonSerializer	public	com.google.code.gson:gson:2.2.4	subtyping	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+org.joda.time.DateTime	public	joda-time:joda-time:2.3	cast	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+com.google.common.collect.HashBiMap	public	com.google.guava:guava:16.0.1	method call	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+com.google.common.collect.SingletonImmutableSet	default	com.google.guava:guava:16.0.1	method call	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+com.google.common.collect.Multimap	public	com.google.guava:guava:16.0.1	cast	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+org.joda.time.Period	public	joda-time:joda-time:2.3	cast	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+java.sql.Time	public	java.sql	cast	com.google.code.gson:gson:2.2.4
+com.google.common.collect.ImmutableBiMap	public	com.google.guava:guava:16.0.1	method call	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+com.google.gson.JsonObject	public	com.google.code.gson:gson:2.2.4	cast	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+com.google.common.collect.EmptyImmutableSet	default	com.google.guava:guava:16.0.1	method call	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+com.google.common.collect.SingletonImmutableBiMap	default	com.google.guava:guava:16.0.1	method call	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+com.google.common.collect.ImmutableMapValues	default	com.google.guava:guava:16.0.1	method call	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+com.google.common.base.Converter	public	com.google.guava:guava:16.0.1	subtyping	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+org.joda.time.Duration	public	joda-time:joda-time:2.3	cast	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+org.joda.time.DateTime	public	joda-time:joda-time:2.3	instantiation	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+com.google.gson.JsonPrimitive	public	com.google.code.gson:gson:2.2.4	method call	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+com.ibm.common.activitystreams.internal.LinkValueAdapter	default	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT	method call	com.google.code.gson:gson:2.2.4
+com.google.gson.JsonObject	public	com.google.code.gson:gson:2.2.4	instantiation	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+com.google.common.base.Supplier	public	com.google.guava:guava:16.0.1	subtyping	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+com.google.common.collect.ImmutableSet$Builder	public	com.google.guava:guava:16.0.1	method call	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+com.google.common.base.Present	default	com.google.guava:guava:16.0.1	method call	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+com.google.common.base.Preconditions	default	com.google.guava:guava:16.0.1	method call	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+sun.security.provider.SHA	public	unknownLib	Class.forName	java.security
+com.google.common.collect.RegularImmutableSet	default	com.google.guava:guava:16.0.1	method call	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+com.google.gson.Gson$1	default	com.google.code.gson:gson:2.2.4	method call	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+com.google.gson.Gson$2	default	com.google.code.gson:gson:2.2.4	method call	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+com.google.gson.JsonPrimitive	public	com.google.code.gson:gson:2.2.4	cast	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+com.google.common.collect.Table	public	com.google.guava:guava:16.0.1	cast	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+java.sql.Time	public	java.sql	instantiation	com.google.code.gson:gson:2.2.4
+com.google.common.net.MediaType	public	com.google.guava:guava:16.0.1	cast	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+com.google.gson.JsonArray	public	com.google.code.gson:gson:2.2.4	instantiation	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+com.google.common.collect.ImmutableMap	private	com.google.guava:guava:16.0.1	method call	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+com.google.common.base.Preconditions	public	com.google.guava:guava:16.0.1	method call	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+com.google.gson.JsonArray	public	com.google.code.gson:gson:2.2.4	method call	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+com.google.common.collect.RegularImmutableMap	default	com.google.guava:guava:16.0.1	method call	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+com.google.common.collect.ImmutableMap	protected	com.google.guava:guava:16.0.1	method call	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+com.google.gson.JsonDeserializer	public	com.google.code.gson:gson:2.2.4	subtyping	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+com.google.common.collect.Table$Cell	public	com.google.guava:guava:16.0.1	cast	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+org.joda.time.DateTime	default	joda-time:joda-time:2.3	method call	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+com.ibm.common.activitystreams.internal.TypeValueAdapter	default	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT	method call	com.google.code.gson:gson:2.2.4
+com.google.gson.JsonElement	public	com.google.code.gson:gson:2.2.4	cast	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+com.google.common.collect.Maps	public	com.google.guava:guava:16.0.1	method call	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+com.google.common.collect.ImmutableMap$Builder	public	com.google.guava:guava:16.0.1	method call	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+com.google.common.collect.RegularImmutableList	default	com.google.guava:guava:16.0.1	method call	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+org.joda.time.Interval	public	joda-time:joda-time:2.3	cast	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+com.google.common.base.Optional	default	com.google.guava:guava:16.0.1	method call	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT
+com.google.common.collect.ImmutableMapKeySet	default	com.google.guava:guava:16.0.1	method call	com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT

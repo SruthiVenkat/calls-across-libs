@@ -1,0 +1,20 @@
+SubClass	Sub Library	Super Class/Interface	Super Class/Interface Visibility	Super Library	Count
+com.thoughtworks.xstream.io.xml.SaxWriter	com.thoughtworks.xstream:xstream:1.5.0-SNAPSHOT	org.xml.sax.XMLReader	public	org.xml.sax	1
+javax.xml.bind.JAXBPermission	jakarta.xml.bind:jakarta.xml.bind-api:2.3.2	java.security.BasicPermission	public	java.security	1
+io.github.xstream.mxparser.MXParser	io.github.x-stream:mxparser:1.2.1	org.xmlpull.v1.XmlPullParser	public	xmlpull:xmlpull:1.1.3.1	1
+javax.xml.stream.SecuritySupport$1	javax.xml.stream	java.security.PrivilegedAction	public	java.security	1
+javax.xml.stream.SecuritySupport$2	javax.xml.stream	java.security.PrivilegedAction	public	java.security	1
+javax.xml.parsers.FactoryFinder$1	javax.xml.parsers	java.security.PrivilegedAction	public	java.security	1
+javax.xml.stream.FactoryFinder$1	javax.xml.stream	java.security.PrivilegedAction	public	java.security	1
+javax.xml.parsers.SecuritySupport$1	javax.xml.parsers	java.security.PrivilegedAction	public	java.security	1
+javax.xml.datatype.SecuritySupport$5	javax.xml.datatype	java.security.PrivilegedAction	public	java.security	1
+javax.xml.datatype.FactoryFinder$1	javax.xml.datatype	java.security.PrivilegedAction	public	java.security	1
+javax.xml.parsers.SecuritySupport$2	javax.xml.parsers	java.security.PrivilegedAction	public	java.security	1
+javax.xml.parsers.SecuritySupport$5	javax.xml.parsers	java.security.PrivilegedAction	public	java.security	1
+javax.xml.transform.SecuritySupport$5	javax.xml.transform	java.security.PrivilegedAction	public	java.security	1
+javax.xml.stream.SecuritySupport$5	javax.xml.stream	java.security.PrivilegedAction	public	java.security	1
+javax.xml.transform.SecuritySupport$1	javax.xml.transform	java.security.PrivilegedAction	public	java.security	1
+javax.xml.datatype.SecuritySupport$2	javax.xml.datatype	java.security.PrivilegedAction	public	java.security	1
+javax.xml.datatype.SecuritySupport$1	javax.xml.datatype	java.security.PrivilegedAction	public	java.security	1
+javax.xml.transform.SecuritySupport$2	javax.xml.transform	java.security.PrivilegedAction	public	java.security	1
+javax.xml.transform.FactoryFinder$1	javax.xml.transform	java.security.PrivilegedAction	public	java.security	1

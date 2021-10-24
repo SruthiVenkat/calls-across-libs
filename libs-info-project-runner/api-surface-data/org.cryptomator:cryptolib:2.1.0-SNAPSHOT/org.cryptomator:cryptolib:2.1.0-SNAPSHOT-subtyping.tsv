@@ -1,0 +1,10 @@
+SubClass	Sub Library	Super Class/Interface	Super Class/Interface Visibility	Super Library	Count
+org.bouncycastle.util.Properties$1	org.bouncycastle:bcprov-jdk15on:1.69	java.security.PrivilegedAction	public	java.security	1
+org.bouncycastle.util.Properties$2	org.bouncycastle:bcprov-jdk15on:1.69	java.security.PrivilegedAction	public	java.security	1
+org.cryptomator.cryptolib.common.ReseedingSecureRandom	org.cryptomator:cryptolib:2.1.0-SNAPSHOT	java.security.SecureRandom	public	java.security	1
+org.cryptomator.cryptolib.common.MasterkeyFile$ByteArrayJsonAdapter	org.cryptomator:cryptolib:2.1.0-SNAPSHOT	com.google.gson.TypeAdapter	public	com.google.code.gson:gson:2.8.7	1
+org.bouncycastle.cert.X509CertificateHolder	org.bouncycastle:bcpkix-jdk15on:1.69	org.bouncycastle.util.Encodable	public	org.bouncycastle:bcprov-jdk15on:1.69	1
+org.bouncycastle.jcajce.CompositePrivateKey	org.bouncycastle:bcprov-jdk15on:1.69	java.security.PrivateKey	public	java.security	1
+org.bouncycastle.util.Strings$1	org.bouncycastle:bcprov-jdk15on:1.69	java.security.PrivilegedAction	public	java.security	1
+org.cryptomator.cryptolib.common.ReseedingSecureRandom$ReseedingSecureRandomSpi	org.cryptomator:cryptolib:2.1.0-SNAPSHOT	java.security.SecureRandomSpi	public	java.security	1
+org.cryptomator.cryptolib.common.ReseedingSecureRandom$ReseedingSecureRandomProvider	org.cryptomator:cryptolib:2.1.0-SNAPSHOT	java.security.Provider	public	java.security	1

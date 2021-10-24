@@ -1,0 +1,4 @@
+Caller Method	Caller Library	setAccessible Called On	Visibility	Callee Name	Field Signature	Callee Library
+com.google.protobuf.UnsafeUtil$1::run()Lsun/misc/Unsafe;	com.google.protobuf:protobuf-java:3.5.1	java.lang.reflect.Field	private	sun.misc.Unsafe::theUnsafe	sun.misc.Unsafe	unknownLib
+com.google.protobuf.UnsafeUtil::field(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/reflect/Field;	com.google.protobuf:protobuf-java:3.5.1	java.lang.reflect.Field	default	java.nio.Buffer::address	long	unknownLib
+com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper$1::run()Lsun/misc/Unsafe;	com.google.guava:guava:31.0.1-jre	java.lang.reflect.Field	private	sun.misc.Unsafe::theUnsafe	sun.misc.Unsafe	unknownLib

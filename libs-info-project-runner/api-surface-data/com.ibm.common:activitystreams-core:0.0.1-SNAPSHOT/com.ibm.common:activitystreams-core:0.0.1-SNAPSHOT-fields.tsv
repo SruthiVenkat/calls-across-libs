@@ -1,0 +1,4 @@
+Caller Library	Field Name	Declared Class	Actual Class	Field Signature	Static	Visibility	Field Library	Reflective	Count
+com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT	org.joda.time.DateTimeZone::UTC	org.joda.time.DateTimeZone	org.joda.time.DateTimeZone	org.joda.time.DateTimeZone	true	public	joda-time:joda-time:2.3	false	4
+com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT	com.google.gson.internal.bind.TypeAdapters::NUMBER	com.google.gson.internal.bind.TypeAdapters	com.google.gson.internal.bind.TypeAdapters	com.google.gson.TypeAdapter<java.lang.Number>	true	public	com.google.code.gson:gson:2.2.4	false	2
+com.ibm.common:activitystreams-core:0.0.1-SNAPSHOT	com.google.common.collect.BoundType::CLOSED	com.google.common.collect.BoundType	com.google.common.collect.BoundType	com.google.common.collect.BoundType	true	public	com.google.guava:guava:16.0.1	false	1

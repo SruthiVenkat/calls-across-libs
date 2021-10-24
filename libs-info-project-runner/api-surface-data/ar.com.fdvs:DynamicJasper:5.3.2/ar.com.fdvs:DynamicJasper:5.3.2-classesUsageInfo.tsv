@@ -1,0 +1,1251 @@
+Class Name	Class Visibility	Class Library	Usage	Used In Library
+org.jfree.data.time.TimeSeriesCollection	public	org.jfree:jfreechart:1.0.19	cast	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.css.engine.value.ValueManager	public	org.apache.xmlgraphics:batik-css:1.8	cast	org.apache.xmlgraphics:batik-dom:1.8
+org.w3c.dom.svg.SVGPathSegLinetoAbs	public	xml-apis:xml-apis-ext:1.3.04	cast	org.apache.xmlgraphics:batik-svg-dom:1.8
+org.apache.batik.dom.svg.AbstractSVGTransformList	public	org.apache.xmlgraphics:batik-svg-dom:1.8	subtyping	org.apache.xmlgraphics:batik-anim:1.8
+org.apache.batik.gvt.text.TextPaintInfo	public	org.apache.xmlgraphics:batik-gvt:1.8	cast	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.dom.AbstractStylableDocument	public	org.apache.xmlgraphics:batik-dom:1.8	cast	org.apache.xmlgraphics:batik-anim:1.8
+org.jfree.chart.JFreeChart	public	org.jfree:jfreechart:1.0.19	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+org.w3c.dom.Element	public	xml-apis:xml-apis:1.3.04	cast	org.apache.xmlgraphics:batik-dom:1.8
+org.apache.batik.i18n.LocalizableSupport	public	org.apache.xmlgraphics:batik-util:1.8	instantiation	org.apache.xmlgraphics:batik-css:1.8
+org.w3c.dom.svg.SVGPathSegCurvetoCubicSmoothRel	public	xml-apis:xml-apis-ext:1.3.04	cast	org.apache.xmlgraphics:batik-svg-dom:1.8
+org.apache.batik.parser.PreserveAspectRatioParser	public	org.apache.xmlgraphics:batik-parser:1.8	instantiation	org.apache.xmlgraphics:batik-svg-dom:1.8
+org.apache.batik.css.parser.Parser	public	org.apache.xmlgraphics:batik-css:1.8	Class.forName	org.apache.xmlgraphics:batik-dom:1.8
+com.lowagie.text.pdf.RadioCheckField	public	com.lowagie:itext:2.1.7.js8	cast	net.sf.jasperreports:jasperreports:6.17.0
+java.io.File	public	unknownLib	Class.forName	commons-beanutils:commons-beanutils:1.7.0
+net.sf.jasperreports.engine.design.JRDesignSubreport	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+java.sql.Connection	public	java.sql	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+org.w3c.dom.svg.SVGDocument	public	xml-apis:xml-apis-ext:1.3.04	cast	org.apache.xmlgraphics:batik-anim:1.8
+org.apache.batik.anim.dom.SVGOMElement	public	org.apache.xmlgraphics:batik-anim:1.8	cast	org.apache.xmlgraphics:batik-bridge:1.8
+net.sf.jasperreports.charts.design.JRDesignXySeries	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+net.sf.jasperreports.engine.design.JRDesignVariable	public	net.sf.jasperreports:jasperreports:6.17.0	method call	commons-beanutils:commons-beanutils:1.7.0
+net.sf.jasperreports.engine.base.JRBaseElement	public	net.sf.jasperreports:jasperreports:6.17.0	method call	commons-beanutils:commons-beanutils:1.7.0
+org.apache.batik.dom.ExtensibleDOMImplementation	public	org.apache.xmlgraphics:batik-dom:1.8	subtyping	org.apache.xmlgraphics:batik-anim:1.8
+net.sf.jasperreports.engine.xml.JRXmlLoader	public	net.sf.jasperreports:jasperreports:6.17.0	method call	commons-beanutils:commons-beanutils:1.7.0
+net.sf.jasperreports.engine.export.HtmlExporter	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	ar.com.fdvs:DynamicJasper:5.3.2
+net.sf.jasperreports.engine.base.JRBaseBoxTopPen	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+org.apache.batik.util.CSSConstants	public	org.apache.xmlgraphics:batik-util:1.8	subtyping	org.apache.xmlgraphics:batik-bridge:1.8
+org.w3c.css.sac.SACMediaList	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-css:1.8
+net.sf.jasperreports.engine.xml.JRVariableExpressionFactory	public	net.sf.jasperreports:jasperreports:6.17.0	method call	commons-digester:commons-digester:2.1
+net.sf.jasperreports.engine.xml.JRVariableExpressionFactory	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	commons-digester:commons-digester:2.1
+org.jfree.date.MonthConstants	public	org.jfree:jcommon:1.0.23	subtyping	org.jfree:jfreechart:1.0.19
+org.jfree.data.general.DefaultPieDataset	public	org.jfree:jfreechart:1.0.19	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.dom.svg.AbstractSVGPathSegList$SVGPathSegCurvetoCubicSmoothItem	public	org.apache.xmlgraphics:batik-svg-dom:1.8	cast	org.apache.xmlgraphics:batik-anim:1.8
+org.apache.batik.anim.dom.AbstractSVGAnimatedLength	public	org.apache.xmlgraphics:batik-anim:1.8	cast	org.apache.xmlgraphics:batik-bridge:1.8
+java.sql.Time	public	java.sql	Class.forName	commons-beanutils:commons-beanutils:1.7.0
+org.w3c.dom.css.ViewCSS	public	xml-apis:xml-apis:1.3.04	subtyping	xml-apis:xml-apis-ext:1.3.04
+org.apache.batik.css.engine.CSSEngineUserAgent	public	org.apache.xmlgraphics:batik-css:1.8	subtyping	org.apache.xmlgraphics:batik-bridge:1.8
+net.sf.jasperreports.charts.design.JRDesignBar3DPlot	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+net.sf.jasperreports.engine.JRDataset	public	net.sf.jasperreports:jasperreports:6.17.0	cast	ar.com.fdvs:DynamicJasper:5.3.2
+org.apache.batik.gvt.CompositeShapePainter	public	org.apache.xmlgraphics:batik-gvt:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.anim.dom.AbstractElement$ExtendedNamedNodeHashMap	protected	org.apache.xmlgraphics:batik-anim:1.8	method call	org.apache.xmlgraphics:batik-dom:1.8
+net.sf.jasperreports.crosstabs.design.JRDesignCrosstabBucket	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+org.apache.batik.dom.GenericEntityReference	public	org.apache.xmlgraphics:batik-dom:1.8	instantiation	org.apache.xmlgraphics:batik-anim:1.8
+org.apache.batik.anim.dom.SVGDOMImplementation	public	org.apache.xmlgraphics:batik-anim:1.8	method call	org.apache.xmlgraphics:batik-bridge:1.8
+net.sf.jasperreports.engine.type.HorizontalImageAlignEnum	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+org.jfree.chart.axis.CategoryAxis	public	org.jfree:jfreechart:1.0.19	method call	net.sf.jasperreports:jasperreports:6.17.0
+org.bouncycastle.asn1.cms.RecipientIdentifier	public	org.bouncycastle:bcprov-jdk15on:1.64	instantiation	com.lowagie:itext:2.1.7.js8
+net.sf.jasperreports.parts.PartComponentsExtensionsRegistryFactory	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+org.jfree.ui.about.Licences	default	org.jfree:jcommon:1.0.23	method call	org.jfree:jfreechart:1.0.19
+net.sf.jasperreports.util.CastorMappingExtensionsRegistryFactory	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.anim.dom.SVGOMAnimatedNumberList	public	org.apache.xmlgraphics:batik-anim:1.8	cast	org.apache.xmlgraphics:batik-bridge:1.8
+org.w3c.dom.Node	public	xml-apis:xml-apis:1.3.04	cast	org.apache.xmlgraphics:batik-dom:1.8
+org.apache.batik.anim.dom.SVGStylableElement	public	org.apache.xmlgraphics:batik-anim:1.8	cast	org.apache.xmlgraphics:batik-bridge:1.8
+net.sf.jasperreports.engine.design.JRJdtCompiler$CompilerRequestor	public	net.sf.jasperreports:jasperreports:6.17.0	method call	org.eclipse.jdt:ecj:3.21.0
+net.sf.jasperreports.engine.JRRuntimeException	public	net.sf.jasperreports:jasperreports:6.17.0	instantiation	ar.com.fdvs:DynamicJasper:5.3.2
+org.w3c.dom.svg.SVGAnimatedTransformList	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-anim:1.8
+org.apache.batik.anim.dom.SVGOMCircleElement	public	org.apache.xmlgraphics:batik-anim:1.8	cast	org.apache.xmlgraphics:batik-bridge:1.8
+net.sf.jasperreports.charts.design.JRDesignPiePlot	public	net.sf.jasperreports:jasperreports:6.17.0	cast	ar.com.fdvs:DynamicJasper:5.3.2
+net.sf.jasperreports.engine.design.JRDesignQuery	public	net.sf.jasperreports:jasperreports:6.17.0	cast	ar.com.fdvs:DynamicJasper:5.3.2
+org.apache.batik.anim.dom.SVGDOMImplementation	public	org.apache.xmlgraphics:batik-anim:1.8	method call	org.apache.xmlgraphics:batik-dom:1.8
+net.sf.jasperreports.engine.type.LineStyleEnum	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+net.sf.jasperreports.engine.xml.JRXmlLoader	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+org.apache.batik.anim.dom.SVGOMRadialGradientElement	public	org.apache.xmlgraphics:batik-anim:1.8	method call	org.apache.xmlgraphics:batik-dom:1.8
+net.sf.jasperreports.engine.design.JRDesignVariable	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+org.apache.batik.anim.dom.SVGOMAnimatedTransformList$AnimSVGTransformList	protected	org.apache.xmlgraphics:batik-anim:1.8	method call	org.apache.xmlgraphics:batik-svg-dom:1.8
+org.apache.batik.parser.PathParser	public	org.apache.xmlgraphics:batik-parser:1.8	method call	org.apache.xmlgraphics:batik-svg-dom:1.8
+org.bouncycastle.asn1.DERObjectIdentifier	public	org.bouncycastle:bcprov-jdk15on:1.64	instantiation	com.lowagie:itext:2.1.7.js8
+interface net.sf.jasperreports.export.ReportExportConfiguration	public	net.sf.jasperreports:jasperreports:6.17.0	method call	unknownLib
+org.apache.batik.anim.dom.SVGOMMetadataElement	public	org.apache.xmlgraphics:batik-anim:1.8	method call	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.xmlgraphics.java2d.color.CIELabColorSpace	public	org.apache.xmlgraphics:xmlgraphics-commons:1.5	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+net.sf.jasperreports.engine.design.JRDesignField	public	net.sf.jasperreports:jasperreports:6.17.0	cast	ar.com.fdvs:DynamicJasper:5.3.2
+org.w3c.dom.svg.SVGTransform	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-svg-dom:1.8
+net.sf.jasperreports.engine.type.VerticalImageAlignEnum	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+org.w3c.dom.svg.SVGPathSegLinetoVerticalRel	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-svg-dom:1.8
+org.apache.batik.anim.dom.SVGOMDocument	public	org.apache.xmlgraphics:batik-anim:1.8	method call	org.apache.xmlgraphics:batik-bridge:1.8
+net.sf.jasperreports.engine.JRGroup	public	net.sf.jasperreports:jasperreports:6.17.0	cast	ar.com.fdvs:DynamicJasper:5.3.2
+org.w3c.dom.svg.SVGElement	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-anim:1.8
+org.w3c.dom.svg.SVGTransform	public	xml-apis:xml-apis-ext:1.3.04	cast	org.apache.xmlgraphics:batik-svg-dom:1.8
+java.text.Format	public	unknownLib	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+org.w3c.dom.svg.SVGPathSegLinetoVerticalRel	public	xml-apis:xml-apis-ext:1.3.04	cast	org.apache.xmlgraphics:batik-svg-dom:1.8
+org.jfree.text.G2TextMeasurer	public	org.jfree:jcommon:1.0.23	instantiation	org.jfree:jfreechart:1.0.19
+org.jfree.data.category.DefaultCategoryDataset	public	org.jfree:jfreechart:1.0.19	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.dom.svg.ExtendedTraitAccess	public	org.apache.xmlgraphics:batik-svg-dom:1.8	subtyping	org.apache.xmlgraphics:batik-anim:1.8
+org.apache.batik.util.io.StringNormalizingReader	public	org.apache.xmlgraphics:batik-util:1.8	method call	org.apache.xmlgraphics:batik-css:1.8
+org.apache.batik.gvt.Selectable	public	org.apache.xmlgraphics:batik-gvt:1.8	subtyping	org.apache.xmlgraphics:batik-bridge:1.8
+net.sf.jasperreports.engine.fill.JRFillParameter	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.engine.query.SQLQueryClauseFunctionsExtensions	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.dom.svg.SVGItem	public	org.apache.xmlgraphics:batik-svg-dom:1.8	cast	org.apache.xmlgraphics:batik-anim:1.8
+org.jfree.chart.renderer.category.BarRenderer	public	org.jfree:jfreechart:1.0.19	cast	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.engine.design.JRDesignTextField	public	net.sf.jasperreports:jasperreports:6.17.0	method call	commons-beanutils:commons-beanutils:1.7.0
+com.lowagie.text.pdf.PdfTemplate	public	com.lowagie:itext:2.1.7.js8	method call	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.script.Interpreter	public	org.apache.xmlgraphics:batik-script:1.8	cast	org.apache.xmlgraphics:batik-bridge:1.8
+net.sf.jasperreports.engine.JRField	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	commons-digester:commons-digester:2.1
+org.w3c.dom.xpath.XPathEvaluator	public	xml-apis:xml-apis:1.3.04	subtyping	org.apache.xmlgraphics:batik-dom:1.8
+org.w3c.dom.svg.SVGPathSegClosePath	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-svg-dom:1.8
+net.sf.jasperreports.engine.design.JRDesignTextField	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+com.lowagie.text.Phrase	public	com.lowagie:itext:2.1.7.js8	method call	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.engine.xml.JRInitialValueExpressionFactory	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	commons-digester:commons-digester:2.1
+org.apache.batik.gvt.CanvasGraphicsNode	public	org.apache.xmlgraphics:batik-gvt:1.8	method call	org.apache.xmlgraphics:batik-bridge:1.8
+org.w3c.dom.svg.SVGPathSegLinetoVerticalAbs	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-svg-dom:1.8
+org.jfree.chart.renderer.xy.XYBarRenderer	public	org.jfree:jfreechart:1.0.19	method call	net.sf.jasperreports:jasperreports:6.17.0
+java.lang.Number	public	unknownLib	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.script.InterpreterFactory	public	org.apache.xmlgraphics:batik-script:1.8	subtyping	org.apache.xmlgraphics:batik-bridge:1.8
+net.sf.jasperreports.engine.xml.JRTextFieldFactory	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	commons-digester:commons-digester:2.1
+net.sf.jasperreports.engine.xml.JRGraphicElementFactory	public	net.sf.jasperreports:jasperreports:6.17.0	method call	commons-digester:commons-digester:2.1
+org.xml.sax.helpers.DefaultHandler	public	xml-apis:xml-apis:1.3.04	subtyping	commons-digester:commons-digester:2.1
+org.apache.batik.gvt.filter.MaskRable8Bit	public	org.apache.xmlgraphics:batik-gvt:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.dom.svg.SVGOMTransform	public	org.apache.xmlgraphics:batik-svg-dom:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+net.sf.jasperreports.engine.xml.JRTextFieldFactory	public	net.sf.jasperreports:jasperreports:6.17.0	method call	commons-digester:commons-digester:2.1
+net.sf.jasperreports.engine.type.ModeEnum	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+java.lang.String	public	unknownLib	Class.forName	ar.com.fdvs:DynamicJasper:5.3.2
+org.w3c.css.sac.ConditionFactory	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-css:1.8
+net.sf.jasperreports.engine.xml.JRGraphicElementFactory	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	commons-digester:commons-digester:2.1
+org.apache.commons.beanutils.PropertyUtils	public	commons-beanutils:commons-beanutils:1.7.0	method call	net.sf.jasperreports:jasperreports:6.17.0
+org.jfree.util.StrokeList	public	org.jfree:jcommon:1.0.23	cast	org.jfree:jfreechart:1.0.19
+org.apache.batik.dom.svg.SVGOMRect	public	org.apache.xmlgraphics:batik-svg-dom:1.8	instantiation	org.apache.xmlgraphics:batik-anim:1.8
+java.lang.Boolean	public	unknownLib	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+java.security.AccessControlContext	public	java.security	instantiation	xml-apis:xml-apis:1.3.04
+org.apache.batik.anim.ColorAnimation	public	org.apache.xmlgraphics:batik-anim:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+com.lowagie.text.pdf.PdfDestination	public	com.lowagie:itext:2.1.7.js8	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.charts.design.JRDesignCategorySeries	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+ar.com.fdvs.dj.domain.DJValueFormatter	public	ar.com.fdvs:DynamicJasper:5.3.2	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.dom.svg.SVGMotionAnimatableElement	public	org.apache.xmlgraphics:batik-svg-dom:1.8	cast	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.dom.svg.AbstractSVGPathSegList$SVGPathSegLinetoHorizontalItem	public	org.apache.xmlgraphics:batik-svg-dom:1.8	instantiation	org.apache.xmlgraphics:batik-anim:1.8
+org.apache.commons.logging.impl.Log4JLogger	public	commons-logging:commons-logging:1.0.3	method call	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.charts.design.JRDesignBarPlot	public	net.sf.jasperreports:jasperreports:6.17.0	cast	ar.com.fdvs:DynamicJasper:5.3.2
+net.sf.jasperreports.engine.design.JRDesignDataset	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+org.w3c.dom.Element	public	xml-apis:xml-apis:1.3.04	cast	org.apache.xmlgraphics:batik-anim:1.8
+org.w3c.dom.svg.SVGPathSegLinetoVerticalAbs	public	xml-apis:xml-apis-ext:1.3.04	cast	org.apache.xmlgraphics:batik-svg-dom:1.8
+org.w3c.dom.ElementTraversal	public	org.apache.xmlgraphics:batik-ext:1.8	subtyping	org.apache.xmlgraphics:batik-dom:1.8
+org.apache.batik.ext.awt.image.DistantLight	public	org.apache.xmlgraphics:batik-awt-util:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.parser.PathParser	public	org.apache.xmlgraphics:batik-parser:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.gvt.ImageNode	public	org.apache.xmlgraphics:batik-gvt:1.8	cast	org.apache.xmlgraphics:batik-bridge:1.8
+net.sf.jasperreports.charts.design.JRDesignTimeSeriesPlot	public	net.sf.jasperreports:jasperreports:6.17.0	cast	ar.com.fdvs:DynamicJasper:5.3.2
+com.lowagie.text.pdf.PdfBoolean	public	com.lowagie:itext:2.1.7.js8	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.bridge.GVTBuilder	public	org.apache.xmlgraphics:batik-bridge:1.8	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.gvt.ShapeNode	public	org.apache.xmlgraphics:batik-gvt:1.8	cast	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.util.io.StringNormalizingReader	public	org.apache.xmlgraphics:batik-util:1.8	instantiation	org.apache.xmlgraphics:batik-parser:1.8
+org.xml.sax.InputSource	public	xml-apis:xml-apis:1.3.04	instantiation	commons-digester:commons-digester:2.1
+org.w3c.dom.svg.SVGTextContentElement	public	xml-apis:xml-apis-ext:1.3.04	cast	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.anim.dom.SVGOMRectElement	public	org.apache.xmlgraphics:batik-anim:1.8	method call	org.apache.xmlgraphics:batik-dom:1.8
+org.eclipse.jdt.internal.compiler.env.INameEnvironment	public	org.eclipse.jdt:ecj:3.21.0	subtyping	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.web.util.ContentTypeMappingExtensionsRegistryFactory	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+java.security.CodeSource	public	java.security	instantiation	xml-apis:xml-apis:1.3.04
+org.apache.batik.dom.GenericText	public	org.apache.xmlgraphics:batik-dom:1.8	method call	org.apache.xmlgraphics:batik-css:1.8
+org.xml.sax.ContentHandler	public	xml-apis:xml-apis:1.3.04	subtyping	javax.xml.bind
+org.jfree.data.general.PieDataset	public	org.jfree:jfreechart:1.0.19	cast	net.sf.jasperreports:jasperreports:6.17.0
+org.jfree.util.ObjectList	public	org.jfree:jcommon:1.0.23	instantiation	org.jfree:jfreechart:1.0.19
+org.jfree.chart.axis.NumberAxis	public	org.jfree:jfreechart:1.0.19	cast	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.ext.awt.image.spi.DefaultBrokenLinkProvider	public	org.apache.xmlgraphics:batik-awt-util:1.8	subtyping	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.dom.svg.AbstractSVGTransformList$SVGTransformItem	public	org.apache.xmlgraphics:batik-svg-dom:1.8	cast	org.apache.xmlgraphics:batik-anim:1.8
+org.apache.batik.dom.svg.AbstractSVGPathSegList$SVGPathSegCurvetoCubicItem	public	org.apache.xmlgraphics:batik-svg-dom:1.8	cast	org.apache.xmlgraphics:batik-anim:1.8
+org.eclipse.jdt.internal.compiler.Compiler	public	org.eclipse.jdt:ecj:3.21.0	method call	net.sf.jasperreports:jasperreports:6.17.0
+org.w3c.dom.events.DocumentEvent	public	xml-apis:xml-apis:1.3.04	subtyping	xml-apis:xml-apis-ext:1.3.04
+java.util.Date	public	unknownLib	Class.forName	ar.com.fdvs:DynamicJasper:5.3.2
+org.w3c.dom.Element	public	xml-apis:xml-apis:1.3.04	subtyping	org.apache.xmlgraphics:batik-css:1.8
+org.w3c.dom.Node	public	xml-apis:xml-apis:1.3.04	cast	org.apache.xmlgraphics:batik-anim:1.8
+org.apache.batik.dom.AbstractDocumentFragment	public	org.apache.xmlgraphics:batik-dom:1.8	subtyping	org.apache.xmlgraphics:batik-svg-dom:1.8
+org.apache.batik.dom.svg.SVGOMPoint	public	org.apache.xmlgraphics:batik-svg-dom:1.8	instantiation	org.apache.xmlgraphics:batik-anim:1.8
+org.w3c.dom.svg.SVGPathSegCurvetoCubicSmoothAbs	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-svg-dom:1.8
+net.sf.jasperreports.charts.design.JRDesignLinePlot	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+net.sf.jasperreports.engine.export.MatcherExportFilterMappingExtensionsRegistryFactory	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.css.engine.value.svg12.ICCNamedColor	public	org.apache.xmlgraphics:batik-css:1.8	cast	org.apache.xmlgraphics:batik-bridge:1.8
+org.jfree.data.category.CategoryDataset	public	org.jfree:jfreechart:1.0.19	cast	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.parser.FragmentIdentifierHandler	public	org.apache.xmlgraphics:batik-parser:1.8	subtyping	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.gvt.CompositeGraphicsNode	public	org.apache.xmlgraphics:batik-gvt:1.8	method call	org.apache.xmlgraphics:batik-bridge:1.8
+org.jfree.util.BooleanList	public	org.jfree:jcommon:1.0.23	method call	org.jfree:jfreechart:1.0.19
+com.lowagie.text.pdf.PdfGState	public	com.lowagie:itext:2.1.7.js8	method call	net.sf.jasperreports:jasperreports:6.17.0
+java.security.CodeSigner[]	public	java.security	cast	xml-apis:xml-apis:1.3.04
+org.apache.commons.digester.Digester	public	commons-digester:commons-digester:2.1	subtyping	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.engine.JRStyle	public	net.sf.jasperreports:jasperreports:6.17.0	cast	ar.com.fdvs:DynamicJasper:5.3.2
+java.io.InputStream	public	unknownLib	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.engine.type.ScaleImageEnum	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+org.apache.batik.anim.dom.SVGOMDocument	public	org.apache.xmlgraphics:batik-anim:1.8	method call	net.sf.jasperreports:jasperreports:6.17.0
+org.w3c.dom.events.EventTarget	public	xml-apis:xml-apis:1.3.04	subtyping	xml-apis:xml-apis-ext:1.3.04
+org.w3c.dom.svg.SVGPathSegLinetoAbs	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-svg-dom:1.8
+net.sf.jasperreports.crosstabs.design.JRDesignCrosstabRowGroup	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+org.jfree.util.BooleanList	public	org.jfree:jcommon:1.0.23	cast	org.jfree:jfreechart:1.0.19
+net.sf.jasperreports.engine.design.JRDesignStyle	public	net.sf.jasperreports:jasperreports:6.17.0	instantiation	ar.com.fdvs:DynamicJasper:5.3.2
+java.sql.Timestamp	public	java.sql	Class.forName	commons-beanutils:commons-beanutils:1.7.0
+org.bouncycastle.asn1.cms.EncryptedContentInfo	public	org.bouncycastle:bcprov-jdk15on:1.64	instantiation	com.lowagie:itext:2.1.7.js8
+org.eclipse.jdt.internal.compiler.ClassFile	public	org.eclipse.jdt:ecj:3.21.0	method call	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.anim.dom.SVGOMLinearGradientElement	public	org.apache.xmlgraphics:batik-anim:1.8	method call	org.apache.xmlgraphics:batik-css:1.8
+com.lowagie.text.pdf.PdfStructureElement	public	com.lowagie:itext:2.1.7.js8	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+org.jfree.ui.StandardGradientPaintTransformer	public	org.jfree:jcommon:1.0.23	instantiation	org.jfree:jfreechart:1.0.19
+org.apache.batik.util.DoublyIndexedTable	public	org.apache.xmlgraphics:batik-util:1.8	instantiation	org.apache.xmlgraphics:batik-anim:1.8
+org.apache.batik.anim.values.AnimatablePaintValue	public	org.apache.xmlgraphics:batik-anim:1.8	cast	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.util.SMILConstants	public	org.apache.xmlgraphics:batik-util:1.8	subtyping	org.apache.xmlgraphics:batik-anim:1.8
+org.apache.batik.anim.dom.AnimationTarget	public	org.apache.xmlgraphics:batik-anim:1.8	cast	org.apache.xmlgraphics:batik-bridge:1.8
+java.security.MessageDigest	public	java.security	method call	com.lowagie:itext:2.1.7.js8
+org.w3c.dom.svg.SVGAnimatedPoints	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-anim:1.8
+org.w3c.dom.smil.ElementTimeControl	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-svg-dom:1.8
+java.util.TimeZone	public	unknownLib	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.gvt.RootGraphicsNode	public	org.apache.xmlgraphics:batik-gvt:1.8	method call	net.sf.jasperreports:jasperreports:6.17.0
+org.eclipse.jdt.internal.compiler.Compiler	public	org.eclipse.jdt:ecj:3.21.0	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.dom.svg.AbstractSVGTransform	public	org.apache.xmlgraphics:batik-svg-dom:1.8	cast	org.apache.xmlgraphics:batik-anim:1.8
+org.w3c.dom.xpath.XPathException	public	xml-apis:xml-apis:1.3.04	instantiation	org.apache.xmlgraphics:batik-dom:1.8
+org.apache.batik.util.io.StreamNormalizingReader	public	org.apache.xmlgraphics:batik-util:1.8	instantiation	org.apache.xmlgraphics:batik-parser:1.8
+net.sf.jasperreports.crosstabs.design.JRDesignCellContents	public	net.sf.jasperreports:jasperreports:6.17.0	instantiation	ar.com.fdvs:DynamicJasper:5.3.2
+org.apache.batik.anim.dom.SVGOMDocument	public	org.apache.xmlgraphics:batik-anim:1.8	method call	org.apache.xmlgraphics:batik-css:1.8
+org.w3c.dom.Element	public	xml-apis:xml-apis:1.3.04	cast	org.apache.xmlgraphics:batik-bridge:1.8
+org.jfree.util.ShapeUtilities	public	org.jfree:jcommon:1.0.23	method call	org.jfree:jfreechart:1.0.19
+org.apache.batik.css.engine.CSSNavigableDocumentListener	public	org.apache.xmlgraphics:batik-css:1.8	cast	org.apache.xmlgraphics:batik-anim:1.8
+org.w3c.dom.Document	public	xml-apis:xml-apis:1.3.04	cast	net.sf.jasperreports:jasperreports:6.17.0
+org.eclipse.jdt.internal.compiler.DefaultErrorHandlingPolicies	public	org.eclipse.jdt:ecj:3.21.0	method call	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.engine.xml.JRParameterFactory	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	commons-digester:commons-digester:2.1
+net.sf.jasperreports.engine.fill.JREvaluator	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.engine.fill.TextMeasurerFactory	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+ar.com.fdvs.dj.domain.DynamicJasperDesign	public	ar.com.fdvs:DynamicJasper:5.3.2	method call	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.util.SVGConstants	public	org.apache.xmlgraphics:batik-util:1.8	subtyping	org.apache.xmlgraphics:batik-gvt:1.8
+org.jfree.chart.plot.dial.StandardDialFrame	public	org.jfree:jfreechart:1.0.19	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.charts.design.JRDesignPieSeries	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+org.apache.batik.ext.awt.image.renderable.FilterColorInterpolation	public	org.apache.xmlgraphics:batik-awt-util:1.8	cast	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.parser.LengthParser	public	org.apache.xmlgraphics:batik-parser:1.8	method call	org.apache.xmlgraphics:batik-anim:1.8
+org.apache.batik.dom.AbstractDocument	public	org.apache.xmlgraphics:batik-dom:1.8	cast	org.apache.xmlgraphics:batik-anim:1.8
+org.w3c.dom.svg.SVGDocument	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-anim:1.8
+org.apache.batik.util.Service	public	org.apache.xmlgraphics:batik-util:1.8	method call	org.apache.xmlgraphics:batik-dom:1.8
+org.apache.batik.css.engine.CSSEngineListener	public	org.apache.xmlgraphics:batik-css:1.8	subtyping	org.apache.xmlgraphics:batik-bridge:1.8
+org.w3c.dom.svg.SVGPathSegCurvetoQuadraticSmoothRel	public	xml-apis:xml-apis-ext:1.3.04	cast	org.apache.xmlgraphics:batik-svg-dom:1.8
+org.apache.batik.bridge.ViewBox	public	org.apache.xmlgraphics:batik-bridge:1.8	method call	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.commons.logging.Log	public	commons-logging:commons-logging:1.0.3	Class.forName	commons-logging:commons-logging:1.0.3
+java.lang.Long	public	unknownLib	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.data.DataAdapterParameterContributorExtensionsRegistryFactory	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+org.w3c.dom.svg.SVGPathSegCurvetoQuadraticSmoothAbs	public	xml-apis:xml-apis-ext:1.3.04	cast	org.apache.xmlgraphics:batik-svg-dom:1.8
+org.apache.batik.dom.svg.AbstractSVGPathSegList$SVGPathSegLinetoVerticalItem	public	org.apache.xmlgraphics:batik-svg-dom:1.8	instantiation	org.apache.xmlgraphics:batik-anim:1.8
+org.bouncycastle.asn1.cms.EnvelopedData	public	org.bouncycastle:bcprov-jdk15on:1.64	instantiation	com.lowagie:itext:2.1.7.js8
+org.apache.batik.css.engine.CSSNavigableNode	public	org.apache.xmlgraphics:batik-css:1.8	subtyping	org.apache.xmlgraphics:batik-svg-dom:1.8
+org.jfree.util.ShapeList	public	org.jfree:jcommon:1.0.23	instantiation	org.jfree:jfreechart:1.0.19
+org.jfree.chart.JFreeChartInfo	default	org.jfree:jfreechart:1.0.19	method call	org.jfree:jcommon:1.0.23
+org.w3c.dom.svg.SVGPathSeg	public	xml-apis:xml-apis-ext:1.3.04	cast	org.apache.xmlgraphics:batik-anim:1.8
+org.bouncycastle.asn1.x509.AlgorithmIdentifier	public	org.bouncycastle:bcprov-jdk15on:1.64	instantiation	com.lowagie:itext:2.1.7.js8
+org.apache.commons.beanutils.locale.LocaleConvertUtilsBean	public	commons-beanutils:commons-beanutils:1.7.0	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.xml.dtm.ObjectFactory	default	org.apache.xml.dtm	Class.forName	org.apache.xml.dtm
+net.sf.jasperreports.crosstabs.design.JRDesignCrosstabColumnGroup	public	net.sf.jasperreports:jasperreports:6.17.0	instantiation	ar.com.fdvs:DynamicJasper:5.3.2
+org.apache.batik.ext.awt.image.renderable.CompositeRable8Bit	public	org.apache.xmlgraphics:batik-awt-util:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+org.w3c.dom.svg.SVGAnimatedRect	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-anim:1.8
+org.apache.batik.util.CleanerThread$WeakReferenceCleared	public	org.apache.xmlgraphics:batik-util:1.8	subtyping	org.apache.xmlgraphics:batik-dom:1.8
+org.w3c.dom.svg.SVGPathSegArcAbs	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-svg-dom:1.8
+org.jfree.chart.plot.MeterPlot	public	org.jfree:jfreechart:1.0.19	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.engine.JRExpression	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	commons-digester:commons-digester:2.1
+net.sf.jasperreports.engine.design.JRDesignGroup	public	net.sf.jasperreports:jasperreports:6.17.0	instantiation	ar.com.fdvs:DynamicJasper:5.3.2
+org.apache.batik.parser.AngleParser	public	org.apache.xmlgraphics:batik-parser:1.8	instantiation	org.apache.xmlgraphics:batik-svg-dom:1.8
+org.w3c.dom.Node	public	xml-apis:xml-apis:1.3.04	cast	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.gvt.RootGraphicsNode	public	org.apache.xmlgraphics:batik-gvt:1.8	cast	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.i18n.Localizable	public	org.apache.xmlgraphics:batik-util:1.8	subtyping	org.apache.xmlgraphics:batik-dom:1.8
+org.apache.batik.dom.svg.SVGOMException	public	org.apache.xmlgraphics:batik-svg-dom:1.8	instantiation	org.apache.xmlgraphics:batik-anim:1.8
+net.sf.jasperreports.engine.xml.JRStringExpressionFactory	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	commons-digester:commons-digester:2.1
+java.util.RandomAccess	public	unknownLib	Class.forName	org.jfree:jcommon:1.0.23
+net.sf.jasperreports.engine.xml.JRInitialValueExpressionFactory	public	net.sf.jasperreports:jasperreports:6.17.0	method call	commons-digester:commons-digester:2.1
+org.w3c.dom.svg.SVGTransformList	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-svg-dom:1.8
+net.sf.jasperreports.engine.xml.JRStringExpressionFactory	public	net.sf.jasperreports:jasperreports:6.17.0	method call	commons-digester:commons-digester:2.1
+org.jfree.data.Range	public	org.jfree:jfreechart:1.0.19	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.dom.svg.AbstractSVGPathSegList$SVGPathSegCurvetoQuadraticItem	public	org.apache.xmlgraphics:batik-svg-dom:1.8	instantiation	org.apache.xmlgraphics:batik-anim:1.8
+net.sf.jasperreports.engine.xml.JRXmlWriter	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+net.sf.jasperreports.engine.JRAbstractRenderer	public	net.sf.jasperreports:jasperreports:6.17.0	subtyping	ar.com.fdvs:DynamicJasper:5.3.2
+org.jfree.ui.about.Contributor	public	org.jfree:jcommon:1.0.23	instantiation	org.jfree:jfreechart:1.0.19
+org.apache.batik.anim.dom.SVGOMPolygonElement	public	org.apache.xmlgraphics:batik-anim:1.8	cast	org.apache.xmlgraphics:batik-bridge:1.8
+net.sf.jasperreports.engine.fill.JRFillVariable	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+org.jfree.chart.labels.StandardPieSectionLabelGenerator	public	org.jfree:jfreechart:1.0.19	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.parser.PathArrayProducer	public	org.apache.xmlgraphics:batik-parser:1.8	instantiation	org.apache.xmlgraphics:batik-anim:1.8
+net.sf.jasperreports.engine.util.JRClassLoader	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+net.sf.jasperreports.engine.design.JRDesignParameter	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+interface net.sf.jasperreports.export.XlsExporterConfiguration	public	net.sf.jasperreports:jasperreports:6.17.0	method call	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.engine.type.WhenNoDataTypeEnum	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+net.sf.jasperreports.charts.type.EdgeEnum	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+org.apache.batik.anim.dom.SVGOMAnimatedRect	public	org.apache.xmlgraphics:batik-anim:1.8	method call	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.css.engine.SVGCSSEngine	public	org.apache.xmlgraphics:batik-css:1.8	instantiation	org.apache.xmlgraphics:batik-anim:1.8
+com.lowagie.text.ImgRaw	public	com.lowagie:itext:2.1.7.js8	method call	net.sf.jasperreports:jasperreports:6.17.0
+org.jfree.chart.renderer.category.StackedBarRenderer3D	public	org.jfree:jfreechart:1.0.19	method call	net.sf.jasperreports:jasperreports:6.17.0
+net.sourceforge.barbecue.linear.code39.Code39Barcode	public	net.sourceforge.barbecue:barbecue:1.5-beta1	instantiation	ar.com.fdvs:DynamicJasper:5.3.2
+ar.com.fdvs.dj.core.BarcodeHelper	public	ar.com.fdvs:DynamicJasper:5.3.2	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+java.lang.Double	public	unknownLib	Class.forName	commons-beanutils:commons-beanutils:1.7.0
+org.apache.batik.anim.dom.AbstractElement$ExtendedNamedNodeHashMap	protected	org.apache.xmlgraphics:batik-anim:1.8	method call	org.apache.xmlgraphics:batik-css:1.8
+org.w3c.dom.svg.SVGPathSegLinetoRel	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-svg-dom:1.8
+org.xml.sax.SAXParseException	public	xml-apis:xml-apis:1.3.04	instantiation	commons-digester:commons-digester:2.1
+net.sf.jasperreports.engine.design.JRJdtCompiler	public	net.sf.jasperreports:jasperreports:6.17.0	subtyping	ar.com.fdvs:DynamicJasper:5.3.2
+java.security.AccessController	default	java.security	method call	xml-apis:xml-apis:1.3.04
+org.jfree.ui.RectangleEdge	public	org.jfree:jcommon:1.0.23	method call	org.jfree:jfreechart:1.0.19
+com.lowagie.text.pdf.PdfString	public	com.lowagie:itext:2.1.7.js8	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.dom.util.DOMUtilities	public	org.apache.xmlgraphics:batik-dom:1.8	method call	org.apache.xmlgraphics:batik-anim:1.8
+net.sf.jasperreports.engine.export.HtmlExporter	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+net.sf.jasperreports.engine.design.JRDesignBand	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+org.w3c.css.sac.InputSource	public	xml-apis:xml-apis-ext:1.3.04	instantiation	org.apache.xmlgraphics:batik-css:1.8
+org.jfree.text.TextUtilities	public	org.jfree:jcommon:1.0.23	method call	org.jfree:jfreechart:1.0.19
+org.w3c.dom.traversal.DocumentTraversal	public	xml-apis:xml-apis:1.3.04	subtyping	org.apache.xmlgraphics:batik-dom:1.8
+java.lang.ClassLoader	public	unknownLib	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+org.jfree.chart.plot.dial.DialValueIndicator	public	org.jfree:jfreechart:1.0.19	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.parser.TransformListParser	public	org.apache.xmlgraphics:batik-parser:1.8	instantiation	org.apache.xmlgraphics:batik-svg-dom:1.8
+org.jfree.data.xy.IntervalXYDataset	public	org.jfree:jfreechart:1.0.19	cast	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.anim.dom.SVGOMMetadataElement	public	org.apache.xmlgraphics:batik-anim:1.8	method call	org.apache.xmlgraphics:batik-css:1.8
+org.apache.batik.util.SVGConstants	public	org.apache.xmlgraphics:batik-util:1.8	subtyping	org.apache.xmlgraphics:batik-svg-dom:1.8
+org.w3c.dom.svg.SVGPathSegCurvetoCubicSmoothRel	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-svg-dom:1.8
+org.apache.batik.gvt.font.UnicodeRange	public	org.apache.xmlgraphics:batik-gvt:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.parser.AWTPolylineProducer	public	org.apache.xmlgraphics:batik-parser:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+org.jfree.chart.plot.XYPlot	public	org.jfree:jfreechart:1.0.19	cast	net.sf.jasperreports:jasperreports:6.17.0
+com.lowagie.text.Font	public	com.lowagie:itext:2.1.7.js8	method call	net.sf.jasperreports:jasperreports:6.17.0
+ar.com.fdvs.dj.domain.entities.conditionalStyle.ConditionStyleExpression	public	ar.com.fdvs:DynamicJasper:5.3.2	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+java.security.MessageDigest$Delegate	default	java.security	method call	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.engine.base.JRBaseFont	public	net.sf.jasperreports:jasperreports:6.17.0	instantiation	ar.com.fdvs:DynamicJasper:5.3.2
+org.jfree.text.TextBox	public	org.jfree:jcommon:1.0.23	method call	org.jfree:jfreechart:1.0.19
+org.apache.batik.dom.events.NodeEventTarget	public	org.apache.xmlgraphics:batik-dom:1.8	cast	org.apache.xmlgraphics:batik-svg-dom:1.8
+org.w3c.dom.svg.SVGAnimatedAngle	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-anim:1.8
+net.sf.jasperreports.engine.xml.JRParameterFactory	public	net.sf.jasperreports:jasperreports:6.17.0	method call	commons-digester:commons-digester:2.1
+org.jfree.chart.plot.XYPlot	public	org.jfree:jfreechart:1.0.19	method call	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.dom.GenericAttr	public	org.apache.xmlgraphics:batik-dom:1.8	method call	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.anim.dom.SVGOMGElement	public	org.apache.xmlgraphics:batik-anim:1.8	method call	org.apache.xmlgraphics:batik-dom:1.8
+net.sf.jasperreports.engine.design.JRDesignChart	public	net.sf.jasperreports:jasperreports:6.17.0	instantiation	ar.com.fdvs:DynamicJasper:5.3.2
+java.util.Locale	public	unknownLib	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+java.util.Date	public	unknownLib	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+org.w3c.dom.svg.SVGPathSegCurvetoCubicRel	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-svg-dom:1.8
+org.apache.batik.parser.AWTPathProducer	public	org.apache.xmlgraphics:batik-parser:1.8	method call	org.apache.xmlgraphics:batik-bridge:1.8
+net.sf.jasperreports.engine.xml.JRPenFactory$Right	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	commons-digester:commons-digester:2.1
+org.jfree.ui.GradientPaintTransformer	public	org.jfree:jcommon:1.0.23	cast	org.jfree:jfreechart:1.0.19
+org.apache.batik.anim.values.AnimatableTransformListValue	public	org.apache.xmlgraphics:batik-anim:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+net.sf.jasperreports.engine.type.StretchTypeEnum	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+org.w3c.dom.Element	public	xml-apis:xml-apis:1.3.04	cast	org.apache.xmlgraphics:batik-css:1.8
+net.sf.jasperreports.engine.xml.JRFontFactory$TextElementFontFactory	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	commons-digester:commons-digester:2.1
+org.w3c.dom.DOMException	public	xml-apis:xml-apis:1.3.04	subtyping	org.apache.xml.dtm
+org.apache.commons.beanutils.PropertyUtils	public	commons-beanutils:commons-beanutils:1.7.0	instantiation	ar.com.fdvs:DynamicJasper:5.3.2
+org.apache.batik.anim.dom.SVGOMAnimatedEnumeration	public	org.apache.xmlgraphics:batik-anim:1.8	cast	org.apache.xmlgraphics:batik-bridge:1.8
+org.jfree.chart.axis.NumberAxis3D	public	org.jfree:jfreechart:1.0.19	method call	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.gvt.RootGraphicsNode	public	org.apache.xmlgraphics:batik-gvt:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+sun.reflect.ConstructorAccessorImpl	default	unknownLib	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.anim.SetAnimation	public	org.apache.xmlgraphics:batik-anim:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.dom.svg.SVGOMTransform	public	org.apache.xmlgraphics:batik-svg-dom:1.8	instantiation	org.apache.xmlgraphics:batik-anim:1.8
+org.jfree.chart.plot.PiePlot3D	public	org.jfree:jfreechart:1.0.19	method call	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.util.DoublyIndexedTable$Entry	public	org.apache.xmlgraphics:batik-util:1.8	cast	org.apache.xmlgraphics:batik-anim:1.8
+org.apache.batik.util.DoublyIndexedTable	public	org.apache.xmlgraphics:batik-util:1.8	instantiation	org.apache.xmlgraphics:batik-dom:1.8
+net.sf.jasperreports.engine.xml.JRElementFactory	public	net.sf.jasperreports:jasperreports:6.17.0	method call	commons-digester:commons-digester:2.1
+org.xml.sax.SAXException	public	xml-apis:xml-apis:1.3.04	instantiation	commons-digester:commons-digester:2.1
+org.jfree.chart.axis.DateAxis	public	org.jfree:jfreechart:1.0.19	cast	net.sf.jasperreports:jasperreports:6.17.0
+org.xml.sax.SAXException	public	xml-apis:xml-apis:1.3.04	subtyping	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.anim.dom.AbstractElement$ExtendedNamedNodeHashMap	protected	org.apache.xmlgraphics:batik-anim:1.8	method call	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.anim.dom.SVGOMMarkerElement	public	org.apache.xmlgraphics:batik-anim:1.8	method call	org.apache.xmlgraphics:batik-css:1.8
+org.apache.batik.parser.UnitProcessor	public	org.apache.xmlgraphics:batik-parser:1.8	subtyping	org.apache.xmlgraphics:batik-bridge:1.8
+net.sf.jasperreports.engine.xml.JRVariableFactory	public	net.sf.jasperreports:jasperreports:6.17.0	method call	commons-digester:commons-digester:2.1
+org.apache.batik.anim.dom.SVGAnimationTargetContext	public	org.apache.xmlgraphics:batik-anim:1.8	subtyping	org.apache.xmlgraphics:batik-bridge:1.8
+net.sf.jasperreports.engine.design.JRDesignQuery	public	net.sf.jasperreports:jasperreports:6.17.0	instantiation	ar.com.fdvs:DynamicJasper:5.3.2
+org.apache.batik.dom.GenericElement	public	org.apache.xmlgraphics:batik-dom:1.8	instantiation	org.apache.xmlgraphics:batik-anim:1.8
+org.apache.batik.anim.dom.SVGOMPathElement	public	org.apache.xmlgraphics:batik-anim:1.8	method call	org.apache.xmlgraphics:batik-css:1.8
+org.apache.batik.ext.awt.geom.ExtendedGeneralPath	public	org.apache.xmlgraphics:batik-awt-util:1.8	method call	org.apache.xmlgraphics:batik-parser:1.8
+org.apache.batik.anim.timing.TimedElement	public	org.apache.xmlgraphics:batik-anim:1.8	subtyping	org.apache.xmlgraphics:batik-bridge:1.8
+org.w3c.dom.svg.SVGPathSegCurvetoQuadraticRel	public	xml-apis:xml-apis-ext:1.3.04	cast	org.apache.xmlgraphics:batik-svg-dom:1.8
+org.apache.batik.dom.GenericElementNS	public	org.apache.xmlgraphics:batik-dom:1.8	method call	org.apache.xmlgraphics:batik-bridge:1.8
+net.sf.jasperreports.engine.design.JRDesignElementGroup	public	net.sf.jasperreports:jasperreports:6.17.0	method call	commons-beanutils:commons-beanutils:1.7.0
+org.jfree.data.time.TimeSeriesCollection	public	org.jfree:jfreechart:1.0.19	method call	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.engine.xml.JRPenFactory$Bottom	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	commons-digester:commons-digester:2.1
+org.jfree.data.gantt.TaskSeriesCollection	public	org.jfree:jfreechart:1.0.19	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+com.lowagie.text.pdf.PdfName	public	com.lowagie:itext:2.1.7.js8	cast	net.sf.jasperreports:jasperreports:6.17.0
+org.jfree.data.gantt.Task	public	org.jfree:jfreechart:1.0.19	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.charts.design.JRDesignPiePlot	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+org.jfree.ui.RectangleAnchor	public	org.jfree:jcommon:1.0.23	method call	org.jfree:jfreechart:1.0.19
+org.apache.commons.beanutils.MethodUtils	public	commons-beanutils:commons-beanutils:1.7.0	method call	commons-digester:commons-digester:2.1
+net.sf.jasperreports.engine.xml.JRFieldFactory	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	commons-digester:commons-digester:2.1
+org.jfree.ui.about.Licences	public	org.jfree:jcommon:1.0.23	method call	org.jfree:jfreechart:1.0.19
+org.apache.batik.dom.svg.AbstractSVGPathSegList$SVGPathSegCurvetoQuadraticItem	public	org.apache.xmlgraphics:batik-svg-dom:1.8	cast	org.apache.xmlgraphics:batik-anim:1.8
+java.lang.Class	public	unknownLib	Class.forName	commons-beanutils:commons-beanutils:1.7.0
+org.eclipse.jdt.internal.compiler.ICompilerRequestor	public	org.eclipse.jdt:ecj:3.21.0	subtyping	net.sf.jasperreports:jasperreports:6.17.0
+org.jfree.chart.plot.CategoryPlot	public	org.jfree:jfreechart:1.0.19	cast	net.sf.jasperreports:jasperreports:6.17.0
+org.w3c.dom.svg.SVGPathSegCurvetoQuadraticSmoothRel	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-svg-dom:1.8
+org.jfree.chart.plot.PiePlot	public	org.jfree:jfreechart:1.0.19	cast	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.anim.dom.SVGDOMImplementation	public	org.apache.xmlgraphics:batik-anim:1.8	cast	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.bridge.BridgeContext	public	org.apache.xmlgraphics:batik-bridge:1.8	method call	net.sf.jasperreports:jasperreports:6.17.0
+org.w3c.dom.events.EventException	public	xml-apis:xml-apis:1.3.04	instantiation	org.apache.xmlgraphics:batik-dom:1.8
+org.w3c.dom.svg.SVGPathSegCurvetoQuadraticAbs	public	xml-apis:xml-apis-ext:1.3.04	cast	org.apache.xmlgraphics:batik-svg-dom:1.8
+org.apache.batik.ext.awt.geom.Cubic	public	org.apache.xmlgraphics:batik-awt-util:1.8	instantiation	org.apache.xmlgraphics:batik-anim:1.8
+net.sf.jasperreports.charts.design.JRDesignTimeSeries	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+org.w3c.dom.svg.SVGPathSegCurvetoCubicAbs	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-svg-dom:1.8
+org.w3c.dom.Node	public	xml-apis:xml-apis:1.3.04	cast	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.gvt.CompositeGraphicsNode	public	org.apache.xmlgraphics:batik-gvt:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+org.jfree.chart.axis.TickUnits	public	org.jfree:jfreechart:1.0.19	method call	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.engine.design.JRDesignQuery	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+net.sf.jasperreports.engine.fill.JRFillField	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+org.apache.batik.dom.svg.SVGOMUseShadowRoot	public	org.apache.xmlgraphics:batik-svg-dom:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+net.sf.jasperreports.crosstabs.design.JRDesignCrosstabDataset	public	net.sf.jasperreports:jasperreports:6.17.0	instantiation	ar.com.fdvs:DynamicJasper:5.3.2
+org.apache.batik.util.io.StreamNormalizingReader	public	org.apache.xmlgraphics:batik-util:1.8	instantiation	org.apache.xmlgraphics:batik-css:1.8
+org.w3c.dom.css.CSSPrimitiveValue	public	xml-apis:xml-apis:1.3.04	cast	org.apache.xmlgraphics:batik-bridge:1.8
+org.w3c.dom.DocumentType	public	xml-apis:xml-apis:1.3.04	cast	org.apache.xmlgraphics:batik-dom:1.8
+net.sf.jasperreports.engine.JRDefaultScriptlet	public	net.sf.jasperreports:jasperreports:6.17.0	subtyping	ar.com.fdvs:DynamicJasper:5.3.2
+org.apache.batik.i18n.LocalizableSupport	public	org.apache.xmlgraphics:batik-util:1.8	instantiation	org.apache.xmlgraphics:batik-awt-util:1.8
+java.security.PrivilegedAction	public	java.security	subtyping	javax.xml.stream
+net.sf.jasperreports.engine.JRResultSetDataSource	public	net.sf.jasperreports:jasperreports:6.17.0	instantiation	ar.com.fdvs:DynamicJasper:5.3.2
+org.w3c.dom.svg.SVGPathSegArcRel	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-svg-dom:1.8
+org.apache.batik.util.Service	public	org.apache.xmlgraphics:batik-util:1.8	method call	org.apache.xmlgraphics:batik-bridge:1.8
+org.jfree.chart.renderer.category.StackedBarRenderer3D	public	org.jfree:jfreechart:1.0.19	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+org.w3c.dom.Text	public	xml-apis:xml-apis:1.3.04	subtyping	org.apache.xmlgraphics:batik-dom:1.8
+org.jfree.chart.renderer.category.BarRenderer3D	public	org.jfree:jfreechart:1.0.19	method call	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.engine.design.JRDesignBand	public	net.sf.jasperreports:jasperreports:6.17.0	instantiation	ar.com.fdvs:DynamicJasper:5.3.2
+org.w3c.dom.svg.SVGPolygonElement	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-anim:1.8
+org.jfree.chart.axis.NumberTickUnit	public	org.jfree:jfreechart:1.0.19	cast	net.sf.jasperreports:jasperreports:6.17.0
+java.security.PrivilegedAction	public	java.security	subtyping	xml-apis:xml-apis:1.3.04
+org.w3c.dom.svg.SVGLangSpace	public	xml-apis:xml-apis-ext:1.3.04	cast	org.apache.xmlgraphics:batik-bridge:1.8
+org.w3c.dom.svg.SVGElement	public	xml-apis:xml-apis-ext:1.3.04	cast	org.apache.xmlgraphics:batik-anim:1.8
+org.w3c.dom.svg.SVGTransformable	public	xml-apis:xml-apis-ext:1.3.04	cast	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.dom.GenericText	public	org.apache.xmlgraphics:batik-dom:1.8	instantiation	org.apache.xmlgraphics:batik-anim:1.8
+org.apache.commons.beanutils.PropertyUtils	public	commons-beanutils:commons-beanutils:1.7.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+org.jfree.ui.Drawable	public	org.jfree:jcommon:1.0.23	subtyping	org.jfree:jfreechart:1.0.19
+java.lang.String	public	unknownLib	Class.forName	commons-logging:commons-logging:1.0.3
+org.apache.commons.digester.Rule	public	commons-digester:commons-digester:2.1	subtyping	net.sf.jasperreports:jasperreports:6.17.0
+com.lowagie.text.pdf.PdfFormField	public	com.lowagie:itext:2.1.7.js8	cast	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.dom.svg.AbstractSVGPathSegList$SVGPathSegMovetoLinetoItem	public	org.apache.xmlgraphics:batik-svg-dom:1.8	instantiation	org.apache.xmlgraphics:batik-anim:1.8
+org.jfree.chart.renderer.category.BarRenderer	public	org.jfree:jfreechart:1.0.19	method call	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.dom.svg.AbstractSVGPathSegList	public	org.apache.xmlgraphics:batik-svg-dom:1.8	subtyping	org.apache.xmlgraphics:batik-anim:1.8
+org.apache.batik.parser.LengthParser	public	org.apache.xmlgraphics:batik-parser:1.8	instantiation	org.apache.xmlgraphics:batik-anim:1.8
+net.sf.jasperreports.engine.design.JRDesignField	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+java.lang.Integer	public	unknownLib	Class.forName	commons-beanutils:commons-beanutils:1.7.0
+org.apache.batik.gvt.text.TextPath	public	org.apache.xmlgraphics:batik-gvt:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.commons.beanutils.BeanUtils	private	commons-beanutils:commons-beanutils:1.7.0	method call	commons-digester:commons-digester:2.1
+net.sf.jasperreports.engine.xml.JRRectangleFactory	public	net.sf.jasperreports:jasperreports:6.17.0	method call	commons-digester:commons-digester:2.1
+net.sf.jasperreports.components.headertoolbar.HeaderToolbarConditionalStyleProviderExtensionFactory	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+java.util.Comparator	public	unknownLib	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.engine.xml.JRPropertyFactory	public	net.sf.jasperreports:jasperreports:6.17.0	method call	commons-digester:commons-digester:2.1
+java.sql.Connection	public	java.sql	cast	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.engine.design.JRDesignStaticText	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+net.sf.jasperreports.engine.design.JRDesignSection	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+org.apache.batik.util.XMLConstants	public	org.apache.xmlgraphics:batik-util:1.8	subtyping	org.apache.xmlgraphics:batik-dom:1.8
+net.sf.jasperreports.engine.JRExporter	public	net.sf.jasperreports:jasperreports:6.17.0	cast	ar.com.fdvs:DynamicJasper:5.3.2
+org.jfree.data.xy.XYSeriesCollection	public	org.jfree:jfreechart:1.0.19	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.web.util.JacksonMappingExtensionsRegistryFactory	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.engine.design.JRDesignConditionalStyle	public	net.sf.jasperreports:jasperreports:6.17.0	instantiation	ar.com.fdvs:DynamicJasper:5.3.2
+org.jfree.chart.title.TextTitle	public	org.jfree:jfreechart:1.0.19	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+org.jfree.util.StrokeList	public	org.jfree:jcommon:1.0.23	instantiation	org.jfree:jfreechart:1.0.19
+org.w3c.dom.svg.SVGAnimatedNumberList	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-anim:1.8
+org.w3c.dom.svg.SVGUseElement	public	xml-apis:xml-apis-ext:1.3.04	cast	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.dom.svg.AbstractSVGPathSegList$SVGPathSegCurvetoCubicItem	public	org.apache.xmlgraphics:batik-svg-dom:1.8	instantiation	org.apache.xmlgraphics:batik-anim:1.8
+org.w3c.dom.svg.SVGAnimatedLength	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-anim:1.8
+org.jfree.chart.labels.XYItemLabelGenerator	public	org.jfree:jfreechart:1.0.19	cast	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.engine.JRParameter	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	commons-digester:commons-digester:2.1
+org.jfree.chart.renderer.xy.XYBarRenderer	public	org.jfree:jfreechart:1.0.19	cast	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.gvt.CanvasGraphicsNode	public	org.apache.xmlgraphics:batik-gvt:1.8	cast	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.ext.awt.image.PointLight	public	org.apache.xmlgraphics:batik-awt-util:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.ext.awt.image.renderable.PadRable8Bit	public	org.apache.xmlgraphics:batik-awt-util:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+org.jfree.chart.plot.DefaultDrawingSupplier	public	org.jfree:jfreechart:1.0.19	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+com.lowagie.text.pdf.PdfDictionary	public	com.lowagie:itext:2.1.7.js8	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.gvt.ImageNode	public	org.apache.xmlgraphics:batik-gvt:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.gvt.FillShapePainter	public	org.apache.xmlgraphics:batik-gvt:1.8	method call	org.apache.xmlgraphics:batik-bridge:1.8
+org.w3c.dom.svg.SVGMatrix	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-svg-dom:1.8
+org.apache.batik.anim.dom.SVGOMDefsElement	public	org.apache.xmlgraphics:batik-anim:1.8	method call	org.apache.xmlgraphics:batik-dom:1.8
+net.sf.jasperreports.engine.design.JRJdtCompiler$CompilationUnit	public	net.sf.jasperreports:jasperreports:6.17.0	method call	org.eclipse.jdt:ecj:3.21.0
+org.apache.batik.gvt.RasterImageNode	public	org.apache.xmlgraphics:batik-gvt:1.8	cast	org.apache.xmlgraphics:batik-bridge:1.8
+interface net.sf.jasperreports.export.ReportExportConfiguration	public	net.sf.jasperreports:jasperreports:6.17.0	method call	net.sf.jasperreports:jasperreports:6.17.0
+org.w3c.dom.events.MutationEvent	public	xml-apis:xml-apis:1.3.04	cast	org.apache.xmlgraphics:batik-bridge:1.8
+org.jfree.data.xy.XYSeries	public	org.jfree:jfreechart:1.0.19	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.export.pdf.classic.ClassicPdfProducerFactory	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+com.lowagie.text.pdf.PdfGraphics2D	public	com.lowagie:itext:2.1.7.js8	subtyping	net.sf.jasperreports:jasperreports:6.17.0
+org.w3c.dom.svg.SVGImageElement	public	xml-apis:xml-apis-ext:1.3.04	cast	org.apache.xmlgraphics:batik-bridge:1.8
+net.sf.jasperreports.engine.fill.JRFillField	public	net.sf.jasperreports:jasperreports:6.17.0	method call	commons-beanutils:commons-beanutils:1.7.0
+org.apache.batik.dom.svg.SVGSVGContext	public	org.apache.xmlgraphics:batik-svg-dom:1.8	cast	org.apache.xmlgraphics:batik-anim:1.8
+net.sf.jasperreports.charts.design.JRDesignBarPlot	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+org.apache.batik.dom.svg.IdContainer	public	org.apache.xmlgraphics:batik-svg-dom:1.8	subtyping	org.apache.xmlgraphics:batik-anim:1.8
+org.apache.batik.anim.dom.XBLEventSupport	public	org.apache.xmlgraphics:batik-anim:1.8	cast	org.apache.xmlgraphics:batik-bridge:1.8
+net.sf.jasperreports.engine.xml.JRBoxFactory	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	commons-digester:commons-digester:2.1
+net.sf.jasperreports.engine.design.JRDesignDataset	public	net.sf.jasperreports:jasperreports:6.17.0	cast	ar.com.fdvs:DynamicJasper:5.3.2
+net.sf.jasperreports.engine.base.JRBaseBoxRightPen	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+net.sf.jasperreports.engine.xml.JRLineFactory	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	commons-digester:commons-digester:2.1
+net.sf.jasperreports.engine.DefaultJasperReportsContext	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+org.apache.commons.logging.impl.Log4JLogger	public	commons-logging:commons-logging:1.0.3	method call	commons-beanutils:commons-beanutils:1.7.0
+net.sf.jasperreports.engine.export.JRXlsAbstractExporter	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+org.jfree.chart.plot.dial.StandardDialScale	public	org.jfree:jfreechart:1.0.19	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+org.w3c.dom.DOMErrorHandler	public	xml-apis:xml-apis:1.3.04	cast	org.apache.xmlgraphics:batik-dom:1.8
+org.jfree.chart.plot.dial.StandardDialRange	public	org.jfree:jfreechart:1.0.19	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.crosstabs.design.JRDesignCrosstabDataset	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+org.w3c.css.sac.ErrorHandler	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-css:1.8
+org.apache.commons.digester.SetNestedPropertiesRule	public	commons-digester:commons-digester:2.1	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+org.w3c.dom.svg.SVGDocument	public	xml-apis:xml-apis-ext:1.3.04	cast	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.anim.dom.SVGOMEllipseElement	public	org.apache.xmlgraphics:batik-anim:1.8	cast	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.css.engine.CSSStylableElement	public	org.apache.xmlgraphics:batik-css:1.8	cast	org.apache.xmlgraphics:batik-bridge:1.8
+java.security.PrivilegedAction	public	java.security	subtyping	org.apache.xml.dtm
+net.sf.jasperreports.engine.export.DefaultExporterFilterFactory	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.anim.dom.SAXSVGDocumentFactory	public	org.apache.xmlgraphics:batik-anim:1.8	method call	org.apache.xmlgraphics:batik-dom:1.8
+org.w3c.dom.css.DocumentCSS	public	xml-apis:xml-apis:1.3.04	subtyping	xml-apis:xml-apis-ext:1.3.04
+org.apache.batik.gvt.CanvasGraphicsNode	public	org.apache.xmlgraphics:batik-gvt:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+net.sf.jasperreports.data.DefaultDataAdapterServiceExtensionsRegistryFactory	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.engine.xml.JRSectionFactory$DetailSectionFactory	public	net.sf.jasperreports:jasperreports:6.17.0	method call	commons-digester:commons-digester:2.1
+org.apache.batik.dom.svg.AbstractSVGPathSegList$SVGPathSegArcItem	public	org.apache.xmlgraphics:batik-svg-dom:1.8	instantiation	org.apache.xmlgraphics:batik-anim:1.8
+org.jfree.data.xy.DefaultHighLowDataset	public	org.jfree:jfreechart:1.0.19	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.engine.design.JRDesignBreak	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+com.lowagie.text.pdf.TextField	public	com.lowagie:itext:2.1.7.js8	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.dom.svg.AbstractSVGTransformList	public	org.apache.xmlgraphics:batik-svg-dom:1.8	cast	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.anim.dom.SVGOMDocument	public	org.apache.xmlgraphics:batik-anim:1.8	cast	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.anim.dom.SVGOMRadialGradientElement	public	org.apache.xmlgraphics:batik-anim:1.8	method call	org.apache.xmlgraphics:batik-css:1.8
+net.sf.jasperreports.engine.base.JRBasePen	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+org.apache.batik.xml.XMLUtilities	public	org.apache.xmlgraphics:batik-xml:1.8	subtyping	org.apache.xmlgraphics:batik-dom:1.8
+org.apache.batik.parser.AWTPolygonProducer	public	org.apache.xmlgraphics:batik-parser:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+net.sf.jasperreports.engine.design.JRDesignLine	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+org.apache.batik.dom.GenericProcessingInstruction	public	org.apache.xmlgraphics:batik-dom:1.8	instantiation	org.apache.xmlgraphics:batik-anim:1.8
+org.jfree.util.ShapeList	public	org.jfree:jcommon:1.0.23	method call	org.jfree:jfreechart:1.0.19
+org.apache.xmlgraphics.java2d.color.ICCColorSpaceWithIntent	public	org.apache.xmlgraphics:xmlgraphics-commons:1.5	cast	org.apache.xmlgraphics:batik-awt-util:1.8
+org.apache.batik.dom.AbstractStylableDocument	public	org.apache.xmlgraphics:batik-dom:1.8	subtyping	org.apache.xmlgraphics:batik-anim:1.8
+org.w3c.dom.svg.SVGPathElement	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-anim:1.8
+org.apache.batik.anim.MotionAnimation	public	org.apache.xmlgraphics:batik-anim:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+org.w3c.dom.svg.SVGPathSegCurvetoQuadraticRel	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-svg-dom:1.8
+org.apache.batik.parser.AngleParser	public	org.apache.xmlgraphics:batik-parser:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+net.sf.jasperreports.engine.design.JRDesignLine	public	net.sf.jasperreports:jasperreports:6.17.0	method call	commons-beanutils:commons-beanutils:1.7.0
+org.bouncycastle.asn1.DEROutputStream	public	org.bouncycastle:bcprov-jdk15on:1.64	instantiation	com.lowagie:itext:2.1.7.js8
+net.sf.jasperreports.engine.export.JRPdfExporter	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.gvt.FillShapePainter	public	org.apache.xmlgraphics:batik-gvt:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.gvt.GraphicsNode	public	org.apache.xmlgraphics:batik-gvt:1.8	cast	net.sf.jasperreports:jasperreports:6.17.0
+ar.com.fdvs.dj.util.MultiPropertyComparator	public	ar.com.fdvs:DynamicJasper:5.3.2	method call	commons-beanutils:commons-beanutils:1.7.0
+org.apache.batik.i18n.LocalizableSupport	public	org.apache.xmlgraphics:batik-util:1.8	instantiation	org.apache.xmlgraphics:batik-parser:1.8
+java.security.PrivilegedAction	public	java.security	subtyping	java.sql
+org.apache.batik.ext.awt.image.renderable.ComponentTransferRable8Bit	public	org.apache.xmlgraphics:batik-awt-util:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+org.jfree.util.ShapeList	public	org.jfree:jcommon:1.0.23	cast	org.jfree:jfreechart:1.0.19
+org.jfree.data.Range	public	org.jfree:jfreechart:1.0.19	method call	net.sf.jasperreports:jasperreports:6.17.0
+org.w3c.dom.svg.SVGPreserveAspectRatio	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-svg-dom:1.8
+net.sf.jasperreports.charts.util.DrawChartRendererFactory	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+ar.com.fdvs.dj.core.DJDefaultScriptlet	public	ar.com.fdvs:DynamicJasper:5.3.2	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.commons.collections4.comparators.ReverseComparator	public	org.apache.commons:commons-collections4:4.1	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+com.lowagie.text.Document	public	com.lowagie:itext:2.1.7.js8	method call	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.engine.design.JRDesignTextField	public	net.sf.jasperreports:jasperreports:6.17.0	instantiation	ar.com.fdvs:DynamicJasper:5.3.2
+net.sf.jasperreports.engine.design.JRDesignConditionalStyle	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+net.sf.jasperreports.engine.fill.JRFillParameter	public	net.sf.jasperreports:jasperreports:6.17.0	cast	ar.com.fdvs:DynamicJasper:5.3.2
+net.sf.jasperreports.engine.design.JRDesignField	public	net.sf.jasperreports:jasperreports:6.17.0	instantiation	ar.com.fdvs:DynamicJasper:5.3.2
+org.bouncycastle.asn1.cms.KeyTransRecipientInfo	public	org.bouncycastle:bcprov-jdk15on:1.64	instantiation	com.lowagie:itext:2.1.7.js8
+net.sf.jasperreports.charts.design.JRDesignAreaPlot	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+net.sf.jasperreports.engine.data.JRBeanCollectionDataSource	public	net.sf.jasperreports:jasperreports:6.17.0	instantiation	ar.com.fdvs:DynamicJasper:5.3.2
+org.apache.batik.util.ParsedURL	public	org.apache.xmlgraphics:batik-util:1.8	instantiation	org.apache.xmlgraphics:batik-css:1.8
+org.jfree.data.time.TimePeriodValues	public	org.jfree:jfreechart:1.0.19	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.engine.xml.JRPenFactory$Top	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	commons-digester:commons-digester:2.1
+org.w3c.dom.Node	public	xml-apis:xml-apis:1.3.04	subtyping	org.apache.xmlgraphics:batik-dom:1.8
+org.apache.batik.dom.GenericAttrNS	public	org.apache.xmlgraphics:batik-dom:1.8	instantiation	org.apache.xmlgraphics:batik-anim:1.8
+net.sf.jasperreports.engine.JRPropertiesUtil	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+org.apache.batik.util.ParsedURL	public	org.apache.xmlgraphics:batik-util:1.8	instantiation	org.apache.xmlgraphics:batik-dom:1.8
+org.apache.batik.dom.svg.AbstractSVGPathSegList$SVGPathSegMovetoLinetoItem	public	org.apache.xmlgraphics:batik-svg-dom:1.8	cast	org.apache.xmlgraphics:batik-anim:1.8
+net.sf.jasperreports.charts.design.JRDesignXyDataset	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+org.apache.batik.ext.awt.image.renderable.DisplacementMapRable8Bit	public	org.apache.xmlgraphics:batik-awt-util:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+org.w3c.dom.svg.SVGLangSpace	public	xml-apis:xml-apis-ext:1.3.04	cast	org.apache.xmlgraphics:batik-anim:1.8
+net.sf.jasperreports.engine.JRVariable	public	net.sf.jasperreports:jasperreports:6.17.0	cast	ar.com.fdvs:DynamicJasper:5.3.2
+net.sf.jasperreports.charts.design.JRDesignTimeSeriesDataset	public	net.sf.jasperreports:jasperreports:6.17.0	instantiation	ar.com.fdvs:DynamicJasper:5.3.2
+net.sf.jasperreports.engine.design.JRJdtCompiler	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.css.engine.SVGCSSEngine	public	org.apache.xmlgraphics:batik-css:1.8	method call	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.css.engine.CSSNavigableDocument	public	org.apache.xmlgraphics:batik-css:1.8	subtyping	org.apache.xmlgraphics:batik-anim:1.8
+net.sf.jasperreports.charts.design.JRDesignScatterPlot	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+org.jfree.data.gantt.TaskSeries	public	org.jfree:jfreechart:1.0.19	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+org.jfree.util.PublicCloneable	public	org.jfree:jcommon:1.0.23	cast	org.jfree:jfreechart:1.0.19
+org.apache.batik.anim.dom.SVGOMRectElement$1	default	org.apache.xmlgraphics:batik-anim:1.8	method call	org.apache.xmlgraphics:batik-bridge:1.8
+net.sf.jasperreports.charts.design.JRDesignAreaPlot	public	net.sf.jasperreports:jasperreports:6.17.0	cast	ar.com.fdvs:DynamicJasper:5.3.2
+org.apache.batik.anim.dom.SVGOMRectElement$2	default	org.apache.xmlgraphics:batik-anim:1.8	method call	org.apache.xmlgraphics:batik-bridge:1.8
+org.w3c.dom.events.MutationEvent	public	xml-apis:xml-apis:1.3.04	cast	org.apache.xmlgraphics:batik-anim:1.8
+org.apache.commons.logging.impl.Log4JLogger	public	commons-logging:commons-logging:1.0.3	Class.forName	commons-logging:commons-logging:1.0.3
+org.apache.batik.gvt.Marker	public	org.apache.xmlgraphics:batik-gvt:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+net.sf.jasperreports.engine.design.JRJdtCompiler$1	default	net.sf.jasperreports:jasperreports:6.17.0	method call	org.eclipse.jdt:ecj:3.21.0
+org.apache.batik.gvt.GraphicsNode	public	org.apache.xmlgraphics:batik-gvt:1.8	cast	org.apache.xmlgraphics:batik-bridge:1.8
+org.jfree.chart.renderer.category.LineAndShapeRenderer	public	org.jfree:jfreechart:1.0.19	cast	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.bridge.GVTBuilder	public	org.apache.xmlgraphics:batik-bridge:1.8	method call	net.sf.jasperreports:jasperreports:6.17.0
+org.w3c.dom.svg.SVGAnimatedPathData	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-anim:1.8
+org.apache.batik.anim.dom.SVGOMLineElement	public	org.apache.xmlgraphics:batik-anim:1.8	cast	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.parser.TransformListParser	public	org.apache.xmlgraphics:batik-parser:1.8	method call	org.apache.xmlgraphics:batik-svg-dom:1.8
+net.sf.jasperreports.engine.design.JRDesignBreak	public	net.sf.jasperreports:jasperreports:6.17.0	instantiation	ar.com.fdvs:DynamicJasper:5.3.2
+org.jfree.chart.entity.ChartEntity	public	org.jfree:jfreechart:1.0.19	cast	net.sf.jasperreports:jasperreports:6.17.0
+org.bouncycastle.asn1.ASN1InputStream	public	org.bouncycastle:bcprov-jdk15on:1.64	instantiation	com.lowagie:itext:2.1.7.js8
+org.w3c.dom.DOMException	public	xml-apis:xml-apis:1.3.04	instantiation	org.apache.xmlgraphics:batik-css:1.8
+com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl	public	unknownLib	Class.forName	xml-apis:xml-apis:1.3.04
+org.jfree.data.xy.XYSeriesCollection	public	org.jfree:jfreechart:1.0.19	method call	net.sf.jasperreports:jasperreports:6.17.0
+org.w3c.dom.Comment	public	xml-apis:xml-apis:1.3.04	subtyping	org.apache.xmlgraphics:batik-dom:1.8
+org.apache.batik.anim.dom.SVGOMMetadataElement	public	org.apache.xmlgraphics:batik-anim:1.8	method call	org.apache.xmlgraphics:batik-dom:1.8
+net.sf.jasperreports.charts.design.JRDesignScatterPlot	public	net.sf.jasperreports:jasperreports:6.17.0	cast	ar.com.fdvs:DynamicJasper:5.3.2
+org.apache.batik.dom.svg.SVGMotionAnimatableElement	public	org.apache.xmlgraphics:batik-svg-dom:1.8	subtyping	org.apache.xmlgraphics:batik-anim:1.8
+org.jfree.chart.renderer.category.LineAndShapeRenderer	public	org.jfree:jfreechart:1.0.19	method call	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.dom.svg.AbstractSVGPathSegList$PathSegListBuilder	protected	org.apache.xmlgraphics:batik-svg-dom:1.8	method call	org.apache.xmlgraphics:batik-parser:1.8
+org.apache.batik.css.engine.SVGCSSEngine	public	org.apache.xmlgraphics:batik-css:1.8	cast	org.apache.xmlgraphics:batik-bridge:1.8
+com.lowagie.text.Image	public	com.lowagie:itext:2.1.7.js8	method call	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.anim.dom.SVGStylableElement$OverrideStyleDeclaration	protected	org.apache.xmlgraphics:batik-anim:1.8	method call	org.apache.xmlgraphics:batik-css:1.8
+org.w3c.dom.svg.SVGPathSegCurvetoQuadraticAbs	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-svg-dom:1.8
+org.jfree.data.xy.XYSeriesCollection	public	org.jfree:jfreechart:1.0.19	cast	net.sf.jasperreports:jasperreports:6.17.0
+org.jfree.util.SortOrder	public	org.jfree:jcommon:1.0.23	method call	org.jfree:jfreechart:1.0.19
+net.sf.jasperreports.charts.design.JRDesignCategoryDataset	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+org.apache.batik.util.XMLResourceDescriptor	public	org.apache.xmlgraphics:batik-util:1.8	method call	org.apache.xmlgraphics:batik-dom:1.8
+ar.com.fdvs.dj.domain.DJCrosstabColumn	public	ar.com.fdvs:DynamicJasper:5.3.2	method call	commons-beanutils:commons-beanutils:1.7.0
+org.apache.batik.dom.AbstractAttr	public	org.apache.xmlgraphics:batik-dom:1.8	cast	org.apache.xmlgraphics:batik-anim:1.8
+org.apache.batik.parser.UnitProcessor$UnitResolver	public	org.apache.xmlgraphics:batik-parser:1.8	instantiation	org.apache.xmlgraphics:batik-anim:1.8
+net.sf.jasperreports.engine.fonts.SimpleFontExtensionsRegistryFactory	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+java.lang.Long	public	unknownLib	Class.forName	commons-beanutils:commons-beanutils:1.7.0
+org.jfree.chart.labels.PieSectionLabelGenerator	public	org.jfree:jfreechart:1.0.19	cast	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.parser.UnitProcessor	public	org.apache.xmlgraphics:batik-parser:1.8	method call	org.apache.xmlgraphics:batik-anim:1.8
+net.sf.jasperreports.engine.design.JRDesignSubreportParameter	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+net.sf.jasperreports.engine.base.JRBaseLineBox	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+org.apache.batik.dom.util.CSSStyleDeclarationFactory	public	org.apache.xmlgraphics:batik-dom:1.8	subtyping	org.apache.xmlgraphics:batik-anim:1.8
+java.lang.Float	public	unknownLib	Class.forName	ar.com.fdvs:DynamicJasper:5.3.2
+java.lang.Integer	public	unknownLib	Class.forName	ar.com.fdvs:DynamicJasper:5.3.2
+org.apache.batik.util.SoftDoublyIndexedTable	public	org.apache.xmlgraphics:batik-util:1.8	instantiation	org.apache.xmlgraphics:batik-dom:1.8
+net.sf.jasperreports.engine.design.JRDesignVariable	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	commons-digester:commons-digester:2.1
+org.apache.xml.dtm.ref.DTMManagerDefault	public	unknownLib	Class.forName	org.apache.xml.dtm
+org.xml.sax.InputSource	public	xml-apis:xml-apis:1.3.04	instantiation	org.apache.xmlgraphics:batik-dom:1.8
+net.sf.jasperreports.engine.fill.JRFillField	public	net.sf.jasperreports:jasperreports:6.17.0	cast	ar.com.fdvs:DynamicJasper:5.3.2
+net.sf.jasperreports.engine.xml.DatasetRunReportContextRule	public	net.sf.jasperreports:jasperreports:6.17.0	method call	commons-digester:commons-digester:2.1
+org.apache.batik.anim.dom.SVGOMSVGElement	public	org.apache.xmlgraphics:batik-anim:1.8	method call	org.apache.xmlgraphics:batik-css:1.8
+net.sf.jasperreports.engine.design.JRDesignImage	public	net.sf.jasperreports:jasperreports:6.17.0	method call	commons-beanutils:commons-beanutils:1.7.0
+org.apache.batik.css.engine.value.FloatValue	public	org.apache.xmlgraphics:batik-css:1.8	method call	org.apache.xmlgraphics:batik-bridge:1.8
+org.xml.sax.helpers.DefaultHandler	public	xml-apis:xml-apis:1.3.04	subtyping	org.apache.xmlgraphics:batik-dom:1.8
+java.lang.Float	public	unknownLib	Class.forName	commons-beanutils:commons-beanutils:1.7.0
+org.jfree.data.time.SimpleTimePeriod	public	org.jfree:jfreechart:1.0.19	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.engine.xml.JRPenFactory	public	net.sf.jasperreports:jasperreports:6.17.0	method call	commons-digester:commons-digester:2.1
+java.sql.Time	public	java.sql	cast	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.commons.digester.ObjectCreationFactory	public	commons-digester:commons-digester:2.1	subtyping	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.engine.design.JRDesignElement	public	net.sf.jasperreports:jasperreports:6.17.0	cast	ar.com.fdvs:DynamicJasper:5.3.2
+net.sf.jasperreports.engine.design.JRDesignSubreport	public	net.sf.jasperreports:jasperreports:6.17.0	instantiation	ar.com.fdvs:DynamicJasper:5.3.2
+net.sf.jasperreports.engine.JRPropertiesMap	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+net.sf.jasperreports.engine.design.JRDesignImage	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+org.apache.batik.anim.dom.SVGOMAnimatedLengthList	public	org.apache.xmlgraphics:batik-anim:1.8	cast	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.dom.util.ListNodeList	public	org.apache.xmlgraphics:batik-dom:1.8	instantiation	org.apache.xmlgraphics:batik-anim:1.8
+net.sf.jasperreports.engine.JRChild	public	net.sf.jasperreports:jasperreports:6.17.0	cast	ar.com.fdvs:DynamicJasper:5.3.2
+org.apache.batik.ext.awt.image.renderable.ClipRable8Bit	public	org.apache.xmlgraphics:batik-awt-util:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+net.sf.jasperreports.engine.design.JRDesignTextElement	public	net.sf.jasperreports:jasperreports:6.17.0	cast	ar.com.fdvs:DynamicJasper:5.3.2
+org.xml.sax.ErrorHandler	public	xml-apis:xml-apis:1.3.04	subtyping	net.sf.jasperreports:jasperreports:6.17.0
+org.w3c.dom.svg.SVGAngle	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-svg-dom:1.8
+org.apache.batik.parser.AWTPathProducer	public	org.apache.xmlgraphics:batik-parser:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+org.w3c.dom.svg.SVGPathSegCurvetoQuadraticSmoothAbs	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-svg-dom:1.8
+net.sf.jasperreports.engine.JasperPrint	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+org.w3c.dom.svg.SVGDefsElement	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-anim:1.8
+org.apache.batik.anim.dom.SVGOMLinearGradientElement	public	org.apache.xmlgraphics:batik-anim:1.8	method call	org.apache.xmlgraphics:batik-dom:1.8
+org.w3c.dom.svg.SVGAnimatedBoolean	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-anim:1.8
+net.sf.jasperreports.engine.JRBand	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	commons-digester:commons-digester:2.1
+org.eclipse.jdt.internal.compiler.problem.DefaultProblemFactory	public	org.eclipse.jdt:ecj:3.21.0	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.engine.export.JRPdfExporter$InternalImageProcessor	private	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.engine.design.JRDesignGraphicElement	public	net.sf.jasperreports:jasperreports:6.17.0	cast	ar.com.fdvs:DynamicJasper:5.3.2
+com.lowagie.text.Rectangle	public	com.lowagie:itext:2.1.7.js8	method call	net.sf.jasperreports:jasperreports:6.17.0
+org.jfree.util.Rotation	public	org.jfree:jcommon:1.0.23	method call	org.jfree:jfreechart:1.0.19
+org.apache.batik.gvt.filter.GraphicsNodeRable8Bit	public	org.apache.xmlgraphics:batik-gvt:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.anim.dom.AnimatableElement	public	org.apache.xmlgraphics:batik-anim:1.8	subtyping	org.apache.xmlgraphics:batik-bridge:1.8
+org.jfree.chart.renderer.category.BarRenderer3D	public	org.jfree:jfreechart:1.0.19	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.engine.design.JRDesignParameter	public	net.sf.jasperreports:jasperreports:6.17.0	instantiation	ar.com.fdvs:DynamicJasper:5.3.2
+org.jfree.ui.RectangleInsets	public	org.jfree:jcommon:1.0.23	instantiation	org.jfree:jfreechart:1.0.19
+org.w3c.dom.svg.SVGAnimatedPreserveAspectRatio	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-anim:1.8
+net.sf.jasperreports.engine.xml.JRBandFactory	public	net.sf.jasperreports:jasperreports:6.17.0	method call	commons-digester:commons-digester:2.1
+org.apache.commons.logging.LogFactory	public	commons-logging:commons-logging:1.0.3	method call	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.commons.beanutils.DynaBean	public	commons-beanutils:commons-beanutils:1.7.0	cast	commons-digester:commons-digester:2.1
+org.apache.batik.dom.GenericAttrNS	public	org.apache.xmlgraphics:batik-dom:1.8	method call	org.apache.xmlgraphics:batik-css:1.8
+org.jfree.data.time.TimeSeries	public	org.jfree:jfreechart:1.0.19	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.engine.design.JRDesignExpression	public	net.sf.jasperreports:jasperreports:6.17.0	instantiation	ar.com.fdvs:DynamicJasper:5.3.2
+org.apache.batik.dom.svg.AbstractSVGPathSegList$SVGPathSegLinetoVerticalItem	public	org.apache.xmlgraphics:batik-svg-dom:1.8	cast	org.apache.xmlgraphics:batik-anim:1.8
+net.sf.jasperreports.engine.design.JRDesignRectangle	public	net.sf.jasperreports:jasperreports:6.17.0	instantiation	ar.com.fdvs:DynamicJasper:5.3.2
+org.eclipse.jdt.internal.compiler.env.NameEnvironmentAnswer	public	org.eclipse.jdt:ecj:3.21.0	cast	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.commons.collections.Predicate	public	commons-collections:commons-collections:3.2.2	subtyping	ar.com.fdvs:DynamicJasper:5.3.2
+org.apache.batik.dom.AbstractElement	public	org.apache.xmlgraphics:batik-dom:1.8	subtyping	org.apache.xmlgraphics:batik-anim:1.8
+java.security.MessageDigest	public	java.security	method call	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.css.engine.value.ListValue	public	org.apache.xmlgraphics:batik-css:1.8	cast	org.apache.xmlgraphics:batik-bridge:1.8
+org.jfree.chart.plot.dial.DialPointer$Pointer	public	org.jfree:jfreechart:1.0.19	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+com.lowagie.text.pdf.PdfName	public	com.lowagie:itext:2.1.7.js8	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+org.w3c.dom.svg.SVGPathSegLinetoRel	public	xml-apis:xml-apis-ext:1.3.04	cast	org.apache.xmlgraphics:batik-svg-dom:1.8
+org.w3c.dom.views.DocumentView	public	xml-apis:xml-apis:1.3.04	cast	org.apache.xmlgraphics:batik-anim:1.8
+java.security.ProtectionDomain	public	java.security	instantiation	xml-apis:xml-apis:1.3.04
+org.apache.batik.ext.awt.image.renderable.FilterChainRable8Bit	public	org.apache.xmlgraphics:batik-awt-util:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+com.lowagie.text.pdf.PdfGState	public	com.lowagie:itext:2.1.7.js8	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+java.lang.Thread	public	unknownLib	Class.forName	commons-logging:commons-logging:1.0.3
+org.apache.batik.anim.dom.SVGOMStopElement	public	org.apache.xmlgraphics:batik-anim:1.8	method call	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.anim.dom.AnimatedAttributeListener	public	org.apache.xmlgraphics:batik-anim:1.8	subtyping	org.apache.xmlgraphics:batik-bridge:1.8
+org.xml.sax.SAXException	public	xml-apis:xml-apis:1.3.04	instantiation	org.apache.xmlgraphics:batik-anim:1.8
+interface net.sf.jasperreports.export.XlsReportConfiguration	public	net.sf.jasperreports:jasperreports:6.17.0	method call	unknownLib
+org.apache.batik.css.engine.value.ShorthandManager	public	org.apache.xmlgraphics:batik-css:1.8	cast	org.apache.xmlgraphics:batik-dom:1.8
+net.sf.jasperreports.charts.design.JRDesignTimeSeries	public	net.sf.jasperreports:jasperreports:6.17.0	instantiation	ar.com.fdvs:DynamicJasper:5.3.2
+org.apache.batik.gvt.AbstractGraphicsNode	public	org.apache.xmlgraphics:batik-gvt:1.8	subtyping	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.i18n.Localizable	public	org.apache.xmlgraphics:batik-util:1.8	subtyping	org.apache.xmlgraphics:batik-script:1.8
+org.apache.batik.anim.dom.SVGOMGElement	public	org.apache.xmlgraphics:batik-anim:1.8	method call	org.apache.xmlgraphics:batik-css:1.8
+net.sf.jasperreports.engine.design.JasperDesign	public	net.sf.jasperreports:jasperreports:6.17.0	method call	commons-beanutils:commons-beanutils:1.7.0
+org.jfree.data.xy.DefaultHighLowDataset	public	org.jfree:jfreechart:1.0.19	cast	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.engine.JRParameter	public	net.sf.jasperreports:jasperreports:6.17.0	cast	ar.com.fdvs:DynamicJasper:5.3.2
+net.sf.jasperreports.engine.design.JRJavacCompiler	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.anim.dom.SVGOMAnimatedTransformList$AnimSVGTransformList	protected	org.apache.xmlgraphics:batik-anim:1.8	method call	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.dom.svg.AbstractSVGPathSegList$SVGPathSegCurvetoQuadraticSmoothItem	public	org.apache.xmlgraphics:batik-svg-dom:1.8	instantiation	org.apache.xmlgraphics:batik-anim:1.8
+org.jfree.chart.axis.DateAxis	public	org.jfree:jfreechart:1.0.19	method call	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.engine.export.JRXlsExporter	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.dom.svg.SVGContext	public	org.apache.xmlgraphics:batik-svg-dom:1.8	subtyping	org.apache.xmlgraphics:batik-anim:1.8
+net.sf.jasperreports.charts.design.JRDesignCategoryDataset	public	net.sf.jasperreports:jasperreports:6.17.0	instantiation	ar.com.fdvs:DynamicJasper:5.3.2
+org.apache.batik.dom.util.HashTable	public	org.apache.xmlgraphics:batik-dom:1.8	method call	org.apache.xmlgraphics:batik-anim:1.8
+net.sf.jasperreports.extensions.DefaultExtensionsRegistryFactory	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+org.jfree.chart.plot.PiePlot3D	public	org.jfree:jfreechart:1.0.19	cast	net.sf.jasperreports:jasperreports:6.17.0
+org.w3c.dom.views.DocumentView	public	xml-apis:xml-apis:1.3.04	subtyping	org.apache.xmlgraphics:batik-dom:1.8
+org.w3c.dom.svg.SVGPathSegLinetoHorizontalRel	public	xml-apis:xml-apis-ext:1.3.04	cast	org.apache.xmlgraphics:batik-svg-dom:1.8
+org.apache.batik.css.engine.value.svg.ICCColor	public	org.apache.xmlgraphics:batik-css:1.8	cast	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.parser.PathParser	public	org.apache.xmlgraphics:batik-parser:1.8	instantiation	org.apache.xmlgraphics:batik-svg-dom:1.8
+org.jfree.chart.plot.ThermometerPlot	public	org.jfree:jfreechart:1.0.19	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.dom.events.DocumentEventSupport	public	org.apache.xmlgraphics:batik-dom:1.8	instantiation	org.apache.xmlgraphics:batik-anim:1.8
+org.apache.batik.dom.ExtensibleDOMImplementation$ElementFactory	public	org.apache.xmlgraphics:batik-dom:1.8	subtyping	org.apache.xmlgraphics:batik-anim:1.8
+org.xml.sax.InputSource	public	xml-apis:xml-apis:1.3.04	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+java.lang.Short	public	unknownLib	Class.forName	commons-beanutils:commons-beanutils:1.7.0
+org.apache.batik.anim.dom.SVGOMMarkerElement	public	org.apache.xmlgraphics:batik-anim:1.8	method call	org.apache.xmlgraphics:batik-dom:1.8
+interface net.sf.jasperreports.export.PdfExporterConfiguration	public	net.sf.jasperreports:jasperreports:6.17.0	method call	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.charts.design.JRDesignPie3DPlot	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+net.sf.jasperreports.engine.JasperReport	public	net.sf.jasperreports:jasperreports:6.17.0	cast	ar.com.fdvs:DynamicJasper:5.3.2
+org.w3c.dom.Document	public	xml-apis:xml-apis:1.3.04	subtyping	org.apache.xmlgraphics:batik-dom:1.8
+org.apache.batik.dom.GenericComment	public	org.apache.xmlgraphics:batik-dom:1.8	method call	org.apache.xmlgraphics:batik-css:1.8
+org.apache.batik.anim.dom.SVGOMPathElement	public	org.apache.xmlgraphics:batik-anim:1.8	method call	org.apache.xmlgraphics:batik-dom:1.8
+com.lowagie.text.Phrase	public	com.lowagie:itext:2.1.7.js8	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+org.w3c.dom.Attr	public	xml-apis:xml-apis:1.3.04	cast	org.apache.xmlgraphics:batik-dom:1.8
+org.w3c.dom.NamedNodeMap	public	xml-apis:xml-apis:1.3.04	subtyping	org.apache.xmlgraphics:batik-dom:1.8
+com.sun.org.apache.xerces.internal.jaxp.SAXParserFactoryImpl	public	unknownLib	Class.forName	xml-apis:xml-apis:1.3.04
+org.apache.batik.dom.svg.SVGPathContext	public	org.apache.xmlgraphics:batik-svg-dom:1.8	subtyping	org.apache.xmlgraphics:batik-bridge:1.8
+org.w3c.dom.events.Event	public	xml-apis:xml-apis:1.3.04	cast	org.apache.xmlgraphics:batik-anim:1.8
+org.apache.commons.collections.CollectionUtils	public	commons-collections:commons-collections:3.2.2	method call	ar.com.fdvs:DynamicJasper:5.3.2
+org.apache.batik.anim.dom.SAXSVGDocumentFactory	public	org.apache.xmlgraphics:batik-anim:1.8	method call	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.parser.DefaultPathHandler	public	org.apache.xmlgraphics:batik-parser:1.8	subtyping	org.apache.xmlgraphics:batik-svg-dom:1.8
+org.apache.batik.util.CleanerThread$SoftReferenceCleared	public	org.apache.xmlgraphics:batik-util:1.8	subtyping	org.apache.xmlgraphics:batik-bridge:1.8
+net.sf.jasperreports.engine.design.JRDesignGroup	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+org.apache.batik.dom.util.DocumentDescriptor$Entry	protected	org.apache.xmlgraphics:batik-dom:1.8	method call	org.apache.xmlgraphics:batik-util:1.8
+java.sql.Timestamp	public	java.sql	cast	net.sf.jasperreports:jasperreports:6.17.0
+org.w3c.dom.svg.SVGPathSegList	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-svg-dom:1.8
+org.apache.batik.anim.dom.SVGOMDefsElement	public	org.apache.xmlgraphics:batik-anim:1.8	method call	org.apache.xmlgraphics:batik-css:1.8
+net.sf.jasperreports.engine.export.ElementPropertyExporterFilterFactory	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+org.w3c.dom.svg.SVGPolylineElement	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-anim:1.8
+org.jfree.data.general.ValueDataset	public	org.jfree:jfreechart:1.0.19	cast	net.sf.jasperreports:jasperreports:6.17.0
+org.w3c.dom.events.DocumentEvent	public	xml-apis:xml-apis:1.3.04	subtyping	org.apache.xmlgraphics:batik-dom:1.8
+org.apache.batik.ext.awt.image.renderable.TileRable8Bit	public	org.apache.xmlgraphics:batik-awt-util:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+net.sf.jasperreports.components.barcode4j.OrientationRule	public	net.sf.jasperreports:jasperreports:6.17.0	method call	commons-digester:commons-digester:2.1
+org.apache.batik.parser.UnitProcessor$Context	public	org.apache.xmlgraphics:batik-parser:1.8	subtyping	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.parser.PreserveAspectRatioParser	public	org.apache.xmlgraphics:batik-parser:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+org.jfree.chart.plot.MeterInterval	public	org.jfree:jfreechart:1.0.19	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.engine.xml.XmlConstantPropertyRule	public	net.sf.jasperreports:jasperreports:6.17.0	method call	commons-digester:commons-digester:2.1
+net.sf.jasperreports.engine.base.JRBaseChartPlot$JRBaseSeriesColor	public	net.sf.jasperreports:jasperreports:6.17.0	instantiation	ar.com.fdvs:DynamicJasper:5.3.2
+org.bouncycastle.asn1.cms.IssuerAndSerialNumber	public	org.bouncycastle:bcprov-jdk15on:1.64	instantiation	com.lowagie:itext:2.1.7.js8
+org.apache.batik.dom.AbstractParentNode$ElementsByTagName	protected	org.apache.xmlgraphics:batik-dom:1.8	method call	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.anim.values.AnimatableMotionPointValue	public	org.apache.xmlgraphics:batik-anim:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+org.w3c.css.sac.CSSParseException	public	xml-apis:xml-apis-ext:1.3.04	instantiation	org.apache.xmlgraphics:batik-css:1.8
+org.w3c.dom.stylesheets.DocumentStyle	public	xml-apis:xml-apis:1.3.04	cast	org.apache.xmlgraphics:batik-anim:1.8
+net.sf.jasperreports.web.util.WebResourceHandlersExtensionRegistryFactory	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.engine.design.JRDesignRectangle	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+org.jfree.text.TextBox	public	org.jfree:jcommon:1.0.23	instantiation	org.jfree:jfreechart:1.0.19
+org.w3c.css.sac.CSSException	public	xml-apis:xml-apis-ext:1.3.04	instantiation	org.apache.xmlgraphics:batik-css:1.8
+org.apache.batik.dom.svg.SVGPathSegItem	public	org.apache.xmlgraphics:batik-svg-dom:1.8	instantiation	org.apache.xmlgraphics:batik-anim:1.8
+net.sf.jasperreports.engine.design.JRDesignFont	public	net.sf.jasperreports:jasperreports:6.17.0	instantiation	ar.com.fdvs:DynamicJasper:5.3.2
+net.sf.jasperreports.engine.design.JRDesignDataset	public	net.sf.jasperreports:jasperreports:6.17.0	instantiation	ar.com.fdvs:DynamicJasper:5.3.2
+net.sf.jasperreports.charts.design.JRDesignCategorySeries	public	net.sf.jasperreports:jasperreports:6.17.0	instantiation	ar.com.fdvs:DynamicJasper:5.3.2
+java.io.InputStream	public	unknownLib	Class.forName	ar.com.fdvs:DynamicJasper:5.3.2
+net.sf.jasperreports.engine.xml.JRPenFactory	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	commons-digester:commons-digester:2.1
+org.jfree.chart.plot.CategoryPlot	public	org.jfree:jfreechart:1.0.19	method call	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.anim.dom.SVGOMAnimatedPreserveAspectRatio	public	org.apache.xmlgraphics:batik-anim:1.8	cast	org.apache.xmlgraphics:batik-bridge:1.8
+org.jfree.chart.plot.PiePlot	public	org.jfree:jfreechart:1.0.19	method call	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.engine.design.JasperDesign	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+org.jfree.util.BooleanList	public	org.jfree:jcommon:1.0.23	instantiation	org.jfree:jfreechart:1.0.19
+net.sf.jasperreports.engine.xml.JasperDesignFactory	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	commons-digester:commons-digester:2.1
+org.w3c.dom.svg.SVGPathSegLinetoHorizontalAbs	public	xml-apis:xml-apis-ext:1.3.04	cast	org.apache.xmlgraphics:batik-svg-dom:1.8
+org.jfree.chart.plot.dial.DialTextAnnotation	public	org.jfree:jfreechart:1.0.19	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+org.jfree.ui.RectangleInsets	public	org.jfree:jcommon:1.0.23	method call	org.jfree:jfreechart:1.0.19
+net.sf.jasperreports.engine.query.JRHibernateQueryExecuterFactory	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.engine.export.MatcherExporterFilterFactory	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.util.XMLResourceDescriptor	public	org.apache.xmlgraphics:batik-util:1.8	method call	org.apache.xmlgraphics:batik-bridge:1.8
+net.sf.jasperreports.engine.fill.JRFillVariable	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+net.sf.jasperreports.engine.design.JRDesignStyle	public	net.sf.jasperreports:jasperreports:6.17.0	cast	ar.com.fdvs:DynamicJasper:5.3.2
+org.jfree.chart.renderer.xy.CandlestickRenderer	public	org.jfree:jfreechart:1.0.19	cast	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.engine.JRBand	public	net.sf.jasperreports:jasperreports:6.17.0	cast	ar.com.fdvs:DynamicJasper:5.3.2
+org.jfree.chart.plot.dial.DialBackground	public	org.jfree:jfreechart:1.0.19	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+org.jfree.chart.JFreeChart	public	org.jfree:jfreechart:1.0.19	method call	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.util.io.StringNormalizingReader	public	org.apache.xmlgraphics:batik-util:1.8	method call	org.apache.xmlgraphics:batik-parser:1.8
+javax.xml.parsers.SAXParserFactory	public	xml-apis:xml-apis:1.3.04	method call	net.sf.jasperreports:jasperreports:6.17.0
+org.jfree.util.PaintList	public	org.jfree:jcommon:1.0.23	method call	org.jfree:jfreechart:1.0.19
+org.w3c.dom.svg.SVGSVGElement	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-anim:1.8
+net.sf.jasperreports.engine.xml.UuidPropertyRule	public	net.sf.jasperreports:jasperreports:6.17.0	method call	commons-digester:commons-digester:2.1
+org.apache.batik.anim.dom.SVGOMSVGElement	public	org.apache.xmlgraphics:batik-anim:1.8	method call	org.apache.xmlgraphics:batik-dom:1.8
+org.jfree.data.general.DefaultPieDataset	public	org.jfree:jfreechart:1.0.19	method call	net.sf.jasperreports:jasperreports:6.17.0
+org.w3c.dom.events.EventTarget	public	xml-apis:xml-apis:1.3.04	cast	org.apache.xmlgraphics:batik-css:1.8
+net.sf.jasperreports.engine.design.JRDesignDatasetRun	public	net.sf.jasperreports:jasperreports:6.17.0	instantiation	ar.com.fdvs:DynamicJasper:5.3.2
+org.w3c.dom.svg.SVGPathSegMovetoAbs	public	xml-apis:xml-apis-ext:1.3.04	cast	org.apache.xmlgraphics:batik-svg-dom:1.8
+net.sf.jasperreports.charts.design.JRDesignPieSeries	public	net.sf.jasperreports:jasperreports:6.17.0	instantiation	ar.com.fdvs:DynamicJasper:5.3.2
+java.lang.Integer	public	unknownLib	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.anim.dom.SVGOMAnimatedTransformList$BaseSVGTransformList	public	org.apache.xmlgraphics:batik-anim:1.8	method call	org.apache.xmlgraphics:batik-svg-dom:1.8
+org.apache.batik.i18n.Localizable	public	org.apache.xmlgraphics:batik-util:1.8	subtyping	org.apache.xmlgraphics:batik-parser:1.8
+net.sf.jasperreports.crosstabs.design.JRDesignCellContents	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+org.apache.commons.collections4.map.ReferenceMap	public	org.apache.commons:commons-collections4:4.1	method call	net.sf.jasperreports:jasperreports:6.17.0
+org.w3c.dom.svg.SVGMetadataElement	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-anim:1.8
+net.sf.jasperreports.engine.xml.JRStaticTextFactory	public	net.sf.jasperreports:jasperreports:6.17.0	method call	commons-digester:commons-digester:2.1
+org.apache.xmlgraphics.java2d.color.profile.NamedColorProfileParser	public	org.apache.xmlgraphics:xmlgraphics-commons:1.5	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.ext.awt.image.renderable.FloodRable8Bit	public	org.apache.xmlgraphics:batik-awt-util:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.parser.ClockParser	public	org.apache.xmlgraphics:batik-parser:1.8	instantiation	org.apache.xmlgraphics:batik-anim:1.8
+org.apache.batik.dom.svg.AbstractSVGPathSegList$SVGPathSegArcItem	public	org.apache.xmlgraphics:batik-svg-dom:1.8	cast	org.apache.xmlgraphics:batik-anim:1.8
+org.apache.batik.util.ParsedURL	public	org.apache.xmlgraphics:batik-util:1.8	instantiation	org.apache.xmlgraphics:batik-anim:1.8
+java.lang.Long	public	unknownLib	Class.forName	ar.com.fdvs:DynamicJasper:5.3.2
+org.apache.batik.ext.awt.image.renderable.ConvolveMatrixRable8Bit	public	org.apache.xmlgraphics:batik-awt-util:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+java.sql.Date	public	java.sql	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.engine.base.JRBaseReport	public	net.sf.jasperreports:jasperreports:6.17.0	method call	commons-beanutils:commons-beanutils:1.7.0
+org.eclipse.jdt.internal.compiler.Compiler	public	org.eclipse.jdt:ecj:3.21.0	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.engine.design.JRDesignSection	public	net.sf.jasperreports:jasperreports:6.17.0	cast	ar.com.fdvs:DynamicJasper:5.3.2
+org.apache.batik.gvt.RasterImageNode	public	org.apache.xmlgraphics:batik-gvt:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+net.sourceforge.barbecue.BarcodeImageHandler	public	net.sourceforge.barbecue:barbecue:1.5-beta1	method call	ar.com.fdvs:DynamicJasper:5.3.2
+org.apache.batik.dom.util.SAXDocumentFactory	public	org.apache.xmlgraphics:batik-dom:1.8	subtyping	org.apache.xmlgraphics:batik-anim:1.8
+org.apache.batik.gvt.font.GVTFontFamily	public	org.apache.xmlgraphics:batik-gvt:1.8	cast	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.crosstabs.design.JRDesignCrosstabBucket	public	net.sf.jasperreports:jasperreports:6.17.0	instantiation	ar.com.fdvs:DynamicJasper:5.3.2
+net.sf.jasperreports.engine.design.JRDesignElement	public	net.sf.jasperreports:jasperreports:6.17.0	method call	commons-beanutils:commons-beanutils:1.7.0
+org.jfree.util.BooleanUtilities	public	org.jfree:jcommon:1.0.23	method call	org.jfree:jfreechart:1.0.19
+org.eclipse.jdt.internal.compiler.env.ICompilationUnit	public	org.eclipse.jdt:ecj:3.21.0	subtyping	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.engine.xml.JRTextElementFactory	public	net.sf.jasperreports:jasperreports:6.17.0	method call	commons-digester:commons-digester:2.1
+org.w3c.dom.svg.SVGPathSegMovetoRel	public	xml-apis:xml-apis-ext:1.3.04	cast	org.apache.xmlgraphics:batik-svg-dom:1.8
+org.apache.batik.anim.dom.SVGOMRectElement	public	org.apache.xmlgraphics:batik-anim:1.8	cast	org.apache.xmlgraphics:batik-bridge:1.8
+org.jfree.data.xy.XYSeries	public	org.jfree:jfreechart:1.0.19	cast	net.sf.jasperreports:jasperreports:6.17.0
+net.sourceforge.barbecue.linear.ean.UCCEAN128Barcode	public	net.sourceforge.barbecue:barbecue:1.5-beta1	instantiation	ar.com.fdvs:DynamicJasper:5.3.2
+net.sf.jasperreports.engine.design.JRDesignVariable	public	net.sf.jasperreports:jasperreports:6.17.0	instantiation	ar.com.fdvs:DynamicJasper:5.3.2
+org.apache.batik.css.parser.ExtendedParserWrapper	public	org.apache.xmlgraphics:batik-css:1.8	method call	org.apache.xmlgraphics:batik-dom:1.8
+org.jfree.data.xy.XYDataset	public	org.jfree:jfreechart:1.0.19	cast	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.anim.dom.SVGOMSVGElement	public	org.apache.xmlgraphics:batik-anim:1.8	method call	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.gvt.font.Glyph	public	org.apache.xmlgraphics:batik-gvt:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.ext.awt.geom.ExtendedGeneralPath	public	org.apache.xmlgraphics:batik-awt-util:1.8	cast	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.ext.awt.geom.ExtendedGeneralPath	public	org.apache.xmlgraphics:batik-awt-util:1.8	instantiation	org.apache.xmlgraphics:batik-anim:1.8
+org.apache.batik.dom.ExtensibleDOMImplementation$ElementFactory	public	org.apache.xmlgraphics:batik-dom:1.8	cast	org.apache.xmlgraphics:batik-anim:1.8
+org.apache.batik.ext.awt.image.renderable.TurbulenceRable8Bit	public	org.apache.xmlgraphics:batik-awt-util:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.dom.svg.AbstractSVGTransformList$SVGTransformItem	public	org.apache.xmlgraphics:batik-svg-dom:1.8	instantiation	org.apache.xmlgraphics:batik-anim:1.8
+org.jfree.data.gantt.TaskSeries	public	org.jfree:jfreechart:1.0.19	cast	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.gvt.text.AttributedCharacterSpanIterator	public	org.apache.xmlgraphics:batik-gvt:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+java.security.BasicPermission	public	java.security	subtyping	java.sql
+org.apache.batik.util.HaltingThread	public	org.apache.xmlgraphics:batik-util:1.8	method call	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.util.ParsedURL	public	org.apache.xmlgraphics:batik-util:1.8	cast	org.apache.xmlgraphics:batik-bridge:1.8
+net.sf.jasperreports.engine.JasperReport	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.util.SoftReferenceCache	public	org.apache.xmlgraphics:batik-util:1.8	subtyping	org.apache.xmlgraphics:batik-awt-util:1.8
+ar.com.fdvs.dj.domain.DJCrosstabRow	public	ar.com.fdvs:DynamicJasper:5.3.2	method call	commons-beanutils:commons-beanutils:1.7.0
+net.sf.jasperreports.engine.design.JRDesignExpression	public	net.sf.jasperreports:jasperreports:6.17.0	method call	commons-beanutils:commons-beanutils:1.7.0
+net.sf.jasperreports.engine.design.JRDesignTextElement	public	net.sf.jasperreports:jasperreports:6.17.0	method call	commons-beanutils:commons-beanutils:1.7.0
+net.sf.jasperreports.engine.JRAbstractExporter	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+org.xml.sax.InputSource	public	xml-apis:xml-apis:1.3.04	method call	org.apache.xmlgraphics:batik-anim:1.8
+org.apache.batik.util.HaltingThread	public	org.apache.xmlgraphics:batik-util:1.8	method call	org.apache.xmlgraphics:batik-dom:1.8
+org.jfree.data.xy.XYZDataset	public	org.jfree:jfreechart:1.0.19	cast	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.commons.logging.LogFactory	public	commons-logging:commons-logging:1.0.3	method call	commons-digester:commons-digester:2.1
+com.sun.xml.bind.v2.ContextFactory	public	unknownLib	Class.forName	javax.xml.bind
+org.apache.batik.dom.svg.SVGDocumentFactory	public	org.apache.xmlgraphics:batik-svg-dom:1.8	subtyping	org.apache.xmlgraphics:batik-anim:1.8
+org.apache.batik.dom.AbstractElement$NamedNodeHashMap	public	org.apache.xmlgraphics:batik-dom:1.8	subtyping	org.apache.xmlgraphics:batik-anim:1.8
+net.sf.jasperreports.charts.design.JRDesignLinePlot	public	net.sf.jasperreports:jasperreports:6.17.0	cast	ar.com.fdvs:DynamicJasper:5.3.2
+net.sf.jasperreports.types.date.DateRangeQueryClauseExtensions	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+org.w3c.dom.svg.SVGPathSegLinetoHorizontalAbs	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-svg-dom:1.8
+net.sf.jasperreports.engine.xml.JRComponentRule	public	net.sf.jasperreports:jasperreports:6.17.0	method call	commons-digester:commons-digester:2.1
+org.jfree.data.time.TimeSeries	public	org.jfree:jfreechart:1.0.19	cast	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.anim.dom.SVGOMAnimatedPathData	public	org.apache.xmlgraphics:batik-anim:1.8	method call	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.commons.collections4.list.UnmodifiableList	public	org.apache.commons:commons-collections4:4.1	instantiation	ar.com.fdvs:DynamicJasper:5.3.2
+net.sf.jasperreports.engine.xml.JRPenFactory$Left	public	net.sf.jasperreports:jasperreports:6.17.0	method call	commons-digester:commons-digester:2.1
+org.apache.batik.util.SoftDoublyIndexedTable	public	org.apache.xmlgraphics:batik-util:1.8	method call	org.apache.xmlgraphics:batik-dom:1.8
+org.apache.batik.ext.awt.image.SpotLight	public	org.apache.xmlgraphics:batik-awt-util:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+org.jfree.ui.about.ProjectInfo	public	org.jfree:jcommon:1.0.23	subtyping	org.jfree:jfreechart:1.0.19
+org.w3c.dom.Document	public	xml-apis:xml-apis:1.3.04	cast	org.apache.xmlgraphics:batik-dom:1.8
+org.apache.batik.util.SoftDoublyIndexedTable	public	org.apache.xmlgraphics:batik-util:1.8	cast	org.apache.xmlgraphics:batik-dom:1.8
+org.apache.batik.dom.svg.AbstractSVGTransformList$TransformListBuilder	protected	org.apache.xmlgraphics:batik-svg-dom:1.8	method call	org.apache.xmlgraphics:batik-parser:1.8
+org.w3c.css.sac.Parser	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-css:1.8
+org.w3c.css.sac.SelectorFactory	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-css:1.8
+org.bouncycastle.asn1.cms.ContentInfo	public	org.bouncycastle:bcprov-jdk15on:1.64	instantiation	com.lowagie:itext:2.1.7.js8
+org.w3c.dom.Attr	public	xml-apis:xml-apis:1.3.04	cast	org.apache.xmlgraphics:batik-anim:1.8
+java.util.List	public	unknownLib	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+org.w3c.dom.svg.SVGPathSegCurvetoCubicRel	public	xml-apis:xml-apis-ext:1.3.04	cast	org.apache.xmlgraphics:batik-svg-dom:1.8
+org.apache.batik.ext.awt.RadialGradientPaint	public	org.apache.xmlgraphics:batik-awt-util:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+net.sf.jasperreports.charts.design.JRDesignPieDataset	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+net.sf.jasperreports.engine.design.JRDesignImage	public	net.sf.jasperreports:jasperreports:6.17.0	instantiation	ar.com.fdvs:DynamicJasper:5.3.2
+org.jfree.chart.renderer.xy.XYLineAndShapeRenderer	public	org.jfree:jfreechart:1.0.19	cast	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.engine.data.JRBeanCollectionDataSource	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+org.jfree.chart.renderer.xy.XYBubbleRenderer	public	org.jfree:jfreechart:1.0.19	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.gvt.font.Kern	public	org.apache.xmlgraphics:batik-gvt:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.i18n.LocalizableSupport	public	org.apache.xmlgraphics:batik-util:1.8	instantiation	org.apache.xmlgraphics:batik-anim:1.8
+org.jfree.data.time.TimePeriodValuesCollection	public	org.jfree:jfreechart:1.0.19	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+com.lowagie.text.Chunk	public	com.lowagie:itext:2.1.7.js8	method call	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.crosstabs.design.JRDesignCrosstabParameter	public	net.sf.jasperreports:jasperreports:6.17.0	instantiation	ar.com.fdvs:DynamicJasper:5.3.2
+org.apache.batik.bridge.UserAgentAdapter	public	org.apache.xmlgraphics:batik-bridge:1.8	subtyping	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.dom.svg.AbstractSVGNormPathSegList	public	org.apache.xmlgraphics:batik-svg-dom:1.8	subtyping	org.apache.xmlgraphics:batik-anim:1.8
+org.w3c.dom.svg.SVGPathSegCurvetoCubicAbs	public	xml-apis:xml-apis-ext:1.3.04	cast	org.apache.xmlgraphics:batik-svg-dom:1.8
+org.apache.batik.ext.awt.geom.SegmentList	public	org.apache.xmlgraphics:batik-awt-util:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+org.jfree.chart.axis.NumberAxis	public	org.jfree:jfreechart:1.0.19	method call	net.sf.jasperreports:jasperreports:6.17.0
+java.net.URL	public	unknownLib	Class.forName	commons-beanutils:commons-beanutils:1.7.0
+org.jfree.chart.renderer.xy.XYLineAndShapeRenderer	public	org.jfree:jfreechart:1.0.19	method call	net.sf.jasperreports:jasperreports:6.17.0
+org.jfree.chart.ChartRenderingInfo	public	org.jfree:jfreechart:1.0.19	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.gvt.CompositeGraphicsNode	public	org.apache.xmlgraphics:batik-gvt:1.8	cast	org.apache.xmlgraphics:batik-bridge:1.8
+net.sf.jasperreports.engine.type.ResetTypeEnum	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+ar.com.fdvs.dj.domain.DJCRosstabMeasurePrecalculatedTotalProvider	public	ar.com.fdvs:DynamicJasper:5.3.2	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.util.CleanerThread$SoftReferenceCleared	public	org.apache.xmlgraphics:batik-util:1.8	subtyping	org.apache.xmlgraphics:batik-dom:1.8
+org.apache.batik.util.io.StringNormalizingReader	public	org.apache.xmlgraphics:batik-util:1.8	instantiation	org.apache.xmlgraphics:batik-css:1.8
+net.sf.jasperreports.crosstabs.design.JRDesignCrosstabMeasure	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+org.w3c.css.sac.DocumentHandler	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-css:1.8
+org.apache.batik.dom.GenericAttr	public	org.apache.xmlgraphics:batik-dom:1.8	method call	org.apache.xmlgraphics:batik-anim:1.8
+org.apache.batik.anim.dom.SVGOMUseElement	public	org.apache.xmlgraphics:batik-anim:1.8	cast	org.apache.xmlgraphics:batik-bridge:1.8
+org.jfree.data.time.TimeSeries	public	org.jfree:jfreechart:1.0.19	method call	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.dom.events.NodeEventTarget	public	org.apache.xmlgraphics:batik-dom:1.8	subtyping	org.apache.xmlgraphics:batik-anim:1.8
+org.apache.batik.ext.awt.image.renderable.Filter	public	org.apache.xmlgraphics:batik-awt-util:1.8	cast	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.dom.svg.AbstractSVGPreserveAspectRatio	public	org.apache.xmlgraphics:batik-svg-dom:1.8	subtyping	org.apache.xmlgraphics:batik-anim:1.8
+net.sf.jasperreports.engine.design.JRDesignStaticText	public	net.sf.jasperreports:jasperreports:6.17.0	method call	commons-beanutils:commons-beanutils:1.7.0
+net.sf.jasperreports.engine.type.IncrementTypeEnum	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+com.lowagie.text.Rectangle	public	com.lowagie:itext:2.1.7.js8	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+org.w3c.dom.css.DocumentCSS	public	xml-apis:xml-apis:1.3.04	subtyping	org.apache.xmlgraphics:batik-dom:1.8
+org.xml.sax.SAXException	public	xml-apis:xml-apis:1.3.04	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+org.w3c.dom.events.DocumentEvent	public	xml-apis:xml-apis:1.3.04	cast	org.apache.xmlgraphics:batik-bridge:1.8
+net.sf.jasperreports.engine.design.JasperDesign	public	net.sf.jasperreports:jasperreports:6.17.0	subtyping	ar.com.fdvs:DynamicJasper:5.3.2
+net.sf.jasperreports.engine.design.JRDesignTextField	public	net.sf.jasperreports:jasperreports:6.17.0	cast	ar.com.fdvs:DynamicJasper:5.3.2
+org.apache.commons.logging.impl.Log4JLogger	public	commons-logging:commons-logging:1.0.3	method call	commons-digester:commons-digester:2.1
+net.sf.jasperreports.engine.base.JRBaseBoxPen	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+org.apache.batik.dom.events.DOMUIEvent	public	org.apache.xmlgraphics:batik-dom:1.8	cast	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.gvt.CompositeShapePainter	public	org.apache.xmlgraphics:batik-gvt:1.8	method call	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.css.engine.CSSStylableElement	public	org.apache.xmlgraphics:batik-css:1.8	subtyping	org.apache.xmlgraphics:batik-anim:1.8
+net.sf.jasperreports.charts.design.JRDesignXyDataset	public	net.sf.jasperreports:jasperreports:6.17.0	instantiation	ar.com.fdvs:DynamicJasper:5.3.2
+org.w3c.dom.DocumentType	public	xml-apis:xml-apis:1.3.04	subtyping	org.apache.xmlgraphics:batik-dom:1.8
+net.sf.jasperreports.renderers.BatikUserAgent	public	net.sf.jasperreports:jasperreports:6.17.0	method call	org.apache.xmlgraphics:batik-bridge:1.8
+org.w3c.dom.svg.SVGSVGElement	public	xml-apis:xml-apis-ext:1.3.04	cast	org.apache.xmlgraphics:batik-anim:1.8
+org.apache.batik.anim.dom.SVGOMAnimatedLength	public	org.apache.xmlgraphics:batik-anim:1.8	method call	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.css.engine.value.RGBColorValue	public	org.apache.xmlgraphics:batik-css:1.8	method call	org.apache.xmlgraphics:batik-bridge:1.8
+java.lang.Boolean	public	unknownLib	Class.forName	ar.com.fdvs:DynamicJasper:5.3.2
+net.sf.jasperreports.engine.ReportContext	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+java.util.Map	public	unknownLib	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.anim.dom.SVGOMRectElement	public	org.apache.xmlgraphics:batik-anim:1.8	method call	org.apache.xmlgraphics:batik-css:1.8
+org.apache.batik.anim.dom.SVGOMAnimatedLength	public	org.apache.xmlgraphics:batik-anim:1.8	cast	org.apache.xmlgraphics:batik-bridge:1.8
+org.w3c.dom.svg.SVGPathSegLinetoHorizontalRel	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-svg-dom:1.8
+net.sf.jasperreports.engine.design.JRDesignSection	public	net.sf.jasperreports:jasperreports:6.17.0	method call	commons-beanutils:commons-beanutils:1.7.0
+org.w3c.dom.svg.SVGAnimatedInteger	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-anim:1.8
+net.sf.jasperreports.engine.xml.JRXmlDigester	public	net.sf.jasperreports:jasperreports:6.17.0	method call	commons-digester:commons-digester:2.1
+org.jfree.chart.renderer.category.GanttRenderer	public	org.jfree:jfreechart:1.0.19	cast	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.extensions.DefaultExtensionsRegistry	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.engine.xml.JRTextElementFactory	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	commons-digester:commons-digester:2.1
+org.w3c.dom.Attr	public	xml-apis:xml-apis:1.3.04	cast	org.apache.xmlgraphics:batik-bridge:1.8
+net.sf.jasperreports.crosstabs.design.JRDesignCrosstabCell	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+org.w3c.dom.css.CSSValue	public	xml-apis:xml-apis:1.3.04	cast	org.apache.xmlgraphics:batik-css:1.8
+org.apache.batik.gvt.RootGraphicsNode	public	org.apache.xmlgraphics:batik-gvt:1.8	method call	org.apache.xmlgraphics:batik-bridge:1.8
+org.jfree.chart.axis.CategoryAxis3D	public	org.jfree:jfreechart:1.0.19	method call	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.crosstabs.design.JRDesignCrosstab	public	net.sf.jasperreports:jasperreports:6.17.0	instantiation	ar.com.fdvs:DynamicJasper:5.3.2
+java.math.BigInteger	public	unknownLib	Class.forName	commons-beanutils:commons-beanutils:1.7.0
+org.apache.batik.parser.LengthArrayProducer	public	org.apache.xmlgraphics:batik-parser:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.dom.svg.SVGContext	public	org.apache.xmlgraphics:batik-svg-dom:1.8	subtyping	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.dom.GenericAttrNS	public	org.apache.xmlgraphics:batik-dom:1.8	method call	org.apache.xmlgraphics:batik-anim:1.8
+org.apache.batik.ext.awt.image.renderable.SpecularLightingRable8Bit	public	org.apache.xmlgraphics:batik-awt-util:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+java.lang.Float	public	unknownLib	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.engine.design.JRDesignChart	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+org.jfree.chart.labels.CategoryItemLabelGenerator	public	org.jfree:jfreechart:1.0.19	cast	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.engine.xml.JRVariableFactory	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	commons-digester:commons-digester:2.1
+net.sf.jasperreports.engine.design.JRDesignBand	public	net.sf.jasperreports:jasperreports:6.17.0	cast	ar.com.fdvs:DynamicJasper:5.3.2
+org.apache.batik.css.engine.StyleDeclarationProvider	public	org.apache.xmlgraphics:batik-css:1.8	cast	org.apache.xmlgraphics:batik-anim:1.8
+org.apache.commons.collections4.map.LinkedMap	public	org.apache.commons:commons-collections4:4.1	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.engine.util.JEditorPaneMarkupProcessor$HtmlFactory	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.gvt.MarkerShapePainter	public	org.apache.xmlgraphics:batik-gvt:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+com.lowagie.text.Document	public	com.lowagie:itext:2.1.7.js8	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.governors.GovernorExtensionsRegistryFactory	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.commons.logging.impl.Log4JLogger	public	commons-logging:commons-logging:1.0.3	method call	ar.com.fdvs:DynamicJasper:5.3.2
+net.sf.jasperreports.engine.base.JRBaseBoxLeftPen	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+net.sf.jasperreports.engine.design.JRDesignExpression	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+org.w3c.dom.svg.SVGRectElement	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-anim:1.8
+org.apache.commons.beanutils.BeanUtils	public	commons-beanutils:commons-beanutils:1.7.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+org.apache.batik.dom.svg.SVGAnimationContext	public	org.apache.xmlgraphics:batik-svg-dom:1.8	subtyping	org.apache.xmlgraphics:batik-bridge:1.8
+com.lowagie.text.Jpeg	public	com.lowagie:itext:2.1.7.js8	method call	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.commons.beanutils.ConvertUtils	public	commons-beanutils:commons-beanutils:1.7.0	Class.forName	commons-beanutils:commons-beanutils:1.7.0
+net.sf.jasperreports.charts.design.JRDesignTimeSeriesDataset	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+org.apache.commons.logging.LogFactory	public	commons-logging:commons-logging:1.0.3	method call	commons-beanutils:commons-beanutils:1.7.0
+net.sf.jasperreports.engine.design.JRDesignExpression	public	net.sf.jasperreports:jasperreports:6.17.0	cast	ar.com.fdvs:DynamicJasper:5.3.2
+net.sf.jasperreports.repo.DefaultRepositoryExtensionsRegistryFactory	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+net.sourceforge.barbecue.BarcodeFactory	public	net.sourceforge.barbecue:barbecue:1.5-beta1	method call	ar.com.fdvs:DynamicJasper:5.3.2
+interface net.sf.jasperreports.export.PdfReportConfiguration	public	net.sf.jasperreports:jasperreports:6.17.0	method call	net.sf.jasperreports:jasperreports:6.17.0
+interface net.sf.jasperreports.export.XlsReportConfiguration	public	net.sf.jasperreports:jasperreports:6.17.0	method call	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.dom.StyleSheetFactory	public	org.apache.xmlgraphics:batik-dom:1.8	cast	org.apache.xmlgraphics:batik-anim:1.8
+com.sun.org.apache.xerces.internal.util.XMLGrammarPoolImpl	public	unknownLib	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.engine.xml.JasperDesignFactory	public	net.sf.jasperreports:jasperreports:6.17.0	method call	commons-digester:commons-digester:2.1
+net.sf.jasperreports.engine.xml.JRPenFactory$Left	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	commons-digester:commons-digester:2.1
+org.apache.batik.dom.svg.SVGTextContent	public	org.apache.xmlgraphics:batik-svg-dom:1.8	subtyping	org.apache.xmlgraphics:batik-bridge:1.8
+org.jfree.data.time.TimePeriodValues	public	org.jfree:jfreechart:1.0.19	cast	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.anim.dom.SVGOMAnimatedRect	public	org.apache.xmlgraphics:batik-anim:1.8	cast	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.parser.UnitProcessor$Context	public	org.apache.xmlgraphics:batik-parser:1.8	subtyping	org.apache.xmlgraphics:batik-anim:1.8
+net.sf.jasperreports.engine.xml.JRStaticTextFactory	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	commons-digester:commons-digester:2.1
+org.w3c.dom.svg.SVGAnimatedNumber	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-anim:1.8
+org.w3c.dom.DocumentFragment	public	xml-apis:xml-apis:1.3.04	subtyping	org.apache.xmlgraphics:batik-dom:1.8
+org.apache.batik.ext.awt.image.renderable.Filter	public	org.apache.xmlgraphics:batik-awt-util:1.8	subtyping	org.apache.xmlgraphics:batik-gvt:1.8
+org.apache.batik.dom.svg.AbstractSVGPathSegList$SVGPathSegCurvetoCubicSmoothItem	public	org.apache.xmlgraphics:batik-svg-dom:1.8	instantiation	org.apache.xmlgraphics:batik-anim:1.8
+org.jfree.chart.ChartFactory	public	org.jfree:jfreechart:1.0.19	method call	net.sf.jasperreports:jasperreports:6.17.0
+org.w3c.dom.events.EventListener	public	xml-apis:xml-apis:1.3.04	cast	org.apache.xmlgraphics:batik-bridge:1.8
+java.lang.String	public	unknownLib	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+org.w3c.dom.DOMException	public	xml-apis:xml-apis:1.3.04	instantiation	org.apache.xmlgraphics:batik-dom:1.8
+org.apache.batik.parser.FragmentIdentifierParser	public	org.apache.xmlgraphics:batik-parser:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+org.jfree.chart.axis.TickUnits	public	org.jfree:jfreechart:1.0.19	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+org.w3c.dom.events.DocumentEvent	public	xml-apis:xml-apis:1.3.04	cast	org.apache.xmlgraphics:batik-anim:1.8
+org.apache.batik.dom.AbstractDocument	public	org.apache.xmlgraphics:batik-dom:1.8	cast	org.apache.xmlgraphics:batik-bridge:1.8
+org.eclipse.jdt.internal.compiler.CompilationResult	public	org.eclipse.jdt:ecj:3.21.0	method call	net.sf.jasperreports:jasperreports:6.17.0
+org.w3c.css.sac.Parser	public	xml-apis:xml-apis-ext:1.3.04	cast	org.apache.xmlgraphics:batik-dom:1.8
+org.eclipse.jdt.internal.compiler.env.AccessRestriction	public	org.eclipse.jdt:ecj:3.21.0	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+org.jfree.data.time.RegularTimePeriod	public	org.jfree:jfreechart:1.0.19	method call	net.sf.jasperreports:jasperreports:6.17.0
+org.jfree.chart.entity.CategoryItemEntity	public	org.jfree:jfreechart:1.0.19	cast	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.dom.svg.SVGPathSegConstants	public	org.apache.xmlgraphics:batik-svg-dom:1.8	subtyping	org.apache.xmlgraphics:batik-anim:1.8
+org.jfree.ui.RectangleEdge	public	org.jfree:jcommon:1.0.23	cast	org.jfree:jfreechart:1.0.19
+org.apache.batik.css.engine.StyleDeclaration	public	org.apache.xmlgraphics:batik-css:1.8	instantiation	org.apache.xmlgraphics:batik-anim:1.8
+org.hsqldb.jdbcDriver	public	unknownLib	Class.forName	java.sql
+sun.reflect.NativeMethodAccessorImpl	default	unknownLib	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+org.jfree.chart.plot.dial.DialPlot	public	org.jfree:jfreechart:1.0.19	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.engine.fill.JRFillVariable	public	net.sf.jasperreports:jasperreports:6.17.0	cast	ar.com.fdvs:DynamicJasper:5.3.2
+org.eclipse.jdt.internal.compiler.classfmt.ClassFileReader	public	org.eclipse.jdt:ecj:3.21.0	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.engine.design.JRDesignSubreportParameter	public	net.sf.jasperreports:jasperreports:6.17.0	instantiation	ar.com.fdvs:DynamicJasper:5.3.2
+net.sf.jasperreports.engine.xml.JRPropertyObject	public	net.sf.jasperreports:jasperreports:6.17.0	method call	commons-beanutils:commons-beanutils:1.7.0
+net.sf.jasperreports.charts.design.JRDesignPie3DPlot	public	net.sf.jasperreports:jasperreports:6.17.0	cast	ar.com.fdvs:DynamicJasper:5.3.2
+org.apache.batik.i18n.LocalizableSupport	public	org.apache.xmlgraphics:batik-util:1.8	instantiation	org.apache.xmlgraphics:batik-dom:1.8
+org.apache.batik.util.XMLConstants	public	org.apache.xmlgraphics:batik-util:1.8	subtyping	org.apache.xmlgraphics:batik-bridge:1.8
+net.sf.jasperreports.engine.design.JRDesignGroup	public	net.sf.jasperreports:jasperreports:6.17.0	cast	ar.com.fdvs:DynamicJasper:5.3.2
+net.sf.jasperreports.engine.fill.ThreadPoolSubreportRunnerFactory	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+com.sun.xml.internal.stream.events.XMLEventFactoryImpl	public	unknownLib	Class.forName	javax.xml.stream
+java.lang.Byte	public	unknownLib	Class.forName	commons-beanutils:commons-beanutils:1.7.0
+org.bouncycastle.asn1.ASN1Set	public	org.bouncycastle:bcprov-jdk15on:1.64	cast	com.lowagie:itext:2.1.7.js8
+org.jfree.chart.plot.dial.DialCap	public	org.jfree:jfreechart:1.0.19	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.dom.svg.ListBuilder	public	org.apache.xmlgraphics:batik-svg-dom:1.8	instantiation	org.apache.xmlgraphics:batik-anim:1.8
+net.sf.jasperreports.engine.xml.JRBoxFactory	public	net.sf.jasperreports:jasperreports:6.17.0	method call	commons-digester:commons-digester:2.1
+org.w3c.dom.DOMImplementation	public	xml-apis:xml-apis:1.3.04	cast	org.apache.xmlgraphics:batik-dom:1.8
+java.sql.ResultSet	public	java.sql	cast	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.engine.export.JROriginExporterFilterFactory	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.anim.dom.SVGOMSVGElement	public	org.apache.xmlgraphics:batik-anim:1.8	method call	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.engine.util.JRExpressionUtil	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+com.lowagie.text.pdf.PdfWriter	public	com.lowagie:itext:2.1.7.js8	method call	net.sf.jasperreports:jasperreports:6.17.0
+java.util.Collection	public	unknownLib	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+com.lowagie.text.Font	public	com.lowagie:itext:2.1.7.js8	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.xmlgraphics.java2d.color.ColorWithAlternatives	public	org.apache.xmlgraphics:xmlgraphics-commons:1.5	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+net.sf.jasperreports.engine.xml.JRPartComponentRule	public	net.sf.jasperreports:jasperreports:6.17.0	method call	commons-digester:commons-digester:2.1
+org.jfree.ui.Size2D	public	org.jfree:jcommon:1.0.23	instantiation	org.jfree:jfreechart:1.0.19
+org.apache.batik.dom.svg.SVGOMAngle	public	org.apache.xmlgraphics:batik-svg-dom:1.8	subtyping	org.apache.xmlgraphics:batik-anim:1.8
+org.xml.sax.InputSource	public	xml-apis:xml-apis:1.3.04	cast	commons-digester:commons-digester:2.1
+org.apache.batik.parser.ClockParser	public	org.apache.xmlgraphics:batik-parser:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+net.sf.jasperreports.engine.JasperCompileManager	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+java.security.MessageDigest$Delegate	default	java.security	method call	com.lowagie:itext:2.1.7.js8
+org.apache.batik.util.SVGConstants	public	org.apache.xmlgraphics:batik-util:1.8	subtyping	org.apache.xmlgraphics:batik-bridge:1.8
+org.bouncycastle.asn1.DEROctetString	public	org.bouncycastle:bcprov-jdk15on:1.64	instantiation	com.lowagie:itext:2.1.7.js8
+org.apache.batik.util.ParsedURL	public	org.apache.xmlgraphics:batik-util:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+net.sf.jasperreports.engine.xml.JRPenFactory$Right	public	net.sf.jasperreports:jasperreports:6.17.0	method call	commons-digester:commons-digester:2.1
+net.sf.jasperreports.engine.design.JRDesignVariable	public	net.sf.jasperreports:jasperreports:6.17.0	cast	ar.com.fdvs:DynamicJasper:5.3.2
+net.sf.jasperreports.engine.xml.StyleContainerRule	public	net.sf.jasperreports:jasperreports:6.17.0	method call	commons-digester:commons-digester:2.1
+net.sf.jasperreports.engine.xml.JRFontFactory$TextElementFontFactory	public	net.sf.jasperreports:jasperreports:6.17.0	method call	commons-digester:commons-digester:2.1
+org.apache.batik.dom.svg.SVGSVGContext	public	org.apache.xmlgraphics:batik-svg-dom:1.8	subtyping	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.gvt.ShapeNode	public	org.apache.xmlgraphics:batik-gvt:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+org.jfree.util.PublicCloneable	public	org.jfree:jcommon:1.0.23	subtyping	org.jfree:jfreechart:1.0.19
+org.apache.batik.bridge.FontFamilyResolver	public	org.apache.xmlgraphics:batik-bridge:1.8	subtyping	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.engine.JasperReport	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+org.w3c.dom.svg.SVGGradientElement	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-anim:1.8
+org.apache.batik.parser.AWTTransformProducer	public	org.apache.xmlgraphics:batik-parser:1.8	subtyping	org.apache.xmlgraphics:batik-bridge:1.8
+net.sf.jasperreports.engine.type.RotationEnum	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+com.lowagie.text.pdf.RadioCheckField	public	com.lowagie:itext:2.1.7.js8	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+org.w3c.dom.svg.SVGGElement	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-anim:1.8
+org.apache.batik.dom.svg.LiveAttributeValue	public	org.apache.xmlgraphics:batik-svg-dom:1.8	subtyping	org.apache.xmlgraphics:batik-anim:1.8
+net.sf.jasperreports.engine.type.HorizontalTextAlignEnum	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+net.sf.jasperreports.engine.style.PropertyStyleProviderExtensionFactory	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.dom.svg.ListBuilder	public	org.apache.xmlgraphics:batik-svg-dom:1.8	method call	org.apache.xmlgraphics:batik-anim:1.8
+java.security.Permissions	public	java.security	instantiation	xml-apis:xml-apis:1.3.04
+org.w3c.dom.events.EventTarget	public	xml-apis:xml-apis:1.3.04	subtyping	org.apache.xmlgraphics:batik-dom:1.8
+org.apache.batik.css.engine.CSSNavigableNode	public	org.apache.xmlgraphics:batik-css:1.8	subtyping	org.apache.xmlgraphics:batik-anim:1.8
+org.apache.batik.anim.dom.SVGOMStopElement	public	org.apache.xmlgraphics:batik-anim:1.8	method call	org.apache.xmlgraphics:batik-css:1.8
+org.apache.commons.digester.SetNestedPropertiesRule	public	commons-digester:commons-digester:2.1	method call	net.sf.jasperreports:jasperreports:6.17.0
+org.jfree.chart.title.TextTitle	public	org.jfree:jfreechart:1.0.19	method call	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.ext.awt.image.renderable.GaussianBlurRable8Bit	public	org.apache.xmlgraphics:batik-awt-util:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+net.sf.jasperreports.charts.design.JRDesignBar3DPlot	public	net.sf.jasperreports:jasperreports:6.17.0	cast	ar.com.fdvs:DynamicJasper:5.3.2
+net.sf.jasperreports.engine.xml.JRSectionFactory$DetailSectionFactory	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	commons-digester:commons-digester:2.1
+net.sf.jasperreports.crosstabs.design.JRDesignCrosstabColumnGroup	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+net.sf.jasperreports.charts.design.JRDesignPieDataset	public	net.sf.jasperreports:jasperreports:6.17.0	instantiation	ar.com.fdvs:DynamicJasper:5.3.2
+org.xml.sax.ext.LexicalHandler	public	xml-apis:xml-apis:1.3.04	subtyping	org.apache.xmlgraphics:batik-dom:1.8
+java.security.PrivilegedAction	public	java.security	subtyping	commons-logging:commons-logging:1.0.3
+org.apache.batik.anim.dom.SVGOMTextPositioningElement	public	org.apache.xmlgraphics:batik-anim:1.8	cast	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.anim.dom.SVGOMAnimatedPathData$AnimSVGPathSegList	public	org.apache.xmlgraphics:batik-anim:1.8	method call	org.apache.xmlgraphics:batik-svg-dom:1.8
+ar.com.fdvs.dj.core.layout.AbstractLayoutManager$1	default	ar.com.fdvs:DynamicJasper:5.3.2	method call	commons-collections:commons-collections:3.2.2
+org.apache.batik.css.dom.CSSOMStoredStyleDeclaration	public	org.apache.xmlgraphics:batik-css:1.8	subtyping	org.apache.xmlgraphics:batik-anim:1.8
+org.apache.batik.anim.dom.SAXSVGDocumentFactory	public	org.apache.xmlgraphics:batik-anim:1.8	method call	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.commons.collections4.multimap.ArrayListValuedHashMap	public	org.apache.commons:commons-collections4:4.1	method call	ar.com.fdvs:DynamicJasper:5.3.2
+org.apache.batik.css.engine.CSSNavigableNode	public	org.apache.xmlgraphics:batik-css:1.8	cast	org.apache.xmlgraphics:batik-anim:1.8
+net.sf.jasperreports.engine.xml.JRFieldFactory	public	net.sf.jasperreports:jasperreports:6.17.0	method call	commons-digester:commons-digester:2.1
+net.sf.jasperreports.crosstabs.design.JRDesignCrosstabRowGroup	public	net.sf.jasperreports:jasperreports:6.17.0	instantiation	ar.com.fdvs:DynamicJasper:5.3.2
+net.sf.jasperreports.engine.design.JRDesignStyle	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+org.apache.batik.i18n.Localizable	public	org.apache.xmlgraphics:batik-util:1.8	subtyping	org.apache.xmlgraphics:batik-css:1.8
+org.apache.batik.gvt.StrokeShapePainter	public	org.apache.xmlgraphics:batik-gvt:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.anim.SimpleAnimation	public	org.apache.xmlgraphics:batik-anim:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+org.jfree.data.time.TimeSeriesCollection	public	org.jfree:jfreechart:1.0.19	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+org.w3c.dom.css.ViewCSS	public	xml-apis:xml-apis:1.3.04	cast	org.apache.xmlgraphics:batik-anim:1.8
+org.apache.commons.collections4.map.ReferenceMap	public	org.apache.commons:commons-collections4:4.1	cast	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.engine.query.JRJdbcQueryExecuterFactory	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.bridge.BridgeContext	public	org.apache.xmlgraphics:batik-bridge:1.8	method call	org.apache.xmlgraphics:batik-css:1.8
+org.jfree.chart.labels.StandardXYItemLabelGenerator	public	org.jfree:jfreechart:1.0.19	subtyping	net.sf.jasperreports:jasperreports:6.17.0
+java.lang.Object	public	unknownLib	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.engine.JasperFillManager	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+net.sf.jasperreports.engine.util.xml.XalanXPathExecuterFactory	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.ext.awt.geom.ExtendedGeneralPath	public	org.apache.xmlgraphics:batik-awt-util:1.8	instantiation	org.apache.xmlgraphics:batik-parser:1.8
+net.sf.jasperreports.components.headertoolbar.HeaderToolbarParameterContributorExtensionFactory	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.parser.AWTPathProducer	public	org.apache.xmlgraphics:batik-parser:1.8	method call	org.apache.xmlgraphics:batik-svg-dom:1.8
+org.apache.batik.anim.AnimationEngine	public	org.apache.xmlgraphics:batik-anim:1.8	subtyping	org.apache.xmlgraphics:batik-bridge:1.8
+org.w3c.dom.svg.SVGPathSegMovetoAbs	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-svg-dom:1.8
+com.lowagie.text.Chunk	public	com.lowagie:itext:2.1.7.js8	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+org.w3c.dom.svg.SVGTextPositioningElement	public	xml-apis:xml-apis-ext:1.3.04	cast	org.apache.xmlgraphics:batik-bridge:1.8
+org.w3c.dom.svg.SVGPathSeg	public	xml-apis:xml-apis-ext:1.3.04	cast	org.apache.xmlgraphics:batik-svg-dom:1.8
+org.w3c.dom.svg.SVGStopElement	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-anim:1.8
+org.w3c.dom.svg.SVGPathSeg	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-svg-dom:1.8
+org.apache.batik.gvt.text.TextPaintInfo	public	org.apache.xmlgraphics:batik-gvt:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.css.dom.CSSOMSVGViewCSS	public	org.apache.xmlgraphics:batik-css:1.8	instantiation	org.apache.xmlgraphics:batik-anim:1.8
+org.jfree.chart.renderer.category.StackedBarRenderer	public	org.jfree:jfreechart:1.0.19	method call	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.engine.design.JRDesignElement	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	commons-digester:commons-digester:2.1
+org.w3c.dom.svg.SVGLength	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-anim:1.8
+org.apache.batik.anim.dom.SVGOMAnimatedPathData$BaseSVGPathSegList	public	org.apache.xmlgraphics:batik-anim:1.8	method call	org.apache.xmlgraphics:batik-svg-dom:1.8
+net.sf.jasperreports.engine.xml.JRPenFactory$Bottom	public	net.sf.jasperreports:jasperreports:6.17.0	method call	commons-digester:commons-digester:2.1
+org.apache.xmlgraphics.java2d.color.ICCColorSpaceWithIntent	public	org.apache.xmlgraphics:xmlgraphics-commons:1.5	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+org.jfree.util.PaintList	public	org.jfree:jcommon:1.0.23	cast	org.jfree:jfreechart:1.0.19
+org.jfree.data.xy.XYSeries	public	org.jfree:jfreechart:1.0.19	method call	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.gvt.ShapeNode	public	org.apache.xmlgraphics:batik-gvt:1.8	method call	org.apache.xmlgraphics:batik-bridge:1.8
+org.w3c.dom.svg.SVGPathSegMovetoRel	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-svg-dom:1.8
+org.eclipse.jdt.internal.compiler.impl.CompilerOptions	public	org.eclipse.jdt:ecj:3.21.0	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+java.util.ResourceBundle	public	unknownLib	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.dom.GenericComment	public	org.apache.xmlgraphics:batik-dom:1.8	instantiation	org.apache.xmlgraphics:batik-anim:1.8
+net.sf.jasperreports.engine.JRException	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+org.apache.batik.dom.svg.AbstractSVGPathSegList$SVGPathSegLinetoHorizontalItem	public	org.apache.xmlgraphics:batik-svg-dom:1.8	cast	org.apache.xmlgraphics:batik-anim:1.8
+org.apache.batik.ext.awt.image.renderable.MorphologyRable8Bit	public	org.apache.xmlgraphics:batik-awt-util:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.anim.dom.SVGOMSVGElement	public	org.apache.xmlgraphics:batik-anim:1.8	cast	org.apache.xmlgraphics:batik-bridge:1.8
+java.lang.Boolean	public	unknownLib	Class.forName	commons-beanutils:commons-beanutils:1.7.0
+org.w3c.css.sac.LexicalUnit	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-css:1.8
+org.apache.batik.css.engine.value.svg12.CIELabColor	public	org.apache.xmlgraphics:batik-css:1.8	cast	org.apache.xmlgraphics:batik-bridge:1.8
+net.sf.jasperreports.engine.xml.JRElementFactory	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	commons-digester:commons-digester:2.1
+org.jfree.ui.Size2D	public	org.jfree:jcommon:1.0.23	method call	org.jfree:jfreechart:1.0.19
+org.xml.sax.helpers.DefaultHandler	public	xml-apis:xml-apis:1.3.04	subtyping	net.sf.jasperreports:jasperreports:6.17.0
+java.security.BasicPermissionCollection	default	java.security	method call	javax.xml.bind
+ar.com.fdvs.dj.domain.CustomExpression	public	ar.com.fdvs:DynamicJasper:5.3.2	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.anim.dom.SVGOMGElement	public	org.apache.xmlgraphics:batik-anim:1.8	method call	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.commons.beanutils.MethodUtils	public	commons-beanutils:commons-beanutils:1.7.0	Class.forName	commons-beanutils:commons-beanutils:1.7.0
+org.jfree.chart.entity.XYItemEntity	public	org.jfree:jfreechart:1.0.19	cast	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.engine.type.CalculationEnum	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+java.lang.StringBuilder	public	unknownLib	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.anim.dom.SVGOMDocument	public	org.apache.xmlgraphics:batik-anim:1.8	method call	org.apache.xmlgraphics:batik-dom:1.8
+org.w3c.dom.svg.SVGTransform	public	xml-apis:xml-apis-ext:1.3.04	cast	org.apache.xmlgraphics:batik-anim:1.8
+org.apache.batik.dom.AbstractNode	public	org.apache.xmlgraphics:batik-dom:1.8	cast	org.apache.xmlgraphics:batik-bridge:1.8
+org.jfree.chart.StandardChartTheme	public	org.jfree:jfreechart:1.0.19	method call	net.sf.jasperreports:jasperreports:6.17.0
+com.lowagie.text.pdf.ColumnText	public	com.lowagie:itext:2.1.7.js8	method call	net.sf.jasperreports:jasperreports:6.17.0
+org.w3c.dom.svg.SVGException	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-svg-dom:1.8
+net.sf.jasperreports.charts.design.JRDesignTimeSeriesPlot	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+org.apache.commons.beanutils.BeanUtils	public	commons-beanutils:commons-beanutils:1.7.0	Class.forName	commons-beanutils:commons-beanutils:1.7.0
+org.apache.batik.css.engine.CSSContext	public	org.apache.xmlgraphics:batik-css:1.8	subtyping	org.apache.xmlgraphics:batik-bridge:1.8
+org.jfree.util.StrokeList	public	org.jfree:jcommon:1.0.23	method call	org.jfree:jfreechart:1.0.19
+org.apache.batik.ext.awt.image.renderable.AffineRable8Bit	public	org.apache.xmlgraphics:batik-awt-util:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.bridge.BridgeContext	public	org.apache.xmlgraphics:batik-bridge:1.8	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.crosstabs.design.JRDesignCrosstabParameter	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+net.sf.jasperreports.engine.xml.JRExpressionFactory$ArbitraryExpressionFactory	public	net.sf.jasperreports:jasperreports:6.17.0	method call	commons-digester:commons-digester:2.1
+org.apache.batik.ext.awt.geom.PathLength	public	org.apache.xmlgraphics:batik-awt-util:1.8	instantiation	org.apache.xmlgraphics:batik-anim:1.8
+org.apache.batik.anim.dom.SVGOMDefsElement	public	org.apache.xmlgraphics:batik-anim:1.8	method call	org.apache.xmlgraphics:batik-bridge:1.8
+com.lowagie.text.pdf.PdfICCBased	public	com.lowagie:itext:2.1.7.js8	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.anim.dom.SVGOMRectElement	public	org.apache.xmlgraphics:batik-anim:1.8	method call	org.apache.xmlgraphics:batik-bridge:1.8
+javax.xml.parsers.DocumentBuilderFactory	public	xml-apis:xml-apis:1.3.04	method call	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.anim.dom.SAXSVGDocumentFactory	public	org.apache.xmlgraphics:batik-anim:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+org.jfree.ui.Layer	public	org.jfree:jcommon:1.0.23	method call	org.jfree:jfreechart:1.0.19
+org.xml.sax.SAXException	public	xml-apis:xml-apis:1.3.04	instantiation	org.apache.xmlgraphics:batik-dom:1.8
+org.apache.batik.anim.dom.SVGOMAnimatedTransformList	public	org.apache.xmlgraphics:batik-anim:1.8	cast	org.apache.xmlgraphics:batik-bridge:1.8
+net.sf.jasperreports.crosstabs.design.JRDesignCrosstabCell	public	net.sf.jasperreports:jasperreports:6.17.0	instantiation	ar.com.fdvs:DynamicJasper:5.3.2
+org.jfree.util.PaintList	public	org.jfree:jcommon:1.0.23	instantiation	org.jfree:jfreechart:1.0.19
+org.w3c.dom.Element	public	xml-apis:xml-apis:1.3.04	subtyping	org.apache.xmlgraphics:batik-dom:1.8
+org.apache.commons.collections4.multimap.ArrayListValuedHashMap	public	org.apache.commons:commons-collections4:4.1	instantiation	ar.com.fdvs:DynamicJasper:5.3.2
+org.apache.commons.logging.LogFactory	public	commons-logging:commons-logging:1.0.3	Class.forName	commons-logging:commons-logging:1.0.3
+org.apache.batik.util.HaltingThread	public	org.apache.xmlgraphics:batik-util:1.8	method call	org.apache.xmlgraphics:batik-gvt:1.8
+org.apache.batik.dom.GenericDocumentFragment	public	org.apache.xmlgraphics:batik-dom:1.8	instantiation	org.apache.xmlgraphics:batik-anim:1.8
+java.sql.Date	public	java.sql	Class.forName	commons-beanutils:commons-beanutils:1.7.0
+org.w3c.dom.svg.SVGAnimatedString	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-anim:1.8
+org.apache.batik.anim.dom.SVGOMAnimatedTransformList	public	org.apache.xmlgraphics:batik-anim:1.8	method call	org.apache.xmlgraphics:batik-bridge:1.8
+net.sf.jasperreports.engine.JRField	public	net.sf.jasperreports:jasperreports:6.17.0	cast	ar.com.fdvs:DynamicJasper:5.3.2
+net.sf.jasperreports.engine.util.FormatFactory	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.dom.util.DocumentFactory	public	org.apache.xmlgraphics:batik-dom:1.8	subtyping	org.apache.xmlgraphics:batik-svg-dom:1.8
+org.w3c.dom.svg.SVGAnimatedLengthList	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-anim:1.8
+org.apache.commons.collections4.map.ReferenceMap	public	org.apache.commons:commons-collections4:4.1	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+org.w3c.css.sac.InputSource	public	xml-apis:xml-apis-ext:1.3.04	instantiation	org.apache.xmlgraphics:batik-anim:1.8
+org.jfree.chart.axis.ValueAxis	public	org.jfree:jfreechart:1.0.19	cast	net.sf.jasperreports:jasperreports:6.17.0
+org.w3c.dom.Attr	public	xml-apis:xml-apis:1.3.04	subtyping	org.apache.xmlgraphics:batik-dom:1.8
+org.w3c.dom.events.MutationNameEvent	public	org.apache.xmlgraphics:batik-ext:1.8	cast	org.apache.xmlgraphics:batik-dom:1.8
+org.apache.batik.dom.GenericCDATASection	public	org.apache.xmlgraphics:batik-dom:1.8	instantiation	org.apache.xmlgraphics:batik-anim:1.8
+net.sf.jasperreports.engine.xml.JRReportSaxParserFactory	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+org.jfree.date.SerialDate	public	org.jfree:jcommon:1.0.23	method call	org.jfree:jfreechart:1.0.19
+com.sun.xml.internal.stream.XMLInputFactoryImpl	public	unknownLib	Class.forName	javax.xml.stream
+org.jfree.chart.title.LegendTitle	public	org.jfree:jfreechart:1.0.19	method call	net.sf.jasperreports:jasperreports:6.17.0
+org.jfree.chart.axis.NumberTickUnit	public	org.jfree:jfreechart:1.0.19	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+org.w3c.dom.css.DocumentCSS	public	xml-apis:xml-apis:1.3.04	cast	org.apache.xmlgraphics:batik-anim:1.8
+ar.com.fdvs.dj.domain.DjBaseMMValueFormatter	public	ar.com.fdvs:DynamicJasper:5.3.2	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.commons.beanutils.PropertyUtils	public	commons-beanutils:commons-beanutils:1.7.0	Class.forName	commons-beanutils:commons-beanutils:1.7.0
+net.sf.jasperreports.engine.base.JRBaseBoxBottomPen	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+org.apache.batik.dom.svg.SVGAnimatedPathDataSupport	public	org.apache.xmlgraphics:batik-svg-dom:1.8	method call	org.apache.xmlgraphics:batik-bridge:1.8
+org.w3c.dom.events.MouseEvent	public	xml-apis:xml-apis:1.3.04	cast	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.log4j.Logger	public	unknownLib	Class.forName	commons-logging:commons-logging:1.0.3
+org.apache.batik.css.engine.StyleMap	public	org.apache.xmlgraphics:batik-css:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+org.jfree.data.general.DefaultValueDataset	public	org.jfree:jfreechart:1.0.19	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.engine.fill.JRFillField	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.engine.xml.JRRectangleFactory	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	commons-digester:commons-digester:2.1
+java.security.PrivilegedAction	public	java.security	subtyping	javax.xml.bind
+com.lowagie.text.pdf.PdfOutline	public	com.lowagie:itext:2.1.7.js8	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+org.w3c.dom.svg.SVGUseElement	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-anim:1.8
+org.apache.batik.anim.dom.SVGOMMarkerElement	public	org.apache.xmlgraphics:batik-anim:1.8	method call	org.apache.xmlgraphics:batik-bridge:1.8
+org.w3c.dom.events.EventTarget	public	xml-apis:xml-apis:1.3.04	cast	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.commons.logging.impl.LogFactoryImpl	public	commons-logging:commons-logging:1.0.3	Class.forName	commons-logging:commons-logging:1.0.3
+org.apache.batik.util.SVGConstants	public	org.apache.xmlgraphics:batik-util:1.8	subtyping	org.apache.xmlgraphics:batik-anim:1.8
+org.apache.batik.dom.svg.LiveAttributeException	public	org.apache.xmlgraphics:batik-svg-dom:1.8	instantiation	org.apache.xmlgraphics:batik-anim:1.8
+org.jfree.chart.renderer.xy.HighLowRenderer	public	org.jfree:jfreechart:1.0.19	cast	net.sf.jasperreports:jasperreports:6.17.0
+org.w3c.dom.svg.SVGLinearGradientElement	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-anim:1.8
+org.apache.batik.dom.GenericAttr	public	org.apache.xmlgraphics:batik-dom:1.8	instantiation	org.apache.xmlgraphics:batik-anim:1.8
+org.w3c.dom.events.EventListener	public	xml-apis:xml-apis:1.3.04	subtyping	org.apache.xmlgraphics:batik-anim:1.8
+org.apache.batik.anim.dom.SVGOMPathElement	public	org.apache.xmlgraphics:batik-anim:1.8	method call	org.apache.xmlgraphics:batik-bridge:1.8
+org.xml.sax.InputSource	public	xml-apis:xml-apis:1.3.04	instantiation	org.apache.xmlgraphics:batik-anim:1.8
+org.bouncycastle.asn1.DERSet	public	org.bouncycastle:bcprov-jdk15on:1.64	instantiation	com.lowagie:itext:2.1.7.js8
+org.w3c.dom.svg.SVGPathSegArcRel	public	xml-apis:xml-apis-ext:1.3.04	cast	org.apache.xmlgraphics:batik-svg-dom:1.8
+org.apache.batik.anim.dom.SVGOMPathElement	public	org.apache.xmlgraphics:batik-anim:1.8	cast	org.apache.xmlgraphics:batik-bridge:1.8
+org.w3c.dom.UserDataHandler	public	xml-apis:xml-apis:1.3.04	cast	org.apache.xmlgraphics:batik-dom:1.8
+com.lowagie.text.pdf.PdfArray	public	com.lowagie:itext:2.1.7.js8	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+net.sf.jasperreports.engine.xml.JRBandFactory	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	commons-digester:commons-digester:2.1
+net.sf.jasperreports.crosstabs.design.JRDesignCrosstabMeasure	public	net.sf.jasperreports:jasperreports:6.17.0	instantiation	ar.com.fdvs:DynamicJasper:5.3.2
+com.lowagie.text.pdf.ColumnText	public	com.lowagie:itext:2.1.7.js8	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+com.lowagie.text.FontFactory	public	com.lowagie:itext:2.1.7.js8	method call	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.ext.awt.geom.PathLength	public	org.apache.xmlgraphics:batik-awt-util:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+net.sf.jasperreports.engine.type.VerticalTextAlignEnum	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+org.bouncycastle.asn1.cms.RecipientInfo	public	org.bouncycastle:bcprov-jdk15on:1.64	instantiation	com.lowagie:itext:2.1.7.js8
+org.w3c.dom.Document	public	xml-apis:xml-apis:1.3.04	subtyping	xml-apis:xml-apis-ext:1.3.04
+org.w3c.dom.CharacterData	public	xml-apis:xml-apis:1.3.04	subtyping	org.apache.xmlgraphics:batik-dom:1.8
+java.security.SecureRandom	public	java.security	instantiation	com.lowagie:itext:2.1.7.js8
+org.apache.batik.anim.dom.SVGOMRadialGradientElement	public	org.apache.xmlgraphics:batik-anim:1.8	method call	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.css.engine.value.svg12.DeviceColor	public	org.apache.xmlgraphics:batik-css:1.8	cast	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.gvt.StrokeShapePainter	public	org.apache.xmlgraphics:batik-gvt:1.8	method call	org.apache.xmlgraphics:batik-bridge:1.8
+net.sf.jasperreports.engine.design.JRDesignDatasetRun	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+org.jfree.data.category.DefaultCategoryDataset	public	org.jfree:jfreechart:1.0.19	method call	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.dom.svg.LiveAttributeValue	public	org.apache.xmlgraphics:batik-svg-dom:1.8	cast	org.apache.xmlgraphics:batik-anim:1.8
+org.apache.batik.dom.svg.SVGOMAngle	public	org.apache.xmlgraphics:batik-svg-dom:1.8	instantiation	org.apache.xmlgraphics:batik-anim:1.8
+org.w3c.dom.css.CSSStyleDeclaration	public	xml-apis:xml-apis:1.3.04	subtyping	org.apache.xmlgraphics:batik-css:1.8
+org.w3c.dom.NodeList	public	xml-apis:xml-apis:1.3.04	subtyping	org.apache.xmlgraphics:batik-dom:1.8
+net.sf.jasperreports.engine.design.JasperDesign	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	commons-digester:commons-digester:2.1
+net.sf.jasperreports.engine.export.ElementKeyExporterFilterFactory	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+org.jfree.chart.entity.PieSectionEntity	public	org.jfree:jfreechart:1.0.19	cast	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.gvt.font.GVTFontFace	public	org.apache.xmlgraphics:batik-gvt:1.8	subtyping	org.apache.xmlgraphics:batik-bridge:1.8
+org.w3c.dom.svg.SVGPathSegArcAbs	public	xml-apis:xml-apis-ext:1.3.04	cast	org.apache.xmlgraphics:batik-svg-dom:1.8
+org.apache.batik.dom.GenericText	public	org.apache.xmlgraphics:batik-dom:1.8	method call	org.apache.xmlgraphics:batik-bridge:1.8
+net.sf.jasperreports.engine.xml.JRLineFactory	public	net.sf.jasperreports:jasperreports:6.17.0	method call	commons-digester:commons-digester:2.1
+java.lang.Character	public	unknownLib	Class.forName	commons-beanutils:commons-beanutils:1.7.0
+net.sf.jasperreports.engine.type.HorizontalAlignEnum	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+org.apache.batik.parser.TransformListHandler	public	org.apache.xmlgraphics:batik-parser:1.8	subtyping	org.apache.xmlgraphics:batik-svg-dom:1.8
+org.jfree.text.TextBlock	public	org.jfree:jcommon:1.0.23	method call	org.jfree:jfreechart:1.0.19
+org.apache.batik.css.engine.value.StringValue	public	org.apache.xmlgraphics:batik-css:1.8	method call	org.apache.xmlgraphics:batik-bridge:1.8
+org.w3c.dom.css.DOMImplementationCSS	public	xml-apis:xml-apis:1.3.04	subtyping	org.apache.xmlgraphics:batik-dom:1.8
+net.sf.jasperreports.charts.design.JRDesignXySeries	public	net.sf.jasperreports:jasperreports:6.17.0	instantiation	ar.com.fdvs:DynamicJasper:5.3.2
+com.lowagie.text.pdf.PdfContentByte	public	com.lowagie:itext:2.1.7.js8	method call	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.anim.dom.SVGOMDocument	public	org.apache.xmlgraphics:batik-anim:1.8	cast	org.apache.xmlgraphics:batik-script:1.8
+ar.com.fdvs.dj.domain.Style	public	ar.com.fdvs:DynamicJasper:5.3.2	method call	commons-beanutils:commons-beanutils:1.7.0
+org.apache.batik.ext.awt.color.NamedProfileCache	public	org.apache.xmlgraphics:batik-awt-util:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+org.w3c.dom.svg.SVGMarkerElement	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-anim:1.8
+java.math.BigDecimal	public	unknownLib	Class.forName	commons-beanutils:commons-beanutils:1.7.0
+ar.com.fdvs.dj.core.DJDefaultScriptlet	public	ar.com.fdvs:DynamicJasper:5.3.2	method call	net.sf.jasperreports:jasperreports:6.17.0
+org.jfree.util.ObjectList	public	org.jfree:jcommon:1.0.23	cast	org.jfree:jfreechart:1.0.19
+org.apache.batik.bridge.RhinoInterpreterFactory	public	org.apache.xmlgraphics:batik-bridge:1.8	Class.forName	org.apache.xmlgraphics:batik-util:1.8
+net.sf.jasperreports.components.ComponentsExtensionsRegistryFactory	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+org.jfree.data.gantt.GanttCategoryDataset	public	org.jfree:jfreechart:1.0.19	cast	net.sf.jasperreports:jasperreports:6.17.0
+org.w3c.dom.svg.SVGAnimatedEnumeration	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-anim:1.8
+net.sf.jasperreports.engine.xml.JRPropertyFactory	public	net.sf.jasperreports:jasperreports:6.17.0	Class.forName	commons-digester:commons-digester:2.1
+org.w3c.dom.Element	public	xml-apis:xml-apis:1.3.04	subtyping	xml-apis:xml-apis-ext:1.3.04
+org.apache.batik.anim.TransformAnimation	public	org.apache.xmlgraphics:batik-anim:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.dom.GenericAttr	public	org.apache.xmlgraphics:batik-dom:1.8	method call	org.apache.xmlgraphics:batik-css:1.8
+net.sourceforge.barbecue.linear.code39.Code39Barcode	public	net.sourceforge.barbecue:barbecue:1.5-beta1	method call	ar.com.fdvs:DynamicJasper:5.3.2
+org.apache.batik.dom.GenericElementNS	public	org.apache.xmlgraphics:batik-dom:1.8	method call	org.apache.xmlgraphics:batik-css:1.8
+org.w3c.dom.css.CSSValue	public	xml-apis:xml-apis:1.3.04	cast	org.apache.xmlgraphics:batik-anim:1.8
+org.apache.batik.ext.awt.image.renderable.Filter	public	org.apache.xmlgraphics:batik-awt-util:1.8	cast	org.apache.xmlgraphics:batik-gvt:1.8
+org.apache.batik.anim.dom.AnimationTargetListener	public	org.apache.xmlgraphics:batik-anim:1.8	cast	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.ext.awt.image.renderable.DiffuseLightingRable8Bit	public	org.apache.xmlgraphics:batik-awt-util:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.dom.svg.AbstractSVGPathSegList$SVGPathSegCurvetoQuadraticSmoothItem	public	org.apache.xmlgraphics:batik-svg-dom:1.8	cast	org.apache.xmlgraphics:batik-anim:1.8
+org.apache.batik.parser.LengthPairListParser	public	org.apache.xmlgraphics:batik-parser:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.util.SoftReferenceCache	public	org.apache.xmlgraphics:batik-util:1.8	subtyping	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.ext.awt.LinearGradientPaint	public	org.apache.xmlgraphics:batik-awt-util:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+java.lang.Double	public	unknownLib	Class.forName	net.sf.jasperreports:jasperreports:6.17.0
+org.apache.batik.dom.events.NodeEventTarget	public	org.apache.xmlgraphics:batik-dom:1.8	cast	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.gvt.PatternPaint	public	org.apache.xmlgraphics:batik-gvt:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.anim.dom.SVGOMPolylineElement	public	org.apache.xmlgraphics:batik-anim:1.8	cast	org.apache.xmlgraphics:batik-bridge:1.8
+net.sf.jasperreports.engine.xml.JRPenFactory$Top	public	net.sf.jasperreports:jasperreports:6.17.0	method call	commons-digester:commons-digester:2.1
+org.w3c.dom.svg.SVGRadialGradientElement	public	xml-apis:xml-apis-ext:1.3.04	subtyping	org.apache.xmlgraphics:batik-anim:1.8
+org.apache.batik.dom.events.AbstractEvent	public	org.apache.xmlgraphics:batik-dom:1.8	cast	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.util.DoublyIndexedTable	public	org.apache.xmlgraphics:batik-util:1.8	method call	org.apache.xmlgraphics:batik-anim:1.8
+java.security.BasicPermissionCollection	default	java.security	method call	commons-logging:commons-logging:1.0.3
+org.w3c.dom.events.EventListener	public	xml-apis:xml-apis:1.3.04	subtyping	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.anim.dom.SAXSVGDocumentFactory	public	org.apache.xmlgraphics:batik-anim:1.8	instantiation	net.sf.jasperreports:jasperreports:6.17.0
+org.w3c.dom.DOMImplementation	public	xml-apis:xml-apis:1.3.04	subtyping	org.apache.xmlgraphics:batik-dom:1.8
+net.sf.jasperreports.engine.design.JRDesignFont	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+org.w3c.dom.svg.SVGPathSegCurvetoCubicSmoothAbs	public	xml-apis:xml-apis-ext:1.3.04	cast	org.apache.xmlgraphics:batik-svg-dom:1.8
+org.apache.batik.anim.dom.SVGOMLinearGradientElement	public	org.apache.xmlgraphics:batik-anim:1.8	method call	org.apache.xmlgraphics:batik-bridge:1.8
+java.lang.String	public	unknownLib	Class.forName	commons-beanutils:commons-beanutils:1.7.0
+net.sf.jasperreports.crosstabs.design.JRDesignCrosstab	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+net.sf.jasperreports.engine.type.WhenResourceMissingTypeEnum	public	net.sf.jasperreports:jasperreports:6.17.0	method call	ar.com.fdvs:DynamicJasper:5.3.2
+org.apache.batik.anim.dom.SVGOMStopElement	public	org.apache.xmlgraphics:batik-anim:1.8	method call	org.apache.xmlgraphics:batik-dom:1.8
+org.apache.batik.ext.awt.image.renderable.FilterAlphaRable	public	org.apache.xmlgraphics:batik-awt-util:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8
+org.apache.batik.gvt.filter.BackgroundRable8Bit	public	org.apache.xmlgraphics:batik-gvt:1.8	instantiation	org.apache.xmlgraphics:batik-bridge:1.8

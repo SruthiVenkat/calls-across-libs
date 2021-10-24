@@ -1,0 +1,13 @@
+SubClass	Sub Library	Super Class/Interface	Super Class/Interface Visibility	Super Library	Count
+net.bytebuddy.ClassFileVersion$VersionLocator$ForLegacyVm	net.bytebuddy:byte-buddy:1.10.8	java.security.PrivilegedAction	public	java.security	1
+net.bytebuddy.description.type.TypeDescription$Generic$AnnotationReader$Dispatcher$CreationAction	net.bytebuddy:byte-buddy:1.10.8	java.security.PrivilegedAction	public	java.security	1
+net.bytebuddy.description.type.TypeDescription$ForLoadedType$Dispatcher$CreationAction	net.bytebuddy:byte-buddy:1.10.8	java.security.PrivilegedAction	public	java.security	1
+net.bytebuddy.utility.privilege.GetSystemPropertyAction	net.bytebuddy:byte-buddy:1.10.8	java.security.PrivilegedAction	public	java.security	1
+org.h2.Driver	com.h2database:h2:1.4.200	java.sql.Driver	public	java.sql	1
+java.sql.DriverManager$2	java.sql	java.security.PrivilegedAction	public	java.security	1
+org.hsqldb.jdbc.JDBCDriver	org.hsqldb:hsqldb:2.5.0	java.sql.Driver	public	java.sql	1
+org.h2.jdbc.JdbcSQLException	com.h2database:h2:1.4.200	java.sql.SQLException	public	java.sql	1
+net.bytebuddy.dynamic.DynamicType$Default$Dispatcher$CreationAction	net.bytebuddy:byte-buddy:1.10.8	java.security.PrivilegedAction	public	java.security	1
+java.sql.DriverManager$1	java.sql	java.security.PrivilegedAction	public	java.security	1
+org.hsqldb.jdbc.JDBCDriver$EmptyDiverAction	org.hsqldb:hsqldb:2.5.0	java.sql.DriverAction	public	java.sql	1
+net.bytebuddy.dynamic.loading.ByteArrayClassLoader$ClassDefinitionAction	net.bytebuddy:byte-buddy:1.10.8	java.security.PrivilegedAction	public	java.security	1

@@ -1,0 +1,807 @@
+Class Name	Class Visibility	Class Library	Usage	Used In Library
+java.security.MessageDigest$Delegate	default	java.security	method call	commons-codec:commons-codec:1.15
+com.fasterxml.jackson.annotation.JsonIdentityReference	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+com.fasterxml.jackson.annotation.JacksonAnnotation	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	annotation	com.fasterxml.jackson.core:jackson-databind:2.13.0
+com.fasterxml.jackson.annotation.JsonTypeInfo	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+java.sql.ResultSet	public	java.sql	subtyping	com.h2database:h2:1.4.199
+com.fasterxml.jackson.core.JsonParser	public	com.fasterxml.jackson.core:jackson-core:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.apache.commons.lang3.builder.HashCodeBuilder	public	org.apache.commons:commons-lang3:3.12.0	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonBackReference	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+com.fasterxml.jackson.annotation.JsonPropertyOrder	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.apache.commons.text.WordUtils	public	org.apache.commons:commons-text:1.9	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.core.JsonFactory	public	com.fasterxml.jackson.core:jackson-core:2.13.0	subtyping	com.fasterxml.jackson.core:jackson-databind:2.13.0
+com.google.common.io.Resources	public	com.google.guava:guava:31.0.1-jre	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.core.JsonGenerator	public	com.fasterxml.jackson.core:jackson-core:2.13.0	subtyping	com.fasterxml.jackson.core:jackson-databind:2.13.0
+us.springett.parsers.cpe.values.LogicalValue	public	us.springett:cpe-parser:2.0.2	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+us.springett.parsers.cpe.Cpe	public	us.springett:cpe-parser:2.0.2	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.h2.Driver	public	com.h2database:h2:1.4.199	Class.forName	java.sql
+org.owasp.dependencycheck.utils.FileUtils	public	org.owasp:dependency-check-utils:6.4.2-SNAPSHOT	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.commons.lang3.Range	public	org.apache.commons:commons-lang3:3.12.0	method call	org.apache.commons:commons-text:1.9
+com.fasterxml.jackson.annotation.JsonAutoDetect	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.apache.lucene.analysis.Analyzer$TokenStreamComponents	public	org.apache.lucene:lucene-core:8.10.1	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+java.sql.SQLInvalidAuthorizationSpecException	public	java.sql	subtyping	com.h2database:h2:1.4.199
+com.fasterxml.jackson.annotation.ObjectIdGenerator$IdKey	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	instantiation	com.fasterxml.jackson.core:jackson-databind:2.13.0
+us.springett.parsers.cpe.CpeBuilder	public	us.springett:cpe-parser:2.0.2	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.core.util.Instantiatable	public	com.fasterxml.jackson.core:jackson-core:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+com.fasterxml.jackson.annotation.JsonUnwrapped	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+javax.xml.parsers.SAXParserFactory	public	javax.xml.parsers	method call	org.owasp:dependency-check-utils:6.4.2-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonIdentityInfo	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+java.sql.Timestamp	public	java.sql	instantiation	com.h2database:h2:1.4.199
+sun.security.provider.NativePRNG	public	unknownLib	Class.forName	java.security
+java.sql.SQLException	public	java.sql	subtyping	com.h2database:h2:1.4.199
+org.owasp.dependencycheck.utils.WriteLockCleanupHook	public	org.owasp:dependency-check-core:6.4.2-SNAPSHOT	Class.forName	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonProperty	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+com.fasterxml.jackson.core.TreeNode	public	com.fasterxml.jackson.core:jackson-core:2.13.0	subtyping	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream	public	org.apache.commons:commons-compress:1.21	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+java.sql.Timestamp	public	java.sql	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.core.PrettyPrinter	public	com.fasterxml.jackson.core:jackson-core:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+java.sql.Clob	public	java.sql	cast	com.h2database:h2:1.4.199
+org.apache.lucene.analysis.miscellaneous.WordDelimiterGraphFilter	public	org.apache.lucene:lucene-analyzers-common:8.10.1	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+java.sql.Statement	public	java.sql	subtyping	com.h2database:h2:1.4.199
+com.github.packageurl.PackageURL	public	com.github.package-url:packageurl-java:1.4.1	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+java.sql.SQLClientInfoException	public	java.sql	cast	com.h2database:h2:1.4.199
+org.h2.store.fs.FilePathZip	public	com.h2database:h2:1.4.199	Class.forName	com.h2database:h2:1.4.199
+com.fasterxml.jackson.annotation.JsonTypeName	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.apache.lucene.analysis.core.StopFilter	public	org.apache.lucene:lucene-analyzers-common:8.10.1	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.core.util.ByteArrayBuilder	public	com.fasterxml.jackson.core:jackson-core:2.13.0	instantiation	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.apache.commons.dbcp2.BasicDataSource	public	org.apache.commons:commons-dbcp2:2.9.0	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.h2.store.fs.FilePathAsync	public	com.h2database:h2:1.4.199	Class.forName	com.h2database:h2:1.4.199
+sun.security.provider.SHA2$SHA256	public	unknownLib	Class.forName	java.security
+java.sql.SQLTransactionRollbackException	public	java.sql	subtyping	com.h2database:h2:1.4.199
+org.apache.commons.lang3.builder.HashCodeBuilder	public	org.apache.commons:commons-lang3:3.12.0	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.commons.lang3.builder.CompareToBuilder	public	org.apache.commons:commons-lang3:3.12.0	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.commons.text.StringSubstitutor	public	org.apache.commons:commons-text:1.9	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+java.sql.Driver	public	java.sql	cast	com.h2database:h2:1.4.199
+sun.security.provider.PolicyFile	public	unknownLib	Class.forName	java.security
+java.sql.SQLDataException	public	java.sql	subtyping	com.h2database:h2:1.4.199
+org.apache.commons.collections.map.ReferenceMap	public	commons-collections:commons-collections:3.2.2	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+java.sql.SQLNonTransientException	public	java.sql	subtyping	com.h2database:h2:1.4.199
+java.sql.Array	public	java.sql	cast	com.h2database:h2:1.4.199
+java.sql.Connection	public	java.sql	subtyping	com.h2database:h2:1.4.199
+java.sql.Connection	public	java.sql	cast	com.h2database:h2:1.4.199
+com.fasterxml.jackson.annotation.JsonIgnore	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.h2.engine.Engine	public	com.h2database:h2:1.4.199	Class.forName	com.h2database:h2:1.4.199
+org.h2.store.fs.FilePathSplit	public	com.h2database:h2:1.4.199	Class.forName	com.h2database:h2:1.4.199
+org.apache.lucene.analysis.core.LowerCaseFilter	public	org.apache.lucene:lucene-analyzers-common:8.10.1	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.xml.sax.SAXException	public	org.xml.sax	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.commons.lang3.builder.CompareToBuilder	public	org.apache.commons:commons-lang3:3.12.0	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.commons.lang3.StringUtils	public	org.apache.commons:commons-lang3:3.12.0	method call	org.apache.commons:commons-text:1.9
+org.apache.commons.lang3.ArrayUtils	public	org.apache.commons:commons-lang3:3.12.0	method call	org.apache.commons:commons-text:1.9
+org.apache.commons.lang3.StringUtils	public	org.apache.commons:commons-lang3:3.12.0	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+java.sql.CallableStatement	public	java.sql	cast	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+javax.json.JsonObject	public	org.glassfish:javax.json:1.1.4	cast	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+java.sql.SQLException	public	java.sql	cast	com.h2database:h2:1.4.199
+org.xml.sax.InputSource	public	org.xml.sax	instantiation	javax.xml.parsers
+com.fasterxml.jackson.core.json.JsonReadFeature	public	com.fasterxml.jackson.core:jackson-core:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+java.sql.SQLException	public	java.sql	method call	com.h2database:h2:1.4.199
+org.anarres.jdiagnostics.DefaultQuery	public	org.anarres.jdiagnostics:jdiagnostics:1.0.7	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+java.sql.Timestamp	public	java.sql	cast	com.h2database:h2:1.4.199
+com.github.packageurl.PackageURL	public	com.github.package-url:packageurl-java:1.4.1	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonFormat	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+us.springett.parsers.cpe.CpeBuilder	public	us.springett:cpe-parser:2.0.2	subtyping	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+java.sql.Timestamp	public	java.sql	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+us.springett.parsers.cpe.CpeBuilder	public	us.springett:cpe-parser:2.0.2	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+java.sql.Date	public	java.sql	instantiation	com.h2database:h2:1.4.199
+org.apache.commons.lang3.builder.EqualsBuilder	public	org.apache.commons:commons-lang3:3.12.0	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.github.packageurl.PackageURLBuilder	public	com.github.package-url:packageurl-java:1.4.1	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.xml.sax.SAXParseException	public	org.xml.sax	method call	org.owasp:dependency-check-utils:6.4.2-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonInclude$Value	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	method call	com.fasterxml.jackson.core:jackson-databind:2.13.0
+java.sql.DriverManager	public	java.sql	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.annotation.ObjectIdGenerators$PropertyGenerator	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	subtyping	com.fasterxml.jackson.core:jackson-databind:2.13.0
+com.fasterxml.jackson.core.io.SerializedString	public	com.fasterxml.jackson.core:jackson-core:2.13.0	instantiation	com.fasterxml.jackson.core:jackson-databind:2.13.0
+java.sql.PreparedStatement	public	java.sql	subtyping	com.h2database:h2:1.4.199
+java.security.BasicPermission	public	java.security	subtyping	java.sql
+java.sql.Date	public	java.sql	cast	com.h2database:h2:1.4.199
+java.sql.DriverManager	public	java.sql	method call	com.h2database:h2:1.4.199
+org.apache.lucene.analysis.Analyzer	public	org.apache.lucene:lucene-core:8.10.1	subtyping	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonClassDescription	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+com.fasterxml.jackson.annotation.JsonSetter	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.h2.jdbc.JdbcPreparedStatement	public	com.h2database:h2:1.4.199	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonIncludeProperties	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.xml.sax.SAXException	public	org.xml.sax	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonGetter	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+java.sql.Blob	public	java.sql	cast	com.h2database:h2:1.4.199
+org.h2.jdbc.JdbcResultSet	public	com.h2database:h2:1.4.199	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.h2.jdbc.JdbcDatabaseMetaData	public	com.h2database:h2:1.4.199	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.owasp.dependencycheck.utils.Checksum	public	org.owasp:dependency-check-utils:6.4.2-SNAPSHOT	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+java.sql.ResultSet	public	java.sql	cast	com.h2database:h2:1.4.199
+javax.json.JsonValue	public	org.glassfish:javax.json:1.1.4	cast	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.owasp.dependencycheck.xml.pom.Model$PropertyLookup	private	org.owasp:dependency-check-core:6.4.2-SNAPSHOT	method call	org.apache.commons:commons-text:1.9
+org.h2.jdbc.JdbcStatement	public	com.h2database:h2:1.4.199	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+java.security.NoSuchAlgorithmException	public	java.security	instantiation	org.owasp:dependency-check-utils:6.4.2-SNAPSHOT
+org.apache.commons.text.lookup.StringLookup	public	org.apache.commons:commons-text:1.9	subtyping	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.xml.sax.EntityResolver	public	org.xml.sax	subtyping	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+java.sql.SQLFeatureNotSupportedException	public	java.sql	subtyping	com.h2database:h2:1.4.199
+javax.json.JsonArray	public	org.glassfish:javax.json:1.1.4	cast	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonIgnoreType	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.xml.sax.ErrorHandler	public	org.xml.sax	subtyping	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.lucene.analysis.core.WhitespaceTokenizer	public	org.apache.lucene:lucene-analyzers-common:8.10.1	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+us.springett.parsers.cpe.exceptions.CpeValidationException	public	us.springett:cpe-parser:2.0.2	cast	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+java.security.PrivilegedAction	public	java.security	subtyping	java.sql
+java.sql.Driver	public	java.sql	subtyping	com.h2database:h2:1.4.199
+java.sql.SQLException	public	java.sql	instantiation	com.h2database:h2:1.4.199
+us.springett.parsers.cpe.Cpe	public	us.springett:cpe-parser:2.0.2	subtyping	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.core.io.SegmentedStringWriter	public	com.fasterxml.jackson.core:jackson-core:2.13.0	instantiation	com.fasterxml.jackson.core:jackson-databind:2.13.0
+com.google.errorprone.annotations.CanIgnoreReturnValue	public	com.google.errorprone:error_prone_annotations:2.7.1	annotation	com.google.guava:guava:31.0.1-jre
+com.fasterxml.jackson.annotation.JsonKey	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+java.security.SecureRandom	public	java.security	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+java.sql.Savepoint	public	java.sql	subtyping	com.h2database:h2:1.4.199
+com.fasterxml.jackson.core.json.JsonWriteFeature	public	com.fasterxml.jackson.core:jackson-core:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+java.security.MessageDigest	public	java.security	method call	commons-codec:commons-codec:1.15
+com.fasterxml.jackson.core.SerializableString	public	com.fasterxml.jackson.core:jackson-core:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.owasp.dependencycheck.utils.ExtractionException	public	org.owasp:dependency-check-utils:6.4.2-SNAPSHOT	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonView	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+java.sql.SQLSyntaxErrorException	public	java.sql	subtyping	com.h2database:h2:1.4.199
+com.fasterxml.jackson.core.base.ParserMinimalBase	public	com.fasterxml.jackson.core:jackson-core:2.13.0	subtyping	com.fasterxml.jackson.core:jackson-databind:2.13.0
+java.sql.BatchUpdateException	public	java.sql	subtyping	com.h2database:h2:1.4.199
+java.sql.DatabaseMetaData	public	java.sql	subtyping	com.h2database:h2:1.4.199
+org.apache.commons.lang3.builder.EqualsBuilder	public	org.apache.commons:commons-lang3:3.12.0	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonCreator	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+com.fasterxml.jackson.annotation.JsonInclude	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.h2.store.fs.FilePathNio	public	com.h2database:h2:1.4.199	Class.forName	com.h2database:h2:1.4.199
+com.fasterxml.jackson.annotation.JsonManagedReference	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+com.fasterxml.jackson.annotation.JsonAnyGetter	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.h2.mvstore.db.MVTableEngine	public	com.h2database:h2:1.4.199	Class.forName	com.h2database:h2:1.4.199
+com.fasterxml.jackson.annotation.JsonPropertyDescription	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.apache.velocity.VelocityContext	public	org.apache.velocity:velocity-engine-core:2.3	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+java.sql.SQLIntegrityConstraintViolationException	public	java.sql	subtyping	com.h2database:h2:1.4.199
+org.h2.store.fs.FilePathRetryOnInterrupt	public	com.h2database:h2:1.4.199	Class.forName	com.h2database:h2:1.4.199
+com.fasterxml.jackson.annotation.JsonRawValue	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+sun.security.provider.SHA	public	unknownLib	Class.forName	java.security
+com.fasterxml.jackson.core.type.WritableTypeId	public	com.fasterxml.jackson.core:jackson-core:2.13.0	instantiation	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.h2.store.fs.FilePathDisk	public	com.h2database:h2:1.4.199	Class.forName	com.h2database:h2:1.4.199
+java.sql.SQLTransientException	public	java.sql	subtyping	com.h2database:h2:1.4.199
+javax.xml.datatype.DatatypeFactory	public	javax.xml.datatype	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.owasp.dependencycheck.dependency.VulnerableSoftware	public	org.owasp:dependency-check-core:6.4.2-SNAPSHOT	method call	us.springett:cpe-parser:2.0.2
+com.fasterxml.jackson.annotation.JsonRootName	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+java.sql.SQLXML	public	java.sql	cast	com.h2database:h2:1.4.199
+com.fasterxml.jackson.core.JsonFactory	public	com.fasterxml.jackson.core:jackson-core:2.13.0	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonSubTypes	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.h2.store.fs.FilePathNioMapped	public	com.h2database:h2:1.4.199	Class.forName	com.h2database:h2:1.4.199
+org.apache.commons.text.StringEscapeUtils	public	org.apache.commons:commons-text:1.9	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonMerge	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.xml.sax.InputSource	public	org.xml.sax	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.core.JacksonException	public	com.fasterxml.jackson.core:jackson-core:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.h2.store.fs.FilePathMem	public	com.h2database:h2:1.4.199	Class.forName	com.h2database:h2:1.4.199
+org.owasp.dependencycheck.utils.Downloader	public	org.owasp:dependency-check-utils:6.4.2-SNAPSHOT	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.core.type.ResolvedType	public	com.fasterxml.jackson.core:jackson-core:2.13.0	subtyping	com.fasterxml.jackson.core:jackson-databind:2.13.0
+java.sql.SQLTimeoutException	public	java.sql	subtyping	com.h2database:h2:1.4.199
+java.security.SecureRandom	public	java.security	instantiation	com.h2database:h2:1.4.199
+com.fasterxml.jackson.annotation.ObjectIdGenerator	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+java.security.InvalidParameterException	public	java.security	instantiation	org.apache.commons:commons-text:1.9
+com.fasterxml.jackson.databind.ObjectMapper	public	com.fasterxml.jackson.core:jackson-databind:2.13.0	instantiation	org.owasp:dependency-check-utils:6.4.2-SNAPSHOT
+org.apache.commons.codec.digest.DigestUtils	public	commons-codec:commons-codec:1.15	method call	org.owasp:dependency-check-utils:6.4.2-SNAPSHOT
+org.h2.store.fs.FilePathMemLZF	default	com.h2database:h2:1.4.199	Class.forName	com.h2database:h2:1.4.199
+java.sql.SQLNonTransientConnectionException	public	java.sql	subtyping	com.h2database:h2:1.4.199
+org.apache.velocity.app.VelocityEngine	public	org.apache.velocity:velocity-engine-core:2.3	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+javax.json.JsonString	public	org.glassfish:javax.json:1.1.4	cast	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.core.JsonProcessingException	public	com.fasterxml.jackson.core:jackson-core:2.13.0	subtyping	com.fasterxml.jackson.core:jackson-databind:2.13.0
+sun.security.provider.MD5	public	unknownLib	Class.forName	java.security
+javax.annotation.concurrent.NotThreadSafe	public	com.google.code.findbugs:jsr305:3.0.2	annotation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.commons.io.FileUtils	public	commons-io:commons-io:2.11.0	method call	org.owasp:dependency-check-utils:6.4.2-SNAPSHOT
+java.sql.Time	public	java.sql	cast	com.h2database:h2:1.4.199
+org.apache.commons.io.input.BOMInputStream	public	commons-io:commons-io:2.11.0	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.h2.Driver	public	com.h2database:h2:1.4.199	method call	java.sql
+com.fasterxml.jackson.annotation.JsonAnySetter	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.h2.store.fs.FilePathNioMemLZF	default	com.h2database:h2:1.4.199	Class.forName	com.h2database:h2:1.4.199
+org.apache.commons.lang3.time.FastDateFormat	public	org.apache.commons:commons-lang3:3.12.0	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonAlias	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+javax.annotation.concurrent.ThreadSafe	public	com.google.code.findbugs:jsr305:3.0.2	annotation	org.owasp:dependency-check-utils:6.4.2-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonIgnoreProperties	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+com.fasterxml.jackson.annotation.JsonValue	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+com.fasterxml.jackson.annotation.JacksonInject	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.apache.commons.lang3.Validate	public	org.apache.commons:commons-lang3:3.12.0	method call	org.apache.commons:commons-text:1.9
+org.apache.commons.text.StringSubstitutor	public	org.apache.commons:commons-text:1.9	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.commons.io.input.BOMInputStream	public	commons-io:commons-io:2.11.0	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonSetter$Value	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	method call	com.fasterxml.jackson.core:jackson-databind:2.13.0
+java.security.PrivilegedAction	public	java.security	subtyping	javax.xml.datatype
+com.fasterxml.jackson.core.Versioned	public	com.fasterxml.jackson.core:jackson-core:2.13.0	subtyping	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.apache.lucene.analysis.Analyzer	public	org.apache.lucene:lucene-core:8.10.1	cast	org.apache.lucene:lucene-analyzers-common:8.10.1
+java.security.MessageDigest	public	java.security	method call	com.h2database:h2:1.4.199
+com.fasterxml.jackson.core.ObjectCodec	public	com.fasterxml.jackson.core:jackson-core:2.13.0	subtyping	com.fasterxml.jackson.core:jackson-databind:2.13.0
+java.sql.Time	public	java.sql	instantiation	com.h2database:h2:1.4.199
+org.apache.lucene.analysis.DelegatingAnalyzerWrapper	public	org.apache.lucene:lucene-core:8.10.1	subtyping	org.apache.lucene:lucene-analyzers-common:8.10.1
+java.security.PrivilegedAction	public	java.security	subtyping	javax.xml.parsers
+java.security.MessageDigest$Delegate	default	java.security	method call	com.h2database:h2:1.4.199
+com.fasterxml.jackson.annotation.JsonFilter	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+java.sql.SQLClientInfoException	public	java.sql	instantiation	com.h2database:h2:1.4.199
+org.h2.jdbc.JdbcConnection	public	com.h2database:h2:1.4.199	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.owasp.dependencycheck.utils.XmlUtils	public	org.owasp:dependency-check-utils:6.4.2-SNAPSHOT	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.owasp.dependencycheck.utils.Settings	public	org.owasp:dependency-check-utils:6.4.2-SNAPSHOT	cast	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.h2.store.fs.FilePathNioMem	public	com.h2database:h2:1.4.199	Class.forName	com.h2database:h2:1.4.199
+org.owasp.dependencycheck.utils.Settings	public	org.owasp:dependency-check-utils:6.4.2-SNAPSHOT	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.annotation.ObjectIdResolver	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+javax.annotation.concurrent.ThreadSafe	public	com.google.code.findbugs:jsr305:3.0.2	annotation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.xml.sax.InputSource	public	org.xml.sax	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.h2.Driver	public	com.h2database:h2:1.4.199	method call	org.apache.commons:commons-dbcp2:2.9.0
+com.sun.crypto.provider.AESCipher$General	public	unknownLib	Class.forName	java.security
+org.apache.lucene.document.Document	public	org.apache.lucene:lucene-core:8.10.1	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonTypeInfo	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+java.sql.ResultSet	public	java.sql	subtyping	com.h2database:h2:1.4.199
+org.boris.pecoff4j.SectionData	public	org.whitesource:pecoff4j:0.0.2.1	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonPropertyOrder	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.apache.lucene.analysis.tokenattributes.OffsetAttribute	public	org.apache.lucene:lucene-core:8.10.1	cast	org.apache.lucene:lucene-analyzers-common:8.10.1
+org.apache.lucene.search.BooleanClause	public	org.apache.lucene:lucene-core:8.10.1	cast	org.apache.lucene:lucene-queryparser:8.10.1
+org.apache.commons.pool2.impl.GenericObjectPool	public	org.apache.commons:commons-pool2:2.10.0	cast	org.apache.commons:commons-dbcp2:2.9.0
+org.apache.lucene.codecs.compressing.dummy.DummyCompressingCodec	public	unknownLib	Class.forName	org.apache.lucene:lucene-core:8.10.1
+java.sql.PreparedStatement	public	java.sql	subtyping	org.apache.commons:commons-dbcp2:2.9.0
+org.apache.lucene.util.BytesRefBuilder	public	org.apache.lucene:lucene-core:8.10.1	instantiation	org.apache.lucene:lucene-queryparser:8.10.1
+com.fasterxml.jackson.core.JsonFactory	public	com.fasterxml.jackson.core:jackson-core:2.13.0	subtyping	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.apache.lucene.analysis.tokenattributes.CharTermAttribute	public	org.apache.lucene:lucene-core:8.10.1	cast	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.lucene.codecs.cheapbastard.CheapBastardCodec	public	unknownLib	Class.forName	org.apache.lucene:lucene-core:8.10.1
+org.apache.lucene.codecs.uniformsplit.UniformSplitRot13PostingsFormat	public	unknownLib	Class.forName	org.apache.lucene:lucene-core:8.10.1
+org.apache.lucene.codecs.simpletext.SimpleTextCodec	public	unknownLib	Class.forName	org.apache.lucene:lucene-core:8.10.1
+java.security.interfaces.RSAPublicKey	public	unknownLib	Class.forName	java.security
+java.sql.SQLException	public	java.sql	instantiation	org.apache.commons:commons-dbcp2:2.9.0
+com.fasterxml.jackson.core.JsonGenerator	public	com.fasterxml.jackson.core:jackson-core:2.13.0	subtyping	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.apache.lucene.analysis.Analyzer	public	org.apache.lucene:lucene-core:8.10.1	subtyping	org.apache.lucene:lucene-analyzers-common:8.10.1
+us.springett.parsers.cpe.values.LogicalValue	public	us.springett:cpe-parser:2.0.2	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.owasp.dependencycheck.utils.URLConnectionFactory	public	org.owasp:dependency-check-utils:6.4.2-SNAPSHOT	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.lucene.analysis.core.WhitespaceTokenizer	public	org.apache.lucene:lucene-analyzers-common:8.10.1	method call	org.apache.lucene:lucene-core:8.10.1
+javax.xml.parsers.DocumentBuilderFactory	public	javax.xml.parsers	method call	org.owasp:dependency-check-utils:6.4.2-SNAPSHOT
+org.apache.lucene.analysis.tokenattributes.PositionIncrementAttributeImpl	public	org.apache.lucene:lucene-core:8.10.1	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+us.springett.parsers.cpe.Cpe	public	us.springett:cpe-parser:2.0.2	cast	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+java.sql.ResultSet	public	java.sql	cast	org.apache.commons:commons-dbcp2:2.9.0
+org.boris.pecoff4j.DOSHeader	public	org.whitesource:pecoff4j:0.0.2.1	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.commons.jcs.access.exception.CacheException	public	org.apache.commons:commons-jcs-core:2.2.1	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+sun.security.rsa.RSASignature$SHA224withRSA	public	unknownLib	Class.forName	java.security
+org.apache.lucene.analysis.Analyzer$TokenStreamComponents	public	org.apache.lucene:lucene-core:8.10.1	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+java.sql.SQLInvalidAuthorizationSpecException	public	java.sql	subtyping	com.h2database:h2:1.4.199
+org.boris.pecoff4j.io.ByteArrayDataReader	public	org.whitesource:pecoff4j:0.0.2.1	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+sun.security.ssl.KeyManagerFactoryImpl$SunX509	public	unknownLib	Class.forName	java.security
+com.fasterxml.jackson.annotation.ObjectIdGenerator$IdKey	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	instantiation	com.fasterxml.jackson.core:jackson-databind:2.13.0
+sun.security.ssl.TrustManagerFactoryImpl$PKIXFactory	public	unknownLib	Class.forName	java.security
+org.apache.lucene.analysis.tokenattributes.CharTermAttributeImpl	public	org.apache.lucene:lucene-core:8.10.1	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.core.util.Instantiatable	public	com.fasterxml.jackson.core:jackson-core:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.apache.commons.logging.LogFactory	public	commons-logging:commons-logging:1.2	Class.forName	commons-logging:commons-logging:1.2
+org.boris.pecoff4j.io.ByteArrayDataReader	public	org.whitesource:pecoff4j:0.0.2.1	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonUnwrapped	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+com.fasterxml.jackson.core.JsonLocation	public	com.fasterxml.jackson.core:jackson-core:2.13.0	instantiation	com.fasterxml.jackson.core:jackson-databind:2.13.0
+com.fasterxml.jackson.annotation.JsonIdentityInfo	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+sun.security.ec.ECDSASignature$SHA1	public	unknownLib	Class.forName	java.security
+sun.security.provider.NativePRNG	public	unknownLib	Class.forName	java.security
+org.apache.lucene.analysis.LowerCaseFilter	public	org.apache.lucene:lucene-core:8.10.1	instantiation	org.apache.lucene:lucene-analyzers-common:8.10.1
+org.apache.lucene.analysis.tokenattributes.OffsetAttributeImpl	public	org.apache.lucene:lucene-core:8.10.1	Class.forName	org.apache.lucene:lucene-core:8.10.1
+sun.security.ssl.SSLContextImpl$TLSContext	public	unknownLib	Class.forName	java.security
+com.fasterxml.jackson.core.PrettyPrinter	public	com.fasterxml.jackson.core:jackson-core:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+java.sql.Timestamp	public	java.sql	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.databind.MappingJsonFactory	public	com.fasterxml.jackson.core:jackson-databind:2.13.0	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.core.io.NumberInput	public	com.fasterxml.jackson.core:jackson-core:2.13.0	method call	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.apache.commons.logging.LogFactory	public	commons-logging:commons-logging:1.2	subtyping	org.slf4j:jcl-over-slf4j:1.7.28
+java.sql.SQLClientInfoException	public	java.sql	cast	com.h2database:h2:1.4.199
+org.h2.store.fs.FilePathZip	public	com.h2database:h2:1.4.199	Class.forName	com.h2database:h2:1.4.199
+org.apache.commons.jcs.auxiliary.disk.indexed.IndexedDiskCacheAttributes	public	org.apache.commons:commons-jcs-core:2.2.1	Class.forName	org.apache.commons:commons-jcs-core:2.2.1
+org.apache.lucene.analysis.core.StopFilter	public	org.apache.lucene:lucene-analyzers-common:8.10.1	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.core.util.ByteArrayBuilder	public	com.fasterxml.jackson.core:jackson-core:2.13.0	instantiation	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.apache.commons.compress.compressors.gzip.GzipCompressorInputStream	public	org.apache.commons:commons-compress:1.21	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.commons.io.IOUtils	public	commons-io:commons-io:2.11.0	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.boris.pecoff4j.DOSStub	public	org.whitesource:pecoff4j:0.0.2.1	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.h2.store.fs.FilePathAsync	public	com.h2database:h2:1.4.199	Class.forName	com.h2database:h2:1.4.199
+org.apache.commons.io.filefilter.NameFileFilter	public	commons-io:commons-io:2.11.0	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.sun.crypto.provider.TlsKeyMaterialGenerator	public	unknownLib	Class.forName	java.security
+java.security.ProtectionDomain	public	java.security	instantiation	javax.xml.transform
+java.sql.CallableStatement	public	java.sql	subtyping	org.apache.commons:commons-dbcp2:2.9.0
+java.sql.SQLTransactionRollbackException	public	java.sql	subtyping	com.h2database:h2:1.4.199
+org.apache.lucene.queryparser.classic.QueryParser	public	org.apache.lucene:lucene-queryparser:8.10.1	method call	org.apache.lucene:lucene-core:8.10.1
+org.apache.commons.lang3.builder.CompareToBuilder	public	org.apache.commons:commons-lang3:3.12.0	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.commons.text.StringSubstitutor	public	org.apache.commons:commons-text:1.9	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.lucene.util.QueryBuilder	public	org.apache.lucene:lucene-core:8.10.1	subtyping	org.apache.lucene:lucene-queryparser:8.10.1
+java.security.PrivilegedAction	public	java.security	subtyping	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.commons.io.FilenameUtils	public	commons-io:commons-io:2.11.0	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+java.sql.Driver	public	java.sql	cast	com.h2database:h2:1.4.199
+sun.security.provider.PolicyFile	public	unknownLib	Class.forName	java.security
+java.sql.SQLDataException	public	java.sql	subtyping	com.h2database:h2:1.4.199
+sun.security.ec.ECKeyFactory	public	unknownLib	Class.forName	java.security
+java.sql.Array	public	java.sql	cast	com.h2database:h2:1.4.199
+org.apache.commons.collections.map.ReferenceMap	public	commons-collections:commons-collections:3.2.2	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.core.JsonParseException	public	com.fasterxml.jackson.core:jackson-core:2.13.0	instantiation	com.fasterxml.jackson.core:jackson-databind:2.13.0
+java.sql.Connection	public	java.sql	subtyping	com.h2database:h2:1.4.199
+org.glassfish.json.JsonObjectBuilderImpl	default	org.glassfish:javax.json:1.1.4	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.lucene.util.InPlaceMergeSorter	public	org.apache.lucene:lucene-core:8.10.1	subtyping	org.apache.lucene:lucene-analyzers-common:8.10.1
+org.glassfish.json.JsonStringImpl	default	org.glassfish:javax.json:1.1.4	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.core.JsonToken	public	com.fasterxml.jackson.core:jackson-core:2.13.0	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.h2.store.fs.FilePathSplit	public	com.h2database:h2:1.4.199	Class.forName	com.h2database:h2:1.4.199
+org.apache.lucene.search.BoostQuery	public	org.apache.lucene:lucene-core:8.10.1	instantiation	org.apache.lucene:lucene-queryparser:8.10.1
+org.apache.lucene.analysis.core.LowerCaseFilter	public	org.apache.lucene:lucene-analyzers-common:8.10.1	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.glassfish.json.JsonObjectBuilderImpl$JsonObjectImpl	private	org.glassfish:javax.json:1.1.4	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.lucene.store.MMapDirectory	public	org.apache.lucene:lucene-core:8.10.1	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.xml.sax.SAXException	public	org.xml.sax	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.commons.lang3.builder.CompareToBuilder	public	org.apache.commons:commons-lang3:3.12.0	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.boris.pecoff4j.util.IntMap	public	org.whitesource:pecoff4j:0.0.2.1	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.lucene.codecs.blockterms.LuceneVarGapFixedInterval	public	unknownLib	Class.forName	org.apache.lucene:lucene-core:8.10.1
+org.boris.pecoff4j.ImportDirectoryTable	public	org.whitesource:pecoff4j:0.0.2.1	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.boris.pecoff4j.util.ResourceHelper	public	org.whitesource:pecoff4j:0.0.2.1	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+java.sql.CallableStatement	public	java.sql	cast	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.lucene.analysis.miscellaneous.PerFieldAnalyzerWrapper	public	org.apache.lucene:lucene-analyzers-common:8.10.1	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.xml.sax.InputSource	public	org.xml.sax	instantiation	javax.xml.parsers
+org.boris.pecoff4j.DOSStub	public	org.whitesource:pecoff4j:0.0.2.1	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+java.sql.SQLException	public	java.sql	method call	com.h2database:h2:1.4.199
+com.vdurmont.semver4j.Semver	public	com.vdurmont:semver4j:3.1.0	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+sun.security.provider.SHA5$SHA384	public	unknownLib	Class.forName	java.security
+java.sql.Timestamp	public	java.sql	cast	com.h2database:h2:1.4.199
+sun.security.util.ECParameters	public	unknownLib	Class.forName	java.security
+org.boris.pecoff4j.DebugDirectory	public	org.whitesource:pecoff4j:0.0.2.1	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+us.springett.parsers.cpe.CpeBuilder	public	us.springett:cpe-parser:2.0.2	subtyping	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+java.sql.Timestamp	public	java.sql	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.boris.pecoff4j.BoundImportDirectoryTable	public	org.whitesource:pecoff4j:0.0.2.1	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+java.sql.Connection	public	java.sql	cast	org.apache.commons:commons-dbcp2:2.9.0
+org.apache.lucene.search.PhraseQuery$Builder	public	org.apache.lucene:lucene-core:8.10.1	instantiation	org.apache.lucene:lucene-queryparser:8.10.1
+java.sql.Date	public	java.sql	instantiation	com.h2database:h2:1.4.199
+com.sun.crypto.provider.TlsMasterSecretGenerator	public	unknownLib	Class.forName	java.security
+java.security.PrivilegedAction	public	java.security	subtyping	commons-logging:commons-logging:1.2
+com.github.packageurl.PackageURLBuilder	public	com.github.package-url:packageurl-java:1.4.1	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.glassfish.json.JsonArrayBuilderImpl$JsonArrayImpl	private	org.glassfish:javax.json:1.1.4	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.glassfish.json.JsonArrayBuilderImpl	default	org.glassfish:javax.json:1.1.4	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.boris.pecoff4j.SectionHeader	public	org.whitesource:pecoff4j:0.0.2.1	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.lucene.analysis.LowerCaseFilter	public	org.apache.lucene:lucene-core:8.10.1	subtyping	org.apache.lucene:lucene-analyzers-common:8.10.1
+org.apache.lucene.analysis.miscellaneous.WordDelimiterGraphFilter$PositionSorter	private	org.apache.lucene:lucene-analyzers-common:8.10.1	method call	org.apache.lucene:lucene-core:8.10.1
+org.xml.sax.SAXParseException	public	org.xml.sax	method call	org.owasp:dependency-check-utils:6.4.2-SNAPSHOT
+com.fasterxml.jackson.core.json.ReaderBasedJsonParser	public	com.fasterxml.jackson.core:jackson-core:2.13.0	method call	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.apache.lucene.analysis.tokenattributes.KeywordAttributeImpl	public	org.apache.lucene:lucene-core:8.10.1	Class.forName	org.apache.lucene:lucene-core:8.10.1
+javax.xml.xpath.XPathFactory	public	javax.xml.xpath	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.commons.io.filefilter.OrFileFilter	public	commons-io:commons-io:2.11.0	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.lucene.search.BooleanQuery$Builder	public	org.apache.lucene:lucene-core:8.10.1	method call	org.apache.lucene:lucene-queryparser:8.10.1
+com.fasterxml.jackson.annotation.ObjectIdGenerators$PropertyGenerator	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	subtyping	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.apache.lucene.analysis.Analyzer$TokenStreamComponents	public	org.apache.lucene:lucene-core:8.10.1	instantiation	org.apache.lucene:lucene-analyzers-common:8.10.1
+org.apache.commons.io.filefilter.NameFileFilter	public	commons-io:commons-io:2.11.0	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.lucene.analysis.core.StopFilter	public	org.apache.lucene:lucene-analyzers-common:8.10.1	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+java.security.BasicPermission	public	java.security	subtyping	java.sql
+org.apache.commons.jcs.auxiliary.disk.indexed.IndexedDiskCacheFactory	public	org.apache.commons:commons-jcs-core:2.2.1	Class.forName	org.apache.commons:commons-jcs-core:2.2.1
+java.sql.DriverManager	public	java.sql	method call	com.h2database:h2:1.4.199
+org.eclipse.packager.rpm.parse.RpmInputStream	public	org.eclipse.packager:packager-rpm:0.17.0	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.boris.pecoff4j.ImportEntry	public	org.whitesource:pecoff4j:0.0.2.1	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonSetter	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+java.sql.DriverManager	default	java.sql	method call	org.apache.commons:commons-dbcp2:2.9.0
+org.xml.sax.SAXException	public	org.xml.sax	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+sun.security.ec.ECDSASignature$SHA512	public	unknownLib	Class.forName	java.security
+org.boris.pecoff4j.ImportDirectoryEntry	public	org.whitesource:pecoff4j:0.0.2.1	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+java.sql.Connection	public	java.sql	subtyping	org.apache.commons:commons-dbcp2:2.9.0
+org.apache.commons.io.filefilter.IOFileFilter	public	commons-io:commons-io:2.11.0	cast	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+java.sql.PreparedStatement	public	java.sql	cast	org.apache.commons:commons-dbcp2:2.9.0
+org.apache.lucene.index.Terms	public	org.apache.lucene:lucene-core:8.10.1	cast	org.apache.lucene:lucene-sandbox:8.10.1
+java.sql.Driver	public	java.sql	subtyping	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+javax.json.JsonValue	public	org.glassfish:javax.json:1.1.4	cast	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.owasp.dependencycheck.utils.Downloader	public	org.owasp:dependency-check-utils:6.4.2-SNAPSHOT	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+sun.security.provider.DSA$SHA256withDSA	public	unknownLib	Class.forName	java.security
+java.security.NoSuchAlgorithmException	public	java.security	instantiation	org.owasp:dependency-check-utils:6.4.2-SNAPSHOT
+org.apache.commons.text.lookup.StringLookup	public	org.apache.commons:commons-text:1.9	subtyping	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.xml.sax.EntityResolver	public	org.xml.sax	subtyping	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonIgnoreType	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.xml.sax.ErrorHandler	public	org.xml.sax	subtyping	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.lucene.analysis.core.WhitespaceTokenizer	public	org.apache.lucene:lucene-analyzers-common:8.10.1	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.lucene.analysis.CharacterUtils$CharacterBuffer	public	org.apache.lucene:lucene-core:8.10.1	method call	org.apache.lucene:lucene-analyzers-common:8.10.1
+us.springett.parsers.cpe.exceptions.CpeValidationException	public	us.springett:cpe-parser:2.0.2	cast	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.lucene.codecs.idversion.IDVersionPostingsFormat	public	org.apache.lucene:lucene-sandbox:8.10.1	method call	org.apache.lucene:lucene-core:8.10.1
+sun.security.provider.certpath.PKIXCertPathValidator	public	unknownLib	Class.forName	java.security
+org.h2.Driver	public	com.h2database:h2:1.4.199	Class.forName	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.boris.pecoff4j.ImageDataDirectory	public	org.whitesource:pecoff4j:0.0.2.1	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+java.sql.SQLException	public	java.sql	instantiation	com.h2database:h2:1.4.199
+us.springett.parsers.cpe.Cpe	public	us.springett:cpe-parser:2.0.2	subtyping	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.core.io.SegmentedStringWriter	public	com.fasterxml.jackson.core:jackson-core:2.13.0	instantiation	com.fasterxml.jackson.core:jackson-databind:2.13.0
+com.google.errorprone.annotations.CanIgnoreReturnValue	public	com.google.errorprone:error_prone_annotations:2.7.1	annotation	com.google.guava:guava:31.0.1-jre
+java.security.SecureRandom	public	java.security	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+java.sql.Savepoint	public	java.sql	subtyping	com.h2database:h2:1.4.199
+com.fasterxml.jackson.core.json.JsonWriteFeature	public	com.fasterxml.jackson.core:jackson-core:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.apache.commons.lang3.StringUtils	public	org.apache.commons:commons-lang3:3.12.0	method call	org.owasp:dependency-check-utils:6.4.2-SNAPSHOT
+org.apache.commons.io.FileUtils	public	commons-io:commons-io:2.11.0	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+java.sql.Statement	public	java.sql	subtyping	org.apache.commons:commons-dbcp2:2.9.0
+org.apache.lucene.analysis.standard.StandardTokenizer	public	org.apache.lucene:lucene-core:8.10.1	instantiation	org.apache.lucene:lucene-analyzers-common:8.10.1
+java.sql.ResultSet[]	public	java.sql	cast	org.apache.commons:commons-dbcp2:2.9.0
+org.boris.pecoff4j.ResourceDirectory	public	org.whitesource:pecoff4j:0.0.2.1	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+sun.security.ssl.SSLContextImpl$DefaultSSLContext	public	unknownLib	Class.forName	java.security
+org.slf4j.spi.LocationAwareLogger	public	org.slf4j:slf4j-api:1.7.32	cast	org.slf4j:jcl-over-slf4j:1.7.28
+org.owasp.dependencycheck.utils.DownloadFailedException	public	org.owasp:dependency-check-utils:6.4.2-SNAPSHOT	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.boris.pecoff4j.ResourceEntry	public	org.whitesource:pecoff4j:0.0.2.1	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.lucene.codecs.blocktreeords.BlockTreeOrdsPostingsFormat	public	unknownLib	Class.forName	org.apache.lucene:lucene-core:8.10.1
+java.security.MessageDigest	public	java.security	method call	commons-codec:commons-codec:1.15
+com.fasterxml.jackson.core.SerializableString	public	com.fasterxml.jackson.core:jackson-core:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.owasp.dependencycheck.utils.ExtractionException	public	org.owasp:dependency-check-utils:6.4.2-SNAPSHOT	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.commons.logging.LogConfigurationException	public	org.slf4j:jcl-over-slf4j:1.7.28	cast	commons-logging:commons-logging:1.2
+org.apache.lucene.queryparser.classic.QueryParser	public	org.apache.lucene:lucene-queryparser:8.10.1	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+java.sql.SQLSyntaxErrorException	public	java.sql	subtyping	com.h2database:h2:1.4.199
+org.apache.commons.pool2.PooledObjectFactory	public	org.apache.commons:commons-pool2:2.10.0	subtyping	org.apache.commons:commons-dbcp2:2.9.0
+com.fasterxml.jackson.core.base.ParserMinimalBase	public	com.fasterxml.jackson.core:jackson-core:2.13.0	subtyping	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.apache.lucene.search.BooleanQuery	public	org.apache.lucene:lucene-core:8.10.1	cast	org.apache.lucene:lucene-queryparser:8.10.1
+org.apache.lucene.index.CorruptIndexException	public	org.apache.lucene:lucene-core:8.10.1	instantiation	org.apache.lucene:lucene-sandbox:8.10.1
+com.fasterxml.jackson.core.util.JacksonFeatureSet	public	com.fasterxml.jackson.core:jackson-core:2.13.0	method call	com.fasterxml.jackson.core:jackson-databind:2.13.0
+sun.security.ec.ECDSASignature$Raw	public	unknownLib	Class.forName	java.security
+java.security.CodeSource	public	java.security	instantiation	javax.xml.transform
+com.fasterxml.jackson.annotation.JsonInclude	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.h2.store.fs.FilePathNio	public	com.h2database:h2:1.4.199	Class.forName	com.h2database:h2:1.4.199
+com.fasterxml.jackson.annotation.JsonManagedReference	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.h2.mvstore.db.MVTableEngine	public	com.h2database:h2:1.4.199	Class.forName	com.h2database:h2:1.4.199
+org.boris.pecoff4j.BoundImport	public	org.whitesource:pecoff4j:0.0.2.1	cast	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+java.sql.SQLIntegrityConstraintViolationException	public	java.sql	subtyping	com.h2database:h2:1.4.199
+org.apache.lucene.codecs.idversion.IDVersionPostingsFormat	public	org.apache.lucene:lucene-sandbox:8.10.1	Class.forName	org.apache.lucene:lucene-core:8.10.1
+org.h2.store.fs.FilePathRetryOnInterrupt	public	com.h2database:h2:1.4.199	Class.forName	com.h2database:h2:1.4.199
+org.apache.lucene.index.Term	public	org.apache.lucene:lucene-core:8.10.1	instantiation	org.apache.lucene:lucene-queryparser:8.10.1
+org.apache.lucene.analysis.tokenattributes.PositionIncrementAttribute	public	org.apache.lucene:lucene-core:8.10.1	cast	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.core.type.WritableTypeId	public	com.fasterxml.jackson.core:jackson-core:2.13.0	instantiation	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.h2.store.fs.FilePathDisk	public	com.h2database:h2:1.4.199	Class.forName	com.h2database:h2:1.4.199
+java.sql.SQLTransientException	public	java.sql	subtyping	com.h2database:h2:1.4.199
+javax.xml.datatype.DatatypeFactory	public	javax.xml.datatype	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.glassfish.json.JsonReaderFactoryImpl	default	org.glassfish:javax.json:1.1.4	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+sun.security.provider.SHA5$SHA512	public	unknownLib	Class.forName	java.security
+org.owasp.dependencycheck.utils.processing.Processor	public	org.owasp:dependency-check-utils:6.4.2-SNAPSHOT	subtyping	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.boris.pecoff4j.resources.StringPair	public	org.whitesource:pecoff4j:0.0.2.1	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.boris.pecoff4j.OptionalHeader	public	org.whitesource:pecoff4j:0.0.2.1	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.owasp.dependencycheck.data.artifactory.ItemImpl	public	org.owasp:dependency-check-core:6.4.2-SNAPSHOT	method call	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream	public	org.apache.commons:commons-compress:1.21	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.lucene.search.BooleanQuery	public	org.apache.lucene:lucene-core:8.10.1	method call	org.apache.lucene:lucene-queryparser:8.10.1
+com.fasterxml.jackson.annotation.JsonSubTypes	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.h2.store.fs.FilePathNioMapped	public	com.h2database:h2:1.4.199	Class.forName	com.h2database:h2:1.4.199
+org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream	public	org.apache.commons:commons-compress:1.21	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.commons.text.StringEscapeUtils	public	org.apache.commons:commons-text:1.9	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+sun.security.ec.ECDHKeyAgreement	public	unknownLib	Class.forName	java.security
+org.owasp.dependencycheck.data.artifactory.FileImpl	public	org.owasp:dependency-check-core:6.4.2-SNAPSHOT	method call	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.xml.sax.InputSource	public	org.xml.sax	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.lucene.codecs.FieldsProducer	public	org.apache.lucene:lucene-core:8.10.1	subtyping	org.apache.lucene:lucene-sandbox:8.10.1
+org.apache.lucene.codecs.compressing.DeflateWithPresetCompressingCodec	public	unknownLib	Class.forName	org.apache.lucene:lucene-core:8.10.1
+org.h2.store.fs.FilePathMem	public	com.h2database:h2:1.4.199	Class.forName	com.h2database:h2:1.4.199
+org.owasp.dependencycheck.utils.JsonArrayFixingInputStream	public	org.owasp:dependency-check-utils:6.4.2-SNAPSHOT	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.boris.pecoff4j.resources.StringFileInfo	public	org.whitesource:pecoff4j:0.0.2.1	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.core.type.ResolvedType	public	com.fasterxml.jackson.core:jackson-core:2.13.0	subtyping	com.fasterxml.jackson.core:jackson-databind:2.13.0
+sun.security.rsa.RSAKeyFactory$Legacy	public	unknownLib	Class.forName	java.security
+org.apache.commons.pool2.impl.GenericKeyedObjectPoolConfig	public	org.apache.commons:commons-pool2:2.10.0	instantiation	org.apache.commons:commons-dbcp2:2.9.0
+org.boris.pecoff4j.SectionData	public	org.whitesource:pecoff4j:0.0.2.1	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+java.security.SecureRandom	public	java.security	instantiation	com.h2database:h2:1.4.199
+org.apache.xml.dtm.ObjectFactory	default	org.apache.xml.dtm	Class.forName	org.apache.xml.dtm
+org.apache.lucene.codecs.PostingsFormat	public	org.apache.lucene:lucene-core:8.10.1	subtyping	org.apache.lucene:lucene-sandbox:8.10.1
+org.apache.commons.pool2.impl.DefaultPooledObject	public	org.apache.commons:commons-pool2:2.10.0	instantiation	org.apache.commons:commons-dbcp2:2.9.0
+java.security.InvalidParameterException	public	java.security	instantiation	org.apache.commons:commons-text:1.9
+org.apache.lucene.codecs.mockrandom.MockRandomPostingsFormat	public	unknownLib	Class.forName	org.apache.lucene:lucene-core:8.10.1
+java.sql.SQLException	public	java.sql	subtyping	org.apache.commons:commons-dbcp2:2.9.0
+org.apache.lucene.util.IntsRefBuilder	public	org.apache.lucene:lucene-core:8.10.1	instantiation	org.apache.lucene:lucene-sandbox:8.10.1
+org.apache.lucene.document.FieldType	public	org.apache.lucene:lucene-core:8.10.1	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.lucene.analysis.tokenattributes.KeywordAttribute	public	org.apache.lucene:lucene-core:8.10.1	cast	org.apache.lucene:lucene-analyzers-common:8.10.1
+org.apache.commons.codec.digest.DigestUtils	public	commons-codec:commons-codec:1.15	method call	org.owasp:dependency-check-utils:6.4.2-SNAPSHOT
+org.apache.lucene.index.IndexWriterConfig	public	org.apache.lucene:lucene-core:8.10.1	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.h2.tools.SimpleResultSet	public	com.h2database:h2:1.4.199	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.lucene.search.IndexSearcher	public	org.apache.lucene:lucene-core:8.10.1	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.core.JsonProcessingException	public	com.fasterxml.jackson.core:jackson-core:2.13.0	subtyping	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.owasp.dependencycheck.data.artifactory.ChecksumsImpl	public	org.owasp:dependency-check-core:6.4.2-SNAPSHOT	method call	com.fasterxml.jackson.core:jackson-databind:2.13.0
+java.sql.SQLFeatureNotSupportedException	public	java.sql	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.commons.logging.impl.SLF4JLogFactory	public	org.slf4j:jcl-over-slf4j:1.7.28	Class.forName	commons-logging:commons-logging:1.2
+org.boris.pecoff4j.COFFHeader	public	org.whitesource:pecoff4j:0.0.2.1	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.databind.MappingJsonFactory	public	com.fasterxml.jackson.core:jackson-databind:2.13.0	method call	com.fasterxml.jackson.core:jackson-core:2.13.0
+javax.annotation.concurrent.NotThreadSafe	public	com.google.code.findbugs:jsr305:3.0.2	annotation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.commons.io.FileUtils	public	commons-io:commons-io:2.11.0	method call	org.owasp:dependency-check-utils:6.4.2-SNAPSHOT
+org.apache.commons.dbcp2.PoolableConnectionFactory	public	org.apache.commons:commons-dbcp2:2.9.0	method call	org.apache.commons:commons-pool2:2.10.0
+org.apache.lucene.util.BytesRef	public	org.apache.lucene:lucene-core:8.10.1	instantiation	org.apache.lucene:lucene-sandbox:8.10.1
+org.apache.commons.io.input.BOMInputStream	public	commons-io:commons-io:2.11.0	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.lucene.search.BoostAttributeImpl	public	org.apache.lucene:lucene-core:8.10.1	Class.forName	org.apache.lucene:lucene-core:8.10.1
+org.apache.commons.pool2.impl.DefaultEvictionPolicy	public	org.apache.commons:commons-pool2:2.10.0	Class.forName	org.apache.commons:commons-pool2:2.10.0
+org.apache.lucene.queryparser.classic.ParseException	public	org.apache.lucene:lucene-queryparser:8.10.1	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonAlias	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+javax.annotation.concurrent.ThreadSafe	public	com.google.code.findbugs:jsr305:3.0.2	annotation	org.owasp:dependency-check-utils:6.4.2-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonValue	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.apache.lucene.codecs.bloom.TestBloomFilteredLucenePostings	public	unknownLib	Class.forName	org.apache.lucene:lucene-core:8.10.1
+org.apache.lucene.search.RegexpQuery	public	org.apache.lucene:lucene-core:8.10.1	instantiation	org.apache.lucene:lucene-queryparser:8.10.1
+org.boris.pecoff4j.DOSHeader	public	org.whitesource:pecoff4j:0.0.2.1	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+java.security.PrivilegedAction	public	java.security	subtyping	javax.xml.datatype
+com.fasterxml.jackson.core.Versioned	public	com.fasterxml.jackson.core:jackson-core:2.13.0	subtyping	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.w3c.dom.Node	public	org.w3c.dom	cast	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.lucene.analysis.TokenFilter	public	org.apache.lucene:lucene-core:8.10.1	subtyping	org.apache.lucene:lucene-analyzers-common:8.10.1
+com.h3xstream.retirejs.repo.VulnerabilitiesRepositoryLoader	public	com.h3xstream.retirejs:retirejs-core:3.0.3	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.databind.ObjectMapper	public	com.fasterxml.jackson.core:jackson-databind:2.13.0	method call	org.owasp:dependency-check-utils:6.4.2-SNAPSHOT
+org.apache.commons.io.filefilter.SuffixFileFilter	public	commons-io:commons-io:2.11.0	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+java.sql.Time	public	java.sql	instantiation	com.h2database:h2:1.4.199
+org.apache.lucene.analysis.DelegatingAnalyzerWrapper	public	org.apache.lucene:lucene-core:8.10.1	subtyping	org.apache.lucene:lucene-analyzers-common:8.10.1
+java.security.PrivilegedAction	public	java.security	subtyping	javax.xml.parsers
+java.security.MessageDigest$Delegate	default	java.security	method call	com.h2database:h2:1.4.199
+org.apache.lucene.analysis.CharacterUtils	public	org.apache.lucene:lucene-core:8.10.1	method call	org.apache.lucene:lucene-analyzers-common:8.10.1
+org.apache.lucene.codecs.asserting.AssertingPostingsFormat	public	unknownLib	Class.forName	org.apache.lucene:lucene-core:8.10.1
+org.apache.lucene.codecs.lucene84.Lucene84PostingsFormat	public	org.apache.lucene:lucene-core:8.10.1	Class.forName	org.apache.lucene:lucene-core:8.10.1
+com.fasterxml.jackson.databind.ObjectMapper	public	com.fasterxml.jackson.core:jackson-databind:2.13.0	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonFilter	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+com.fasterxml.jackson.annotation.JsonIgnoreProperties$Value	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	method call	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream	public	org.apache.commons:commons-compress:1.21	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.h2.jdbc.JdbcConnection	public	com.h2database:h2:1.4.199	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.hankcs.algorithm.AhoCorasickDoubleArrayTrie	public	com.hankcs:aho-corasick-double-array-trie:1.2.3	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.boris.pecoff4j.AttributeCertificateTable	public	org.whitesource:pecoff4j:0.0.2.1	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.lucene.analysis.tokenattributes.PackedTokenAttributeImpl	public	org.apache.lucene:lucene-core:8.10.1	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.commons.logging.impl.WeakHashtable	public	commons-logging:commons-logging:1.2	Class.forName	commons-logging:commons-logging:1.2
+org.owasp.dependencycheck.utils.Settings	public	org.owasp:dependency-check-utils:6.4.2-SNAPSHOT	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.boris.pecoff4j.SectionTable	public	org.whitesource:pecoff4j:0.0.2.1	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+javax.annotation.concurrent.ThreadSafe	public	com.google.code.findbugs:jsr305:3.0.2	annotation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.lucene.codecs.memory.FSTPostingsFormat	public	unknownLib	Class.forName	org.apache.lucene:lucene-core:8.10.1
+java.security.MessageDigest$Delegate	default	java.security	method call	commons-codec:commons-codec:1.15
+com.fasterxml.jackson.annotation.JsonIdentityReference	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.w3c.dom.NodeList	public	org.w3c.dom	cast	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.commons.pool2.impl.GenericObjectPoolConfig	public	org.apache.commons:commons-pool2:2.10.0	instantiation	org.apache.commons:commons-dbcp2:2.9.0
+com.google.common.io.CountingInputStream	public	com.google.guava:guava:31.0.1-jre	instantiation	org.eclipse.packager:packager-rpm:0.17.0
+com.fasterxml.jackson.annotation.JacksonAnnotation	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	annotation	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.apache.lucene.codecs.lucene87.Lucene87Codec	public	org.apache.lucene:lucene-core:8.10.1	Class.forName	org.apache.lucene:lucene-core:8.10.1
+org.apache.lucene.codecs.blockterms.LuceneVarGapDocFreqInterval	public	unknownLib	Class.forName	org.apache.lucene:lucene-core:8.10.1
+com.fasterxml.jackson.core.JsonParser	public	com.fasterxml.jackson.core:jackson-core:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+com.moandjiezana.toml.Toml	public	com.moandjiezana.toml:toml4j:0.7.2	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+java.sql.Statement	public	java.sql	cast	org.apache.commons:commons-dbcp2:2.9.0
+java.sql.Driver	public	java.sql	cast	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.commons.lang3.builder.HashCodeBuilder	public	org.apache.commons:commons-lang3:3.12.0	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonBackReference	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+com.hankcs.algorithm.AhoCorasickDoubleArrayTrie	public	com.hankcs:aho-corasick-double-array-trie:1.2.3	subtyping	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.owasp.dependencycheck.data.lucene.UrlTokenizingFilter	public	org.owasp:dependency-check-core:6.4.2-SNAPSHOT	method call	org.apache.lucene:lucene-core:8.10.1
+org.boris.pecoff4j.ImportDirectory	public	org.whitesource:pecoff4j:0.0.2.1	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.commons.pool2.impl.GenericKeyedObjectPool	public	org.apache.commons:commons-pool2:2.10.0	instantiation	org.apache.commons:commons-dbcp2:2.9.0
+sun.security.rsa.RSASignature$SHA512withRSA	public	unknownLib	Class.forName	java.security
+org.apache.lucene.codecs.uniformsplit.sharedterms.STUniformSplitPostingsFormat	public	unknownLib	Class.forName	org.apache.lucene:lucene-core:8.10.1
+org.apache.commons.logging.impl.SLF4JLocationAwareLog	public	org.slf4j:jcl-over-slf4j:1.7.28	method call	org.apache.commons:commons-jcs-core:2.2.1
+org.boris.pecoff4j.RVAConverter	public	org.whitesource:pecoff4j:0.0.2.1	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.google.common.io.Resources	public	com.google.guava:guava:31.0.1-jre	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonFormat$Value	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	method call	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.boris.pecoff4j.LoadConfigDirectory	public	org.whitesource:pecoff4j:0.0.2.1	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+us.springett.parsers.cpe.Cpe	public	us.springett:cpe-parser:2.0.2	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.h2.Driver	public	com.h2database:h2:1.4.199	Class.forName	java.sql
+org.owasp.dependencycheck.utils.FileUtils	public	org.owasp:dependency-check-utils:6.4.2-SNAPSHOT	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.commons.lang3.Range	public	org.apache.commons:commons-lang3:3.12.0	method call	org.apache.commons:commons-text:1.9
+com.fasterxml.jackson.annotation.JsonAutoDetect	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.boris.pecoff4j.ResourceDirectoryTable	public	org.whitesource:pecoff4j:0.0.2.1	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.lucene.codecs.ramonly.RAMOnlyPostingsFormat	public	unknownLib	Class.forName	org.apache.lucene:lucene-core:8.10.1
+us.springett.parsers.cpe.CpeBuilder	public	us.springett:cpe-parser:2.0.2	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.core.util.InternCache	public	com.fasterxml.jackson.core:jackson-core:2.13.0	method call	com.fasterxml.jackson.core:jackson-databind:2.13.0
+javax.xml.parsers.SAXParserFactory	public	javax.xml.parsers	method call	org.owasp:dependency-check-utils:6.4.2-SNAPSHOT
+org.sonatype.ossindex.service.api.componentreport.ComponentReport	public	org.sonatype.ossindex:ossindex-service-api:1.8.1	cast	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+java.sql.Timestamp	public	java.sql	instantiation	com.h2database:h2:1.4.199
+com.fasterxml.jackson.databind.type.SimpleType	public	com.fasterxml.jackson.core:jackson-databind:2.13.0	method call	com.fasterxml.jackson.core:jackson-core:2.13.0
+org.apache.lucene.analysis.Tokenizer	public	org.apache.lucene:lucene-core:8.10.1	subtyping	org.apache.lucene:lucene-analyzers-common:8.10.1
+org.boris.pecoff4j.io.DataReader	public	org.whitesource:pecoff4j:0.0.2.1	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.h3xstream.retirejs.repo.JsLibraryResult	public	com.h3xstream.retirejs:retirejs-core:3.0.3	cast	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+java.sql.SQLException	public	java.sql	subtyping	com.h2database:h2:1.4.199
+org.owasp.dependencycheck.utils.WriteLockCleanupHook	public	org.owasp:dependency-check-core:6.4.2-SNAPSHOT	Class.forName	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonProperty	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+com.fasterxml.jackson.core.TreeNode	public	com.fasterxml.jackson.core:jackson-core:2.13.0	subtyping	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.glassfish.json.JsonReaderImpl	default	org.glassfish:javax.json:1.1.4	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream	public	org.apache.commons:commons-compress:1.21	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+java.sql.Clob	public	java.sql	cast	com.h2database:h2:1.4.199
+org.apache.lucene.analysis.miscellaneous.WordDelimiterGraphFilter	public	org.apache.lucene:lucene-analyzers-common:8.10.1	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+java.sql.Statement	public	java.sql	subtyping	com.h2database:h2:1.4.199
+org.apache.lucene.analysis.miscellaneous.PerFieldAnalyzerWrapper	public	org.apache.lucene:lucene-analyzers-common:8.10.1	method call	org.apache.lucene:lucene-core:8.10.1
+com.github.packageurl.PackageURL	public	com.github.package-url:packageurl-java:1.4.1	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonTypeName	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.apache.lucene.document.Field	public	org.apache.lucene:lucene-core:8.10.1	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.commons.dbcp2.BasicDataSource	public	org.apache.commons:commons-dbcp2:2.9.0	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.commons.pool2.impl.GenericObjectPool	public	org.apache.commons:commons-pool2:2.10.0	method call	org.apache.commons:commons-dbcp2:2.9.0
+org.apache.commons.jcs.engine.CompositeCacheAttributes	public	org.apache.commons:commons-jcs-core:2.2.1	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.w3c.dom.DOMException	public	org.w3c.dom	subtyping	org.apache.xml.dtm
+sun.security.provider.SHA2$SHA256	public	unknownLib	Class.forName	java.security
+org.apache.lucene.search.BooleanClause	public	org.apache.lucene:lucene-core:8.10.1	instantiation	org.apache.lucene:lucene-queryparser:8.10.1
+org.apache.commons.io.IOUtils	public	commons-io:commons-io:2.11.0	method call	org.owasp:dependency-check-utils:6.4.2-SNAPSHOT
+org.apache.lucene.analysis.core.KeywordAnalyzer	public	org.apache.lucene:lucene-analyzers-common:8.10.1	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.commons.lang3.builder.HashCodeBuilder	public	org.apache.commons:commons-lang3:3.12.0	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.commons.compress.archivers.zip.ZipFile	public	org.apache.commons:commons-compress:1.21	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.commons.pool2.impl.AbandonedConfig	public	org.apache.commons:commons-pool2:2.10.0	instantiation	org.apache.commons:commons-dbcp2:2.9.0
+java.security.PrivilegedAction	public	java.security	subtyping	org.apache.lucene:lucene-core:8.10.1
+org.boris.pecoff4j.ImportDirectory	public	org.whitesource:pecoff4j:0.0.2.1	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.owasp.dependencycheck.data.lucene.AlphaNumericFilter	public	org.owasp:dependency-check-core:6.4.2-SNAPSHOT	method call	org.apache.lucene:lucene-core:8.10.1
+org.apache.lucene.search.WildcardQuery	public	org.apache.lucene:lucene-core:8.10.1	instantiation	org.apache.lucene:lucene-queryparser:8.10.1
+org.apache.lucene.search.MultiPhraseQuery$Builder	public	org.apache.lucene:lucene-core:8.10.1	instantiation	org.apache.lucene:lucene-queryparser:8.10.1
+com.fasterxml.jackson.core.json.WriterBasedJsonGenerator	public	com.fasterxml.jackson.core:jackson-core:2.13.0	method call	com.fasterxml.jackson.core:jackson-databind:2.13.0
+java.sql.SQLNonTransientException	public	java.sql	subtyping	com.h2database:h2:1.4.199
+java.sql.Connection	public	java.sql	cast	com.h2database:h2:1.4.199
+com.fasterxml.jackson.annotation.JsonIgnore	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+com.fasterxml.jackson.databind.ObjectReader	public	com.fasterxml.jackson.core:jackson-databind:2.13.0	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.commons.pool2.impl.GenericObjectPoolConfig	public	org.apache.commons:commons-pool2:2.10.0	method call	org.apache.commons:commons-dbcp2:2.9.0
+org.h2.engine.Engine	public	com.h2database:h2:1.4.199	Class.forName	com.h2database:h2:1.4.199
+com.fasterxml.jackson.core.filter.FilteringParserDelegate	public	com.fasterxml.jackson.core:jackson-core:2.13.0	instantiation	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.boris.pecoff4j.PE	public	org.whitesource:pecoff4j:0.0.2.1	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.lucene.search.MultiPhraseQuery	public	org.apache.lucene:lucene-core:8.10.1	cast	org.apache.lucene:lucene-queryparser:8.10.1
+org.apache.lucene.codecs.PostingsReaderBase	public	org.apache.lucene:lucene-core:8.10.1	subtyping	org.apache.lucene:lucene-sandbox:8.10.1
+org.apache.commons.lang3.mutable.MutableInt	public	org.apache.commons:commons-lang3:3.12.0	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.commons.jcs.engine.memory.lru.LRUMemoryCache	public	org.apache.commons:commons-jcs-core:2.2.1	Class.forName	org.apache.commons:commons-jcs-core:2.2.1
+org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream	public	org.apache.commons:commons-compress:1.21	instantiation	org.eclipse.packager:packager-rpm:0.17.0
+org.apache.commons.lang3.StringUtils	public	org.apache.commons:commons-lang3:3.12.0	method call	org.apache.commons:commons-text:1.9
+org.apache.commons.lang3.ArrayUtils	public	org.apache.commons:commons-lang3:3.12.0	method call	org.apache.commons:commons-text:1.9
+org.apache.lucene.analysis.tokenattributes.PositionIncrementAttributeImpl	public	org.apache.lucene:lucene-core:8.10.1	Class.forName	org.apache.lucene:lucene-core:8.10.1
+org.apache.commons.io.filefilter.OrFileFilter	public	commons-io:commons-io:2.11.0	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.lucene.index.IndexWriter	public	org.apache.lucene:lucene-core:8.10.1	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.core.io.SegmentedStringWriter	public	com.fasterxml.jackson.core:jackson-core:2.13.0	method call	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.apache.commons.logging.impl.SLF4JLogFactory	public	org.slf4j:jcl-over-slf4j:1.7.28	method call	commons-logging:commons-logging:1.2
+org.apache.commons.lang3.StringUtils	public	org.apache.commons:commons-lang3:3.12.0	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.boris.pecoff4j.RVAConverter	public	org.whitesource:pecoff4j:0.0.2.1	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+javax.json.JsonObject	public	org.glassfish:javax.json:1.1.4	cast	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.lucene.analysis.core.KeywordTokenizer	public	org.apache.lucene:lucene-analyzers-common:8.10.1	method call	org.apache.lucene:lucene-core:8.10.1
+org.boris.pecoff4j.PESignature	public	org.whitesource:pecoff4j:0.0.2.1	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+java.sql.SQLException	public	java.sql	cast	com.h2database:h2:1.4.199
+sun.misc.Unsafe	public	unknownLib	Class.forName	org.apache.lucene:lucene-core:8.10.1
+com.fasterxml.jackson.core.json.JsonReadFeature	public	com.fasterxml.jackson.core:jackson-core:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.apache.lucene.codecs.blockterms.LuceneFixedGap	public	unknownLib	Class.forName	org.apache.lucene:lucene-core:8.10.1
+com.sun.crypto.provider.DHParameters	public	unknownLib	Class.forName	java.security
+org.apache.commons.jcs.access.CacheAccess	public	org.apache.commons:commons-jcs-core:2.2.1	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.anarres.jdiagnostics.DefaultQuery	public	org.anarres.jdiagnostics:jdiagnostics:1.0.7	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.lucene.analysis.StopFilter	public	org.apache.lucene:lucene-core:8.10.1	instantiation	org.apache.lucene:lucene-analyzers-common:8.10.1
+java.sql.Driver	public	java.sql	cast	org.apache.commons:commons-dbcp2:2.9.0
+com.github.packageurl.PackageURL	public	com.github.package-url:packageurl-java:1.4.1	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonFormat	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.apache.commons.pool2.SwallowedExceptionListener	public	org.apache.commons:commons-pool2:2.10.0	subtyping	org.apache.commons:commons-dbcp2:2.9.0
+com.h3xstream.retirejs.repo.ScannerFacade	public	com.h3xstream.retirejs:retirejs-core:3.0.3	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+us.springett.parsers.cpe.CpeBuilder	public	us.springett:cpe-parser:2.0.2	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+sun.security.ec.ECKeyPairGenerator	public	unknownLib	Class.forName	java.security
+sun.security.provider.DSA$SHA224withDSA	public	unknownLib	Class.forName	java.security
+org.boris.pecoff4j.io.ResourceParser	public	org.whitesource:pecoff4j:0.0.2.1	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.commons.lang3.builder.EqualsBuilder	public	org.apache.commons:commons-lang3:3.12.0	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.module.afterburner.AfterburnerModule	public	com.fasterxml.jackson.module:jackson-module-afterburner:2.13.0	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.lucene.codecs.compressing.FastDecompressionCompressingCodec	public	unknownLib	Class.forName	org.apache.lucene:lucene-core:8.10.1
+sun.security.rsa.RSASignature$SHA256withRSA	public	unknownLib	Class.forName	java.security
+org.glassfish.json.JsonProviderImpl	public	org.glassfish:javax.json:1.1.4	Class.forName	org.glassfish:javax.json:1.1.4
+org.apache.commons.pool2.TrackedUse	public	org.apache.commons:commons-pool2:2.10.0	subtyping	org.apache.commons:commons-dbcp2:2.9.0
+org.boris.pecoff4j.ImageData	public	org.whitesource:pecoff4j:0.0.2.1	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.owasp.dependencycheck.data.nvdcve.DriverShim	default	org.owasp:dependency-check-core:6.4.2-SNAPSHOT	Class.forName	java.sql
+org.apache.lucene.search.FuzzyQuery	public	org.apache.lucene:lucene-core:8.10.1	instantiation	org.apache.lucene:lucene-queryparser:8.10.1
+java.security.AccessController	default	java.security	method call	javax.xml.xpath
+com.fasterxml.jackson.annotation.JsonInclude$Value	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	method call	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.apache.lucene.codecs.compressing.LZ4WithPresetCompressingCodec	public	unknownLib	Class.forName	org.apache.lucene:lucene-core:8.10.1
+java.sql.DriverManager	public	java.sql	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.lucene.search.BooleanClause	public	org.apache.lucene:lucene-core:8.10.1	method call	org.apache.lucene:lucene-queryparser:8.10.1
+org.apache.lucene.codecs.uniformsplit.UniformSplitPostingsFormat	public	unknownLib	Class.forName	org.apache.lucene:lucene-core:8.10.1
+com.fasterxml.jackson.core.io.SerializedString	public	com.fasterxml.jackson.core:jackson-core:2.13.0	instantiation	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.boris.pecoff4j.resources.VersionInfo	public	org.whitesource:pecoff4j:0.0.2.1	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+java.sql.PreparedStatement	public	java.sql	subtyping	com.h2database:h2:1.4.199
+org.apache.commons.pool2.impl.GenericObjectPool	public	org.apache.commons:commons-pool2:2.10.0	instantiation	org.apache.commons:commons-dbcp2:2.9.0
+org.apache.lucene.analysis.StopwordAnalyzerBase	public	org.apache.lucene:lucene-core:8.10.1	subtyping	org.apache.lucene:lucene-analyzers-common:8.10.1
+javax.json.Json	public	org.glassfish:javax.json:1.1.4	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+java.sql.Date	public	java.sql	cast	com.h2database:h2:1.4.199
+java.security.PrivilegedAction	public	java.security	subtyping	org.apache.xml.dtm
+org.apache.commons.jcs.engine.CompositeCacheAttributes	public	org.apache.commons:commons-jcs-core:2.2.1	Class.forName	org.apache.commons:commons-jcs-core:2.2.1
+org.boris.pecoff4j.OptionalHeader	public	org.whitesource:pecoff4j:0.0.2.1	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.lucene.analysis.Analyzer	public	org.apache.lucene:lucene-core:8.10.1	subtyping	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonClassDescription	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.apache.lucene.analysis.CharArraySet	public	org.apache.lucene:lucene-core:8.10.1	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.h2.jdbc.JdbcPreparedStatement	public	com.h2database:h2:1.4.199	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonIncludeProperties	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream	public	org.apache.commons:commons-compress:1.21	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.core.json.ReaderBasedJsonParser	public	com.fasterxml.jackson.core:jackson-core:2.13.0	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonGetter	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.apache.lucene.analysis.BaseTokenStreamTestCase$CheckClearAttributesAttributeImpl	public	unknownLib	Class.forName	org.apache.lucene:lucene-core:8.10.1
+java.sql.Blob	public	java.sql	cast	com.h2database:h2:1.4.199
+org.h2.jdbc.JdbcResultSet	public	com.h2database:h2:1.4.199	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.lucene.analysis.tokenattributes.CharTermAttributeImpl	public	org.apache.lucene:lucene-core:8.10.1	Class.forName	org.apache.lucene:lucene-core:8.10.1
+org.h2.jdbc.JdbcDatabaseMetaData	public	com.h2database:h2:1.4.199	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.lucene.util.BytesRef	public	org.apache.lucene:lucene-core:8.10.1	cast	org.apache.lucene:lucene-sandbox:8.10.1
+org.owasp.dependencycheck.utils.Checksum	public	org.owasp:dependency-check-utils:6.4.2-SNAPSHOT	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+java.sql.ResultSet	public	java.sql	cast	com.h2database:h2:1.4.199
+sun.security.rsa.RSAPSSSignature	public	unknownLib	Class.forName	java.security
+org.owasp.dependencycheck.xml.pom.Model$PropertyLookup	private	org.owasp:dependency-check-core:6.4.2-SNAPSHOT	method call	org.apache.commons:commons-text:1.9
+org.h2.jdbc.JdbcStatement	public	com.h2database:h2:1.4.199	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.lucene.analysis.TokenFilter	public	org.apache.lucene:lucene-core:8.10.1	subtyping	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+java.sql.SQLFeatureNotSupportedException	public	java.sql	subtyping	com.h2database:h2:1.4.199
+javax.json.JsonArray	public	org.glassfish:javax.json:1.1.4	cast	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.h2.jdbc.JdbcConnection	public	com.h2database:h2:1.4.199	method call	org.apache.commons:commons-dbcp2:2.9.0
+sun.security.provider.X509Factory	public	unknownLib	Class.forName	java.security
+org.boris.pecoff4j.PE	public	org.whitesource:pecoff4j:0.0.2.1	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.lucene.analysis.StopFilter	public	org.apache.lucene:lucene-core:8.10.1	subtyping	org.apache.lucene:lucene-analyzers-common:8.10.1
+org.apache.lucene.codecs.FieldsConsumer	public	org.apache.lucene:lucene-core:8.10.1	subtyping	org.apache.lucene:lucene-sandbox:8.10.1
+java.security.PrivilegedAction	public	java.security	subtyping	java.sql
+org.owasp.dependencycheck.data.lucene.TokenPairConcatenatingFilter	public	org.owasp:dependency-check-core:6.4.2-SNAPSHOT	method call	org.apache.lucene:lucene-core:8.10.1
+java.sql.SQLClientInfoException	public	java.sql	instantiation	org.apache.commons:commons-dbcp2:2.9.0
+org.apache.lucene.analysis.tokenattributes.CharTermAttribute	public	org.apache.lucene:lucene-core:8.10.1	cast	org.apache.lucene:lucene-analyzers-common:8.10.1
+java.security.interfaces.RSAPrivateKey	public	unknownLib	Class.forName	java.security
+java.sql.Driver	public	java.sql	subtyping	com.h2database:h2:1.4.199
+org.apache.commons.pool2.KeyedPooledObjectFactory	public	org.apache.commons:commons-pool2:2.10.0	subtyping	org.apache.commons:commons-dbcp2:2.9.0
+org.apache.lucene.search.PhraseQuery	public	org.apache.lucene:lucene-core:8.10.1	cast	org.apache.lucene:lucene-queryparser:8.10.1
+com.fasterxml.jackson.annotation.JsonKey	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.apache.lucene.codecs.compressing.FastCompressingCodec	public	unknownLib	Class.forName	org.apache.lucene:lucene-core:8.10.1
+org.apache.lucene.analysis.tokenattributes.PackedTokenAttributeImpl	public	org.apache.lucene:lucene-core:8.10.1	method call	org.apache.lucene:lucene-analyzers-common:8.10.1
+com.fasterxml.jackson.databind.ObjectMapper	public	com.fasterxml.jackson.core:jackson-databind:2.13.0	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.owasp.dependencycheck.data.nvdcve.H2Functions	public	org.owasp:dependency-check-core:6.4.2-SNAPSHOT	Class.forName	com.h2database:h2:1.4.199
+org.boris.pecoff4j.PESignature	public	org.whitesource:pecoff4j:0.0.2.1	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.commons.lang3.mutable.MutableInt	public	org.apache.commons:commons-lang3:3.12.0	cast	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.lucene.analysis.core.LowerCaseFilter	public	org.apache.lucene:lucene-analyzers-common:8.10.1	method call	org.apache.lucene:lucene-core:8.10.1
+sun.security.ec.ECDSASignature$SHA256	public	unknownLib	Class.forName	java.security
+org.apache.lucene.search.PhraseQuery	public	org.apache.lucene:lucene-core:8.10.1	method call	org.apache.lucene:lucene-queryparser:8.10.1
+com.fasterxml.jackson.annotation.JsonView	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.boris.pecoff4j.io.DataEntry	public	org.whitesource:pecoff4j:0.0.2.1	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.commons.lang3.mutable.MutableInt	public	org.apache.commons:commons-lang3:3.12.0	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonAutoDetect$Visibility	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	method call	com.fasterxml.jackson.core:jackson-databind:2.13.0
+java.sql.BatchUpdateException	public	java.sql	subtyping	com.h2database:h2:1.4.199
+org.apache.lucene.codecs.PushPostingsWriterBase	public	org.apache.lucene:lucene-core:8.10.1	subtyping	org.apache.lucene:lucene-sandbox:8.10.1
+java.sql.DatabaseMetaData	public	java.sql	subtyping	com.h2database:h2:1.4.199
+org.apache.commons.lang3.builder.EqualsBuilder	public	org.apache.commons:commons-lang3:3.12.0	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonCreator	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+sun.security.ec.ECDSASignature$SHA384	public	unknownLib	Class.forName	java.security
+com.fasterxml.jackson.annotation.JsonAnyGetter	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.apache.lucene.search.PhraseQuery$Builder	public	org.apache.lucene:lucene-core:8.10.1	method call	org.apache.lucene:lucene-queryparser:8.10.1
+java.security.interfaces.ECPublicKey	public	unknownLib	Class.forName	java.security
+org.boris.pecoff4j.ResourceEntry	public	org.whitesource:pecoff4j:0.0.2.1	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+java.nio.DirectByteBuffer	default	unknownLib	Class.forName	org.apache.lucene:lucene-core:8.10.1
+org.boris.pecoff4j.ImportDirectoryEntry	public	org.whitesource:pecoff4j:0.0.2.1	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonPropertyDescription	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.owasp.dependencycheck.data.lucene.SearchFieldAnalyzer	public	org.owasp:dependency-check-core:6.4.2-SNAPSHOT	method call	org.apache.lucene:lucene-core:8.10.1
+org.owasp.dependencycheck.utils.URLConnectionFactory	public	org.owasp:dependency-check-utils:6.4.2-SNAPSHOT	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.commons.jcs.engine.ElementAttributes	public	org.apache.commons:commons-jcs-core:2.2.1	Class.forName	org.apache.commons:commons-jcs-core:2.2.1
+com.fasterxml.jackson.annotation.JsonRawValue	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+sun.security.provider.SHA	public	unknownLib	Class.forName	java.security
+org.apache.lucene.search.PrefixQuery	public	org.apache.lucene:lucene-core:8.10.1	instantiation	org.apache.lucene:lucene-queryparser:8.10.1
+java.sql.SQLFeatureNotSupportedException	public	java.sql	instantiation	org.apache.commons:commons-dbcp2:2.9.0
+org.apache.commons.io.FilenameUtils	public	commons-io:commons-io:2.11.0	method call	org.owasp:dependency-check-utils:6.4.2-SNAPSHOT
+org.apache.commons.logging.LogConfigurationException	public	org.slf4j:jcl-over-slf4j:1.7.28	instantiation	commons-logging:commons-logging:1.2
+java.security.PrivilegedAction	public	java.security	subtyping	javax.xml.xpath
+com.sun.crypto.provider.TlsPrfGenerator$V12	public	unknownLib	Class.forName	java.security
+org.owasp.dependencycheck.dependency.VulnerableSoftware	public	org.owasp:dependency-check-core:6.4.2-SNAPSHOT	method call	us.springett:cpe-parser:2.0.2
+com.fasterxml.jackson.annotation.JsonRootName	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+java.sql.CallableStatement	public	java.sql	cast	org.apache.commons:commons-dbcp2:2.9.0
+org.apache.lucene.store.RAMOutputStream	public	org.apache.lucene:lucene-core:8.10.1	instantiation	org.apache.lucene:lucene-sandbox:8.10.1
+java.sql.SQLException	public	java.sql	cast	org.apache.commons:commons-dbcp2:2.9.0
+java.sql.SQLXML	public	java.sql	cast	com.h2database:h2:1.4.199
+org.apache.commons.lang3.StringUtils	protected	org.apache.commons:commons-lang3:3.12.0	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.boris.pecoff4j.SectionHeader	public	org.whitesource:pecoff4j:0.0.2.1	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.owasp.dependencycheck.utils.TooManyRequestsException	public	org.owasp:dependency-check-utils:6.4.2-SNAPSHOT	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.commons.pool2.impl.DefaultPooledObject	public	org.apache.commons:commons-pool2:2.10.0	method call	org.apache.commons:commons-dbcp2:2.9.0
+org.apache.lucene.util.BytesRef	public	org.apache.lucene:lucene-core:8.10.1	instantiation	org.apache.lucene:lucene-queryparser:8.10.1
+com.fasterxml.jackson.annotation.JsonMerge	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.h2.util.IOUtils	public	com.h2database:h2:1.4.199	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.core.JacksonException	public	com.fasterxml.jackson.core:jackson-core:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.apache.lucene.codecs.asserting.AssertingCodec	public	unknownLib	Class.forName	org.apache.lucene:lucene-core:8.10.1
+org.owasp.dependencycheck.utils.Downloader	public	org.owasp:dependency-check-utils:6.4.2-SNAPSHOT	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+java.sql.SQLTimeoutException	public	java.sql	subtyping	com.h2database:h2:1.4.199
+org.apache.lucene.analysis.miscellaneous.WordDelimiterGraphFilter	public	org.apache.lucene:lucene-analyzers-common:8.10.1	method call	org.apache.lucene:lucene-core:8.10.1
+com.fasterxml.jackson.annotation.JsonProperty$Access	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.apache.xml.dtm.ref.DTMManagerDefault	public	unknownLib	Class.forName	org.apache.xml.dtm
+org.boris.pecoff4j.ResourceDirectoryTable	public	org.whitesource:pecoff4j:0.0.2.1	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.annotation.ObjectIdGenerator	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.owasp.dependencycheck.utils.Settings	public	org.owasp:dependency-check-utils:6.4.2-SNAPSHOT	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.boris.pecoff4j.SectionTable	public	org.whitesource:pecoff4j:0.0.2.1	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.hankcs.algorithm.AhoCorasickDoubleArrayTrie	public	com.hankcs:aho-corasick-double-array-trie:1.2.3	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonProperty$Access	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	method call	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.apache.lucene.analysis.core.StopFilter	public	org.apache.lucene:lucene-analyzers-common:8.10.1	method call	org.apache.lucene:lucene-core:8.10.1
+com.fasterxml.jackson.databind.ObjectMapper	public	com.fasterxml.jackson.core:jackson-databind:2.13.0	instantiation	org.owasp:dependency-check-utils:6.4.2-SNAPSHOT
+java.security.CodeSigner[]	public	java.security	cast	javax.xml.transform
+org.h2.store.fs.FilePathMemLZF	default	com.h2database:h2:1.4.199	Class.forName	com.h2database:h2:1.4.199
+org.owasp.dependencycheck.data.nvdcve.DriverShim	default	org.owasp:dependency-check-core:6.4.2-SNAPSHOT	method call	java.sql
+java.sql.SQLNonTransientConnectionException	public	java.sql	subtyping	com.h2database:h2:1.4.199
+org.apache.lucene.analysis.tokenattributes.PositionLengthAttribute	public	org.apache.lucene:lucene-core:8.10.1	cast	org.apache.lucene:lucene-analyzers-common:8.10.1
+org.apache.lucene.search.MatchAllDocsQuery	public	org.apache.lucene:lucene-core:8.10.1	instantiation	org.apache.lucene:lucene-queryparser:8.10.1
+javax.json.JsonString	public	org.glassfish:javax.json:1.1.4	cast	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+sun.security.provider.MD5	public	unknownLib	Class.forName	java.security
+org.boris.pecoff4j.ResourceDirectory	public	org.whitesource:pecoff4j:0.0.2.1	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+java.security.interfaces.ECPrivateKey	public	unknownLib	Class.forName	java.security
+com.fasterxml.jackson.annotation.JsonIncludeProperties$Value	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	method call	com.fasterxml.jackson.core:jackson-databind:2.13.0
+com.fasterxml.jackson.core.filter.JsonPointerBasedFilter	public	com.fasterxml.jackson.core:jackson-core:2.13.0	instantiation	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.boris.pecoff4j.ImageDataDirectory	public	org.whitesource:pecoff4j:0.0.2.1	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.lucene.analysis.core.WhitespaceTokenizer	public	org.apache.lucene:lucene-analyzers-common:8.10.1	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.lucene.analysis.core.KeywordTokenizer	public	org.apache.lucene:lucene-analyzers-common:8.10.1	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+java.sql.Time	public	java.sql	cast	com.h2database:h2:1.4.199
+org.apache.lucene.codecs.memory.DirectPostingsFormat	public	unknownLib	Class.forName	org.apache.lucene:lucene-core:8.10.1
+org.owasp.dependencycheck.data.lucene.AlphaNumericFilter	public	org.owasp:dependency-check-core:6.4.2-SNAPSHOT	method call	org.apache.lucene:lucene-analyzers-common:8.10.1
+org.h2.Driver	public	com.h2database:h2:1.4.199	method call	java.sql
+org.apache.lucene.analysis.tokenattributes.PositionIncrementAttribute	public	org.apache.lucene:lucene-core:8.10.1	cast	org.apache.lucene:lucene-analyzers-common:8.10.1
+java.security.AccessControlContext	public	java.security	instantiation	javax.xml.transform
+com.fasterxml.jackson.annotation.JsonAnySetter	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.h2.store.fs.FilePathNioMemLZF	default	com.h2database:h2:1.4.199	Class.forName	com.h2database:h2:1.4.199
+org.apache.commons.lang3.time.FastDateFormat	public	org.apache.commons:commons-lang3:3.12.0	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+sun.security.provider.SHA2$SHA224	public	unknownLib	Class.forName	java.security
+org.apache.commons.compress.archivers.zip.ZipArchiveEntry	public	org.apache.commons:commons-compress:1.21	cast	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonIgnoreProperties	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.boris.pecoff4j.io.DataReader	public	org.whitesource:pecoff4j:0.0.2.1	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+sun.security.provider.JavaKeyStore$DualFormatJKS	public	unknownLib	Class.forName	java.security
+org.boris.pecoff4j.ExportDirectory	public	org.whitesource:pecoff4j:0.0.2.1	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.lucene.codecs.blocktree.BlockTreeTermsWriter	public	org.apache.lucene:lucene-core:8.10.1	method call	org.apache.lucene:lucene-sandbox:8.10.1
+com.fasterxml.jackson.annotation.JacksonInject	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.apache.commons.lang3.Validate	public	org.apache.commons:commons-lang3:3.12.0	method call	org.apache.commons:commons-text:1.9
+org.apache.commons.text.StringSubstitutor	public	org.apache.commons:commons-text:1.9	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+sun.security.ec.ECDSASignature$SHA224	public	unknownLib	Class.forName	java.security
+org.apache.lucene.codecs.bloom.BloomFilteringPostingsFormat	public	unknownLib	Class.forName	org.apache.lucene:lucene-core:8.10.1
+org.apache.commons.io.input.BOMInputStream	public	commons-io:commons-io:2.11.0	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.annotation.JsonSetter$Value	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	method call	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.apache.commons.compress.archivers.zip.ZipArchiveEntry	public	org.apache.commons:commons-compress:1.21	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.lucene.analysis.Analyzer	public	org.apache.lucene:lucene-core:8.10.1	cast	org.apache.lucene:lucene-analyzers-common:8.10.1
+org.apache.lucene.search.TermRangeQuery	public	org.apache.lucene:lucene-core:8.10.1	instantiation	org.apache.lucene:lucene-queryparser:8.10.1
+java.security.MessageDigest	public	java.security	method call	com.h2database:h2:1.4.199
+org.boris.pecoff4j.BoundImport	public	org.whitesource:pecoff4j:0.0.2.1	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+com.fasterxml.jackson.core.ObjectCodec	public	com.fasterxml.jackson.core:jackson-core:2.13.0	subtyping	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.apache.commons.jcs.JCS	public	org.apache.commons:commons-jcs-core:2.2.1	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.boris.pecoff4j.COFFHeader	public	org.whitesource:pecoff4j:0.0.2.1	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.commons.jcs.engine.CompositeCacheAttributes	public	org.apache.commons:commons-jcs-core:2.2.1	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+java.security.Permissions	public	java.security	instantiation	javax.xml.transform
+org.apache.lucene.codecs.compressing.HighCompressionCompressingCodec	public	unknownLib	Class.forName	org.apache.lucene:lucene-core:8.10.1
+org.slf4j.LoggerFactory	public	org.slf4j:slf4j-api:1.7.32	method call	org.slf4j:jcl-over-slf4j:1.7.28
+java.sql.SQLClientInfoException	public	java.sql	instantiation	com.h2database:h2:1.4.199
+org.apache.commons.dbcp2.BasicDataSource	public	org.apache.commons:commons-dbcp2:2.9.0	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.lucene.codecs.uniformsplit.sharedterms.STUniformSplitRot13PostingsFormat	public	unknownLib	Class.forName	org.apache.lucene:lucene-core:8.10.1
+org.owasp.dependencycheck.utils.XmlUtils	public	org.owasp:dependency-check-utils:6.4.2-SNAPSHOT	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.owasp.dependencycheck.utils.JsonArrayFixingInputStream	public	org.owasp:dependency-check-utils:6.4.2-SNAPSHOT	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.boris.pecoff4j.resources.StringTable	public	org.whitesource:pecoff4j:0.0.2.1	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.apache.lucene.document.DateTools$Resolution	public	org.apache.lucene:lucene-core:8.10.1	cast	org.apache.lucene:lucene-queryparser:8.10.1
+org.h2.store.fs.FilePathNioMem	public	com.h2database:h2:1.4.199	Class.forName	com.h2database:h2:1.4.199
+com.fasterxml.jackson.annotation.ObjectIdResolver	public	com.fasterxml.jackson.core:jackson-annotations:2.13.0	cast	com.fasterxml.jackson.core:jackson-databind:2.13.0
+org.owasp.dependencycheck.utils.processing.ProcessReader	public	org.owasp:dependency-check-utils:6.4.2-SNAPSHOT	instantiation	org.owasp:dependency-check-core:6.4.2-SNAPSHOT
+org.xml.sax.InputSource	public	org.xml.sax	method call	org.owasp:dependency-check-core:6.4.2-SNAPSHOT

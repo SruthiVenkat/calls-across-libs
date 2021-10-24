@@ -1,0 +1,2 @@
+Caller Method	Caller Library	setAccessible Called On	Visibility	Callee Name	Field Signature	Callee Library
+com.sun.tools.javac.code.AnnoConstruct::initValueElementMethod()Ljava/lang/reflect/Method;	com.sun:tools:1.8	java.lang.reflect.Method	public	java.lang.annotation.Repeatable::value()Ljava/lang/Class;		unknownLib

@@ -1,0 +1,312 @@
+Class Name	Class Visibility	Class Library	Usage	Used In Library
+org.h2.mvstore.type.ObjectDataType	public	com.h2database:h2:2.0.201-SNAPSHOT	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+java.lang.StringBuilder	public	unknownLib	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+org.locationtech.jts.geom.impl.PackedCoordinateSequenceFactory	public	org.locationtech.jts:jts-core:1.17.0	method call	com.h2database:h2:2.0.201-SNAPSHOT
+org.h2.test.unit.TestAutoReconnect$MyDatabaseEventListener	public	unknownLib	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+org.apache.lucene.index.DirectoryReader	private	org.apache.lucene:lucene-core:8.5.2	method call	com.h2database:h2:2.0.201-SNAPSHOT
+org.apache.lucene.search.BooleanQuery$Builder	public	org.apache.lucene:lucene-core:8.5.2	instantiation	org.apache.lucene:lucene-queryparser:8.5.2
+org.apache.lucene.search.TermQuery	public	org.apache.lucene:lucene-core:8.5.2	cast	org.apache.lucene:lucene-queryparser:8.5.2
+org.h2.test.jdbc.TestJavaObjectSerializer$DbLevelJavaObjectSerializer	public	unknownLib	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+java.sql.SQLDataException	public	java.sql	subtyping	com.h2database:h2:2.0.201-SNAPSHOT
+java.sql.Clob	public	java.sql	cast	com.h2database:h2:2.0.201-SNAPSHOT
+org.h2.util.SourceCompiler$StringJavaFileObject	default	com.h2database:h2:2.0.201-SNAPSHOT	method call	com.sun:tools:1.8
+org.apache.lucene.document.FieldType	public	org.apache.lucene:lucene-core:8.5.2	instantiation	com.h2database:h2:2.0.201-SNAPSHOT
+java.sql.Date	public	java.sql	instantiation	com.h2database:h2:2.0.201-SNAPSHOT
+java.sql.SQLClientInfoException	public	java.sql	cast	com.h2database:h2:2.0.201-SNAPSHOT
+java.lang.Thread	public	unknownLib	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+org.h2.mvstore.tx.VersionedValueType$Factory	public	com.h2database:h2:2.0.201-SNAPSHOT	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+javax.annotation.processing.Messager	public	javax.annotation.processing	subtyping	com.sun:tools:1.8
+org.apache.lucene.search.MatchAllDocsQuery	public	org.apache.lucene:lucene-core:8.5.2	instantiation	org.apache.lucene:lucene-queryparser:8.5.2
+org.apache.lucene.analysis.StopFilter	public	org.apache.lucene:lucene-core:8.5.2	method call	org.apache.lucene:lucene-queryparser:8.5.2
+java.sql.SQLException	public	java.sql	subtyping	com.h2database:h2:2.0.201-SNAPSHOT
+org.apache.lucene.analysis.CachingTokenFilter	public	org.apache.lucene:lucene-core:8.5.2	instantiation	org.apache.lucene:lucene-queryparser:8.5.2
+javax.tools.DiagnosticListener	public	javax.tools	cast	com.sun:tools:1.8
+org.h2.test.server.TestWeb	public	unknownLib	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+org.apache.lucene.document.DateTools	public	org.apache.lucene:lucene-core:8.5.2	method call	com.h2database:h2:2.0.201-SNAPSHOT
+org.h2.command.dml.ScriptCommand	public	com.h2database:h2:2.0.201-SNAPSHOT	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+org.h2.test.db.TestTableEngines$OneRowTableEngine	public	unknownLib	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+com.sun.tools.javac.api.JavacTool	public	com.sun:tools:1.8	method call	com.h2database:h2:2.0.201-SNAPSHOT
+org.h2.test.db.TestTriggersConstraints$DeleteTrigger	public	unknownLib	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+java.security.PrivilegedAction	public	java.security	subtyping	org.apache.lucene:lucene-core:8.5.2
+org.h2.test.db.TestFunctions$MedianStringType	public	unknownLib	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+org.apache.lucene.index.Term	public	org.apache.lucene:lucene-core:8.5.2	instantiation	org.apache.lucene:lucene-queryparser:8.5.2
+org.h2.message.TraceWriterAdapter	public	com.h2database:h2:2.0.201-SNAPSHOT	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+javax.tools.JavaCompiler	public	javax.tools	subtyping	com.sun:tools:1.8
+java.sql.Driver	public	java.sql	cast	com.h2database:h2:2.0.201-SNAPSHOT
+org.apache.lucene.search.IndexSearcher	public	org.apache.lucene:lucene-core:8.5.2	instantiation	com.h2database:h2:2.0.201-SNAPSHOT
+org.apache.lucene.document.Document	public	org.apache.lucene:lucene-core:8.5.2	method call	com.h2database:h2:2.0.201-SNAPSHOT
+java.math.BigInteger	public	unknownLib	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+org.apache.lucene.index.IndexWriterConfig	public	org.apache.lucene:lucene-core:8.5.2	instantiation	com.h2database:h2:2.0.201-SNAPSHOT
+org.locationtech.jts.geom.Geometry	public	org.locationtech.jts:jts-core:1.17.0	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+java.sql.Timestamp	public	java.sql	instantiation	com.h2database:h2:2.0.201-SNAPSHOT
+org.apache.lucene.queryparser.flexible.standard.StandardQueryParser	public	org.apache.lucene:lucene-queryparser:8.5.2	instantiation	com.h2database:h2:2.0.201-SNAPSHOT
+java.sql.SQLClientInfoException	public	java.sql	method call	com.h2database:h2:2.0.201-SNAPSHOT
+org.locationtech.jts.geom.Polygon	public	org.locationtech.jts:jts-core:1.17.0	method call	com.h2database:h2:2.0.201-SNAPSHOT
+javax.tools.JavaFileManager	public	javax.tools	cast	com.sun:tools:1.8
+sun.security.ssl.KeyManagerFactoryImpl$SunX509	public	unknownLib	Class.forName	java.security
+java.security.Security	public	java.security	method call	com.h2database:h2:2.0.201-SNAPSHOT
+sun.security.ssl.TrustManagerFactoryImpl$PKIXFactory	public	unknownLib	Class.forName	java.security
+org.h2.test.unit.TestTools	public	unknownLib	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+org.h2.test.db.TestSequence$TriggerTest	public	unknownLib	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+org.locationtech.jts.geom.GeometryCollection	public	org.locationtech.jts:jts-core:1.17.0	method call	com.h2database:h2:2.0.201-SNAPSHOT
+sun.security.ec.ECDSASignature$SHA1	public	unknownLib	Class.forName	java.security
+com.sun.org.apache.xerces.internal.jaxp.SAXParserFactoryImpl	public	unknownLib	Class.forName	javax.xml.parsers
+sun.security.provider.NativePRNG	public	unknownLib	Class.forName	java.security
+org.h2.test.db.TestOptimizations	public	unknownLib	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+org.apache.lucene.document.DateTools$Resolution	public	org.apache.lucene:lucene-core:8.5.2	cast	org.apache.lucene:lucene-queryparser:8.5.2
+org.locationtech.jts.geom.GeometryCollection	public	org.locationtech.jts:jts-core:1.17.0	cast	com.h2database:h2:2.0.201-SNAPSHOT
+java.sql.ResultSet	public	java.sql	subtyping	com.h2database:h2:2.0.201-SNAPSHOT
+org.locationtech.jts.geom.impl.CoordinateArraySequenceFactory	public	org.locationtech.jts:jts-core:1.17.0	method call	com.h2database:h2:2.0.201-SNAPSHOT
+java.sql.Timestamp	public	java.sql	cast	com.h2database:h2:2.0.201-SNAPSHOT
+org.slf4j.helpers.NOPLogger	public	org.slf4j:slf4j-api:1.7.30	method call	com.h2database:h2:2.0.201-SNAPSHOT
+java.security.KeyStore	public	java.security	method call	com.h2database:h2:2.0.201-SNAPSHOT
+sun.security.provider.SHA2$SHA256	public	unknownLib	Class.forName	java.security
+org.apache.lucene.search.PhraseQuery$Builder	public	org.apache.lucene:lucene-core:8.5.2	instantiation	org.apache.lucene:lucene-queryparser:8.5.2
+org.h2.test.jdbc.TestCancel	public	unknownLib	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+java.sql.DatabaseMetaData	public	java.sql	method call	com.h2database:h2:2.0.201-SNAPSHOT
+javax.tools.Diagnostic	public	javax.tools	subtyping	com.sun:tools:1.8
+java.sql.CallableStatement	public	java.sql	subtyping	com.h2database:h2:2.0.201-SNAPSHOT
+javax.xml.stream.XMLInputFactory	public	javax.xml.stream	method call	com.h2database:h2:2.0.201-SNAPSHOT
+org.apache.lucene.analysis.tokenattributes.PositionIncrementAttribute	public	org.apache.lucene:lucene-core:8.5.2	cast	org.apache.lucene:lucene-queryparser:8.5.2
+java.security.PrivilegedAction	public	java.security	subtyping	javax.xml.stream
+org.apache.lucene.util.IntsRefBuilder	public	org.apache.lucene:lucene-core:8.5.2	instantiation	org.apache.lucene:lucene-sandbox:8.5.2
+org.apache.lucene.search.TermQuery	public	org.apache.lucene:lucene-core:8.5.2	instantiation	org.apache.lucene:lucene-queryparser:8.5.2
+org.locationtech.jts.geom.GeometryFactory	public	org.locationtech.jts:jts-core:1.17.0	instantiation	com.h2database:h2:2.0.201-SNAPSHOT
+org.apache.lucene.codecs.lucene84.Lucene84PostingsFormat	public	org.apache.lucene:lucene-core:8.5.2	Class.forName	org.apache.lucene:lucene-core:8.5.2
+javax.tools.StandardJavaFileManager	public	javax.tools	subtyping	com.sun:tools:1.8
+org.apache.lucene.search.Query	public	org.apache.lucene:lucene-core:8.5.2	cast	org.apache.lucene:lucene-queryparser:8.5.2
+sun.security.ec.ECKeyFactory	public	unknownLib	Class.forName	java.security
+org.postgresql.Driver	public	unknownLib	Class.forName	java.sql
+org.h2.test.db.TestTableEngines$EndlessTableEngine	public	unknownLib	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+com.sun.tools.javac.file.JavacFileManager	public	com.sun:tools:1.8	method call	javax.tools
+org.h2.test.db.TestTriggersConstraints$TestTriggerAdapter	public	unknownLib	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+java.sql.BatchUpdateException	public	java.sql	subtyping	com.h2database:h2:2.0.201-SNAPSHOT
+java.sql.DatabaseMetaData	public	java.sql	subtyping	com.h2database:h2:2.0.201-SNAPSHOT
+com.sun.xml.internal.stream.XMLOutputFactoryImpl	public	unknownLib	Class.forName	javax.xml.stream
+org.h2.samples.TriggerPassData	public	unknownLib	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+javax.tools.SimpleJavaFileObject	public	javax.tools	subtyping	com.h2database:h2:2.0.201-SNAPSHOT
+java.security.MessageDigest	public	java.security	method call	com.h2database:h2:2.0.201-SNAPSHOT
+org.h2.test.jdbc.TestUrlJavaObjectSerializer$FakeJavaObjectSerializer	public	unknownLib	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+java.security.MessageDigestSpi	public	java.security	Class.forName	java.security
+org.h2.server.web.WebServlet	public	com.h2database:h2:2.0.201-SNAPSHOT	method call	javax.servlet:javax.servlet-api:4.0.1
+java.security.MessageDigest$Delegate	default	java.security	method call	com.h2database:h2:2.0.201-SNAPSHOT
+org.apache.lucene.document.Document	public	org.apache.lucene:lucene-core:8.5.2	instantiation	com.h2database:h2:2.0.201-SNAPSHOT
+org.apache.lucene.search.MultiTermQuery$RewriteMethod	public	org.apache.lucene:lucene-core:8.5.2	cast	org.apache.lucene:lucene-queryparser:8.5.2
+org.h2.test.db.TestTriggersConstraints$ConcurrentTrigger	public	unknownLib	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+org.apache.lucene.queryparser.flexible.standard.StandardQueryParser	public	org.apache.lucene:lucene-queryparser:8.5.2	method call	com.h2database:h2:2.0.201-SNAPSHOT
+org.h2.test.db.TestMergeUsing	public	unknownLib	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+org.h2.test.db.TestRights$TestTrigger	public	unknownLib	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+java.sql.SQLClientInfoException	public	java.sql	instantiation	com.h2database:h2:2.0.201-SNAPSHOT
+java.security.DigestInputStream	public	java.security	instantiation	com.sun:tools:1.8
+org.locationtech.jts.geom.MultiPolygon	public	org.locationtech.jts:jts-core:1.17.0	method call	com.h2database:h2:2.0.201-SNAPSHOT
+org.apache.lucene.analysis.CachingTokenFilter	public	org.apache.lucene:lucene-core:8.5.2	method call	org.apache.lucene:lucene-queryparser:8.5.2
+java.sql.SQLType	public	java.sql	subtyping	com.h2database:h2:2.0.201-SNAPSHOT
+org.h2.mvstore.db.LobStorageMap$BlobReference$Type	public	com.h2database:h2:2.0.201-SNAPSHOT	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+org.h2.samples.TriggerSample$MyTrigger	public	unknownLib	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+org.locationtech.jts.geom.impl.PackedCoordinateSequence$Double	public	org.locationtech.jts:jts-core:1.17.0	method call	com.h2database:h2:2.0.201-SNAPSHOT
+java.sql.SQLException	public	java.sql	instantiation	com.h2database:h2:2.0.201-SNAPSHOT
+org.xml.sax.InputSource	public	org.xml.sax	instantiation	javax.xml.parsers
+org.locationtech.jts.geom.Geometry	public	org.locationtech.jts:jts-core:1.17.0	cast	com.h2database:h2:2.0.201-SNAPSHOT
+java.lang.Math	public	unknownLib	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+org.locationtech.jts.geom.Polygon	public	org.locationtech.jts:jts-core:1.17.0	cast	com.h2database:h2:2.0.201-SNAPSHOT
+org.h2.test.db.TestFunctions	public	unknownLib	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+sun.security.provider.SHA5$SHA384	public	unknownLib	Class.forName	java.security
+sun.security.util.ECParameters	public	unknownLib	Class.forName	java.security
+java.sql.SQLFeatureNotSupportedException	public	java.sql	subtyping	com.h2database:h2:2.0.201-SNAPSHOT
+org.h2.test.db.TestMultiDimension	public	unknownLib	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+java.sql.SQLXML	public	java.sql	cast	com.h2database:h2:2.0.201-SNAPSHOT
+java.security.MessageDigest	public	java.security	subtyping	com.h2database:h2:2.0.201-SNAPSHOT
+org.apache.lucene.codecs.PostingsReaderBase	public	org.apache.lucene:lucene-core:8.5.2	subtyping	org.apache.lucene:lucene-sandbox:8.5.2
+org.h2.util.SourceCompiler$ClassFileManager	default	com.h2database:h2:2.0.201-SNAPSHOT	method call	com.sun:tools:1.8
+org.h2.test.db.TestTriggersConstraints$TestView	public	unknownLib	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+org.h2.test.jdbc.TestDatabaseEventListener$MyDatabaseEventListener	public	unknownLib	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+org.apache.lucene.search.MultiPhraseQuery$Builder	public	org.apache.lucene:lucene-core:8.5.2	instantiation	org.apache.lucene:lucene-queryparser:8.5.2
+sun.security.ec.ECKeyPairGenerator	public	unknownLib	Class.forName	java.security
+java.sql.Time	public	java.sql	cast	com.h2database:h2:2.0.201-SNAPSHOT
+org.locationtech.jts.geom.GeometryCollection	public	org.locationtech.jts:jts-core:1.17.0	instantiation	com.h2database:h2:2.0.201-SNAPSHOT
+java.sql.SQLXML	public	java.sql	subtyping	com.h2database:h2:2.0.201-SNAPSHOT
+org.locationtech.jts.geom.LinearRing	public	org.locationtech.jts:jts-core:1.17.0	instantiation	com.h2database:h2:2.0.201-SNAPSHOT
+org.h2.util.SourceCompiler$StringJavaFileObject	default	com.h2database:h2:2.0.201-SNAPSHOT	method call	javax.tools
+com.sun.crypto.provider.TlsMasterSecretGenerator	public	unknownLib	Class.forName	java.security
+org.h2.test.db.TestView	public	unknownLib	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+org.h2.Driver	public	com.h2database:h2:2.0.201-SNAPSHOT	method call	java.sql
+org.apache.lucene.search.FuzzyQuery	public	org.apache.lucene:lucene-core:8.5.2	instantiation	org.apache.lucene:lucene-queryparser:8.5.2
+org.apache.lucene.util.BytesRef	public	org.apache.lucene:lucene-core:8.5.2	instantiation	org.apache.lucene:lucene-sandbox:8.5.2
+org.h2.test.db.TestTriggersConstraints$TestTriggerAlterTable	public	unknownLib	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+org.h2.test.db.TestFunctionOverload	public	unknownLib	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+org.apache.lucene.codecs.PostingsFormat	public	org.apache.lucene:lucene-core:8.5.2	subtyping	org.apache.lucene:lucene-sandbox:8.5.2
+java.sql.Savepoint	public	java.sql	subtyping	com.h2database:h2:2.0.201-SNAPSHOT
+java.sql.Time	public	java.sql	method call	com.h2database:h2:2.0.201-SNAPSHOT
+java.sql.SQLTimeoutException	public	java.sql	subtyping	com.h2database:h2:2.0.201-SNAPSHOT
+org.h2.test.db.TestTriggersConstraints	public	unknownLib	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+org.apache.lucene.search.MultiPhraseQuery	public	org.apache.lucene:lucene-core:8.5.2	cast	org.apache.lucene:lucene-queryparser:8.5.2
+java.awt.Point	public	unknownLib	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+java.security.SecureRandom	public	java.security	instantiation	com.h2database:h2:2.0.201-SNAPSHOT
+org.locationtech.jts.geom.PrecisionModel	public	org.locationtech.jts:jts-core:1.17.0	instantiation	com.h2database:h2:2.0.201-SNAPSHOT
+org.apache.lucene.util.BytesRef	public	org.apache.lucene:lucene-core:8.5.2	cast	org.apache.lucene:lucene-sandbox:8.5.2
+org.apache.lucene.search.MatchNoDocsQuery	public	org.apache.lucene:lucene-core:8.5.2	instantiation	org.apache.lucene:lucene-queryparser:8.5.2
+sun.security.provider.SecureRandom	public	unknownLib	Class.forName	java.security
+javax.annotation.processing.Processor	public	javax.annotation.processing	cast	com.sun:tools:1.8
+org.apache.lucene.codecs.PushPostingsWriterBase	public	org.apache.lucene:lucene-core:8.5.2	subtyping	org.apache.lucene:lucene-sandbox:8.5.2
+java.security.BasicPermission	public	java.security	subtyping	java.sql
+org.h2.test.db.TestTableEngines$TreeSetIndexTableEngine	public	unknownLib	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+javax.annotation.processing.FilerException	public	javax.annotation.processing	instantiation	com.sun:tools:1.8
+java.sql.SQLInvalidAuthorizationSpecException	public	java.sql	subtyping	com.h2database:h2:2.0.201-SNAPSHOT
+org.h2.fulltext.FullText$FullTextTrigger	public	com.h2database:h2:2.0.201-SNAPSHOT	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+javax.annotation.processing.ProcessingEnvironment	public	javax.annotation.processing	subtyping	com.sun:tools:1.8
+org.apache.lucene.search.BoostQuery	public	org.apache.lucene:lucene-core:8.5.2	instantiation	org.apache.lucene:lucene-queryparser:8.5.2
+javax.tools.JavaFileObject$Kind	public	javax.tools	method call	com.sun:tools:1.8
+java.sql.SQLNonTransientConnectionException	public	java.sql	subtyping	com.h2database:h2:2.0.201-SNAPSHOT
+org.h2.mvstore.db.NullValueDataType	public	com.h2database:h2:2.0.201-SNAPSHOT	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+java.security.KeyFactory	public	java.security	method call	com.h2database:h2:2.0.201-SNAPSHOT
+org.apache.lucene.codecs.idversion.IDVersionPostingsFormat	public	org.apache.lucene:lucene-sandbox:8.5.2	Class.forName	org.apache.lucene:lucene-core:8.5.2
+org.apache.lucene.analysis.tokenattributes.PackedTokenAttributeImpl	public	org.apache.lucene:lucene-core:8.5.2	method call	org.apache.lucene:lucene-queryparser:8.5.2
+org.h2.mvstore.db.LobStorageMap$BlobMeta$Type	public	com.h2database:h2:2.0.201-SNAPSHOT	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+org.apache.lucene.codecs.lucene80.Lucene80DocValuesFormat	public	org.apache.lucene:lucene-core:8.5.2	Class.forName	org.apache.lucene:lucene-core:8.5.2
+java.security.AlgorithmParametersSpi	public	java.security	Class.forName	java.security
+java.sql.Clob	public	java.sql	subtyping	com.h2database:h2:2.0.201-SNAPSHOT
+java.sql.SQLIntegrityConstraintViolationException	public	java.sql	subtyping	com.h2database:h2:2.0.201-SNAPSHOT
+org.apache.lucene.document.Field	public	org.apache.lucene:lucene-core:8.5.2	instantiation	com.h2database:h2:2.0.201-SNAPSHOT
+org.apache.lucene.codecs.idversion.IDVersionPostingsFormat	public	org.apache.lucene:lucene-sandbox:8.5.2	method call	org.apache.lucene:lucene-core:8.5.2
+java.lang.String	public	unknownLib	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+org.h2.test.db.TestFunctions$MedianString	public	unknownLib	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+sun.security.provider.X509Factory	public	unknownLib	Class.forName	java.security
+org.locationtech.jts.geom.GeometryFactory	public	org.locationtech.jts:jts-core:1.17.0	method call	com.h2database:h2:2.0.201-SNAPSHOT
+java.security.PrivilegedAction	public	java.security	subtyping	java.sql
+org.h2.server.TcpServer	public	com.h2database:h2:2.0.201-SNAPSHOT	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+org.locationtech.jts.geom.MultiPoint	public	org.locationtech.jts:jts-core:1.17.0	instantiation	com.h2database:h2:2.0.201-SNAPSHOT
+javax.xml.parsers.SAXParserFactory	public	javax.xml.parsers	method call	com.h2database:h2:2.0.201-SNAPSHOT
+javax.xml.transform.TransformerFactory	public	javax.xml.transform	method call	com.h2database:h2:2.0.201-SNAPSHOT
+org.locationtech.jts.geom.MultiPolygon	public	org.locationtech.jts:jts-core:1.17.0	instantiation	com.h2database:h2:2.0.201-SNAPSHOT
+java.awt.AWTKeyStroke	public	unknownLib	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+java.lang.annotation.Repeatable	public	unknownLib	Class.forName	com.sun:tools:1.8
+org.apache.lucene.index.CorruptIndexException	public	org.apache.lucene:lucene-core:8.5.2	instantiation	org.apache.lucene:lucene-sandbox:8.5.2
+com.sun.xml.internal.stream.XMLInputFactoryImpl	public	unknownLib	Class.forName	javax.xml.stream
+org.apache.lucene.analysis.tokenattributes.CharTermAttribute	public	org.apache.lucene:lucene-core:8.5.2	cast	org.apache.lucene:lucene-queryparser:8.5.2
+org.apache.lucene.analysis.Analyzer	public	org.apache.lucene:lucene-core:8.5.2	cast	org.apache.lucene:lucene-queryparser:8.5.2
+org.locationtech.jts.geom.MultiLineString	public	org.locationtech.jts:jts-core:1.17.0	method call	com.h2database:h2:2.0.201-SNAPSHOT
+sun.security.ssl.SSLContextImpl$DefaultSSLContext	public	unknownLib	Class.forName	java.security
+org.apache.lucene.search.WildcardQuery	public	org.apache.lucene:lucene-core:8.5.2	instantiation	org.apache.lucene:lucene-queryparser:8.5.2
+java.lang.System	public	unknownLib	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+org.h2.test.scripts.Aggregate1	public	unknownLib	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+java.sql.Array	public	java.sql	subtyping	com.h2database:h2:2.0.201-SNAPSHOT
+org.apache.lucene.index.IndexWriter	public	org.apache.lucene:lucene-core:8.5.2	instantiation	com.h2database:h2:2.0.201-SNAPSHOT
+org.h2.fulltext.FullTextLucene$FullTextTrigger	public	com.h2database:h2:2.0.201-SNAPSHOT	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+java.lang.Character	public	unknownLib	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+java.sql.Time	public	java.sql	instantiation	com.h2database:h2:2.0.201-SNAPSHOT
+org.locationtech.jts.geom.LinearRing	public	org.locationtech.jts:jts-core:1.17.0	method call	com.h2database:h2:2.0.201-SNAPSHOT
+org.xml.sax.InputSource	public	org.xml.sax	instantiation	com.h2database:h2:2.0.201-SNAPSHOT
+java.net.InetAddress	public	unknownLib	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+java.awt.TrayIcon	public	unknownLib	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+org.h2.test.jdbc.TestCallableStatement	public	unknownLib	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+sun.security.ec.ECDSASignature$Raw	public	unknownLib	Class.forName	java.security
+com.sun.tools.javac.api.JavacTool	public	com.sun:tools:1.8	Class.forName	javax.tools
+org.apache.lucene.codecs.lucene84.Lucene84Codec	public	org.apache.lucene:lucene-core:8.5.2	Class.forName	org.apache.lucene:lucene-core:8.5.2
+java.security.SecureClassLoader	public	java.security	subtyping	com.h2database:h2:2.0.201-SNAPSHOT
+com.sun.org.apache.xalan.internal.xsltc.trax.TransformerFactoryImpl	public	unknownLib	Class.forName	javax.xml.transform
+org.apache.lucene.codecs.blocktree.BlockTreeTermsWriter	public	org.apache.lucene:lucene-core:8.5.2	method call	org.apache.lucene:lucene-sandbox:8.5.2
+javax.tools.StandardJavaFileManager	public	javax.tools	cast	com.sun:tools:1.8
+org.h2.fulltext.FullTextLucene	public	com.h2database:h2:2.0.201-SNAPSHOT	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+org.apache.lucene.store.ByteBuffersDirectory	public	org.apache.lucene:lucene-core:8.5.2	instantiation	com.h2database:h2:2.0.201-SNAPSHOT
+javax.tools.FileObject	public	javax.tools	subtyping	com.sun:tools:1.8
+org.apache.lucene.index.IndexWriter	public	org.apache.lucene:lucene-core:8.5.2	method call	com.h2database:h2:2.0.201-SNAPSHOT
+org.locationtech.jts.geom.LineString	public	org.locationtech.jts:jts-core:1.17.0	instantiation	com.h2database:h2:2.0.201-SNAPSHOT
+org.locationtech.jts.geom.Polygon	public	org.locationtech.jts:jts-core:1.17.0	instantiation	com.h2database:h2:2.0.201-SNAPSHOT
+sun.security.provider.SHA	public	unknownLib	Class.forName	java.security
+org.locationtech.jts.geom.impl.CoordinateArraySequence	public	org.locationtech.jts:jts-core:1.17.0	method call	com.h2database:h2:2.0.201-SNAPSHOT
+javax.tools.ForwardingJavaFileManager	public	javax.tools	subtyping	com.h2database:h2:2.0.201-SNAPSHOT
+org.apache.lucene.index.Terms	public	org.apache.lucene:lucene-core:8.5.2	cast	org.apache.lucene:lucene-sandbox:8.5.2
+sun.security.provider.SHA5$SHA512	public	unknownLib	Class.forName	java.security
+java.sql.SQLTransientException	public	java.sql	subtyping	com.h2database:h2:2.0.201-SNAPSHOT
+java.sql.SQLException	public	java.sql	method call	com.h2database:h2:2.0.201-SNAPSHOT
+java.sql.SQLException	public	java.sql	cast	com.h2database:h2:2.0.201-SNAPSHOT
+java.sql.SQLSyntaxErrorException	public	java.sql	subtyping	com.h2database:h2:2.0.201-SNAPSHOT
+java.lang.Number	public	unknownLib	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+org.locationtech.jts.geom.MultiPoint	public	org.locationtech.jts:jts-core:1.17.0	method call	com.h2database:h2:2.0.201-SNAPSHOT
+javax.tools.JavaFileManager	public	javax.tools	subtyping	com.sun:tools:1.8
+org.apache.lucene.codecs.FieldsConsumer	public	org.apache.lucene:lucene-core:8.5.2	subtyping	org.apache.lucene:lucene-sandbox:8.5.2
+java.sql.Date	public	java.sql	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+javax.xml.parsers.DocumentBuilderFactory	public	javax.xml.parsers	method call	com.h2database:h2:2.0.201-SNAPSHOT
+org.apache.lucene.index.StandardDirectoryReader	public	org.apache.lucene:lucene-core:8.5.2	method call	com.h2database:h2:2.0.201-SNAPSHOT
+java.security.SecureRandom	public	java.security	method call	com.h2database:h2:2.0.201-SNAPSHOT
+org.h2.Driver	public	com.h2database:h2:2.0.201-SNAPSHOT	Class.forName	java.sql
+org.h2.test.db.TestTriggersConstraints$TestViewGeneratedKeys	public	unknownLib	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+javax.servlet.http.HttpServlet	public	javax.servlet:javax.servlet-api:4.0.1	subtyping	com.h2database:h2:2.0.201-SNAPSHOT
+org.h2.jmx.DatabaseInfo	public	com.h2database:h2:2.0.201-SNAPSHOT	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+org.apache.lucene.search.PrefixQuery	public	org.apache.lucene:lucene-core:8.5.2	instantiation	org.apache.lucene:lucene-queryparser:8.5.2
+org.h2.security.SHA3	public	com.h2database:h2:2.0.201-SNAPSHOT	method call	java.security
+org.apache.lucene.util.BytesRef	public	org.apache.lucene:lucene-core:8.5.2	instantiation	org.apache.lucene:lucene-queryparser:8.5.2
+org.h2.Driver	public	com.h2database:h2:2.0.201-SNAPSHOT	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+sun.security.rsa.RSAKeyFactory$Legacy	public	unknownLib	Class.forName	java.security
+org.apache.lucene.document.FieldType	public	org.apache.lucene:lucene-core:8.5.2	method call	com.h2database:h2:2.0.201-SNAPSHOT
+com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl	public	unknownLib	Class.forName	javax.xml.parsers
+com.sun.crypto.provider.HmacCore$HmacSHA256	public	unknownLib	Class.forName	java.security
+javax.tools.JavaFileObject	public	javax.tools	cast	com.sun:tools:1.8
+org.apache.lucene.index.IndexWriterConfig	public	org.apache.lucene:lucene-core:8.5.2	method call	com.h2database:h2:2.0.201-SNAPSHOT
+java.sql.Timestamp	public	java.sql	method call	com.h2database:h2:2.0.201-SNAPSHOT
+java.sql.PreparedStatement	public	java.sql	subtyping	com.h2database:h2:2.0.201-SNAPSHOT
+org.apache.lucene.search.IndexSearcher	public	org.apache.lucene:lucene-core:8.5.2	method call	com.h2database:h2:2.0.201-SNAPSHOT
+java.sql.NClob	public	java.sql	subtyping	com.h2database:h2:2.0.201-SNAPSHOT
+org.h2.samples.RowAccessRights	public	unknownLib	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+java.sql.Blob	public	java.sql	subtyping	com.h2database:h2:2.0.201-SNAPSHOT
+javax.xml.stream.XMLOutputFactory	public	javax.xml.stream	method call	com.h2database:h2:2.0.201-SNAPSHOT
+java.sql.JDBCType	public	java.sql	method call	com.h2database:h2:2.0.201-SNAPSHOT
+java.sql.Statement	public	java.sql	subtyping	com.h2database:h2:2.0.201-SNAPSHOT
+sun.security.provider.MD5	public	unknownLib	Class.forName	java.security
+org.locationtech.jts.geom.Point	public	org.locationtech.jts:jts-core:1.17.0	method call	com.h2database:h2:2.0.201-SNAPSHOT
+java.sql.Blob	public	java.sql	cast	com.h2database:h2:2.0.201-SNAPSHOT
+org.locationtech.jts.geom.MultiLineString	public	org.locationtech.jts:jts-core:1.17.0	instantiation	com.h2database:h2:2.0.201-SNAPSHOT
+org.h2.test.db.TestListener	public	unknownLib	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+org.h2.mvstore.type.LongDataType	public	com.h2database:h2:2.0.201-SNAPSHOT	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+org.locationtech.jts.geom.Point	public	org.locationtech.jts:jts-core:1.17.0	cast	com.h2database:h2:2.0.201-SNAPSHOT
+org.apache.lucene.analysis.standard.StandardAnalyzer	public	org.apache.lucene:lucene-core:8.5.2	instantiation	com.h2database:h2:2.0.201-SNAPSHOT
+org.h2.util.SourceCompiler$JavaClassObject	default	com.h2database:h2:2.0.201-SNAPSHOT	method call	com.sun:tools:1.8
+javax.tools.FileObject	public	javax.tools	cast	com.sun:tools:1.8
+org.h2.test.db.TestTriggersConstraints$TestSelect	public	unknownLib	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+java.sql.SQLTransactionRollbackException	public	java.sql	subtyping	com.h2database:h2:2.0.201-SNAPSHOT
+java.sql.ResultSet	public	java.sql	cast	com.h2database:h2:2.0.201-SNAPSHOT
+org.apache.lucene.index.Term	public	org.apache.lucene:lucene-core:8.5.2	instantiation	com.h2database:h2:2.0.201-SNAPSHOT
+org.h2.mvstore.db.RowDataType$Factory	public	com.h2database:h2:2.0.201-SNAPSHOT	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+javax.tools.JavaFileObject	public	javax.tools	subtyping	com.sun:tools:1.8
+java.sql.Driver	public	java.sql	subtyping	com.h2database:h2:2.0.201-SNAPSHOT
+java.sql.ParameterMetaData	public	java.sql	subtyping	com.h2database:h2:2.0.201-SNAPSHOT
+java.security.KeyStoreSpi	public	java.security	Class.forName	java.security
+java.sql.Connection	public	java.sql	cast	com.h2database:h2:2.0.201-SNAPSHOT
+sun.security.provider.SHA2$SHA224	public	unknownLib	Class.forName	java.security
+org.h2.mvstore.type.ByteArrayDataType	public	com.h2database:h2:2.0.201-SNAPSHOT	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+org.slf4j.LoggerFactory	public	org.slf4j:slf4j-api:1.7.30	method call	com.h2database:h2:2.0.201-SNAPSHOT
+javax.tools.JavaCompiler$CompilationTask	public	javax.tools	subtyping	com.sun:tools:1.8
+org.h2.test.db.TestIndex	public	unknownLib	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+java.awt.SystemTray	public	unknownLib	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+com.sun.tools.javac.api.JavacTaskImpl	public	com.sun:tools:1.8	method call	com.h2database:h2:2.0.201-SNAPSHOT
+javax.annotation.processing.Filer	public	javax.annotation.processing	subtyping	com.sun:tools:1.8
+java.security.PrivilegedAction	public	java.security	subtyping	javax.xml.transform
+org.locationtech.jts.geom.LineString	public	org.locationtech.jts:jts-core:1.17.0	cast	com.h2database:h2:2.0.201-SNAPSHOT
+sun.security.provider.JavaKeyStore$DualFormatJKS	public	unknownLib	Class.forName	java.security
+org.apache.lucene.analysis.standard.StandardAnalyzer	public	org.apache.lucene:lucene-core:8.5.2	method call	org.apache.lucene:lucene-queryparser:8.5.2
+org.h2.fulltext.FullText	public	com.h2database:h2:2.0.201-SNAPSHOT	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+org.xml.sax.SAXException	public	org.xml.sax	instantiation	com.h2database:h2:2.0.201-SNAPSHOT
+java.sql.SQLNonTransientException	public	java.sql	subtyping	com.h2database:h2:2.0.201-SNAPSHOT
+org.apache.lucene.search.RegexpQuery	public	org.apache.lucene:lucene-core:8.5.2	instantiation	org.apache.lucene:lucene-queryparser:8.5.2
+java.sql.Date	public	java.sql	cast	com.h2database:h2:2.0.201-SNAPSHOT
+java.sql.Array	public	java.sql	cast	com.h2database:h2:2.0.201-SNAPSHOT
+org.h2.samples.UpdatableView	public	unknownLib	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+java.sql.Timestamp	public	java.sql	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+org.h2.test.db.TestRunscript	public	unknownLib	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+org.h2.test.jdbc.TestBatchUpdates	public	unknownLib	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+java.sql.ResultSetMetaData	public	java.sql	subtyping	com.h2database:h2:2.0.201-SNAPSHOT
+java.sql.DriverManager	public	java.sql	method call	com.h2database:h2:2.0.201-SNAPSHOT
+java.sql.PreparedStatement	public	java.sql	cast	com.h2database:h2:2.0.201-SNAPSHOT
+javax.tools.StandardLocation	public	javax.tools	cast	com.sun:tools:1.8
+org.apache.lucene.codecs.FieldsProducer	public	org.apache.lucene:lucene-core:8.5.2	subtyping	org.apache.lucene:lucene-sandbox:8.5.2
+java.security.PrivilegedAction	public	java.security	subtyping	javax.xml.parsers
+org.h2.test.scripts.Trigger1	public	unknownLib	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+org.h2.test.scripts.Trigger2	public	unknownLib	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+org.locationtech.jts.geom.Point	public	org.locationtech.jts:jts-core:1.17.0	instantiation	com.h2database:h2:2.0.201-SNAPSHOT
+java.sql.Connection	public	java.sql	subtyping	com.h2database:h2:2.0.201-SNAPSHOT
+java.sql.Date	public	java.sql	method call	com.h2database:h2:2.0.201-SNAPSHOT
+org.apache.lucene.store.RAMOutputStream	public	org.apache.lucene:lucene-core:8.5.2	instantiation	org.apache.lucene:lucene-sandbox:8.5.2
+org.h2.samples.Function	public	unknownLib	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+org.locationtech.jts.geom.LineString	public	org.locationtech.jts:jts-core:1.17.0	method call	com.h2database:h2:2.0.201-SNAPSHOT
+java.lang.Integer	public	unknownLib	Class.forName	com.h2database:h2:2.0.201-SNAPSHOT
+org.apache.lucene.search.PhraseQuery	public	org.apache.lucene:lucene-core:8.5.2	cast	org.apache.lucene:lucene-queryparser:8.5.2

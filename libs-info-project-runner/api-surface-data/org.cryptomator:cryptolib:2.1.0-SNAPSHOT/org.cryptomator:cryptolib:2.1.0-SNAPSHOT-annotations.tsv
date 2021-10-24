@@ -1,0 +1,2 @@
+Class	Method	Field Name:Field Signature	Annotated In Library	Annotation	Annotation Visibility	Annotation Library	Count
+com.google.common.math.MathPreconditions	-	-	com.google.guava:guava:30.1.1-jre	com.google.errorprone.annotations.CanIgnoreReturnValue	public	com.google.errorprone:error_prone_annotations:2.5.1	1

@@ -1,0 +1,98 @@
+Class Name	Class Visibility	Class Library	Usage	Used In Library
+com.google.errorprone.annotations.CanIgnoreReturnValue	public	com.google.errorprone:error_prone_annotations:2.5.1	annotation	com.google.guava:guava:30.1.1-jre
+com.google.common.base.Throwables	default	com.google.guava:guava:30.1.1-jre	method call	org.cryptomator:cryptolib:2.1.0-SNAPSHOT
+org.bouncycastle.cert.jcajce.JcaX509v3CertificateBuilder	public	org.bouncycastle:bcpkix-jdk15on:1.69	method call	org.cryptomator:cryptolib:2.1.0-SNAPSHOT
+org.bouncycastle.jcajce.spec.CompositeAlgorithmSpec	public	org.bouncycastle:bcprov-jdk15on:1.69	cast	org.bouncycastle:bcpkix-jdk15on:1.69
+java.security.Signature	public	java.security	method call	org.bouncycastle:bcprov-jdk15on:1.69
+org.bouncycastle.asn1.x509.SubjectPublicKeyInfo	public	org.bouncycastle:bcprov-jdk15on:1.69	method call	org.bouncycastle:bcpkix-jdk15on:1.69
+org.bouncycastle.cert.jcajce.JcaX509ExtensionUtils	public	org.bouncycastle:bcpkix-jdk15on:1.69	instantiation	org.cryptomator:cryptolib:2.1.0-SNAPSHOT
+java.security.PrivateKey	public	java.security	subtyping	org.bouncycastle:bcprov-jdk15on:1.69
+com.google.gson.Gson	public	com.google.code.gson:gson:2.8.7	method call	org.cryptomator:cryptolib:2.1.0-SNAPSHOT
+java.security.KeyPair	public	java.security	method call	org.cryptomator:cryptolib:2.1.0-SNAPSHOT
+org.bouncycastle.asn1.ASN1ObjectIdentifier	public	org.bouncycastle:bcprov-jdk15on:1.69	cast	org.bouncycastle:bcpkix-jdk15on:1.69
+java.security.KeyStore	default	java.security	method call	org.cryptomator:cryptolib:2.1.0-SNAPSHOT
+java.security.MessageDigest$Delegate	default	java.security	method call	org.bouncycastle:bcpkix-jdk15on:1.69
+org.bouncycastle.asn1.pkcs.RSASSAPSSparams	public	org.bouncycastle:bcprov-jdk15on:1.69	instantiation	org.bouncycastle:bcpkix-jdk15on:1.69
+org.bouncycastle.asn1.x509.GeneralName	public	org.bouncycastle:bcprov-jdk15on:1.69	instantiation	org.bouncycastle:bcpkix-jdk15on:1.69
+java.security.MessageDigest	private	java.security	method call	org.cryptomator:cryptolib:2.1.0-SNAPSHOT
+java.security.PrivateKey	public	java.security	cast	org.cryptomator:cryptolib:2.1.0-SNAPSHOT
+java.security.Provider	public	java.security	cast	org.cryptomator:siv-mode:1.4.3
+java.security.Security	default	java.security	method call	org.bouncycastle:bcprov-jdk15on:1.69
+org.cryptomator.siv.SivMode	public	org.cryptomator:siv-mode:1.4.3	cast	org.cryptomator:cryptolib:2.1.0-SNAPSHOT
+org.bouncycastle.asn1.ASN1Encodable	public	org.bouncycastle:bcprov-jdk15on:1.69	cast	org.bouncycastle:bcpkix-jdk15on:1.69
+org.bouncycastle.cert.X509CertificateHolder	public	org.bouncycastle:bcpkix-jdk15on:1.69	method call	org.cryptomator:cryptolib:2.1.0-SNAPSHOT
+java.security.Signature$Delegate	private	java.security	method call	org.bouncycastle:bcprov-jdk15on:1.69
+java.security.PrivateKey	public	java.security	cast	org.bouncycastle:bcprov-jdk15on:1.69
+java.security.MessageDigest	default	java.security	method call	org.cryptomator:cryptolib:2.1.0-SNAPSHOT
+org.bouncycastle.asn1.x509.AlgorithmIdentifier	public	org.bouncycastle:bcprov-jdk15on:1.69	method call	org.bouncycastle:bcpkix-jdk15on:1.69
+java.sql.Date	public	java.sql	cast	com.google.code.gson:gson:2.8.7
+org.bouncycastle.asn1.ASN1String	public	org.bouncycastle:bcprov-jdk15on:1.69	cast	org.bouncycastle:bcpkix-jdk15on:1.69
+org.cryptomator.siv.SivMode	public	org.cryptomator:siv-mode:1.4.3	method call	org.cryptomator:cryptolib:2.1.0-SNAPSHOT
+org.bouncycastle.jcajce.io.OutputStreamFactory	default	org.bouncycastle:bcprov-jdk15on:1.69	method call	org.bouncycastle:bcpkix-jdk15on:1.69
+java.security.KeyFactory	public	java.security	method call	org.cryptomator:cryptolib:2.1.0-SNAPSHOT
+com.google.gson.stream.JsonWriter	public	com.google.code.gson:gson:2.8.7	method call	org.cryptomator:cryptolib:2.1.0-SNAPSHOT
+java.security.MessageDigest	public	java.security	method call	org.cryptomator:cryptolib:2.1.0-SNAPSHOT
+org.cryptomator.cryptolib.common.MasterkeyFile$ByteArrayJsonAdapter	private	org.cryptomator:cryptolib:2.1.0-SNAPSHOT	method call	com.google.code.gson:gson:2.8.7
+org.bouncycastle.jcajce.util.DefaultJcaJceHelper	public	org.bouncycastle:bcprov-jdk15on:1.69	instantiation	org.bouncycastle:bcpkix-jdk15on:1.69
+java.security.InvalidKeyException	public	java.security	method call	org.bouncycastle:bcpkix-jdk15on:1.69
+java.security.Signature$Delegate	private	java.security	method call	org.bouncycastle:bcpkix-jdk15on:1.69
+java.sql.Timestamp	public	java.sql	cast	com.google.code.gson:gson:2.8.7
+org.bouncycastle.asn1.ASN1ObjectIdentifier	public	org.bouncycastle:bcprov-jdk15on:1.69	method call	org.bouncycastle:bcpkix-jdk15on:1.69
+org.bouncycastle.asn1.x500.X500Name	public	org.bouncycastle:bcprov-jdk15on:1.69	instantiation	org.cryptomator:cryptolib:2.1.0-SNAPSHOT
+org.bouncycastle.asn1.x509.Certificate	public	org.bouncycastle:bcprov-jdk15on:1.69	method call	org.bouncycastle:bcpkix-jdk15on:1.69
+org.bouncycastle.asn1.DERNull	public	org.bouncycastle:bcprov-jdk15on:1.69	method call	org.bouncycastle:bcpkix-jdk15on:1.69
+org.bouncycastle.asn1.x509.GeneralNames	public	org.bouncycastle:bcprov-jdk15on:1.69	instantiation	org.bouncycastle:bcpkix-jdk15on:1.69
+org.bouncycastle.asn1.x509.AlgorithmIdentifier	public	org.bouncycastle:bcprov-jdk15on:1.69	instantiation	org.bouncycastle:bcpkix-jdk15on:1.69
+org.bouncycastle.asn1.x509.V3TBSCertificateGenerator	public	org.bouncycastle:bcprov-jdk15on:1.69	method call	org.bouncycastle:bcpkix-jdk15on:1.69
+org.bouncycastle.asn1.x509.Extension	public	org.bouncycastle:bcprov-jdk15on:1.69	instantiation	org.bouncycastle:bcpkix-jdk15on:1.69
+sun.misc.Unsafe	public	unknownLib	Class.forName	com.google.code.gson:gson:2.8.7
+java.sql.Time	public	java.sql	instantiation	com.google.code.gson:gson:2.8.7
+java.security.SecureRandomSpi	public	java.security	subtyping	org.cryptomator:cryptolib:2.1.0-SNAPSHOT
+org.bouncycastle.operator.jcajce.JcaContentSignerBuilder	public	org.bouncycastle:bcpkix-jdk15on:1.69	instantiation	org.cryptomator:cryptolib:2.1.0-SNAPSHOT
+org.bouncycastle.asn1.x509.TBSCertificate	public	org.bouncycastle:bcprov-jdk15on:1.69	method call	org.bouncycastle:bcpkix-jdk15on:1.69
+java.security.MessageDigest$Delegate	default	java.security	method call	org.cryptomator:cryptolib:2.1.0-SNAPSHOT
+com.google.gson.stream.JsonReader	public	com.google.code.gson:gson:2.8.7	method call	org.cryptomator:cryptolib:2.1.0-SNAPSHOT
+com.google.common.io.BaseEncoding$Base64Encoding	default	com.google.guava:guava:30.1.1-jre	method call	org.cryptomator:cryptolib:2.1.0-SNAPSHOT
+java.security.MessageDigest	public	java.security	cast	org.cryptomator:cryptolib:2.1.0-SNAPSHOT
+org.bouncycastle.jcajce.util.NamedJcaJceHelper	public	org.bouncycastle:bcprov-jdk15on:1.69	instantiation	org.bouncycastle:bcpkix-jdk15on:1.69
+org.bouncycastle.cert.jcajce.JcaX509v3CertificateBuilder	public	org.bouncycastle:bcpkix-jdk15on:1.69	instantiation	org.cryptomator:cryptolib:2.1.0-SNAPSHOT
+org.bouncycastle.cert.jcajce.JcaX509ExtensionUtils	public	org.bouncycastle:bcpkix-jdk15on:1.69	method call	org.cryptomator:cryptolib:2.1.0-SNAPSHOT
+java.sql.Timestamp	public	java.sql	instantiation	com.google.code.gson:gson:2.8.7
+com.google.common.io.BaseEncoding$StandardBaseEncoding	default	com.google.guava:guava:30.1.1-jre	method call	org.cryptomator:cryptolib:2.1.0-SNAPSHOT
+org.bouncycastle.asn1.x509.V3TBSCertificateGenerator	public	org.bouncycastle:bcprov-jdk15on:1.69	instantiation	org.bouncycastle:bcpkix-jdk15on:1.69
+java.sql.Date	public	java.sql	instantiation	com.google.code.gson:gson:2.8.7
+org.bouncycastle.asn1.x509.ExtensionsGenerator	public	org.bouncycastle:bcprov-jdk15on:1.69	method call	org.bouncycastle:bcpkix-jdk15on:1.69
+org.cryptomator.cryptolib.common.ReseedingSecureRandom	public	org.cryptomator:cryptolib:2.1.0-SNAPSHOT	method call	java.security
+org.bouncycastle.asn1.DERBitString	public	org.bouncycastle:bcprov-jdk15on:1.69	instantiation	org.bouncycastle:bcpkix-jdk15on:1.69
+org.bouncycastle.asn1.DERSequence	public	org.bouncycastle:bcprov-jdk15on:1.69	instantiation	org.bouncycastle:bcpkix-jdk15on:1.69
+org.bouncycastle.util.io.TeeOutputStream	public	org.bouncycastle:bcprov-jdk15on:1.69	instantiation	org.bouncycastle:bcpkix-jdk15on:1.69
+org.cryptomator.siv.SivMode	public	org.cryptomator:siv-mode:1.4.3	instantiation	org.cryptomator:cryptolib:2.1.0-SNAPSHOT
+org.bouncycastle.util.Strings	public	org.bouncycastle:bcprov-jdk15on:1.69	method call	org.bouncycastle:bcpkix-jdk15on:1.69
+java.security.KeyStore	public	java.security	method call	org.cryptomator:cryptolib:2.1.0-SNAPSHOT
+java.security.GeneralSecurityException	public	java.security	instantiation	org.bouncycastle:bcpkix-jdk15on:1.69
+java.security.KeyPairGenerator$Delegate	private	java.security	method call	org.cryptomator:cryptolib:2.1.0-SNAPSHOT
+java.security.KeyPair	public	java.security	instantiation	org.cryptomator:cryptolib:2.1.0-SNAPSHOT
+org.bouncycastle.asn1.x509.AuthorityKeyIdentifier	public	org.bouncycastle:bcprov-jdk15on:1.69	instantiation	org.bouncycastle:bcpkix-jdk15on:1.69
+org.bouncycastle.asn1.ASN1EncodableVector	public	org.bouncycastle:bcprov-jdk15on:1.69	method call	org.bouncycastle:bcpkix-jdk15on:1.69
+org.bouncycastle.jcajce.CompositePrivateKey	public	org.bouncycastle:bcprov-jdk15on:1.69	cast	org.bouncycastle:bcpkix-jdk15on:1.69
+java.sql.Time	public	java.sql	cast	com.google.code.gson:gson:2.8.7
+org.cryptomator.cryptolib.common.ReseedingSecureRandom$ReseedingSecureRandomSpi	private	org.cryptomator:cryptolib:2.1.0-SNAPSHOT	method call	java.security
+org.bouncycastle.jcajce.util.DefaultJcaJceHelper	public	org.bouncycastle:bcprov-jdk15on:1.69	method call	org.bouncycastle:bcpkix-jdk15on:1.69
+java.security.SecureRandom	public	java.security	subtyping	org.cryptomator:cryptolib:2.1.0-SNAPSHOT
+java.security.KeyPairGenerator	public	java.security	method call	org.cryptomator:cryptolib:2.1.0-SNAPSHOT
+java.security.PrivilegedAction	public	java.security	subtyping	org.bouncycastle:bcprov-jdk15on:1.69
+org.bouncycastle.operator.jcajce.JcaContentSignerBuilder	public	org.bouncycastle:bcpkix-jdk15on:1.69	method call	org.cryptomator:cryptolib:2.1.0-SNAPSHOT
+org.bouncycastle.asn1.ASN1EncodableVector	public	org.bouncycastle:bcprov-jdk15on:1.69	instantiation	org.bouncycastle:bcpkix-jdk15on:1.69
+java.security.Provider	public	java.security	subtyping	org.cryptomator:cryptolib:2.1.0-SNAPSHOT
+java.security.MessageDigest	public	java.security	method call	org.bouncycastle:bcpkix-jdk15on:1.69
+org.bouncycastle.jcajce.util.ProviderJcaJceHelper	public	org.bouncycastle:bcprov-jdk15on:1.69	instantiation	org.bouncycastle:bcpkix-jdk15on:1.69
+java.security.SecureRandom	public	java.security	method call	org.cryptomator:cryptolib:2.1.0-SNAPSHOT
+org.bouncycastle.util.Encodable	public	org.bouncycastle:bcprov-jdk15on:1.69	subtyping	org.bouncycastle:bcpkix-jdk15on:1.69
+org.bouncycastle.asn1.ASN1Integer	public	org.bouncycastle:bcprov-jdk15on:1.69	instantiation	org.bouncycastle:bcpkix-jdk15on:1.69
+com.google.gson.TypeAdapter	public	com.google.code.gson:gson:2.8.7	subtyping	org.cryptomator:cryptolib:2.1.0-SNAPSHOT
+com.google.common.base.Preconditions	public	com.google.guava:guava:30.1.1-jre	method call	org.cryptomator:cryptolib:2.1.0-SNAPSHOT
+org.bouncycastle.asn1.x509.Time	public	org.bouncycastle:bcprov-jdk15on:1.69	instantiation	org.bouncycastle:bcpkix-jdk15on:1.69
+org.bouncycastle.asn1.x509.ExtensionsGenerator	public	org.bouncycastle:bcprov-jdk15on:1.69	instantiation	org.bouncycastle:bcpkix-jdk15on:1.69
+java.security.PrivateKey	public	java.security	cast	org.bouncycastle:bcpkix-jdk15on:1.69
+org.bouncycastle.asn1.DERBitString	public	org.bouncycastle:bcprov-jdk15on:1.69	method call	org.bouncycastle:bcpkix-jdk15on:1.69
+org.bouncycastle.asn1.x509.SubjectKeyIdentifier	public	org.bouncycastle:bcprov-jdk15on:1.69	instantiation	org.bouncycastle:bcpkix-jdk15on:1.69

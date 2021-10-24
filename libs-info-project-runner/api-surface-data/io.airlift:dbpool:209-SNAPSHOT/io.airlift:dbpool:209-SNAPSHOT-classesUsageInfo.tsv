@@ -1,0 +1,13 @@
+Class Name	Class Visibility	Class Library	Usage	Used In Library
+java.sql.SQLException	public	java.sql	instantiation	io.airlift:dbpool:209-SNAPSHOT
+java.sql.SQLFeatureNotSupportedException	public	java.sql	instantiation	io.airlift:dbpool:209-SNAPSHOT
+java.sql.SQLException	public	java.sql	instantiation	io.airlift:dbpool:209-SNAPSHOT
+java.sql.SQLFeatureNotSupportedException	public	java.sql	instantiation	io.airlift:dbpool:209-SNAPSHOT
+java.sql.SQLException	public	java.sql	instantiation	io.airlift:dbpool:209-SNAPSHOT
+java.sql.SQLFeatureNotSupportedException	public	java.sql	instantiation	io.airlift:dbpool:209-SNAPSHOT
+java.sql.SQLException	public	java.sql	instantiation	io.airlift:dbpool:209-SNAPSHOT
+java.sql.SQLFeatureNotSupportedException	public	java.sql	instantiation	io.airlift:dbpool:209-SNAPSHOT
+java.sql.SQLException	public	java.sql	instantiation	io.airlift:dbpool:209-SNAPSHOT
+java.sql.SQLFeatureNotSupportedException	public	java.sql	instantiation	io.airlift:dbpool:209-SNAPSHOT
+java.sql.SQLException	public	java.sql	instantiation	io.airlift:dbpool:209-SNAPSHOT
+java.sql.SQLFeatureNotSupportedException	public	java.sql	instantiation	io.airlift:dbpool:209-SNAPSHOT

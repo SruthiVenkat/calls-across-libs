@@ -1,0 +1,452 @@
+Class Name	Class Visibility	Class Library	Usage	Used In Library
+com.nqzero.permit.Permit	public	com.nqzero:permit-reflect:0.3	method call	ysoserial:ysoserial:0.0.6-SNAPSHOT
+org.slf4j.spi.LocationAwareLogger	public	org.slf4j:slf4j-api:1.7.21	subtyping	org.slf4j:slf4j-jdk14:1.7.21
+java.lang.String	public	unknownLib	Class.forName	rhino:js:1.7R2
+groovy.lang.MetaProperty	public	org.codehaus.groovy:groovy:2.3.9	Class.forName	org.codehaus.groovy:groovy:2.3.9
+java.security.CodeSource	public	java.security	instantiation	xml-apis:xml-apis:1.0.b2
+org.mozilla.javascript.MemberBox	default	rhino:js:1.7R2	Class.forName	ysoserial:ysoserial:0.0.6-SNAPSHOT
+org.apache.el.ExpressionFactoryImpl	public	org.mortbay.jasper:apache-el:8.0.27	Class.forName	org.mortbay.jasper:apache-el:8.0.27
+java.io.BufferedOutputStream	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+org.mozilla.javascript.Interpreter	public	rhino:js:1.7R2	Class.forName	rhino:js:1.7R2
+ysoserial.payloads.URLDNS	public	ysoserial:ysoserial:0.0.6-SNAPSHOT	Class.forName	org.reflections:reflections:0.9.9
+com.mchange.v2.c3p0.PoolBackedDataSource	public	com.mchange:c3p0:0.9.5.2	cast	ysoserial:ysoserial:0.0.6-SNAPSHOT
+java.lang.Character	public	unknownLib	Class.forName	rhino:js:1.7R2
+org.jboss.interceptor.spi.metadata.InterceptorReference	public	org.jboss.interceptor:jboss-interceptor-spi:2.0.0.Final	subtyping	org.jboss.interceptor:jboss-interceptor-core:2.0.0.Final
+java.io.Writer	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+org.jboss.interceptor.spi.context.InterceptionChain	public	org.jboss.interceptor:jboss-interceptor-spi:2.0.0.Final	subtyping	org.jboss.interceptor:jboss-interceptor-core:2.0.0.Final
+groovy.lang.SpreadMap	public	org.codehaus.groovy:groovy:2.3.9	Class.forName	org.codehaus.groovy:groovy:2.3.9
+javax.el.MethodExpression	public	org.mortbay.jasper:apache-el:8.0.27	cast	org.apache.myfaces.core:myfaces-api:2.2.9
+javax.annotation.PostConstruct	public	javax.annotation:jsr250-api:1.0	Class.forName	org.jboss.weld:weld-core:1.1.33.Final
+org.codehaus.groovy.runtime.MethodClosure	public	org.codehaus.groovy:groovy:2.3.9	instantiation	ysoserial:ysoserial:0.0.6-SNAPSHOT
+java.sql.Timestamp	public	java.sql	Class.forName	org.codehaus.groovy:groovy:2.3.9
+ysoserial.payloads.ReleaseableObjectPayload	public	ysoserial:ysoserial:0.0.6-SNAPSHOT	Class.forName	org.reflections:reflections:0.9.9
+org.jboss.interceptor.spi.model.InterceptionType	public	org.jboss.interceptor:jboss-interceptor-spi:2.0.0.Final	cast	org.jboss.interceptor:jboss-interceptor-core:2.0.0.Final
+java.util.AbstractMap	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+org.jboss.interceptor.reader.ClassMetadataInterceptorReference	public	org.jboss.interceptor:jboss-interceptor-core:2.0.0.Final	method call	ysoserial:ysoserial:0.0.6-SNAPSHOT
+java.util.Collection	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+ysoserial.payloads.MozillaRhino2	public	ysoserial:ysoserial:0.0.6-SNAPSHOT	method call	rhino:js:1.7R2
+org.apache.commons.io.output.DeferredFileOutputStream	public	commons-io:commons-io:2.6	method call	commons-fileupload:commons-fileupload:1.3
+com.google.common.base.Predicates$ObjectPredicate$1	default	com.google.guava:guava:15.0	method call	org.reflections:reflections:0.9.9
+org.jboss.shrinkwrap.resolver.spi.loader.ServiceLoader	public	org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-spi:2.2.6	Class.forName	org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-api:2.2.6
+org.hibernate.annotations.common.reflection.XProperty	public	org.hibernate.common:hibernate-commons-annotations:4.0.5.Final	cast	org.hibernate:hibernate-core:4.3.11.Final
+ysoserial.payloads.JRMPListener	public	ysoserial:ysoserial:0.0.6-SNAPSHOT	Class.forName	org.reflections:reflections:0.9.9
+ysoserial.payloads.Groovy1	public	ysoserial:ysoserial:0.0.6-SNAPSHOT	Class.forName	org.reflections:reflections:0.9.9
+org.mozilla.javascript.Function	public	rhino:js:1.7R2	Class.forName	rhino:js:1.7R2
+java.util.Locale	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+bsh.Interpreter	public	org.beanshell:bsh:2.0b5	instantiation	ysoserial:ysoserial:0.0.6-SNAPSHOT
+javax.annotation.PostConstruct	public	javax.annotation:jsr250-api:1.0	Class.forName	org.jboss.interceptor:jboss-interceptor-core:2.0.0.Final
+groovy.lang.IntRange	public	org.codehaus.groovy:groovy:2.3.9	Class.forName	org.codehaus.groovy:groovy:2.3.9
+org.jboss.weld.interceptor.reader.ReflectiveClassMetadata	public	org.jboss.weld:weld-core:1.1.33.Final	cast	ysoserial:ysoserial:0.0.6-SNAPSHOT
+javax.servlet.ServletResponse	public	javax.servlet:javax.servlet-api:3.1.0	cast	org.apache.myfaces.core:myfaces-impl:2.2.9
+org.jboss.interceptor.spi.model.InterceptionModel	public	org.jboss.interceptor:jboss-interceptor-spi:2.0.0.Final	subtyping	org.jboss.interceptor:jboss-interceptor-core:2.0.0.Final
+javax.servlet.http.HttpServletRequest	public	javax.servlet:javax.servlet-api:3.1.0	cast	org.apache.myfaces.core:myfaces-impl:2.2.9
+org.slf4j.impl.StaticLoggerBinder	public	org.slf4j:slf4j-jdk14:1.7.21	method call	org.slf4j:slf4j-api:1.7.21
+net.sf.ezmorph.bean.BeanMorpher	public	net.sf.ezmorph:ezmorph:1.0.6	instantiation	net.sf.json-lib:json-lib:jdk15
+sun.security.provider.NativePRNG	public	unknownLib	Class.forName	java.security
+com.mchange.v2.log.MLog	public	com.mchange:mchange-commons-java:0.2.11	method call	com.mchange:c3p0:0.9.5.2
+org.slf4j.LoggerFactory	public	org.slf4j:slf4j-api:1.7.21	method call	org.reflections:reflections:0.9.9
+ysoserial.payloads.Wicket1	public	ysoserial:ysoserial:0.0.6-SNAPSHOT	Class.forName	org.reflections:reflections:0.9.9
+java.lang.String	public	unknownLib	Class.forName	rome:rome:1.0
+java.util.SortedMap	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+java.lang.Character	public	unknownLib	Class.forName	rome:rome:1.0
+javax.servlet.ServletResponse	public	javax.servlet:javax.servlet-api:3.1.0	cast	ysoserial:ysoserial:0.0.6-SNAPSHOT
+javax.el.ValueExpression	public	org.mortbay.jasper:apache-el:8.0.27	cast	org.apache.myfaces.core:myfaces-api:2.2.9
+groovy.lang.GroovyObject	public	org.codehaus.groovy:groovy:2.3.9	Class.forName	org.codehaus.groovy:groovy:2.3.9
+org.apache.commons.lang.builder.HashCodeBuilder	public	commons-lang:commons-lang:2.5	instantiation	org.apache.click:click-nodeps:2.3.0
+org.hibernate.tuple.component.PojoComponentTuplizer	public	org.hibernate:hibernate-core:4.3.11.Final	cast	ysoserial:ysoserial:0.0.6-SNAPSHOT
+groovy.lang.Closure	public	org.codehaus.groovy:groovy:2.3.9	Class.forName	org.codehaus.groovy:groovy:2.3.9
+java.sql.Time	public	java.sql	instantiation	commons-beanutils:commons-beanutils:1.9.2
+org.mozilla.javascript.NativeJavaArray	public	rhino:js:1.7R2	method call	ysoserial:ysoserial:0.0.6-SNAPSHOT
+org.apache.commons.collections.map.LazyMap	public	commons-collections:commons-collections:3.1	method call	ysoserial:ysoserial:0.0.6-SNAPSHOT
+ysoserial.payloads.Click1	public	ysoserial:ysoserial:0.0.6-SNAPSHOT	Class.forName	org.reflections:reflections:0.9.9
+java.util.regex.Matcher	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+java.io.DataOutputStream	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+org.apache.myfaces.el.unified.FacesELContext	public	org.apache.myfaces.core:myfaces-impl:2.2.9	method call	org.mortbay.jasper:apache-el:8.0.27
+javax.faces.application.ApplicationFactory	public	org.apache.myfaces.core:myfaces-api:2.2.9	cast	org.apache.myfaces.core:myfaces-impl:2.2.9
+org.slf4j.impl.JDK14LoggerFactory	public	org.slf4j:slf4j-jdk14:1.7.21	method call	org.slf4j:slf4j-api:1.7.21
+javassist.bytecode.ParameterAnnotationsAttribute	public	org.javassist:javassist:3.19.0-GA	cast	org.reflections:reflections:0.9.9
+javassist.bytecode.ClassFile	public	org.javassist:javassist:3.19.0-GA	instantiation	org.reflections:reflections:0.9.9
+org.apache.commons.collections.functors.ChainedTransformer	public	commons-collections:commons-collections:3.1	instantiation	ysoserial:ysoserial:0.0.6-SNAPSHOT
+net.sf.ezmorph.array.ObjectArrayMorpher	public	net.sf.ezmorph:ezmorph:1.0.6	instantiation	net.sf.json-lib:json-lib:jdk15
+org.python.core.PyBytecode	public	org.python:jython-standalone:2.5.2	instantiation	ysoserial:ysoserial:0.0.6-SNAPSHOT
+groovy.lang.Writable	public	org.codehaus.groovy:groovy:2.3.9	Class.forName	org.codehaus.groovy:groovy:2.3.9
+ysoserial.payloads.CommonsCollections7	public	ysoserial:ysoserial:0.0.6-SNAPSHOT	Class.forName	org.reflections:reflections:0.9.9
+org.mozilla.javascript.tools.shell.Environment	public	rhino:js:1.7R2	instantiation	ysoserial:ysoserial:0.0.6-SNAPSHOT
+ysoserial.payloads.CommonsCollections5	public	ysoserial:ysoserial:0.0.6-SNAPSHOT	Class.forName	org.reflections:reflections:0.9.9
+ysoserial.payloads.CommonsCollections6	public	ysoserial:ysoserial:0.0.6-SNAPSHOT	Class.forName	org.reflections:reflections:0.9.9
+org.slf4j.impl.StaticLoggerBinder	public	org.slf4j:slf4j-jdk14:1.7.21	Class.forName	org.reflections:reflections:0.9.9
+ysoserial.payloads.CommonsCollections3	public	ysoserial:ysoserial:0.0.6-SNAPSHOT	Class.forName	org.reflections:reflections:0.9.9
+ysoserial.payloads.CommonsCollections4	public	ysoserial:ysoserial:0.0.6-SNAPSHOT	Class.forName	org.reflections:reflections:0.9.9
+ysoserial.payloads.CommonsCollections1	public	ysoserial:ysoserial:0.0.6-SNAPSHOT	Class.forName	org.reflections:reflections:0.9.9
+ysoserial.payloads.CommonsCollections2	public	ysoserial:ysoserial:0.0.6-SNAPSHOT	Class.forName	org.reflections:reflections:0.9.9
+javax.servlet.ServletRequest	public	javax.servlet:javax.servlet-api:3.1.0	cast	org.apache.myfaces.core:myfaces-impl:2.2.9
+com.mchange.v2.log.slf4j.Slf4jMLog	public	com.mchange:mchange-commons-java:0.2.11	Class.forName	com.mchange:mchange-commons-java:0.2.11
+java.security.MessageDigestSpi	public	java.security	Class.forName	java.security
+org.apache.commons.logging.LogFactory	public	commons-logging:commons-logging:1.1.1	method call	commons-beanutils:commons-beanutils:1.9.2
+org.springframework.aop.framework.JdkDynamicAopProxy	default	org.springframework:spring-aop:4.1.4.RELEASE	Class.forName	ysoserial:ysoserial:0.0.6-SNAPSHOT
+java.io.PrintStream	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+java.lang.Boolean	public	unknownLib	Class.forName	rome:rome:1.0
+java.lang.Double	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+org.slf4j.impl.StaticMarkerBinder	public	org.slf4j:slf4j-jdk14:1.7.21	method call	org.slf4j:slf4j-api:1.7.21
+ysoserial.payloads.MozillaRhino2	public	ysoserial:ysoserial:0.0.6-SNAPSHOT	Class.forName	org.reflections:reflections:0.9.9
+ysoserial.payloads.MozillaRhino1	public	ysoserial:ysoserial:0.0.6-SNAPSHOT	Class.forName	org.reflections:reflections:0.9.9
+java.math.BigDecimal	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+org.apache.commons.collections.comparators.ComparableComparator	public	commons-collections:commons-collections:3.1	method call	commons-beanutils:commons-beanutils:1.9.2
+java.lang.Boolean	public	unknownLib	Class.forName	rhino:js:1.7R2
+org.jboss.interceptor.spi.metadata.MethodMetadata	public	org.jboss.interceptor:jboss-interceptor-spi:2.0.0.Final	cast	org.jboss.interceptor:jboss-interceptor-core:2.0.0.Final
+org.springframework.util.Assert	default	org.springframework:spring-core:4.1.4.RELEASE	method call	org.springframework:spring-aop:4.1.4.RELEASE
+javax.el.MethodExpression	public	org.mortbay.jasper:apache-el:8.0.27	cast	org.apache.myfaces.core:myfaces-impl:2.2.9
+groovy.lang.GString	public	org.codehaus.groovy:groovy:2.3.9	Class.forName	org.codehaus.groovy:groovy:2.3.9
+org.jboss.interceptor.spi.metadata.MethodMetadata	public	org.jboss.interceptor:jboss-interceptor-spi:2.0.0.Final	cast	ysoserial:ysoserial:0.0.6-SNAPSHOT
+com.google.common.base.Predicate	public	com.google.guava:guava:15.0	subtyping	org.reflections:reflections:0.9.9
+org.jboss.interceptor.spi.metadata.MethodMetadata	public	org.jboss.interceptor:jboss-interceptor-spi:2.0.0.Final	subtyping	org.jboss.interceptor:jboss-interceptor-core:2.0.0.Final
+javassist.util.proxy.ProxyObject	public	javassist:javassist:3.12.0.GA	cast	org.jboss.weld:weld-core:1.1.33.Final
+org.slf4j.LoggerFactory	public	org.slf4j:slf4j-api:1.7.21	method call	com.mchange:mchange-commons-java:0.2.11
+ysoserial.payloads.C3P0	public	ysoserial:ysoserial:0.0.6-SNAPSHOT	Class.forName	org.reflections:reflections:0.9.9
+org.jboss.interceptor.reader.ReflectiveClassMetadata	public	org.jboss.interceptor:jboss-interceptor-core:2.0.0.Final	cast	ysoserial:ysoserial:0.0.6-SNAPSHOT
+groovy.io.FileType	public	org.codehaus.groovy:groovy:2.3.9	Class.forName	org.codehaus.groovy:groovy:2.3.9
+java.net.ServerSocket	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+org.apache.commons.collections4.functors.ConstantTransformer	public	org.apache.commons:commons-collections4:4.0	instantiation	ysoserial:ysoserial:0.0.6-SNAPSHOT
+java.util.HashMap	public	unknownLib	Class.forName	org.beanshell:bsh:2.0b5
+org.mozilla.javascript.IdScriptableObject	public	rhino:js:1.7R2	cast	ysoserial:ysoserial:0.0.6-SNAPSHOT
+net.sf.json.AbstractJSON	default	net.sf.json-lib:json-lib:jdk15	Class.forName	net.sf.json-lib:json-lib:jdk15
+java.util.Date	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+com.google.common.collect.Iterables	private	com.google.guava:guava:15.0	method call	org.reflections:reflections:0.9.9
+com.mchange.v2.ser.IndirectlySerialized	public	com.mchange:mchange-commons-java:0.2.11	cast	com.mchange:c3p0:0.9.5.2
+clojure.core$constantly	public	org.clojure:clojure:1.8.0	instantiation	ysoserial:ysoserial:0.0.6-SNAPSHOT
+java.util.BitSet	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+org.jboss.weld.interceptor.reader.ClassMetadataInterceptorReference	public	org.jboss.weld:weld-core:1.1.33.Final	method call	ysoserial:ysoserial:0.0.6-SNAPSHOT
+java.security.PrivilegedAction	public	java.security	subtyping	org.jboss.interceptor:jboss-interceptor-core:2.0.0.Final
+org.apache.commons.logging.impl.Jdk14Logger	public	commons-logging:commons-logging:1.1.1	method call	commons-beanutils:commons-beanutils:1.9.2
+org.jboss.shrinkwrap.resolver.api.maven.MavenStrategyStageBase	public	org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-api-maven:2.2.6	cast	org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-impl-maven:2.2.6
+clojure.inspector.proxy$javax.swing.table.AbstractTableModel$ff19274a	public	org.clojure:clojure:1.8.0	instantiation	ysoserial:ysoserial:0.0.6-SNAPSHOT
+javassist.bytecode.AnnotationsAttribute	public	org.javassist:javassist:3.19.0-GA	method call	org.reflections:reflections:0.9.9
+org.mozilla.javascript.NativeJavaMethod	public	rhino:js:1.7R2	instantiation	ysoserial:ysoserial:0.0.6-SNAPSHOT
+ysoserial.payloads.JBossInterceptors1	public	ysoserial:ysoserial:0.0.6-SNAPSHOT	Class.forName	org.reflections:reflections:0.9.9
+javax.interceptor.AroundTimeout	public	org.jboss.spec.javax.interceptor:jboss-interceptors-api_1.1_spec:1.0.0.Beta1	Class.forName	org.jboss.interceptor:jboss-interceptor-core:2.0.0.Final
+java.security.BasicPermission	public	java.security	subtyping	java.sql
+org.mozilla.javascript.optimizer.Codegen	public	rhino:js:1.7R2	Class.forName	rhino:js:1.7R2
+org.jboss.shrinkwrap.resolver.api.maven.ConfigurableMavenResolverSystem	public	org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-api-maven:2.2.6	subtyping	org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-impl-maven:2.2.6
+org.apache.myfaces.context.servlet.FacesContextImpl	public	org.apache.myfaces.core:myfaces-impl:2.2.9	instantiation	ysoserial:ysoserial:0.0.6-SNAPSHOT
+org.jboss.shrinkwrap.resolver.api.ResolverSystem	public	org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-api:2.2.6	subtyping	org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-api-maven:2.2.6
+org.springframework.aop.target.SingletonTargetSource	public	org.springframework:spring-aop:4.1.4.RELEASE	instantiation	ysoserial:ysoserial:0.0.6-SNAPSHOT
+ysoserial.payloads.JBossInterceptors1$1	default	ysoserial:ysoserial:0.0.6-SNAPSHOT	method call	org.jboss.interceptor:jboss-interceptor-core:2.0.0.Final
+org.jboss.interceptor.reader.SimpleInterceptorMetadata	public	org.jboss.interceptor:jboss-interceptor-core:2.0.0.Final	instantiation	ysoserial:ysoserial:0.0.6-SNAPSHOT
+bsh.Interpreter	public	org.beanshell:bsh:2.0b5	method call	ysoserial:ysoserial:0.0.6-SNAPSHOT
+java.util.Map	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+org.apache.commons.collections4.comparators.TransformingComparator	public	org.apache.commons:commons-collections4:4.0	instantiation	ysoserial:ysoserial:0.0.6-SNAPSHOT
+org.mozilla.javascript.tools.shell.Environment	public	rhino:js:1.7R2	method call	ysoserial:ysoserial:0.0.6-SNAPSHOT
+javassist.ClassPool	public	javassist:javassist:3.12.0.GA	method call	ysoserial:ysoserial:0.0.6-SNAPSHOT
+ysoserial.payloads.Clojure	public	ysoserial:ysoserial:0.0.6-SNAPSHOT	Class.forName	org.reflections:reflections:0.9.9
+java.lang.Process	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+java.lang.Short	public	unknownLib	Class.forName	rome:rome:1.0
+javax.servlet.ServletRequest	public	javax.servlet:javax.servlet-api:3.1.0	cast	ysoserial:ysoserial:0.0.6-SNAPSHOT
+org.apache.el.ExpressionFactoryImpl	public	org.mortbay.jasper:apache-el:8.0.27	method call	ysoserial:ysoserial:0.0.6-SNAPSHOT
+org.apache.commons.logging.impl.WeakHashtable	public	commons-logging:commons-logging:1.1.1	Class.forName	commons-logging:commons-logging:1.1.1
+java.lang.Class	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+org.jboss.shrinkwrap.resolver.impl.maven.ConfigurableMavenResolverSystemImpl	public	org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-impl-maven:2.2.6	Class.forName	org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-spi:2.2.6
+org.hibernate.property.Getter	public	org.hibernate:hibernate-core:4.3.11.Final	Class.forName	ysoserial:ysoserial:0.0.6-SNAPSHOT
+org.jboss.interceptor.builder.MethodReference	public	org.jboss.interceptor:jboss-interceptor-core:2.0.0.Final	method call	ysoserial:ysoserial:0.0.6-SNAPSHOT
+java.lang.Class	public	unknownLib	Class.forName	rhino:js:1.7R2
+javax.el.CompositeELResolver	public	org.mortbay.jasper:apache-el:8.0.27	subtyping	org.apache.myfaces.core:myfaces-impl:2.2.9
+org.jboss.interceptor.spi.instance.InterceptorInstantiator	public	org.jboss.interceptor:jboss-interceptor-spi:2.0.0.Final	subtyping	ysoserial:ysoserial:0.0.6-SNAPSHOT
+java.lang.Object	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+com.google.common.collect.Multimap	public	com.google.guava:guava:15.0	cast	org.reflections:reflections:0.9.9
+java.lang.ref.WeakReference	public	unknownLib	Class.forName	org.beanshell:bsh:2.0b5
+org.jboss.weld.interceptor.proxy.DefaultInvocationContextFactory	public	org.jboss.weld:weld-core:1.1.33.Final	instantiation	ysoserial:ysoserial:0.0.6-SNAPSHOT
+java.util.Iterator	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+javax.faces.FacesException	public	org.apache.myfaces.core:myfaces-api:2.2.9	instantiation	org.apache.myfaces.core:myfaces-impl:2.2.9
+java.lang.Object	public	unknownLib	Class.forName	rhino:js:1.7R2
+org.jboss.interceptor.proxy.InterceptorMethodHandler	public	org.jboss.interceptor:jboss-interceptor-core:2.0.0.Final	instantiation	ysoserial:ysoserial:0.0.6-SNAPSHOT
+java.lang.Short	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+com.google.common.collect.Multimaps$CustomSetMultimap	private	com.google.guava:guava:15.0	method call	org.reflections:reflections:0.9.9
+org.apache.commons.fileupload.disk.DiskFileItem	public	commons-fileupload:commons-fileupload:1.3	cast	ysoserial:ysoserial:0.0.6-SNAPSHOT
+org.jboss.shrinkwrap.resolver.api.ResolveWithRangeSupportStage	public	org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-api:2.2.6	subtyping	org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-api-maven:2.2.6
+java.security.PrivilegedAction	public	java.security	subtyping	org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-api:2.2.6
+ysoserial.payloads.JavassistWeld1	public	ysoserial:ysoserial:0.0.6-SNAPSHOT	Class.forName	org.reflections:reflections:0.9.9
+java.io.BufferedInputStream	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+java.lang.Short	public	unknownLib	Class.forName	rhino:js:1.7R2
+java.security.Permissions	public	java.security	instantiation	xml-apis:xml-apis:1.0.b2
+java.lang.reflect.Proxy	public	unknownLib	Class.forName	org.beanshell:bsh:2.0b5
+java.io.File	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+java.util.SortedSet	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+org.apache.click.control.Column	public	org.apache.click:click-nodeps:2.3.0	instantiation	ysoserial:ysoserial:0.0.6-SNAPSHOT
+com.google.common.collect.AbstractIterator	public	com.google.guava:guava:15.0	subtyping	org.reflections:reflections:0.9.9
+java.lang.StringBuilder	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+com.mchange.v2.naming.ReferenceIndirector	public	com.mchange:mchange-commons-java:0.2.11	instantiation	com.mchange:c3p0:0.9.5.2
+bsh.XThis	public	org.beanshell:bsh:2.0b5	Class.forName	org.beanshell:bsh:2.0b5
+clojure.main$eval_opt	public	org.clojure:clojure:1.8.0	instantiation	ysoserial:ysoserial:0.0.6-SNAPSHOT
+org.slf4j.LoggerFactory	public	org.slf4j:slf4j-api:1.7.21	method call	org.jboss.interceptor:jboss-interceptor-core:2.0.0.Final
+org.apache.commons.collections.keyvalue.TiedMapEntry	public	commons-collections:commons-collections:3.1	instantiation	ysoserial:ysoserial:0.0.6-SNAPSHOT
+org.jboss.interceptor.spi.metadata.ClassMetadata	public	org.jboss.interceptor:jboss-interceptor-spi:2.0.0.Final	subtyping	org.jboss.interceptor:jboss-interceptor-core:2.0.0.Final
+com.google.common.collect.Lists	public	com.google.guava:guava:15.0	method call	org.reflections:reflections:0.9.9
+org.apache.commons.fileupload.FileItem	public	commons-fileupload:commons-fileupload:1.3	cast	org.apache.click:click-nodeps:2.3.0
+clojure.core$constantly	public	org.clojure:clojure:1.8.0	method call	ysoserial:ysoserial:0.0.6-SNAPSHOT
+java.lang.Thread	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+javax.servlet.http.Cookie	public	javax.servlet:javax.servlet-api:3.1.0	instantiation	org.apache.myfaces.core:myfaces-impl:2.2.9
+groovy.lang.ObjectRange	public	org.codehaus.groovy:groovy:2.3.9	Class.forName	org.codehaus.groovy:groovy:2.3.9
+groovy.lang.MetaClass	public	org.codehaus.groovy:groovy:2.3.9	Class.forName	org.codehaus.groovy:groovy:2.3.9
+ysoserial.payloads.Myfaces2	public	ysoserial:ysoserial:0.0.6-SNAPSHOT	Class.forName	org.reflections:reflections:0.9.9
+ysoserial.payloads.BeanShell1	public	ysoserial:ysoserial:0.0.6-SNAPSHOT	Class.forName	org.reflections:reflections:0.9.9
+org.reflections.Reflections	public	org.reflections:reflections:0.9.9	instantiation	ysoserial:ysoserial:0.0.6-SNAPSHOT
+ysoserial.payloads.Vaadin1	public	ysoserial:ysoserial:0.0.6-SNAPSHOT	Class.forName	org.reflections:reflections:0.9.9
+ysoserial.payloads.Myfaces1	public	ysoserial:ysoserial:0.0.6-SNAPSHOT	Class.forName	org.reflections:reflections:0.9.9
+org.mozilla.javascript.ScriptableObject	public	rhino:js:1.7R2	method call	ysoserial:ysoserial:0.0.6-SNAPSHOT
+net.sf.json.JSONObject	public	net.sf.json-lib:json-lib:jdk15	instantiation	ysoserial:ysoserial:0.0.6-SNAPSHOT
+org.mozilla.javascript.jdk15.VMBridge_jdk15	public	rhino:js:1.7R2	Class.forName	rhino:js:1.7R2
+java.lang.Byte	public	unknownLib	Class.forName	rhino:js:1.7R2
+javax.servlet.http.HttpServletResponse	public	javax.servlet:javax.servlet-api:3.1.0	cast	org.apache.myfaces.core:myfaces-impl:2.2.9
+org.slf4j.spi.LocationAwareLogger	public	org.slf4j:slf4j-api:1.7.21	cast	org.slf4j:slf4j-ext:1.7.2
+com.mchange.v2.cfg.DelayedLogItem	public	com.mchange:mchange-commons-java:0.2.11	Class.forName	com.mchange:mchange-commons-java:0.2.11
+org.mozilla.javascript.JavaAdapter	public	rhino:js:1.7R2	Class.forName	rhino:js:1.7R2
+org.apache.wicket.util.upload.DiskFileItem	public	org.apache.wicket:wicket-util:6.23.0	instantiation	ysoserial:ysoserial:0.0.6-SNAPSHOT
+javassist.bytecode.ClassFile	public	org.javassist:javassist:3.19.0-GA	cast	org.reflections:reflections:0.9.9
+javax.faces.context.FacesContext	public	org.apache.myfaces.core:myfaces-api:2.2.9	subtyping	org.apache.myfaces.core:myfaces-impl:2.2.9
+org.apache.commons.collections.FastHashMap	public	commons-collections:commons-collections:3.1	instantiation	commons-beanutils:commons-beanutils:1.9.2
+org.jboss.weld.interceptor.reader.SimpleInterceptorMetadata	public	org.jboss.weld:weld-core:1.1.33.Final	instantiation	ysoserial:ysoserial:0.0.6-SNAPSHOT
+javax.interceptor.AroundInvoke	public	org.jboss.spec.javax.interceptor:jboss-interceptors-api_1.1_spec:1.0.0.Beta1	Class.forName	org.jboss.interceptor:jboss-interceptor-core:2.0.0.Final
+java.net.Socket	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+ysoserial.payloads.JSON1	public	ysoserial:ysoserial:0.0.6-SNAPSHOT	Class.forName	org.reflections:reflections:0.9.9
+java.lang.Number	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+org.jboss.weld.interceptor.reader.ReflectiveClassMetadata	public	org.jboss.weld:weld-core:1.1.33.Final	method call	ysoserial:ysoserial:0.0.6-SNAPSHOT
+groovy.lang.EmptyRange	public	org.codehaus.groovy:groovy:2.3.9	Class.forName	org.codehaus.groovy:groovy:2.3.9
+java.lang.Byte	public	unknownLib	Class.forName	rome:rome:1.0
+com.sun.syndication.feed.impl.ObjectBean	public	rome:rome:1.0	instantiation	ysoserial:ysoserial:0.0.6-SNAPSHOT
+java.security.PrivilegedExceptionAction	public	java.security	subtyping	org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-spi:2.2.6
+java.math.BigInteger	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+javassist.bytecode.ClassFile	public	org.javassist:javassist:3.19.0-GA	method call	org.reflections:reflections:0.9.9
+org.jboss.interceptor.spi.metadata.InterceptorMetadata	public	org.jboss.interceptor:jboss-interceptor-spi:2.0.0.Final	cast	org.jboss.interceptor:jboss-interceptor-core:2.0.0.Final
+java.io.ObjectOutputStream	public	unknownLib	Class.forName	rhino:js:1.7R2
+java.lang.Number	public	unknownLib	Class.forName	rhino:js:1.7R2
+org.jboss.weld.interceptor.proxy.InterceptorMethodHandler	public	org.jboss.weld:weld-core:1.1.33.Final	instantiation	ysoserial:ysoserial:0.0.6-SNAPSHOT
+bsh.classpath.ClassManagerImpl	public	org.beanshell:bsh:2.0b5	Class.forName	org.beanshell:bsh:2.0b5
+java.sql.Timestamp	public	java.sql	instantiation	commons-beanutils:commons-beanutils:1.9.2
+java.security.AccessControlContext	public	java.security	instantiation	xml-apis:xml-apis:1.0.b2
+org.jboss.weld.interceptor.spi.metadata.MethodMetadata	public	org.jboss.weld:weld-core:1.1.33.Final	cast	ysoserial:ysoserial:0.0.6-SNAPSHOT
+java.sql.Timestamp	public	java.sql	instantiation	org.codehaus.groovy:groovy:2.3.9
+org.jboss.shrinkwrap.resolver.api.maven.coordinate.MavenDependency	public	org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-api-maven:2.2.6	cast	org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-impl-maven:2.2.6
+com.google.common.collect.Sets	public	com.google.guava:guava:15.0	method call	org.reflections:reflections:0.9.9
+org.slf4j.cal10n.LocLoggerFactory	public	org.slf4j:slf4j-ext:1.7.2	method call	org.jboss.weld:weld-core:1.1.33.Final
+java.security.PrivilegedAction	public	java.security	subtyping	org.codehaus.groovy:groovy:2.3.9
+com.vaadin.data.util.PropertysetItem	public	com.vaadin:vaadin-server:7.7.14	instantiation	ysoserial:ysoserial:0.0.6-SNAPSHOT
+java.util.Set	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+java.util.HashMap$Node	default	unknownLib	Class.forName	ysoserial:ysoserial:0.0.6-SNAPSHOT
+org.jboss.interceptor.spi.context.InvocationContextFactory	public	org.jboss.interceptor:jboss-interceptor-spi:2.0.0.Final	subtyping	org.jboss.interceptor:jboss-interceptor-core:2.0.0.Final
+clojure.lang.PersistentArrayMap	public	org.clojure:clojure:1.8.0	method call	ysoserial:ysoserial:0.0.6-SNAPSHOT
+javax.xml.transform.Templates	public	xml-apis:xml-apis:1.0.b2	cast	ysoserial:ysoserial:0.0.6-SNAPSHOT
+ysoserial.payloads.ROME	public	ysoserial:ysoserial:0.0.6-SNAPSHOT	Class.forName	org.reflections:reflections:0.9.9
+org.mozilla.javascript.ContextFactory	public	rhino:js:1.7R2	Class.forName	rhino:js:1.7R2
+org.reflections.Reflections	public	org.reflections:reflections:0.9.9	method call	ysoserial:ysoserial:0.0.6-SNAPSHOT
+ysoserial.payloads.CommonsBeanutils1	public	ysoserial:ysoserial:0.0.6-SNAPSHOT	Class.forName	org.reflections:reflections:0.9.9
+java.security.CodeSigner[]	public	java.security	cast	xml-apis:xml-apis:1.0.b2
+org.apache.commons.logging.impl.Jdk14Logger	public	commons-logging:commons-logging:1.1.1	Class.forName	commons-logging:commons-logging:1.1.1
+javassist.util.proxy.Proxy	public	org.javassist:javassist:3.19.0-GA	subtyping	javassist:javassist:3.12.0.GA
+com.sun.corba.se.spi.orbutil.proxy.CompositeInvocationHandlerImpl	public	unknownLib	Class.forName	ysoserial:ysoserial:0.0.6-SNAPSHOT
+org.slf4j.Logger	public	org.slf4j:slf4j-api:1.7.21	subtyping	org.slf4j:slf4j-ext:1.7.2
+org.apache.commons.beanutils.DynaBean	public	commons-beanutils:commons-beanutils:1.9.2	cast	net.sf.json-lib:json-lib:jdk15
+java.lang.Throwable	public	unknownLib	Class.forName	rhino:js:1.7R2
+java.util.AbstractCollection	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+java.lang.Float	public	unknownLib	Class.forName	rhino:js:1.7R2
+javax.interceptor.AroundInvoke	public	org.jboss.spec.javax.interceptor:jboss-interceptors-api_1.1_spec:1.0.0.Beta1	Class.forName	org.jboss.weld:weld-core:1.1.33.Final
+java.io.BufferedWriter	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+org.jboss.shrinkwrap.resolver.spi.loader.SpiServiceLoader	public	org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-spi:2.2.6	Class.forName	org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-api:2.2.6
+com.mchange.v2.cfg.MConfig	public	com.mchange:mchange-commons-java:0.2.11	Class.forName	com.mchange:mchange-commons-java:0.2.11
+java.net.URL	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+org.slf4j.LoggerFactory	public	org.slf4j:slf4j-api:1.7.21	method call	org.slf4j:slf4j-ext:1.7.2
+org.jboss.interceptor.spi.model.InterceptionType	public	org.jboss.interceptor:jboss-interceptor-spi:2.0.0.Final	method call	org.jboss.interceptor:jboss-interceptor-core:2.0.0.Final
+java.net.URI	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+java.util.Map$Entry	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+org.dom4j.Element	public	dom4j:dom4j:1.6.1	cast	org.hibernate:hibernate-core:4.3.11.Final
+javax.annotation.PreDestroy	public	javax.annotation:jsr250-api:1.0	Class.forName	org.jboss.interceptor:jboss-interceptor-core:2.0.0.Final
+java.io.ObjectOutputStream	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+javassist.CtConstructor	public	org.javassist:javassist:3.19.0-GA	method call	ysoserial:ysoserial:0.0.6-SNAPSHOT
+org.slf4j.ILoggerFactory	public	org.slf4j:slf4j-api:1.7.21	subtyping	org.slf4j:slf4j-jdk14:1.7.21
+ysoserial.payloads.JavassistWeld1$1	default	ysoserial:ysoserial:0.0.6-SNAPSHOT	method call	org.jboss.weld:weld-core:1.1.33.Final
+javassist.ClassClassPath	public	org.javassist:javassist:3.19.0-GA	instantiation	ysoserial:ysoserial:0.0.6-SNAPSHOT
+org.springframework.aop.framework.AdvisedSupport	public	org.springframework:spring-aop:4.1.4.RELEASE	instantiation	ysoserial:ysoserial:0.0.6-SNAPSHOT
+javax.annotation.PreDestroy	public	javax.annotation:jsr250-api:1.0	Class.forName	org.jboss.weld:weld-core:1.1.33.Final
+org.springframework.core.NestedRuntimeException	public	org.springframework:spring-core:4.1.4.RELEASE	subtyping	org.springframework:spring-aop:4.1.4.RELEASE
+org.jboss.interceptor.proxy.DefaultInvocationContextFactory	public	org.jboss.interceptor:jboss-interceptor-core:2.0.0.Final	instantiation	ysoserial:ysoserial:0.0.6-SNAPSHOT
+java.lang.String	public	unknownLib	Class.forName	commons-logging:commons-logging:1.1.1
+com.google.common.base.Predicates	public	com.google.guava:guava:15.0	method call	org.reflections:reflections:0.9.9
+java.lang.Character	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+org.codehaus.groovy.runtime.ConvertedClosure	public	org.codehaus.groovy:groovy:2.3.9	instantiation	ysoserial:ysoserial:0.0.6-SNAPSHOT
+org.jboss.weld.interceptor.builder.MethodReference	public	org.jboss.weld:weld-core:1.1.33.Final	method call	ysoserial:ysoserial:0.0.6-SNAPSHOT
+org.jboss.shrinkwrap.resolver.api.maven.MavenResolverSystemBase	public	org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-api-maven:2.2.6	subtyping	org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-impl-maven:2.2.6
+org.apache.myfaces.el.unified.FacesELContext	public	org.apache.myfaces.core:myfaces-impl:2.2.9	instantiation	ysoserial:ysoserial:0.0.6-SNAPSHOT
+java.util.Timer	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+org.hibernate.engine.spi.TypedValue	public	org.hibernate:hibernate-core:4.3.11.Final	instantiation	ysoserial:ysoserial:0.0.6-SNAPSHOT
+org.mozilla.javascript.NativeJavaArray	public	rhino:js:1.7R2	cast	ysoserial:ysoserial:0.0.6-SNAPSHOT
+javax.interceptor.InvocationContext	public	org.jboss.spec.javax.interceptor:jboss-interceptors-api_1.1_spec:1.0.0.Beta1	subtyping	org.jboss.weld:weld-core:1.1.33.Final
+java.lang.String	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+ysoserial.payloads.FileUpload1	public	ysoserial:ysoserial:0.0.6-SNAPSHOT	Class.forName	org.reflections:reflections:0.9.9
+org.slf4j.Logger	public	org.slf4j:slf4j-api:1.7.21	cast	org.slf4j:slf4j-jdk14:1.7.21
+javax.interceptor.InvocationContext	public	org.jboss.spec.javax.interceptor:jboss-interceptors-api_1.1_spec:1.0.0.Beta1	subtyping	org.jboss.interceptor:jboss-interceptor-core:2.0.0.Final
+java.io.PrintWriter	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+javax.faces.context.PartialViewContextFactory	public	org.apache.myfaces.core:myfaces-api:2.2.9	cast	org.apache.myfaces.core:myfaces-impl:2.2.9
+ch.qos.cal10n.MessageConveyor	public	ch.qos.cal10n:cal10n-api:0.7.7	subtyping	org.jboss.weld:weld-core:1.1.33.Final
+com.vaadin.data.util.NestedMethodProperty	public	com.vaadin:vaadin-server:7.7.14	instantiation	ysoserial:ysoserial:0.0.6-SNAPSHOT
+ysoserial.payloads.Spring2	public	ysoserial:ysoserial:0.0.6-SNAPSHOT	Class.forName	org.reflections:reflections:0.9.9
+ysoserial.payloads.Spring1	public	ysoserial:ysoserial:0.0.6-SNAPSHOT	Class.forName	org.reflections:reflections:0.9.9
+java.lang.CharSequence	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+org.jboss.shrinkwrap.resolver.api.maven.PomlessResolveStageBase	public	org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-api-maven:2.2.6	cast	org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-impl-maven:2.2.6
+java.io.DataInputStream	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+org.apache.commons.collections4.functors.ChainedTransformer	public	org.apache.commons:commons-collections4:4.0	instantiation	ysoserial:ysoserial:0.0.6-SNAPSHOT
+com.google.common.collect.Multimaps	public	com.google.guava:guava:15.0	method call	org.reflections:reflections:0.9.9
+javax.enterprise.inject.spi.InterceptionType[]	public	javax.enterprise.inject.spi	cast	javax.enterprise:cdi-api:1.0-SP1
+java.lang.Comparable	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+org.slf4j.impl.JDK14LoggerAdapter	public	org.slf4j:slf4j-jdk14:1.7.21	method call	com.mchange:mchange-commons-java:0.2.11
+org.apache.commons.logging.LogFactory	public	commons-logging:commons-logging:1.1.1	Class.forName	commons-logging:commons-logging:1.1.1
+java.lang.Double	public	unknownLib	Class.forName	rhino:js:1.7R2
+org.mozilla.javascript.Context	public	rhino:js:1.7R2	Class.forName	rhino:js:1.7R2
+java.io.Reader	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+org.python.core.PyStringMap	public	org.python:jython-standalone:2.5.2	instantiation	ysoserial:ysoserial:0.0.6-SNAPSHOT
+java.lang.Double	public	unknownLib	Class.forName	rome:rome:1.0
+com.google.common.base.Predicate	public	com.google.guava:guava:15.0	cast	org.reflections:reflections:0.9.9
+javassist.bytecode.AnnotationsAttribute	public	org.javassist:javassist:3.19.0-GA	cast	org.reflections:reflections:0.9.9
+javax.servlet.http.HttpServletRequestWrapper	public	javax.servlet:javax.servlet-api:3.1.0	cast	org.apache.click:click-nodeps:2.3.0
+javax.el.MethodExpression	public	org.mortbay.jasper:apache-el:8.0.27	subtyping	org.apache.myfaces.core:myfaces-impl:2.2.9
+java.lang.Boolean	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+java.security.PrivilegedAction	public	java.security	subtyping	commons-logging:commons-logging:1.1.1
+org.jboss.interceptor.builder.InterceptionModelBuilder	public	org.jboss.interceptor:jboss-interceptor-core:2.0.0.Final	method call	ysoserial:ysoserial:0.0.6-SNAPSHOT
+com.mchange.v2.ser.SerializableUtils	public	com.mchange:mchange-commons-java:0.2.11	method call	com.mchange:c3p0:0.9.5.2
+javax.servlet.http.HttpSession	public	javax.servlet:javax.servlet-api:3.1.0	cast	org.apache.myfaces.core:myfaces-impl:2.2.9
+org.jboss.interceptor.builder.InterceptionModelBuilder$MethodInterceptorDescriptor	public	org.jboss.interceptor:jboss-interceptor-core:2.0.0.Final	method call	ysoserial:ysoserial:0.0.6-SNAPSHOT
+groovy.lang.ListWithDefault	public	org.codehaus.groovy:groovy:2.3.9	Class.forName	org.codehaus.groovy:groovy:2.3.9
+com.google.common.base.Supplier	public	com.google.guava:guava:15.0	subtyping	org.reflections:reflections:0.9.9
+org.mozilla.javascript.NativeObject	public	rhino:js:1.7R2	cast	ysoserial:ysoserial:0.0.6-SNAPSHOT
+java.lang.Appendable	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+org.jboss.interceptor.reader.ReflectiveClassMetadata	public	org.jboss.interceptor:jboss-interceptor-core:2.0.0.Final	method call	ysoserial:ysoserial:0.0.6-SNAPSHOT
+java.sql.Date	public	java.sql	Class.forName	org.codehaus.groovy:groovy:2.3.9
+java.util.Enumeration	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+org.hibernate.type.ComponentType	public	org.hibernate:hibernate-core:4.3.11.Final	cast	ysoserial:ysoserial:0.0.6-SNAPSHOT
+java.util.Date	public	unknownLib	Class.forName	rhino:js:1.7R2
+java.security.ProtectionDomain	public	java.security	instantiation	xml-apis:xml-apis:1.0.b2
+javax.el.ELContextEvent	public	org.mortbay.jasper:apache-el:8.0.27	instantiation	org.apache.myfaces.core:myfaces-impl:2.2.9
+java.util.Objects	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+org.apache.commons.collections4.functors.InstantiateTransformer	public	org.apache.commons:commons-collections4:4.0	instantiation	ysoserial:ysoserial:0.0.6-SNAPSHOT
+groovy.lang.Range	public	org.codehaus.groovy:groovy:2.3.9	Class.forName	org.codehaus.groovy:groovy:2.3.9
+ch.qos.cal10n.MessageParameterObj	public	ch.qos.cal10n:cal10n-api:0.7.7	instantiation	org.slf4j:slf4j-ext:1.7.2
+javassist.bytecode.Descriptor$Iterator	public	javassist:javassist:3.12.0.GA	instantiation	org.reflections:reflections:0.9.9
+org.slf4j.helpers.MarkerIgnoringBase	public	org.slf4j:slf4j-api:1.7.21	subtyping	org.slf4j:slf4j-jdk14:1.7.21
+java.util.Calendar	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+ysoserial.payloads.AspectJWeaver	public	ysoserial:ysoserial:0.0.6-SNAPSHOT	Class.forName	org.reflections:reflections:0.9.9
+ysoserial.payloads.Hibernate1	public	ysoserial:ysoserial:0.0.6-SNAPSHOT	Class.forName	org.reflections:reflections:0.9.9
+ysoserial.payloads.Hibernate2	public	ysoserial:ysoserial:0.0.6-SNAPSHOT	Class.forName	org.reflections:reflections:0.9.9
+javax.faces.context.ExternalContext	public	org.apache.myfaces.core:myfaces-api:2.2.9	subtyping	org.apache.myfaces.core:myfaces-impl:2.2.9
+java.util.TimeZone	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+com.mchange.v2.log.slf4j.Slf4jMLog$Slf4jMLogger	private	com.mchange:mchange-commons-java:0.2.11	method call	com.mchange:c3p0:0.9.5.2
+org.reflections.vfs.SystemDir$1$1	default	org.reflections:reflections:0.9.9	method call	com.google.guava:guava:15.0
+com.mchange.v2.async.ThreadPoolAsynchronousRunner	public	com.mchange:mchange-commons-java:0.2.11	instantiation	com.mchange:c3p0:0.9.5.2
+java.security.PrivilegedAction	public	java.security	subtyping	java.sql
+javax.el.ELContext	public	org.mortbay.jasper:apache-el:8.0.27	subtyping	org.apache.myfaces.core:myfaces-impl:2.2.9
+java.lang.Long	public	unknownLib	Class.forName	rhino:js:1.7R2
+java.security.PrivilegedExceptionAction	public	java.security	subtyping	org.codehaus.groovy:groovy:2.3.9
+javassist.util.proxy.MethodHandler	public	org.javassist:javassist:3.19.0-GA	subtyping	org.jboss.weld:weld-core:1.1.33.Final
+org.reflections.Store$1	default	org.reflections:reflections:0.9.9	method call	com.google.guava:guava:15.0
+java.util.Comparator	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+org.codehaus.groovy.vmplugin.v7.Java7	public	org.codehaus.groovy:groovy:2.3.9	Class.forName	org.codehaus.groovy:groovy:2.3.9
+com.google.common.cache.CacheBuilder	public	com.google.guava:guava:15.0	method call	org.jboss.weld:weld-core:1.1.33.Final
+org.apache.commons.fileupload.disk.DiskFileItem	public	commons-fileupload:commons-fileupload:1.3	instantiation	ysoserial:ysoserial:0.0.6-SNAPSHOT
+java.sql.Date	public	java.sql	instantiation	commons-beanutils:commons-beanutils:1.9.2
+org.slf4j.LoggerFactory	public	org.slf4j:slf4j-api:1.7.21	Class.forName	com.mchange:mchange-commons-java:0.2.11
+java.lang.Thread	public	unknownLib	Class.forName	commons-logging:commons-logging:1.1.1
+org.apache.commons.io.output.DeferredFileOutputStream	public	commons-io:commons-io:2.6	instantiation	ysoserial:ysoserial:0.0.6-SNAPSHOT
+org.w3c.dom.Element	public	xml-apis:xml-apis:1.0.b2	cast	org.apache.click:click-nodeps:2.3.0
+java.sql.Date	public	java.sql	instantiation	org.codehaus.groovy:groovy:2.3.9
+javassist.CtClassType	default	javassist:javassist:3.12.0.GA	method call	ysoserial:ysoserial:0.0.6-SNAPSHOT
+org.jboss.shrinkwrap.resolver.api.maven.ConfigurableMavenResolverSystemBase	public	org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-api-maven:2.2.6	subtyping	org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-impl-maven:2.2.6
+com.google.common.cache.CacheLoader	public	com.google.guava:guava:15.0	subtyping	org.jboss.weld:weld-core:1.1.33.Final
+java.util.regex.Pattern	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+org.jboss.shrinkwrap.resolver.spi.loader.ServiceRegistry	public	org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-spi:2.2.6	Class.forName	org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-api:2.2.6
+org.jboss.weld.interceptor.builder.InterceptionModelBuilder	public	org.jboss.weld:weld-core:1.1.33.Final	method call	ysoserial:ysoserial:0.0.6-SNAPSHOT
+java.io.ObjectInputStream	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+java.util.concurrent.BlockingQueue	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+java.lang.Long	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+java.lang.Long	public	unknownLib	Class.forName	rome:rome:1.0
+java.lang.Integer	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+org.apache.wicket.util.upload.DiskFileItem	public	org.apache.wicket:wicket-util:6.23.0	cast	ysoserial:ysoserial:0.0.6-SNAPSHOT
+org.jboss.weld.interceptor.spi.instance.InterceptorInstantiator	public	org.jboss.weld:weld-core:1.1.33.Final	subtyping	ysoserial:ysoserial:0.0.6-SNAPSHOT
+org.apache.commons.beanutils.BeanComparator	public	commons-beanutils:commons-beanutils:1.9.2	instantiation	ysoserial:ysoserial:0.0.6-SNAPSHOT
+sun.reflect.annotation.AnnotationInvocationHandler	default	unknownLib	Class.forName	ysoserial:ysoserial:0.0.6-SNAPSHOT
+org.slf4j.helpers.BasicMarkerFactory	public	org.slf4j:slf4j-api:1.7.21	instantiation	org.slf4j:slf4j-jdk14:1.7.21
+sun.security.provider.SHA	public	unknownLib	Class.forName	java.security
+javax.servlet.ServletContext	public	javax.servlet:javax.servlet-api:3.1.0	cast	ysoserial:ysoserial:0.0.6-SNAPSHOT
+org.springframework.util.Assert	public	org.springframework:spring-core:4.1.4.RELEASE	method call	org.springframework:spring-aop:4.1.4.RELEASE
+java.lang.ClassLoader	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+org.apache.wicket.util.io.DeferredFileOutputStream	public	org.apache.wicket:wicket-util:6.23.0	instantiation	ysoserial:ysoserial:0.0.6-SNAPSHOT
+org.mozilla.javascript.NativeJavaObject	public	rhino:js:1.7R2	instantiation	ysoserial:ysoserial:0.0.6-SNAPSHOT
+java.lang.Integer	public	unknownLib	Class.forName	rhino:js:1.7R2
+java.lang.Integer	public	unknownLib	Class.forName	rome:rome:1.0
+java.sql.SQLException	public	java.sql	instantiation	com.mchange:c3p0:0.9.5.2
+javax.faces.FacesWrapper	public	org.apache.myfaces.core:myfaces-api:2.2.9	subtyping	org.apache.myfaces.core:myfaces-impl:2.2.9
+org.slf4j.spi.LoggerFactoryBinder	public	org.slf4j:slf4j-api:1.7.21	subtyping	org.slf4j:slf4j-jdk14:1.7.21
+org.apache.click.control.Column$ColumnComparator	default	org.apache.click:click-nodeps:2.3.0	Class.forName	ysoserial:ysoserial:0.0.6-SNAPSHOT
+org.hibernate.property.BasicPropertyAccessor$BasicGetter	public	org.hibernate:hibernate-core:4.3.11.Final	Class.forName	ysoserial:ysoserial:0.0.6-SNAPSHOT
+javassist.bytecode.FieldInfo	public	org.javassist:javassist:3.19.0-GA	cast	org.reflections:reflections:0.9.9
+org.apache.myfaces.el.CompositeELResolver	public	org.apache.myfaces.core:myfaces-impl:2.2.9	instantiation	ysoserial:ysoserial:0.0.6-SNAPSHOT
+clojure.inspector.proxy$javax.swing.table.AbstractTableModel$ff19274a	public	org.clojure:clojure:1.8.0	method call	ysoserial:ysoserial:0.0.6-SNAPSHOT
+org.slf4j.spi.MarkerFactoryBinder	public	org.slf4j:slf4j-api:1.7.21	subtyping	org.slf4j:slf4j-jdk14:1.7.21
+org.apache.commons.collections.functors.ConstantTransformer	public	commons-collections:commons-collections:3.1	instantiation	ysoserial:ysoserial:0.0.6-SNAPSHOT
+org.jboss.shrinkwrap.resolver.spi.loader.ServiceRegistry	public	org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-spi:2.2.6	method call	org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-api:2.2.6
+javassist.ClassPool	public	javassist:javassist:3.12.0.GA	instantiation	ysoserial:ysoserial:0.0.6-SNAPSHOT
+org.apache.commons.lang.exception.NestableRuntimeException	public	commons-lang:commons-lang:2.5	subtyping	net.sf.json-lib:json-lib:jdk15
+com.google.common.collect.Sets	default	com.google.guava:guava:15.0	method call	org.reflections:reflections:0.9.9
+java.lang.Iterable	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+org.jboss.shrinkwrap.resolver.spi.loader.SpiServiceLoader	public	org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-spi:2.2.6	method call	org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-api:2.2.6
+javax.el.ExpressionFactory	public	org.mortbay.jasper:apache-el:8.0.27	method call	ysoserial:ysoserial:0.0.6-SNAPSHOT
+org.mozilla.javascript.ScriptableObject	public	rhino:js:1.7R2	Class.forName	rhino:js:1.7R2
+java.io.BufferedReader	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+javassist.bytecode.annotation.Annotation	public	javassist:javassist:3.12.0.GA	method call	org.reflections:reflections:0.9.9
+java.io.ObjectInputStream	public	unknownLib	Class.forName	rhino:js:1.7R2
+clojure.core$comp	public	org.clojure:clojure:1.8.0	instantiation	ysoserial:ysoserial:0.0.6-SNAPSHOT
+org.apache.commons.collections.functors.InstantiateTransformer	public	commons-collections:commons-collections:3.1	instantiation	ysoserial:ysoserial:0.0.6-SNAPSHOT
+org.python.core.PyString	public	org.python:jython-standalone:2.5.2	instantiation	ysoserial:ysoserial:0.0.6-SNAPSHOT
+java.lang.Float	public	unknownLib	Class.forName	rome:rome:1.0
+javassist.util.proxy.ProxyObject	public	javassist:javassist:3.12.0.GA	cast	org.jboss.interceptor:jboss-interceptor-core:2.0.0.Final
+java.util.TimerTask	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+org.apache.click.control.Table	public	org.apache.click:click-nodeps:2.3.0	instantiation	ysoserial:ysoserial:0.0.6-SNAPSHOT
+ysoserial.payloads.Jdk7u21	public	ysoserial:ysoserial:0.0.6-SNAPSHOT	Class.forName	org.reflections:reflections:0.9.9
+org.slf4j.cal10n.LocLoggerFactory	public	org.slf4j:slf4j-ext:1.7.2	instantiation	org.jboss.weld:weld-core:1.1.33.Final
+java.lang.Object	public	unknownLib	Class.forName	org.beanshell:bsh:2.0b5
+javax.faces.context.FlashFactory	public	org.apache.myfaces.core:myfaces-api:2.2.9	cast	org.apache.myfaces.core:myfaces-impl:2.2.9
+javax.el.ValueExpression	public	org.mortbay.jasper:apache-el:8.0.27	cast	org.apache.myfaces.core:myfaces-impl:2.2.9
+java.lang.StringBuffer	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+java.security.PrivilegedAction	public	java.security	subtyping	org.jboss.weld:weld-core:1.1.33.Final
+org.jboss.shrinkwrap.resolver.api.ConfigurableResolverSystem	public	org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-api:2.2.6	subtyping	org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-api-maven:2.2.6
+javax.servlet.http.Cookie	public	javax.servlet:javax.servlet-api:3.1.0	instantiation	org.apache.click:click-nodeps:2.3.0
+org.apache.click.control.Column	public	org.apache.click:click-nodeps:2.3.0	method call	ysoserial:ysoserial:0.0.6-SNAPSHOT
+org.jboss.shrinkwrap.resolver.api.Resolvers	public	org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-api:2.2.6	method call	org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-api-maven:2.2.6
+org.slf4j.impl.JDK14LoggerAdapter	public	org.slf4j:slf4j-jdk14:1.7.21	method call	org.slf4j:slf4j-api:1.7.21
+org.apache.myfaces.view.facelets.el.ValueExpressionMethodExpression	public	org.apache.myfaces.core:myfaces-impl:2.2.9	instantiation	ysoserial:ysoserial:0.0.6-SNAPSHOT
+com.google.common.collect.Lists	private	com.google.guava:guava:15.0	method call	org.reflections:reflections:0.9.9
+org.springframework.aop.framework.AdvisedSupport	public	org.springframework:spring-aop:4.1.4.RELEASE	method call	ysoserial:ysoserial:0.0.6-SNAPSHOT
+org.apache.commons.collections.map.ListOrderedMap	public	commons-collections:commons-collections:3.1	instantiation	net.sf.json-lib:json-lib:jdk15
+org.jboss.shrinkwrap.resolver.api.maven.MavenVersionRangeResult	public	org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-api-maven:2.2.6	cast	org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-impl-maven:2.2.6
+org.apache.commons.collections.FastHashMap	public	commons-collections:commons-collections:3.1	cast	commons-beanutils:commons-beanutils:1.9.2
+org.apache.commons.collections4.functors.InvokerTransformer	public	org.apache.commons:commons-collections4:4.0	instantiation	ysoserial:ysoserial:0.0.6-SNAPSHOT
+javax.faces.context.FacesContext	public	org.apache.myfaces.core:myfaces-api:2.2.9	method call	org.apache.myfaces.core:myfaces-impl:2.2.9
+org.apache.commons.logging.impl.Log4JLogger	public	commons-logging:commons-logging:1.1.1	Class.forName	commons-logging:commons-logging:1.1.1
+javassist.util.proxy.MethodHandler	public	org.javassist:javassist:3.19.0-GA	subtyping	org.jboss.interceptor:jboss-interceptor-core:2.0.0.Final
+java.sql.Timestamp	public	java.sql	cast	commons-beanutils:commons-beanutils:1.9.2
+ysoserial.payloads.Jython1	public	ysoserial:ysoserial:0.0.6-SNAPSHOT	Class.forName	org.reflections:reflections:0.9.9
+java.lang.Float	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+javax.interceptor.AroundTimeout	public	org.jboss.spec.javax.interceptor:jboss-interceptors-api_1.1_spec:1.0.0.Beta1	Class.forName	org.jboss.weld:weld-core:1.1.33.Final
+org.springframework.beans.factory.ObjectFactory	public	org.springframework:spring-beans:4.1.4.RELEASE	cast	ysoserial:ysoserial:0.0.6-SNAPSHOT
+java.io.InputStream	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+java.util.List	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+javassist.bytecode.MethodInfo	public	org.javassist:javassist:3.19.0-GA	cast	org.reflections:reflections:0.9.9
+org.apache.commons.collections.map.MultiKeyMap	public	commons-collections:commons-collections:3.1	instantiation	net.sf.json-lib:json-lib:jdk15
+org.slf4j.impl.JDK14LoggerAdapter	public	org.slf4j:slf4j-jdk14:1.7.21	method call	org.reflections:reflections:0.9.9
+org.apache.commons.codec.binary.Base64	public	commons-codec:commons-codec:1.9	instantiation	org.apache.click:click-nodeps:2.3.0
+com.mchange.v2.naming.ReferenceIndirector	public	com.mchange:mchange-commons-java:0.2.11	method call	com.mchange:c3p0:0.9.5.2
+org.jboss.interceptor.spi.metadata.InterceptorMetadata	public	org.jboss.interceptor:jboss-interceptor-spi:2.0.0.Final	subtyping	org.jboss.interceptor:jboss-interceptor-core:2.0.0.Final
+ysoserial.payloads.JRMPClient	public	ysoserial:ysoserial:0.0.6-SNAPSHOT	Class.forName	org.reflections:reflections:0.9.9
+javax.faces.render.RenderKitFactory	public	org.apache.myfaces.core:myfaces-api:2.2.9	cast	org.apache.myfaces.core:myfaces-impl:2.2.9
+org.jboss.weld.interceptor.builder.InterceptionModelBuilder$MethodInterceptorDescriptor	public	org.jboss.weld:weld-core:1.1.33.Final	method call	ysoserial:ysoserial:0.0.6-SNAPSHOT
+org.apache.commons.collections.functors.InvokerTransformer	public	commons-collections:commons-collections:3.1	instantiation	ysoserial:ysoserial:0.0.6-SNAPSHOT
+org.python.core.PyFunction	public	org.python:jython-standalone:2.5.2	instantiation	ysoserial:ysoserial:0.0.6-SNAPSHOT
+java.io.OutputStream	public	unknownLib	Class.forName	org.codehaus.groovy:groovy:2.3.9
+org.apache.commons.io.output.DeferredFileOutputStream	public	commons-io:commons-io:2.6	instantiation	commons-fileupload:commons-fileupload:1.3
+org.apache.commons.logging.impl.LogFactoryImpl	public	commons-logging:commons-logging:1.1.1	Class.forName	commons-logging:commons-logging:1.1.1
+bsh.XThis	public	org.beanshell:bsh:2.0b5	instantiation	ysoserial:ysoserial:0.0.6-SNAPSHOT

@@ -1,0 +1,515 @@
+Class Name	Class Visibility	Class Library	Usage	Used In Library
+org.objectweb.asm.Handle	public	org.ow2.asm:asm:7.3.1	instantiation	org.ow2.asm:asm-commons:7.3.1
+ch.qos.logback.classic.pattern.MessageConverter	public	ch.qos.logback:logback-classic:1.2.3	Class.forName	ch.qos.logback:logback-core:1.2.3
+org.objectweb.asm.commons.AdviceAdapter	public	org.ow2.asm:asm-commons:7.3.1	subtyping	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT
+ch.qos.logback.classic.joran.action.EvaluatorAction	public	ch.qos.logback:logback-classic:1.2.3	method call	ch.qos.logback:logback-core:1.2.3
+org.glowroot.wire.api.model.TraceOuterClass$Trace$SharedQueryText	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	cast	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.glowroot.wire.api.model.AgentConfigOuterClass$AgentConfig$AlertConfig$AlertCondition$HeartbeatCondition$1	default	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	com.google.protobuf:protobuf-java:3.5.1
+ch.qos.logback.core.status.WarnStatus	public	ch.qos.logback:logback-core:1.2.3	instantiation	ch.qos.logback:logback-classic:1.2.3
+org.objectweb.asm.tree.TryCatchBlockNode	public	org.ow2.asm:asm-tree:7.3.1	cast	org.ow2.asm:asm-commons:7.3.1
+org.glowroot.agent.embedded.util.CappedDatabaseOutputStream$FsyncRunnable	private	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT	method call	org.glowroot:glowroot-common:0.13.7-SNAPSHOT
+org.glowroot.common.config.GaugeConfig	public	org.glowroot:glowroot-common:0.13.7-SNAPSHOT	cast	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT
+org.glowroot.wire.api.model.AggregateOuterClass$Aggregate$Builder	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	com.google.protobuf:protobuf-java:3.5.1
+org.glowroot.wire.api.model.AgentConfigOuterClass$AgentConfig$AlertConfig$AlertNotification	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+ch.qos.logback.classic.joran.JoranConfigurator	public	ch.qos.logback:logback-classic:1.2.3	method call	ch.qos.logback:logback-core:1.2.3
+java.sql.DriverManager	public	java.sql	method call	com.h2database:h2:1.3.176
+org.objectweb.asm.commons.GeneratorAdapter	public	org.ow2.asm:asm-commons:7.3.1	instantiation	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT
+ch.qos.logback.core.BasicStatusManager	public	ch.qos.logback:logback-core:1.2.3	method call	ch.qos.logback:logback-classic:1.2.3
+ch.qos.logback.core.joran.action.Action	public	ch.qos.logback:logback-core:1.2.3	subtyping	ch.qos.logback:logback-classic:1.2.3
+org.h2.jdbc.JdbcDatabaseMetaData	public	com.h2database:h2:1.3.176	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+com.google.protobuf.ProtocolMessageEnum	public	com.google.protobuf:protobuf-java:3.5.1	subtyping	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT
+org.xml.sax.InputSource	public	org.xml.sax	instantiation	ch.qos.logback:logback-core:1.2.3
+ch.qos.logback.classic.pattern.DateConverter	public	ch.qos.logback:logback-classic:1.2.3	Class.forName	ch.qos.logback:logback-core:1.2.3
+ch.qos.logback.core.net.ssl.SSLNestedComponentRegistryRules	public	ch.qos.logback:logback-core:1.2.3	method call	ch.qos.logback:logback-classic:1.2.3
+org.glowroot.common2.repo.MutableAggregate	public	org.glowroot:glowroot-common2:0.13.7-SNAPSHOT	instantiation	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.glowroot.wire.api.model.AggregateOuterClass$Aggregate$ThreadStats	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+com.ning.compress.lzf.LZFOutputStream	public	com.ning:compress-lzf:1.0.4	instantiation	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+ch.qos.logback.classic.joran.action.ConsolePluginAction	public	ch.qos.logback:logback-classic:1.2.3	method call	ch.qos.logback:logback-core:1.2.3
+org.slf4j.Logger	public	org.slf4j:slf4j-api:1.7.30	subtyping	ch.qos.logback:logback-classic:1.2.3
+org.objectweb.asm.commons.JSRInlinerAdapter	public	org.ow2.asm:asm-commons:7.3.1	instantiation	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT
+org.glowroot.wire.api.model.Proto$OptionalDouble$Builder	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	com.google.protobuf:protobuf-java:3.5.1
+ch.qos.logback.core.spi.ContextAwareBase	public	ch.qos.logback:logback-core:1.2.3	subtyping	ch.qos.logback:logback-classic:1.2.3
+org.glowroot.wire.api.model.TraceOuterClass$Trace	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.glowroot.wire.api.model.AggregateOuterClass$Aggregate$ThreadStats	private	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.glowroot.wire.api.model.AgentConfigOuterClass$AgentConfig$AlertConfig$AlertNotification	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	com.google.protobuf:protobuf-java:3.5.1
+com.google.common.io.CountingOutputStream	public	com.google.guava:guava:31.0.1-jre	instantiation	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.objectweb.asm.Label	public	org.ow2.asm:asm:7.3.1	cast	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT
+org.glowroot.wire.api.model.AgentConfigOuterClass$AgentConfig$AlertConfig$AlertCondition$HeartbeatCondition	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	com.google.protobuf:protobuf-java:3.5.1
+com.sun.org.apache.xerces.internal.jaxp.SAXParserFactoryImpl	public	unknownLib	Class.forName	javax.xml.parsers
+com.google.common.io.Files	default	com.google.guava:guava:31.0.1-jre	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+sun.security.provider.NativePRNG	public	unknownLib	Class.forName	java.security
+com.google.common.util.concurrent.internal.InternalFutureFailureAccess	public	com.google.guava:failureaccess:1.0.1	cast	com.google.guava:guava:31.0.1-jre
+org.glowroot.wire.api.model.AgentConfigOuterClass$AgentConfig$AlertConfig$AlertCondition	private	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+com.google.protobuf.Extension	public	com.google.protobuf:protobuf-java:3.5.1	Class.forName	com.google.protobuf:protobuf-java:3.5.1
+org.glowroot.common.model.MutableProfile	public	org.glowroot:glowroot-common:0.13.7-SNAPSHOT	instantiation	org.glowroot:glowroot-common2:0.13.7-SNAPSHOT
+org.objectweb.asm.Label	public	org.ow2.asm:asm:7.3.1	cast	org.ow2.asm:asm-tree:7.3.1
+org.objectweb.asm.FieldVisitor	public	org.ow2.asm:asm:7.3.1	subtyping	org.ow2.asm:asm-tree:7.3.1
+org.glowroot.wire.api.model.TraceOuterClass$Trace$Attribute$1	default	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	com.google.protobuf:protobuf-java:3.5.1
+org.glowroot.wire.api.model.AgentConfigOuterClass$AgentConfig$AlertConfig$AlertCondition	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	com.google.protobuf:protobuf-java:3.5.1
+ch.qos.logback.core.joran.conditional.ElseAction	public	ch.qos.logback:logback-core:1.2.3	instantiation	ch.qos.logback:logback-classic:1.2.3
+org.glowroot.agent.bytecode.api.ThreadContextPlus	public	org.glowroot:glowroot-agent-bytecode-api:0.13.7-SNAPSHOT	subtyping	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT
+com.google.protobuf.UnmodifiableLazyStringList	public	com.google.protobuf:protobuf-java:3.5.1	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.objectweb.asm.tree.LocalVariableNode	public	org.ow2.asm:asm-tree:7.3.1	instantiation	org.ow2.asm:asm-commons:7.3.1
+java.sql.SQLClientInfoException	public	java.sql	cast	com.h2database:h2:1.3.176
+com.google.protobuf.ByteString$LiteralByteString	private	com.google.protobuf:protobuf-java:3.5.1	method call	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT
+com.google.common.collect.Ordering	public	com.google.guava:guava:31.0.1-jre	subtyping	org.glowroot:glowroot-common:0.13.7-SNAPSHOT
+com.google.common.collect.ImmutableList$Builder	public	com.google.guava:guava:31.0.1-jre	method call	org.glowroot:glowroot-common:0.13.7-SNAPSHOT
+org.glowroot.wire.api.model.Proto$OptionalDouble	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	com.google.protobuf:protobuf-java:3.5.1
+org.glowroot.common2.repo.ConfigRepository$RollupConfig	public	org.glowroot:glowroot-common2:0.13.7-SNAPSHOT	cast	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.glowroot.common.live.ImmutableAggregateQuery	public	org.glowroot:glowroot-common:0.13.7-SNAPSHOT	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+sun.security.provider.PolicyFile	public	unknownLib	Class.forName	java.security
+java.security.SecureRandom	public	java.security	instantiation	com.h2database:h2:1.3.176
+org.glowroot.common2.repo.ImmutableOpenIncident	private	org.glowroot:glowroot-common2:0.13.7-SNAPSHOT	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.glowroot.wire.api.model.AgentConfigOuterClass$AgentConfig$AlertConfig$AlertNotification	private	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.objectweb.asm.Attribute	public	org.ow2.asm:asm:7.3.1	cast	org.ow2.asm:asm-tree:7.3.1
+org.glowroot.agent.plugin.api.OptionalThreadContext	public	org.glowroot:glowroot-agent-plugin-api:0.13.7-SNAPSHOT	subtyping	org.glowroot:glowroot-agent-bytecode-api:0.13.7-SNAPSHOT
+org.objectweb.asm.MethodVisitor	public	org.ow2.asm:asm:7.3.1	subtyping	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT
+org.objectweb.asm.commons.GeneratorAdapter	public	org.ow2.asm:asm-commons:7.3.1	subtyping	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT
+com.google.common.base.Joiner	public	com.google.guava:guava:31.0.1-jre	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.objectweb.asm.ConstantDynamic	public	org.ow2.asm:asm:7.3.1	cast	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT
+org.glowroot.agent.util.Checkers	default	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+com.google.protobuf.GeneratedMessageV3$Builder	public	com.google.protobuf:protobuf-java:3.5.1	subtyping	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+java.security.MessageDigestSpi	public	java.security	Class.forName	java.security
+org.glowroot.common2.repo.ImmutableOpenIncident$Builder	public	org.glowroot:glowroot-common2:0.13.7-SNAPSHOT	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.glowroot.wire.api.model.Proto$OptionalDouble$1	default	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	com.google.protobuf:protobuf-java:3.5.1
+ch.qos.logback.classic.pattern.ThrowableProxyConverter	public	ch.qos.logback:logback-classic:1.2.3	method call	ch.qos.logback:logback-core:1.2.3
+org.glowroot.common2.repo.ConfigRepository$DuplicateUsernameException	public	org.glowroot:glowroot-common2:0.13.7-SNAPSHOT	instantiation	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+com.google.protobuf.UnknownFieldSet	public	com.google.protobuf:protobuf-java:3.5.1	method call	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT
+org.glowroot.wire.api.model.TraceOuterClass$Trace$DetailValue$1	default	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	com.google.protobuf:protobuf-java:3.5.1
+ch.qos.logback.core.status.StatusUtil	public	ch.qos.logback:logback-core:1.2.3	instantiation	ch.qos.logback:logback-classic:1.2.3
+org.glowroot.common2.repo.MutableThreadStats	public	org.glowroot:glowroot-common2:0.13.7-SNAPSHOT	cast	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.slf4j.spi.LocationAwareLogger	public	org.slf4j:slf4j-api:1.7.30	subtyping	ch.qos.logback:logback-classic:1.2.3
+com.google.protobuf.MessageLite	public	com.google.protobuf:protobuf-java:3.5.1	cast	org.glowroot:glowroot-common:0.13.7-SNAPSHOT
+com.google.protobuf.Internal$ListAdapter	public	com.google.protobuf:protobuf-java:3.5.1	instantiation	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT
+org.xml.sax.InputSource	public	org.xml.sax	method call	ch.qos.logback:logback-core:1.2.3
+org.glowroot.common.util.Styles$AllParameters	public	org.glowroot:glowroot-common:0.13.7-SNAPSHOT	annotation	org.glowroot:glowroot-common2:0.13.7-SNAPSHOT
+com.google.protobuf.MessageOrBuilder	public	com.google.protobuf:protobuf-java:3.5.1	subtyping	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT
+org.objectweb.asm.Label	public	org.ow2.asm:asm:7.3.1	instantiation	org.ow2.asm:asm-commons:7.3.1
+sun.misc.JavaLangAccess	public	unknownLib	Class.forName	com.google.guava:guava:31.0.1-jre
+org.xml.sax.InputSource	public	org.xml.sax	instantiation	javax.xml.parsers
+org.objectweb.asm.ByteVector	public	org.ow2.asm:asm:7.3.1	instantiation	org.ow2.asm:asm-commons:7.3.1
+org.glowroot.common2.config.SlackConfig$SlackWebhook	public	org.glowroot:glowroot-common2:0.13.7-SNAPSHOT	cast	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+java.sql.DatabaseMetaData	public	java.sql	subtyping	com.h2database:h2:1.3.176
+java.security.CodeSource	public	java.security	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.glowroot.wire.api.model.AgentConfigOuterClass$AgentConfig$AlertConfig$AlertSeverity	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	cast	org.glowroot:glowroot-common2:0.13.7-SNAPSHOT
+org.glowroot.wire.api.model.AgentConfigOuterClass$AgentConfig$AlertConfig$AlertCondition$1	default	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	com.google.protobuf:protobuf-java:3.5.1
+ch.qos.logback.core.joran.spi.InterpretationContext	public	ch.qos.logback:logback-core:1.2.3	method call	ch.qos.logback:logback-classic:1.2.3
+ch.qos.logback.classic.PatternLayout	public	ch.qos.logback:logback-classic:1.2.3	method call	ch.qos.logback:logback-core:1.2.3
+org.glowroot.common2.repo.ConfigRepository$DuplicateSlackWebhookUrlException	public	org.glowroot:glowroot-common2:0.13.7-SNAPSHOT	instantiation	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+com.google.protobuf.ByteString	public	com.google.protobuf:protobuf-java:3.5.1	cast	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT
+ch.qos.logback.classic.pattern.MessageConverter	public	ch.qos.logback:logback-classic:1.2.3	method call	ch.qos.logback:logback-core:1.2.3
+org.glowroot.wire.api.model.AggregateOuterClass$Aggregate$Timer$Builder	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	com.google.protobuf:protobuf-java:3.5.1
+org.objectweb.asm.tree.InsnNode	public	org.ow2.asm:asm-tree:7.3.1	instantiation	org.ow2.asm:asm-commons:7.3.1
+org.objectweb.asm.tree.LabelNode	public	org.ow2.asm:asm-tree:7.3.1	cast	org.ow2.asm:asm-commons:7.3.1
+com.google.common.collect.ImmutableList	public	com.google.guava:guava:31.0.1-jre	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.glowroot.wire.api.model.AgentConfigOuterClass$AgentConfig$AlertConfig$AlertCondition	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	cast	org.glowroot:glowroot-common2:0.13.7-SNAPSHOT
+org.glowroot.common2.repo.ImmutableResolvedIncident	private	org.glowroot:glowroot-common2:0.13.7-SNAPSHOT	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.glowroot.common.util.ScheduledRunnable$TerminateSubsequentExecutionsException	public	org.glowroot:glowroot-common:0.13.7-SNAPSHOT	instantiation	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT
+org.glowroot.common.model.ServiceCallCollector	public	org.glowroot:glowroot-common:0.13.7-SNAPSHOT	instantiation	org.glowroot:glowroot-common2:0.13.7-SNAPSHOT
+ch.qos.logback.classic.pattern.LineSeparatorConverter	public	ch.qos.logback:logback-classic:1.2.3	Class.forName	ch.qos.logback:logback-core:1.2.3
+org.glowroot.agent.plugin.api.config.ConfigListener	public	org.glowroot:glowroot-agent-plugin-api:0.13.7-SNAPSHOT	cast	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT
+ch.qos.logback.core.spi.DeferredProcessingAware	public	ch.qos.logback:logback-core:1.2.3	subtyping	ch.qos.logback:logback-classic:1.2.3
+com.google.protobuf.AbstractParser	public	com.google.protobuf:protobuf-java:3.5.1	subtyping	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT
+com.google.common.collect.Lists	public	com.google.guava:guava:31.0.1-jre	method call	org.glowroot:glowroot-common2:0.13.7-SNAPSHOT
+java.sql.Timestamp	public	java.sql	cast	com.h2database:h2:1.3.176
+org.objectweb.asm.ConstantDynamic	public	org.ow2.asm:asm:7.3.1	instantiation	org.ow2.asm:asm-commons:7.3.1
+org.glowroot.common.util.ScheduledRunnable	public	org.glowroot:glowroot-common:0.13.7-SNAPSHOT	subtyping	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT
+com.google.common.collect.Ordering	public	com.google.guava:guava:31.0.1-jre	subtyping	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT
+ch.qos.logback.core.status.StatusUtil	public	ch.qos.logback:logback-core:1.2.3	method call	ch.qos.logback:logback-classic:1.2.3
+java.security.BasicPermission	public	java.security	subtyping	java.sql
+org.glowroot.common.config.SyntheticMonitorConfig	public	org.glowroot:glowroot-common:0.13.7-SNAPSHOT	cast	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT
+org.h2.engine.Engine	public	com.h2database:h2:1.3.176	Class.forName	com.h2database:h2:1.3.176
+org.objectweb.asm.tree.TableSwitchInsnNode	public	org.ow2.asm:asm-tree:7.3.1	cast	org.ow2.asm:asm-commons:7.3.1
+org.glowroot.common2.repo.ConfigRepository$DuplicatePagerDutyIntegrationKeyDisplayException	public	org.glowroot:glowroot-common2:0.13.7-SNAPSHOT	instantiation	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+java.sql.Date	public	java.sql	instantiation	com.h2database:h2:1.3.176
+org.glowroot.agent.plugin.api.TimerName	public	org.glowroot:glowroot-agent-plugin-api:0.13.7-SNAPSHOT	subtyping	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT
+org.glowroot.agent.plugin.api.config.ConfigListener	public	org.glowroot:glowroot-agent-plugin-api:0.13.7-SNAPSHOT	subtyping	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT
+java.sql.ResultSet	public	java.sql	subtyping	com.h2database:h2:1.3.176
+org.glowroot.common2.repo.ConfigRepository	public	org.glowroot:glowroot-common2:0.13.7-SNAPSHOT	subtyping	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.glowroot.common.model.TransactionNameSummaryCollector	public	org.glowroot:glowroot-common:0.13.7-SNAPSHOT	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.glowroot.common2.repo.IncidentRepository$OpenIncident	public	org.glowroot:glowroot-common2:0.13.7-SNAPSHOT	cast	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.h2.jdbc.JdbcPreparedStatement	public	com.h2database:h2:1.3.176	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+com.google.common.primitives.Longs	private	com.google.guava:guava:31.0.1-jre	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.glowroot.wire.api.model.TraceOuterClass$Trace$Attribute	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	com.google.protobuf:protobuf-java:3.5.1
+org.glowroot.common.live.LiveTraceRepository$Entries	public	org.glowroot:glowroot-common:0.13.7-SNAPSHOT	cast	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+com.google.protobuf.Internal$EnumLite	public	com.google.protobuf:protobuf-java:3.5.1	subtyping	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT
+org.glowroot.common.model.LazyHistogram$ScratchBuffer	public	org.glowroot:glowroot-common:0.13.7-SNAPSHOT	instantiation	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+ch.qos.logback.core.util.CachingDateFormatter	public	ch.qos.logback:logback-core:1.2.3	instantiation	ch.qos.logback:logback-classic:1.2.3
+org.glowroot.wire.api.model.AgentConfigOuterClass$AgentConfig$AlertConfig$AlertSeverity	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+ch.qos.logback.core.boolex.EventEvaluator	public	ch.qos.logback:logback-core:1.2.3	cast	ch.qos.logback:logback-classic:1.2.3
+org.objectweb.asm.AnnotationVisitor	public	org.ow2.asm:asm:7.3.1	subtyping	org.ow2.asm:asm-commons:7.3.1
+org.glowroot.common2.repo.ConfigRepository$DuplicateSlackWebhookDisplayException	public	org.glowroot:glowroot-common2:0.13.7-SNAPSHOT	instantiation	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.glowroot.common.model.MutableServiceCall	public	org.glowroot:glowroot-common:0.13.7-SNAPSHOT	cast	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.glowroot.wire.api.model.AggregateOuterClass$Aggregate$Timer	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	cast	org.glowroot:glowroot-common2:0.13.7-SNAPSHOT
+org.glowroot.wire.api.model.AggregateOuterClass$Aggregate$Histogram$Builder	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	org.glowroot:glowroot-common:0.13.7-SNAPSHOT
+java.security.PrivilegedAction	public	java.security	subtyping	ch.qos.logback:logback-core:1.2.3
+org.glowroot.common.util.Styles$AllParameters	public	org.glowroot:glowroot-common:0.13.7-SNAPSHOT	annotation	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT
+org.glowroot.common2.repo.TraceAttributeNameRepository	public	org.glowroot:glowroot-common2:0.13.7-SNAPSHOT	subtyping	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.glowroot.common.live.ImmutableOverviewAggregate$Builder	public	org.glowroot:glowroot-common:0.13.7-SNAPSHOT	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.objectweb.asm.tree.JumpInsnNode	public	org.ow2.asm:asm-tree:7.3.1	cast	org.ow2.asm:asm-commons:7.3.1
+org.glowroot.wire.api.model.TraceOuterClass$Trace$Builder	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.objectweb.asm.signature.SignatureWriter	public	org.ow2.asm:asm:7.3.1	instantiation	org.ow2.asm:asm-commons:7.3.1
+ch.qos.logback.core.status.StatusListener	public	ch.qos.logback:logback-core:1.2.3	cast	ch.qos.logback:logback-classic:1.2.3
+org.glowroot.common.model.LazyHistogram	public	org.glowroot:glowroot-common:0.13.7-SNAPSHOT	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.objectweb.asm.commons.SimpleRemapper	public	org.ow2.asm:asm-commons:7.3.1	instantiation	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT
+org.glowroot.wire.api.model.AggregateOuterClass$Aggregate$Timer	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	org.glowroot:glowroot-common2:0.13.7-SNAPSHOT
+org.glowroot.common.model.TransactionNameSummaryCollector$SummarySortOrder	public	org.glowroot:glowroot-common:0.13.7-SNAPSHOT	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.objectweb.asm.commons.SignatureRemapper	public	org.ow2.asm:asm-commons:7.3.1	method call	org.ow2.asm:asm:7.3.1
+ch.qos.logback.core.encoder.LayoutWrappingEncoder	public	ch.qos.logback:logback-core:1.2.3	instantiation	ch.qos.logback:logback-classic:1.2.3
+java.sql.PreparedStatement	public	java.sql	cast	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+com.google.common.collect.ImmutableList	public	com.google.guava:guava:31.0.1-jre	method call	org.glowroot:glowroot-common:0.13.7-SNAPSHOT
+com.google.protobuf.CodedInputStream$StreamDecoder	private	com.google.protobuf:protobuf-java:3.5.1	method call	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT
+com.google.protobuf.CodedInputStream$ArrayDecoder	private	com.google.protobuf:protobuf-java:3.5.1	method call	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT
+org.objectweb.asm.ConstantDynamic	public	org.ow2.asm:asm:7.3.1	cast	org.ow2.asm:asm-commons:7.3.1
+com.google.common.io.CountingOutputStream	public	com.google.guava:guava:31.0.1-jre	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.glowroot.wire.api.model.TraceOuterClass$Trace$Builder	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	com.google.protobuf:protobuf-java:3.5.1
+org.glowroot.agent.plugin.api.Timer	public	org.glowroot:glowroot-agent-plugin-api:0.13.7-SNAPSHOT	subtyping	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT
+org.glowroot.wire.api.model.AggregateOuterClass$Aggregate$Timer	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	cast	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.slf4j.impl.StaticLoggerBinder	public	ch.qos.logback:logback-classic:1.2.3	method call	org.slf4j:slf4j-api:1.7.30
+org.glowroot.common2.config.PagerDutyConfig$PagerDutyIntegrationKey	public	org.glowroot:glowroot-common2:0.13.7-SNAPSHOT	cast	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+com.google.common.collect.ImmutableList	public	com.google.guava:guava:31.0.1-jre	cast	org.glowroot:glowroot-common:0.13.7-SNAPSHOT
+org.glowroot.common.config.UiDefaultsConfig	public	org.glowroot:glowroot-common:0.13.7-SNAPSHOT	cast	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT
+org.glowroot.wire.api.model.TraceOuterClass$Trace$DetailValue	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	com.google.protobuf:protobuf-java:3.5.1
+java.sql.Statement	public	java.sql	subtyping	com.h2database:h2:1.3.176
+org.glowroot.common2.repo.util.RollupLevelService	public	org.glowroot:glowroot-common2:0.13.7-SNAPSHOT	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+java.security.NoSuchAlgorithmException	public	java.security	instantiation	ch.qos.logback:logback-core:1.2.3
+ch.qos.logback.classic.pattern.LevelConverter	public	ch.qos.logback:logback-classic:1.2.3	method call	ch.qos.logback:logback-core:1.2.3
+ch.qos.logback.core.pattern.LiteralConverter	public	ch.qos.logback:logback-core:1.2.3	method call	ch.qos.logback:logback-classic:1.2.3
+org.glowroot.wire.api.model.AggregateOuterClass$Aggregate$Timer	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.objectweb.asm.ModuleVisitor	public	org.ow2.asm:asm:7.3.1	subtyping	org.ow2.asm:asm-tree:7.3.1
+java.sql.Savepoint	public	java.sql	subtyping	com.h2database:h2:1.3.176
+javax.management.ObjectName	public	unknownLib	Class.forName	ch.qos.logback:logback-classic:1.2.3
+com.google.common.collect.Lists	public	com.google.guava:guava:31.0.1-jre	method call	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT
+org.glowroot.common.config.InstrumentationConfig	public	org.glowroot:glowroot-common:0.13.7-SNAPSHOT	cast	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT
+com.google.protobuf.CodedOutputStream$ArrayEncoder	private	com.google.protobuf:protobuf-java:3.5.1	method call	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT
+ch.qos.logback.core.spi.LifeCycle	public	ch.qos.logback:logback-core:1.2.3	cast	ch.qos.logback:logback-classic:1.2.3
+org.objectweb.asm.commons.Method	public	org.ow2.asm:asm-commons:7.3.1	cast	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT
+org.objectweb.asm.Handle	public	org.ow2.asm:asm:7.3.1	method call	org.ow2.asm:asm-commons:7.3.1
+ch.qos.logback.core.ConsoleAppender	public	ch.qos.logback:logback-core:1.2.3	instantiation	ch.qos.logback:logback-classic:1.2.3
+ch.qos.logback.core.joran.conditional.IfAction	public	ch.qos.logback:logback-core:1.2.3	instantiation	ch.qos.logback:logback-classic:1.2.3
+org.glowroot.common2.repo.ConfigRepository$RoleNotFoundException	public	org.glowroot:glowroot-common2:0.13.7-SNAPSHOT	instantiation	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+com.google.protobuf.AbstractParser	public	com.google.protobuf:protobuf-java:3.5.1	subtyping	org.glowroot:glowroot-common:0.13.7-SNAPSHOT
+com.google.common.collect.Maps	public	com.google.guava:guava:31.0.1-jre	method call	org.glowroot:glowroot-common:0.13.7-SNAPSHOT
+com.google.common.collect.ArrayListMultimap	public	com.google.guava:guava:31.0.1-jre	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+ch.qos.logback.core.joran.spi.ActionException	public	ch.qos.logback:logback-core:1.2.3	instantiation	ch.qos.logback:logback-classic:1.2.3
+ch.qos.logback.classic.Logger	public	ch.qos.logback:logback-classic:1.2.3	method call	ch.qos.logback:logback-core:1.2.3
+org.objectweb.asm.commons.Remapper	public	org.ow2.asm:asm-commons:7.3.1	subtyping	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT
+com.google.common.collect.Maps	public	com.google.guava:guava:31.0.1-jre	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+com.google.protobuf.LazyStringArrayList	public	com.google.protobuf:protobuf-java:3.5.1	method call	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT
+ch.qos.logback.classic.pattern.DateConverter	public	ch.qos.logback:logback-classic:1.2.3	method call	ch.qos.logback:logback-core:1.2.3
+ch.qos.logback.core.spi.ContextAware	public	ch.qos.logback:logback-core:1.2.3	subtyping	ch.qos.logback:logback-classic:1.2.3
+org.glowroot.wire.api.model.AgentConfigOuterClass$AgentConfig$AlertConfig$AlertCondition$Builder	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	com.google.protobuf:protobuf-java:3.5.1
+org.h2.jdbc.JdbcConnection	public	com.h2database:h2:1.3.176	instantiation	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.glowroot.common2.config.RoleConfig	public	org.glowroot:glowroot-common2:0.13.7-SNAPSHOT	cast	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.glowroot.common.model.LazyHistogram$ScratchBuffer	public	org.glowroot:glowroot-common:0.13.7-SNAPSHOT	instantiation	org.glowroot:glowroot-common2:0.13.7-SNAPSHOT
+org.glowroot.common2.repo.ConfigRepository$OptimisticLockException	public	org.glowroot:glowroot-common2:0.13.7-SNAPSHOT	instantiation	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+ch.qos.logback.classic.pattern.LoggerConverter	public	ch.qos.logback:logback-classic:1.2.3	Class.forName	ch.qos.logback:logback-core:1.2.3
+ch.qos.logback.core.net.AbstractSocketAppender	public	ch.qos.logback:logback-core:1.2.3	subtyping	ch.qos.logback:logback-classic:1.2.3
+com.google.protobuf.Descriptors$EnumValueDescriptor	public	com.google.protobuf:protobuf-java:3.5.1	cast	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT
+com.google.protobuf.UnmodifiableLazyStringList	public	com.google.protobuf:protobuf-java:3.5.1	method call	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT
+ch.qos.logback.core.boolex.Matcher	public	ch.qos.logback:logback-core:1.2.3	cast	ch.qos.logback:logback-classic:1.2.3
+org.glowroot.common2.repo.ImmutableRollupConfig	public	org.glowroot:glowroot-common2:0.13.7-SNAPSHOT	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+ch.qos.logback.classic.joran.action.InsertFromJNDIAction	public	ch.qos.logback:logback-classic:1.2.3	method call	ch.qos.logback:logback-core:1.2.3
+ch.qos.logback.classic.pattern.LoggerConverter	public	ch.qos.logback:logback-classic:1.2.3	method call	ch.qos.logback:logback-core:1.2.3
+com.google.errorprone.annotations.DoNotMock	public	com.google.errorprone:error_prone_annotations:2.9.0	annotation	com.google.guava:guava:31.0.1-jre
+org.glowroot.agent.embedded.util.CappedDatabase$CappedBlockCharSource	private	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT	method call	com.google.guava:guava:31.0.1-jre
+ch.qos.logback.core.spi.AppenderAttachable	public	ch.qos.logback:logback-core:1.2.3	subtyping	ch.qos.logback:logback-classic:1.2.3
+ch.qos.logback.core.joran.action.IncludeAction	public	ch.qos.logback:logback-core:1.2.3	instantiation	ch.qos.logback:logback-classic:1.2.3
+org.glowroot.common2.repo.ImmutableHeaderPlus$Builder	public	org.glowroot:glowroot-common2:0.13.7-SNAPSHOT	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.objectweb.asm.Handle	public	org.ow2.asm:asm:7.3.1	cast	org.ow2.asm:asm-commons:7.3.1
+com.google.protobuf.SingleFieldBuilderV3	public	com.google.protobuf:protobuf-java:3.5.1	instantiation	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT
+ch.qos.logback.core.pattern.ConverterUtil	public	ch.qos.logback:logback-core:1.2.3	method call	ch.qos.logback:logback-classic:1.2.3
+org.objectweb.asm.Type	public	org.ow2.asm:asm:7.3.1	cast	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT
+org.objectweb.asm.tree.FieldNode	public	org.ow2.asm:asm-tree:7.3.1	cast	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT
+org.glowroot.common.config.JvmConfig	public	org.glowroot:glowroot-common:0.13.7-SNAPSHOT	cast	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT
+org.glowroot.wire.api.model.AggregateOuterClass$Aggregate$Histogram	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	com.google.protobuf:protobuf-java:3.5.1
+com.google.protobuf.RepeatedFieldBuilderV3	public	com.google.protobuf:protobuf-java:3.5.1	instantiation	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT
+org.glowroot.common2.repo.TraceRepository	public	org.glowroot:glowroot-common2:0.13.7-SNAPSHOT	subtyping	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.objectweb.asm.signature.SignatureReader	public	org.ow2.asm:asm:7.3.1	instantiation	org.ow2.asm:asm-commons:7.3.1
+org.objectweb.asm.AnnotationVisitor	public	org.ow2.asm:asm:7.3.1	cast	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT
+org.objectweb.asm.ClassVisitor	public	org.ow2.asm:asm:7.3.1	subtyping	org.ow2.asm:asm-commons:7.3.1
+com.google.protobuf.ByteString	public	com.google.protobuf:protobuf-java:3.5.1	cast	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.glowroot.common2.repo.ConfigRepository$DuplicatePagerDutyIntegrationKeyException	public	org.glowroot:glowroot-common2:0.13.7-SNAPSHOT	instantiation	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+com.google.common.cache.CacheBuilder	public	com.google.guava:guava:31.0.1-jre	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+ch.qos.logback.core.pattern.PatternLayoutBase	public	ch.qos.logback:logback-core:1.2.3	subtyping	ch.qos.logback:logback-classic:1.2.3
+com.google.protobuf.Descriptors$EnumDescriptor	public	com.google.protobuf:protobuf-java:3.5.1	cast	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT
+java.sql.Time	public	java.sql	instantiation	com.h2database:h2:1.3.176
+org.glowroot.wire.api.model.TraceOuterClass$Trace$Header	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	cast	org.glowroot:glowroot-common2:0.13.7-SNAPSHOT
+ch.qos.logback.core.util.StatusPrinter	public	ch.qos.logback:logback-core:1.2.3	method call	ch.qos.logback:logback-classic:1.2.3
+org.glowroot.wire.api.model.AggregateOuterClass$Aggregate$ThreadStats	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	cast	org.glowroot:glowroot-common:0.13.7-SNAPSHOT
+org.objectweb.asm.Opcodes	public	org.ow2.asm:asm:7.3.1	subtyping	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT
+com.google.common.collect.Lists	default	com.google.guava:guava:31.0.1-jre	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.glowroot.wire.api.model.ProfileOuterClass$Profile	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	cast	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+ch.qos.logback.classic.joran.action.LoggerContextListenerAction	public	ch.qos.logback:logback-classic:1.2.3	method call	ch.qos.logback:logback-core:1.2.3
+java.security.PrivilegedAction	public	java.security	subtyping	javax.xml.parsers
+org.objectweb.asm.Attribute	public	org.ow2.asm:asm:7.3.1	subtyping	org.ow2.asm:asm-commons:7.3.1
+org.objectweb.asm.ClassVisitor	public	org.ow2.asm:asm:7.3.1	cast	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT
+ch.qos.logback.core.status.OnConsoleStatusListener	public	ch.qos.logback:logback-core:1.2.3	instantiation	ch.qos.logback:logback-classic:1.2.3
+org.glowroot.common2.repo.MutableAggregate	public	org.glowroot:glowroot-common2:0.13.7-SNAPSHOT	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+com.google.protobuf.ByteString$LiteralByteString	private	com.google.protobuf:protobuf-java:3.5.1	method call	org.glowroot:glowroot-common:0.13.7-SNAPSHOT
+org.h2.jdbc.JdbcStatement	public	com.h2database:h2:1.3.176	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.glowroot.common.live.ImmutableSummaryQuery	public	org.glowroot:glowroot-common:0.13.7-SNAPSHOT	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+com.fasterxml.jackson.databind.module.SimpleModule	public	com.fasterxml.jackson.core:jackson-databind:2.13.0	instantiation	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT
+org.objectweb.asm.ClassReader	public	org.ow2.asm:asm:7.3.1	instantiation	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT
+org.immutables.value.Value$Immutable	public	org.immutables:value:2.8.8	annotation	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT
+org.glowroot.wire.api.model.AgentConfigOuterClass$AgentConfig$AlertConfig$AlertCondition	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+ch.qos.logback.classic.joran.action.ReceiverAction	public	ch.qos.logback:logback-classic:1.2.3	method call	ch.qos.logback:logback-core:1.2.3
+org.glowroot.wire.api.model.AgentConfigOuterClass$AgentConfig$InstrumentationConfig	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	cast	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.glowroot.common2.repo.MutableAggregate	public	org.glowroot:glowroot-common2:0.13.7-SNAPSHOT	cast	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.glowroot.common.live.StringComparator$2	default	org.glowroot:glowroot-common:0.13.7-SNAPSHOT	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+com.google.common.collect.Lists	private	com.google.guava:guava:31.0.1-jre	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+sun.misc.SharedSecrets	public	unknownLib	Class.forName	com.google.guava:guava:31.0.1-jre
+ch.qos.logback.core.LogbackException	public	ch.qos.logback:logback-core:1.2.3	instantiation	ch.qos.logback:logback-classic:1.2.3
+java.sql.Clob	public	java.sql	cast	com.h2database:h2:1.3.176
+org.objectweb.asm.FieldVisitor	public	org.ow2.asm:asm:7.3.1	subtyping	org.ow2.asm:asm-commons:7.3.1
+org.glowroot.wire.api.model.AgentConfigOuterClass$AgentConfig$AlertConfig$AlertCondition$HeartbeatCondition$Builder	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	com.google.protobuf:protobuf-java:3.5.1
+com.google.common.base.Throwables	default	com.google.guava:guava:31.0.1-jre	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.objectweb.asm.tree.MethodNode	public	org.ow2.asm:asm-tree:7.3.1	subtyping	org.ow2.asm:asm-commons:7.3.1
+ch.qos.logback.classic.joran.action.JMXConfiguratorAction	public	ch.qos.logback:logback-classic:1.2.3	method call	ch.qos.logback:logback-core:1.2.3
+com.google.protobuf.MapEntry	public	com.google.protobuf:protobuf-java:3.5.1	cast	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT
+com.google.protobuf.AbstractMessage	public	com.google.protobuf:protobuf-java:3.5.1	cast	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.glowroot.common.util.ScheduledRunnable	public	org.glowroot:glowroot-common:0.13.7-SNAPSHOT	subtyping	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+java.sql.Timestamp	public	java.sql	instantiation	com.h2database:h2:1.3.176
+org.glowroot.common.live.LiveTraceRepository$Queries	public	org.glowroot:glowroot-common:0.13.7-SNAPSHOT	cast	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+ch.qos.logback.core.joran.spi.SimpleRuleStore	public	ch.qos.logback:logback-core:1.2.3	method call	ch.qos.logback:logback-classic:1.2.3
+org.glowroot.common.config.AlertConfig	public	org.glowroot:glowroot-common:0.13.7-SNAPSHOT	cast	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.glowroot.agent.util.Checkers	public	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.glowroot.common.model.LazyHistogram	public	org.glowroot:glowroot-common:0.13.7-SNAPSHOT	instantiation	org.glowroot:glowroot-common2:0.13.7-SNAPSHOT
+com.google.protobuf.GeneratedMessageV3	public	com.google.protobuf:protobuf-java:3.5.1	method call	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT
+org.glowroot.wire.api.model.AggregateOuterClass$Aggregate$Timer	private	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.glowroot.wire.api.model.TraceOuterClass$Trace$Header	private	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.glowroot.wire.api.model.AggregateOuterClass$Aggregate$Histogram$1	default	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	com.google.protobuf:protobuf-java:3.5.1
+com.google.common.collect.ImmutableSet	public	com.google.guava:guava:31.0.1-jre	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.glowroot.wire.api.model.AggregateOuterClass$Aggregate$Histogram	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+java.security.NoSuchProviderException	public	java.security	instantiation	ch.qos.logback:logback-core:1.2.3
+org.objectweb.asm.Label	public	org.ow2.asm:asm:7.3.1	instantiation	org.ow2.asm:asm-tree:7.3.1
+org.glowroot.wire.api.model.TraceOuterClass$Trace$Header	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	com.google.protobuf:protobuf-java:3.5.1
+java.sql.SQLException	public	java.sql	subtyping	com.h2database:h2:1.3.176
+com.google.common.collect.ImmutableList	default	com.google.guava:guava:31.0.1-jre	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.glowroot.wire.api.model.TraceOuterClass$Trace$Header	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+java.sql.Connection	public	java.sql	cast	com.h2database:h2:1.3.176
+org.glowroot.agent.plugin.api.MethodInfo	public	org.glowroot:glowroot-agent-plugin-api:0.13.7-SNAPSHOT	subtyping	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT
+com.google.protobuf.UnknownFieldSet$Builder	public	com.google.protobuf:protobuf-java:3.5.1	method call	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT
+ch.qos.logback.core.status.InfoStatus	public	ch.qos.logback:logback-core:1.2.3	instantiation	ch.qos.logback:logback-classic:1.2.3
+ch.qos.logback.core.ContextBase	public	ch.qos.logback:logback-core:1.2.3	subtyping	ch.qos.logback:logback-classic:1.2.3
+java.sql.SQLException	public	java.sql	instantiation	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.glowroot.wire.api.model.AggregateOuterClass$Aggregate$ThreadStats$Builder	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	com.google.protobuf:protobuf-java:3.5.1
+org.immutables.value.Value$Immutable	public	org.immutables:value:2.8.8	annotation	org.glowroot:glowroot-common2:0.13.7-SNAPSHOT
+ch.qos.logback.classic.joran.action.RootLoggerAction	public	ch.qos.logback:logback-classic:1.2.3	method call	ch.qos.logback:logback-core:1.2.3
+org.objectweb.asm.tree.InsnList	public	org.ow2.asm:asm-tree:7.3.1	instantiation	org.ow2.asm:asm-commons:7.3.1
+org.glowroot.common2.repo.ImmutableTraceQuery	public	org.glowroot:glowroot-common2:0.13.7-SNAPSHOT	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+ch.qos.logback.classic.LoggerContext	public	ch.qos.logback:logback-classic:1.2.3	method call	ch.qos.logback:logback-core:1.2.3
+org.glowroot.agent.config.PluginConfig	public	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT	cast	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+ch.qos.logback.classic.joran.action.ConfigurationAction	public	ch.qos.logback:logback-classic:1.2.3	method call	ch.qos.logback:logback-core:1.2.3
+java.sql.PreparedStatement	public	java.sql	cast	com.h2database:h2:1.3.176
+org.glowroot.common.config.GaugeConfig	public	org.glowroot:glowroot-common:0.13.7-SNAPSHOT	cast	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+com.google.common.base.Preconditions	private	com.google.guava:guava:31.0.1-jre	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+ch.qos.logback.core.joran.spi.DefaultNestedComponentRegistry	public	ch.qos.logback:logback-core:1.2.3	method call	ch.qos.logback:logback-classic:1.2.3
+java.security.AccessController	default	java.security	method call	ch.qos.logback:logback-core:1.2.3
+java.security.KeyStoreException	public	java.security	instantiation	ch.qos.logback:logback-core:1.2.3
+org.glowroot.agent.bytecode.api.ThreadContextThreadLocal	public	org.glowroot:glowroot-agent-bytecode-api:0.13.7-SNAPSHOT	instantiation	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT
+ch.qos.logback.core.spi.AppenderAttachableImpl	public	ch.qos.logback:logback-core:1.2.3	method call	ch.qos.logback:logback-classic:1.2.3
+org.glowroot.wire.api.model.TraceOuterClass$Trace$Error	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.h2.jdbc.JdbcResultSet	public	com.h2database:h2:1.3.176	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+com.google.common.collect.ImmutableSet	public	com.google.guava:guava:31.0.1-jre	cast	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT
+ch.qos.logback.core.pattern.PatternLayoutEncoderBase	public	ch.qos.logback:logback-core:1.2.3	subtyping	ch.qos.logback:logback-classic:1.2.3
+org.glowroot.wire.api.model.AgentConfigOuterClass$AgentConfig$InstrumentationConfig$AlreadyInTransactionBehavior	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	cast	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT
+org.glowroot.wire.api.model.AggregateOuterClass$Aggregate$Histogram$Builder	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	com.google.protobuf:protobuf-java:3.5.1
+ch.qos.logback.core.joran.action.AbstractEventEvaluatorAction	public	ch.qos.logback:logback-core:1.2.3	subtyping	ch.qos.logback:logback-classic:1.2.3
+org.glowroot.wire.api.model.AgentConfigOuterClass$AgentConfig$AdvancedConfig	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+ch.qos.logback.core.joran.JoranConfiguratorBase	public	ch.qos.logback:logback-core:1.2.3	subtyping	ch.qos.logback:logback-classic:1.2.3
+org.glowroot.common.live.LiveTraceRepository$Existence	public	org.glowroot:glowroot-common:0.13.7-SNAPSHOT	cast	org.glowroot:glowroot-common2:0.13.7-SNAPSHOT
+org.glowroot.wire.api.model.AgentConfigOuterClass$AgentConfig$InstrumentationConfig$AlreadyInTransactionBehavior	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	cast	org.glowroot:glowroot-common:0.13.7-SNAPSHOT
+org.glowroot.wire.api.model.TraceOuterClass$Trace$DetailEntry	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	com.google.protobuf:protobuf-java:3.5.1
+ch.qos.logback.core.sift.SiftingAppenderBase	public	ch.qos.logback:logback-core:1.2.3	subtyping	ch.qos.logback:logback-classic:1.2.3
+org.glowroot.wire.api.model.AgentConfigOuterClass$AgentConfig$AlertConfig$AlertCondition$MetricCondition$Builder	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	com.google.protobuf:protobuf-java:3.5.1
+java.sql.BatchUpdateException	public	java.sql	subtyping	com.h2database:h2:1.3.176
+org.HdrHistogram.Histogram	public	org.hdrhistogram:HdrHistogram:2.1.12	instantiation	org.glowroot:glowroot-common:0.13.7-SNAPSHOT
+com.google.common.io.CharSource	public	com.google.guava:guava:31.0.1-jre	subtyping	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.slf4j.ILoggerFactory	public	org.slf4j:slf4j-api:1.7.30	subtyping	ch.qos.logback:logback-classic:1.2.3
+com.google.common.collect.Lists	public	com.google.guava:guava:31.0.1-jre	method call	org.glowroot:glowroot-common:0.13.7-SNAPSHOT
+ch.qos.logback.core.ConsoleAppender	public	ch.qos.logback:logback-core:1.2.3	Class.forName	ch.qos.logback:logback-core:1.2.3
+org.glowroot.wire.api.model.AgentConfigOuterClass$AgentConfig$AlertConfig$AlertNotification$1	default	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	com.google.protobuf:protobuf-java:3.5.1
+org.glowroot.common.util.Styles$Private	public	org.glowroot:glowroot-common:0.13.7-SNAPSHOT	annotation	org.glowroot:glowroot-common2:0.13.7-SNAPSHOT
+ch.qos.logback.classic.joran.action.LoggerAction	public	ch.qos.logback:logback-classic:1.2.3	method call	ch.qos.logback:logback-core:1.2.3
+org.objectweb.asm.Label	public	org.ow2.asm:asm:7.3.1	instantiation	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT
+org.glowroot.wire.api.model.AggregateOuterClass$Aggregate$ServiceCall	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	cast	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+ch.qos.logback.core.pattern.DynamicConverter	public	ch.qos.logback:logback-core:1.2.3	subtyping	ch.qos.logback:logback-classic:1.2.3
+com.google.errorprone.annotations.CanIgnoreReturnValue	public	com.google.errorprone:error_prone_annotations:2.9.0	annotation	com.google.guava:guava:31.0.1-jre
+ch.qos.logback.core.joran.event.SaxEvent	public	ch.qos.logback:logback-core:1.2.3	cast	ch.qos.logback:logback-classic:1.2.3
+org.glowroot.agent.plugin.api.weaving.Pointcut	public	org.glowroot:glowroot-agent-plugin-api:0.13.7-SNAPSHOT	subtyping	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT
+org.glowroot.agent.config.PluginDescriptor	public	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT	cast	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+java.sql.Blob	public	java.sql	cast	com.h2database:h2:1.3.176
+ch.qos.logback.core.boolex.JaninoEventEvaluatorBase	public	ch.qos.logback:logback-core:1.2.3	subtyping	ch.qos.logback:logback-classic:1.2.3
+org.glowroot.agent.plugin.api.weaving.Pointcut	public	org.glowroot:glowroot-agent-plugin-api:0.13.7-SNAPSHOT	cast	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT
+org.glowroot.common2.repo.MutableThreadStats	public	org.glowroot:glowroot-common2:0.13.7-SNAPSHOT	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+com.google.common.util.concurrent.internal.InternalFutureFailureAccess	public	com.google.guava:failureaccess:1.0.1	subtyping	com.google.guava:guava:31.0.1-jre
+java.sql.PreparedStatement	public	java.sql	subtyping	com.h2database:h2:1.3.176
+org.glowroot.common.live.ImmutableOverviewAggregate	private	org.glowroot:glowroot-common:0.13.7-SNAPSHOT	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.glowroot.wire.api.model.AgentConfigOuterClass$AgentConfig$AlertConfig$AlertSeverity	private	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+com.google.common.base.Ticker$1	default	com.google.guava:guava:31.0.1-jre	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.glowroot.common2.repo.ImmutableHeaderPlus	private	org.glowroot:glowroot-common2:0.13.7-SNAPSHOT	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+java.sql.Date	public	java.sql	cast	com.h2database:h2:1.3.176
+ch.qos.logback.classic.Logger	public	ch.qos.logback:logback-classic:1.2.3	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.glowroot.wire.api.model.TraceOuterClass$Trace$DetailValue$Builder	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	com.google.protobuf:protobuf-java:3.5.1
+com.google.protobuf.MessageLite	public	com.google.protobuf:protobuf-java:3.5.1	cast	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT
+org.glowroot.common2.repo.util.LazySecretKey	public	org.glowroot:glowroot-common2:0.13.7-SNAPSHOT	subtyping	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+com.google.protobuf.SingleFieldBuilderV3	public	com.google.protobuf:protobuf-java:3.5.1	instantiation	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.glowroot.wire.api.model.AggregateOuterClass$Aggregate$Timer	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	com.google.protobuf:protobuf-java:3.5.1
+org.objectweb.asm.tree.LocalVariableNode	public	org.ow2.asm:asm-tree:7.3.1	cast	org.ow2.asm:asm-commons:7.3.1
+org.glowroot.common.live.ImmutableTracePoint$Builder	public	org.glowroot:glowroot-common:0.13.7-SNAPSHOT	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+ch.qos.logback.core.status.ErrorStatus	public	ch.qos.logback:logback-core:1.2.3	instantiation	ch.qos.logback:logback-classic:1.2.3
+ch.qos.logback.core.util.StatusListenerConfigHelper	public	ch.qos.logback:logback-core:1.2.3	method call	ch.qos.logback:logback-classic:1.2.3
+com.google.common.base.Preconditions	public	com.google.guava:guava:31.0.1-jre	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+java.security.PrivilegedExceptionAction	public	java.security	subtyping	com.google.protobuf:protobuf-java:3.5.1
+org.glowroot.common2.repo.ConfigRepository$CannotDeleteLastUserException	public	org.glowroot:glowroot-common2:0.13.7-SNAPSHOT	instantiation	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.objectweb.asm.tree.ClassNode	public	org.ow2.asm:asm-tree:7.3.1	instantiation	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT
+org.objectweb.asm.Type	public	org.ow2.asm:asm:7.3.1	cast	org.ow2.asm:asm-tree:7.3.1
+org.glowroot.agent.collector.Collector$TraceVisitor	public	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT	subtyping	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.glowroot.wire.api.model.TraceOuterClass$Trace$Timer	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	com.google.protobuf:protobuf-java:3.5.1
+com.google.common.collect.ImmutableList	public	com.google.guava:guava:31.0.1-jre	cast	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+com.sun.crypto.provider.AESKeyGenerator	public	unknownLib	Class.forName	java.security
+ch.qos.logback.classic.LoggerContext	public	ch.qos.logback:logback-classic:1.2.3	method call	org.slf4j:slf4j-api:1.7.30
+ch.qos.logback.classic.pattern.LevelConverter	public	ch.qos.logback:logback-classic:1.2.3	Class.forName	ch.qos.logback:logback-core:1.2.3
+ch.qos.logback.classic.sift.SiftAction	public	ch.qos.logback:logback-classic:1.2.3	method call	ch.qos.logback:logback-core:1.2.3
+org.glowroot.common2.repo.ConfigRepository$CannotDeleteLastRoleException	public	org.glowroot:glowroot-common2:0.13.7-SNAPSHOT	instantiation	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+ch.qos.logback.classic.encoder.PatternLayoutEncoder	public	ch.qos.logback:logback-classic:1.2.3	method call	ch.qos.logback:logback-core:1.2.3
+org.glowroot.common.util.OnlyUsedByTests	public	org.glowroot:glowroot-common:0.13.7-SNAPSHOT	annotation	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+java.sql.ResultSet	public	java.sql	cast	com.h2database:h2:1.3.176
+org.glowroot.wire.api.model.TraceOuterClass$Trace$Error	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	com.google.protobuf:protobuf-java:3.5.1
+org.objectweb.asm.signature.SignatureWriter	public	org.ow2.asm:asm:7.3.1	method call	org.ow2.asm:asm-commons:7.3.1
+org.objectweb.asm.tree.LabelNode	public	org.ow2.asm:asm-tree:7.3.1	instantiation	org.ow2.asm:asm-commons:7.3.1
+org.objectweb.asm.ClassVisitor	public	org.ow2.asm:asm:7.3.1	subtyping	org.ow2.asm:asm-tree:7.3.1
+org.glowroot.agent.util.Checkers	private	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+com.google.protobuf.CodedOutputStream$OutputStreamEncoder	private	com.google.protobuf:protobuf-java:3.5.1	method call	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT
+org.objectweb.asm.AnnotationVisitor	public	org.ow2.asm:asm:7.3.1	subtyping	org.ow2.asm:asm-tree:7.3.1
+org.glowroot.common.model.Result	public	org.glowroot:glowroot-common:0.13.7-SNAPSHOT	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.objectweb.asm.ClassWriter	public	org.ow2.asm:asm:7.3.1	instantiation	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT
+org.glowroot.common.util.NotAvailableAware	public	org.glowroot:glowroot-common:0.13.7-SNAPSHOT	method call	org.glowroot:glowroot-common2:0.13.7-SNAPSHOT
+org.objectweb.asm.tree.TryCatchBlockNode	public	org.ow2.asm:asm-tree:7.3.1	instantiation	org.ow2.asm:asm-commons:7.3.1
+org.glowroot.common.config.PropertyValue	public	org.glowroot:glowroot-common:0.13.7-SNAPSHOT	cast	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT
+org.glowroot.wire.api.model.AgentConfigOuterClass$AgentConfig$AlertConfig$AlertCondition$MetricCondition	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	com.google.protobuf:protobuf-java:3.5.1
+org.glowroot.common.live.LiveTraceRepository$EntriesAndQueries	public	org.glowroot:glowroot-common:0.13.7-SNAPSHOT	cast	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.glowroot.wire.api.model.TraceOuterClass$Trace$Timer$Builder	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	com.google.protobuf:protobuf-java:3.5.1
+org.objectweb.asm.MethodVisitor	public	org.ow2.asm:asm:7.3.1	subtyping	org.ow2.asm:asm-commons:7.3.1
+com.google.protobuf.ByteString	public	com.google.protobuf:protobuf-java:3.5.1	method call	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT
+org.glowroot.common.model.LazyHistogram	public	org.glowroot:glowroot-common:0.13.7-SNAPSHOT	method call	org.glowroot:glowroot-common2:0.13.7-SNAPSHOT
+com.google.common.cache.CacheLoader	public	com.google.guava:guava:31.0.1-jre	subtyping	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.glowroot.wire.api.model.TraceOuterClass$Trace$Attribute$Builder	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	com.google.protobuf:protobuf-java:3.5.1
+org.glowroot.wire.api.model.TraceOuterClass$Trace$Error$Builder	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	com.google.protobuf:protobuf-java:3.5.1
+org.objectweb.asm.Type	public	org.ow2.asm:asm:7.3.1	method call	org.ow2.asm:asm-commons:7.3.1
+org.glowroot.wire.api.model.AggregateOuterClass$Aggregate$Timer$Builder	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	org.glowroot:glowroot-common2:0.13.7-SNAPSHOT
+ch.qos.logback.classic.joran.action.ContextNameAction	public	ch.qos.logback:logback-classic:1.2.3	method call	ch.qos.logback:logback-core:1.2.3
+com.ning.compress.lzf.LZFInputStream	public	com.ning:compress-lzf:1.0.4	instantiation	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.glowroot.wire.api.model.TraceOuterClass$Trace$Header$Builder	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	com.google.protobuf:protobuf-java:3.5.1
+org.glowroot.common2.repo.IncidentRepository	public	org.glowroot:glowroot-common2:0.13.7-SNAPSHOT	subtyping	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+com.google.protobuf.LazyStringArrayList	public	com.google.protobuf:protobuf-java:3.5.1	instantiation	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT
+com.google.protobuf.ExtensionRegistry	public	com.google.protobuf:protobuf-java:3.5.1	Class.forName	com.google.protobuf:protobuf-java:3.5.1
+java.sql.SQLException	public	java.sql	cast	com.h2database:h2:1.3.176
+org.glowroot.wire.api.model.TraceOuterClass$Trace$DetailEntry$1	default	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	com.google.protobuf:protobuf-java:3.5.1
+org.objectweb.asm.RecordComponentVisitor	public	org.ow2.asm:asm:7.3.1	subtyping	org.ow2.asm:asm-commons:7.3.1
+com.google.common.collect.Maps	default	com.google.guava:guava:31.0.1-jre	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+java.security.PrivilegedAction	public	java.security	subtyping	java.sql
+org.glowroot.common.live.ImmutableTracePointFilter	public	org.glowroot:glowroot-common:0.13.7-SNAPSHOT	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+ch.qos.logback.core.pattern.color.ForegroundCompositeConverterBase	public	ch.qos.logback:logback-core:1.2.3	subtyping	ch.qos.logback:logback-classic:1.2.3
+com.google.common.collect.RegularImmutableList	default	com.google.guava:guava:31.0.1-jre	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+com.google.common.base.Ticker	public	com.google.guava:guava:31.0.1-jre	subtyping	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT
+org.objectweb.asm.Type	public	org.ow2.asm:asm:7.3.1	cast	org.ow2.asm:asm-commons:7.3.1
+org.glowroot.wire.api.model.AggregateOuterClass$Aggregate$Histogram	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	org.glowroot:glowroot-common:0.13.7-SNAPSHOT
+com.google.common.collect.Sets	public	com.google.guava:guava:31.0.1-jre	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.glowroot.common2.repo.AggregateRepository	public	org.glowroot:glowroot-common2:0.13.7-SNAPSHOT	subtyping	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.glowroot.common.config.InstrumentationConfig	public	org.glowroot:glowroot-common:0.13.7-SNAPSHOT	cast	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.objectweb.asm.tree.MethodNode	public	org.ow2.asm:asm-tree:7.3.1	cast	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT
+ch.qos.logback.classic.joran.action.LevelAction	public	ch.qos.logback:logback-classic:1.2.3	method call	ch.qos.logback:logback-core:1.2.3
+org.glowroot.common.util.SizeLimitBypassingParser	public	org.glowroot:glowroot-common:0.13.7-SNAPSHOT	instantiation	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+ch.qos.logback.core.joran.action.NOPAction	public	ch.qos.logback:logback-core:1.2.3	instantiation	ch.qos.logback:logback-classic:1.2.3
+com.google.protobuf.InvalidProtocolBufferException	public	com.google.protobuf:protobuf-java:3.5.1	instantiation	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT
+org.glowroot.agent.embedded.util.DataSource$2	default	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT	method call	com.google.guava:guava:31.0.1-jre
+com.google.protobuf.Internal$EnumLiteMap	public	com.google.protobuf:protobuf-java:3.5.1	subtyping	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT
+org.glowroot.common.config.TransactionConfig	public	org.glowroot:glowroot-common:0.13.7-SNAPSHOT	cast	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT
+org.glowroot.agent.plugin.api.weaving.Shim	public	org.glowroot:glowroot-agent-plugin-api:0.13.7-SNAPSHOT	cast	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT
+org.objectweb.asm.commons.ClassRemapper	public	org.ow2.asm:asm-commons:7.3.1	instantiation	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT
+org.objectweb.asm.tree.ClassNode	public	org.ow2.asm:asm-tree:7.3.1	cast	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT
+org.objectweb.asm.RecordComponentVisitor	public	org.ow2.asm:asm:7.3.1	subtyping	org.ow2.asm:asm-tree:7.3.1
+com.google.protobuf.GeneratedMessageV3	public	com.google.protobuf:protobuf-java:3.5.1	subtyping	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT
+com.google.common.cache.LocalCache$LocalLoadingCache	default	com.google.guava:guava:31.0.1-jre	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+java.sql.Driver	public	java.sql	subtyping	com.h2database:h2:1.3.176
+org.glowroot.common.model.QueryCollector	public	org.glowroot:glowroot-common:0.13.7-SNAPSHOT	instantiation	org.glowroot:glowroot-common2:0.13.7-SNAPSHOT
+java.sql.Time	public	java.sql	cast	com.h2database:h2:1.3.176
+org.glowroot.common.config.PropertyValue	public	org.glowroot:glowroot-common:0.13.7-SNAPSHOT	instantiation	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT
+org.objectweb.asm.tree.JumpInsnNode	public	org.ow2.asm:asm-tree:7.3.1	instantiation	org.ow2.asm:asm-commons:7.3.1
+org.glowroot.common.model.MutableQuery	public	org.glowroot:glowroot-common:0.13.7-SNAPSHOT	cast	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.immutables.value.Value$Immutable	public	org.immutables:value:2.8.8	annotation	org.glowroot:glowroot-common:0.13.7-SNAPSHOT
+java.security.PrivilegedExceptionAction	public	java.security	subtyping	com.google.guava:guava:31.0.1-jre
+org.glowroot.common2.repo.ConfigRepository$UserNotFoundException	public	org.glowroot:glowroot-common2:0.13.7-SNAPSHOT	instantiation	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+java.sql.Connection	public	java.sql	subtyping	com.h2database:h2:1.3.176
+org.glowroot.wire.api.model.TraceOuterClass$Trace$Timer$1	default	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	com.google.protobuf:protobuf-java:3.5.1
+ch.qos.logback.core.joran.spi.ElementSelector	public	ch.qos.logback:logback-core:1.2.3	instantiation	ch.qos.logback:logback-classic:1.2.3
+org.objectweb.asm.tree.LookupSwitchInsnNode	public	org.ow2.asm:asm-tree:7.3.1	cast	org.ow2.asm:asm-commons:7.3.1
+org.glowroot.wire.api.model.AgentConfigOuterClass$AgentConfig$AlertConfig$AlertCondition$MetricCondition$1	default	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	com.google.protobuf:protobuf-java:3.5.1
+org.glowroot.wire.api.model.TraceOuterClass$Trace$Header$Builder	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.glowroot.wire.api.model.AggregateOuterClass$Aggregate$Timer$1	default	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+sun.security.provider.SHA	public	unknownLib	Class.forName	java.security
+ch.qos.logback.core.util.Loader	public	ch.qos.logback:logback-core:1.2.3	method call	ch.qos.logback:logback-classic:1.2.3
+org.glowroot.common.live.ImmutableTracePoint	private	org.glowroot:glowroot-common:0.13.7-SNAPSHOT	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+ch.qos.logback.core.joran.conditional.ThenAction	public	ch.qos.logback:logback-core:1.2.3	instantiation	ch.qos.logback:logback-classic:1.2.3
+org.glowroot.common.util.Styles$Private	public	org.glowroot:glowroot-common:0.13.7-SNAPSHOT	annotation	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT
+org.h2.jdbc.JdbcConnection	public	com.h2database:h2:1.3.176	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.glowroot.wire.api.model.AgentConfigOuterClass$AgentConfig$SlowThresholdOverride	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	cast	org.glowroot:glowroot-common:0.13.7-SNAPSHOT
+org.glowroot.agent.collector.Collector$AggregateVisitor	public	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT	subtyping	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+ch.qos.logback.core.joran.action.AppenderRefAction	public	ch.qos.logback:logback-core:1.2.3	instantiation	ch.qos.logback:logback-classic:1.2.3
+ch.qos.logback.classic.pattern.EnsureExceptionHandling	public	ch.qos.logback:logback-classic:1.2.3	method call	ch.qos.logback:logback-core:1.2.3
+org.objectweb.asm.ModuleVisitor	public	org.ow2.asm:asm:7.3.1	subtyping	org.ow2.asm:asm-commons:7.3.1
+org.objectweb.asm.commons.MethodRemapper	public	org.ow2.asm:asm-commons:7.3.1	instantiation	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT
+org.glowroot.wire.api.model.TraceOuterClass$Trace$Attribute	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.glowroot.wire.api.model.AggregateOuterClass$Aggregate	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.glowroot.common.util.Styles$AllParameters	public	org.glowroot:glowroot-common:0.13.7-SNAPSHOT	annotation	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.glowroot.common2.repo.TraceRepository$HeaderPlus	public	org.glowroot:glowroot-common2:0.13.7-SNAPSHOT	cast	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.objectweb.asm.ClassVisitor	public	org.ow2.asm:asm:7.3.1	subtyping	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT
+org.glowroot.common2.repo.ImmutableResolvedIncident$Builder	public	org.glowroot:glowroot-common2:0.13.7-SNAPSHOT	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+ch.qos.logback.core.spi.LifeCycle	public	ch.qos.logback:logback-core:1.2.3	subtyping	ch.qos.logback:logback-classic:1.2.3
+ch.qos.logback.classic.pattern.LineSeparatorConverter	public	ch.qos.logback:logback-classic:1.2.3	method call	ch.qos.logback:logback-core:1.2.3
+org.glowroot.wire.api.model.TraceOuterClass$Trace$Attribute	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	cast	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.glowroot.common2.repo.ImmutableOpenIncident	public	org.glowroot:glowroot-common2:0.13.7-SNAPSHOT	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+com.google.common.io.ByteSource$ByteArrayByteSource	private	com.google.guava:guava:31.0.1-jre	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.glowroot.common2.config.UserConfig	public	org.glowroot:glowroot-common2:0.13.7-SNAPSHOT	cast	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+com.google.protobuf.GeneratedMessageV3$Builder	public	com.google.protobuf:protobuf-java:3.5.1	subtyping	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT
+com.google.protobuf.MessageOrBuilder	public	com.google.protobuf:protobuf-java:3.5.1	subtyping	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+com.google.common.collect.Lists	public	com.google.guava:guava:31.0.1-jre	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+com.google.common.collect.SingletonImmutableList	default	com.google.guava:guava:31.0.1-jre	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.glowroot.common.config.AdvancedConfig	public	org.glowroot:glowroot-common:0.13.7-SNAPSHOT	cast	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT
+ch.qos.logback.core.spi.ContextAware	public	ch.qos.logback:logback-core:1.2.3	cast	ch.qos.logback:logback-classic:1.2.3
+com.google.common.primitives.Doubles	default	com.google.guava:guava:31.0.1-jre	method call	org.glowroot:glowroot-common:0.13.7-SNAPSHOT
+org.glowroot.wire.api.model.TraceOuterClass$Trace$DetailEntry$Builder	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	com.google.protobuf:protobuf-java:3.5.1
+org.glowroot.common.config.AlertConfig	public	org.glowroot:glowroot-common:0.13.7-SNAPSHOT	cast	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT
+ch.qos.logback.core.util.OptionHelper	public	ch.qos.logback:logback-core:1.2.3	method call	ch.qos.logback:logback-classic:1.2.3
+ch.qos.logback.core.joran.event.InPlayListener	public	ch.qos.logback:logback-core:1.2.3	subtyping	ch.qos.logback:logback-classic:1.2.3
+org.glowroot.wire.api.model.AggregateOuterClass$Aggregate$Timer$1	default	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	com.google.protobuf:protobuf-java:3.5.1
+org.slf4j.spi.LoggerFactoryBinder	public	org.slf4j:slf4j-api:1.7.30	subtyping	ch.qos.logback:logback-classic:1.2.3
+com.google.common.base.Strings	private	com.google.guava:guava:31.0.1-jre	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.glowroot.common2.repo.ConfigRepository$DuplicateRoleNameException	public	org.glowroot:glowroot-common2:0.13.7-SNAPSHOT	instantiation	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+java.sql.SQLClientInfoException	public	java.sql	instantiation	com.h2database:h2:1.3.176
+com.google.common.base.Strings	default	com.google.guava:guava:31.0.1-jre	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+com.fasterxml.jackson.databind.node.ObjectNode	public	com.fasterxml.jackson.core:jackson-databind:2.13.0	cast	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT
+org.objectweb.asm.signature.SignatureVisitor	public	org.ow2.asm:asm:7.3.1	subtyping	org.ow2.asm:asm-commons:7.3.1
+org.glowroot.agent.plugin.api.ClassInfo	public	org.glowroot:glowroot-agent-plugin-api:0.13.7-SNAPSHOT	subtyping	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT
+org.objectweb.asm.AnnotationVisitor	public	org.ow2.asm:asm:7.3.1	subtyping	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT
+org.glowroot.wire.api.model.AggregateOuterClass$Aggregate$Query	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	cast	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.glowroot.wire.api.model.TraceOuterClass$Trace$Header$1	default	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	com.google.protobuf:protobuf-java:3.5.1
+ch.qos.logback.core.util.ContextUtil	public	ch.qos.logback:logback-core:1.2.3	instantiation	ch.qos.logback:logback-classic:1.2.3
+org.immutables.value.Value$Immutable	public	org.immutables:value:2.8.8	annotation	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.objectweb.asm.signature.SignatureReader	public	org.ow2.asm:asm:7.3.1	method call	org.ow2.asm:asm-commons:7.3.1
+com.google.common.collect.Sets$3	default	com.google.guava:guava:31.0.1-jre	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+javax.xml.parsers.SAXParserFactory	public	javax.xml.parsers	method call	ch.qos.logback:logback-core:1.2.3
+ch.qos.logback.core.spi.AppenderAttachableImpl	public	ch.qos.logback:logback-core:1.2.3	instantiation	ch.qos.logback:logback-classic:1.2.3
+org.glowroot.wire.api.model.AgentConfigOuterClass$AgentConfig$AlertConfig$AlertNotification	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	cast	org.glowroot:glowroot-common2:0.13.7-SNAPSHOT
+org.glowroot.wire.api.model.AggregateOuterClass$Aggregate$ThreadStats$Builder	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+org.objectweb.asm.commons.Method	public	org.ow2.asm:asm-commons:7.3.1	instantiation	org.glowroot:glowroot-agent-core-unshaded:0.13.7-SNAPSHOT
+org.objectweb.asm.Opcodes	public	org.ow2.asm:asm:7.3.1	subtyping	org.ow2.asm:asm-commons:7.3.1
+com.google.protobuf.CodedOutputStream	public	com.google.protobuf:protobuf-java:3.5.1	method call	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT
+org.objectweb.asm.MethodVisitor	public	org.ow2.asm:asm:7.3.1	subtyping	org.ow2.asm:asm-tree:7.3.1
+org.glowroot.wire.api.model.AgentConfigOuterClass$AgentConfig$InstrumentationConfig$CaptureKind	public	org.glowroot:glowroot-wire-api:0.13.7-SNAPSHOT	cast	org.glowroot:glowroot-common:0.13.7-SNAPSHOT
+org.glowroot.common2.repo.TransactionTypeRepository	public	org.glowroot:glowroot-common2:0.13.7-SNAPSHOT	subtyping	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+ch.qos.logback.core.pattern.PostCompileProcessor	public	ch.qos.logback:logback-core:1.2.3	subtyping	ch.qos.logback:logback-classic:1.2.3
+org.glowroot.common2.repo.ConfigRepository$DuplicateMBeanObjectNameException	public	org.glowroot:glowroot-common2:0.13.7-SNAPSHOT	instantiation	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
+com.google.common.collect.ImmutableSet$Builder	public	com.google.guava:guava:31.0.1-jre	method call	org.glowroot:glowroot-agent-embedded-unshaded:0.13.7-SNAPSHOT
