@@ -65,7 +65,7 @@ detectOSGIModuleBypasses <- function(file_list, calleeIndex, libIndex, fn) {
         libGAV = strsplit(df[j,libIndex], ":")
         
         if (identical(libGAV[[1]], character(0)))
-          break
+          next
         
         if(length(libGAV[[1]])>=3) {
           lib <- paste(libGAV[[1]][[1]], libGAV[[1]][[2]], sep=":")

@@ -1,0 +1,10 @@
+Client A/Client B	com.sun:tools 	java.security 	java.sql 	javax.servlet:javax.servlet-api 	javax.tools 	org.apache.commons:commons-dbcp2 	org.glowroot:glowroot-agent-embedded-unshaded 	org.owasp:dependency-check-core 	org.zapodot:embedded-db-core
+com.sun:tools	1	0	0	0	0.181818181818182	0	0	0	0
+java.security	0	1	0	0	0	0	0	0	0
+java.sql	0	0	1	0	0	0.142857142857143	0	0	0
+javax.servlet:javax.servlet-api	0	0	0	1	0	0	0	0	0
+javax.tools	0.181818181818182	0	0	0	1	0	0	0	0
+org.apache.commons:commons-dbcp2	0	0	0.142857142857143	0	0	1	0.0256410256410256	0.0476190476190476	0
+org.glowroot:glowroot-agent-embedded-unshaded	0	0	0	0	0	0.0256410256410256	1	0.25	0
+org.owasp:dependency-check-core	0	0	0	0	0	0.0476190476190476	0.25	1	0
+org.zapodot:embedded-db-core	0	0	0	0	0	0	0	0	1

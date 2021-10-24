@@ -22,18 +22,19 @@ file_list = list.files(path="Documents/Waterloo/PL/calls-across-libs/libs-info-p
 writeLines("CallerLibrary\tActualCalleeLibrary\tActualCalleeMethod\tCalleeVisibility\tCounts","Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data/visual-data/RQ1-reflective-callbacks.tsv")
 for (i in seq_along(file_list)) {
   filename = file_list[[i]]
+  print(filename)
   if (endsWith(filename,"RQ1-invocations.tsv"))
-    break
+    next
   subdirs = str_split(filename,"/")
   client =subdirs[[1]][length(subdirs[[1]])-1]
   df <- read.csv(filename, sep='\t')
   # Extract reflective calls
   reflDf <- df[df$Reflective == "true", ]
-  if (nrow(reflDf)==0) break
+  if (nrow(reflDf)==0) next
   
   reflDf$Caller.Library <- getVersionlessLibs(reflDf$Caller.Library)
   reflDf <- subset(reflDf, reflDf$Actual.Callee.Library==client)
-  print(reflDf)
+ 
   counts = reflDf %>% group_by(Caller.Library, Actual.Callee.Library, Actual.Callee.Method,Callee.Visibility) %>% summarise(Count = n())
   write.table(counts,"Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data/visual-data/RQ1-reflective-callbacks.tsv",sep="\t",row.names=FALSE, col.names=FALSE, append=TRUE)
 }
@@ -52,6 +53,10 @@ mergedDf <- merge(aggDf, totalsDf, by=c(1,2))
 
 counts <- hash()
 for( i in rownames(mergedDf) ) {
+  if (grepl("commons-collections", mergedDf[i, "Group.1"], fixed = TRUE))
+    mergedDf[i, "Group.1"] <- "org.apache.commons:commons-collections4"
+  if (grepl("commons-collections", mergedDf[i, "Group.2"], fixed = TRUE))
+    mergedDf[i, "Group.2"] <- "org.apache.commons:commons-collections4"
   callerCallee <- paste(mergedDf[i, "Group.1"], mergedDf[i, "Group.2"])
   if(is.null(counts[[callerCallee]])) {
     counts[callerCallee] <- hash()
@@ -102,5 +107,5 @@ tab_df(
 
 print(xtable(finalDf,
              caption = "Reflective Callbacks", digits = 0), 
-      file = "Documents/Waterloo/PL/21.icse.library-usage/tables/results/reflective-callbacks.tex",size="small",include.rownames = FALSE)
+      file = "Documents/Waterloo/PL/21.icse.library-usage/tables/results/reflective-callbacks.tex",size="scriptsize",include.rownames = FALSE)
 

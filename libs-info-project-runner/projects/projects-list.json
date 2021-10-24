@@ -1,8 +1,8 @@
 [
    {
-        "execDir": "fastjson",
+        "execDir": "druid",
         "rootDir": "",
-        "generatedJarName": "fastjson-1.2.76",
+        "generatedJarName": "druid-1.2.5",
         "build": "maven",
         "javaVersion": 8
     }

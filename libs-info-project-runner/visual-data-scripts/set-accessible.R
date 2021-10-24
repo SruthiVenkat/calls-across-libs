@@ -12,7 +12,8 @@ getVersionlessLibs <- function(column) {
     if(length(calleeLibGAV[[1]])>=3)
       calleeLib <- paste(calleeLibGAV[[1]][[1]], calleeLibGAV[[1]][[2]], sep=":")
     else
-      calleeLib <- calleeLibGAV[[1]][[1]]
+      calleeLib <- i
+
     calleeLibs = c(calleeLibs,calleeLib)
   }
   return(calleeLibs)
@@ -24,8 +25,10 @@ getArtifactNames <- function(column) {
     artGAV = strsplit(i, ":")
     if(length(artGAV[[1]])>=2)
       art <- artGAV[[1]][[2]]
-    else
+    else if(length(artGAV[[1]])>=1)
       art <- artGAV[[1]][[1]]
+    else 
+      art <- i
     artNames = c(artNames,art)
   }
   return(artNames)
@@ -44,6 +47,10 @@ mergedDf <- merge(aggDf, totalsDf, by = c("Group.1","Group.2","Group.3"))
 
 counts <- hash()
 for( i in rownames(mergedDf) ) {
+  if (grepl("commons-collections", mergedDf[i, "Group.1"], fixed = TRUE))
+    mergedDf[i, "Group.1"] <- "org.apache.commons:commons-collections4"
+  if (grepl("commons-collections", mergedDf[i, "Group.2"], fixed = TRUE))
+    mergedDf[i, "Group.2"] <- "org.apache.commons:commons-collections4"
   callerCallee <- paste(mergedDf[i, "Group.1"], mergedDf[i, "Group.2"], mergedDf[i, "Group.3"])
   if(!(callerCallee %in% keys(counts))) {
     counts[[callerCallee]] <- hash()
@@ -98,6 +105,9 @@ for (i in 1:nrow(aggObjs)) {
 
 finalDf <- finalDf %>% distinct()
 finalDf$Library <- getArtifactNames(finalDf$Library)
+finalDf <- finalDf[!finalDf$Library=='',]
+finalDf <- finalDf[!finalDf$Library=='com.fasterxml.jackson.core',]
+finalDf$Library[finalDf$Library == "core"] <- "capitalone.dashboard:core"
 
 tab_df(
   finalDf,
@@ -110,6 +120,6 @@ tab_df(
 )
 
 
-print(xtable(finalDf, align = c('l','r','r','r','r','r','r','r','r','r', 'r'),
+print(xtable(finalDf,
              caption = "setAccessible Calls In Both Directions", digits = 0),
       file = "Documents/Waterloo/PL/21.icse.library-usage/tables/results/set-accessible-both-dirs.tex",size="small",include.rownames = FALSE)

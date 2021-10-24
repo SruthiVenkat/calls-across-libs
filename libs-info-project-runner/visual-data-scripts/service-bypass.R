@@ -3,7 +3,7 @@ library(xtable)
 library(stringr)
 
 # service bypass methods
-df <- read.csv("Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data/RQ2-serviceBypassCalls.tsv", sep='\t')
+df <- read.csv("Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data/visual-data/RQ2-serviceBypassCalls.tsv", sep='\t')
 
 getVersionlessLibs <- function(column) {
   calleeLibs <- c()
@@ -41,7 +41,7 @@ print(xtable(aggDf,
       file = "Documents/Waterloo/PL/21.icse.library-usage/rq2-service-bypass-methods.tex",size="small")
 
 # service bypass
-df <- read.csv("Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data/RQ2-serviceBypass.tsv", sep='\t')
+df <- read.csv("Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data/visual-data/RQ2-serviceBypass.tsv", sep='\t')
 
 df$ActualCalleeLibrary <- getVersionlessLibs(df$ActualCalleeLibrary)
 df$CallerLibrary <- getVersionlessLibs(df$CallerLibrary)
@@ -60,7 +60,7 @@ getLib <- function(cls) {
     for( j in rownames(libsDf) ) {
       classes = str_split(libsDf[j, "Classes"], ":")
       for (c in classes[[1]]) {
-        if (is.na(c[[1]])) break
+        if (is.na(c[[1]])) next
         if (cls == c[[1]]) {
           return(libsDf[j, "Library.Name"])
         }
@@ -75,7 +75,7 @@ for( i in rownames(df) ) {
   for( j in rownames(servicesInfo)) {
     if (str_split(servicesInfo[j, "SPI.Implementations"], ";")[[1]][1] == calledClassName) {
       interface <- servicesInfo[j, "SPI"]
-      break
+      next
     }
   }
   if (has.key(interface, interfaceLibs)) {

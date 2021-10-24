@@ -5,8 +5,9 @@ library(xtable)
 
 libraries <- c("com.alibaba:fastjson", "org.apache.commons:commons-collections4", "commons-io:commons-io", "joda-time:joda-time", 
                "com.google.code.gson:gson", "org.json:json", "org.jsoup:jsoup", "org.slf4j:slf4j-api", "com.fasterxml.jackson.core:jackson-databind", "com.fasterxml.jackson.core:jackson-core")
-
 libsInfoList = list.files(path="Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data-2", recursive = TRUE, pattern="*-libsInfo.tsv", full.names = TRUE)
+
+allLibs <- c()
 
 totalMethods <- hash()
 testMethods <- hash()
@@ -54,6 +55,8 @@ for (i in seq_along(file_list)) {
       else
         callerLib <- callerLibGAV[[1]][[1]]
     }
+    if (grepl("commons-collections", calleeLib, fixed = TRUE))
+      calleeLib <- "org.apache.commons:commons-collections4"
     if(is.null(callee_methods[[calleeLib]])) {
       callee_methods[calleeLib] <- hash()
       callee_methods[[calleeLib]][[callerLib]] = c(df[i,6])
@@ -65,6 +68,13 @@ for (i in seq_along(file_list)) {
       }
     }
     callee_methods[[calleeLib]][[callerLib]] = as.list(unique(callee_methods[[calleeLib]][[callerLib]]))
+    subdirs = str_split(filename,"/")
+    gav = strsplit(subdirs[[1]][length(subdirs[[1]])-1], ":")
+    if (length(gav[[1]])>=3) {
+      file = paste(gav[[1]][[1]], gav[[1]][[2]], sep=":")
+      if (file!=calleeLib)
+        allLibs <- c(allLibs, calleeLib)
+    }
   }
 }
 
@@ -87,6 +97,8 @@ for (i in seq_along(file_list)) {
       else
         callerLib <- callerLibGAV[[1]][[1]]
     }
+    if (grepl("commons-collections", calleeLib, fixed = TRUE))
+      calleeLib <- "org.apache.commons:commons-collections4"
     fieldName <- paste(df[i,2], df[i,5])
     if(is.null(callee_fields[[calleeLib]])) {
       callee_fields[calleeLib] <- hash()
@@ -99,6 +111,13 @@ for (i in seq_along(file_list)) {
       }
     }
     callee_fields[[calleeLib]][[callerLib]] = as.list(unique(callee_fields[[calleeLib]][[callerLib]]))
+    subdirs = str_split(filename,"/")
+    gav = strsplit(subdirs[[1]][length(subdirs[[1]])-1], ":")
+    if (length(gav[[1]])>=3) {
+      file = paste(gav[[1]][[1]], gav[[1]][[2]], sep=":")
+      if (file!=calleeLib)
+        allLibs <- c(allLibs, calleeLib)
+    }
   }
 }
 
@@ -121,6 +140,10 @@ for (i in seq_along(file_list)) {
       else
         callerLib <- callerLibGAV[[1]][[1]]
     }
+    if (grepl("commons-collections", calleeLib, fixed = TRUE))
+      calleeLib <- "org.apache.commons:commons-collections4"
+    if (grepl("commons-collections", callerLib, fixed = TRUE))
+      callerLib <- "org.apache.commons:commons-collections4"
     if(is.null(callee_annotations[[calleeLib]])) {
       callee_annotations[calleeLib] <- hash()
       callee_annotations[[calleeLib]][[callerLib]] = c(df[i,5])
@@ -132,6 +155,13 @@ for (i in seq_along(file_list)) {
       }
     }
     callee_annotations[[calleeLib]][[callerLib]] = as.list(unique(callee_annotations[[calleeLib]][[callerLib]]))
+    subdirs = str_split(filename,"/")
+    gav = strsplit(subdirs[[1]][length(subdirs[[1]])-1], ":")
+    if (length(gav[[1]])>=3) {
+      file = paste(gav[[1]][[1]], gav[[1]][[2]], sep=":")
+      if (file!=calleeLib)
+        allLibs <- c(allLibs, calleeLib)
+    }
   }
 }
 
@@ -154,6 +184,8 @@ for (i in seq_along(file_list)) {
       else
         callerLib <- callerLibGAV[[1]][[1]]
     }
+    if (grepl("commons-collections", calleeLib, fixed = TRUE))
+      calleeLib <- "org.apache.commons:commons-collections4"
     if(is.null(callee_types[[calleeLib]])) {
       callee_types[calleeLib] <- hash()
       callee_types[[calleeLib]][[callerLib]] = c(df[i,3])
@@ -165,8 +197,17 @@ for (i in seq_along(file_list)) {
       }
     }
     callee_types[[calleeLib]][[callerLib]] = as.list(unique(callee_types[[calleeLib]][[callerLib]]))
+    subdirs = str_split(filename,"/")
+    gav = strsplit(subdirs[[1]][length(subdirs[[1]])-1], ":")
+    if (length(gav[[1]])>=3) {
+      file = paste(gav[[1]][[1]], gav[[1]][[2]], sep=":")
+      if (file!=calleeLib)
+        allLibs <- c(allLibs, calleeLib)
+    }
   }
 }
+
+print(length(unique(allLibs)))
 
 getValsfromCallee <- function(callee) {
   vals <- c()

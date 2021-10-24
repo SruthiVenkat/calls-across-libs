@@ -29,6 +29,10 @@ mergedDf <- merge(aggDf, totalsDf, by=c(1,2))
 
 counts <- hash()
 for( i in rownames(mergedDf) ) {
+  if (grepl("commons-collections", mergedDf[i, "Group.1"], fixed = TRUE))
+    mergedDf[i, "Group.1"] <- "org.apache.commons:commons-collections4"
+  if (grepl("commons-collections", mergedDf[i, "Group.2"], fixed = TRUE))
+    mergedDf[i, "Group.2"] <- "org.apache.commons:commons-collections4"
   callerCallee <- paste(mergedDf[i, "Group.1"], mergedDf[i, "Group.2"])
   if(is.null(counts[[callerCallee]])) {
     counts[callerCallee] <- hash()

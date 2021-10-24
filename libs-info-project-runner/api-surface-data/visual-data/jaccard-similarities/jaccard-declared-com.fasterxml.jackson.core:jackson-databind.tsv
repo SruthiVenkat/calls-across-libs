@@ -1,16 +1,16 @@
-Client A/Client B	com.capitalone.dashboard:core 	com.fasterxml.jackson.core 	com.fasterxml.jackson.core:jackson-core 	com.fasterxml.jackson.datatype:jackson-datatype-jdk8 	com.fasterxml.jackson.datatype:jackson-datatype-jsr310 	com.googlecode.ez-vcard:ez-vcard 	io.rest-assured:json-path 	io.springside:springside-utils 	io.swagger:swagger-codegen 	io.swagger:swagger-core 	io.swagger:swagger-parser 	net.javacrumbs.json-unit:json-unit-core 	org.springframework:spring-web 	org.springframework.data:spring-data-redis 	org.thymeleaf:thymeleaf
-com.capitalone.dashboard:core	1	0.00934579439252336	0	0	0	0	0	0	0	0	0	0	0	0	0
-com.fasterxml.jackson.core	0.00934579439252336	1	0.163636363636364	0	0	0	0	0	0	0.0151515151515152	0	0	0	0	0
-com.fasterxml.jackson.core:jackson-core	0	0.163636363636364	1	0	0	0	0	0	0	0	0	0	0	0	0
-com.fasterxml.jackson.datatype:jackson-datatype-jdk8	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0
-com.fasterxml.jackson.datatype:jackson-datatype-jsr310	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0
-com.googlecode.ez-vcard:ez-vcard	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0
-io.rest-assured:json-path	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0
-io.springside:springside-utils	0	0	0	0	0	0	0	1	0.0833333333333333	0.0285714285714286	0.0285714285714286	0	0	0	0
-io.swagger:swagger-codegen	0	0	0	0	0	0	0	0.0833333333333333	1	0.0333333333333333	0	0	0	0	0
-io.swagger:swagger-core	0	0.0151515151515152	0	0	0	0	0	0.0285714285714286	0.0333333333333333	1	0.317073170731707	0.072463768115942	0.0344827586206897	0.0344827586206897	0.05882353
-io.swagger:swagger-parser	0	0	0	0	0	0	0	0.0285714285714286	0	0.317073170731707	1	0.072463768115942	0	0	0
-net.javacrumbs.json-unit:json-unit-core	0	0	0	0	0	0	0	0	0	0.072463768115942	0.072463768115942	1	0	0	0
-org.springframework:spring-web	0	0	0	0	0	0	0	0	0	0.0344827586206897	0	0	1	0	0
-org.springframework.data:spring-data-redis	0	0	0	0	0	0	0	0	0	0.0344827586206897	0	0	0	1	0.09090909
-org.thymeleaf:thymeleaf	0	0	0	0	0	0	0	0	0	0.0588235294117647	0	0	0	0.0909090909090909	1
+Client A/Client B	com.fasterxml.jackson.core:jackson-databind 	com.fasterxml.jackson.datatype:jackson-datatype-jdk8 	com.fasterxml.jackson.datatype:jackson-datatype-jsr310 	com.googlecode.ez-vcard:ez-vcard 	io.rest-assured:json-path 	io.springside:springside-utils 	io.swagger:swagger-codegen 	io.swagger:swagger-core 	io.swagger:swagger-parser 	net.javacrumbs.json-unit:json-unit-core 	org.owasp:dependency-check-core 	org.owasp:dependency-check-utils 	org.springframework:spring-web 	org.springframework.data:spring-data-redis 	org.thymeleaf:thymeleaf
+com.fasterxml.jackson.core:jackson-databind	1	0	0	0	0	0	0	0	0	0	0	0	0.0588235294117647	0	0
+com.fasterxml.jackson.datatype:jackson-datatype-jdk8	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
+com.fasterxml.jackson.datatype:jackson-datatype-jsr310	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0
+com.googlecode.ez-vcard:ez-vcard	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0
+io.rest-assured:json-path	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0
+io.springside:springside-utils	0	0	0	0	0	1	0.0833333333333333	0.0357142857142857	0.0344827586206897	0	0	0.222222222222222	0	0	0
+io.swagger:swagger-codegen	0	0	0	0	0	0.0833333333333333	1	0.0434782608695652	0	0	0	0.2	0	0	0
+io.swagger:swagger-core	0	0	0	0	0	0.0357142857142857	0.0434782608695652	1	0.28125	0.181818181818182	0.0434782608695652	0	0.0434782608695652	0.0454545454545455	0.07692308
+io.swagger:swagger-parser	0	0	0	0	0	0.0344827586206897	0	0.28125	1	0.111111111111111	0	0	0	0	0
+net.javacrumbs.json-unit:json-unit-core	0	0	0	0	0	0	0	0.181818181818182	0.111111111111111	1	0	0	0	0	0
+org.owasp:dependency-check-core	0	0	0	0	0	0	0	0.0434782608695652	0	0	1	0	0.142857142857143	0	0
+org.owasp:dependency-check-utils	0	0	0	0	0	0.222222222222222	0.2	0	0	0	0	1	0	0	0
+org.springframework:spring-web	0.0588235294117647	0	0	0	0	0	0	0.0434782608695652	0	0	0.142857142857143	0	1	0	0
+org.springframework.data:spring-data-redis	0	0	0	0	0	0	0	0.0454545454545455	0	0	0	0	0	1	0.1
+org.thymeleaf:thymeleaf	0	0	0	0	0	0	0	0.0769230769230769	0	0	0	0	0	0.1	1

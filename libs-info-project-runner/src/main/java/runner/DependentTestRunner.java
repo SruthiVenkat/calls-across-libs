@@ -24,7 +24,6 @@ import org.apache.maven.shared.invoker.DefaultInvoker;
 import org.apache.maven.shared.invoker.InvocationRequest;
 import org.apache.maven.shared.invoker.Invoker;
 import org.apache.maven.shared.invoker.MavenInvocationException;
-import org.apache.maven.shared.invoker.SystemOutHandler;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -101,7 +100,8 @@ public class DependentTestRunner {
             if (!outputDir.exists())
             	outputDir.mkdir();
 
-            JAVA_OPTS =  "-javaagent:"+agentPath+" -Xbootclasspath/a:"+javassistJarPath+":"+agentPath;
+            JAVA_OPTS =  "-javaagent:"+agentPath+" -Xbootclasspath/a:"+javassistJarPath+":"+agentPath
+            		+":"+"/Users/sruthivenkat/.m2/repository/mysql/mysql-connector-java/8.0.21";
         } catch (IOException ex) {
             ex.printStackTrace();
         }
@@ -237,7 +237,7 @@ public class DependentTestRunner {
 		InvocationRequest request = new DefaultInvocationRequest();
 		request.setPomFile(pomFile);
 		request.setGoals(Arrays.asList("clean", "install"));
-		request.setMavenOpts("-Dlicense.skip=true -DskipTests=true -Dcheckstyle.skip=true -Dgpg.skip=true -Drat.skip=true -Dmaven.buildNumber.doCheck=false");
+		request.setMavenOpts("-Dlicense.skipCheckLicense=true -Dlicense.skip=true -DskipTests=true -Dcheckstyle.skip=true -Dgpg.skip=true -Drat.skip=true -Dmaven.buildNumber.doCheck=false");
 		//request.setJavaHome(new File(javaHomes.get(javaVersion)));
 		//System.setProperty("maven.home", "/usr/share/maven");
 		System.setProperty("maven.home", "/opt/homebrew/Cellar/maven/3.8.2/libexec");
@@ -253,7 +253,7 @@ public class DependentTestRunner {
 		InvocationRequest request = new DefaultInvocationRequest();
 		request.setPomFile(pomFile);
 		request.setGoals(Arrays.asList("test")); 
-		request.setMavenOpts("-Drat.skip=true -Dmaven.test.skip=false -Dmaven.buildNumber.doCheck=false");
+		request.setMavenOpts("-Dlicense.skipCheckLicense=true -Dlicense.skip=true -Drat.skip=true -Dmaven.test.skip=false -Dmaven.buildNumber.doCheck=false");
 		//request.setJavaHome(new File(javaHomes.get(javaVersion)));
 		
 		// parse pom and get existing argLine param

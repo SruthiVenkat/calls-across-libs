@@ -1,5 +1,7 @@
-Client A/Client B	br.com.caelum:vraptor 	com.capitalone.dashboard:core 	io.searchbox:jest-common 	net.javacrumbs.json-unit:json-unit-core
-br.com.caelum:vraptor	1	0.0833333333333333	0.210526315789474	0.1621622
-com.capitalone.dashboard:core	0.0833333333333333	1	0.0444444444444444	0.05
-io.searchbox:jest-common	0.210526315789474	0.0444444444444444	1	0.2307692
-net.javacrumbs.json-unit:json-unit-core	0.162162162162162	0.05	0.230769230769231	1
+Client A/Client B	br.com.caelum:vraptor 	com.capitalone.dashboard:core 	com.ibm.common:activitystreams-core 	io.searchbox:jest-common 	net.javacrumbs.json-unit:json-unit-core 	org.cryptomator:cryptolib
+br.com.caelum:vraptor	1	0.0833333333333333	0.219512195121951	0.210526315789474	0.162162162162162	0.03448276
+com.capitalone.dashboard:core	0.0833333333333333	1	0.0769230769230769	0.0444444444444444	0.05	0
+com.ibm.common:activitystreams-core	0.219512195121951	0.0769230769230769	1	0.290909090909091	0.25	0.06666667
+io.searchbox:jest-common	0.210526315789474	0.0444444444444444	0.290909090909091	1	0.230769230769231	0
+net.javacrumbs.json-unit:json-unit-core	0.162162162162162	0.05	0.25	0.230769230769231	1	0
+org.cryptomator:cryptolib	0.0344827586206897	0	0.0666666666666667	0	0	1

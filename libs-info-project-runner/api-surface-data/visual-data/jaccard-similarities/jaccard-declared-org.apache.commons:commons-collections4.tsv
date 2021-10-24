@@ -1,0 +1,8 @@
+Client A/Client B	ar.com.fdvs:DynamicJasper 	com.capitalone.dashboard:core 	commons-beanutils:commons-beanutils 	net.sf.jasperreports:jasperreports 	org.apache.commons:commons-collections4 	us.codecraft:webmagic-core 	ysoserial:ysoserial
+ar.com.fdvs:DynamicJasper	1	0	0	0	0	0	0
+com.capitalone.dashboard:core	0	1	0	0	0	0.285714285714286	0
+commons-beanutils:commons-beanutils	0	0	1	0	0	0	0
+net.sf.jasperreports:jasperreports	0	0	0	1	0	0	0
+org.apache.commons:commons-collections4	0	0	0	0	1	0	0
+us.codecraft:webmagic-core	0	0.285714285714286	0	0	0	1	0
+ysoserial:ysoserial	0	0	0	0	0	0	1

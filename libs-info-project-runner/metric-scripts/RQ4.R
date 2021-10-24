@@ -23,6 +23,10 @@ for (i in seq_along(file_list)) {
       else
         callerLib <- callerLibGAV[[1]][[1]]
     }
+    if (grepl("commons-collections", calleeLib, fixed = TRUE))
+      calleeLib <- "org.apache.commons:commons-collections4"
+    if (grepl("commons-collections", callerLib, fixed = TRUE))
+      callerLib <- "org.apache.commons:commons-collections4"
     if(is.null(callee_methods[[calleeLib]])) {
       callee_methods[calleeLib] <- hash()
       callee_methods[[calleeLib]][[callerLib]] = c(df[i,6])

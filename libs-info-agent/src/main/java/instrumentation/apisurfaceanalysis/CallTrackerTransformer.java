@@ -581,6 +581,7 @@ public class CallTrackerTransformer implements ClassFileTransformer {
                                 servicesInfo.put(servicesInfoKey, servicesInfoValue);
                         } else {
                                 for (String impl: implsToMethods.keySet())
+                                	if (implsToMethods.containsKey(impl))
                                         servicesInfo.get(servicesInfoKey).implMethodsNotInInterface.get(impl)
                                                         .addAll(implsToMethods.get(impl));
                         }

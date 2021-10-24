@@ -1,0 +1,4 @@
+Client A/Client B	org.glowroot:glowroot-agent-embedded-unshaded 	org.owasp:dependency-check-core 	org.zapodot:embedded-db-core
+org.glowroot:glowroot-agent-embedded-unshaded	1	0	0
+org.owasp:dependency-check-core	0	1	0
+org.zapodot:embedded-db-core	0	0	1

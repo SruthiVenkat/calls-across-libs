@@ -1,6 +1,7 @@
-Client A/Client B	cn.wanghaomiao:JsoupXpath 	com.googlecode.ez-vcard:ez-vcard 	tech.tablesaw:tablesaw-html 	us.codecraft:webmagic-core 	us.codecraft:xsoup
-cn.wanghaomiao:JsoupXpath	1	0.255813953488372	0.03125	0.0975609756097561	0.1791045
-com.googlecode.ez-vcard:ez-vcard	0.255813953488372	1	0.0384615384615385	0.181818181818182	0.1587302
-tech.tablesaw:tablesaw-html	0.03125	0.0384615384615385	1	0	0.01960784
-us.codecraft:webmagic-core	0.0975609756097561	0.181818181818182	0	1	0.1034483
-us.codecraft:xsoup	0.17910447761194	0.158730158730159	0.0196078431372549	0.103448275862069	1
+Client A/Client B	cn.wanghaomiao:JsoupXpath 	com.googlecode.ez-vcard:ez-vcard 	org.jsoup:jsoup 	tech.tablesaw:tablesaw-html 	us.codecraft:webmagic-core 	us.codecraft:xsoup
+cn.wanghaomiao:JsoupXpath	1	0.268292682926829	0	0.032258064516129	0.153846153846154	0.1833333
+com.googlecode.ez-vcard:ez-vcard	0.268292682926829	1	0	0.04	0.181818181818182	0.1818182
+org.jsoup:jsoup	0	0	1	0	0	0.02222222
+tech.tablesaw:tablesaw-html	0.032258064516129	0.04	0	1	0.0555555555555556	0.02272727
+us.codecraft:webmagic-core	0.153846153846154	0.181818181818182	0	0.0555555555555556	1	0.1372549
+us.codecraft:xsoup	0.183333333333333	0.181818181818182	0.0222222222222222	0.0227272727272727	0.137254901960784	1
