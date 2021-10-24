@@ -97,6 +97,9 @@ getArtifactNames <- function(column) {
 }
 finalDf$Library <- getArtifactNames(finalDf$Library)
 finalDf$Client <- getArtifactNames(finalDf$Client)
+finalDf$Library[finalDf$Library == "core"] <- "capitalone.dashboard:core"
+finalDf$Client[finalDf$Client == "core"] <- "capitalone.dashboard:core"
+
 tab_df(
   finalDf,
   title = "Reflective Callbacks",

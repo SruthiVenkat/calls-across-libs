@@ -4,7 +4,7 @@ library(sjPlot)
 library(xtable)
 
 libraries <- c("com.alibaba:fastjson", "org.apache.commons:commons-collections4", "commons-io:commons-io", "joda-time:joda-time", 
-               "com.google.code.gson:gson", "org.json:json", "org.jsoup:jsoup", "org.slf4j:slf4j-api", "com.fasterxml.jackson.core:jackson-databind", "com.fasterxml.jackson.core:jackson-core")
+               "com.google.code.gson:gson", "org.json:json", "org.jsoup:jsoup", "org.slf4j:slf4j-api", "com.fasterxml.jackson.core:jackson-databind", "com.fasterxml.jackson.core:jackson-core", "com.h2database:h2")
 libsInfoList = list.files(path="Documents/Waterloo/PL/calls-across-libs/libs-info-project-runner/api-surface-data-2", recursive = TRUE, pattern="*-libsInfo.tsv", full.names = TRUE)
 
 allLibs <- c()
@@ -43,8 +43,8 @@ for (i in seq_along(file_list)) {
   df <- read.csv(filename, sep='\t')
   for(i in 1:nrow(df)) 
   {
-    if (is.character(df[i, 2]) && is.character(df[i, 7])) {
-      calleeLibGAV = strsplit(df[i,7], ":")
+    if (is.character(df[i, 2]) && is.character(df[i, 5])) {
+      calleeLibGAV = strsplit(df[i,5], ":")
       if(length(calleeLibGAV[[1]])>=3)
         calleeLib <- paste(calleeLibGAV[[1]][[1]], calleeLibGAV[[1]][[2]], sep=":")
       else
@@ -59,12 +59,12 @@ for (i in seq_along(file_list)) {
       calleeLib <- "org.apache.commons:commons-collections4"
     if(is.null(callee_methods[[calleeLib]])) {
       callee_methods[calleeLib] <- hash()
-      callee_methods[[calleeLib]][[callerLib]] = c(df[i,6])
+      callee_methods[[calleeLib]][[callerLib]] = c(df[i,4])
     } else {
       if(is.null(callee_methods[[calleeLib]][[callerLib]])) {
-        callee_methods[[calleeLib]][[callerLib]] = c(df[i,6])
+        callee_methods[[calleeLib]][[callerLib]] = c(df[i,4])
       } else {
-        callee_methods[[calleeLib]][[callerLib]] = c(callee_methods[[calleeLib]][[callerLib]], df[i,6])
+        callee_methods[[calleeLib]][[callerLib]] = c(callee_methods[[calleeLib]][[callerLib]], df[i,4])
       }
     }
     callee_methods[[calleeLib]][[callerLib]] = as.list(unique(callee_methods[[calleeLib]][[callerLib]]))
@@ -246,23 +246,30 @@ getArtifactNames <- function(column) {
 }
 finalDf$Library <- getArtifactNames(finalDf$Library)
 
+for (lib in keys(callee_annotations)) {
+ 
+  if(lib %in% libraries)  print(lib)
+}
+
 tab_df(
   finalDf,
-  title = "Standard API Usage",
+  title = "Usage Distribution of API Elements by Clients",
   footnote = NULL,
-  col.header = c("Library", "No. of Clients Using Methods", "No. of Methods in Lib", "No. of Distinct Methods Used By All Clients", "Total No. of Methods Used By All Clients",
+  col.header = c("Library", "clients", "No. of Methods in Lib", "No. of Distinct Methods Used By All Clients", "Total No. of Methods Used By All Clients",
                  "No. of Clients Using Fields", "No. of Fields in Lib", "No. of Distinct Fields Used By All Clients", "Total No. of Fields Used By All Clients", 
                  "No. of Clients Using Types", "No. of Types in Lib", "No. of Distinct Types Used By All Clients", "Total No. of Types Used By All Clients"),
   sort.column = 1,
   CSS = list(css.centeralign = 'text-align: left;')
 )
-colnames(finalDf) = c("Library", "No. of Clients Using Methods", "No. of Methods in Lib", "No. of Distinct Methods Used By All Clients", "Total No. of Methods Used By All Clients",
-                      "No. of Clients Using Fields", "No. of Fields in Lib", "No. of Distinct Fields Used By All Clients", "Total No. of Fields Used By All Clients", 
-                      "No. of Clients Using Types", "No. of Types in Lib", "No. of Distinct Types Used By All Clients", "Total No. of Types Used By All Clients")
+colnames(finalDf) = c("Library", "using", "in lib", "used", "used",
+                      "using", "in lib", "used", "used", 
+                      "using", "in lib", "used", "used")
+addtorow <- list()
+addtorow$pos <- list(0)
+addtorow$command <- "& \\multicolumn{4}{c!{\\color{verylightgray}\\vrule}}{Methods} & \\multicolumn{4}{c!{\\color{verylightgray}\\vrule}}{Fields} & \\multicolumn{4}{c}{Subtyping}\\\\"
 
-print(xtable(finalDf, 
-             caption = "Standard API Usage", digits = 0, colnames(c("Library", "No. of Clients Using Methods", "No. of Methods in Lib", "No. of Distinct Methods Used By All Clients", "Total No. of Methods Used By All Clients",
-                                                                    "No. of Clients Using Fields", "No. of Fields in Lib", "No. of Distinct Fields Used By All Clients", "Total No. of Fields Used By All Clients", 
-                                                                    "No. of Clients Using Types", "No. of Types in Lib", "No. of Distinct Types Used By All Clients", "Total No. of Types Used By All Clients"))), 
-      file = "Documents/Waterloo/PL/21.icse.library-usage/tables/results/standard-api-usage.tex",size="small", include.rownames = FALSE)
+print(xtable(finalDf, label="tab:usage-distribution", floating.environment="table*",
+             caption = "Usage Distribution of API Elements by Clients", digits = 0), 
+      file = "Documents/Waterloo/PL/21.icse.library-usage/tables/results/standard-api-usage.tex",size="small", 
+      add.to.row=addtorow, include.rownames = FALSE, include.colnames = FALSE, caption.placement = "top")
 

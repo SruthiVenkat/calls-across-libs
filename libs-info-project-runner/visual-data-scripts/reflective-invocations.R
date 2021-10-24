@@ -80,6 +80,8 @@ getArtifactNames <- function(column) {
   return(artNames)
 }
 finalDf$Library <- getArtifactNames(finalDf$Library)
+finalDf$Library[finalDf$Library == "core"] <- "capitalone.dashboard:core"
+
 tab_df(
   finalDf,
   title = "Reflective Invocations in both directions",
