@@ -267,7 +267,9 @@ colnames(finalDf) = c("Library", "using", "in lib", "used", "used",
 addtorow <- list()
 addtorow$pos <- list(0)
 addtorow$command <- "& \\multicolumn{4}{c!{\\color{verylightgray}\\vrule}}{Methods} & \\multicolumn{4}{c!{\\color{verylightgray}\\vrule}}{Fields} & \\multicolumn{4}{c}{Subtyping}\\\\"
-
+addtorow$pos <- list(1)
+#addtorow$command <- 
+  
 print(xtable(finalDf, label="tab:usage-distribution", floating.environment="table*",
              caption = "Usage Distribution of API Elements by Clients", digits = 0), 
       file = "Documents/Waterloo/PL/21.icse.library-usage/tables/results/standard-api-usage.tex",size="small", 

@@ -23,7 +23,8 @@ writeLines("CallerLibrary\tCallerMethod\tCalleeLibrary\tsetAccessible.CalledOn\t
 for (i in seq_along(file_list)) {
   filename = file_list[[i]]
  
-  if (endsWith(filename,"RQ2-setAccessibleCalls.tsv") | endsWith(filename, "RQ2-libtoclient-setAccessibleCalls.tsv"))
+  if (endsWith(filename,"RQ2-setAccessibleCalls.tsv") | endsWith(filename, "RQ2-libtoclient-setAccessibleCalls.tsv")
+      | endsWith(filename, "RQ2-clienttolib-setAccessibleCalls.tsv"))
     next
 
     subdirs = str_split(filename,"/")
