@@ -34,4 +34,3 @@ python3 tweak.py
 
 #checkstyle
 cd /calls-across-libs/libs-info-project-runner/projects/checkstyle && mvn tidy:pom
-cd ./projects/checkstyle && mvn tidy:pom
