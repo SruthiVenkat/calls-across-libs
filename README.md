@@ -8,16 +8,16 @@ This project studies the usage and surfaces of Java components by instrumenting 
 ### Usage
 These commands run the tool on the Java components listed in calls-across-libs/libs-info-project-runner/projects/projects-list.json
 
-###### cd /calls-across-libs/docker
+###### 1. cd /calls-across-libs/docker
 
-###### sudo docker build -t *image-name* .
+###### 2. docker build -t *image-name* .
 
-###### docker run -v /path/to/this/repo/calls-across-libs:/calls-across-libs *image-name* &#35; writes data to this repo's path
+###### 3. docker run -v /path/to/this/repo/calls-across-libs:/calls-across-libs *image-name*      &#35; writes data to this repo's path
 OR
-###### sudo docker run -it *image-name* &#35; writes data to the default Docker location
+###### 3. docker run -it *image-name*       &#35; writes data to the default Docker location
 
 This should generate the data in /calls-across-libs/libs-info-project-runner/api-surface-data. Use
 
-###### sudo docker run -it *image-name* sh
+###### docker run -it *image-name* sh
 
 to view the data if you used the second command.
