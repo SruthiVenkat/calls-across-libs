@@ -207,8 +207,8 @@ public class JarUtility {
 		request.setMavenOpts("-DincludeScope=compile -DoutputFile="+tmpDir.getPath()+File.separator+"deps-output.txt -DoutputAbsoluteArtifactFilename=true");
 		//request.setJavaHome(new File(DependentTestRunner.javaHomes.get(javaVersion)));
 		
-		//System.setProperty("maven.home", "/usr/share/maven");
-		System.setProperty("maven.home", "/opt/homebrew/Cellar/maven/3.8.2/libexec");
+		System.setProperty("maven.home", "/usr/share/maven");
+		//System.setProperty("maven.home", "/opt/homebrew/Cellar/maven/3.8.2/libexec");
 		Invoker invoker = new DefaultInvoker();
 		try {
 			invoker.execute( request );
