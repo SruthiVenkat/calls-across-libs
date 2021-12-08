@@ -1,4 +1,5 @@
 FROM ubuntu:21.04
+VOLUME /calls-across-libs
 
 # prepare , install some utils
 RUN apt-get --yes --force-yes update && \
@@ -30,18 +31,20 @@ mkdir /root/.m2 && mkdir /root/.m2/repository && echo \
     > /root/.m2/settings.xml && \
 
 # clone and checkout calls-across-libs
-git clone https://github.com/SruthiVenkat/calls-across-libs.git && cd calls-across-libs && mvn clean install && cd libs-info-project-runner && sh getrepos.sh && \
+git clone https://SruthiVenkat:@github.com/SruthiVenkat/calls-across-libs.git && cd calls-across-libs && mvn clean install
+
+ENV LANG en_US.UTF-8  
+ENV LANGUAGE en_US:en  
+ENV LC_ALL en_US.UTF-8
+ENV JAVA_OPTS="-Xms4096M -Xmx4096M"
+
+CMD cd /calls-across-libs/libs-info-project-runner && sh getrepos.sh && \
 
 # tweaks for some benchmarks
 cd /calls-across-libs/libs-info-project-runner && sh tweak.sh && apt-get install -y npm && \
 
 # tweak for fastjson benchmark which needs UTF-8 because it has Chinese characters
 apt-get -y install locales && sed -i '/en_US.UTF-8/s/^# //g' /etc/locale.gen && \
-    locale-gen
-ENV LANG en_US.UTF-8  
-ENV LANGUAGE en_US:en  
-ENV LC_ALL en_US.UTF-8
+    locale-gen && \
 
-ENV JAVA_OPTS="-Xms4096M -Xmx4096M"
-
-CMD cd /calls-across-libs/libs-info-project-runner && mvn compile && mvn exec:java -Dexec.mainClass=runner.DependentTestRunner > output.txt
+cd /calls-across-libs/libs-info-project-runner && mvn compile && mvn exec:java -Dexec.mainClass=runner.DependentTestRunner > output.txt
