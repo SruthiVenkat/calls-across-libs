@@ -12,10 +12,12 @@ These commands run the tool on the Java components listed in calls-across-libs/l
 
 ###### sudo docker build -t *image-name* .
 
-###### sudo docker run -it *image-name*
+###### docker run -v /path/to/this/repo/calls-across-libs:/calls-across-libs *image-name* &#35; writes data to this repo's path
+OR
+###### sudo docker run -it *image-name* &#35; writes data to the default Docker location
 
 This should generate the data in /calls-across-libs/libs-info-project-runner/api-surface-data. Use
 
 ###### sudo docker run -it *image-name* sh
 
-to view the data.
+to view the data if you used the second command.
