@@ -1,6 +1,6 @@
 allprojects {
 	apply plugin: 'java'
 	test {
-		jvmArgs = ["-javaagent:/home/vishal/Documents/Waterloo/PL/calls-across-libs/libs-info-agent/target/libs-info-agent-1.0-SNAPSHOT.jar", "-Xbootclasspath/p:/home/vishal/.m2/repository/org/javassist/javassist/3.27.0-GA/javassist-3.27.0-GA.jar:/home/vishal/Documents/Waterloo/PL/calls-across-libs/libs-info-agent/target/libs-info-agent-1.0-SNAPSHOT.jar"]
+		jvmArgs = ["-javaagent:/calls-across-libs/libs-info-agent/target/libs-info-agent-1.0-SNAPSHOT.jar", "-Xbootclasspath/p:/root/.m2/repository/org/javassist/javassist/3.27.0-GA/javassist-3.27.0-GA.jar:/calls-across-libs/libs-info-agent/target/libs-info-agent-1.0-SNAPSHOT.jar"]
 	}
 }

@@ -17,6 +17,8 @@ apt-get update && apt-get install -y openjdk-11-jdk && apt-get install -y openjd
 apt-get --yes --force-yes install maven && \
 apt-get --yes --force-yes install gradle && \
 apt-get --yes --force-yes install git && \
+apt-get install -y npm && \
+apt-get -y install locales && \
 
 # set up Maven local repo
 mkdir /root/.m2 && mkdir /root/.m2/repository && echo \
@@ -40,11 +42,13 @@ ENV JAVA_OPTS="-Xms4096M -Xmx4096M"
 
 CMD cd /calls-across-libs/libs-info-project-runner && sh getrepos.sh && \
 
+# clearing api-surface-data, new data goes there
+cd /calls-across-libs/libs-info-project-runner && rm -rf api-surface-data && \
+
 # tweaks for some benchmarks
-cd /calls-across-libs/libs-info-project-runner && sh tweak.sh && apt-get install -y npm && \
+cd /calls-across-libs/libs-info-project-runner && sh tweak.sh && \
 
 # tweak for fastjson benchmark which needs UTF-8 because it has Chinese characters
-apt-get -y install locales && sed -i '/en_US.UTF-8/s/^# //g' /etc/locale.gen && \
-    locale-gen && \
+sed -i '/en_US.UTF-8/s/^# //g' /etc/locale.gen && locale-gen && \
 
 cd /calls-across-libs/libs-info-project-runner && mvn compile && mvn exec:java -Dexec.mainClass=runner.DependentTestRunner > output.txt

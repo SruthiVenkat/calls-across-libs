@@ -823,8 +823,12 @@
     "selectedTag": "v_1.7.9"
   },
   {
+    "scmURL": "https://github.com/h2database/h2database.git",
+    "selectedTag": "version-1.4.200"
+  },
+  {
     "scmURL": "https://github.com/apache/rocketmq.git",
-    "selectedTag": "rocketmq-all-4.9.1"
+    "selectedTag": "rocketmq-all-4.9.2"
   },
   {
     "scmURL": "https://github.com/alibaba/easyexcel.git",
@@ -880,15 +884,15 @@
   }, 
   {
     "scmURL": "https://github.com/alibaba/druid.git",
-    "selectedTag": "1.2.6"
+    "selectedTag": "1.2.8"
   },
   {
     "scmURL": "https://github.com/thymeleaf/thymeleaf.git",
-    "selectedTag": "thymeleaf-3.0.12.RELEASE"
+    "selectedTag": "thymeleaf-3.0.14.RELEASE"
   },
   {
-    "scmURL": "https://github.com/thymeleaf/thymeleaf.git",
-    "selectedTag": "thymeleaf-3.0.12.RELEASE"
+    "scmURL": "https://github.com/thymeleaf/thymeleaf-tests.git",
+    "selectedTag": "20140507"
   },
   {
     "scmURL": "https://github.com/spring-projects/spring-data-elasticsearch.git",
@@ -896,7 +900,7 @@
   },
   {
     "scmURL": "https://github.com/code4craft/webmagic.git",
-    "selectedTag": "WebMagic-0.7.3"
+    "selectedTag": "WebMagic-0.7.5"
   },
   {
     "scmURL": "https://github.com/jfinal/jfinal.git",
