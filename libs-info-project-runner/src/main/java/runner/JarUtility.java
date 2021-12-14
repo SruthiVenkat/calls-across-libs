@@ -283,7 +283,8 @@ public class JarUtility {
 		if (libsToCountsAndClasses.containsKey(dependencyName))
 			return;
 		ArrayList<Object> countsAndClasses = getDatafromJar(dependency, child, dependencyName);
-		libsToCountsAndClasses.putIfAbsent(dependencyName, new ArrayList<Object>(Arrays.asList((Integer)countsAndClasses.get(0), (String)countsAndClasses.get(1))));
+		libsToCountsAndClasses.putIfAbsent(dependencyName, new ArrayList<Object>(Arrays.asList((Integer)countsAndClasses.get(0), 
+				(Integer)countsAndClasses.get(1), (String)countsAndClasses.get(2))));
 	}
 	
 	private static ArrayList<Object> getDatafromJar(File dependency, URLClassLoader child, String dependencyName) {
@@ -344,7 +345,7 @@ public class JarUtility {
 			System.out.println(e);
 		}
 
-		return new ArrayList<Object>(Arrays.asList(count, String.join(":", classNames)));
+		return new ArrayList<Object>(Arrays.asList(count, 0, String.join(":", classNames)));
 	}
 
 	private static void deleteDirectory(File fileOrDirectory) {
