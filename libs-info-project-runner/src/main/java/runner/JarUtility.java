@@ -283,7 +283,7 @@ public class JarUtility {
 		if (libsToCountsAndClasses.containsKey(dependencyName))
 			return;
 		ArrayList<Object> countsAndClasses = getDatafromJar(dependency, child, dependencyName);
-		libsToCountsAndClasses.putIfAbsent(dependencyName, new ArrayList<Object>(Arrays.asList((Integer)countsAndClasses.get(0), (Integer)countsAndClasses.get(1))));
+		libsToCountsAndClasses.putIfAbsent(dependencyName, new ArrayList<Object>(Arrays.asList((Integer)countsAndClasses.get(0), (String)countsAndClasses.get(1))));
 	}
 	
 	private static ArrayList<Object> getDatafromJar(File dependency, URLClassLoader child, String dependencyName) {
