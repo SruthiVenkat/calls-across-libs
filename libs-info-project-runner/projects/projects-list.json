@@ -1,9 +1,9 @@
 [
    {
-        "execDir": "druid",
-        "rootDir": "",
-        "generatedJarName": "druid-1.2.5",
-        "build": "maven",
-        "javaVersion": 8
-    }
+		"execDir": "Sentinel/sentinel-transport/sentinel-transport-common",
+		"rootDir": "Sentinel",
+		"generatedJarName": "sentinel-transport-common-1.8.2",
+		"build": "maven",
+		"javaVersion": 11
+	}
 ]
