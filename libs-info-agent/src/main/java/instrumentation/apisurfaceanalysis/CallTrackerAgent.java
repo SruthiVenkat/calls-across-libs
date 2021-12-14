@@ -107,7 +107,6 @@ public class CallTrackerAgent {
                     }
                     reader.close();
                     BufferedWriter writer2 = new BufferedWriter(new FileWriter(libsInfoPath, false));
-                    System.out.println(CallTrackerTransformer.libsToMethods.toString());
                     for (String rowString : rows) {
                         if (rowString!=null) {
                             String[] data = rowString.split("\t");

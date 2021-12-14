@@ -71,7 +71,7 @@ public class CallTrackerTransformer implements ClassFileTransformer {
                 try (FileReader input = new FileReader(configPathName)) {
                         Properties prop = new Properties();
                         prop.load(input); 
-                        String libsInfoPath = prop.getProperty("libsInfoPath");System.out.println("libs path--"+libsInfoPath);
+                        String libsInfoPath = prop.getProperty("libsInfoPath");
                         runningLibrary = prop.getProperty("runningLibrary");
                         String row;
                         BufferedReader reader = new BufferedReader(new FileReader(libsInfoPath));
@@ -169,34 +169,34 @@ public class CallTrackerTransformer implements ClassFileTransformer {
                         // 3. Subtyping ( extends / implements )
                         CtClass superClass = ctClass.getSuperclass();
                         if (superClass!=null) {
-                                String superClassName = superClass.getName();
-                                String superClassLib = findLibrary(superClassName);
-                                if (!superClassLib.equals(unknownEntry.getKey()) && !callingMethodLibName.equals(superClassLib)) {
-                                int mods = superClass.getModifiers();
-                                        String superClassVisibility = javassist.Modifier.isPublic(mods) ? "public" : (javassist.Modifier.isPrivate(mods) ? "private" : (javassist.Modifier.isProtected(mods) ? "protected" : "default"));
-                                        InterLibrarySubtypingKey key = new InterLibrarySubtypingKey(methodCallerClassName, callingMethodLibName, superClassName, superClassVisibility, superClassLib);
-                                        interLibrarySubtyping.putIfAbsent(key, 0);
-                                        interLibrarySubtyping.put(key, interLibrarySubtyping.get(key) + 1);
+                            String superClassName = superClass.getName();
+                            String superClassLib = findLibrary(superClassName);
+                            if (!superClassLib.equals(unknownEntry.getKey()) && !callingMethodLibName.equals(superClassLib)) {
+                            	int mods = superClass.getModifiers();
+                                String superClassVisibility = javassist.Modifier.isPublic(mods) ? "public" : (javassist.Modifier.isPrivate(mods) ? "private" : (javassist.Modifier.isProtected(mods) ? "protected" : "default"));
+                                InterLibrarySubtypingKey key = new InterLibrarySubtypingKey(methodCallerClassName, callingMethodLibName, superClassName, superClassVisibility, superClassLib);
+                                interLibrarySubtyping.putIfAbsent(key, 0);
+                                interLibrarySubtyping.put(key, interLibrarySubtyping.get(key) + 1);
                                 InterLibraryClassUsageKey interLibraryClassUsageKey = new InterLibraryClassUsageKey(superClassName, superClassVisibility, superClassLib, "subtyping", callingMethodLibName);
-                        interLibraryClassUsage.add(interLibraryClassUsageKey);
-                                }
+                                interLibraryClassUsage.add(interLibraryClassUsageKey);
+                            }
                         }
 
                         CtClass[] interfaces = ctClass.getInterfaces();
                         if (interfaces!=null) {
-                                for (CtClass interfaceClass : interfaces) {
-                                        String interfaceName = interfaceClass.getName();
-                                        String interfaceLib = findLibrary(interfaceName);
-                                        if (!interfaceLib.equals(unknownEntry.getKey()) && !callingMethodLibName.equals(interfaceLib)) {
-                                        int mods = interfaceClass.getModifiers();
-                                                String interfaceVisibility = javassist.Modifier.isPublic(mods) ? "public" : (javassist.Modifier.isPrivate(mods) ? "private" : (javassist.Modifier.isProtected(mods) ? "protected" : "default"));
-                                                InterLibrarySubtypingKey key = new InterLibrarySubtypingKey(methodCallerClassName, callingMethodLibName, interfaceName, interfaceVisibility, interfaceLib);
-                                                interLibrarySubtyping.putIfAbsent(key, 0);
-                                                interLibrarySubtyping.put(key, interLibrarySubtyping.get(key) + 1);
-                                InterLibraryClassUsageKey interLibraryClassUsageKey = new InterLibraryClassUsageKey(interfaceName, interfaceVisibility, interfaceLib, "subtyping", callingMethodLibName);
-                                interLibraryClassUsage.add(interLibraryClassUsageKey);
-                                        }
+                            for (CtClass interfaceClass : interfaces) {
+                                String interfaceName = interfaceClass.getName();
+                                String interfaceLib = findLibrary(interfaceName);
+                                if (!interfaceLib.equals(unknownEntry.getKey()) && !callingMethodLibName.equals(interfaceLib)) {
+                                	int mods = interfaceClass.getModifiers();
+                                    String interfaceVisibility = javassist.Modifier.isPublic(mods) ? "public" : (javassist.Modifier.isPrivate(mods) ? "private" : (javassist.Modifier.isProtected(mods) ? "protected" : "default"));
+                                    InterLibrarySubtypingKey key = new InterLibrarySubtypingKey(methodCallerClassName, callingMethodLibName, interfaceName, interfaceVisibility, interfaceLib);
+                                    interLibrarySubtyping.putIfAbsent(key, 0);
+                                    interLibrarySubtyping.put(key, interLibrarySubtyping.get(key) + 1);
+	                                InterLibraryClassUsageKey interLibraryClassUsageKey = new InterLibraryClassUsageKey(interfaceName, interfaceVisibility, interfaceLib, "subtyping", callingMethodLibName);
+	                                interLibraryClassUsage.add(interLibraryClassUsageKey);
                                 }
+                            }
                         }
 
                         // 4. Annotation Usage - class (& method, field)
@@ -237,226 +237,241 @@ public class CallTrackerTransformer implements ClassFileTransformer {
         public static void handleMethodInvocations(CtBehavior method, boolean isConstructor, String methodCallerClassName, 
                         String callingMethodLibName) throws CannotCompileException, ClassNotFoundException {
                 if (!isNative(method) && !isAbstract(method)) {
-                        String callingMethodName = method.getName();
-                        String callingDescriptorName = isConstructor ? NameUtility.getDescriptor((CtConstructor)method) : NameUtility.getDescriptor((CtMethod)method);
-                        int mods = method.getModifiers();
-                String methodVisibility = javassist.Modifier.isPublic(mods) ? "public" : (javassist.Modifier.isPrivate(mods) ? "private" : (javassist.Modifier.isProtected(mods) ? "protected" : "default"));
-                int callerClassMods = method.getDeclaringClass().getModifiers();
-                String callerClassVisibility = javassist.Modifier.isPublic(callerClassMods) ? "public" : (javassist.Modifier.isPrivate(callerClassMods) ? "private" : (javassist.Modifier.isProtected(callerClassMods) ? "protected" : "default"));
-                        
-                        // reflective calls
-                        method.insertBefore("{if (!instrumentation.apisurfaceanalysis.CallTrackerTransformer.reflectiveCaller.isEmpty()) instrumentation.apisurfaceanalysis.CallTrackerTransformer.getStackTrace(\""+methodCallerClassName+"::"+callingMethodName+callingDescriptorName+"\", \""+callingMethodLibName+"\", \""+methodVisibility+"\", \""+callerClassVisibility+"\");}");
+                    String callingMethodName = method.getName();
+                    String callingDescriptorName = isConstructor ? NameUtility.getDescriptor((CtConstructor)method) : NameUtility.getDescriptor((CtMethod)method);
+                    int mods = method.getModifiers();
+	                String methodVisibility = javassist.Modifier.isPublic(mods) ? "public" : (javassist.Modifier.isPrivate(mods) ? "private" : (javassist.Modifier.isProtected(mods) ? "protected" : "default"));
+	                int callerClassMods = method.getDeclaringClass().getModifiers();
+	                String callerClassVisibility = javassist.Modifier.isPublic(callerClassMods) ? "public" : (javassist.Modifier.isPrivate(callerClassMods) ? "private" : (javassist.Modifier.isProtected(callerClassMods) ? "protected" : "default"));
+		                
+	                // reflective calls
+	                method.insertBefore("{if (!instrumentation.apisurfaceanalysis.CallTrackerTransformer.reflectiveCaller.isEmpty()) instrumentation.apisurfaceanalysis.CallTrackerTransformer.getStackTrace(\""+methodCallerClassName+"::"+callingMethodName+callingDescriptorName+"\", \""+callingMethodLibName+"\", \""+methodVisibility+"\", \""+callerClassVisibility+"\");}");
+	
+	                // Annotations - methods
+	                Object[] methodAnnotations = method.getAnnotations();
+	                if (methodAnnotations!=null) {
+                                for (Object annotationObj : methodAnnotations) {
+                                        String annotationName = annotationObj.getClass().getName();
+                                        String annotationLib = findLibrary(annotationName);
 
-                // Annotations - methods
-                        Object[] methodAnnotations = method.getAnnotations();
-                        if (methodAnnotations!=null) {
-                                        for (Object annotationObj : methodAnnotations) {
-                                                String annotationName = annotationObj.getClass().getName();
-                                                String annotationLib = findLibrary(annotationName);
+                                        if (!annotationLib.equals(unknownEntry.getKey()) && !callingMethodLibName.equals(annotationLib)) {
+                                                int annMods = annotationObj.getClass().getModifiers();
+                                                String annotationVisibility = Modifier.isPublic(annMods) ? "public" : (Modifier.isPrivate(annMods) ? "private" : (Modifier.isProtected(annMods) ? "protected" : "default"));
+                                                InterLibraryAnnotationsKey methodKey = new InterLibraryAnnotationsKey("-", methodCallerClassName+"::"+callingMethodName+callingDescriptorName, "-", callingMethodLibName, annotationName, annotationVisibility, annotationLib);
+                                                interLibraryAnnotations.putIfAbsent(methodKey, 0);
+                                                interLibraryAnnotations.put(methodKey, interLibraryAnnotations.get(methodKey) + 1);
+				                                InterLibraryClassUsageKey interLibraryClassUsageKey = new InterLibraryClassUsageKey(annotationName, annotationVisibility, annotationLib, "annotation", callingMethodLibName);
+				                                interLibraryClassUsage.add(interLibraryClassUsageKey);
+                                        }
+                                }
+                }
 
-                                                if (!annotationLib.equals(unknownEntry.getKey()) && !callingMethodLibName.equals(annotationLib)) {
-                                                        int annMods = annotationObj.getClass().getModifiers();
-                                                        String annotationVisibility = Modifier.isPublic(annMods) ? "public" : (Modifier.isPrivate(annMods) ? "private" : (Modifier.isProtected(annMods) ? "protected" : "default"));
-                                                        InterLibraryAnnotationsKey methodKey = new InterLibraryAnnotationsKey("-", methodCallerClassName+"::"+callingMethodName+callingDescriptorName, "-", callingMethodLibName, annotationName, annotationVisibility, annotationLib);
-                                                        interLibraryAnnotations.putIfAbsent(methodKey, 0);
-                                                        interLibraryAnnotations.put(methodKey, interLibraryAnnotations.get(methodKey) + 1);
-                                        InterLibraryClassUsageKey interLibraryClassUsageKey = new InterLibraryClassUsageKey(annotationName, annotationVisibility, annotationLib, "annotation", callingMethodLibName);
-                                        interLibraryClassUsage.add(interLibraryClassUsageKey);
+                method.instrument(
+                        new ExprEditor() {
+                        	// 1. Method Invocations
+                            public void edit(MethodCall m) throws CannotCompileException {
+                                try {
+                                        if (method == m.getMethod() || isNative(m.getMethod()))
+                                                return;
+                                        
+                                        String calledMethodName = m.getMethodName();
+                                        String methodCalledClassName = m.getClassName();
+                                        String calledDescriptorName = NameUtility.getDescriptor(m.getMethod());
+                                        String calledMethodLibName = findLibrary(methodCalledClassName);
+
+                                        // ignore methods that are not part of the API
+                    	                try {
+                    	                	CtClass superCls = method.getDeclaringClass().getSuperclass();
+                    	                	CtMethod overriddenMethod = null;
+                    						if (superCls == null) {
+                    							overriddenMethod = classPool.get("java.lang.Object").getDeclaredMethod(calledMethodName);
+                    						} else {
+                    							overriddenMethod = superCls.getDeclaredMethod(calledMethodName);
+                    						}
+                    						if (overriddenMethod!=null && overriddenMethod.getDeclaringClass().getName().startsWith("java.")) {
+                    							return;
+                    						}
+                    					} catch (NotFoundException e1) {
+                    						e1.printStackTrace();
+                    					}
+                                        
+                                        if (calledMethodName.equals("invoke") && methodCalledClassName.equals("java.lang.reflect.Method")) {
+                                                boolean invocationHandler = Arrays.stream(method.getDeclaringClass().getInterfaces()).anyMatch(impl -> impl.getName().equals("java.lang.reflect.InvocationHandler"));
+                                                if (invocationHandler) {
+                                                        // dynamic proxy
+                                                        m.replace("{if ($0 != null) instrumentation.apisurfaceanalysis.CallTrackerTransformer.updateDynamicProxyCaller($0); $_ = $proceed($$);}");
+                                                        return;
+                                                } else {
+                                                        // reflective call
+                                                        m.replace("{if ($0 != null) instrumentation.apisurfaceanalysis.CallTrackerTransformer.updateReflectiveCaller(Thread.currentThread().getId(), \""+callingMethodName+callingDescriptorName+"\", \""+methodCallerClassName+"\", $0); $_ = $proceed($$);}");
                                                 }
                                         }
-                        }
-
-                        method.instrument(
-                                new ExprEditor() {
-                                        // 1. Method Invocations
-                                    public void edit(MethodCall m) throws CannotCompileException {
-                                        try {
-                                                if (method == m.getMethod() || isNative(m.getMethod()))
-                                                        return;
-                                                
-                                                String calledMethodName = m.getMethodName();
-                                                String methodCalledClassName = m.getClassName();
-                                                                String calledDescriptorName = NameUtility.getDescriptor(m.getMethod());
-                                                                String calledMethodLibName = findLibrary(methodCalledClassName);
-
-                                                                if (calledMethodName.equals("invoke") && methodCalledClassName.equals("java.lang.reflect.Method")) {
-                                                                        boolean invocationHandler = Arrays.stream(method.getDeclaringClass().getInterfaces()).anyMatch(impl -> impl.getName().equals("java.lang.reflect.InvocationHandler"));
-                                                                        if (invocationHandler) {
-                                                                                // dynamic proxy
-                                                                                m.replace("{if ($0 != null) instrumentation.apisurfaceanalysis.CallTrackerTransformer.updateDynamicProxyCaller($0); $_ = $proceed($$);}");
-                                                                                return;
-                                                                        } else {
-                                                                                // reflective call
-                                                                                m.replace("{if ($0 != null) instrumentation.apisurfaceanalysis.CallTrackerTransformer.updateReflectiveCaller(Thread.currentThread().getId(), \""+callingMethodName+callingDescriptorName+"\", \""+methodCallerClassName+"\", $0); $_ = $proceed($$);}");
-                                                                        }
-                                                                }
-                                                
-                                                                // reflective field access
-                                                                if (methodCalledClassName.equals("java.lang.reflect.Field")) {
-                                                                        if (calledMethodName.equals("set")) {
-                                                                                m.replace("{if ($0 != null && $1 != null) instrumentation.apisurfaceanalysis.CallTrackerTransformer.handleFieldSetGet($0, $1, \""+callingMethodLibName+"\"); $_ = $proceed($$);}");
-                                                                        }
-                                                                        else if (calledMethodName.equals("get"))
-                                                                                m.replace("{if ($0 != null && $1 != null) instrumentation.apisurfaceanalysis.CallTrackerTransformer.handleFieldSetGet($0, $1, \""+callingMethodLibName+"\"); $_ = $proceed($$);}");
-                                                                }
-                                                                
-                                                                // setAccessible
-                                                                if (calledMethodName.equals("setAccessible") && methodCalledClassName.startsWith("java.lang.reflect")) {
-                                                                        m.replace("{if ($0 != null) instrumentation.apisurfaceanalysis.CallTrackerTransformer.handleSetAccessible($0, $1, \""+callingMethodLibName+"\", \""+methodCallerClassName+"::"+callingMethodName+callingDescriptorName+"\"); $_ = $proceed($$);}");
-                                                                }
-                                                                
-                                                                // ServiceLoader pattern
-                                                                if (calledMethodName.equals("load") && methodCalledClassName.contains("Service") && methodCalledClassName.contains("Loader")) {
-                                                                        m.replace("{$_ = $proceed($$); if ($_ != null && $1!=null) instrumentation.apisurfaceanalysis.CallTrackerTransformer.handleServiceLoaderPattern($_, $1);}");
-                                                                        return;
-                                                                }
-                                                                
-                                                                if (servicesInfo.values().stream().anyMatch(key -> key.implLibs.containsKey(methodCalledClassName))) {
-                                                                        ServicesInfoKey servicesInfoKey = servicesInfo.entrySet().stream().parallel()
-                                                                                      .filter(entry -> entry.getValue().implLibs.containsKey(methodCalledClassName))
-                                                                                      .map(Map.Entry::getKey).findAny().orElseGet(null);
-                                                                        if (!callingMethodLibName.equals(calledMethodLibName) && servicesInfo.get(servicesInfoKey).implMethodsNotInInterface.get(methodCalledClassName).contains(m.getMethod())) {
-                                                                                SPIInfoKey spiInfoKey = new SPIInfoKey(methodCallerClassName+"::"+callingMethodName+callingDescriptorName, callingMethodLibName, servicesInfoKey.interfaceName, servicesInfoKey.interfaceLib, methodCalledClassName+"::"+calledMethodName+calledDescriptorName, methodCalledClassName, calledMethodLibName);
-                                                                                spiInfo.add(spiInfoKey);
-                                                                        }
-                                                                }
-                                                                
-                                                                // class usage - Class.forName, ClassLoader.loadClass
-                                                                if ((calledMethodName.equals("forName") && methodCalledClassName.equals("java.lang.Class")) 
-                                                                                || (calledMethodName.equals("loadClass") && methodCalledClassName.equals("java.lang.ClassLoader"))) {
-                                                                        m.replace("{if ($1 != null) instrumentation.apisurfaceanalysis.CallTrackerTransformer.handleClassForNameUsage($1, \""+callingMethodLibName+"\"); $_ = $proceed($$);}");
-                                                                        return;
-                                                                }
-                                                                                
-                                                                // method invocations
-                                                                if(!calledMethodLibName.equals(unknownEntry.getKey())) {
-                                                                        int modifiers = m.getMethod().getModifiers();
-                                                        String mVisibility = javassist.Modifier.isPublic(modifiers) ? "public" : (javassist.Modifier.isPrivate(modifiers) ? "private" : (javassist.Modifier.isProtected(modifiers) ? "protected" : "default"));
-                                                                        String codeToAdd = "";
-                                                                        if (libsToClasses.get(runningLibrary).containsNode(methodCallerClassName) 
-                                                                                        && libsToClasses.get(runningLibrary).containsNode(methodCalledClassName)
-                                                                        && (javassist.Modifier.isPublic(modifiers) || javassist.Modifier.isProtected(modifiers))) {
-                                                                                // static
-                                                                                updateLibsToMethods(runningLibrary, methodCalledClassName, calledMethodName+calledDescriptorName);
-                                                                                // dynamic
-                                                                                if (!Modifier.isStatic(modifiers))
-                                                                                        codeToAdd = "if ($0 != null) instrumentation.apisurfaceanalysis.CallTrackerTransformer.updateLibsToMethods(\""+runningLibrary+"\", $0.getClass().getName(), \""+ calledMethodName+calledDescriptorName + "\");";
-                                                                        }
-
-                                                                        if (Modifier.isStatic(m.getMethod().getModifiers()))
-                                                                                m.replace("{if (instrumentation.apisurfaceanalysis.CallTrackerTransformer.checkAddCondition(\""+callingMethodLibName+"\", \""+calledMethodLibName+"\")) {"
-                                                                                        + "instrumentation.apisurfaceanalysis.CallTrackerTransformer.updateInterLibraryCounts(\"" + methodCallerClassName+"::"+callingMethodName+callingDescriptorName+"\",\"" + 
-                                                                                        callingMethodLibName+"\", \""+mVisibility+"\", \""+methodCalledClassName+"::"+calledMethodName+calledDescriptorName+"\", \"" + methodCalledClassName+"::"+calledMethodName+calledDescriptorName
-                                                                                        +"\", \"" + calledMethodLibName+"\", \"" + calledMethodLibName+"\", \""+callerClassVisibility+"\", 1, false, false, \"\");} $_ = $proceed($$);}");
-                                                                        else {
-                                                                                m.replace("{if ($0 != null)  { " + codeToAdd 
-                                                                                        + "instrumentation.apisurfaceanalysis.CallTrackerTransformer.addRuntimeType(\""+methodCallerClassName+"\", \""+callingMethodName+callingDescriptorName+
-                                                                                        "\", \""+methodCalledClassName+"::"+calledMethodName+calledDescriptorName+"\", \""+callingMethodLibName+"\", $0.getClass(), \""
-                                                                                        + calledMethodName+calledDescriptorName+"\", \""+mVisibility+"\", \""+calledMethodLibName+"\", $0);" 
-                                                                                        + "} $_ = $proceed($$);}");
-                                                                        }
-                                                                        } 
-                                                                } catch (NotFoundException nfe) {
-                                                                        System.out.println("Not Found "+nfe);
-                                                                } catch (CannotCompileException cce) {
-                                                                        System.out.println("Cannot Compile "+cce);
-                                                                } catch (Exception e) {
-                                                                        System.out.println("Exception while instrumenting "+e);
-                                                                        e.printStackTrace();
-                                                                }
+                        
+                                        // reflective field access
+                                        if (methodCalledClassName.equals("java.lang.reflect.Field")) {
+                                                if (calledMethodName.equals("set")) {
+                                                        m.replace("{if ($0 != null && $1 != null) instrumentation.apisurfaceanalysis.CallTrackerTransformer.handleFieldSetGet($0, $1, \""+callingMethodLibName+"\"); $_ = $proceed($$);}");
                                                 }
-
-                                    // 2. Field Accesses
-                                    public void edit(FieldAccess f) throws CannotCompileException {
-                                        try {
-                                                String fieldClass = f.getClassName();
-                                                String fieldLib = findLibrary(fieldClass);
-
-                                                SignatureAttribute sa = (SignatureAttribute) f.getField().getFieldInfo().getAttribute(SignatureAttribute.tag);
-                                                String sig;
-                                                                try {
-                                                                        sig = (sa == null) ? f.getSignature() : SignatureAttribute.toFieldSignature(sa.getSignature()).toString();
-                                                                } catch (BadBytecode e) {
-                                                                        sig = (sa == null) ? f.getSignature() : sa.getSignature();
-                                                                }
-                                                                try {
-                                                                        sig = Descriptor.toClassName(sig);
-                                                                } catch (Exception e) {}
-                                                                
-                                                int mods = f.getField().getModifiers();
-                                                String fieldVisibility = javassist.Modifier.isPublic(mods) ? "public" : (javassist.Modifier.isPrivate(mods) ? "private" : (javassist.Modifier.isProtected(mods) ? "protected" : "default"));
-                                                if (!fieldLib.equals(unknownEntry.getKey()) && !callingMethodLibName.equals(fieldLib)) {
-                                                        // Annotations - fields
-                                                        Object[] annotations = f.getField().getAnnotations();
-                                                                if (annotations!=null) {
-                                                                        for (Object annotationObj : annotations) {
-                                                                                String annotationName = annotationObj.getClass().getName();
-                                                                                String annotationLib = findLibrary(annotationName);
-                                                                                if (!annotationLib.equals(unknownEntry.getKey()) && !fieldLib.equals(annotationLib)) {
-                                                                                        int annMods = annotationObj.getClass().getModifiers();
-                                                                                        String annotationVisibility = Modifier.isPublic(annMods) ? "public" : (Modifier.isPrivate(annMods) ? "private" : (Modifier.isProtected(annMods) ? "protected" : "default"));
-                                                                                        InterLibraryAnnotationsKey fieldKey = new InterLibraryAnnotationsKey("-", "-", fieldClass+"::"+f.getField().getName()+":"+f.getSignature(), fieldLib, annotationName, annotationVisibility, annotationLib);
-                                                                                        interLibraryAnnotations.putIfAbsent(fieldKey, 0);
-                                                                                        interLibraryAnnotations.put(fieldKey, interLibraryCalls.get(fieldKey) + 1);
-                                                                        InterLibraryClassUsageKey interLibraryClassUsageKey = new InterLibraryClassUsageKey(annotationName, annotationVisibility, annotationLib, "annotation", fieldLib);
-                                                                        interLibraryClassUsage.add(interLibraryClassUsageKey);
-                                                                                }
-                                                                        }
-                                                                }
-                                                                
-                                                                if (f.isStatic()) {
-                                                                InterLibraryFieldsKey key = new InterLibraryFieldsKey(callingMethodLibName, fieldClass, fieldClass, fieldClass+"::"+f.getField().getName(), sig, f.isStatic(), fieldVisibility, fieldLib, false);
-                                                                interLibraryFields.putIfAbsent(key, 0);
-                                                                interLibraryFields.put(key, interLibraryFields.get(key) + 1);
-                                                        } else f.replace("{ if ($0 != null) instrumentation.apisurfaceanalysis.CallTrackerTransformer.handleFields(\""+callingMethodLibName+"\", \""
-                                                                +fieldClass+"\", $0.getClass().getName(), \""+f.getField().getName()+"\", \""+sig+"\", "+f.isStatic()+", \""+fieldVisibility+"\", \""+fieldLib+"\"); $_ = $proceed($$);}");
+                                                else if (calledMethodName.equals("get"))
+                                                        m.replace("{if ($0 != null && $1 != null) instrumentation.apisurfaceanalysis.CallTrackerTransformer.handleFieldSetGet($0, $1, \""+callingMethodLibName+"\"); $_ = $proceed($$);}");
+                                        }
+                                        
+                                        // setAccessible
+                                        if (calledMethodName.equals("setAccessible") && methodCalledClassName.startsWith("java.lang.reflect")) {
+                                                m.replace("{if ($0 != null) instrumentation.apisurfaceanalysis.CallTrackerTransformer.handleSetAccessible($0, $1, \""+callingMethodLibName+"\", \""+methodCallerClassName+"::"+callingMethodName+callingDescriptorName+"\"); $_ = $proceed($$);}");
+                                        }
+                                        
+                                        // ServiceLoader pattern
+                                        if (calledMethodName.equals("load") && methodCalledClassName.contains("Service") && methodCalledClassName.contains("Loader")) {
+                                                m.replace("{$_ = $proceed($$); if ($_ != null && $1!=null) instrumentation.apisurfaceanalysis.CallTrackerTransformer.handleServiceLoaderPattern($_, $1);}");
+                                                return;
+                                        }
+                                        
+                                        if (servicesInfo.values().stream().anyMatch(key -> key.implLibs.containsKey(methodCalledClassName))) {
+                                                ServicesInfoKey servicesInfoKey = servicesInfo.entrySet().stream().parallel()
+                                                              .filter(entry -> entry.getValue().implLibs.containsKey(methodCalledClassName))
+                                                              .map(Map.Entry::getKey).findAny().orElseGet(null);
+                                                if (!callingMethodLibName.equals(calledMethodLibName) && servicesInfo.get(servicesInfoKey).implMethodsNotInInterface.get(methodCalledClassName).contains(m.getMethod())) {
+                                                        SPIInfoKey spiInfoKey = new SPIInfoKey(methodCallerClassName+"::"+callingMethodName+callingDescriptorName, callingMethodLibName, servicesInfoKey.interfaceName, servicesInfoKey.interfaceLib, methodCalledClassName+"::"+calledMethodName+calledDescriptorName, methodCalledClassName, calledMethodLibName);
+                                                        spiInfo.add(spiInfoKey);
                                                 }
-                                                        } catch (NotFoundException e) {
-                                                                System.out.println(e);
-                                                        } catch (ClassNotFoundException e) {
-                                                                System.out.println(e);
-                                                        }
-                                    }
-                                    
-                                    // instantiations
-                                    public void edit(NewExpr newExpr) throws CannotCompileException {
-                                        String newExprLib = findLibrary(newExpr.getClassName());
-                                        if (!newExprLib.equals(unknownEntry.getKey()) && !callingMethodLibName.equals(newExprLib)) {
-                                                int mods = newExpr.getClass().getModifiers();
-                                                String newExprVisibility = Modifier.isPublic(mods) ? "public" : (Modifier.isPrivate(mods) ? "private" : (Modifier.isProtected(mods) ? "protected" : "default"));
+                                        }
+                                        
+                                        // class usage - Class.forName, ClassLoader.loadClass
+                                        if ((calledMethodName.equals("forName") && methodCalledClassName.equals("java.lang.Class")) 
+                                                        || (calledMethodName.equals("loadClass") && methodCalledClassName.equals("java.lang.ClassLoader"))) {
+                                                m.replace("{if ($1 != null) instrumentation.apisurfaceanalysis.CallTrackerTransformer.handleClassForNameUsage($1, \""+callingMethodLibName+"\"); $_ = $proceed($$);}");
+                                                return;
+                                        }
                                                         
-                                                InterLibraryClassUsageKey interLibraryClassUsageKey = new InterLibraryClassUsageKey(newExpr.getClassName(), newExprVisibility, newExprLib, "instantiation", callingMethodLibName);
+                                        // method invocations
+                                        if(!calledMethodLibName.equals(unknownEntry.getKey())) {
+                                                int modifiers = m.getMethod().getModifiers();
+                                                String mVisibility = javassist.Modifier.isPublic(modifiers) ? "public" : (javassist.Modifier.isPrivate(modifiers) ? "private" : (javassist.Modifier.isProtected(modifiers) ? "protected" : "default"));
+                                                String codeToAdd = "";
+                                                if (libsToClasses.get(runningLibrary).containsNode(methodCallerClassName) 
+                                                                && libsToClasses.get(runningLibrary).containsNode(methodCalledClassName)
+                                                && (javassist.Modifier.isPublic(modifiers) || javassist.Modifier.isProtected(modifiers))) {
+                                                        // static
+                                                        updateLibsToMethods(runningLibrary, methodCalledClassName, calledMethodName+calledDescriptorName);
+                                                        // dynamic
+                                                        if (!Modifier.isStatic(modifiers))
+                                                                codeToAdd = "if ($0 != null) instrumentation.apisurfaceanalysis.CallTrackerTransformer.updateLibsToMethods(\""+runningLibrary+"\", $0.getClass().getName(), \""+ calledMethodName+calledDescriptorName + "\");";
+                                                }
+
+                                                if (Modifier.isStatic(m.getMethod().getModifiers()))
+                                                        m.replace("{if (instrumentation.apisurfaceanalysis.CallTrackerTransformer.checkAddCondition(\""+callingMethodLibName+"\", \""+calledMethodLibName+"\")) {"
+                                                                + "instrumentation.apisurfaceanalysis.CallTrackerTransformer.updateInterLibraryCounts(\"" + methodCallerClassName+"::"+callingMethodName+callingDescriptorName+"\",\"" + 
+                                                                callingMethodLibName+"\", \""+mVisibility+"\", \""+methodCalledClassName+"::"+calledMethodName+calledDescriptorName+"\", \"" + methodCalledClassName+"::"+calledMethodName+calledDescriptorName
+                                                                +"\", \"" + calledMethodLibName+"\", \"" + calledMethodLibName+"\", \""+callerClassVisibility+"\", 1, false, false, \"\");} $_ = $proceed($$);}");
+                                                else {
+                                                        m.replace("{if ($0 != null)  { " + codeToAdd 
+                                                                + "instrumentation.apisurfaceanalysis.CallTrackerTransformer.addRuntimeType(\""+methodCallerClassName+"\", \""+callingMethodName+callingDescriptorName+
+                                                                "\", \""+methodCalledClassName+"::"+calledMethodName+calledDescriptorName+"\", \""+callingMethodLibName+"\", $0.getClass(), \""
+                                                                + calledMethodName+calledDescriptorName+"\", \""+mVisibility+"\", \""+calledMethodLibName+"\", $0);" 
+                                                                + "} $_ = $proceed($$);}");
+                                                }
+                                        	} 
+                                        } catch (NotFoundException nfe) {
+                                                System.out.println("Not Found "+nfe);
+                                        } catch (CannotCompileException cce) {
+                                                System.out.println("Cannot Compile "+cce);
+                                        } catch (Exception e) {
+                                                System.out.println("Exception while instrumenting "+e);
+                                                e.printStackTrace();
+                                        }
+                            }
+
+                            // 2. Field Accesses
+                            public void edit(FieldAccess f) throws CannotCompileException {
+                                try {
+                                        String fieldClass = f.getClassName();
+                                        String fieldLib = findLibrary(fieldClass);
+
+                                        SignatureAttribute sa = (SignatureAttribute) f.getField().getFieldInfo().getAttribute(SignatureAttribute.tag);
+                                        String sig;
+                                        try {
+                                                sig = (sa == null) ? f.getSignature() : SignatureAttribute.toFieldSignature(sa.getSignature()).toString();
+                                        } catch (BadBytecode e) {
+                                                sig = (sa == null) ? f.getSignature() : sa.getSignature();
+                                        }
+                                        try {
+                                                sig = Descriptor.toClassName(sig);
+                                        } catch (Exception e) {}
+                                                        
+                                        int mods = f.getField().getModifiers();
+                                        String fieldVisibility = javassist.Modifier.isPublic(mods) ? "public" : (javassist.Modifier.isPrivate(mods) ? "private" : (javassist.Modifier.isProtected(mods) ? "protected" : "default"));
+                                        if (!fieldLib.equals(unknownEntry.getKey()) && !callingMethodLibName.equals(fieldLib)) {
+                                                // Annotations - fields
+                                                Object[] annotations = f.getField().getAnnotations();
+                                                        if (annotations!=null) {
+                                                                for (Object annotationObj : annotations) {
+                                                                        String annotationName = annotationObj.getClass().getName();
+                                                                        String annotationLib = findLibrary(annotationName);
+                                                                        if (!annotationLib.equals(unknownEntry.getKey()) && !fieldLib.equals(annotationLib)) {
+                                                                                int annMods = annotationObj.getClass().getModifiers();
+                                                                                String annotationVisibility = Modifier.isPublic(annMods) ? "public" : (Modifier.isPrivate(annMods) ? "private" : (Modifier.isProtected(annMods) ? "protected" : "default"));
+                                                                                InterLibraryAnnotationsKey fieldKey = new InterLibraryAnnotationsKey("-", "-", fieldClass+"::"+f.getField().getName()+":"+f.getSignature(), fieldLib, annotationName, annotationVisibility, annotationLib);
+                                                                                interLibraryAnnotations.putIfAbsent(fieldKey, 0);
+                                                                                interLibraryAnnotations.put(fieldKey, interLibraryCalls.get(fieldKey) + 1);
+                                                                InterLibraryClassUsageKey interLibraryClassUsageKey = new InterLibraryClassUsageKey(annotationName, annotationVisibility, annotationLib, "annotation", fieldLib);
+                                                                interLibraryClassUsage.add(interLibraryClassUsageKey);
+                                                                        }
+                                                                }
+                                                        }
+                                                        
+                                                        if (f.isStatic()) {
+                                                        InterLibraryFieldsKey key = new InterLibraryFieldsKey(callingMethodLibName, fieldClass, fieldClass, fieldClass+"::"+f.getField().getName(), sig, f.isStatic(), fieldVisibility, fieldLib, false);
+                                                        interLibraryFields.putIfAbsent(key, 0);
+                                                        interLibraryFields.put(key, interLibraryFields.get(key) + 1);
+                                                } else f.replace("{ if ($0 != null) instrumentation.apisurfaceanalysis.CallTrackerTransformer.handleFields(\""+callingMethodLibName+"\", \""
+                                                        +fieldClass+"\", $0.getClass().getName(), \""+f.getField().getName()+"\", \""+sig+"\", "+f.isStatic()+", \""+fieldVisibility+"\", \""+fieldLib+"\"); $_ = $proceed($$);}");
+                                        }
+                                                } catch (NotFoundException e) {
+                                                        System.out.println(e);
+                                                } catch (ClassNotFoundException e) {
+                                                        System.out.println(e);
+                                                }
+                            }
+                            
+                            // instantiations
+                            public void edit(NewExpr newExpr) throws CannotCompileException {
+                                String newExprLib = findLibrary(newExpr.getClassName());
+                                if (!newExprLib.equals(unknownEntry.getKey()) && !callingMethodLibName.equals(newExprLib)) {
+                                        int mods = newExpr.getClass().getModifiers();
+                                        String newExprVisibility = Modifier.isPublic(mods) ? "public" : (Modifier.isPrivate(mods) ? "private" : (Modifier.isProtected(mods) ? "protected" : "default"));
+                                                
+                                        InterLibraryClassUsageKey interLibraryClassUsageKey = new InterLibraryClassUsageKey(newExpr.getClassName(), newExprVisibility, newExprLib, "instantiation", callingMethodLibName);
+                                        interLibraryClassUsage.add(interLibraryClassUsageKey);
+                                }
+                                if (servicesInfo.values().stream().anyMatch(key -> key.implLibs.containsKey(newExpr.getClassName()))) {
+                                        newExpr.replace("{$_ = $proceed($$); if ($_ != null) instrumentation.apisurfaceanalysis.CallTrackerTransformer.trackInstantiationsAndCasts($_, \"instantiation\");}");
+                                }
+                            }
+                            
+                            // casts
+                            public void edit(Cast c) throws CannotCompileException {
+                                try {
+                                        String castLib = findLibrary(c.getType().getName());
+                                        if (!castLib.equals(unknownEntry.getKey()) && !callingMethodLibName.equals(castLib)) {
+                                                int mods = c.getType().getModifiers();
+                                                String castVisibility = Modifier.isPublic(mods) ? "public" : (Modifier.isPrivate(mods) ? "private" : (Modifier.isProtected(mods) ? "protected" : "default"));
+                                                        
+                                                InterLibraryClassUsageKey interLibraryClassUsageKey = new InterLibraryClassUsageKey(c.getType().getName(), castVisibility, castLib, "cast", callingMethodLibName);
                                                 interLibraryClassUsage.add(interLibraryClassUsageKey);
                                         }
-                                        if (servicesInfo.values().stream().anyMatch(key -> key.implLibs.containsKey(newExpr.getClassName()))) {
-                                                newExpr.replace("{$_ = $proceed($$); if ($_ != null) instrumentation.apisurfaceanalysis.CallTrackerTransformer.trackInstantiationsAndCasts($_, \"instantiation\");}");
+                                        if (servicesInfo.values().stream().anyMatch(key -> {
+                                                                        try {
+                                                                                return key.implLibs.containsKey(c.getType().getName());
+                                                                        } catch (NotFoundException e) {
+                                                                                return false;
+                                                                        }
+                                                        })) {
+                                                c.replace("{$_ = $proceed($$); if ($_ != null) instrumentation.apisurfaceanalysis.CallTrackerTransformer.trackInstantiationsAndCasts($_, \"cast\");}");
                                         }
-                                    }
-                                    
-                                    // casts
-                                    public void edit(Cast c) throws CannotCompileException {
-                                        try {
-                                                String castLib = findLibrary(c.getType().getName());
-                                                if (!castLib.equals(unknownEntry.getKey()) && !callingMethodLibName.equals(castLib)) {
-                                                        int mods = c.getType().getModifiers();
-                                                        String castVisibility = Modifier.isPublic(mods) ? "public" : (Modifier.isPrivate(mods) ? "private" : (Modifier.isProtected(mods) ? "protected" : "default"));
-                                                                
-                                                        InterLibraryClassUsageKey interLibraryClassUsageKey = new InterLibraryClassUsageKey(c.getType().getName(), castVisibility, castLib, "cast", callingMethodLibName);
-                                                        interLibraryClassUsage.add(interLibraryClassUsageKey);
-                                                }
-                                                if (servicesInfo.values().stream().anyMatch(key -> {
-                                                                                try {
-                                                                                        return key.implLibs.containsKey(c.getType().getName());
-                                                                                } catch (NotFoundException e) {
-                                                                                        return false;
-                                                                                }
-                                                                })) {
-                                                        c.replace("{$_ = $proceed($$); if ($_ != null) instrumentation.apisurfaceanalysis.CallTrackerTransformer.trackInstantiationsAndCasts($_, \"cast\");}");
-                                                }
-                                        } catch (NotFoundException e) {}
-                                    }
-                                                        
-                                });
+                                } catch (NotFoundException e) {}
+                            }                           
+                        });
                 }
         }
         

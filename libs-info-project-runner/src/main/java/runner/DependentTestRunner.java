@@ -254,7 +254,7 @@ public class DependentTestRunner {
 		request.setPomFile(pomFile);
 		request.setGoals(Arrays.asList("test")); 
 		request.setMavenOpts("-Dlicense.skipCheckLicense=true -Dlicense.skip=true -Drat.skip=true -Dmaven.test.skip=false -Dgpg.skip=true -Dmaven.buildNumber.doCheck=false");
-		//request.setJavaHome(new File(javaHomes.get(javaVersion)));
+		request.setJavaHome(new File(javaHomes.get(javaVersion)));
 		
 		// parse pom and get existing argLine param
 		String argLine = "";
