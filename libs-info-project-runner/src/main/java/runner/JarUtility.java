@@ -70,7 +70,7 @@ public class JarUtility {
             	ArrayList<Object> libVals = libsToCountsAndClasses.get(libName);
             	libVals.set(0, (Integer)libVals.get(0) + (Integer)countsAndClasses.get(0));
             	libVals.set(1, 0);
-            	libVals.set(2, ((String)libVals.get(2)).concat((String)countsAndClasses.get(1)));
+            	libVals.set(2, ((String)libVals.get(2)).concat((String)countsAndClasses.get(2)));
         	}
         	addToLibsInfo((String) projectObject.get("libName"));
         }
