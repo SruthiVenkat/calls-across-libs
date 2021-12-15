@@ -100,8 +100,7 @@ public class DependentTestRunner {
             if (!outputDir.exists())
             	outputDir.mkdir();
 
-            JAVA_OPTS =  "-javaagent:"+agentPath+" -Xbootclasspath/a:"+javassistJarPath+":"+agentPath
-            		+":"+"/Users/sruthivenkat/.m2/repository/mysql/mysql-connector-java/8.0.21";
+            JAVA_OPTS =  "-javaagent:"+agentPath+" -Xbootclasspath/a:"+javassistJarPath+":"+agentPath;
         } catch (IOException ex) {
             ex.printStackTrace();
         }
