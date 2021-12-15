@@ -286,6 +286,7 @@ public class CallTrackerTransformer implements ClassFileTransformer {
                     						if (superCls == null) {
                     							overriddenMethod = classPool.get("java.lang.Object").getDeclaredMethod(calledMethodName);
                     						} else {
+                    							System.out.println("===>"+calledMethodName+"===>"+methodCalledClassName+"===>"+superCls.getName());
                     							overriddenMethod = superCls.getDeclaredMethod(calledMethodName);
                     						}
                     						if (overriddenMethod!=null && overriddenMethod.getDeclaringClass().getName().startsWith("java.")) {
@@ -349,7 +350,8 @@ public class CallTrackerTransformer implements ClassFileTransformer {
                                                 int modifiers = m.getMethod().getModifiers();
                                                 String mVisibility = javassist.Modifier.isPublic(modifiers) ? "public" : (javassist.Modifier.isPrivate(modifiers) ? "private" : (javassist.Modifier.isProtected(modifiers) ? "protected" : "default"));
                                                 String codeToAdd = "";
-                                                if (libsToClasses.get(runningLibrary).containsNode(methodCallerClassName) 
+                                                if (libsToClasses.get(runningLibrary)!=null
+                                                		&& libsToClasses.get(runningLibrary).containsNode(methodCallerClassName) 
                                                                 && libsToClasses.get(runningLibrary).containsNode(methodCalledClassName)
                                                 && (javassist.Modifier.isPublic(modifiers) || javassist.Modifier.isProtected(modifiers))) {
                                                         // static
