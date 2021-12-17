@@ -77,9 +77,9 @@ public class CallTrackerTransformer implements ClassFileTransformer {
                         BufferedReader reader = new BufferedReader(new FileReader(libsInfoPath));
                         while ((row = reader.readLine()) != null) {
                             String[] data = row.split("\t");
-                            if (data.length >= 8) {
+                            if (data.length >= 4) {
                                 TrieUtil t = new TrieUtil();
-                                for (String str : data[7].split(":"))
+                                for (String str : data[3].split(":"))
                                         t.insert(str);
                                 libsToClasses.put(data[0], t);
                             }
@@ -286,8 +286,11 @@ public class CallTrackerTransformer implements ClassFileTransformer {
                     						if (superCls == null) {
                     							overriddenMethod = classPool.get("java.lang.Object").getDeclaredMethod(calledMethodName);
                     						} else {
-                    							System.out.println("===>"+calledMethodName+"===>"+methodCalledClassName+"===>"+superCls.getName());
-                    							overriddenMethod = superCls.getDeclaredMethod(calledMethodName);
+	                							try {
+	                								overriddenMethod = superCls.getDeclaredMethod(calledMethodName);
+	                							} catch (NotFoundException e) {
+	                								// superclass does not have the method
+												}
                     						}
                     						if (overriddenMethod!=null && overriddenMethod.getDeclaringClass().getName().startsWith("java.")) {
                     							return;
@@ -295,7 +298,7 @@ public class CallTrackerTransformer implements ClassFileTransformer {
                     					} catch (NotFoundException e1) {
                     						e1.printStackTrace();
                     					}
-                                        
+                                       
                                         if (calledMethodName.equals("invoke") && methodCalledClassName.equals("java.lang.reflect.Method")) {
                                                 boolean invocationHandler = Arrays.stream(method.getDeclaringClass().getInterfaces()).anyMatch(impl -> impl.getName().equals("java.lang.reflect.InvocationHandler"));
                                                 if (invocationHandler) {
@@ -351,9 +354,9 @@ public class CallTrackerTransformer implements ClassFileTransformer {
                                                 String mVisibility = javassist.Modifier.isPublic(modifiers) ? "public" : (javassist.Modifier.isPrivate(modifiers) ? "private" : (javassist.Modifier.isProtected(modifiers) ? "protected" : "default"));
                                                 String codeToAdd = "";
                                                 if (libsToClasses.get(runningLibrary)!=null
-                                                		&& libsToClasses.get(runningLibrary).containsNode(methodCallerClassName) 
-                                                                && libsToClasses.get(runningLibrary).containsNode(methodCalledClassName)
-                                                && (javassist.Modifier.isPublic(modifiers) || javassist.Modifier.isProtected(modifiers))) {
+                                                    && libsToClasses.get(runningLibrary).containsNode(methodCallerClassName) 
+                                                    && libsToClasses.get(runningLibrary).containsNode(methodCalledClassName)
+                                                    && (javassist.Modifier.isPublic(modifiers) || javassist.Modifier.isProtected(modifiers))) {
                                                         // static
                                                         updateLibsToMethods(runningLibrary, methodCalledClassName, calledMethodName+calledDescriptorName);
                                                         // dynamic
@@ -416,8 +419,8 @@ public class CallTrackerTransformer implements ClassFileTransformer {
                                                                                 InterLibraryAnnotationsKey fieldKey = new InterLibraryAnnotationsKey("-", "-", fieldClass+"::"+f.getField().getName()+":"+f.getSignature(), fieldLib, annotationName, annotationVisibility, annotationLib);
                                                                                 interLibraryAnnotations.putIfAbsent(fieldKey, 0);
                                                                                 interLibraryAnnotations.put(fieldKey, interLibraryCalls.get(fieldKey) + 1);
-                                                                InterLibraryClassUsageKey interLibraryClassUsageKey = new InterLibraryClassUsageKey(annotationName, annotationVisibility, annotationLib, "annotation", fieldLib);
-                                                                interLibraryClassUsage.add(interLibraryClassUsageKey);
+				                                                                InterLibraryClassUsageKey interLibraryClassUsageKey = new InterLibraryClassUsageKey(annotationName, annotationVisibility, annotationLib, "annotation", fieldLib);
+				                                                                interLibraryClassUsage.add(interLibraryClassUsageKey);
                                                                         }
                                                                 }
                                                         }
@@ -598,7 +601,7 @@ public class CallTrackerTransformer implements ClassFileTransformer {
                                 servicesInfo.put(servicesInfoKey, servicesInfoValue);
                         } else {
                                 for (String impl: implsToMethods.keySet())
-                                	if (implsToMethods.containsKey(impl))
+                                	if (implsToMethods.containsKey(impl) && implsToMethods.get(impl)!=null)
                                         servicesInfo.get(servicesInfoKey).implMethodsNotInInterface.get(impl)
                                                         .addAll(implsToMethods.get(impl));
                         }
