@@ -111,7 +111,7 @@ public class CallTrackerAgent {
                         if (rowString!=null) {
                             String[] data = rowString.split("\t");
                             if (CallTrackerTransformer.libsToMethods.containsKey(data[0]))
-                                data[5] = String.valueOf(CallTrackerTransformer.libsToMethods.get(data[0]).size());
+                                data[2] = String.valueOf(CallTrackerTransformer.libsToMethods.get(data[0]).size());
                             writer2.write(String.join("\t", data)+"\n");
                         }
                     }
