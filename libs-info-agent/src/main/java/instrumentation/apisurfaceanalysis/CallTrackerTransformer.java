@@ -295,9 +295,7 @@ public class CallTrackerTransformer implements ClassFileTransformer {
                     						if (overriddenMethod!=null && overriddenMethod.getDeclaringClass().getName().startsWith("java.")) {
                     							return;
                     						}
-                    					} catch (NotFoundException e1) {
-                    						e1.printStackTrace();
-                    					}
+                    					} catch (NotFoundException e1) { }
                                        
                                         if (calledMethodName.equals("invoke") && methodCalledClassName.equals("java.lang.reflect.Method")) {
                                                 boolean invocationHandler = Arrays.stream(method.getDeclaringClass().getInterfaces()).anyMatch(impl -> impl.getName().equals("java.lang.reflect.InvocationHandler"));
