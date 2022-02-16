@@ -15,6 +15,7 @@ import java.nio.file.Paths;
 import java.security.ProtectionDomain;
 import java.util.AbstractMap;
 import java.util.Arrays;
+import java.util.EnumMap;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
@@ -43,8 +44,18 @@ import javassist.expr.MethodCall;
 import javassist.expr.NewExpr;
 
 public class CallTrackerTransformer implements ClassFileTransformer {
-        public static Map<String, TrieUtil> libsToClasses = new HashMap<String, TrieUtil>();
-        public static String runningLibrary; 
+        static Map<String, TrieUtil> libsToClasses = new HashMap<String, TrieUtil>();
+        static String runningLibrary;
+        static Entry<String, TrieUtil> unknownEntry = new AbstractMap.SimpleEntry<String, TrieUtil>("unknownLib", new TrieUtil());
+        static Map<String, String> classesToLibs = new HashMap<String, String>();
+        static ConcurrentHashMap<Long, String> reflectiveCaller = new ConcurrentHashMap<Long, String>();
+        static ConcurrentHashMap<Long, String> dynProxyCaller = new ConcurrentHashMap<Long, String>();
+        static ConcurrentHashMap<Object, String> trackedObjs = new ConcurrentHashMap<Object, String>();
+        static ClassLoader classLoader;
+        static ClassPool classPool;
+        static boolean servicesInfoInitiated = false;
+        
+        // info that is eventually stored in TSVs
         public static Map<String, HashSet<String>> libsToMethods = new HashMap<String, HashSet<String>>();
         public static ConcurrentHashMap<InterLibraryCallsKey, Integer> interLibraryCalls = new ConcurrentHashMap<InterLibraryCallsKey, Integer>();
         public static ConcurrentHashMap<InterLibraryFieldsKey, Integer> interLibraryFields = new ConcurrentHashMap<InterLibraryFieldsKey, Integer>();
@@ -52,22 +63,26 @@ public class CallTrackerTransformer implements ClassFileTransformer {
         public static ConcurrentHashMap<InterLibraryAnnotationsKey, Integer> interLibraryAnnotations = new ConcurrentHashMap<InterLibraryAnnotationsKey, Integer>();
         public static Set<InterLibraryClassUsageKey> interLibraryClassUsage = new HashSet<InterLibraryClassUsageKey>();
         public static Set<SetAccessibleCallsKey> setAccessibleCallsInfo = new HashSet<SetAccessibleCallsKey>();
-        public static Entry<String, TrieUtil> unknownEntry = new AbstractMap.SimpleEntry<String, TrieUtil>("unknownLib", new TrieUtil());
-        public static Map<String, String> classesToLibs = new HashMap<String, String>();
-        public static ConcurrentHashMap<Long, String> reflectiveCaller = new ConcurrentHashMap<Long, String>();
-        public static ConcurrentHashMap<Long, String> dynProxyCaller = new ConcurrentHashMap<Long, String>();
         public static ConcurrentHashMap<ServicesInfoKey, ServicesInfoValue> servicesInfo = new ConcurrentHashMap<ServicesInfoKey, ServicesInfoValue>();
         public static Set<SPIInfoKey> spiInfo = new HashSet<SPIInfoKey>();
-        public static ConcurrentHashMap<Object, String> trackedObjs = new ConcurrentHashMap<Object, String>();
-        public static ClassLoader classLoader;
-        public static ClassPool classPool;
-        public static boolean servicesInfoInitiated = false;
+       
+        // labels for edges
+        enum Label { CLIENTTOLIB, LIBTOCLIENT, LIBTOLIB };
+    	static EnumMap<Label, String> labelMap = new EnumMap<Label, String>(Label.class);
 
         public CallTrackerTransformer() {
+        		// initialize map for labels
+	        	labelMap.put(Label.CLIENTTOLIB, "ClientToLib");
+	        	labelMap.put(Label.LIBTOCLIENT, "LibToClient");
+	        	labelMap.put(Label.LIBTOLIB, "LibToLib");
+        	
+        		// get config file path
                 Path configPath = Paths.get(new File(".").getAbsolutePath());
                 while (!configPath.endsWith("calls-across-libs"))
                         configPath = configPath.getParent();
                 String configPathName = configPath.toString()+"/src/main/resources/config.properties";
+                
+                // read mapping of libraries to classes and services info
                 try (FileReader input = new FileReader(configPathName)) {
                         Properties prop = new Properties();
                         prop.load(input); 
@@ -245,7 +260,7 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 	                String callerClassVisibility = javassist.Modifier.isPublic(callerClassMods) ? "public" : (javassist.Modifier.isPrivate(callerClassMods) ? "private" : (javassist.Modifier.isProtected(callerClassMods) ? "protected" : "default"));
 		                
 	                // reflective calls
-	                method.insertBefore("{if (!instrumentation.apisurfaceanalysis.CallTrackerTransformer.reflectiveCaller.isEmpty()) instrumentation.apisurfaceanalysis.CallTrackerTransformer.getStackTrace(\""+methodCallerClassName+"::"+callingMethodName+callingDescriptorName+"\", \""+callingMethodLibName+"\", \""+methodVisibility+"\", \""+callerClassVisibility+"\");}");
+	                method.insertBefore("{instrumentation.apisurfaceanalysis.CallTrackerTransformer.getStackTrace(\""+methodCallerClassName+"::"+callingMethodName+callingDescriptorName+"\", \""+callingMethodLibName+"\", \""+methodVisibility+"\", \""+callerClassVisibility+"\");}");
 	
 	                // Annotations - methods
 	                Object[] methodAnnotations = method.getAnnotations();
@@ -361,13 +376,24 @@ public class CallTrackerTransformer implements ClassFileTransformer {
                                                         if (!Modifier.isStatic(modifiers))
                                                                 codeToAdd = "if ($0 != null) instrumentation.apisurfaceanalysis.CallTrackerTransformer.updateLibsToMethods(\""+runningLibrary+"\", $0.getClass().getName(), \""+ calledMethodName+calledDescriptorName + "\");";
                                                 }
-
-                                                if (Modifier.isStatic(m.getMethod().getModifiers()))
+                          
+                                                String label = callingMethodLibName.equals(runningLibrary) ? labelMap.get(Label.CLIENTTOLIB)
+                                                				: (calledMethodLibName.equals(runningLibrary) ? labelMap.get(Label.LIBTOCLIENT) : labelMap.get(Label.LIBTOLIB));
+                                                
+                                                // static
+                                                if (checkAddCondition(callingMethodLibName, calledMethodLibName)) {
+                                                		instrumentation.apisurfaceanalysis.CallTrackerTransformer.updateInterLibraryCounts(methodCallerClassName+"::"+callingMethodName+callingDescriptorName,
+	                                                        callingMethodLibName, mVisibility, methodCalledClassName+"::"+calledMethodName+calledDescriptorName, "-",
+	                                                        calledMethodLibName, "-", callerClassVisibility, 1, false, false, label);
+                                                }
+                                                
+                                                // dynamic
+                                                if (Modifier.isStatic(m.getMethod().getModifiers())) {
                                                         m.replace("{if (instrumentation.apisurfaceanalysis.CallTrackerTransformer.checkAddCondition(\""+callingMethodLibName+"\", \""+calledMethodLibName+"\")) {"
                                                                 + "instrumentation.apisurfaceanalysis.CallTrackerTransformer.updateInterLibraryCounts(\"" + methodCallerClassName+"::"+callingMethodName+callingDescriptorName+"\",\"" + 
                                                                 callingMethodLibName+"\", \""+mVisibility+"\", \""+methodCalledClassName+"::"+calledMethodName+calledDescriptorName+"\", \"" + methodCalledClassName+"::"+calledMethodName+calledDescriptorName
-                                                                +"\", \"" + calledMethodLibName+"\", \"" + calledMethodLibName+"\", \""+callerClassVisibility+"\", 1, false, false, \"\");} $_ = $proceed($$);}");
-                                                else {
+                                                                +"\", \"" + calledMethodLibName+"\", \"" + calledMethodLibName+"\", \""+callerClassVisibility+"\", 1, false, false, \""+label+"\");} $_ = $proceed($$);}");
+                                                } else {
                                                         m.replace("{if ($0 != null)  { " + codeToAdd 
                                                                 + "instrumentation.apisurfaceanalysis.CallTrackerTransformer.addRuntimeType(\""+methodCallerClassName+"\", \""+callingMethodName+callingDescriptorName+
                                                                 "\", \""+methodCalledClassName+"::"+calledMethodName+calledDescriptorName+"\", \""+callingMethodLibName+"\", $0.getClass(), \""
@@ -498,15 +524,17 @@ public class CallTrackerTransformer implements ClassFileTransformer {
                 if (actualMethodCalledClassName.startsWith("com.sun.proxy.$Proxy"))
                         instrumentation.apisurfaceanalysis.CallTrackerTransformer.dynProxyCaller.put(Thread.currentThread().getId(), virtualCalleeMethod);
 
-                String serviceBypass = "";
+                String serviceBypass = callingMethodLibName.equals(runningLibrary) ? labelMap.get(Label.CLIENTTOLIB)
+        				: (actualCalledMethodLibName.equals(runningLibrary) ? labelMap.get(Label.LIBTOCLIENT) : labelMap.get(Label.LIBTOLIB));
+                
                 if (!callingMethodName.equals("hashCode()I") 
                                 && !callingMethodName.equals("equals(Ljava/lang/Object;)Z")) {
-                Object trackedObj = instrumentation.apisurfaceanalysis.CallTrackerTransformer.trackedObjs.keySet().stream().filter(o -> o.equals(obj))
-                                .findAny().orElse(null);
-                if (trackedObj!=null) {
-                        if (virtualCalleeMethod.equals(actualMethodCalledClassName+"::"+actualCalledMethodName))
-                        serviceBypass = trackedObjs.get(trackedObj);
-                }
+		                Object trackedObj = instrumentation.apisurfaceanalysis.CallTrackerTransformer.trackedObjs.keySet().stream().filter(o -> o.equals(obj))
+		                                .findAny().orElse(null);
+		                if (trackedObj!=null) {
+		                        if (virtualCalleeMethod.equals(actualMethodCalledClassName+"::"+actualCalledMethodName))
+		                        serviceBypass = trackedObjs.get(trackedObj)+","+labelMap.get(Label.CLIENTTOLIB);
+		                }
                 }
 
                 if (checkAddCondition(callingMethodLibName, actualCalledMethodLibName)) {
@@ -516,9 +544,9 @@ public class CallTrackerTransformer implements ClassFileTransformer {
         }
         
         public static void updateReflectiveCaller(long threadID, String callerMethodName, String callerClassName, Object invokedOn) {
-        String serviceBypass = "";
+        		String serviceBypass = "";
                 if (servicesInfo.values().stream().anyMatch(key -> key.implLibs.containsKey(((Method)invokedOn).getDeclaringClass().getName())))
-                serviceBypass = "reflection";
+                serviceBypass = "reflection,"+labelMap.get(Label.LIBTOCLIENT);
                 instrumentation.apisurfaceanalysis.CallTrackerTransformer.reflectiveCaller.put(threadID, callerMethodName+":"+callerClassName+"\t"+serviceBypass);
         }
         
@@ -629,18 +657,47 @@ public class CallTrackerTransformer implements ClassFileTransformer {
         }
         
         public static void getStackTrace(String calleeMethodName, String calleeLib, String calleeVisibility, String callerClassVisibility) {
-                long currentThreadID = Thread.currentThread().getId();
+        		if (instrumentation.apisurfaceanalysis.CallTrackerTransformer.reflectiveCaller.isEmpty())
+        			return;
+        		long currentThreadID = Thread.currentThread().getId();
                 if (!instrumentation.apisurfaceanalysis.CallTrackerTransformer.reflectiveCaller.containsKey(currentThreadID))
-                        return;
+                    return;
+                
+                StackTraceElement[] stes = Thread.currentThread().getStackTrace();
+                for (int i=2; i<stes.length; i++) {
+                	if (stes[i].getMethodName().equals("invoke0")) {
+                		String calleeMethodNameString = calleeMethodName.split(":")[2];
+                		calleeMethodNameString = calleeMethodNameString.split("\\(")[0];
+                		if (!calleeMethodNameString.equals(stes[i-1].getMethodName())) {
+                			
+                			String className = stes[i-1].getClassName();
+                            String methodName = stes[i-1].getMethodName();
+                            String descriptor = "";
+                            try {descriptor = NameUtility.getDescriptor(Class.forName(className, false, classLoader).getMethod(methodName));} catch (Exception e) { }
+                            calleeMethodName = className+"::"+methodName+descriptor;
+                            calleeLib = findLibrary(className);
+                            try {
+                            	int calleeClassMods = Class.forName(className, false, ClassLoader.getSystemClassLoader()).getModifiers();
+                                calleeVisibility = Modifier.isPublic(calleeClassMods) ? "public" : (Modifier.isPrivate(calleeClassMods) ? "private" : (Modifier.isProtected(calleeClassMods) ? "protected" : "default"));
+                            } catch (Exception e) { }                                  
+                		}
+                		break;
+                	}
+                }
+
                 String [] reflData = instrumentation.apisurfaceanalysis.CallTrackerTransformer.reflectiveCaller.get(currentThreadID).split("\t");
                 String[] caller = reflData[0].split(":");
                 instrumentation.apisurfaceanalysis.CallTrackerTransformer.reflectiveCaller.remove(currentThreadID);
                 String callerMethodName = caller[0];
                 String callerClassName = caller[1];
                 String callerLib = findLibrary(callerClassName);
+                
+                String label = callerLib.equals(runningLibrary) ? labelMap.get(Label.CLIENTTOLIB)
+        				: (calleeLib.equals(runningLibrary) ? labelMap.get(Label.LIBTOCLIENT) : labelMap.get(Label.LIBTOLIB));
+                
                 if (checkAddCondition(callerLib, calleeLib))
                         updateInterLibraryCounts(callerClassName+"::"+callerMethodName, callerLib, calleeVisibility, calleeMethodName, 
-                                        calleeMethodName, calleeLib, calleeLib, callerClassVisibility, 1, true, false, reflData.length>1 ? reflData[1] : "");
+                                        calleeMethodName, calleeLib, calleeLib, callerClassVisibility, 1, true, false, reflData.length>1 ? reflData[1]+","+label : label);
         }
         
         public static void handleFieldSetGet(Object field, Object actualObj, String callingMethodLibName) {

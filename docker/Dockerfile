@@ -1,5 +1,4 @@
 FROM ubuntu:21.04
-VOLUME /calls-across-libs
 
 # prepare , install some utils
 RUN apt-get --yes --force-yes update && \
@@ -10,8 +9,9 @@ apt install unzip && \
 apt install zip && \
 apt-get --yes --force-yes install jq && \
 
-# install Java 11 and 8
+# install Java 11 and 8, set to Java 8
 apt-get update && apt-get install -y openjdk-11-jdk && apt-get install -y openjdk-8-jdk && \
+update-alternatives --set java /usr/lib/jvm/java-8-openjdk-arm64/jre/bin/java
 
 # install git and build tools
 apt-get --yes --force-yes install maven && \
@@ -41,6 +41,8 @@ ENV LC_ALL en_US.UTF-8
 ENV JAVA_OPTS="-Xms4096M -Xmx4096M"
 
 CMD cd /calls-across-libs/libs-info-project-runner && sh getrepos.sh && \
+
+cd /calls-across-libs/libs-info-project-runner/projects && chmod -R 777 . && \
 
 # clearing api-surface-data, new data goes there
 cd /calls-across-libs/libs-info-project-runner && rm -rf api-surface-data && \

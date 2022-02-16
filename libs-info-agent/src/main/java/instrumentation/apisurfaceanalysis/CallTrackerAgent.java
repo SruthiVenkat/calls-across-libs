@@ -44,10 +44,10 @@ public class CallTrackerAgent {
                     System.out.println("Adding results to tsv");
                     FileWriter writer = new FileWriter(invocationsOutputPath, true);    
                     if (new File(invocationsOutputPath).length() == 0)
-                        writer.write("Caller Method\tCaller Library\tCallee Visibility\tDeclared Callee Method\tDeclared Callee Library\tActual Callee Method\tActual Callee Library\tCount\tReflective\tDynamicProxy\tService Bypass\n");
+                        writer.write("Caller Method\tCaller Library\tCallee Visibility\tDeclared Callee Method\tDeclared Callee Library\tActual Callee Method\tActual Callee Library\tCount\tReflective\tDynamicProxy\tLabel\n");
                     for (InterLibraryCallsKey ilcKey: CallTrackerTransformer.interLibraryCalls.keySet()) {
                         writer.write(ilcKey.callerMethodString+"\t"+ ilcKey.callerMethodLibString+"\t"+ ilcKey.calleeVisibilityString+"\t"+ilcKey.virtualCalleeMethodString+"\t"+ilcKey.virtualCalleeMethodLibString
-                                +"\t"+ilcKey.actualCalleeMethodString+"\t"+ilcKey.actualCalleeMethodLibString+"\t"+CallTrackerTransformer.interLibraryCalls.get(ilcKey)+"\t"+ilcKey.reflective+"\t"+ilcKey.dynamicProxy+"\t"+ilcKey.serviceBypass+"\n");
+                                +"\t"+ilcKey.actualCalleeMethodString+"\t"+ilcKey.actualCalleeMethodLibString+"\t"+CallTrackerTransformer.interLibraryCalls.get(ilcKey)+"\t"+ilcKey.reflective+"\t"+ilcKey.dynamicProxy+"\t"+ilcKey.label+"\n");
                     }
                     writer.flush();
                     writer.close();
