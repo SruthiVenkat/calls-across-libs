@@ -11,7 +11,7 @@ apt-get --yes --force-yes install jq && \
 
 # install Java 11 and 8, set to Java 8
 apt-get update && apt-get install -y openjdk-11-jdk && apt-get install -y openjdk-8-jdk && \
-update-alternatives --set java /usr/lib/jvm/java-8-openjdk-arm64/jre/bin/java
+update-alternatives --set java /usr/lib/jvm/java-8-openjdk-arm64/jre/bin/java && \
 
 # install git and build tools
 apt-get --yes --force-yes install maven && \
