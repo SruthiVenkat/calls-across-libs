@@ -1,0 +1,14 @@
+	com.alibaba.fastjson	com.alibaba.fastjson.annotation	com.alibaba.fastjson.asm	com.alibaba.fastjson.parser	com.alibaba.fastjson.parser.deserializer	com.alibaba.fastjson.serializer	com.alibaba.fastjson.spi	com.alibaba.fastjson.support.config	com.alibaba.fastjson.support.geo	com.alibaba.fastjson.support.hsf	com.alibaba.fastjson.support.jaxrs	com.alibaba.fastjson.support.moneta	com.alibaba.fastjson.support.retrofit	com.alibaba.fastjson.support.spring	com.alibaba.fastjson.support.spring.annotation	com.alibaba.fastjson.support.spring.messaging	com.alibaba.fastjson.support.springfox	com.alibaba.fastjson.util
+com.alibaba:fastjson	14	0	24	16	20	16	0	28	33	0	0	24	0	27	0	0	27	18
+com.weibo:motan-core	2	0	5	4	4	3	0	7	6	0	0	5	0	5	0	0	5	4
+org.apache.cxf:cxf-rt-frontend-jaxrs	4	0	8	6	6	6	0	4	8	0	2	8	0	8	0	0	8	6
+org.apache.rocketmq:rocketmq-acl	1	0	3	2	2	2	0	4	3	0	0	3	0	3	0	0	3	2
+org.apache.rocketmq:rocketmq-common	1	0	3	2	2	2	0	4	3	0	0	3	0	3	0	0	3	2
+org.apache.rocketmq:rocketmq-remoting	1	0	3	2	2	2	0	4	3	0	0	3	0	3	0	0	3	2
+org.glassfish.jersey.core:jersey-common	4	0	8	6	6	6	0	4	8	0	2	8	0	8	0	0	8	6
+org.springframework:spring-context	2	0	3	3	3	2	0	2	4	0	0	3	0	1	0	0	3	2
+org.springframework:spring-messaging	2	0	4	3	3	3	0	2	4	0	0	4	0	4	0	1	4	3
+org.springframework:spring-web	4	0	6	6	6	4	0	4	8	0	0	6	0	2	0	0	6	4
+org.springframework:spring-webmvc	6	0	9	9	9	6	0	6	12	0	0	9	0	3	0	0	9	6
+org.springframework:spring-websocket	2	0	3	3	3	2	0	2	4	0	0	3	0	1	0	0	3	2
+us.codecraft:webmagic-core	1	0	3	2	2	2	0	4	3	0	0	3	0	3	0	0	3	2
