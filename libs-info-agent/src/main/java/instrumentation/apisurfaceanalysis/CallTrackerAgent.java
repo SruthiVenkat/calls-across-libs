@@ -9,6 +9,8 @@ import java.io.IOException;
 import java.lang.instrument.Instrumentation;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Properties;
 
 /**
@@ -32,7 +34,8 @@ public class CallTrackerAgent {
                 try (FileReader input = new FileReader(configPathName)) {
                     Properties prop = new Properties();
                     prop.load(input);
-                    String invocationsOutputPath = prop.getProperty("invocationsOutputPath");
+                    String dynamicInvocationsOutputPath = prop.getProperty("dynamicInvocationsOutputPath");
+                    String staticInvocationsOutputPath = prop.getProperty("staticInvocationsOutputPath");
                     String fieldsOutputPath = prop.getProperty("fieldsOutputPath");
                     String subtypingOutputPath = prop.getProperty("subtypingOutputPath");
                     String annotationsOutputPath = prop.getProperty("annotationsOutputPath");
@@ -42,15 +45,34 @@ public class CallTrackerAgent {
                     String libsInfoPath = prop.getProperty("libsInfoPath");
                     
                     System.out.println("Adding results to tsv");
-                    FileWriter writer = new FileWriter(invocationsOutputPath, true);    
-                    if (new File(invocationsOutputPath).length() == 0)
+                    FileWriter writer = new FileWriter(dynamicInvocationsOutputPath, true);  
+                    FileWriter writer2 = new FileWriter(staticInvocationsOutputPath, true);
+                    if (new File(dynamicInvocationsOutputPath).length() == 0)
                         writer.write("Caller Method\tCaller Library\tCallee Visibility\tDeclared Callee Method\tDeclared Callee Library\tActual Callee Method\tActual Callee Library\tCount\tReflective\tDynamicProxy\tLabel\n");
+                    if (new File(staticInvocationsOutputPath).length() == 0)
+                        writer2.write("Caller Method\tCaller Library\tCallee Visibility\tDeclared Callee Method\tDeclared Callee Library\tCount\tLabel\n");
+                    
                     for (InterLibraryCallsKey ilcKey: CallTrackerTransformer.interLibraryCalls.keySet()) {
-                        writer.write(ilcKey.callerMethodString+"\t"+ ilcKey.callerMethodLibString+"\t"+ ilcKey.calleeVisibilityString+"\t"+ilcKey.virtualCalleeMethodString+"\t"+ilcKey.virtualCalleeMethodLibString
+                    	if (ilcKey.actualCalleeMethodString.equals("-")) {
+                    		writer2.write(ilcKey.callerMethodString+"\t"+ ilcKey.callerMethodLibString+"\t"+ ilcKey.calleeVisibilityString+"\t"+ilcKey.virtualCalleeMethodString+"\t"+ilcKey.virtualCalleeMethodLibString
+                                    +"\t"+CallTrackerTransformer.interLibraryCalls.get(ilcKey)+"\t"+ilcKey.label+"\n");
+                    		
+                    		List<String> subclss = CallTrackerTransformer.superToSubClasses.get((ilcKey.virtualCalleeMethodString).split("::")[0]);
+                    		if (subclss!=null) {
+	                    		for (String subClsName: CallTrackerTransformer.superToSubClasses.get((ilcKey.virtualCalleeMethodString).split("::")[0])) {
+	                    			writer2.write(ilcKey.callerMethodString+"\t"+ ilcKey.callerMethodLibString+"\t"+ ilcKey.calleeVisibilityString+"\t"+subClsName+"::"+ilcKey.virtualCalleeMethodString.split("::")[1]+"\t"+ilcKey.virtualCalleeMethodLibString
+	                                        +"\t"+CallTrackerTransformer.interLibraryCalls.get(ilcKey)+"\t"+ilcKey.label+"\n");
+	                    		}
+                    		}
+                    	} else {
+                    		writer.write(ilcKey.callerMethodString+"\t"+ ilcKey.callerMethodLibString+"\t"+ ilcKey.calleeVisibilityString+"\t"+ilcKey.virtualCalleeMethodString+"\t"+ilcKey.virtualCalleeMethodLibString
                                 +"\t"+ilcKey.actualCalleeMethodString+"\t"+ilcKey.actualCalleeMethodLibString+"\t"+CallTrackerTransformer.interLibraryCalls.get(ilcKey)+"\t"+ilcKey.reflective+"\t"+ilcKey.dynamicProxy+"\t"+ilcKey.label+"\n");
+                    	}
                     }
                     writer.flush();
                     writer.close();
+                    writer2.flush();
+                    writer2.close();
                     writer = new FileWriter(fieldsOutputPath, true);
                     if (new File(fieldsOutputPath).length() == 0)
                         writer.write("Caller Library\tField Name\tDeclared Class\tActual Class\tField Signature\tStatic\tVisibility\tField Library\tReflective\tCount\n");
@@ -106,17 +128,17 @@ public class CallTrackerAgent {
                         rows[count++] = row;
                     }
                     reader.close();
-                    BufferedWriter writer2 = new BufferedWriter(new FileWriter(libsInfoPath, false));
+                    BufferedWriter writer3 = new BufferedWriter(new FileWriter(libsInfoPath, false));
                     for (String rowString : rows) {
                         if (rowString!=null) {
                             String[] data = rowString.split("\t");
                             if (CallTrackerTransformer.libsToMethods.containsKey(data[0]))
                                 data[2] = String.valueOf(CallTrackerTransformer.libsToMethods.get(data[0]).size());
-                            writer2.write(String.join("\t", data)+"\n");
+                            writer3.write(String.join("\t", data)+"\n");
                         }
                     }
-                    writer2.flush();
-                    writer2.close();
+                    writer3.flush();
+                    writer3.close();
                 } catch (IOException ex) {
                     ex.printStackTrace();
                 }

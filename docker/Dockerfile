@@ -1,4 +1,4 @@
-FROM ubuntu:21.04
+FROM ubuntu:20.04
 
 # prepare , install some utils
 RUN apt-get --yes --force-yes update && \

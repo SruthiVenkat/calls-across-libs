@@ -40,15 +40,13 @@ public class DependentTestRunner {
 	public static String configPath = Paths.get(new File(".").getAbsolutePath()).getParent().getParent().toString()+"/src/main/resources/config.properties";
 	public static Map<Long, String> javaVersionPaths = new HashMap<Long, String>();
 	public static Map<Long, String> javaHomes = new HashMap<Long, String>();
-	
+	public static String mavenHome;
 	static {
-		javaVersionPaths.put((long)8, "/usr/lib/jvm/java-8-openjdk-arm64/jre/bin/java");
-		javaVersionPaths.put((long)11, "/usr/lib/jvm/java-11-openjdk-arm64/bin/java");
-		javaHomes.put((long)8, "/usr/lib/jvm/java-8-openjdk-arm64");
-		javaHomes.put((long)11, "/usr/lib/jvm/java-11-openjdk-arm64");
+		loadProperties();
 	}
 	
 	public static void main(String[] args) {
+		//TODO do we need to do this again? 
 		loadProperties();	// load properties - paths
 		
 		JSONParser jsonParser = new JSONParser();
@@ -101,6 +99,12 @@ public class DependentTestRunner {
             	outputDir.mkdir();
 
             JAVA_OPTS =  "-javaagent:"+agentPath+" -Xbootclasspath/a:"+javassistJarPath+":"+agentPath;
+            //setting of the java home and maven properties
+            javaVersionPaths.put((long)8, prop.getProperty("java8Path"));
+    		javaVersionPaths.put((long)11, prop.getProperty("java11Path"));
+    		javaHomes.put((long)8, prop.getProperty("java8Home"));
+    		javaHomes.put((long)11, prop.getProperty("java11Home"));
+    		mavenHome = prop.getProperty("mavenHome");
         } catch (IOException ex) {
             ex.printStackTrace();
         }
@@ -114,8 +118,8 @@ public class DependentTestRunner {
 		request.setGoals(Arrays.asList("help:evaluate"));
 		request.setJavaHome(new File(javaHomes.get(javaVersion)));
 		
-		System.setProperty("maven.home", "/usr/share/maven");
-		//System.setProperty("maven.home", "/opt/homebrew/Cellar/maven/3.8.2/libexec");
+		//System.setProperty("maven.home", "/usr/share/maven");
+		System.setProperty("maven.home", mavenHome);
 		Invoker invoker = new DefaultInvoker();
 		try {
 			request.setMavenOpts("-Dexpression=project.groupId -Doutput=group.txt");
@@ -204,7 +208,8 @@ public class DependentTestRunner {
 				Properties prop = new Properties();
 	            prop.load(input);
 	            new File(outputPath+File.separator+lib).mkdir();
-	            prop.setProperty("invocationsOutputPath", outputPath+File.separator+lib+File.separator+lib+"-invocations.tsv");
+	            prop.setProperty("dynamicInvocationsOutputPath", outputPath+File.separator+lib+File.separator+lib+"-dynamic-invocations.tsv");
+	            prop.setProperty("staticInvocationsOutputPath", outputPath+File.separator+lib+File.separator+lib+"-static-invocations.tsv");
 	            prop.setProperty("fieldsOutputPath", outputPath+File.separator+lib+File.separator+lib+"-fields.tsv");
 	            prop.setProperty("subtypingOutputPath", outputPath+File.separator+lib+File.separator+lib+"-subtyping.tsv");
 	            prop.setProperty("annotationsOutputPath", outputPath+File.separator+lib+File.separator+lib+"-annotations.tsv");
@@ -216,7 +221,8 @@ public class DependentTestRunner {
 	            prop.store(new FileWriter(configPath, false), null);
 	            setJavaVersion((long) projectObject.get("javaVersion"));
 	            runMvnProjectUnitTests(pomList.get(lib), (long) projectObject.get("javaVersion"));
-	            prop.setProperty("invocationsOutputPath", "");
+	            prop.setProperty("dynamicInvocationsOutputPath", "");
+	            prop.setProperty("staticInvocationsOutputPath", "");
 	            prop.setProperty("fieldsOutputPath", "");
 	            prop.setProperty("subtypingOutputPath", "");
 	            prop.setProperty("annotationsOutputPath", "");
@@ -238,8 +244,8 @@ public class DependentTestRunner {
 		request.setGoals(Arrays.asList("clean", "install"));
 		request.setMavenOpts("-Dlicense.skipCheckLicense=true -Dlicense.skip=true -DskipTests=true -Dcheckstyle.skip=true -Dgpg.skip=true -Drat.skip=true -Dmaven.buildNumber.doCheck=false");
 		request.setJavaHome(new File(javaHomes.get(javaVersion)));
-		System.setProperty("maven.home", "/usr/share/maven");
-		//System.setProperty("maven.home", "/opt/homebrew/Cellar/maven/3.8.2/libexec");
+		//System.setProperty("maven.home", "/usr/share/maven");
+		System.setProperty("maven.home", mavenHome);
 		Invoker invoker = new DefaultInvoker();
 		try {
 			invoker.execute( request );
@@ -283,8 +289,8 @@ public class DependentTestRunner {
 		Properties properties = new Properties();
 		properties.setProperty("argLine", argLine+JAVA_OPTS);
 		request.setProperties(properties);
-		System.setProperty("maven.home", "/usr/share/maven");
-		//System.setProperty("maven.home", "/opt/homebrew/Cellar/maven/3.8.2/libexec");
+		//System.setProperty("maven.home", "/usr/share/maven");
+		System.setProperty("maven.home",mavenHome);
 		Invoker invoker = new DefaultInvoker();
 		try {
 			invoker.execute( request );
@@ -317,7 +323,8 @@ public class DependentTestRunner {
 	            Properties prop = new Properties();
 	            prop.load(input);
 	            new File(outputPath+File.separator+lib).mkdir();
-	            prop.setProperty("invocationsOutputPath", outputPath+File.separator+lib+File.separator+lib+"-invocations.tsv");
+	            prop.setProperty("dynamicInvocationsOutputPath", outputPath+File.separator+lib+File.separator+lib+"-dynamic-invocations.tsv");
+	            prop.setProperty("staticInvocationsOutputPath", outputPath+File.separator+lib+File.separator+lib+"-static-invocations.tsv");
 	            prop.setProperty("fieldsOutputPath", outputPath+File.separator+lib+File.separator+lib+"-fields.tsv");
 	            prop.setProperty("subtypingOutputPath", outputPath+File.separator+lib+File.separator+lib+"-subtyping.tsv");
 	            prop.setProperty("annotationsOutputPath", outputPath+File.separator+lib+File.separator+lib+"-annotations.tsv");
@@ -329,7 +336,8 @@ public class DependentTestRunner {
 	            prop.store(new FileWriter(configPath, false), null);
 	            setJavaVersion((long) projectObject.get("javaVersion"));
 	            runGradleProjectUnitTests(pathToGradleProject, pathToRootGradleProject);
-	            prop.setProperty("invocationsOutputPath", "");
+	            prop.setProperty("dynamicInvocationsOutputPath", "");
+	            prop.setProperty("staticInvocationsOutputPath", "");
 	            prop.setProperty("fieldsOutputPath", "");
 	            prop.setProperty("subtypingOutputPath", "");
 	            prop.setProperty("annotationsOutputPath", "");
