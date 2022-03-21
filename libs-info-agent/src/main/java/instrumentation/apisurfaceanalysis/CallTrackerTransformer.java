@@ -537,9 +537,9 @@ public class CallTrackerTransformer implements ClassFileTransformer {
                 if (actualMethodCalledClassName.startsWith("com.sun.proxy.$Proxy"))
                         instrumentation.apisurfaceanalysis.CallTrackerTransformer.dynProxyCaller.put(Thread.currentThread().getId(), virtualCalleeMethod);
 
-                String serviceBypass = callingMethodLibName.equals(runningLibrary) ? labelMap.get(Label.CLIENTTOLIB)
-        				: (actualCalledMethodLibName.equals(runningLibrary) ? labelMap.get(Label.LIBTOCLIENT) : labelMap.get(Label.LIBTOLIB));
-                
+                String serviceBypass = callingMethodLibName.equals(actualCalledMethodLibName) ? labelMap.get(Label.INTRALIB) : (callingMethodLibName.equals(runningLibrary) ? labelMap.get(Label.CLIENTTOLIB)
+        				: (actualCalledMethodLibName.equals(runningLibrary) ? labelMap.get(Label.LIBTOCLIENT) : labelMap.get(Label.LIBTOLIB)));
+         
                 if (!callingMethodName.equals("hashCode()I") 
                                 && !callingMethodName.equals("equals(Ljava/lang/Object;)Z")) {
 		                Object trackedObj = instrumentation.apisurfaceanalysis.CallTrackerTransformer.trackedObjs.keySet().stream().filter(o -> o.equals(obj))
