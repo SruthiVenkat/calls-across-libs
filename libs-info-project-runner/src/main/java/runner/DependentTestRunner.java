@@ -46,9 +46,6 @@ public class DependentTestRunner {
 	}
 	
 	public static void main(String[] args) {
-		//TODO do we need to do this again? 
-		loadProperties();	// load properties - paths
-		
 		JSONParser jsonParser = new JSONParser();
         try (FileReader reader = new FileReader(new File(".").getAbsolutePath()+File.separator+"projects"+File.separator+"projects-list.json")) {
             Object obj = jsonParser.parse(reader);
@@ -118,7 +115,6 @@ public class DependentTestRunner {
 		request.setGoals(Arrays.asList("help:evaluate"));
 		request.setJavaHome(new File(javaHomes.get(javaVersion)));
 		
-		//System.setProperty("maven.home", "/usr/share/maven");
 		System.setProperty("maven.home", mavenHome);
 		Invoker invoker = new DefaultInvoker();
 		try {
@@ -147,6 +143,7 @@ public class DependentTestRunner {
 		} catch (IOException ex) {
 		    ex.printStackTrace();
 		}
+		System.out.println("gav-----"+gav+" ------ pom----"+pomFile);
 		return gav;
 	}
 	
@@ -244,7 +241,6 @@ public class DependentTestRunner {
 		request.setGoals(Arrays.asList("clean", "install"));
 		request.setMavenOpts("-Dlicense.skipCheckLicense=true -Dlicense.skip=true -DskipTests=true -Dcheckstyle.skip=true -Dgpg.skip=true -Drat.skip=true -Dmaven.buildNumber.doCheck=false");
 		request.setJavaHome(new File(javaHomes.get(javaVersion)));
-		//System.setProperty("maven.home", "/usr/share/maven");
 		System.setProperty("maven.home", mavenHome);
 		Invoker invoker = new DefaultInvoker();
 		try {
@@ -289,7 +285,6 @@ public class DependentTestRunner {
 		Properties properties = new Properties();
 		properties.setProperty("argLine", argLine+JAVA_OPTS);
 		request.setProperties(properties);
-		//System.setProperty("maven.home", "/usr/share/maven");
 		System.setProperty("maven.home",mavenHome);
 		Invoker invoker = new DefaultInvoker();
 		try {
