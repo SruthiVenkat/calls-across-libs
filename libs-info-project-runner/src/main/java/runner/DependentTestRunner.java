@@ -6,6 +6,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.PrintStream;
 import java.lang.ProcessBuilder.Redirect;
 import java.nio.file.Paths;
 import java.util.ArrayList;
@@ -21,9 +22,12 @@ import javax.xml.parsers.DocumentBuilderFactory;
 
 import org.apache.maven.shared.invoker.DefaultInvocationRequest;
 import org.apache.maven.shared.invoker.DefaultInvoker;
+import org.apache.maven.shared.invoker.InvocationOutputHandler;
 import org.apache.maven.shared.invoker.InvocationRequest;
+import org.apache.maven.shared.invoker.InvocationResult;
 import org.apache.maven.shared.invoker.Invoker;
 import org.apache.maven.shared.invoker.MavenInvocationException;
+import org.apache.maven.shared.invoker.PrintStreamHandler;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -41,6 +45,7 @@ public class DependentTestRunner {
 	public static Map<Long, String> javaVersionPaths = new HashMap<Long, String>();
 	public static Map<Long, String> javaHomes = new HashMap<Long, String>();
 	public static String mavenHome;
+	public static String valString;
 	static {
 		loadProperties();
 	}
@@ -117,31 +122,28 @@ public class DependentTestRunner {
 		
 		System.setProperty("maven.home", mavenHome);
 		Invoker invoker = new DefaultInvoker();
+		InvocationOutputHandler outputHandler = new InvocationOutputHandler(){
+	        @Override
+	        public void consumeLine(String line) throws IOException {
+	        	if (!line.startsWith("["))
+	        		valString=line;
+	        }
+	    };
+	    invoker.setOutputHandler(outputHandler);
 		try {
-			request.setMavenOpts("-Dexpression=project.groupId -Doutput=group.txt");
-			invoker.execute( request );
-			BufferedReader reader1 = new BufferedReader(new FileReader(pomFile.replace("pom.xml", "group.txt")));
-			gav = reader1.readLine()+":";
+			request.setMavenOpts("-Dexpression=project.groupId");
+			invoker.execute( request );		    
+			gav = valString+":";
 
-			request.setMavenOpts("-Dexpression=project.artifactId -Doutput=artifact.txt");
+			request.setMavenOpts("-Dexpression=project.artifactId");
 			invoker.execute( request );
-			BufferedReader reader2 = new BufferedReader(new FileReader(pomFile.replace("pom.xml", "artifact.txt")));
-			gav += reader2.readLine()+":";
+			gav += valString+":";
 
-			request.setMavenOpts("-Dexpression=project.version -Doutput=version.txt");
+			request.setMavenOpts("-Dexpression=project.version");
 			invoker.execute( request );
-			BufferedReader reader3 = new BufferedReader(new FileReader(pomFile.replace("pom.xml", "version.txt")));
-			gav += reader3.readLine();
-			new File(pomFile.replace("pom.xml", "group.txt")).delete();
-			new File(pomFile.replace("pom.xml", "artifact.txt")).delete();
-			new File(pomFile.replace("pom.xml", "version.txt")).delete();
-			reader1.close();
-			reader2.close();
-			reader3.close();
+			gav += valString;
 		} catch (MavenInvocationException e) {
 			e.printStackTrace();
-		} catch (IOException ex) {
-		    ex.printStackTrace();
 		}
 		System.out.println("gav-----"+gav+" ------ pom----"+pomFile);
 		return gav;
