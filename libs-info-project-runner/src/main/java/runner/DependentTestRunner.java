@@ -279,7 +279,7 @@ public class DependentTestRunner {
 					}
 				}
 			}
-			if (argLine.contains("${argLine}")) argLine = argLine.replace("${argLine}", "");
+			//if (argLine.contains("${argLine}")) argLine = argLine.replace("${argLine}", "");
 		} catch (Exception e) {
 		    e.printStackTrace();
 		}
