@@ -75,9 +75,9 @@ public class CallTrackerAgent {
                     writer2.close();
                     writer = new FileWriter(fieldsOutputPath, true);
                     if (new File(fieldsOutputPath).length() == 0)
-                        writer.write("Caller Library\tField Name\tDeclared Class\tActual Class\tField Signature\tStatic\tVisibility\tField Library\tReflective\tCount\n");
+                        writer.write("Caller Class\tCaller Library\tField Name\tDeclared Class\tActual Class\tField Signature\tStatic\tVisibility\tField Library\tReflective\tCount\n");
                     for (InterLibraryFieldsKey ilfKey: CallTrackerTransformer.interLibraryFields.keySet()) {
-                        writer.write(ilfKey.calleeLib+"\t"+ilfKey.fieldName+"\t"+ilfKey.virtualClass+"\t"+ilfKey.actualClass+"\t"+ ilfKey.fieldSignature+"\t"+ ilfKey.isStatic+"\t"+ ilfKey.visibility+"\t"+ ilfKey.libName+"\t"+ ilfKey.reflective+"\t"+CallTrackerTransformer.interLibraryFields.get(ilfKey)+"\n");
+                        writer.write(ilfKey.callerClass+"\t"+ilfKey.callerLib+"\t"+ilfKey.fieldName+"\t"+ilfKey.virtualClass+"\t"+ilfKey.actualClass+"\t"+ ilfKey.fieldSignature+"\t"+ ilfKey.isStatic+"\t"+ ilfKey.visibility+"\t"+ ilfKey.libName+"\t"+ ilfKey.reflective+"\t"+CallTrackerTransformer.interLibraryFields.get(ilfKey)+"\n");
                     }
                     writer.flush();
                     writer.close();
@@ -107,9 +107,9 @@ public class CallTrackerAgent {
                     writer.close();
                     writer = new FileWriter(classesUsageInfoPath, true);
                     if (new File(classesUsageInfoPath).length() == 0)
-                        writer.write("Class Name\tClass Visibility\tClass Library\tUsage\tUsed In Library\n");
+                        writer.write("Class Name\tClass Visibility\tClass Library\tUsage\tUsed in Class\tUsed In Library\n");
                     for (InterLibraryClassUsageKey ilcu: CallTrackerTransformer.interLibraryClassUsage) {
-                        writer.write(ilcu.className+"\t"+ ilcu.classVisibility+"\t"+ ilcu.classLib+"\t"+ ilcu.usageType+"\t"+ ilcu.usedInLib+"\n");
+                        writer.write(ilcu.className+"\t"+ ilcu.classVisibility+"\t"+ ilcu.classLib+"\t"+ ilcu.usageType+"\t"+ ilcu.usedInCls+"\t"+ ilcu.usedInLib+"\n");
                     }
                     writer.flush();
                     writer.close();

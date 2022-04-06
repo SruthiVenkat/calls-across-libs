@@ -1,7 +1,8 @@
 package instrumentation.apisurfaceanalysis;
 
 class InterLibraryFieldsKey {
-	String calleeLib;
+	String callerClass;
+	String callerLib;
 	String virtualClass;
 	String actualClass;
 	String fieldName;
@@ -11,9 +12,10 @@ class InterLibraryFieldsKey {
 	String libName;
 	boolean reflective;
 
-	InterLibraryFieldsKey(String calleeLib, String virtualClass, String actualClass, String fieldName, String fieldSignature,
+	InterLibraryFieldsKey(String callerClass, String callerLib, String virtualClass, String actualClass, String fieldName, String fieldSignature,
 			boolean isStatic, String visibility, String libName, boolean reflective) {
-		this.calleeLib = calleeLib;
+		this.callerClass = callerClass;
+		this.callerLib = callerLib;
 		this.virtualClass = virtualClass;
 		this.actualClass = actualClass;
 		this.fieldName = fieldName;
@@ -29,14 +31,14 @@ class InterLibraryFieldsKey {
 		if (obj == null) return false;
 		if (obj.getClass() != this.getClass()) return false;
 		InterLibraryFieldsKey keyObj = (InterLibraryFieldsKey) obj;
-		return (keyObj.calleeLib.equals(this.calleeLib) && keyObj.virtualClass.equals(this.virtualClass) && keyObj.actualClass.equals(this.actualClass)
+		return (keyObj.callerClass.equals(this.callerClass) && keyObj.callerLib.equals(this.callerLib) && keyObj.virtualClass.equals(this.virtualClass) && keyObj.actualClass.equals(this.actualClass)
 				&& keyObj.fieldName.equals(this.fieldName) && keyObj.fieldSignature.equals(this.fieldSignature) && keyObj.reflective==this.reflective
 				&& keyObj.isStatic==this.isStatic && keyObj.visibility.equals(this.visibility) && keyObj.libName.equals(this.libName));
 	}
 
 	@Override
 	public int hashCode() {
-		return calleeLib.hashCode() + virtualClass.hashCode() + actualClass.hashCode() + fieldName.hashCode()
+		return callerClass.hashCode() + callerLib.hashCode() + virtualClass.hashCode() + actualClass.hashCode() + fieldName.hashCode()
 			+ fieldSignature.hashCode() + (isStatic ? 1 : 0) + visibility.hashCode() + libName.hashCode() + (reflective ? 1 : 0);
 	}
 }
