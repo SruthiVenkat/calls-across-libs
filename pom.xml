@@ -11,6 +11,7 @@
 	<modules>
 		<module>libs-info-agent</module>
 		<module>libs-info-project-runner</module>
+		<module>libs-info-utils</module>
 	</modules>
 	<build>
 		<plugins>

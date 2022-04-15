@@ -24,5 +24,15 @@
 		    <artifactId>javassist</artifactId>
 		    <version>3.27.0-GA</version>
 		</dependency>
+		<dependency>
+			<groupId>ca.waterloo.pl</groupId>
+			<artifactId>libs-info-utils</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>ca.waterloo.pl</groupId>
+			<artifactId>libs-info-agent</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 </project>

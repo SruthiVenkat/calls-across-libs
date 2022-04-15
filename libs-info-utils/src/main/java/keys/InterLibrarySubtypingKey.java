@@ -1,13 +1,13 @@
-package instrumentation.apisurfaceanalysis;
+package keys;
 
-class InterLibrarySubtypingKey {
-	String subClass;
-	String subClassLib;
-	String superClass;
-	String superClassVis;
-	String superClassLib;
+public class InterLibrarySubtypingKey {
+	public String subClass;
+	public String subClassLib;
+	public String superClass;
+	public String superClassVis;
+	public String superClassLib;
 
-	InterLibrarySubtypingKey(String subClass, String subClassLib, String superClass, String superClassVis, String superClassLib) {
+	public InterLibrarySubtypingKey(String subClass, String subClassLib, String superClass, String superClassVis, String superClassLib) {
 		this.subClass = subClass;
 		this.subClassLib = subClassLib;
 		this.superClass = superClass;

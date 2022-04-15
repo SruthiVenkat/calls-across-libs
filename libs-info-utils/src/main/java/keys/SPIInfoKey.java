@@ -1,15 +1,15 @@
-package instrumentation.apisurfaceanalysis;
+package keys;
 
 public class SPIInfoKey {
-	String callerMethodName;
-	String callerMethodLib;
-	String interfaceName;
-	String interfaceLib;
-	String calledMethodName;
-	String implName;
-	String implLib;
+	public String callerMethodName;
+	public String callerMethodLib;
+	public String interfaceName;
+	public String interfaceLib;
+	public String calledMethodName;
+	public String implName;
+	public String implLib;
 	
-	SPIInfoKey(String callerMethodName, String callerMethodLib, String interfaceName, String interfaceLib,
+	public SPIInfoKey(String callerMethodName, String callerMethodLib, String interfaceName, String interfaceLib,
 		String calledMethodName, String implName, String implLib) {
 		this.callerMethodName = callerMethodName;
 		this.callerMethodLib = callerMethodLib;

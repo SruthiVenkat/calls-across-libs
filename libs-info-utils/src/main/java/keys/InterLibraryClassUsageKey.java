@@ -1,14 +1,14 @@
-package instrumentation.apisurfaceanalysis;
+package keys;
 
 public class InterLibraryClassUsageKey {
-	String className;
-	String classVisibility;
-	String classLib;
-	String usageType;
-	String usedInCls;
-	String usedInLib;
+	public String className;
+	public String classVisibility;
+	public String classLib;
+	public String usageType;
+	public String usedInCls;
+	public String usedInLib;
 
-	InterLibraryClassUsageKey(String className, String classVisibility, 
+	public InterLibraryClassUsageKey(String className, String classVisibility, 
 			String classLib, String usageType, String usedInCls, String usedInLib) {
 		this.className = className;
 		this.classVisibility = classVisibility;

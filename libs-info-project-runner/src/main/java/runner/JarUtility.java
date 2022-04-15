@@ -66,7 +66,7 @@ public class JarUtility {
             	String tmpFolder = new File(".").getAbsolutePath()+File.separator+"projects"+File.separator+projectObject.get("execDir")+File.separator+"tmp";
             	String libName = (String)projectObject.get("libName");
             	ArrayList<Object> countsAndClasses = getPublicProtectedMethodsCountAndClasses(generatedJarName, tmpFolder, pathToProject, pathToRootPrj, build, libName, (long) projectObject.get("javaVersion"));
-            	libsToCountsAndClasses.putIfAbsent(libName, new ArrayList<Object>(Arrays.asList(0, 0, "")));
+            	libsToCountsAndClasses.putIfAbsent(libName, new ArrayList<Object>(Arrays.asList(0, 0, "", generatedJarName)));
             	ArrayList<Object> libVals = libsToCountsAndClasses.get(libName);
             	libVals.set(0, (Integer)libVals.get(0) + (Integer)countsAndClasses.get(0));
             	libVals.set(1, 0);
@@ -127,11 +127,11 @@ public class JarUtility {
 			if (!file.exists()) file.createNewFile();
 			FileWriter writer = new FileWriter(libsInfoPath, true);	
 			if (new File(libsInfoPath).length() == 0) {
-				writer.write("Library Name\tNo. of Public/Protected Methods\tNo. of Methods Called By Tests\tClasses\n");
-				writer.write("unknownLib\t0\t0\t \n");
+				writer.write("Library Name\tPath\tNo. of Public/Protected Methods\tNo. of Methods Called By Tests\tClasses\n");
+				writer.write("unknownLib\t \t0\t0\t \n");
 			}
 			for (String lib: libsToCountsAndClasses.keySet()) {
-				writer.write(lib.trim()+"\t"+libsToCountsAndClasses.get(lib).get(0)+"\t"+libsToCountsAndClasses.get(lib).get(1)+"\t"+libsToCountsAndClasses.get(lib).get(2)+"\n");
+				writer.write(lib.trim()+"\t"+libsToCountsAndClasses.get(lib).get(3)+"\t"+libsToCountsAndClasses.get(lib).get(0)+"\t"+libsToCountsAndClasses.get(lib).get(1)+"\t"+libsToCountsAndClasses.get(lib).get(2)+"\n");
 		    }
 			writer.flush();
 			writer.close();
@@ -284,7 +284,7 @@ public class JarUtility {
 			return;
 		ArrayList<Object> countsAndClasses = getDatafromJar(dependency, child, dependencyName);
 		libsToCountsAndClasses.putIfAbsent(dependencyName, new ArrayList<Object>(Arrays.asList((Integer)countsAndClasses.get(0), 
-				(Integer)countsAndClasses.get(1), (String)countsAndClasses.get(2))));
+				(Integer)countsAndClasses.get(1), (String)countsAndClasses.get(2), dependency.getPath())));
 	}
 	
 	private static ArrayList<Object> getDatafromJar(File dependency, URLClassLoader child, String dependencyName) {

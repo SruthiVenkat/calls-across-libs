@@ -1,18 +1,18 @@
-package instrumentation.apisurfaceanalysis;
+package keys;
 
-class InterLibraryCallsKey {
-	String callerMethodString;
-	String callerMethodLibString;
-	String calleeVisibilityString;
-	String virtualCalleeMethodString;
-	String virtualCalleeMethodLibString;
-	String actualCalleeMethodString;
-	String actualCalleeMethodLibString;
-	boolean reflective;
-	boolean dynamicProxy;
-	String label;
+public class InterLibraryCallsKey {
+	public String callerMethodLibString;
+	public String callerMethodString;
+	public String calleeVisibilityString;
+	public String virtualCalleeMethodString;
+	public String virtualCalleeMethodLibString;
+	public String actualCalleeMethodString;
+	public String actualCalleeMethodLibString;
+	public boolean reflective;
+	public boolean dynamicProxy;
+	public String label;
 
-	InterLibraryCallsKey(String callerMethodString, String callerMethodLibString, String calleeVisibilityString, String virtualCalleeMethodString, String virtualCalleeMethodLibString,
+	public InterLibraryCallsKey(String callerMethodString, String callerMethodLibString, String calleeVisibilityString, String virtualCalleeMethodString, String virtualCalleeMethodLibString,
 			String actualCalleeMethodString, String actualCalleeMethodLibString, boolean reflective, boolean dynamicProxy, String serviceBypass) {
 		this.callerMethodString = callerMethodString;
 		this.callerMethodLibString = callerMethodLibString;

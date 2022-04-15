@@ -13,6 +13,14 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
+import keys.InterLibraryAnnotationsKey;
+import keys.InterLibraryCallsKey;
+import keys.InterLibraryClassUsageKey;
+import keys.InterLibraryFieldsKey;
+import keys.InterLibrarySubtypingKey;
+import keys.SPIInfoKey;
+import keys.SetAccessibleCallsKey;
+
 /**
  * Java Agent To Track Calls Across Libraries
  * @author sruthi
@@ -35,7 +43,6 @@ public class CallTrackerAgent {
                     Properties prop = new Properties();
                     prop.load(input);
                     String dynamicInvocationsOutputPath = prop.getProperty("dynamicInvocationsOutputPath");
-                    String staticInvocationsOutputPath = prop.getProperty("staticInvocationsOutputPath");
                     String fieldsOutputPath = prop.getProperty("fieldsOutputPath");
                     String subtypingOutputPath = prop.getProperty("subtypingOutputPath");
                     String annotationsOutputPath = prop.getProperty("annotationsOutputPath");
@@ -46,33 +53,12 @@ public class CallTrackerAgent {
                     
                     System.out.println("Adding results to tsv");
                     FileWriter writer = new FileWriter(dynamicInvocationsOutputPath, true);  
-                    FileWriter writer2 = new FileWriter(staticInvocationsOutputPath, true);
                     if (new File(dynamicInvocationsOutputPath).length() == 0)
                         writer.write("Caller Method\tCaller Library\tCallee Visibility\tDeclared Callee Method\tDeclared Callee Library\tActual Callee Method\tActual Callee Library\tCount\tReflective\tDynamicProxy\tLabel\n");
-                    if (new File(staticInvocationsOutputPath).length() == 0)
-                        writer2.write("Caller Method\tCaller Library\tCallee Visibility\tDeclared Callee Method\tDeclared Callee Library\tCount\tLabel\n");
                     
-                    for (InterLibraryCallsKey ilcKey: CallTrackerTransformer.interLibraryCalls.keySet()) {
-                    	if (ilcKey.actualCalleeMethodString.equals("-")) {
-                    		writer2.write(ilcKey.callerMethodString+"\t"+ ilcKey.callerMethodLibString+"\t"+ ilcKey.calleeVisibilityString+"\t"+ilcKey.virtualCalleeMethodString+"\t"+ilcKey.virtualCalleeMethodLibString
-                                    +"\t"+CallTrackerTransformer.interLibraryCalls.get(ilcKey)+"\t"+ilcKey.label+"\n");
-                    		
-                    		List<String> subclss = CallTrackerTransformer.superToSubClasses.get((ilcKey.virtualCalleeMethodString).split("::")[0]);
-                    		if (subclss!=null) {
-	                    		for (String subClsName: CallTrackerTransformer.superToSubClasses.get((ilcKey.virtualCalleeMethodString).split("::")[0])) {
-	                    			writer2.write(ilcKey.callerMethodString+"\t"+ ilcKey.callerMethodLibString+"\t"+ ilcKey.calleeVisibilityString+"\t"+subClsName+"::"+ilcKey.virtualCalleeMethodString.split("::")[1]+"\t"+ilcKey.virtualCalleeMethodLibString
-	                                        +"\t"+CallTrackerTransformer.interLibraryCalls.get(ilcKey)+"\t"+ilcKey.label+"\n");
-	                    		}
-                    		}
-                    	} else {
-                    		writer.write(ilcKey.callerMethodString+"\t"+ ilcKey.callerMethodLibString+"\t"+ ilcKey.calleeVisibilityString+"\t"+ilcKey.virtualCalleeMethodString+"\t"+ilcKey.virtualCalleeMethodLibString
-                                +"\t"+ilcKey.actualCalleeMethodString+"\t"+ilcKey.actualCalleeMethodLibString+"\t"+CallTrackerTransformer.interLibraryCalls.get(ilcKey)+"\t"+ilcKey.reflective+"\t"+ilcKey.dynamicProxy+"\t"+ilcKey.label+"\n");
-                    	}
-                    }
                     writer.flush();
                     writer.close();
-                    writer2.flush();
-                    writer2.close();
+ 
                     writer = new FileWriter(fieldsOutputPath, true);
                     if (new File(fieldsOutputPath).length() == 0)
                         writer.write("Caller Class\tCaller Library\tField Name\tDeclared Class\tActual Class\tField Signature\tStatic\tVisibility\tField Library\tReflective\tCount\n");
@@ -148,6 +134,6 @@ public class CallTrackerAgent {
     }
     
     public static void agentmain(String agentArgs, Instrumentation inst) {
-        inst.addTransformer(new CallTrackerTransformer());
+        //inst.addTransformer(new CallTrackerTransformer());
     }
 }

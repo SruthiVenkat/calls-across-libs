@@ -1,16 +1,16 @@
-package instrumentation.apisurfaceanalysis;
+package keys;
 
-class SetAccessibleCallsKey {
-	String callerLib;
-	String callerMethod;
-	String calledOnType;
-	String visibility;
-	String fieldSignature;
-	String calledOnObjName;
-	String libName;
-	boolean setAccessible;
+public class SetAccessibleCallsKey {
+	public String callerLib;
+	public String callerMethod;
+	public String calledOnType;
+	public String visibility;
+	public String fieldSignature;
+	public String calledOnObjName;
+	public String libName;
+	public boolean setAccessible;
 
-	SetAccessibleCallsKey(String callerLib, String callerMethod, String calledOnType, String visibility, String fieldSignature, 
+	public SetAccessibleCallsKey(String callerLib, String callerMethod, String calledOnType, String visibility, String fieldSignature, 
 			String calledOnObjName, String libName, boolean setAccessible) {
 		this.callerLib = callerLib;
 		this.callerMethod = callerMethod;

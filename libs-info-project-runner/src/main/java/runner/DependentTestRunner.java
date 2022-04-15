@@ -6,7 +6,6 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.io.PrintStream;
 import java.lang.ProcessBuilder.Redirect;
 import java.nio.file.Paths;
 import java.util.ArrayList;
@@ -35,8 +34,14 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
+import javassist.ClassPool;
+import javassist.CtClass;
+import javassist.NotFoundException;
+import staticanalysis.StaticAnalyser;
+
 public class DependentTestRunner {
 	public static String agentPath;
+	public static String utilsPath;
 	public static String javassistJarPath;
 	public static String JAVA_OPTS;
 	public static String outputPath;
@@ -79,7 +84,7 @@ public class DependentTestRunner {
             JarUtility.initLibsToCountsAndClasses("maven", mvnProjects);
             JarUtility.initLibsToCountsAndClasses("gradle", gradleProjects);
             
-            // run unit tests
+            // run unit tests, perform static analysis
             Map<String, File> pomList = getPOMList(mvnProjects);
             runMavenProjectsTest(mvnProjects, pomList);
             runGradleProjectsTest(gradleProjects);
@@ -94,13 +99,14 @@ public class DependentTestRunner {
 			Properties prop = new Properties();
             prop.load(input);
             agentPath = prop.getProperty("agentPath");
+            utilsPath = prop.getProperty("utilsPath");
             javassistJarPath = prop.getProperty("javassistJarPath");
             outputPath = prop.getProperty("outputPath");
             File outputDir = new File(outputPath);
             if (!outputDir.exists())
             	outputDir.mkdir();
 
-            JAVA_OPTS =  "-javaagent:"+agentPath+" -Xbootclasspath/a:"+javassistJarPath+":"+agentPath;
+            JAVA_OPTS =  "-javaagent:"+agentPath+" -Xbootclasspath/a:"+javassistJarPath+":"+agentPath+":"+utilsPath;
             //setting of the java home and maven properties
             javaVersionPaths.put((long)8, prop.getProperty("java8Path"));
     		javaVersionPaths.put((long)11, prop.getProperty("java11Path"));
@@ -219,7 +225,14 @@ public class DependentTestRunner {
 	            prop.setProperty("runningLibrary", lib);
 	            prop.store(new FileWriter(configPath, false), null);
 	            setJavaVersion((long) projectObject.get("javaVersion"));
+	            // static analysis
+	            System.out.println("---static----");
+	            StaticAnalyser.getAllClassesStatically();
+	            System.out.println("---static----");
+	            // dynamic analysis
+	            System.out.println("---dynamic----");
 	            runMvnProjectUnitTests(pomList.get(lib), (long) projectObject.get("javaVersion"));
+	            System.out.println("---dynamic----");
 	            prop.setProperty("dynamicInvocationsOutputPath", "");
 	            prop.setProperty("staticInvocationsOutputPath", "");
 	            prop.setProperty("fieldsOutputPath", "");

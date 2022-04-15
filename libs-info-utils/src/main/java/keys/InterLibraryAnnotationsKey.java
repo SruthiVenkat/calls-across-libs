@@ -1,15 +1,15 @@
-package instrumentation.apisurfaceanalysis;
+package keys;
 
-class InterLibraryAnnotationsKey {
-	String className;
-	String methodName;
-	String field;
-	String classLib;
-	String annotationName;
-	String annotationVis;
-	String annotationLib;
+public class InterLibraryAnnotationsKey {
+	public String className;
+	public String methodName;
+	public String field;
+	public String classLib;
+	public String annotationName;
+	public String annotationVis;
+	public String annotationLib;
 
-	InterLibraryAnnotationsKey(String className, String methodName, String field, String classLib, String annotationName, String annotationVis, String annotationLib) {
+	public InterLibraryAnnotationsKey(String className, String methodName, String field, String classLib, String annotationName, String annotationVis, String annotationLib) {
 		this.className = className;
 		this.methodName = methodName;
 		this.field = field;

@@ -1,18 +1,18 @@
-package instrumentation.apisurfaceanalysis;
+package keys;
 
-class InterLibraryFieldsKey {
-	String callerClass;
-	String callerLib;
-	String virtualClass;
-	String actualClass;
-	String fieldName;
-	String fieldSignature;
-	boolean isStatic;
-	String visibility;
-	String libName;
-	boolean reflective;
+public class InterLibraryFieldsKey {
+	public String callerClass;
+	public String callerLib;
+	public String virtualClass;
+	public String actualClass;
+	public String fieldName;
+	public String fieldSignature;
+	public boolean isStatic;
+	public String visibility;
+	public String libName;
+	public boolean reflective;
 
-	InterLibraryFieldsKey(String callerClass, String callerLib, String virtualClass, String actualClass, String fieldName, String fieldSignature,
+	public InterLibraryFieldsKey(String callerClass, String callerLib, String virtualClass, String actualClass, String fieldName, String fieldSignature,
 			boolean isStatic, String visibility, String libName, boolean reflective) {
 		this.callerClass = callerClass;
 		this.callerLib = callerLib;
