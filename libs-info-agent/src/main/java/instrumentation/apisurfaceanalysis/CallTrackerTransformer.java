@@ -233,7 +233,7 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 	            // reflective calls
 	            method.insertBefore("{instrumentation.apisurfaceanalysis.CallTrackerTransformer.getStackTrace(\""+methodCallerClassName+"::"+callingMethodName+callingDescriptorName+"\", \""+callingMethodLibName+"\", \""+methodVisibility+"\", \""+callerClassVisibility+"\");}");
 	
-	            method.instrument(
+	             method.instrument(
 	                new ExprEditor() {
 	                	// 1. Method Invocations
 	                    public void edit(MethodCall m) throws CannotCompileException {
@@ -358,7 +358,7 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 	                                        e.printStackTrace();
 	                                }
 	                    }
-	
+
 	                    // 2. Field Accesses
 	                    public void edit(FieldAccess f) throws CannotCompileException {
 	                        try {
@@ -379,17 +379,25 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 	                                int mods = f.getField().getModifiers();
 	                                String fieldVisibility = javassist.Modifier.isPublic(mods) ? "public" : (javassist.Modifier.isPrivate(mods) ? "private" : (javassist.Modifier.isProtected(mods) ? "protected" : "default"));
 	                                if (!fieldLib.equals(unknownEntry.getKey())) { //  && !callingMethodLibName.equals(fieldLib)
-	                                      // dynamic
-		                                	f.replace("{ if ($0 != null) instrumentation.apisurfaceanalysis.CallTrackerTransformer.handleFields(\""+methodCallerClassName+"\", \""+callingMethodLibName+"\", \""
-		                                		+fieldClass+"\", $0.getClass().getName(), \""+f.getField().getName()+"\", \""+sig+"\", "+f.isStatic()+", \""+fieldVisibility+"\", \""+fieldLib+"\"); $_ = $proceed($$);}");
+	                                	// dynamic
+	                                	if (!f.getField().getName().startsWith("this$")) {
+		                                	f.replace("{ if ($0 != null) { "
+		                                			+ "instrumentation.apisurfaceanalysis.CallTrackerTransformer.handleFields(\""+methodCallerClassName+"\", \""+callingMethodLibName+"\", \""
+		                                		+fieldClass+"\", $0.getClass().getName(), \""+f.getField().getName()+"\", \""+sig+"\", "+f.isStatic()+", \""+fieldVisibility+"\", \""+fieldLib+"\");} $_ = $proceed($$);}");
+	                                	} else {
+	                                		f.replace("{ if ($0 != null) { "
+		                                			+ "instrumentation.apisurfaceanalysis.CallTrackerTransformer.handleFields(\""+methodCallerClassName+"\", \""+callingMethodLibName+"\", \""
+		                                		+fieldClass+"\", \""+methodCallerClassName+"\", \""+f.getField().getName()+"\", \""+sig+"\", "+f.isStatic()+", \""+fieldVisibility+"\", \""+fieldLib+"\");} $_ = $proceed($$);}");
 	                                	}
+	                                }
 	                        } catch (NotFoundException e) {
 	                                System.out.println(e);
 	                        }
-	                    }
+	                    } 
 	                    
 	                    // instantiations
-	                    public void edit(NewExpr newExpr) throws CannotCompileException {                        if (servicesInfo.values().stream().anyMatch(key -> key.implLibs.containsKey(newExpr.getClassName()))) {
+	                    public void edit(NewExpr newExpr) throws CannotCompileException {                        
+	                    	if (servicesInfo.values().stream().anyMatch(key -> key.implLibs.containsKey(newExpr.getClassName()))) {
 	                                newExpr.replace("{$_ = $proceed($$); if ($_ != null) instrumentation.apisurfaceanalysis.CallTrackerTransformer.trackInstantiationsAndCasts($_, \"instantiation\");}");
 	                        }
 	                    }
@@ -405,7 +413,7 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 	                                                })) {
 	                                        c.replace("{$_ = $proceed($$); if ($_ != null) instrumentation.apisurfaceanalysis.CallTrackerTransformer.trackInstantiationsAndCasts($_, \"cast\");}");
 	                                }
-	                    }                           
+	                    }                       
 	                });
 	        }
         }
