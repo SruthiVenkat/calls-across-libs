@@ -380,7 +380,7 @@ public class CallTrackerTransformer implements ClassFileTransformer {
 	                                String fieldVisibility = javassist.Modifier.isPublic(mods) ? "public" : (javassist.Modifier.isPrivate(mods) ? "private" : (javassist.Modifier.isProtected(mods) ? "protected" : "default"));
 	                                if (!fieldLib.equals(unknownEntry.getKey())) { //  && !callingMethodLibName.equals(fieldLib)
 	                                	// dynamic
-	                                	if (!f.getField().getName().startsWith("this$")) {
+	                                	if (!f.getField().getName().startsWith("this")) {
 		                                	f.replace("{ if ($0 != null) { "
 		                                			+ "instrumentation.apisurfaceanalysis.CallTrackerTransformer.handleFields(\""+methodCallerClassName+"\", \""+callingMethodLibName+"\", \""
 		                                		+fieldClass+"\", $0.getClass().getName(), \""+f.getField().getName()+"\", \""+sig+"\", "+f.isStatic()+", \""+fieldVisibility+"\", \""+fieldLib+"\");} $_ = $proceed($$);}");
