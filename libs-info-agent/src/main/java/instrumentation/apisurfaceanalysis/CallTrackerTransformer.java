@@ -105,7 +105,7 @@ public class CallTrackerTransformer implements ClassFileTransformer {
                         BufferedReader reader = new BufferedReader(new FileReader(libsInfoPath));
                         while ((row = reader.readLine()) != null) {
                             String[] data = row.split("\t");
-                            if (data.length >= 4) {
+                            if (data.length >= 5) {
                                 TrieUtil t = new TrieUtil();
                                 for (String str : data[4].split(":")) {
                                 	classesToLibs.put(str, data[0]);
