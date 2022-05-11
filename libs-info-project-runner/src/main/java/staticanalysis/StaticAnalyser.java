@@ -123,7 +123,8 @@ public class StaticAnalyser {
     	for (String cls: classes.keySet()) {
     		try {
     			CtClass ctcls = classPool.get(cls);
-				staticAnalysis(ctcls);
+    			if (!ctcls.isFrozen()) 
+    				staticAnalysis(ctcls);
 			} catch (ClassNotFoundException e) {
 			} catch (NotFoundException e) {
 			}
