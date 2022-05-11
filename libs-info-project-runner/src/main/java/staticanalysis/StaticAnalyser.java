@@ -142,12 +142,14 @@ public class StaticAnalyser {
         CtMethod[] methods = ctClass.getDeclaredMethods();
         try {
             for (CtMethod method : methods) {
-            	handleMethodInvocationsStatic(method, false, methodCallerClassName, callingMethodLibName);
+            	if (!CallTrackerTransformer.isNative(method))
+            		handleMethodInvocationsStatic(method, false, methodCallerClassName, callingMethodLibName);
             }
 
             CtConstructor[] constructors = ctClass.getDeclaredConstructors();
             for (CtConstructor constructor : constructors) {
-            	handleMethodInvocationsStatic(constructor, true, methodCallerClassName, callingMethodLibName);
+            	if (!CallTrackerTransformer.isNative(constructor))
+            		handleMethodInvocationsStatic(constructor, true, methodCallerClassName, callingMethodLibName);
             }
         } catch (CannotCompileException e) {
 		}
@@ -274,7 +276,8 @@ public class StaticAnalyser {
 	            	// 1. Method Invocations
 	                public void edit(MethodCall m) throws CannotCompileException {
 	                    try {
-	                            if (method == m.getMethod() || CallTrackerTransformer.isNative(m.getMethod()))
+	                            if (method.getName().equals(m.getMethodName())
+	                            		&& callingMethodName.equals(m.getClassName()))
 	                                    return;
 	                           
 	                            String calledMethodName = m.getMethodName();
