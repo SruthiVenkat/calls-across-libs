@@ -19,8 +19,6 @@ import java.util.Set;
 import java.util.Map.Entry;
 import java.util.concurrent.ConcurrentHashMap;
 
-import org.apache.maven.shared.invoker.SystemOutHandler;
-
 import instrumentation.util.NameUtility;
 import instrumentation.util.TrieUtil;
 import instrumentation.apisurfaceanalysis.CallTrackerTransformer;
@@ -118,6 +116,13 @@ public class StaticAnalyser {
     	for (String cls: classes.keySet()) {
     		try {
     			CtClass ctcls = classPool.get(cls);
+    			getClassHierarchies(ctcls);
+			} catch (NotFoundException e) {
+			}
+    	}
+    	for (String cls: classes.keySet()) {
+    		try {
+    			CtClass ctcls = classPool.get(cls);
     			if (!ctcls.isFrozen()) 
     				staticAnalysis(ctcls);
 			} catch (ClassNotFoundException e) {
@@ -177,7 +182,7 @@ public class StaticAnalyser {
 		}
 	}
     
-    public static void getClassHierarchy(CtClass ctClass) {
+    public static void getClassHierarchies(CtClass ctClass) {
     	String methodCallerClassName = ctClass.getName();  
     	final String callingMethodLibName = findLibrary(methodCallerClassName);
         try {
@@ -307,7 +312,6 @@ public class StaticAnalyser {
 	                                InterLibraryClassUsageKey interLibraryClassUsageKey = new InterLibraryClassUsageKey(type.getName(), visibility, findLibrary(type.getName()), "method parameter", methodCallerClassName, callingMethodLibName);
 	                                interLibraryClassUsage.add(interLibraryClassUsageKey);
 	                                
-	                                getClassHierarchy(type);
 	                                if (superToSubClasses.keySet().contains(type.getName())) {
 	                                	List<String> subclss = superToSubClasses.get(type.getName());
 		                        		if (subclss!=null) {
@@ -335,15 +339,12 @@ public class StaticAnalyser {
 	                                                callingMethodLibName, mVisibility, methodCalledClassName+"::"+calledMethodName+calledDescriptorName, "-",
 	                                                calledMethodLibName, "-", callerClassVisibility, 1, false, false, label);
 	                                    }
-	                                    
-	                                    getClassHierarchy(m.getEnclosingClass());
 	                                    if (superToSubClasses.keySet().contains(m.getClassName())) {
 		                                	List<String> subclss = superToSubClasses.get(m.getClassName());
 			                        		if (subclss!=null) {
 			                            		for (String subClsName: superToSubClasses.get(m.getClassName())) {
 			                            			String subClsLib = findLibrary(subClsName);
 			                            			if (CallTrackerTransformer.checkAddCondition(callingMethodLibName, subClsLib)) {
-			                            				System.out.println(subClsName);
 			                            				CtMethod subMethod = classPool.get(subClsName).getDeclaredMethod(calledMethodName);
 			                            				if (subMethod!=null) {
 				                                    		updateInterLibraryCounts(methodCallerClassName+"::"+callingMethodName+callingDescriptorName,
@@ -407,7 +408,6 @@ public class StaticAnalyser {
 	                                            // static
 	                                                InterLibraryFieldsKey key = new InterLibraryFieldsKey(methodCallerClassName, callingMethodLibName, "static", fieldClass, fieldClass+"::"+f.getField().getName(), sig, f.isStatic(), fieldVisibility, fieldLib, false);
 	                                                interLibraryFields.putIfAbsent(key, 0);
-	                                                getClassHierarchy(f.getEnclosingClass());
 	                                                if (superToSubClasses.keySet().contains(f.getClassName())) {
 	        		                                	List<String> subclss = superToSubClasses.get(f.getClassName());
 	        			                        		if (subclss!=null) {
